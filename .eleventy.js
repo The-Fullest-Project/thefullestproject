@@ -1,4 +1,9 @@
+const { HtmlBasePlugin } = require("@11ty/eleventy");
+
 module.exports = function(eleventyConfig) {
+  // Rewrite all URLs to include pathPrefix (for GitHub Pages subpath hosting)
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/js");
@@ -50,6 +55,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
       input: "src",
       output: "_site",
