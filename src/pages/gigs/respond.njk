@@ -13,28 +13,29 @@ permalink: /gigs/respond/
     </div>
 
     <form id="respond-form" action="https://formspree.io/f/{{ site.formspree.gigResponse }}" method="POST" class="space-y-6" style="display: none;">
-      <input type="hidden" id="respond-gig-id" name="gigId">
-      <input type="hidden" id="respond-gig-title" name="gigTitle">
+      <input type="hidden" id="respond-gig-id" name="Gig ID">
+      <input type="hidden" id="respond-gig-title" name="Gig Title">
       <input type="hidden" id="respond-poster-email" name="_replyto">
+      <input type="hidden" id="respond-subject" name="_subject" value="Someone is interested in your gig!">
 
       <div>
         <label for="respond-name" class="block text-sm font-semibold mb-2">Your Name *</label>
-        <input type="text" id="respond-name" name="name" required class="form-input" placeholder="Your full name">
+        <input type="text" id="respond-name" name="Responder Name" required class="form-input" placeholder="Your full name">
       </div>
 
       <div>
         <label for="respond-email" class="block text-sm font-semibold mb-2">Your Email *</label>
-        <input type="email" id="respond-email" name="email" required class="form-input" placeholder="your@email.com">
+        <input type="email" id="respond-email" name="Responder Email" required class="form-input" placeholder="your@email.com">
       </div>
 
       <div>
         <label for="respond-message" class="block text-sm font-semibold mb-2">Why are you a good fit? *</label>
-        <textarea id="respond-message" name="message" rows="5" required class="form-input" placeholder="Tell the poster about your experience, skills, and why you're interested in this gig..."></textarea>
+        <textarea id="respond-message" name="Message" rows="5" required class="form-input" placeholder="Tell the poster about your experience, skills, and why you're interested in this gig..."></textarea>
       </div>
 
       <div>
         <label for="respond-availability" class="block text-sm font-semibold mb-2">Your Availability</label>
-        <input type="text" id="respond-availability" name="availability" class="form-input" placeholder="e.g., Weekday evenings, Weekends, Flexible">
+        <input type="text" id="respond-availability" name="Availability" class="form-input" placeholder="e.g., Weekday evenings, Weekends, Flexible">
       </div>
 
       <div>

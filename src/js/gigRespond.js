@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('respond-gig-id').value = gig.id;
   document.getElementById('respond-gig-title').value = gig.title;
   document.getElementById('respond-poster-email').value = gig.posterEmail;
+  document.getElementById('respond-subject').value = 'Someone is interested in your gig: ' + gig.title;
 
   // Show form
   if (respondForm) respondForm.style.display = '';
