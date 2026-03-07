@@ -1,29 +1,56 @@
 [
   {
-    "title": "How One Mom's Fight for Her Son Led to a Statewide Policy Change",
-    "sourceName": "The Mighty",
-    "sourceUrl": "https://themighty.com/",
-    "excerpt": "When Sarah discovered her son's school lacked basic accommodations, she didn't just advocate for him -- she helped change the policy for every student with a disability in her state.",
-    "category": "Advocacy",
-    "date": "2026-03-01",
-    "addedDate": "2026-03-06"
-  },
-  {
-    "title": "Adaptive Surfing Program Brings Joy to Kids with Disabilities",
-    "sourceName": "Good News Network",
-    "sourceUrl": "https://www.goodnewsnetwork.org/",
-    "excerpt": "A volunteer-run adaptive surfing program is giving children with physical disabilities the chance to ride waves, building confidence and community one surf session at a time.",
-    "category": "Achievement",
-    "date": "2026-03-03",
-    "addedDate": "2026-03-06"
-  },
-  {
-    "title": "New Sensory-Friendly Shopping Hours Expand Nationwide",
+    "title": "Altering IDEA Poses 'Substantial Risk' To Students With Disabilities, Advocates Warn",
     "sourceName": "Disability Scoop",
-    "sourceUrl": "https://www.disabilityscoop.com/",
-    "excerpt": "Major retailers are expanding sensory-friendly shopping hours after overwhelming positive response from families, creating calmer environments with reduced lighting and sound.",
+    "sourceUrl": "https://www.disabilityscoop.com/2026/02/09/altering-idea-poses-substantial-risk-to-students-with-disabilities-advocates-warn/31850/",
+    "excerpt": "Federal lawmakers are considering legislation that would amend IDEA, prompting parent advocates and disability organizations to warn that reopening the law poses a substantial risk to students with disabilities and their families.",
+    "category": "Advocacy",
+    "date": "2026-02-09",
+    "addedDate": "2026-03-07"
+  },
+  {
+    "title": "How Los Angeles Brings Stoke and Surf to Children With Disabilities",
+    "sourceName": "LAist",
+    "sourceUrl": "https://laist.com/news/education/los-angeles-adaptive-para-surfing-program-autism-developmental-disabilities-olympics-2028",
+    "excerpt": "Los Angeles Recreation and Parks hosted adaptive para surf clinics where each participant is paired with at least one instructor, expanding opportunities for youth with disabilities as part of the city's PlayLA program.",
     "category": "Inclusion",
-    "date": "2026-03-05",
-    "addedDate": "2026-03-06"
+    "date": "2026-02-15",
+    "addedDate": "2026-03-07"
+  },
+  {
+    "title": "'It Impacts Everybody': How Retailers and Store Designers Are Battling Sensory Overload",
+    "sourceName": "Modern Retail",
+    "sourceUrl": "https://www.modernretail.co/operations/it-impacts-everybody-how-retailers-store-designers-are-battling-sensory-overload/",
+    "excerpt": "Retailers and store designers are rethinking the shopping experience with dimmable lights, softer music, and sensory-friendly hours to create more inclusive environments for neurodivergent shoppers.",
+    "category": "Inclusion",
+    "date": "2026-01-20",
+    "addedDate": "2026-03-07"
+  },
+  {
+    "title": "Salesforce Tops Best Places to Work for Disability Inclusion 2025",
+    "sourceName": "Salesforce News",
+    "sourceUrl": "https://www.salesforce.com/news/stories/best-places-to-work-disability-2025/",
+    "excerpt": "Salesforce earned a perfect 100% score on the Disability Equality Index for the seventh consecutive year, recognized for its Workforce Navigators initiative that trains professionals with disabilities.",
+    "category": "Achievement",
+    "date": "2025-12-10",
+    "addedDate": "2026-03-07"
+  },
+  {
+    "title": "2026 Driving Mobility and Accessibility on Public Lands",
+    "sourceName": "NEEF",
+    "sourceUrl": "https://www.neefusa.org/2026-driving-mobility-and-accessibility-public-lands",
+    "excerpt": "NEEF is providing $250,000 in grants to make public lands more accessible, funding adaptive recreation equipment and programs that have delivered over 100 accessibility enhancements across the country.",
+    "category": "News",
+    "date": "2026-01-15",
+    "addedDate": "2026-03-07"
+  },
+  {
+    "title": "WHO Disability Health Equity Network Inaugurated With 154 Global Members",
+    "sourceName": "World Health Organization",
+    "sourceUrl": "https://www.who.int/news/item/28-11-2025-who-disability-health-equity-network-inaugurated-with-154-global-members",
+    "excerpt": "The WHO launched its Disability Health Equity Network with 154 members including 35 Member States, marking a historic milestone in coordinated global action toward health equity for persons with disabilities.",
+    "category": "Achievement",
+    "date": "2025-11-28",
+    "addedDate": "2026-03-07"
   }
 ]

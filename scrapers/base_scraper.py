@@ -7,6 +7,7 @@ from datetime import date
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), 'output')
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'src', '_data', 'resources')
+BLOCKLIST_FILE = os.path.join(os.path.dirname(__file__), 'blocklist.json')
 
 
 def make_resource(name, category, location, description, website=None,
@@ -68,11 +69,41 @@ def load_existing(filename):
     return []
 
 
+def load_blocklist():
+    """Load the URL blocklist (known-bad URLs that scrapers should not re-add)."""
+    if os.path.exists(BLOCKLIST_FILE):
+        with open(BLOCKLIST_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {"urls": [], "names": []}
+
+
+def is_blocked(resource, blocklist=None):
+    """Check if a scraped resource matches the blocklist."""
+    if blocklist is None:
+        blocklist = load_blocklist()
+    url = resource.get('website', '')
+    name = resource.get('name', '')
+    if url in blocklist.get('urls', []):
+        print(f"Blocked URL: {url} ({name})")
+        return True
+    if name in blocklist.get('names', []):
+        print(f"Blocked name: {name}")
+        return True
+    return False
+
+
 def merge_resources(existing, scraped):
-    """Merge scraped resources with existing, deduplicating by name + location."""
+    """Merge scraped resources with existing, deduplicating by name + location.
+
+    Scraped resources with blocklisted URLs or names are skipped to prevent
+    re-adding resources with known-bad URLs that have been manually fixed.
+    """
+    blocklist = load_blocklist()
     merged = {(r['name'], r['location']): r for r in existing}
 
     for r in scraped:
+        if is_blocked(r, blocklist):
+            continue
         key = (r['name'], r['location'])
         if key in merged:
             # Update existing entry with scraped data but keep manual fields

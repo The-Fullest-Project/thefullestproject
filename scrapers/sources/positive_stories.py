@@ -165,28 +165,28 @@ def get_seed_stories():
     """Return seed stories for initial population."""
     return [
         make_story(
-            title="How One Mom's Fight for Her Son Led to a Statewide Policy Change",
-            source_name="The Mighty",
-            source_url="https://themighty.com/",
-            excerpt="When Sarah discovered her son's school lacked basic accommodations, she didn't just advocate for him — she helped change the policy for every student with a disability in her state.",
-            category="Advocacy",
-            date="2026-03-01"
-        ),
-        make_story(
-            title="Adaptive Surfing Program Brings Joy to Kids with Disabilities",
-            source_name="Good News Network",
-            source_url="https://www.goodnewsnetwork.org/",
-            excerpt="A volunteer-run adaptive surfing program is giving children with physical disabilities the chance to ride waves, building confidence and community one surf session at a time.",
-            category="Achievement",
-            date="2026-03-03"
-        ),
-        make_story(
-            title="New Sensory-Friendly Shopping Hours Expand Nationwide",
+            title="Altering IDEA Poses 'Substantial Risk' To Students With Disabilities, Advocates Warn",
             source_name="Disability Scoop",
-            source_url="https://www.disabilityscoop.com/",
-            excerpt="Major retailers are expanding sensory-friendly shopping hours after overwhelming positive response from families, creating calmer environments with reduced lighting and sound.",
+            source_url="https://www.disabilityscoop.com/2026/02/09/altering-idea-poses-substantial-risk-to-students-with-disabilities-advocates-warn/31850/",
+            excerpt="Federal lawmakers are considering legislation that would amend IDEA, prompting parent advocates and disability organizations to warn that reopening the law poses a substantial risk to students with disabilities and their families.",
+            category="Advocacy",
+            date="2026-02-09"
+        ),
+        make_story(
+            title="How Los Angeles Brings Stoke and Surf to Children With Disabilities",
+            source_name="LAist",
+            source_url="https://laist.com/news/education/los-angeles-adaptive-para-surfing-program-autism-developmental-disabilities-olympics-2028",
+            excerpt="Los Angeles Recreation and Parks hosted adaptive para surf clinics where each participant is paired with at least one instructor, expanding opportunities for youth with disabilities as part of the city's PlayLA program.",
             category="Inclusion",
-            date="2026-03-05"
+            date="2026-02-15"
+        ),
+        make_story(
+            title="'It Impacts Everybody': How Retailers and Store Designers Are Battling Sensory Overload",
+            source_name="Modern Retail",
+            source_url="https://www.modernretail.co/operations/it-impacts-everybody-how-retailers-store-designers-are-battling-sensory-overload/",
+            excerpt="Retailers and store designers are rethinking the shopping experience with dimmable lights, softer music, and sensory-friendly hours to create more inclusive environments for neurodivergent shoppers.",
+            category="Inclusion",
+            date="2026-01-20"
         ),
     ]
 

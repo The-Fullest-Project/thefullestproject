@@ -50,6 +50,8 @@
     gtag('config', '{{ site.googleAnalytics }}');
   </script>
   {% endif %}
+
+  {{ extraHead | safe }}
 </head>
 <body class="min-h-screen flex flex-col">
   <!-- Skip Navigation -->

@@ -6,24 +6,14 @@ Everything that needs to happen before (and shortly after) the site goes fully l
 
 ## CRITICAL - Site Won't Work Without These
 
-### [ ] Set Up Formspree Forms
-The contact form, resource submission form, and newsletter signup all use Formspree. Right now they have placeholder IDs and **will not work**.
+### [x] Set Up Formspree Forms
+Done. All 5 Formspree forms are created and IDs configured in `src/_data/site.json`:
 
-1. Go to https://formspree.io and create a free account
-2. Create 3 forms:
-   - **Contact Form** — name it "Contact"
-   - **Resource Submission** — name it "Resource Submission"
-   - **Newsletter** — name it "Newsletter"
-3. Each form gives you an ID like `xyzabcde`
-4. Open `src/_data/site.json` and replace the placeholder values:
-   ```json
-   "formspree": {
-     "contact": "xyzabcde",
-     "submitResource": "abc12345",
-     "newsletter": "def67890"
-   }
-   ```
-5. Rebuild and deploy the site
+- **Contact** (`mzdjzzvw`)
+- **Submit Resource** (`xpqywwla`)
+- **Newsletter** (`meeroozw`)
+- **Gig Submission** (`xojkvvlo`)
+- **Gig Response** (`mreybbab`)
 
 ### [x] Push Code to GitHub
 Done. The site auto-deploys when you push to the `main` branch.
@@ -126,6 +116,40 @@ Google Analytics is already wired into the site — you just need a measurement 
    "googleAnalytics": "G-XXXXXXXXXX"
    ```
 5. Rebuild and deploy — analytics will start tracking automatically
+
+---
+
+### [x] Set Up Cloudflare Worker for Gig Auto-Publish
+The gig platform uses a Cloudflare Worker (free tier: 100K requests/day) to auto-publish submissions. The Worker receives form data, validates it, commits to `gigs.json` via the GitHub API, and forwards to Formspree for email confirmation.
+
+1. **Create a Cloudflare account** at https://dash.cloudflare.com (free)
+2. **Install Wrangler CLI:**
+   ```bash
+   npm install -g wrangler
+   wrangler login
+   ```
+3. **Deploy the Worker:**
+   ```bash
+   cd cloudflare-worker
+   wrangler deploy
+   ```
+4. **Set environment variables** in the Cloudflare dashboard (Workers > gig-publisher > Settings > Variables):
+   - `GITHUB_TOKEN` (secret) — GitHub PAT with `repo` scope (create at https://github.com/settings/tokens)
+   - `GITHUB_REPO` — `PMBerrigan/thefullestproject`
+   - `FORMSPREE_ID` — `xojkvvlo`
+   - `ALLOWED_ORIGIN` — `https://thefullestproject.org`
+5. **Copy your Worker URL** (e.g., `https://gig-publisher.<your-account>.workers.dev`)
+6. **Update `src/_data/site.json`** — set `gigWorkerUrl` to your Worker URL:
+   ```json
+   "gigWorkerUrl": "https://gig-publisher.<your-account>.workers.dev"
+   ```
+7. **Test** by submitting a test gig at `/gigs/post/` — it should go live within 2-3 minutes
+
+**Fallback:** If the Worker URL is not configured, the form falls back to standard Formspree submission. Gigs submitted via Formspree can be published manually:
+```bash
+python scrapers/sources/process_gig.py '{"title":"...","type":"seeking-help","category":"research","description":"...","location":"National","compensation":"paid","posterFirstName":"Test","posterEmail":"test@example.com"}'
+git add src/_data/gigs.json && git commit -m "Add new gig" && git push
+```
 
 ---
 

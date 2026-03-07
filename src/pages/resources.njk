@@ -3,6 +3,9 @@ layout: layouts/base.njk
 title: Resource Directory
 description: "Find local and national disability resources, programs, foundations, and services."
 permalink: /resources/
+extraHead: |
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 ---
 
 <section class="py-12">
@@ -27,6 +30,12 @@ permalink: /resources/
             {% for state in states %}
             <option value="{{ state.name }}">{{ state.name }}</option>
             {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="area-filter" class="block text-sm font-semibold mb-2">City / Region</label>
+          <select id="area-filter" class="filter-select">
+            <option value="">All Cities</option>
           </select>
         </div>
         <div>
@@ -67,8 +76,21 @@ permalink: /resources/
       </div>
     </div>
 
-    <!-- Results count -->
-    <p id="results-count" class="text-sm mb-6" style="color: var(--color-text-light);"></p>
+    <!-- View toggle + Results count -->
+    <div class="flex items-center justify-between mb-6">
+      <p id="results-count" class="text-sm" style="color: var(--color-text-light);"></p>
+      <div class="flex gap-1 rounded-lg overflow-hidden border" style="border-color: var(--color-primary);">
+        <button id="list-view-btn" class="px-3 py-1.5 text-sm font-semibold active" style="background-color: var(--color-primary); color: white;">
+          List
+        </button>
+        <button id="map-view-btn" class="px-3 py-1.5 text-sm font-semibold" style="color: var(--color-primary);">
+          Map
+        </button>
+      </div>
+    </div>
+
+    <!-- Map View (hidden by default) -->
+    <div id="resource-map" style="display:none; height: 500px; border-radius: 0.75rem; margin-bottom: 1.5rem;"></div>
 
     <!-- Resource Grid -->
     <div id="resource-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -77,7 +99,8 @@ permalink: /resources/
            data-location="{{ resource.location }}"
            data-category="{{ resource.category | join(',') }}"
            data-name="{{ resource.name | lower }}"
-           data-description="{{ resource.description | lower }}">
+           data-description="{{ resource.description | lower }}"
+           data-area="{{ resource.area | default('') | lower }}">
         <div class="flex items-start justify-between mb-3">
           <h3 class="text-lg font-bold" style="color: var(--color-primary);">{{ resource.name }}</h3>
         </div>
@@ -86,6 +109,9 @@ permalink: /resources/
           <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ cat }}</span>
           {% endfor %}
           <span class="tag" style="background-color: var(--color-accent); color: white;">{{ resource.location }}</span>
+          {% if resource.area %}
+          <span class="tag" style="background-color: var(--color-warm-light); color: var(--color-text);">{{ resource.area }}</span>
+          {% endif %}
         </div>
         <p class="text-sm mb-4" style="color: var(--color-text-light);">{{ resource.description }}</p>
         {% if resource.address %}
@@ -115,3 +141,13 @@ permalink: /resources/
 </section>
 
 <script src="/js/resourceFilter.js"></script>
+<script src="/js/resourceMap.js"></script>
+<style>
+  #list-view-btn.active, #map-view-btn.active {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+  }
+  #list-view-btn:not(.active), #map-view-btn:not(.active) {
+    background-color: white;
+  }
+</style>

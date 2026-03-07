@@ -40,12 +40,27 @@ jobs:
       - name: Fetch blog content
         run: python scrapers/sources/blog_content.py
 
+      - name: Expire old gigs and generate notifications
+        run: python scrapers/sources/process_gig.py --expire
+
+      - name: Weekly gig digest
+        run: python scrapers/sources/process_gig.py --digest
+
+      - name: Send gig expiry notifications
+        run: |
+          if [ -f scrapers/logs/expiry_notifications.json ]; then
+            echo "Expiring gigs found — notifications saved to scrapers/logs/expiry_notifications.json"
+            cat scrapers/logs/expiry_notifications.json
+          else
+            echo "No gigs expiring soon"
+          fi
+
       - name: Commit updated data
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add src/_data/resources/ src/_data/stories.json src/_data/spotlights.json src/blog/ scrapers/logs/
-          git diff --staged --quiet || git commit -m "Weekly scrape: update resources, stories, spotlights, and blog"
+          git add src/_data/resources/ src/_data/stories.json src/_data/spotlights.json src/_data/gigs.json src/blog/ scrapers/logs/
+          git diff --staged --quiet || git commit -m "Weekly scrape: update resources, stories, spotlights, blog, and gigs"
           git push
 
       - name: Setup Node.js

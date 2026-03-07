@@ -1,0 +1,70 @@
+---
+layout: layouts/base.njk
+title: Respond to a Gig
+description: "Express your interest in a gig posted on the Caregiver Gig Board."
+permalink: /gigs/respond/
+---
+
+<section class="py-16">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">I'm Interested!</h1>
+    <div id="gig-info" class="text-center mb-8" style="color: var(--color-text-light);">
+      <p>Loading gig details...</p>
+    </div>
+
+    <form id="respond-form" action="https://formspree.io/f/{{ site.formspree.gigResponse }}" method="POST" class="space-y-6" style="display: none;">
+      <input type="hidden" id="respond-gig-id" name="gigId">
+      <input type="hidden" id="respond-gig-title" name="gigTitle">
+      <input type="hidden" id="respond-poster-email" name="_replyto">
+
+      <div>
+        <label for="respond-name" class="block text-sm font-semibold mb-2">Your Name *</label>
+        <input type="text" id="respond-name" name="name" required class="form-input" placeholder="Your full name">
+      </div>
+
+      <div>
+        <label for="respond-email" class="block text-sm font-semibold mb-2">Your Email *</label>
+        <input type="email" id="respond-email" name="email" required class="form-input" placeholder="your@email.com">
+      </div>
+
+      <div>
+        <label for="respond-message" class="block text-sm font-semibold mb-2">Why are you a good fit? *</label>
+        <textarea id="respond-message" name="message" rows="5" required class="form-input" placeholder="Tell the poster about your experience, skills, and why you're interested in this gig..."></textarea>
+      </div>
+
+      <div>
+        <label for="respond-availability" class="block text-sm font-semibold mb-2">Your Availability</label>
+        <input type="text" id="respond-availability" name="availability" class="form-input" placeholder="e.g., Weekday evenings, Weekends, Flexible">
+      </div>
+
+      <div>
+        <button type="submit" class="btn-primary w-full text-center text-lg">Send My Response</button>
+      </div>
+
+      <p class="text-xs text-center" style="color: var(--color-text-light);">
+        Your response will be forwarded directly to the gig poster. They'll reply to you via email.
+      </p>
+    </form>
+
+    <div id="gig-not-found" class="card p-8 text-center" style="display: none;">
+      <p class="text-lg mb-4" style="color: var(--color-text-light);">Gig not found or may have expired.</p>
+      <a href="/gigs/" class="btn-primary no-underline">Browse Active Gigs</a>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="/gigs/" class="text-sm no-underline" style="color: var(--color-secondary);">&larr; Back to Gig Board</a>
+    </div>
+  </div>
+</section>
+
+{# Inject gig data for JS lookup — posterEmail included for hidden field only #}
+<script id="gig-data" type="application/json">
+[{% for gig in gigs %}{
+  "id": "{{ gig.id }}",
+  "title": "{{ gig.title | jsonEscape }}",
+  "posterFirstName": "{{ gig.posterFirstName }}",
+  "posterEmail": "{{ gig.posterEmail }}",
+  "status": "{{ gig.status }}"
+}{% if not loop.last %},{% endif %}{% endfor %}]
+</script>
+<script src="/js/gigRespond.js"></script>

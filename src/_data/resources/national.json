@@ -225,7 +225,7 @@
     "area": "",
     "description": "Free developmental milestone resources, checklists, and tips for parents to track their child's development from 2 months to 5 years.",
     "phone": "",
-    "website": "https://www.cdc.gov/ncbddd/actearly/",
+    "website": "https://www.cdc.gov/act-early/index.html",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -233,7 +233,7 @@
     "tags": [
       "early-intervention"
     ],
-    "source": "https://www.cdc.gov/ncbddd/actearly/",
+    "source": "https://www.cdc.gov/act-early/index.html",
     "lastScraped": "2026-03-06"
   },
   {
@@ -414,26 +414,6 @@
       "mental-health"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "National Aging and Disability Transportation Center",
-    "category": [
-      "transportation"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Resources for accessible transportation options across the country for people with disabilities and older adults.",
-    "phone": "",
-    "website": "https://www.nadtc.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "transportation"
-    ],
-    "source": "https://www.nadtc.org/",
     "lastScraped": "2026-03-06"
   },
   {
@@ -625,7 +605,7 @@
     "area": "",
     "description": "Adaptive sports programs for youth and adults with physical disabilities including skiing, cycling, kayaking, and more.",
     "phone": "",
-    "website": "https://www.move-united.org/",
+    "website": "https://moveunitedsport.org/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -633,7 +613,7 @@
     "tags": [
       "sports"
     ],
-    "source": "https://www.move-united.org/",
+    "source": "https://moveunitedsport.org/",
     "lastScraped": "2026-03-06"
   },
   {
@@ -685,7 +665,7 @@
     "area": "",
     "description": "FEMA resources for emergency planning and disaster response for people with disabilities.",
     "phone": "",
-    "website": "https://www.fema.gov/emergency-managers/individuals-communities/disability",
+    "website": "https://www.fema.gov/about/offices/disability",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -693,7 +673,7 @@
     "tags": [
       "emergency"
     ],
-    "source": "https://www.fema.gov/emergency-managers/individuals-communities/disability",
+    "source": "https://www.fema.gov/about/offices/disability",
     "lastScraped": "2026-03-06"
   },
   {
@@ -725,7 +705,7 @@
     "area": "",
     "description": "Find certified professionals trained in accessible home design and modifications for people with disabilities.",
     "phone": "",
-    "website": "https://www.nahb.org/advocacy/industry-issues/accessibility/CAPS-program",
+    "website": "https://www.nahb.org/education-and-events/credentials/certified-aging-in-place-specialist-caps",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -733,7 +713,506 @@
     "tags": [
       "home-modifications"
     ],
-    "source": "https://www.nahb.org/advocacy/industry-issues/accessibility/CAPS-program",
+    "source": "https://www.nahb.org/education-and-events/credentials/certified-aging-in-place-specialist-caps",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Target - Cat & Jack Adaptive",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive clothing line for kids featuring sensory-friendly options, seated-wear designs, abdominal access for feeding tubes, and easy-on/off shoes.",
+    "phone": "",
+    "website": "https://www.target.com/c/adaptive-clothing/-/N-ad2ik",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "sensory-friendly",
+      "seated-wear",
+      "kids"
+    ],
+    "source": "https://www.target.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Target - Adaptive Backpacks & Gear",
+    "category": [
+      "clothing",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Wheelchair-compatible backpacks and adaptive gear designed for individuals who use mobility devices.",
+    "phone": "",
+    "website": "https://www.target.com/c/adaptive-clothing/-/N-ad2ik",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-gear",
+      "wheelchair",
+      "backpack"
+    ],
+    "source": "https://www.target.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Tommy Hilfiger Adaptive",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Mainstream fashion brand with adaptive clothing line featuring magnetic buttons, adjustable hems, and seated-wear designs for adults and children.",
+    "phone": "",
+    "website": "https://usa.tommy.com/en/tommy-adaptive",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "magnetic-closures",
+      "fashion"
+    ],
+    "source": "https://usa.tommy.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Nike FlyEase",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Nike's hands-free, easy-entry shoe technology designed for people with disabilities. Features flip-back heels and zippered openings.",
+    "phone": "",
+    "website": "https://www.nike.com/flyease",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-shoes",
+      "footwear",
+      "hands-free"
+    ],
+    "source": "https://www.nike.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Zappos Adaptive",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Curated collection of adaptive clothing, shoes, and accessories from multiple brands. Includes single-shoe purchasing for amputees.",
+    "phone": "",
+    "website": "https://www.zappos.com/e/adaptive",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "adaptive-shoes",
+      "single-shoe"
+    ],
+    "source": "https://www.zappos.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Kohl's Adaptive Clothing",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive clothing options including easy-dress styles, sensory-friendly fabrics, and wheelchair-friendly designs.",
+    "phone": "",
+    "website": "https://www.kohls.com/catalog/adaptive-clothing.jsp",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "sensory-friendly"
+    ],
+    "source": "https://www.kohls.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Kozie Clothes",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Sensory-friendly clothing with tagless designs, flat seams, and soft fabrics for children with sensory processing challenges.",
+    "phone": "",
+    "website": "https://www.kozieclothes.com",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [
+      "sensory-processing"
+    ],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "sensory-friendly",
+      "tagless"
+    ],
+    "source": "https://www.kozieclothes.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Downs Designs",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Jeans and pants designed specifically for individuals with Down syndrome, accounting for body proportions and ease of dressing.",
+    "phone": "",
+    "website": "https://downsdesigns.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "down-syndrome"
+    ],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "down-syndrome",
+      "jeans"
+    ],
+    "source": "https://downsdesigns.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Juniper Adaptive",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive clothing designed by occupational therapists for children with disabilities, featuring easy-dress openings and sensory-friendly fabrics.",
+    "phone": "",
+    "website": "https://www.juniperunlimited.com",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "OT-designed",
+      "kids"
+    ],
+    "source": "https://www.juniperunlimited.com",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Epilepsy Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading national nonprofit supporting people with epilepsy and seizure disorders through education, advocacy, research funding, and community programs.",
+    "phone": "1-800-332-1000",
+    "website": "https://www.epilepsy.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "epilepsy",
+      "seizure-disorders"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "epilepsy",
+      "seizures",
+      "advocacy"
+    ],
+    "source": "https://www.epilepsy.com/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "National Down Syndrome Society (NDSS)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading human rights organization for people with Down syndrome, providing advocacy, education, research, and community programs.",
+    "phone": "1-800-221-4602",
+    "website": "https://www.ndss.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "down-syndrome"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "down-syndrome",
+      "advocacy"
+    ],
+    "source": "https://www.ndss.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "National Down Syndrome Congress",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides information, advocacy, and support to families, individuals, and professionals involved with Down syndrome. Hosts annual convention.",
+    "phone": "1-800-232-6372",
+    "website": "https://www.ndsccenter.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "down-syndrome"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "down-syndrome",
+      "family-support"
+    ],
+    "source": "https://www.ndsccenter.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Tim Tebow Foundation - Night to Shine",
+    "category": [
+      "nonprofit",
+      "recreation"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosts Night to Shine, a worldwide prom experience for people with special needs ages 14+. Events held at churches in all 50 states and internationally.",
+    "phone": "",
+    "website": "https://www.timtebowfoundation.org/night-to-shine",
+    "address": "",
+    "ageRange": "14+",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "nonprofit",
+      "events",
+      "prom",
+      "social"
+    ],
+    "source": "https://www.timtebowfoundation.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Colin Farrell Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Founded by actor Colin Farrell, supports organizations and programs serving individuals with intellectual disabilities, inspired by his son who has Angelman syndrome.",
+    "phone": "",
+    "website": "https://colinfarrellfoundation.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "intellectual-disability",
+      "angelman-syndrome"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "intellectual-disability",
+      "grants"
+    ],
+    "source": "https://colinfarrellfoundation.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "United Cerebral Palsy (UCP)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National organization advancing the independence and inclusion of people with cerebral palsy and other disabilities through programs and advocacy.",
+    "phone": "",
+    "website": "https://ucp.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "cerebral-palsy"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "cerebral-palsy",
+      "advocacy"
+    ],
+    "source": "https://ucp.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Autism Speaks",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Autism advocacy organization providing resources, research funding, and community support for individuals with autism and their families.",
+    "phone": "",
+    "website": "https://www.autismspeaks.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "autism",
+      "research",
+      "advocacy"
+    ],
+    "source": "https://www.autismspeaks.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Muscular Dystrophy Association (MDA)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Supports people with muscular dystrophy and related neuromuscular diseases through research, care, and advocacy. Includes MDA Summer Camp.",
+    "phone": "1-800-572-1717",
+    "website": "https://www.mda.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "muscular-dystrophy",
+      "neuromuscular"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "muscular-dystrophy",
+      "research",
+      "camps"
+    ],
+    "source": "https://www.mda.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Spina Bifida Association",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National organization serving individuals with spina bifida through education, advocacy, research, and community programs.",
+    "phone": "1-800-621-3141",
+    "website": "https://www.spinabifidaassociation.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "spina-bifida"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "spina-bifida",
+      "advocacy"
+    ],
+    "source": "https://www.spinabifidaassociation.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "National Organization for Rare Disorders (NORD)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Patient advocacy organization for individuals with rare diseases and disabilities. Provides financial assistance programs and a rare disease database.",
+    "phone": "",
+    "website": "https://rarediseases.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "rare-diseases"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "rare-diseases",
+      "financial-assistance"
+    ],
+    "source": "https://rarediseases.org/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Easterseals",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading nonprofit providing services for people with disabilities including early intervention, therapy, employment training, camping, and adult day programs.",
+    "phone": "1-800-221-6827",
+    "website": "https://www.easterseals.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "therapy",
+      "employment",
+      "camps"
+    ],
+    "source": "https://www.easterseals.com/",
+    "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Best Buddies International",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Creates one-to-one friendships, employment opportunities, and leadership development for people with intellectual and developmental disabilities.",
+    "phone": "",
+    "website": "https://www.bestbuddies.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "intellectual-disability",
+      "developmental"
+    ],
+    "cost": "",
+    "tags": [
+      "nonprofit",
+      "friendship",
+      "employment",
+      "social"
+    ],
+    "source": "https://www.bestbuddies.org/",
+    "lastScraped": "2026-03-07"
   }
 ]

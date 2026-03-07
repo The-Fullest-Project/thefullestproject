@@ -66,6 +66,12 @@ module.exports = function(eleventyConfig) {
     return items.filter(item => item.featured);
   });
 
+  eleventyConfig.addFilter("filterActiveGigs", function(gigs) {
+    if (!gigs) return [];
+    const now = new Date().toISOString().split('T')[0];
+    return gigs.filter(g => g.status === 'open' && g.expiresDate >= now);
+  });
+
   return {
     pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {

@@ -1,0 +1,183 @@
+---
+layout: layouts/base.njk
+title: Post a Gig
+description: "Post a task you need help with, or offer your skills to fellow caregivers."
+permalink: /gigs/post/
+---
+
+<section class="py-16">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Post a Gig</h1>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">
+      Need help with a task? Or have skills to offer other caregivers? Fill out the form below and your gig will be live within minutes.
+    </p>
+
+    <form id="gig-form" action="https://formspree.io/f/{{ site.formspree.gigSubmission }}" method="POST" class="space-y-6" data-worker-url="{{ site.gigWorkerUrl }}">
+
+      <div>
+        <label for="gig-type" class="block text-sm font-semibold mb-2">What are you looking to do? *</label>
+        <select id="gig-type" name="type" required class="form-input">
+          <option value="">Select...</option>
+          <option value="seeking-help">I need help with a task</option>
+          <option value="offering-help">I want to offer my skills</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gig-title" class="block text-sm font-semibold mb-2">Gig Title *</label>
+        <input type="text" id="gig-title" name="title" required class="form-input" placeholder="e.g., Research accessible vacation rentals" maxlength="120">
+      </div>
+
+      <div>
+        <label for="gig-category" class="block text-sm font-semibold mb-2">Category *</label>
+        <select id="gig-category" name="category" required class="form-input">
+          <option value="">Select category...</option>
+          <option value="research">Research</option>
+          <option value="sewing">Sewing & Alterations</option>
+          <option value="organization">Organization & Paperwork</option>
+          <option value="tech-help">Technology Help</option>
+          <option value="errands">Errands & Shopping</option>
+          <option value="meal-prep">Meal Preparation</option>
+          <option value="respite">Respite Care</option>
+          <option value="transportation">Transportation</option>
+          <option value="home-mods">Home Modifications</option>
+          <option value="tutoring">Tutoring & Education</option>
+          <option value="creative">Creative Projects</option>
+          <option value="admin">Administrative Tasks</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gig-description" class="block text-sm font-semibold mb-2">Description *</label>
+        <textarea id="gig-description" name="description" rows="5" required class="form-input" placeholder="Describe the task, what you're looking for, any requirements or qualifications needed..."></textarea>
+      </div>
+
+      <div>
+        <label for="gig-location" class="block text-sm font-semibold mb-2">Location *</label>
+        <select id="gig-location" name="location" required class="form-input">
+          <option value="">Select location...</option>
+          <option value="Northern Virginia">Northern Virginia</option>
+          <option value="Portland">Portland, OR</option>
+          <option value="National">National / Any Location</option>
+        </select>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <input type="checkbox" id="gig-remote" name="remote" value="true" class="w-4 h-4">
+        <label for="gig-remote" class="text-sm font-semibold">This task can be done remotely</label>
+      </div>
+
+      <div>
+        <label for="gig-compensation" class="block text-sm font-semibold mb-2">Compensation *</label>
+        <select id="gig-compensation" name="compensation" required class="form-input">
+          <option value="">Select...</option>
+          <option value="paid">Paid</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="trade">Trade / Exchange</option>
+        </select>
+      </div>
+
+      <div id="rate-field" style="display: none;">
+        <label for="gig-rate" class="block text-sm font-semibold mb-2">Rate / Pay Details</label>
+        <input type="text" id="gig-rate" name="rate" class="form-input" placeholder="e.g., $20/hour, $100 flat rate">
+      </div>
+
+      <div>
+        <label for="gig-timeline" class="block text-sm font-semibold mb-2">Timeline</label>
+        <input type="text" id="gig-timeline" name="timeline" class="form-input" placeholder="e.g., Within 2 weeks, Ongoing, ASAP">
+      </div>
+
+      <div>
+        <label for="gig-skills" class="block text-sm font-semibold mb-2">Skills (optional)</label>
+        <input type="text" id="gig-skills" name="skills" class="form-input" placeholder="e.g., sewing, research, driving">
+      </div>
+
+      <div>
+        <label for="gig-poster-name" class="block text-sm font-semibold mb-2">Your First Name *</label>
+        <input type="text" id="gig-poster-name" name="posterFirstName" required class="form-input" placeholder="First name only">
+      </div>
+
+      <div>
+        <label for="gig-poster-email" class="block text-sm font-semibold mb-2">Your Email *</label>
+        <input type="email" id="gig-poster-email" name="posterEmail" required class="form-input" placeholder="your@email.com">
+        <p class="text-xs mt-1" style="color: var(--color-text-light);">Your email is never shown publicly — it's only used to forward responses to you and send expiration reminders.</p>
+      </div>
+
+      <div>
+        <button type="submit" id="gig-submit-btn" class="btn-primary w-full text-center text-lg">Post My Gig</button>
+      </div>
+
+      <div id="gig-status" class="hidden mt-4 p-4 rounded-lg text-center font-semibold"></div>
+    </form>
+
+    <div class="mt-8 card p-6" style="background-color: var(--color-warm-light);">
+      <h3 class="font-semibold mb-2" style="color: var(--color-primary);">How it works:</h3>
+      <ul class="text-sm space-y-2" style="color: var(--color-text-light);">
+        <li><span class="font-semibold">1.</span> Submit your gig using the form above</li>
+        <li><span class="font-semibold">2.</span> Your gig goes live on the board within minutes</li>
+        <li><span class="font-semibold">3.</span> Interested caregivers contact you through our secure response form</li>
+        <li><span class="font-semibold">4.</span> Gigs automatically expire after 2 weeks — you'll get an email reminder before expiration with the option to extend or close</li>
+      </ul>
+    </div>
+
+    <div class="mt-6 text-center">
+      <a href="/gigs/" class="text-sm no-underline" style="color: var(--color-secondary);">&larr; Back to Gig Board</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  // Show/hide rate field based on compensation selection
+  var comp = document.getElementById('gig-compensation');
+  var rateField = document.getElementById('rate-field');
+  if (comp && rateField) {
+    comp.addEventListener('change', function() {
+      rateField.style.display = comp.value === 'paid' ? '' : 'none';
+    });
+  }
+
+  // Submit to Cloudflare Worker if configured, otherwise fall back to Formspree
+  var form = document.getElementById('gig-form');
+  var workerUrl = form ? form.getAttribute('data-worker-url') : '';
+  if (!form || !workerUrl) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('gig-submit-btn');
+    var status = document.getElementById('gig-status');
+    btn.disabled = true;
+    btn.textContent = 'Publishing...';
+    status.className = 'hidden mt-4 p-4 rounded-lg text-center font-semibold';
+
+    fetch(workerUrl, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(function(res) { return res.json().then(function(data) { return { ok: res.ok, data: data }; }); })
+    .then(function(result) {
+      if (result.ok) {
+        status.textContent = result.data.message || 'Your gig has been published!';
+        status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
+        status.style.backgroundColor = 'var(--color-warm-light)';
+        status.style.color = 'var(--color-primary)';
+        form.reset();
+        rateField.style.display = 'none';
+      } else {
+        throw new Error(result.data.error || 'Something went wrong');
+      }
+    })
+    .catch(function(err) {
+      status.textContent = 'Error: ' + err.message + '. Please try again.';
+      status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
+      status.style.backgroundColor = '#fef2f2';
+      status.style.color = '#b91c1c';
+    })
+    .finally(function() {
+      btn.disabled = false;
+      btn.textContent = 'Post My Gig';
+    });
+  });
+})();
+</script>

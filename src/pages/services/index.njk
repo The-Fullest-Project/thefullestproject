@@ -49,25 +49,23 @@ permalink: /services/
       </div>
 
       <!-- Gig Platform -->
-      <div class="card p-8" style="border: 2px dashed var(--color-accent);">
-        <span class="tag mb-4" style="background-color: var(--color-accent); color: white;">Coming Soon</span>
+      <div class="card p-8" style="border: 2px solid var(--color-accent);">
+        <span class="tag mb-4" style="background-color: var(--color-accent); color: white;">Live</span>
         <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Caregiver Gig Platform</h2>
         <p class="mb-6" style="color: var(--color-text-light);">
           A gig-economy platform designed to empower caregivers. Need help with research, sewing modifications, or other tasks? Connect with individuals who have the skills and flexibility to help — often fellow caregivers who can't work traditional full-time jobs.
         </p>
-        <h3 class="font-semibold mb-3">How It Will Work:</h3>
+        <h3 class="font-semibold mb-3">How It Works:</h3>
         <ul class="list-disc list-inside space-y-1 text-sm mb-6" style="color: var(--color-text-light);">
           <li>Post tasks you need help with</li>
           <li>Browse skilled helpers in your area</li>
           <li>Flexible scheduling for both sides</li>
-          <li>Empowering caregivers with additional income</li>
+          <li>Gigs auto-expire after 2 weeks with email reminders</li>
         </ul>
-        <form action="https://formspree.io/f/{{ site.formspree.newsletter }}" method="POST" class="flex flex-col gap-2">
-          <input type="hidden" name="interest" value="gig-platform">
-          <label for="gig-email" class="sr-only">Email to get notified</label>
-          <input type="email" id="gig-email" name="email" placeholder="Get notified at launch" class="form-input text-sm">
-          <button type="submit" class="btn-secondary text-sm text-center">Notify Me</button>
-        </form>
+        <div class="flex flex-col gap-2">
+          <a href="/gigs/" class="btn-primary no-underline text-center text-sm">Browse Gigs</a>
+          <a href="/gigs/post/" class="btn-secondary no-underline text-center text-sm">Post a Gig</a>
+        </div>
       </div>
 
     </div>

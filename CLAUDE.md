@@ -61,6 +61,10 @@ the-fullest-project/
 │   │   ├── adaptive-equipment.njk
 │   │   ├── school-iep/         # IEP/504 navigation guide
 │   │   ├── services/           # Coaching and gig platform info
+│   │   ├── gigs/               # Caregiver Gig Platform
+│   │   │   ├── index.njk       # Filterable gig board
+│   │   │   ├── post.njk        # Post a gig form
+│   │   │   └── respond.njk     # Respond to a gig form
 │   │   ├── blog.njk            # Blog listing
 │   │   ├── podcast.njk         # Podcast listing
 │   │   ├── about.njk           # Founder bios and mission
@@ -72,7 +76,9 @@ the-fullest-project/
 │   │   └── styles.css          # Tailwind input with custom theme and components
 │   ├── js/
 │   │   ├── main.js             # Mobile menu toggle
-│   │   └── resourceFilter.js   # Client-side search/filter for resource directory
+│   │   ├── resourceFilter.js   # Client-side search/filter for resource directory
+│   │   ├── gigFilter.js        # Client-side search/filter for gig board
+│   │   └── gigRespond.js       # Gig response page URL param handler
 │   ├── images/                 # Static images (passthrough copy)
 │   ├── sitemap.njk             # XML sitemap generator
 │   └── robots.njk              # robots.txt generator
@@ -83,13 +89,15 @@ the-fullest-project/
 │   ├── sources/                # Individual scraper modules
 │   │   ├── national_resources.py
 │   │   ├── nova_resources.py
-│   │   └── example_arc.py      # Template scraper
+│   │   ├── example_arc.py      # Template scraper
+│   │   └── process_gig.py      # Gig auto-publish, expire, extend, digest
 │   └── output/                 # Raw scraper output (JSON)
 ├── _site/                      # Built output (gitignored)
 ├── .eleventy.js                # Eleventy configuration
 ├── .github/workflows/
 │   ├── deploy.yml              # Build + FTP deploy on push to main
-│   └── scrape.yml              # Weekly scrape → commit → build → deploy
+│   ├── scrape.yml              # Weekly scrape → commit → build → deploy
+│   └── gig-publish.yml         # Auto-publish gig from Formspree webhook
 ├── deploy.js                   # Manual FTP deployment script
 ├── package.json                # Node.js dependencies and scripts
 ├── .env.example                # FTP credential template
@@ -183,6 +191,35 @@ Client-side JavaScript is minimal and vanilla — just a mobile nav toggle (`mai
   "lastScraped": "2026-03-06"
 }
 ```
+
+### Gig Data Schema
+```json
+{
+  "id": "gig-YYYYMMDD-XXXX",
+  "title": "Gig title (max 120 chars)",
+  "type": "seeking-help | offering-help",
+  "category": "research | sewing | organization | tech-help | errands | meal-prep | respite | transportation | home-mods | tutoring | creative | admin | other",
+  "description": "Full description",
+  "location": "Northern Virginia | Portland | National",
+  "remote": true,
+  "compensation": "paid | volunteer | trade",
+  "rate": "$25/hour (if paid)",
+  "timeline": "Within 2 weeks",
+  "postedDate": "2026-03-07",
+  "expiresDate": "2026-03-21",
+  "status": "open | expired | closed | removed",
+  "posterFirstName": "First name only",
+  "posterEmail": "PRIVATE — never rendered in templates",
+  "skills": ["skill1", "skill2"],
+  "tags": ["tag1"]
+}
+```
+
+### Gig Platform Pipeline
+- Gig submissions auto-publish via Formspree webhook → `gig-publish.yml` → `process_gig.py`
+- Gigs auto-expire after 14 days; weekly scrape runs `process_gig.py --expire`
+- Poster receives expiry notification email with option to extend or close
+- `process_gig.py` supports: publish, `--expire`, `--extend <id>`, `--close <id>`, `--digest`
 
 ## Available Commands
 

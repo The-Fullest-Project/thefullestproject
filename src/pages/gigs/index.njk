@@ -1,0 +1,135 @@
+---
+layout: layouts/base.njk
+title: Caregiver Gig Board
+description: "Browse and post gigs — connect with fellow caregivers who can help with tasks, or offer your skills to others."
+permalink: /gigs/
+---
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Caregiver Gig Board</h1>
+    <p class="text-center mb-12 max-w-2xl mx-auto" style="color: var(--color-text-light);">
+      Need help with a task? Or have skills to offer? Browse gigs posted by fellow caregivers, or post your own.
+    </p>
+
+    <!-- Filters -->
+    <div class="card p-6 mb-8">
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-end flex-wrap">
+        <div class="flex-grow">
+          <label for="gig-search" class="block text-sm font-semibold mb-2">Search</label>
+          <input type="text" id="gig-search" placeholder="Search gigs..." class="form-input">
+        </div>
+        <div>
+          <label for="gig-type-filter" class="block text-sm font-semibold mb-2">Type</label>
+          <select id="gig-type-filter" class="filter-select">
+            <option value="">All Types</option>
+            <option value="seeking-help">Seeking Help</option>
+            <option value="offering-help">Offering Help</option>
+          </select>
+        </div>
+        <div>
+          <label for="gig-location-filter" class="block text-sm font-semibold mb-2">Location</label>
+          <select id="gig-location-filter" class="filter-select">
+            <option value="">All Locations</option>
+            <option value="National">National</option>
+            <option value="Northern Virginia">Northern Virginia</option>
+            <option value="Portland">Portland</option>
+          </select>
+        </div>
+        <div>
+          <label for="gig-category-filter" class="block text-sm font-semibold mb-2">Category</label>
+          <select id="gig-category-filter" class="filter-select">
+            <option value="">All Categories</option>
+            <option value="research">Research</option>
+            <option value="sewing">Sewing & Alterations</option>
+            <option value="organization">Organization</option>
+            <option value="tech-help">Tech Help</option>
+            <option value="errands">Errands</option>
+            <option value="meal-prep">Meal Prep</option>
+            <option value="respite">Respite Care</option>
+            <option value="transportation">Transportation</option>
+            <option value="home-mods">Home Modifications</option>
+            <option value="tutoring">Tutoring</option>
+            <option value="creative">Creative</option>
+            <option value="admin">Administrative</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="gig-compensation-filter" class="block text-sm font-semibold mb-2">Compensation</label>
+          <select id="gig-compensation-filter" class="filter-select">
+            <option value="">Any</option>
+            <option value="paid">Paid</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="trade">Trade</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results count -->
+    <p id="gig-results-count" class="text-sm mb-6" style="color: var(--color-text-light);"></p>
+
+    <!-- Gig Grid -->
+    {%- set activeGigs = gigs | filterActiveGigs -%}
+    <div id="gig-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for gig in activeGigs %}
+      {# PRIVATE: posterEmail is never rendered visibly #}
+      <div class="card p-6 gig-card"
+           data-type="{{ gig.type }}"
+           data-location="{{ gig.location }}"
+           data-category="{{ gig.category }}"
+           data-compensation="{{ gig.compensation }}"
+           data-name="{{ gig.title | lower }}"
+           data-description="{{ gig.description | lower }}"
+           data-poster-email="{{ gig.posterEmail }}"
+           data-gig-id="{{ gig.id }}">
+        <div class="flex flex-wrap gap-2 mb-3">
+          {% if gig.type == "seeking-help" %}
+          <span class="tag" style="background-color: var(--color-secondary); color: white;">Seeking Help</span>
+          {% else %}
+          <span class="tag" style="background-color: var(--color-primary); color: white;">Offering Help</span>
+          {% endif %}
+          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ gig.category | replace("-", " ") | title }}</span>
+          {% if gig.remote %}
+          <span class="tag" style="background-color: var(--color-accent-light); color: white;">Remote OK</span>
+          {% endif %}
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary);">{{ gig.title }}</h3>
+        <p class="text-sm mb-4" style="color: var(--color-text-light);">{{ gig.description }}</p>
+        <div class="space-y-1 text-sm mb-4" style="color: var(--color-text-light);">
+          <p><span class="font-semibold">Location:</span> {{ gig.location }}{% if gig.remote %} (Remote OK){% endif %}</p>
+          <p><span class="font-semibold">Compensation:</span>
+            {% if gig.compensation == "paid" %}{{ gig.rate }}
+            {% elif gig.compensation == "volunteer" %}Volunteer
+            {% else %}Trade/Exchange{% endif %}
+          </p>
+          {% if gig.timeline %}
+          <p><span class="font-semibold">Timeline:</span> {{ gig.timeline }}</p>
+          {% endif %}
+          <p><span class="font-semibold">Posted by:</span> {{ gig.posterFirstName }}</p>
+          <p class="text-xs opacity-70">Posted {{ gig.postedDate | dateFormat }} · Expires {{ gig.expiresDate | dateFormat }}</p>
+        </div>
+        <a href="/gigs/respond/?gig={{ gig.id }}" class="btn-primary text-sm no-underline inline-block text-center w-full">I'm Interested</a>
+      </div>
+      {% else %}
+      <div class="card p-8 text-center md:col-span-2 lg:col-span-3">
+        <p class="text-lg mb-4" style="color: var(--color-text-light);">No active gigs right now.</p>
+        <p class="mb-6" style="color: var(--color-text-light);">Be the first to post a gig and connect with fellow caregivers!</p>
+        <a href="/gigs/post/" class="btn-primary no-underline">Post a Gig</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Post CTA -->
+    {% if activeGigs.length %}
+    <div class="mt-12 text-center card p-8">
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Have a Task or Skill to Share?</h2>
+      <p class="mb-6" style="color: var(--color-text-light);">Post a gig to connect with caregivers in your area. Whether you need help or want to offer your skills, we'll help you connect.</p>
+      <a href="/gigs/post/" class="btn-primary no-underline">Post a Gig</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<script src="/js/gigFilter.js"></script>

@@ -12,9 +12,12 @@
   },
   "coverage": "All 50 US States + DC + National",
   "googleAnalytics": "",
+  "gigWorkerUrl": "https://gig-publisher.patrick-m-berrigan.workers.dev",
   "formspree": {
-    "contact": "YOUR_FORMSPREE_CONTACT_ID",
-    "submitResource": "YOUR_FORMSPREE_RESOURCE_ID",
-    "newsletter": "YOUR_FORMSPREE_NEWSLETTER_ID"
+    "contact": "mzdjzzvw",
+    "submitResource": "xpqywwla",
+    "newsletter": "meeroozw",
+    "gigSubmission": "xojkvvlo",
+    "gigResponse": "mreybbab"
   }
 }
