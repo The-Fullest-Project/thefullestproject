@@ -133,7 +133,6 @@ permalink: /gigs/
            data-compensation="{{ gig.compensation }}"
            data-name="{{ gig.title | lower }}"
            data-description="{{ gig.description | lower }}"
-           data-poster-email="{{ gig.posterEmail }}"
            data-gig-id="{{ gig.id }}">
         <div class="flex flex-wrap gap-2 mb-3">
           {% if gig.type == "seeking-help" %}
@@ -161,7 +160,10 @@ permalink: /gigs/
           <p><span class="font-semibold">Posted by:</span> {{ gig.posterFirstName }}</p>
           <p class="text-xs opacity-70">Posted {{ gig.postedDate | dateFormat }} · Expires {{ gig.expiresDate | dateFormat }}</p>
         </div>
-        <a href="/gigs/respond/?gig={{ gig.id }}" class="btn-primary text-sm no-underline inline-block text-center w-full">I'm Interested</a>
+        <div class="flex gap-2">
+          <a href="/gigs/respond/?gig={{ gig.id }}" class="btn-primary text-sm no-underline inline-block text-center flex-grow">I'm Interested</a>
+          <a href="/gigs/manage/?gig={{ gig.id }}" class="btn-secondary text-sm no-underline inline-block text-center" title="Close this gig">Close</a>
+        </div>
       </div>
       {% else %}
       <div class="card p-8 text-center md:col-span-2 lg:col-span-3">

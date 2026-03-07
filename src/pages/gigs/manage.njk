@@ -1,0 +1,100 @@
+---
+layout: layouts/base.njk
+title: Manage Your Gig
+description: "Close or remove your gig posting from the Caregiver Gig Board."
+permalink: /gigs/manage/
+---
+
+<section class="py-16">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Manage Your Gig</h1>
+    <p class="text-center mb-8" style="color: var(--color-text-light);">
+      Enter your Gig ID and the email you used when posting to close your gig.
+    </p>
+
+    <form id="manage-form" class="space-y-6 card p-8" data-worker-url="{{ site.gigWorkerUrl }}">
+      <div>
+        <label for="manage-gig-id" class="block text-sm font-semibold mb-2">Gig ID *</label>
+        <input type="text" id="manage-gig-id" name="gigId" required class="form-input" placeholder="e.g., gig-20260307-5f0f">
+        <p class="text-xs mt-1" style="color: var(--color-text-light);">Found in your gig confirmation email or on your gig card.</p>
+      </div>
+
+      <div>
+        <label for="manage-email" class="block text-sm font-semibold mb-2">Your Email *</label>
+        <input type="email" id="manage-email" name="email" required class="form-input" placeholder="The email you used when posting">
+      </div>
+
+      <input type="hidden" id="manage-admin-key" name="adminKey" value="">
+
+      <div>
+        <button type="submit" id="manage-submit-btn" class="btn-primary w-full text-center text-lg">Close My Gig</button>
+      </div>
+
+      <div id="manage-status" class="hidden mt-4 p-4 rounded-lg text-center font-semibold"></div>
+    </form>
+
+    <div class="mt-8 text-center">
+      <a href="/gigs/" class="text-sm no-underline" style="color: var(--color-secondary);">&larr; Back to Gig Board</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var form = document.getElementById('manage-form');
+  if (!form) return;
+  var workerUrl = form.getAttribute('data-worker-url');
+  if (!workerUrl) return;
+
+  // Pre-fill gig ID from URL param
+  var urlParams = new URLSearchParams(window.location.search);
+  var gigParam = urlParams.get('gig');
+  if (gigParam) {
+    document.getElementById('manage-gig-id').value = gigParam;
+  }
+  var adminParam = urlParams.get('admin');
+  if (adminParam) {
+    document.getElementById('manage-admin-key').value = adminParam;
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('manage-submit-btn');
+    var status = document.getElementById('manage-status');
+    btn.disabled = true;
+    btn.textContent = 'Closing...';
+    status.className = 'hidden mt-4 p-4 rounded-lg text-center font-semibold';
+
+    var body = new FormData();
+    body.append('action', 'close');
+    body.append('gigId', document.getElementById('manage-gig-id').value.trim());
+    body.append('email', document.getElementById('manage-email').value.trim());
+    var adminKey = document.getElementById('manage-admin-key').value;
+    if (adminKey) body.append('adminKey', adminKey);
+
+    fetch(workerUrl, { method: 'POST', body: body })
+    .then(function(res) { return res.json().then(function(data) { return { ok: res.ok, data: data }; }); })
+    .then(function(result) {
+      if (result.ok) {
+        status.textContent = result.data.message || 'Gig closed successfully!';
+        status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
+        status.style.backgroundColor = 'var(--color-warm-light)';
+        status.style.color = 'var(--color-primary)';
+        form.reset();
+      } else {
+        throw new Error(result.data.error || 'Something went wrong');
+      }
+    })
+    .catch(function(err) {
+      status.textContent = err.message;
+      status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
+      status.style.backgroundColor = '#fef2f2';
+      status.style.color = '#b91c1c';
+    })
+    .finally(function() {
+      btn.disabled = false;
+      btn.textContent = 'Close My Gig';
+    });
+  });
+})();
+</script>
