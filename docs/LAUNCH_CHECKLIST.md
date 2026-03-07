@@ -25,31 +25,21 @@ The contact form, resource submission form, and newsletter signup all use Formsp
    ```
 5. Rebuild and deploy the site
 
-### [ ] Push Code to GitHub
-The site auto-deploys when you push to the `main` branch on GitHub.
-- Repo: https://github.com/PMBerrigan/thefullestproject
-- If not already pushed, run: `git add -A && git commit -m "Initial launch" && git push origin main`
+### [x] Push Code to GitHub
+Done. The site auto-deploys when you push to the `main` branch.
 
-### [ ] Enable GitHub Pages
-The site deploys automatically to GitHub Pages when you push to `main`.
-1. Go to https://github.com/PMBerrigan/thefullestproject/settings/pages
-2. Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
-3. That's it — the next push to `main` will build and deploy automatically
-4. Your site will be live at `https://pmberrigan.github.io/thefullestproject/` until the custom domain is configured
+- Repo: <https://github.com/PMBerrigan/thefullestproject>
 
-### [ ] Point GoDaddy Domain to GitHub Pages
-Keep GoDaddy for your domain and email — just update DNS to point to GitHub Pages:
-1. Log into GoDaddy > **My Products** > **DNS** for `thefullestproject.org`
-2. Add/update these DNS records:
-   - **A Record** `@` -> `185.199.108.153`
-   - **A Record** `@` -> `185.199.109.153`
-   - **A Record** `@` -> `185.199.110.153`
-   - **A Record** `@` -> `185.199.111.153`
-   - **CNAME** `www` -> `pmberrigan.github.io`
-3. Go back to https://github.com/PMBerrigan/thefullestproject/settings/pages
-4. Under **Custom domain**, enter `thefullestproject.org` and click Save
-5. Check **Enforce HTTPS** (free SSL certificate from GitHub — no GoDaddy SSL needed)
-6. Wait 15-30 minutes for DNS to propagate, then visit https://thefullestproject.org
+### [x] Enable GitHub Pages
+Done. GitHub Pages is enabled with GitHub Actions as the build source.
+
+- Settings: <https://github.com/PMBerrigan/thefullestproject/settings/pages>
+
+### [x] Point GoDaddy Domain to GitHub Pages
+Done. DNS records configured and custom domain verified.
+
+- Site is live at <https://thefullestproject.org>
+- **Remaining:** Check "Enforce HTTPS" in GitHub Pages settings once the SSL certificate is issued (may take up to 30 minutes)
 
 ---
 
