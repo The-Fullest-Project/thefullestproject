@@ -22,12 +22,15 @@ jobs:
       - name: Run scrapers
         run: python scrapers/run_all.py
 
+      - name: Fetch positive stories
+        run: python scrapers/sources/positive_stories.py
+
       - name: Commit updated data
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add src/_data/resources/
-          git diff --staged --quiet || git commit -m "Update scraped resource data"
+          git add src/_data/resources/ src/_data/stories.json
+          git diff --staged --quiet || git commit -m "Update scraped resource data and stories"
           git push
 
       - name: Setup Node.js

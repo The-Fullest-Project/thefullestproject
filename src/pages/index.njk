@@ -87,18 +87,21 @@ permalink: /
 <section class="py-16 section-warm">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center mb-4" style="color: var(--color-primary);">Stories & News</h2>
-    <p class="text-center mb-12" style="color: var(--color-text-light);">Positive stories from families and the disability community</p>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">Positive stories from families and the disability community — updated weekly</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {% for post in collections.blogPosts | limit(3) %}
+      {% for story in stories | limit(3) %}
       <article class="card overflow-hidden">
         <div class="p-6">
-          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ post.data.category or "Story" }}</span>
+          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ story.category or "Story" }}</span>
           <h3 class="text-lg font-bold mt-3 mb-2">
-            <a href="{{ post.url }}" class="no-underline" style="color: var(--color-text);">{{ post.data.title }}</a>
+            <a href="{{ story.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="no-underline" style="color: var(--color-text);">{{ story.title }}</a>
           </h3>
-          <p class="text-sm" style="color: var(--color-text-light);">{{ post.data.excerpt }}</p>
-          <time class="text-xs mt-3 block" style="color: var(--color-text-light);">{{ post.date | dateFormat }}</time>
+          <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ story.excerpt }}</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs" style="color: var(--color-text-light);">{{ story.sourceName }}</span>
+            <time class="text-xs" style="color: var(--color-text-light);">{{ story.date }}</time>
+          </div>
         </div>
       </article>
       {% else %}
