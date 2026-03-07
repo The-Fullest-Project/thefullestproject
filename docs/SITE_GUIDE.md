@@ -187,23 +187,28 @@ If you prefer to work on your own computer, follow these steps. You only need to
 
 **Install these three programs** (just like installing any app — download and run the installer):
 
-1. **Node.js** — Go to [https://nodejs.org](https://nodejs.org)
+**1. Node.js** — Go to [https://nodejs.org](https://nodejs.org)
    - Click the big green **"LTS"** button (LTS means "Long Term Support" — it's the stable version)
-   - Run the downloaded file and click Next/Install through the installer
-   - Leave all options at their defaults
+   - **Windows:** Run the downloaded `.msi` file and click Next/Install through the installer. Leave all defaults.
+   - **Mac:** Run the downloaded `.pkg` file. It will walk you through the install. Leave all defaults.
 
-2. **Git** — Go to [https://git-scm.com](https://git-scm.com)
-   - Click **"Download for Windows"** (or Mac)
-   - Run the installer and click Next through everything — **all the defaults are fine**
+**2. Git**
+   - **Windows:** Go to [https://git-scm.com](https://git-scm.com). Click **"Download for Windows"**. Run the installer and click Next through everything — **all the defaults are fine**. This also installs "Git Bash" which you'll use to run commands.
+   - **Mac:** Open **Terminal** (press `Cmd+Space`, type "Terminal", press Enter). Type `git --version` and press Enter. If Git isn't installed, macOS will prompt you to install it — click **"Install"** and follow the prompts. That's it!
 
-3. **Python** (only needed for running scrapers) — Go to [https://python.org/downloads](https://python.org/downloads)
+**3. Python** (only needed for running scrapers — skip this if you don't plan to run scrapers)
+   - Go to [https://python.org/downloads](https://python.org/downloads)
    - Click the big **"Download Python"** button
-   - Run the installer
-   - **IMPORTANT:** At the very first screen, check the box that says **"Add Python to PATH"** before clicking Install
+   - **Windows:** Run the installer. **IMPORTANT:** At the very first screen, check the box that says **"Add Python to PATH"** before clicking Install.
+   - **Mac:** Run the downloaded `.pkg` file and follow the prompts. Python will be added to your system automatically.
 
 #### Download the Project to Your Computer
 
-Open **Terminal** (Mac) or **Git Bash** (Windows — it was installed with Git, find it in your Start menu):
+**How to open a terminal:**
+- **Mac (Nicole):** Press `Cmd+Space` to open Spotlight, type **Terminal**, press Enter. A window with a command line will appear.
+- **Windows (Erin):** Open the Start menu, search for **Git Bash**, and click it. (Git Bash was installed with Git in step 2 above.)
+
+Type (or copy-paste) these commands one at a time, pressing Enter after each:
 
 ```
 git clone https://github.com/PMBerrigan/thefullestproject.git
@@ -237,7 +242,7 @@ Then open your browser and go to: **http://localhost:8081**
 
 You'll see the full site running on your computer. Any changes you make to files will automatically show up in the browser.
 
-**To stop the preview:** Press `Ctrl+C` in the terminal window (hold Ctrl, then press C).
+**To stop the preview:** Press `Ctrl+C` in the terminal window (hold Ctrl, then press C). This is the same on both Mac and Windows.
 
 #### Save and Upload Your Changes
 
