@@ -1,0 +1,31 @@
+{
+  "name": "the-fullest-project",
+  "version": "1.0.0",
+  "description": "A connection hub for caregivers to find disability resources, programs, and community.",
+  "scripts": {
+    "dev": "concurrently \"npx @tailwindcss/cli -i ./src/css/styles.css -o ./_site/css/output.css --watch\" \"npx @11ty/eleventy --serve --port=8081\"",
+    "build:css": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./_site/css/output.css --minify",
+    "build:11ty": "npx @11ty/eleventy",
+    "build": "npm run build:11ty && npm run build:css",
+    "serve": "npx @11ty/eleventy --serve",
+    "deploy": "npm run build && node deploy.js"
+  },
+  "keywords": [
+    "disability",
+    "resources",
+    "caregivers",
+    "special-needs",
+    "accessibility"
+  ],
+  "author": "The Fullest Project",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.2.1",
+    "basic-ftp": "^5.2.0",
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.3.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

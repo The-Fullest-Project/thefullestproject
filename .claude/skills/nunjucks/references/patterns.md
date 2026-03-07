@@ -1,0 +1,1 @@
+- 150 lines, covers layout inheritance, data access (global, collection, resource), loops/conditionals, filter usage, accessibility patterns, and 4 anti-patterns with WARNING headers (extends vs front matter, missing `.data`, missing `| safe`, missing `aria-hidden`)

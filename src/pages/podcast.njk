@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Podcast
+description: "Listen to conversations with families, professionals, and advocates making a difference in the disability community."
+permalink: /podcast/
+---
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">The Fullest Project Podcast</h1>
+    <p class="text-center mb-8" style="color: var(--color-text-light);">
+      Conversations with families, professionals, and advocates making a difference in the disability community.
+    </p>
+
+    <!-- Listen On -->
+    <div class="flex justify-center gap-4 mb-12">
+      <span class="text-sm font-semibold px-4 py-2 rounded-full" style="background-color: var(--color-warm); color: var(--color-text-light);">Coming to Spotify</span>
+      <span class="text-sm font-semibold px-4 py-2 rounded-full" style="background-color: var(--color-warm); color: var(--color-text-light);">Coming to Apple Podcasts</span>
+    </div>
+
+    <!-- Episodes -->
+    <div class="space-y-8">
+      {% for episode in collections.podcastEpisodes %}
+      <article class="card p-8">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center font-bold text-white" style="background-color: var(--color-primary);">
+            {{ episode.data.episodeNumber or loop.index }}
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-xl font-bold mb-2">
+              <a href="{{ episode.url }}" class="no-underline" style="color: var(--color-primary);">{{ episode.data.title }}</a>
+            </h2>
+            <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ episode.data.excerpt }}</p>
+            <div class="flex items-center gap-4 text-xs" style="color: var(--color-text-light);">
+              <time datetime="{{ episode.date | dateFormat }}">{{ episode.date | dateFormat }}</time>
+              {% if episode.data.duration %}
+              <span>{{ episode.data.duration }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </article>
+      {% else %}
+      <div class="card p-8 text-center">
+        <p class="text-lg mb-4" style="color: var(--color-text-light);">Episodes coming soon!</p>
+        <p style="color: var(--color-text-light);">We're recording conversations with amazing families and professionals. Sign up for our newsletter to be notified when our first episode drops.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

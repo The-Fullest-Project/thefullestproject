@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: PMBerrigan/thefullestproject
+  branch: main
+
+media_folder: "src/images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "The Fullest Project" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Story"
+          - "Guide"
+          - "News"
+          - "Resources"
+          - "Advocacy"
+          - "Parenting"
+          - "Therapy"
+          - "Education"
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "podcast"
+    label: "Podcast Episodes"
+    folder: "src/podcast"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/episode.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Episode Number", name: "episode", widget: "number" }
+      - { label: "Duration", name: "duration", widget: "string", required: false }
+      - { label: "Audio URL", name: "audioUrl", widget: "string", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Show Notes", name: "body", widget: "markdown" }

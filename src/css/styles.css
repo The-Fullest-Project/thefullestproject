@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors - Warm, empowering, accessible */
+  --color-primary: #2B6B4F;        /* Deep teal green - trust, growth */
+  --color-primary-light: #3D9970;  /* Lighter teal */
+  --color-primary-dark: #1E4D39;   /* Darker teal */
+  --color-secondary: #E8913A;      /* Warm amber - energy, warmth */
+  --color-secondary-light: #F0A85C;
+  --color-accent: #5B8DB8;         /* Calm blue - trust, accessibility */
+  --color-accent-light: #7CADD4;
+  --color-warm: #F5E6D3;           /* Warm cream - welcoming background */
+  --color-warm-light: #FBF5ED;     /* Lighter cream */
+  --color-text: #2D3436;           /* Near-black for readability */
+  --color-text-light: #636E72;     /* Secondary text */
+  --color-success: #27AE60;
+  --color-error: #E74C3C;
+
+  /* Fonts */
+  --font-heading: 'Nunito', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Skip navigation for accessibility */
+.skip-nav {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-nav:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  color: white;
+  z-index: 9999;
+  font-size: 1.125rem;
+}
+
+/* Accessible focus styles */
+*:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Card component */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+/* Resource tag */
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 50%, var(--color-accent) 100%);
+}
+
+/* Section alternating backgrounds */
+.section-warm {
+  background-color: var(--color-warm-light);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #D4801F;
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #E2E8F0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(43, 107, 79, 0.1);
+}
+
+/* Resource filter */
+.filter-select {
+  padding: 0.5rem 1rem;
+  border: 2px solid #E2E8F0;
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}

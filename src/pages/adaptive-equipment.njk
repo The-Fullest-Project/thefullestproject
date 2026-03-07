@@ -1,0 +1,98 @@
+---
+layout: layouts/base.njk
+title: Adaptive Equipment
+description: "Explore adaptive equipment options, curated product lists, and equipment loaner programs for individuals with disabilities."
+permalink: /adaptive-equipment/
+---
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Adaptive Equipment</h1>
+    <p class="text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-text-light);">
+      Finding the right adaptive equipment can make a world of difference. Browse equipment categories, loaner programs, and curated product recommendations.
+    </p>
+
+    <!-- Equipment Categories -->
+    <h2 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">Equipment Categories</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+
+      <div class="card p-6">
+        <h3 class="text-lg font-bold mb-3" style="color: var(--color-primary);">Mobility</h3>
+        <p class="text-sm" style="color: var(--color-text-light);">Wheelchairs, walkers, standers, gait trainers, adaptive strollers, and positioning equipment to support movement and independence.</p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-lg font-bold mb-3" style="color: var(--color-primary);">Communication</h3>
+        <p class="text-sm" style="color: var(--color-text-light);">AAC devices, communication boards, switches, eye-gaze technology, and speech-generating devices to support expression.</p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-lg font-bold mb-3" style="color: var(--color-primary);">Daily Living</h3>
+        <p class="text-sm" style="color: var(--color-text-light);">Adaptive utensils, dressing aids, bath equipment, toileting supports, and tools for daily routines and self-care.</p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-lg font-bold mb-3" style="color: var(--color-primary);">Sensory</h3>
+        <p class="text-sm" style="color: var(--color-text-light);">Weighted blankets, noise-canceling headphones, fidget tools, sensory swings, and calming equipment for sensory regulation.</p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-lg font-bold mb-3" style="color: var(--color-primary);">Seating & Positioning</h3>
+        <p class="text-sm" style="color: var(--color-text-light);">Adaptive seating, car seats, positioning wedges, and support systems for proper alignment and comfort.</p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-lg font-bold mb-3" style="color: var(--color-primary);">Technology</h3>
+        <p class="text-sm" style="color: var(--color-text-light);">Adaptive computer access, switch-adapted toys, environmental controls, and assistive technology devices.</p>
+      </div>
+    </div>
+
+    <!-- Equipment Loaner Programs -->
+    <h2 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">Equipment Loaner Programs</h2>
+    <p class="mb-6" style="color: var(--color-text-light);">These organizations lend or provide adaptive equipment at no cost or reduced cost:</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      {% for resource in resources.nova %}
+        {% if "equipment" in resource.category %}
+        <div class="card p-6">
+          <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary);">{{ resource.name }}</h3>
+          <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ resource.description }}</p>
+          {% if resource.website %}
+          <a href="{{ resource.website }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline" style="color: var(--color-secondary);">Visit Website &rarr;</a>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Adaptive Clothing -->
+    <h2 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">Adaptive Clothing</h2>
+    <p class="mb-6" style="color: var(--color-text-light);">Clothing designed for individuals with disabilities, including easy-on/off features, tube access, and adaptive footwear:</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      {% for resource in resources.national %}
+        {% if "clothing" in resource.category %}
+        <div class="card p-6">
+          <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary);">{{ resource.name }}</h3>
+          <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ resource.description }}</p>
+          {% if resource.website %}
+          <a href="{{ resource.website }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline" style="color: var(--color-secondary);">Shop Now &rarr;</a>
+          {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Buy Nothing Group -->
+    <div class="card p-8 text-center mb-16" style="background-color: var(--color-warm-light);">
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Community Equipment Exchange</h2>
+      <p class="mb-6 max-w-2xl mx-auto" style="color: var(--color-text-light);">
+        Join our "Buy Nothing" style community group for special needs equipment. Give away equipment your child has outgrown and find what you need from other families.
+      </p>
+      <a href="/contact/" class="btn-primary no-underline">Join the Community</a>
+    </div>
+
+    <!-- Browse More -->
+    <div class="text-center">
+      <a href="/resources/?category=equipment" class="btn-primary no-underline">Browse All Equipment Resources</a>
+    </div>
+  </div>
+</section>

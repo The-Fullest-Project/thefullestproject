@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+title: Services
+description: "Explore our services including non-profit business coaching, group life coaching, and our upcoming gig platform."
+permalink: /services/
+---
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Our Services</h1>
+    <p class="text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-text-light);">
+      Beyond our resource directory, we offer services designed to empower caregivers and strengthen the organizations that support them.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Non-Profit Coaching -->
+      <div class="card p-8">
+        <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Non-Profit Business Coaching</h2>
+        <p class="mb-6" style="color: var(--color-text-light);">
+          Specialized coaching for disability-focused non-profits looking to grow their impact, improve operations, and better serve their communities. Drawing on real-world business expertise and deep understanding of the disability space.
+        </p>
+        <h3 class="font-semibold mb-3">Areas of Focus:</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm mb-6" style="color: var(--color-text-light);">
+          <li>Organizational strategy and growth</li>
+          <li>Operations and process improvement</li>
+          <li>Team development and leadership</li>
+          <li>Community engagement and partnerships</li>
+          <li>Fundraising and sustainability</li>
+        </ul>
+        <a href="/contact/?subject=partnership" class="btn-primary no-underline">Learn More</a>
+      </div>
+
+      <!-- Life Coaching -->
+      <div class="card p-8">
+        <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Group Life Coaching</h2>
+        <p class="mb-6" style="color: var(--color-text-light);">
+          Group coaching designed specifically for caregivers of individuals with disabilities. A safe space to process challenges, set goals, build resilience, and connect with others who understand your journey.
+        </p>
+        <h3 class="font-semibold mb-3">What to Expect:</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm mb-6" style="color: var(--color-text-light);">
+          <li>Small group format for meaningful connection</li>
+          <li>Facilitated by a trained executive coach</li>
+          <li>Goal setting and accountability</li>
+          <li>Stress management and self-care strategies</li>
+          <li>Community and peer support</li>
+        </ul>
+        <a href="/contact/?subject=partnership" class="btn-primary no-underline">Get Started</a>
+      </div>
+
+      <!-- Gig Platform -->
+      <div class="card p-8" style="border: 2px dashed var(--color-accent);">
+        <span class="tag mb-4" style="background-color: var(--color-accent); color: white;">Coming Soon</span>
+        <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Caregiver Gig Platform</h2>
+        <p class="mb-6" style="color: var(--color-text-light);">
+          A gig-economy platform designed to empower caregivers. Need help with research, sewing modifications, or other tasks? Connect with individuals who have the skills and flexibility to help — often fellow caregivers who can't work traditional full-time jobs.
+        </p>
+        <h3 class="font-semibold mb-3">How It Will Work:</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm mb-6" style="color: var(--color-text-light);">
+          <li>Post tasks you need help with</li>
+          <li>Browse skilled helpers in your area</li>
+          <li>Flexible scheduling for both sides</li>
+          <li>Empowering caregivers with additional income</li>
+        </ul>
+        <form action="https://formspree.io/f/{{ site.formspree.newsletter }}" method="POST" class="flex flex-col gap-2">
+          <input type="hidden" name="interest" value="gig-platform">
+          <label for="gig-email" class="sr-only">Email to get notified</label>
+          <input type="email" id="gig-email" name="email" placeholder="Get notified at launch" class="form-input text-sm">
+          <button type="submit" class="btn-secondary text-sm text-center">Notify Me</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Shop -->
+    <div class="mt-12 card p-8 text-center" style="background-color: var(--color-warm-light);">
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Shop</h2>
+      <p class="mb-6 max-w-2xl mx-auto" style="color: var(--color-text-light);">
+        Disability-positive apparel and accessories that celebrate the fullness of life. Empowering tees, mugs, prints, and OT-inspired products — all designed to spark conversation and support our mission.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-6">
+        <div class="p-4 rounded-lg" style="background-color: white;">
+          <div class="text-2xl mb-2" aria-hidden="true">&#x1F455;</div>
+          <p class="text-sm font-semibold" style="color: var(--color-primary);">Tees & Apparel</p>
+          <p class="text-xs" style="color: var(--color-text-light);">Inclusive, empowering designs</p>
+        </div>
+        <div class="p-4 rounded-lg" style="background-color: white;">
+          <div class="text-2xl mb-2" aria-hidden="true">&#x2615;</div>
+          <p class="text-sm font-semibold" style="color: var(--color-primary);">Mugs & Accessories</p>
+          <p class="text-xs" style="color: var(--color-text-light);">Daily reminders of what matters</p>
+        </div>
+        <div class="p-4 rounded-lg" style="background-color: white;">
+          <div class="text-2xl mb-2" aria-hidden="true">&#x1F3A8;</div>
+          <p class="text-sm font-semibold" style="color: var(--color-primary);">Prints & Freebies</p>
+          <p class="text-xs" style="color: var(--color-text-light);">Downloadable resources & art</p>
+        </div>
+      </div>
+      <p class="text-sm mb-4" style="color: var(--color-text-light);">Inspired by shops like <a href="https://play-spark.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary);">Play Spark</a> — celebrating disability with joy and creativity.</p>
+      <a href="/contact/?subject=shop" class="btn-primary no-underline">Shop Coming Soon</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: "Stories, insights, and practical advice from experts and caregivers in the disability community."
+permalink: /blog/
+---
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Blog</h1>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">
+      Stories, insights, and practical advice from experts and caregivers in the disability community.
+    </p>
+
+    <div class="space-y-8">
+      {% for post in collections.blogPosts %}
+      <article class="card p-8">
+        <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ post.data.category or "Story" }}</span>
+        <h2 class="text-2xl font-bold mt-3 mb-3">
+          <a href="{{ post.url }}" class="no-underline" style="color: var(--color-primary);">{{ post.data.title }}</a>
+        </h2>
+        <p class="mb-4" style="color: var(--color-text-light);">{{ post.data.excerpt }}</p>
+        <div class="flex items-center gap-4 text-sm" style="color: var(--color-text-light);">
+          <time datetime="{{ post.date | dateFormat }}">{{ post.date | dateFormat }}</time>
+          {% if post.data.author %}
+          <span>by {{ post.data.author }}</span>
+          {% endif %}
+        </div>
+      </article>
+      {% else %}
+      <div class="card p-8 text-center">
+        <p class="text-lg mb-4" style="color: var(--color-text-light);">Blog posts coming soon!</p>
+        <p style="color: var(--color-text-light);">We're working on sharing stories, insights, and practical advice. Sign up for our newsletter to be notified when new posts are published.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

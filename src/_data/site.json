@@ -1,0 +1,19 @@
+{
+  "name": "The Fullest Project",
+  "tagline": "Living Life to the Fullest",
+  "description": "A connection hub for caregivers to find national and local special needs and disability information, resources, programs, education, and community.",
+  "url": "https://thefullestproject.org",
+  "mission": "Be a connection hub for caregivers to find national and local special needs and disability information, resources, programs, education, and community.",
+  "goal": "Take some of the burden off of caregivers and support them in providing the best care and advocacy for their special needs or disabled child.",
+  "email": "hello@thefullestproject.org",
+  "social": {
+    "instagram": "",
+    "facebook": ""
+  },
+  "coverage": "All 50 US States + DC + National",
+  "formspree": {
+    "contact": "YOUR_FORMSPREE_CONTACT_ID",
+    "submitResource": "YOUR_FORMSPREE_RESOURCE_ID",
+    "newsletter": "YOUR_FORMSPREE_NEWSLETTER_ID"
+  }
+}

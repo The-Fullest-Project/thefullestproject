@@ -1,0 +1,739 @@
+[
+  {
+    "name": "The Arc",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The largest national community-based organization advocating for and with people with intellectual and developmental disabilities.",
+    "phone": "",
+    "website": "https://thearc.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "advocacy",
+      "intellectual-disability",
+      "developmental"
+    ],
+    "source": "https://thearc.org",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "World Institute on Disability - Accessibility Resources",
+    "category": [
+      "community"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Accessibility and universal design resources for creating inclusive environments.",
+    "phone": "",
+    "website": "https://wid.org/accessibility-universal-design-resources/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "universal-design"
+    ],
+    "source": "https://wid.org/accessibility-universal-design-resources/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "National Parks Disability Access Pass",
+    "category": [
+      "recreation",
+      "government"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Free lifetime access pass for U.S. citizens with permanent disabilities to national parks and federal recreation sites.",
+    "phone": "",
+    "website": "https://www.nps.gov/subjects/accessibility/interagency-access-pass.htm",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "parks",
+      "access-pass",
+      "free"
+    ],
+    "source": "https://www.nps.gov/subjects/accessibility/interagency-access-pass.htm",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "CCMOO Clothing",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive clothing including large body suits and g-tube access clothing for children with special needs.",
+    "phone": "",
+    "website": "https://www.ccmooclothing.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "g-tube",
+      "body-suits"
+    ],
+    "source": "https://www.ccmooclothing.com",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "CBO Baby",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Large body suits and adaptive clothing for babies and children.",
+    "phone": "",
+    "website": "https://www.cbobaby.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "baby",
+      "body-suits"
+    ],
+    "source": "https://www.cbobaby.com",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Billy Footwear",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive shoes with zip-around design for easy on/off, designed for individuals with disabilities.",
+    "phone": "",
+    "website": "https://billyfootwear.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-shoes",
+      "footwear",
+      "accessible"
+    ],
+    "source": "https://billyfootwear.com",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Feeding Tube Awareness - Adaptive Clothing Guide",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Curated list of adaptive clothing options for individuals with feeding tubes.",
+    "phone": "",
+    "website": "https://www.feedingtubeawareness.org/adaptive-clothing/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adaptive-clothing",
+      "feeding-tube"
+    ],
+    "source": "https://www.feedingtubeawareness.org/adaptive-clothing/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "TED Talks on Disability",
+    "category": [
+      "community"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Collection of inspiring TED Talks focused on disability, inclusion, and advocacy.",
+    "phone": "",
+    "website": "https://www.ted.com/talks?sort=relevance&q=disability",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "education",
+      "inspiration",
+      "ted-talks"
+    ],
+    "source": "https://www.ted.com/talks?sort=relevance&q=disability",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "SBSK (Special Books by Special Kids)",
+    "category": [
+      "community"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Non-profit that tells disability and special needs stories to promote understanding and acceptance.",
+    "phone": "",
+    "website": "https://sbsk.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "stories",
+      "awareness",
+      "acceptance"
+    ],
+    "source": "https://sbsk.org",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Early Childhood Technical Assistance Center (ECTA)",
+    "category": [
+      "early-intervention"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National resource center for early intervention and early childhood special education programs.",
+    "phone": "",
+    "website": "https://ectacenter.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "early-intervention"
+    ],
+    "source": "https://ectacenter.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "CDC - Learn the Signs. Act Early.",
+    "category": [
+      "early-intervention"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Free developmental milestone resources, checklists, and tips for parents to track their child's development from 2 months to 5 years.",
+    "phone": "",
+    "website": "https://www.cdc.gov/ncbddd/actearly/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "early-intervention"
+    ],
+    "source": "https://www.cdc.gov/ncbddd/actearly/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "PACER Center - Transition Resources",
+    "category": [
+      "transition"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Comprehensive transition planning resources for youth with disabilities moving from school to adult life.",
+    "phone": "",
+    "website": "https://www.pacer.org/transition/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://www.pacer.org/transition/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Think College",
+    "category": [
+      "transition"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National resource for college options for people with intellectual disabilities, including program search and planning tools.",
+    "phone": "",
+    "website": "https://thinkcollege.net/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://thinkcollege.net/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Social Security Disability Benefits (SSI/SSDI)",
+    "category": [
+      "financial"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal disability benefits including Supplemental Security Income (SSI) and Social Security Disability Insurance (SSDI).",
+    "phone": "",
+    "website": "https://www.ssa.gov/benefits/disability/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ssa.gov/benefits/disability/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "ABLE National Resource Center",
+    "category": [
+      "financial"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Information about ABLE accounts — tax-advantaged savings accounts for individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.ablenrc.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ablenrc.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "National Disability Rights Network",
+    "category": [
+      "financial"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Largest provider of legally based advocacy services for people with disabilities in the US.",
+    "phone": "",
+    "website": "https://www.ndrn.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ndrn.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Family Voices",
+    "category": [
+      "insurance"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network helping families navigate healthcare and insurance systems for children with special health care needs.",
+    "phone": "",
+    "website": "https://familyvoices.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "insurance"
+    ],
+    "source": "https://familyvoices.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Needs Alliance",
+    "category": [
+      "planning"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network of attorneys specializing in special needs trusts, guardianship, estate planning, and benefits preservation.",
+    "phone": "",
+    "website": "https://www.specialneedsalliance.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "planning"
+    ],
+    "source": "https://www.specialneedsalliance.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "NAMI - National Alliance on Mental Illness",
+    "category": [
+      "mental-health"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Mental health support, education, and advocacy including support groups for caregivers.",
+    "phone": "",
+    "website": "https://www.nami.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.nami.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Caregiver Action Network",
+    "category": [
+      "mental-health"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Support and resources specifically for family caregivers, including mental health resources and peer support.",
+    "phone": "",
+    "website": "https://www.caregiveraction.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.caregiveraction.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "National Aging and Disability Transportation Center",
+    "category": [
+      "transportation"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Resources for accessible transportation options across the country for people with disabilities and older adults.",
+    "phone": "",
+    "website": "https://www.nadtc.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transportation"
+    ],
+    "source": "https://www.nadtc.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "HUD - Fair Housing & Disability",
+    "category": [
+      "housing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal resources on housing rights for people with disabilities, reasonable accommodations, and accessibility requirements.",
+    "phone": "",
+    "website": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "housing"
+    ],
+    "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Finding Disability-Friendly Doctors",
+    "category": [
+      "medical"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Guide to finding medical providers who are experienced with and accessible to patients with disabilities.",
+    "phone": "",
+    "website": "https://palfreyassociates.com/disability-friendly-doctor/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "medical"
+    ],
+    "source": "https://palfreyassociates.com/disability-friendly-doctor/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "American Camp Association - Find a Camp",
+    "category": [
+      "camps"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Searchable database of accredited camps including camps for children with special needs and disabilities.",
+    "phone": "",
+    "website": "https://www.acacamps.org/campers-families/find-a-camp",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "camps"
+    ],
+    "source": "https://www.acacamps.org/campers-families/find-a-camp",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Sibling Support Project (Sibshops)",
+    "category": [
+      "sibling-support"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National program providing peer support for brothers and sisters of people with special needs. Includes Sibshops workshops.",
+    "phone": "",
+    "website": "https://siblingsupport.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sibling-support"
+    ],
+    "source": "https://siblingsupport.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Sibling Leadership Network",
+    "category": [
+      "sibling-support"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network providing information, support, and tools for siblings of individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.siblingleadership.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sibling-support"
+    ],
+    "source": "https://www.siblingleadership.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Assistive Technology Act Programs",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network providing AT information, device demonstrations, and lending programs in every state.",
+    "phone": "",
+    "website": "https://www.at3center.net/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://www.at3center.net/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "AbleData",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National database of assistive technology products with over 40,000 products for people with disabilities.",
+    "phone": "",
+    "website": "https://abledata.acl.gov/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://abledata.acl.gov/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Closing the Gap",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Resource for assistive technology in education and employment for individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.closingthegap.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://www.closingthegap.com/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Olympics",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "World's largest sports organization for children and adults with intellectual disabilities — year-round training and competitions.",
+    "phone": "",
+    "website": "https://www.specialolympics.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://www.specialolympics.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Move United (formerly DSUSA)",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive sports programs for youth and adults with physical disabilities including skiing, cycling, kayaking, and more.",
+    "phone": "",
+    "website": "https://www.move-united.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://www.move-united.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Miracle League",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive baseball leagues for children with disabilities, with rubberized fields designed for wheelchairs and walkers.",
+    "phone": "",
+    "website": "https://www.miracleleague.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://www.miracleleague.com/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Ready.gov - People with Disabilities",
+    "category": [
+      "emergency"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal emergency preparedness resources specifically for individuals with disabilities and their caregivers.",
+    "phone": "",
+    "website": "https://www.ready.gov/disability",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "emergency"
+    ],
+    "source": "https://www.ready.gov/disability",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "FEMA - Disability & Access",
+    "category": [
+      "emergency"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "FEMA resources for emergency planning and disaster response for people with disabilities.",
+    "phone": "",
+    "website": "https://www.fema.gov/emergency-managers/individuals-communities/disability",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "emergency"
+    ],
+    "source": "https://www.fema.gov/emergency-managers/individuals-communities/disability",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Rebuilding Together",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Non-profit providing free home modifications and accessibility improvements for people with disabilities.",
+    "phone": "",
+    "website": "https://www.rebuildingtogether.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "home-modifications"
+    ],
+    "source": "https://www.rebuildingtogether.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "CAPS - Certified Aging-in-Place Specialist",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Find certified professionals trained in accessible home design and modifications for people with disabilities.",
+    "phone": "",
+    "website": "https://www.nahb.org/advocacy/industry-issues/accessibility/CAPS-program",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "home-modifications"
+    ],
+    "source": "https://www.nahb.org/advocacy/industry-issues/accessibility/CAPS-program",
+    "lastScraped": "2026-03-06"
+  }
+]

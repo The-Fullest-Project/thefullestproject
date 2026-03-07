@@ -1,0 +1,1052 @@
+[
+  {
+    "name": "AT Devices for Kids - RVA",
+    "category": [
+      "equipment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Assistive technology device lending library for children with disabilities.",
+    "website": "https://rva.atdevicesforkids.org",
+    "tags": [
+      "assistive-technology",
+      "loaner"
+    ]
+  },
+  {
+    "name": "Francesco's Closet at Wheatland Farm",
+    "category": [
+      "equipment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Equipment closet providing gently used adaptive equipment for children with special needs.",
+    "website": "https://www.wheatlandfarm.org/francesco-s-closet",
+    "tags": [
+      "equipment-loaner",
+      "adaptive"
+    ]
+  },
+  {
+    "name": "Equip for Children",
+    "category": [
+      "equipment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Organization providing adaptive equipment to children who need it.",
+    "website": "https://www.equipforchildren.org",
+    "tags": [
+      "equipment",
+      "adaptive"
+    ]
+  },
+  {
+    "name": "Fairfax County Therapeutic Recreation",
+    "category": [
+      "recreation",
+      "community"
+    ],
+    "location": "Northern Virginia",
+    "description": "Therapeutic recreation programs for individuals with disabilities through Fairfax County Neighborhood and Community Services.",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation",
+    "tags": [
+      "recreation",
+      "therapeutic",
+      "county-program"
+    ]
+  },
+  {
+    "name": "The J - Special Needs Programs",
+    "category": [
+      "recreation",
+      "community"
+    ],
+    "location": "Northern Virginia",
+    "description": "Special needs programs and inclusive activities at the Jewish Community Center.",
+    "website": "https://www.thej.org/specialneeds/",
+    "tags": [
+      "recreation",
+      "inclusive",
+      "community"
+    ]
+  },
+  {
+    "name": "Clemyjontri Park",
+    "category": [
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Fully accessible playground designed for children of all abilities in McLean, VA.",
+    "website": "https://www.fairfaxcounty.gov/parks/clemyjontri/",
+    "tags": [
+      "playground",
+      "accessible",
+      "wheelchair-friendly"
+    ]
+  },
+  {
+    "name": "Fairfax County Accessible Trails",
+    "category": [
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Directory of wheelchair and stroller-friendly trails throughout Fairfax County parks.",
+    "website": "https://www.fairfaxcounty.gov/parks/accessible/trails",
+    "tags": [
+      "trails",
+      "accessible",
+      "outdoor"
+    ]
+  },
+  {
+    "name": "Meadowlark Botanical Gardens",
+    "category": [
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Beautiful botanical gardens with accessible paths in Vienna, VA.",
+    "website": "https://www.novaparks.com/parks/meadowlark-botanical-gardens",
+    "tags": [
+      "gardens",
+      "accessible",
+      "outdoor"
+    ]
+  },
+  {
+    "name": "Warrenton Aquatic Recreation Facility (WARF)",
+    "category": [
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Aquatic recreation facility with accessible swimming programs.",
+    "website": "https://www.warrentonva.gov/201/WARF",
+    "tags": [
+      "aquatic",
+      "swimming",
+      "accessible"
+    ]
+  },
+  {
+    "name": "Empower Therapy Group",
+    "category": [
+      "therapy"
+    ],
+    "location": "Northern Virginia",
+    "description": "Therapy services for children and families in the Northern Virginia area.",
+    "website": "https://empowertherapygroup.net/",
+    "tags": [
+      "therapy",
+      "pediatric"
+    ]
+  },
+  {
+    "name": "Fairfax County Speech & Hearing",
+    "category": [
+      "therapy"
+    ],
+    "location": "Northern Virginia",
+    "description": "Speech and hearing services provided through Fairfax County Health Department.",
+    "website": "https://www.fairfaxcounty.gov/health/speech-hearing",
+    "tags": [
+      "speech-therapy",
+      "hearing",
+      "county-program"
+    ]
+  },
+  {
+    "name": "The Arc of Northern Virginia",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Northern Virginia",
+    "description": "Advocacy organization for people with intellectual and developmental disabilities, providing resources, support, and community.",
+    "website": "https://thearcofnova.org",
+    "tags": [
+      "advocacy",
+      "intellectual-disability",
+      "developmental"
+    ]
+  },
+  {
+    "name": "Cameron's Coffee and Chocolates",
+    "category": [
+      "employment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Coffee and chocolate shop that employs individuals with disabilities, promoting inclusive employment.",
+    "website": "https://www.every1canwork.com",
+    "tags": [
+      "employment",
+      "inclusive",
+      "coffee"
+    ]
+  },
+  {
+    "name": "Jake's Ice Cream",
+    "category": [
+      "employment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Ice cream shop committed to employing individuals with disabilities.",
+    "website": "https://www.sweetjakesicecream.com",
+    "tags": [
+      "employment",
+      "inclusive",
+      "ice-cream"
+    ]
+  },
+  {
+    "name": "Bitty and Beau's Coffee - Washington DC",
+    "category": [
+      "employment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Coffee shop that employs people with intellectual and developmental disabilities. Location in Washington, DC.",
+    "website": "https://www.bittyandbeauscoffee.com/location/washington/",
+    "tags": [
+      "employment",
+      "inclusive",
+      "coffee",
+      "dc"
+    ]
+  },
+  {
+    "name": "Bitty and Beau's Coffee - Annapolis",
+    "category": [
+      "employment"
+    ],
+    "location": "Northern Virginia",
+    "description": "Coffee shop that employs people with intellectual and developmental disabilities. Location in Annapolis, MD.",
+    "website": "https://www.bittyandbeauscoffee.com/location/annapolis/",
+    "tags": [
+      "employment",
+      "inclusive",
+      "coffee",
+      "maryland"
+    ]
+  },
+  {
+    "name": "Disability Inclusion DC Metro",
+    "category": [
+      "community"
+    ],
+    "location": "Northern Virginia",
+    "description": "Resources and consulting for businesses wanting to become more disability-friendly.",
+    "website": "https://di-dcmetro.org",
+    "tags": [
+      "business",
+      "inclusion",
+      "consulting"
+    ]
+  },
+  {
+    "name": "McLean Bible Church - Special Needs Ministry",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Special needs ministry programs at McLean Bible Church, Tysons location.",
+    "website": "https://mcleanbible.org/tysons/special-needs/",
+    "tags": [
+      "church",
+      "ministry",
+      "special-needs"
+    ]
+  },
+  {
+    "name": "Burke Community Church - Special Needs",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Special needs programs and inclusive worship at Burke Community Church.",
+    "website": "https://www.burkecommunity.com/specialneeds/",
+    "tags": [
+      "church",
+      "ministry",
+      "inclusive"
+    ]
+  },
+  {
+    "name": "Centreville Baptist Church - Embrace",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Embrace special needs ministry at Centreville Baptist Church.",
+    "website": "https://centrevillebaptist.org/embrace",
+    "tags": [
+      "church",
+      "ministry",
+      "special-needs"
+    ]
+  },
+  {
+    "name": "King of Kings Lutheran Church - Special Needs",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Special needs ministries at King of Kings Lutheran Church.",
+    "website": "https://kofk.org/ministries-special-needs",
+    "tags": [
+      "church",
+      "ministry",
+      "lutheran"
+    ]
+  },
+  {
+    "name": "Fairfax Church - Accessibility",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Accessibility programs and accommodations at Fairfax Church.",
+    "website": "https://www.fairfax.cc/accessibility/",
+    "tags": [
+      "church",
+      "accessible",
+      "inclusive"
+    ]
+  },
+  {
+    "name": "Waterfront Church DC - Special Needs Ministry",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Special needs ministry at Waterfront Church in Washington, DC.",
+    "website": "https://waterfrontchurchdc.com/special-needs-ministry/",
+    "tags": [
+      "church",
+      "ministry",
+      "dc"
+    ]
+  },
+  {
+    "name": "Thomas Roads Baptist Church - Special Needs",
+    "category": [
+      "faith"
+    ],
+    "location": "Northern Virginia",
+    "description": "Special needs engagement programs at Thomas Roads Baptist Church.",
+    "website": "https://trbc.org/engage/special-needs/",
+    "tags": [
+      "church",
+      "ministry",
+      "baptist"
+    ]
+  },
+  {
+    "name": "B&O Railroad Museum - Sensory Sundays",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Sensory-friendly Sundays at the B&O Railroad Museum in Baltimore, offering a calm environment for individuals with sensory processing needs.",
+    "website": "https://www.borail.org/explore-learn/for-kids-families/sensory-awareness/",
+    "tags": [
+      "sensory-friendly",
+      "museum",
+      "baltimore"
+    ]
+  },
+  {
+    "name": "National Aquarium - Accessibility",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Accessibility accommodations at the National Aquarium in Baltimore, including sensory-friendly resources.",
+    "website": "https://aqua.org/visit/accessibility",
+    "tags": [
+      "sensory-friendly",
+      "aquarium",
+      "accessible",
+      "baltimore"
+    ]
+  },
+  {
+    "name": "Port Discovery Children's Museum",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Children's museum in Baltimore with sensory-friendly accommodations and KultureCity certification.",
+    "website": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
+    "tags": [
+      "sensory-friendly",
+      "museum",
+      "children",
+      "baltimore"
+    ]
+  },
+  {
+    "name": "National Children's Museum - Accessibility",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Accessibility accommodations at the National Children's Museum in Washington, DC.",
+    "website": "https://nationalchildrensmuseum.org/visit/#accessibility",
+    "tags": [
+      "sensory-friendly",
+      "museum",
+      "children",
+      "dc"
+    ]
+  },
+  {
+    "name": "Air and Space Museum - Accessibility",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Northern Virginia",
+    "description": "Accessibility services at the Smithsonian Air and Space Museum Udvar-Hazy Center.",
+    "website": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "tags": [
+      "museum",
+      "accessible",
+      "smithsonian"
+    ]
+  },
+  {
+    "name": "Fairfax County Sensory Room",
+    "category": [
+      "sensory"
+    ],
+    "location": "Northern Virginia",
+    "description": "Sensory room available through Fairfax County Therapeutic Recreation program.",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/sensory-room",
+    "tags": [
+      "sensory-room",
+      "county-program"
+    ]
+  },
+  {
+    "name": "A Mother's Rest",
+    "category": [
+      "respite"
+    ],
+    "location": "Northern Virginia",
+    "description": "Respite care organization providing rest and renewal for mothers of children with special needs.",
+    "website": "https://www.amothersrest.org/",
+    "tags": [
+      "respite",
+      "caregiver-support"
+    ]
+  },
+  {
+    "name": "Jill's House",
+    "category": [
+      "respite"
+    ],
+    "location": "Northern Virginia",
+    "description": "Overnight respite care for children with intellectual disabilities, giving families a break.",
+    "website": "https://www.jillshouse.org",
+    "tags": [
+      "respite",
+      "overnight",
+      "intellectual-disability"
+    ]
+  },
+  {
+    "name": "Virginia Disability Parking Pass",
+    "category": [
+      "government"
+    ],
+    "location": "Northern Virginia",
+    "description": "How to apply for a disability parking permit through the Virginia DMV.",
+    "website": "https://www.dmv.virginia.gov/drivers/#disability/apply_assist.asp",
+    "tags": [
+      "parking",
+      "dmv",
+      "accessibility"
+    ]
+  },
+  {
+    "name": "Fairfax County Child Care Assistance and Referral (CCAR)",
+    "category": [
+      "childcare"
+    ],
+    "location": "Northern Virginia",
+    "description": "Child care financial assistance and referral services for eligible Fairfax County families.",
+    "website": "https://www.fairfaxcounty.gov/office-for-children/child-care-assistance-and-referral",
+    "tags": [
+      "childcare",
+      "financial-assistance",
+      "county-program"
+    ]
+  },
+  {
+    "name": "DC Urban Mom - Nanny Forum",
+    "category": [
+      "childcare"
+    ],
+    "location": "Northern Virginia",
+    "description": "Online community forum for finding nannies and attendant care in the DC metro area.",
+    "website": "https://www.dcurbanmom.com/nanny-forum/forums/show/8.page",
+    "tags": [
+      "nanny",
+      "childcare",
+      "forum"
+    ]
+  },
+  {
+    "name": "Care.com",
+    "category": [
+      "childcare"
+    ],
+    "location": "Northern Virginia",
+    "description": "Platform for finding caregivers, nannies, and attendants with special needs experience.",
+    "website": "https://www.care.com",
+    "tags": [
+      "nanny",
+      "caregiver",
+      "platform"
+    ]
+  },
+  {
+    "name": "Virginia Early Intervention (Infant & Toddler Connection)",
+    "category": [
+      "early-intervention"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Virginia's early intervention system for infants and toddlers (birth to age 3) with developmental delays or disabilities. Free evaluation and services.",
+    "phone": "",
+    "website": "https://www.infantva.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "early-intervention"
+    ],
+    "source": "https://www.infantva.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Early Intervention",
+    "category": [
+      "early-intervention"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Early intervention services for children birth to 3 in Fairfax County through the Infant & Toddler Connection.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "early-intervention"
+    ],
+    "source": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Department for Aging and Rehabilitative Services (DARS)",
+    "category": [
+      "transition"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Vocational rehabilitation and transition services for youth and adults with disabilities in Virginia.",
+    "phone": "",
+    "website": "https://www.dars.virginia.gov/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://www.dars.virginia.gov/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "ServiceSource",
+    "category": [
+      "transition"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Non-profit helping people with disabilities achieve employment, independence, and integration through vocational training and job placement.",
+    "phone": "",
+    "website": "https://www.servicesfource.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://www.servicesfource.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Social Security Disability Benefits (SSI/SSDI)",
+    "category": [
+      "financial"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal disability benefits including Supplemental Security Income (SSI) and Social Security Disability Insurance (SSDI).",
+    "phone": "",
+    "website": "https://www.ssa.gov/benefits/disability/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ssa.gov/benefits/disability/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Medicaid (DMAS)",
+    "category": [
+      "financial"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Virginia's Medicaid program including waiver programs for individuals with disabilities, covering therapies, equipment, and personal care.",
+    "phone": "",
+    "website": "https://www.dmas.virginia.gov/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.dmas.virginia.gov/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "ABLE National Resource Center",
+    "category": [
+      "financial"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Information about ABLE accounts — tax-advantaged savings accounts for individuals with disabilities that don't affect benefits eligibility.",
+    "phone": "",
+    "website": "https://www.ablenrc.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ablenrc.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Healthcare.gov - Appeals & Grievances",
+    "category": [
+      "insurance"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal resource for understanding your rights when insurance denies coverage, including how to file appeals for therapies and equipment.",
+    "phone": "",
+    "website": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "insurance"
+    ],
+    "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Needs Alliance",
+    "category": [
+      "planning"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network of attorneys specializing in special needs planning, including special needs trusts, guardianship, and estate planning.",
+    "phone": "",
+    "website": "https://www.specialneedsalliance.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "planning"
+    ],
+    "source": "https://www.specialneedsalliance.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of NoVA - Pooled Trust",
+    "category": [
+      "planning"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Pooled special needs trust program through The Arc of Northern Virginia for individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.thearcofnova.org/programs/trusts/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "planning"
+    ],
+    "source": "https://www.thearcofnova.org/programs/trusts/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "NAMI - National Alliance on Mental Illness",
+    "category": [
+      "mental-health"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Mental health support, education, and advocacy. Includes support groups for caregivers and individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.nami.org/find-support/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.nami.org/find-support/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax-Falls Church Community Services Board",
+    "category": [
+      "mental-health"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Mental health, substance use, and developmental disability services for Fairfax County residents.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/community-services-board/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.fairfaxcounty.gov/community-services-board/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County FASTRAN",
+    "category": [
+      "transportation"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Accessible transportation services for Fairfax County residents with disabilities who cannot use regular public transit.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transportation"
+    ],
+    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "WMATA MetroAccess",
+    "category": [
+      "transportation"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Paratransit service for people with disabilities who cannot use regular Metro bus or rail in the DC metro area.",
+    "phone": "",
+    "website": "https://www.wmata.com/service/accessibility/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transportation"
+    ],
+    "source": "https://www.wmata.com/service/accessibility/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Housing & Community Development",
+    "category": [
+      "housing"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Accessible and affordable housing resources, including Section 8 vouchers and housing for people with disabilities.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/housing/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "housing"
+    ],
+    "source": "https://www.fairfaxcounty.gov/housing/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "National Alliance to End Homelessness",
+    "category": [
+      "housing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Resources and advocacy for housing solutions including accessible housing for individuals with disabilities.",
+    "phone": "",
+    "website": "https://endhomelessness.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "housing"
+    ],
+    "source": "https://endhomelessness.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Children's National Hospital",
+    "category": [
+      "medical"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Comprehensive pediatric medical center with specialty clinics for children with disabilities and complex medical needs.",
+    "phone": "",
+    "website": "https://www.childrensnational.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "medical"
+    ],
+    "source": "https://www.childrensnational.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Inova Children's Hospital",
+    "category": [
+      "medical"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Pediatric services including developmental pediatrics, neurology, and rehabilitation for children with disabilities in Northern Virginia.",
+    "phone": "",
+    "website": "https://www.inova.org/our-services/pediatrics",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "medical"
+    ],
+    "source": "https://www.inova.org/our-services/pediatrics",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Therapeutic Recreation Camps",
+    "category": [
+      "camps"
+    ],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Summer and seasonal camps for children and teens with disabilities through Fairfax County Therapeutic Recreation.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "camps"
+    ],
+    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Camp Baker (The Arc of NoVA)",
+    "category": [
+      "camps"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Residential summer camp for teens and adults with intellectual and developmental disabilities.",
+    "phone": "",
+    "website": "https://www.campbaker.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "camps"
+    ],
+    "source": "https://www.campbaker.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Sibling Support Project (Sibshops)",
+    "category": [
+      "sibling-support"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National program providing peer support and education for brothers and sisters of people with special health, developmental, and mental health concerns.",
+    "phone": "",
+    "website": "https://siblingsupport.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sibling-support"
+    ],
+    "source": "https://siblingsupport.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Assistive Technology Act Programs",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network providing assistive technology information, device demonstrations, and lending programs in every state.",
+    "phone": "",
+    "website": "https://www.at3center.net/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://www.at3center.net/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Assistive Technology System (VATS)",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Virginia's AT Act program providing device demonstrations, short-term loans, and information about assistive technology.",
+    "phone": "",
+    "website": "https://vats.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://vats.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Olympics Virginia",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Year-round sports training and competitions for children and adults with intellectual disabilities.",
+    "phone": "",
+    "website": "https://www.specialolympicsva.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://www.specialolympicsva.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "BlazeSports America",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive sports and recreation programs for youth and adults with physical disabilities.",
+    "phone": "",
+    "website": "https://bfreinc.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://bfreinc.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Ready.gov - People with Disabilities",
+    "category": [
+      "emergency"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal emergency preparedness resources specifically for individuals with disabilities and their caregivers.",
+    "phone": "",
+    "website": "https://www.ready.gov/disability",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "emergency"
+    ],
+    "source": "https://www.ready.gov/disability",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Rebuilding Together",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Non-profit providing free home modifications and accessibility improvements for people with disabilities and aging adults.",
+    "phone": "",
+    "website": "https://www.rebuildingtogether.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "home-modifications"
+    ],
+    "source": "https://www.rebuildingtogether.org/",
+    "lastScraped": "2026-03-06"
+  }
+]

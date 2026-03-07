@@ -1,0 +1,1 @@
+- 148 lines, covers quick start patterns, key concepts table, common patterns (forms, data attributes, non-HTML output), and cross-references to related skills (eleventy, tailwind, frontend-design, javascript, json, markdown)

@@ -1,0 +1,149 @@
+---
+layout: layouts/base.njk
+title: Home
+description: "A connection hub for caregivers to find national and local special needs and disability information, resources, programs, education, and community."
+permalink: /
+---
+
+<!-- Hero Section -->
+<section class="hero-gradient text-white py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6" style="font-family: var(--font-heading);">
+      Living Life to the Fullest
+    </h1>
+    <p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+      Your connection hub for disability resources, programs, education, and community.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/resources/" class="btn-secondary text-lg px-8 py-4 no-underline">Find Resources</a>
+      <a href="/about/" class="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors no-underline">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Statement -->
+<section class="py-16 section-warm">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-bold mb-6" style="color: var(--color-primary);">Our Mission</h2>
+    <p class="text-lg leading-relaxed" style="color: var(--color-text-light);">
+      While there are so many different programs, resources, and communities whose whole purpose is to support the special needs and disability community, there is no centralized place to find them. Finding the right resource often depends on who you know or how well you can search. <strong style="color: var(--color-text);">We're changing that.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Section Cards -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12" style="color: var(--color-primary);">How We Can Help</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Resource Directory -->
+      <a href="/resources/" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">&#x1F4CD;</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Resource Directory</h3>
+        <p style="color: var(--color-text-light);">Find local and national programs, foundations, services, and support organizations — all in one place.</p>
+      </a>
+
+      <!-- Therapy Guide -->
+      <a href="/therapy-guide/" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">&#x1F9E0;</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Therapy Guide</h3>
+        <p style="color: var(--color-text-light);">Learn about different therapy types, when each is most beneficial, and how to find the right provider.</p>
+      </a>
+
+      <!-- Adaptive Equipment -->
+      <a href="/adaptive-equipment/" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">&#x267F;</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Adaptive Equipment</h3>
+        <p style="color: var(--color-text-light);">Explore adaptive equipment options, curated product lists, and equipment loaner programs.</p>
+      </a>
+
+      <!-- School & IEP -->
+      <a href="/school-iep/" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">&#x1F393;</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">School & IEP Navigation</h3>
+        <p style="color: var(--color-text-light);">Understand IEPs, 504 plans, your rights, and how to effectively advocate for your child's education.</p>
+      </a>
+
+      <!-- Blog -->
+      <a href="/blog/" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">&#x1F4DD;</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Blog</h3>
+        <p style="color: var(--color-text-light);">Stories, insights, and practical advice from experts and caregivers in the disability community.</p>
+      </a>
+
+      <!-- Podcast -->
+      <a href="/podcast/" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">&#x1F3A7;</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Podcast</h3>
+        <p style="color: var(--color-text-light);">Listen to conversations with families, professionals, and advocates making a difference.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Stories & News Feed -->
+<section class="py-16 section-warm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-4" style="color: var(--color-primary);">Stories & News</h2>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">Positive stories from families and the disability community</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for post in collections.blogPosts | limit(3) %}
+      <article class="card overflow-hidden">
+        <div class="p-6">
+          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ post.data.category or "Story" }}</span>
+          <h3 class="text-lg font-bold mt-3 mb-2">
+            <a href="{{ post.url }}" class="no-underline" style="color: var(--color-text);">{{ post.data.title }}</a>
+          </h3>
+          <p class="text-sm" style="color: var(--color-text-light);">{{ post.data.excerpt }}</p>
+          <time class="text-xs mt-3 block" style="color: var(--color-text-light);">{{ post.date | dateFormat }}</time>
+        </div>
+      </article>
+      {% else %}
+      <div class="card p-6 text-center lg:col-span-3">
+        <p style="color: var(--color-text-light);">Stories coming soon! We're collecting inspiring stories from families in the disability community.</p>
+        <a href="/contact/" class="btn-primary mt-4 inline-block no-underline">Share Your Story</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="py-16" style="background-color: var(--color-primary);">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+    <h2 class="text-3xl font-bold mb-4" style="font-family: var(--font-heading);">Stay Connected</h2>
+    <p class="mb-8 opacity-90">Get updates on new resources, blog posts, podcast episodes, and community news delivered to your inbox.</p>
+    <form action="https://formspree.io/f/{{ site.formspree.newsletter }}" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <label for="home-email" class="sr-only">Email address</label>
+      <input type="email" id="home-email" name="email" placeholder="Enter your email" required
+        class="form-input flex-grow" style="color: var(--color-text);">
+      <button type="submit" class="btn-secondary whitespace-nowrap">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Nationwide Coverage -->
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-bold mb-4" style="color: var(--color-primary);">Serving All 50 States</h2>
+    <p class="mb-8" style="color: var(--color-text-light);">Disability resources for every state, plus national organizations that serve the entire country.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+      <div class="card p-6 text-center">
+        <div class="text-3xl font-extrabold mb-1" style="color: var(--color-secondary);">{{ allResources | length }}+</div>
+        <p class="text-sm" style="color: var(--color-text-light);">Verified Resources</p>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="text-3xl font-extrabold mb-1" style="color: var(--color-secondary);">51</div>
+        <p class="text-sm" style="color: var(--color-text-light);">Locations Covered</p>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="text-3xl font-extrabold mb-1" style="color: var(--color-secondary);">29</div>
+        <p class="text-sm" style="color: var(--color-text-light);">Resource Categories</p>
+      </div>
+    </div>
+    <a href="/resources/" class="btn-primary no-underline text-lg px-8 py-4">Browse Resources by State</a>
+  </div>
+</section>
