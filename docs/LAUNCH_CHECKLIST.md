@@ -30,13 +30,26 @@ The site auto-deploys when you push to the `main` branch on GitHub.
 - Repo: https://github.com/PMBerrigan/thefullestproject
 - If not already pushed, run: `git add -A && git commit -m "Initial launch" && git push origin main`
 
-### [ ] Set Up GitHub Secrets for Auto-Deploy
-The GitHub Actions workflows need FTP credentials to deploy to GoDaddy.
-1. Go to https://github.com/PMBerrigan/thefullestproject/settings/secrets/actions
-2. Add these secrets:
-   - `FTP_HOST` — your GoDaddy FTP hostname (e.g. `ftp.thefullestproject.org`)
-   - `FTP_USER` — your FTP username
-   - `FTP_PASSWORD` — your FTP password
+### [ ] Enable GitHub Pages
+The site deploys automatically to GitHub Pages when you push to `main`.
+1. Go to https://github.com/PMBerrigan/thefullestproject/settings/pages
+2. Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+3. That's it — the next push to `main` will build and deploy automatically
+4. Your site will be live at `https://pmberrigan.github.io/thefullestproject/` until the custom domain is configured
+
+### [ ] Point GoDaddy Domain to GitHub Pages
+Keep GoDaddy for your domain and email — just update DNS to point to GitHub Pages:
+1. Log into GoDaddy > **My Products** > **DNS** for `thefullestproject.org`
+2. Add/update these DNS records:
+   - **A Record** `@` -> `185.199.108.153`
+   - **A Record** `@` -> `185.199.109.153`
+   - **A Record** `@` -> `185.199.110.153`
+   - **A Record** `@` -> `185.199.111.153`
+   - **CNAME** `www` -> `pmberrigan.github.io`
+3. Go back to https://github.com/PMBerrigan/thefullestproject/settings/pages
+4. Under **Custom domain**, enter `thefullestproject.org` and click Save
+5. Check **Enforce HTTPS** (free SSL certificate from GitHub — no GoDaddy SSL needed)
+6. Wait 15-30 minutes for DNS to propagate, then visit https://thefullestproject.org
 
 ---
 
@@ -112,17 +125,17 @@ The site has 500+ resources across all 50 states, but they were populated via au
 - Missing resources you know about in your area
 - Resources that have changed their services
 
-### [ ] Set Up Analytics (Optional)
-Currently there's zero tracking on the site. If you want to understand visitor behavior:
-- **Recommended:** Plausible Analytics (https://plausible.io) — privacy-friendly, no cookies, GDPR compliant
-- Add the tracking script to `src/_includes/layouts/base.njk` before `</head>`
-- Update the privacy policy if you add any analytics
+### [ ] Set Up Google Analytics
+Google Analytics is already wired into the site — you just need a measurement ID.
 
-### [ ] Get a Real SSL Certificate
-GoDaddy should provide SSL for your domain. Make sure `https://thefullestproject.org` works (not just `http://`). This is important for:
-- User trust
-- SEO ranking
-- The CMS login flow
+1. Go to <https://analytics.google.com> and create a free account
+2. Create a new property for `thefullestproject.org`
+3. Get your Measurement ID (looks like `G-XXXXXXXXXX`)
+4. Open `src/_data/site.json` and set the value:
+   ```json
+   "googleAnalytics": "G-XXXXXXXXXX"
+   ```
+5. Rebuild and deploy — analytics will start tracking automatically
 
 ---
 

@@ -8,7 +8,7 @@
     "build:11ty": "npx @11ty/eleventy",
     "build": "npm run build:11ty && npm run build:css",
     "serve": "npx @11ty/eleventy --serve",
-    "deploy": "npm run build && node deploy.js"
+    "deploy": "npm run build"
   },
   "keywords": [
     "disability",
@@ -23,9 +23,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@tailwindcss/cli": "^4.2.1",
-    "basic-ftp": "^5.2.0",
     "concurrently": "^9.2.1",
-    "dotenv": "^17.3.1",
     "tailwindcss": "^4.2.1"
   }
 }

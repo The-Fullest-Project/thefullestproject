@@ -11,6 +11,7 @@
     "facebook": ""
   },
   "coverage": "All 50 US States + DC + National",
+  "googleAnalytics": "",
   "formspree": {
     "contact": "YOUR_FORMSPREE_CONTACT_ID",
     "submitResource": "YOUR_FORMSPREE_RESOURCE_ID",
