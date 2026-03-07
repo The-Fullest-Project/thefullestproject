@@ -1,9 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e \":*)",
-      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''src/_data/resources/states/AK.json'',''utf8''\\)\\)\")",
-      "Bash(node -e \"const fs=require\\(''fs''\\),p=require\\(''path''\\),d=''src/_data/resources/states'',c=new Set\\(\\);fs.readdirSync\\(d\\).filter\\(f=>f.endsWith\\(''.json''\\)\\).forEach\\(f=>{JSON.parse\\(fs.readFileSync\\(p.join\\(d,f\\),''utf8''\\)\\).forEach\\(r=>r.category.forEach\\(x=>c.add\\(x\\)\\)\\)}\\);[...c].sort\\(\\).forEach\\(x=>console.log\\(x\\)\\)\")"
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(node -e *)",
+      "Bash(npx *)",
+      "Bash(npm *)",
+      "Bash(PATH_PREFIX=* npx *)",
+      "Bash(MSYS_NO_PATHCONV=* PATH_PREFIX=* npx *)"
     ]
   },
   "hooks": {
