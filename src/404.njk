@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Page Not Found
+description: "The page you're looking for doesn't exist."
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+<section class="py-20 text-center">
+  <div class="max-w-2xl mx-auto px-4">
+    <div class="text-6xl mb-6" aria-hidden="true">&#x1F50D;</div>
+    <h1 class="text-4xl font-extrabold mb-4" style="color: var(--color-primary); font-family: var(--font-heading);">Page Not Found</h1>
+    <p class="text-lg mb-8" style="color: var(--color-text-light);">
+      Sorry, the page you're looking for doesn't exist or has been moved.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="btn-primary no-underline">Go Home</a>
+      <a href="/resources/" class="btn-secondary no-underline">Browse Resources</a>
+    </div>
+  </div>
+</section>

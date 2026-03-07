@@ -83,5 +83,29 @@ permalink: /submit-resource/
         <button type="submit" class="btn-primary w-full text-center text-lg">Submit Resource</button>
       </div>
     </form>
+
+    <div class="mt-8 text-center">
+      <p class="text-sm" style="color: var(--color-text-light);">
+        Want an even faster way to submit? Try our <a href="/quick-submit/" style="color: var(--color-secondary);">Quick Submit bookmarklet</a> — one click from any website.
+      </p>
+    </div>
   </div>
 </section>
+
+<script>
+// Auto-fill form fields from URL params (used by bookmarklet)
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('prefill')) {
+    var fields = {
+      'resource-name': params.get('name'),
+      'resource-website': params.get('website'),
+      'resource-description': params.get('description')
+    };
+    Object.keys(fields).forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && fields[id]) el.value = decodeURIComponent(fields[id]);
+    });
+  }
+})();
+</script>

@@ -25,6 +25,15 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("dateISO", function(date) {
+    return new Date(date).toISOString().split('T')[0];
+  });
+
+  eleventyConfig.addFilter("jsonEscape", function(str) {
+    if (!str) return '';
+    return str.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
+  });
+
   eleventyConfig.addFilter("limit", function(arr, limit) {
     return arr.slice(0, limit);
   });

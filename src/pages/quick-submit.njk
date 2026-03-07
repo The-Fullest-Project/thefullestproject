@@ -1,0 +1,73 @@
+---
+layout: layouts/base.njk
+title: Quick Submit Tool
+description: "A bookmarklet tool to quickly submit resources you find while browsing the web."
+permalink: /quick-submit/
+---
+
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Quick Submit Tool</h1>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">
+      Found a great resource while browsing? Use our Quick Submit bookmarklet to send it to us in one click — like pinning to Pinterest, but for disability resources.
+    </p>
+
+    <!-- How It Works -->
+    <div class="card p-8 mb-8">
+      <h2 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">How It Works</h2>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background-color: var(--color-secondary);">1</div>
+          <div>
+            <h3 class="font-bold mb-1">Drag the button below to your bookmarks bar</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">This creates a one-click tool in your browser. On mobile, you can bookmark this page instead.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background-color: var(--color-secondary);">2</div>
+          <div>
+            <h3 class="font-bold mb-1">When you find a great resource, click it</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">A small form pops up right on the page you're viewing. It auto-fills the website URL and page title.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background-color: var(--color-secondary);">3</div>
+          <div>
+            <h3 class="font-bold mb-1">Add a quick note and submit</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">Tell us what category it fits and why it's helpful. We'll review and add it to the directory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Bookmarklet -->
+    <div class="card p-8 mb-8 text-center" style="background-color: var(--color-warm);">
+      <h2 class="text-xl font-bold mb-4" style="color: var(--color-primary);">Drag This Button to Your Bookmarks Bar</h2>
+      <p class="text-sm mb-6" style="color: var(--color-text-light);">Click and drag the button below up to your browser's bookmarks/favorites bar.</p>
+      <a id="bookmarklet-link" class="inline-block px-8 py-4 rounded-lg font-bold text-lg text-white no-underline cursor-grab" style="background-color: var(--color-secondary);"
+         href="javascript:void(function(){var d=document,w=window,e=w.encodeURIComponent;var t=d.title,u=d.location.href;var s=((d.getSelection&&d.getSelection())||(d.selection&&d.selection.createRange&&d.selection.createRange().text)||'').toString();var url='https://thefullestproject.org/submit-resource/?prefill=1&name='+e(t)+'&website='+e(u)+'&description='+e(s||'');w.open(url,'_blank','width=600,height=700,scrollbars=yes');}());">
+        + Add to Fullest Project
+      </a>
+      <p class="text-xs mt-4" style="color: var(--color-text-light);">
+        (If dragging doesn't work, right-click the button and choose "Bookmark this link")
+      </p>
+    </div>
+
+    <!-- Mobile Alternative -->
+    <div class="card p-8 mb-8">
+      <h2 class="text-xl font-bold mb-4" style="color: var(--color-primary);">On Mobile?</h2>
+      <p class="mb-4" style="color: var(--color-text-light);">
+        On your phone or tablet, use the share button in your browser to copy the URL of any resource you find, then paste it into our submit form:
+      </p>
+      <a href="/submit-resource/" class="btn-primary no-underline inline-block">Go to Submit Form</a>
+    </div>
+
+    <!-- Share the Tool -->
+    <div class="text-center">
+      <h2 class="text-xl font-bold mb-4" style="color: var(--color-primary);">Spread the Word</h2>
+      <p class="mb-4" style="color: var(--color-text-light);">
+        The more people who use this tool, the more complete our directory becomes. Share this page with friends, family, therapists, teachers, and anyone who knows great disability resources.
+      </p>
+    </div>
+  </div>
+</section>
