@@ -1,0 +1,9 @@
+name = "gig-publisher"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Set these in the Cloudflare dashboard under Workers > Settings > Variables
+# GITHUB_TOKEN   = (secret) your GitHub PAT with repo scope
+# GITHUB_REPO    = "PMBerrigan/thefullestproject"
+# FORMSPREE_ID   = "xojkvvlo"
+# ALLOWED_ORIGIN = "https://thefullestproject.org"
