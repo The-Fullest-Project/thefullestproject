@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css/output.css");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy({ ".nojekyll": ".nojekyll" });
 
   // Custom collections
   eleventyConfig.addCollection("blogPosts", function(collectionApi) {
