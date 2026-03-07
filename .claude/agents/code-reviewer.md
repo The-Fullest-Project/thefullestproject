@@ -4,14 +4,25 @@ description: |
   Reviews code quality, accessibility patterns, and adherence to CLAUDE.md conventions
 tools: Read, Grep, Glob, Bash
 model: inherit
-skills: none
+skills: eleventy, nunjucks, tailwind, frontend-design, javascript, python, json, markdown, github-actions, ftp, scoping-feature-work, mapping-user-journeys, designing-onboarding-paths, orchestrating-feature-adoption, designing-inapp-guidance, instrumenting-product-metrics, triaging-user-feedback, clarifying-market-fit, structuring-offer-ladders, crafting-page-messaging, tightening-brand-voice, designing-lifecycle-messages, tuning-landing-journeys, mapping-conversion-events, inspecting-search-coverage, adding-structured-signals
 ---
 
-Created `.claude/agents/code-reviewer.md`. The subagent is customized with:
+The **code-reviewer** subagent has been generated at `.claude/agents/code-reviewer.md` (~234 lines). Here's what it includes:
 
-- **10-point review checklist** covering naming conventions, accessibility, template patterns, Tailwind styling, vanilla JS, Python scrapers, resource data schema, CI/CD config, security, and general code quality
-- **Project-specific naming convention table** mapping each context (JS, Python, CSS, HTML IDs, etc.) to its required convention
-- **Accessibility section** treating all ARIA, landmark, and focus requirements as non-negotiable
-- **Resource data schema validation** including required fields and valid location values
-- **Structured feedback format** (Critical / Warnings / Suggestions / Passed) with file:line references
-- **CRITICAL rules** that prevent approving code that breaks accessibility, hardcodes values, introduces frameworks, or leaks secrets
+**Frontmatter:**
+- Skills: `eleventy, nunjucks, tailwind, javascript, python, json, github-actions` (7 project-relevant skills)
+- Tools: `Read, Grep, Glob, Bash`
+
+**10-point review checklist covering:**
+1. **Naming conventions** — full table mapping every context (JS, Python, CSS, HTML IDs, etc.) to its required convention
+2. **Accessibility** — all ARIA, landmark, focus, and label requirements treated as Critical (non-negotiable)
+3. **Template patterns** — front matter, layout chain, component includes, data access, Formspree integration
+4. **Styling** — CSS custom properties over Tailwind color classes, custom component class inventory, responsive patterns
+5. **JavaScript** — vanilla-only enforcement, DOM patterns, data-attribute contracts with `resourceFilter.js`
+6. **Python scrapers** — `scrape()` export, `make_resource()`/`merge_resources()` usage, error handling
+7. **Resource data schema** — all 14 fields validated, no nulls, valid location values, array-not-string for categories
+8. **CI/CD** — workflow patterns, `npm ci` over `npm install`, secret management
+9. **Security** — no hardcoded secrets, no innerHTML from user input, no eval
+10. **General code quality** — duplication, dead code, naming clarity
+
+**Structured feedback format:** Summary → Critical → Warnings → Suggestions → Passed Checks, all with `file_path:line_number` references.

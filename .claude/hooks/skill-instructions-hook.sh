@@ -8,26 +8,26 @@ Before writing any code, complete these steps in order:
 
 1. SCAN each skill below and decide: LOAD or SKIP (with brief reason)
    - eleventy
-   - frontend-design
-   - tailwind
-   - javascript
    - nunjucks
+   - tailwind
+   - frontend-design
+   - javascript
    - python
    - json
-   - ftp
-   - github-actions
    - markdown
-   - mapping-user-journeys
+   - github-actions
+   - ftp
    - scoping-feature-work
-   - instrumenting-product-metrics
+   - mapping-user-journeys
    - designing-onboarding-paths
    - orchestrating-feature-adoption
-   - structuring-offer-ladders
    - designing-inapp-guidance
+   - instrumenting-product-metrics
+   - triaging-user-feedback
+   - clarifying-market-fit
+   - structuring-offer-ladders
    - crafting-page-messaging
    - tightening-brand-voice
-   - clarifying-market-fit
-   - triaging-user-feedback
    - designing-lifecycle-messages
    - tuning-landing-journeys
    - mapping-conversion-events
@@ -43,9 +43,9 @@ IMPORTANT: Skipping step 2 invalidates step 1. Always call Skill() for relevant 
 
 Sample output:
 - eleventy: LOAD - building components
-- frontend-design: SKIP - not needed for this task
+- nunjucks: SKIP - not needed for this task
 - tailwind: LOAD - building components
-- javascript: SKIP - not needed for this task
+- frontend-design: SKIP - not needed for this task
 
 Then call:
 > Skill(eleventy)

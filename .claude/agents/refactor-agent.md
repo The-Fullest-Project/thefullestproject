@@ -4,15 +4,19 @@ description: |
   Improves code organization in scrapers, templates, and JavaScript modules
 tools: Read, Edit, Write, Glob, Grep, Bash
 model: sonnet
-skills: none
+skills: eleventy, nunjucks, tailwind, frontend-design, javascript, python, json, markdown, github-actions, ftp, scoping-feature-work, mapping-user-journeys, designing-onboarding-paths, orchestrating-feature-adoption, designing-inapp-guidance, instrumenting-product-metrics, triaging-user-feedback, clarifying-market-fit, structuring-offer-ladders, crafting-page-messaging, tightening-brand-voice, designing-lifecycle-messages, tuning-landing-journeys, mapping-conversion-events, inspecting-search-coverage, adding-structured-signals
 ---
 
-The `refactor-agent.md` has been created at `.claude/agents/refactor-agent.md`. Here's a summary of what's customized for this project:
+The customized `refactor-agent.md` has been written. Here's what was tailored for this project:
+
+**Skills selected:** `eleventy`, `nunjucks`, `javascript`, `python`, `json` — the five technologies this agent actually refactors.
 
 **Key customizations:**
-- **Build verification commands** mapped to each file type (Eleventy, Tailwind, Python `py_compile`, JS `node --check`) — no linting tools are configured in this project
-- **Code smells specific to this codebase**: duplicate patterns across `nova_resources.py`/`national_resources.py`, repeated inline styles in templates, duplicated nav markup, hardcoded seed data dicts, magic category/location strings
-- **Refactoring catalog tailored to the stack**: Extract Nunjucks Partial, Extract Scraper Helper, Externalize Seed Data, Introduce Nunjucks Macro — not generic OOP patterns
-- **11 project-specific constraints**: vanilla JS only, CommonJS modules, build order (Eleventy before Tailwind), scraper merge behavior preservation, accessibility non-negotiables, layout chain requirements
-- **Concrete examples**: extracting shared scraper logic into `base_scraper.py` (not a new file), extracting Nunjucks partials while preserving `data-*` attributes for `resourceFilter.js`
-- **Naming conventions** matching all five languages/contexts in the project
+
+- **Build verification table** maps each file type to its specific check command (`--dryrun` for Eleventy, `node --check` for JS, `py_compile` for Python, `@tailwindcss/cli` for CSS)
+- **Project architecture** section with the actual file tree, line counts, and module descriptions from the codebase
+- **Data flow chain** documented (scrapers → JSON → Eleventy → `data-*` attributes → `resourceFilter.js`) with a warning that breaking any link breaks the resource directory
+- **Code smells identified from real code**: duplicated nav links in `nav.njk` (lines 17-28 vs 33-43), repeated inline styles, 187-line `SOURCES` dict in `nova_resources.py`, hardcoded `#E2E8F0` and `#D4801F` in CSS, duplicated `sys.path` manipulation across scrapers
+- **Refactoring catalog** uses project-specific techniques: Extract Nunjucks Partial, Data-Drive Repeated Markup, Extract Scraper Helper into `base_scraper.py`, Externalize Seed Data to JSON config
+- **11 project constraints** including: CommonJS only, vanilla JS only, sacred `merge_resources()` behavior, `data-*` attribute contract, accessibility requirements, build order (Eleventy before Tailwind), dual-save scraper paths
+- **Correct/incorrect examples** use actual project files (`nav.njk`, `site.json`, `nova_resources.py`, `base_scraper.py`)
