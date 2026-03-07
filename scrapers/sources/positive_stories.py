@@ -72,6 +72,9 @@ def fetch_stories_from_web():
             "adaptive sports achievement",
             "disability rights milestone",
             "inclusive education success story",
+            "accessible adventures disability program",
+            "adaptive recreation services launch",
+            "disability nonprofit community impact",
         ]
 
         for query in search_queries:

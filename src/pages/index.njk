@@ -114,6 +114,24 @@ permalink: /
   </div>
 </section>
 
+<!-- Organization Spotlight -->
+{% set featuredSpotlights = spotlights | filterFeatured | limit(1) %}
+{% if featuredSpotlights.length %}
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-4" style="color: var(--color-primary);">Organization Spotlight</h2>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">Highlighting organizations providing accessible services and adventures</p>
+    <div class="max-w-lg mx-auto">
+      {% set spotlight = featuredSpotlights[0] %}
+      {% include "components/spotlight-card.njk" %}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/spotlights/" class="btn-secondary no-underline">View All Spotlights</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <!-- Newsletter CTA -->
 <section class="py-16" style="background-color: var(--color-primary);">
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">

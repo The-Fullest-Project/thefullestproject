@@ -128,6 +128,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #D4801F;
 }
 
+/* Spotlight play overlay for social video thumbnails */
+.spotlight-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.2s;
+}
+
+.spotlight-play-overlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 /* Form styles */
 .form-input {
   width: 100%;

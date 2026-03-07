@@ -34,12 +34,18 @@ jobs:
       - name: Fetch positive stories
         run: python scrapers/sources/positive_stories.py
 
+      - name: Discover spotlight organizations
+        run: python scrapers/sources/spotlight_scraper.py
+
+      - name: Fetch blog content
+        run: python scrapers/sources/blog_content.py
+
       - name: Commit updated data
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add src/_data/resources/ src/_data/stories.json
-          git diff --staged --quiet || git commit -m "Update scraped resource data and stories"
+          git add src/_data/resources/ src/_data/stories.json src/_data/spotlights.json src/blog/ scrapers/logs/
+          git diff --staged --quiet || git commit -m "Weekly scrape: update resources, stories, spotlights, and blog"
           git push
 
       - name: Setup Node.js

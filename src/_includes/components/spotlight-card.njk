@@ -1,0 +1,39 @@
+<article class="card overflow-hidden" data-name="{{ spotlight.name | lower }}" data-category="{{ spotlight.category | lower }}" data-description="{{ spotlight.description | lower }}">
+  {% if spotlight.thumbnail %}
+  <div class="relative">
+    <img src="{{ spotlight.thumbnail }}" alt="{{ spotlight.name }}" class="w-full h-48 object-cover" loading="lazy">
+    {% if spotlight.socialLinks and spotlight.socialLinks.instagram %}
+    <a href="{{ spotlight.socialLinks.instagram }}" target="_blank" rel="noopener noreferrer"
+       class="spotlight-play-overlay" aria-label="Watch {{ spotlight.name }} on Instagram">
+      <svg class="w-12 h-12" fill="white" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+  <div class="p-6">
+    <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">
+      {{ spotlight.category or "Spotlight" }}
+    </span>
+    <h3 class="text-lg font-bold mt-3 mb-2" style="color: var(--color-text);">
+      {{ spotlight.name }}
+    </h3>
+    <p class="text-sm mb-4" style="color: var(--color-text-light);">
+      {{ spotlight.description }}
+    </p>
+    <div class="flex flex-wrap items-center gap-3">
+      {% if spotlight.website %}
+      <a href="{{ spotlight.website }}" target="_blank" rel="noopener noreferrer"
+         class="btn-primary text-xs no-underline">Visit Website</a>
+      {% endif %}
+      {% if spotlight.socialLinks and spotlight.socialLinks.instagram %}
+      <a href="{{ spotlight.socialLinks.instagram }}" target="_blank" rel="noopener noreferrer"
+         class="text-sm no-underline" style="color: var(--color-accent);"
+         aria-label="View {{ spotlight.name }} on Instagram">
+        <svg class="inline w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>Instagram
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</article>

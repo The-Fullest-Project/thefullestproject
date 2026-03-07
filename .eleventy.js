@@ -24,6 +24,12 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("spotlightPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/spotlights/*.md").sort((a, b) => {
+      return b.date - a.date;
+    });
+  });
+
   // Filters
   eleventyConfig.addFilter("dateFormat", function(date) {
     return new Date(date).toLocaleDateString('en-US', {
@@ -52,6 +58,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("filterByLocation", function(resources, location) {
     if (!location) return resources;
     return resources.filter(r => r.location === location);
+  });
+
+  eleventyConfig.addFilter("filterFeatured", function(items) {
+    if (!items) return [];
+    return items.filter(item => item.featured);
   });
 
   return {

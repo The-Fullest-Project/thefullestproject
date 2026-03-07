@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Accessible Adventures",
+    "description": "Providing outdoor adventure experiences for individuals with disabilities, including adaptive hiking, kayaking, camping, and nature exploration programs that build confidence and community.",
+    "category": "Adventures",
+    "website": "https://www.accessibleadventures.org",
+    "socialLinks": {
+      "instagram": "https://www.instagram.com/reel/DVjLom-APpc/",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": ["adaptive-recreation", "outdoors", "adventure"],
+    "featured": true,
+    "date": "2026-03-07"
+  },
+  {
+    "name": "Inclusion Films",
+    "description": "A nonprofit film production company creating documentaries and short films that spotlight people with disabilities, challenge stereotypes, and promote inclusion through powerful storytelling.",
+    "category": "Community",
+    "website": "https://www.inclusionfilms.org",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": ["media", "film", "inclusion", "storytelling"],
+    "featured": false,
+    "date": "2026-03-05"
+  },
+  {
+    "name": "Adaptive Sports Connection",
+    "description": "Offering year-round adaptive sports programming including skiing, cycling, water sports, and team sports for children and adults with physical and cognitive disabilities.",
+    "category": "Sports",
+    "website": "https://www.adaptivesportsconnection.org",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/sports.svg",
+    "location": "National",
+    "tags": ["adaptive-sports", "recreation", "athletics"],
+    "featured": false,
+    "date": "2026-03-03"
+  }
+]

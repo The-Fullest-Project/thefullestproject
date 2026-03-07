@@ -21,6 +21,10 @@ layout: layouts/base.njk
   </div>
 
   <footer class="mt-12 pt-8 border-t">
+    {% if category == "Spotlight" %}
+    <a href="/spotlights/" class="btn-primary">Back to Spotlights</a>
+    {% else %}
     <a href="/blog/" class="btn-primary">Back to Blog</a>
+    {% endif %}
   </footer>
 </article>

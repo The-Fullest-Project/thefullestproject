@@ -49,3 +49,31 @@ permalink: /podcast/
     </div>
   </div>
 </section>
+
+<!-- Featured Disability & Accessibility Podcasts -->
+{% if featuredPodcasts.length > 0 %}
+<section class="py-16 section-warm">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-4" style="color: var(--color-primary);">Podcasts We Love</h2>
+    <p class="text-center mb-12" style="color: var(--color-text-light);">
+      While we get our podcast off the ground, check out these great disability and accessibility podcasts from the community.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {% for podcast in featuredPodcasts %}
+      <article class="card p-6">
+        <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ podcast.category }}</span>
+        <h3 class="text-lg font-bold mt-3 mb-1" style="color: var(--color-text);">{{ podcast.name }}</h3>
+        {% if podcast.hosts %}
+        <p class="text-xs mb-2" style="color: var(--color-accent);">Hosted by {{ podcast.hosts }}</p>
+        {% endif %}
+        <p class="text-sm mb-4" style="color: var(--color-text-light);">{{ podcast.description }}</p>
+        {% if podcast.website %}
+        <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer"
+           class="btn-primary text-xs no-underline">Listen Now</a>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+title: Organization Spotlights
+description: "Companies and organizations providing accessible services, adventures, and programs for individuals with disabilities."
+permalink: /spotlights/
+---
+
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-center mb-4" style="color: var(--color-primary);">Organization Spotlights</h1>
+    <p class="text-center mb-12 max-w-2xl mx-auto" style="color: var(--color-text-light);">
+      Highlighting companies and organizations that are making a difference in accessibility, adaptive recreation, and inclusive services.
+    </p>
+
+    <!-- Filters -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-8 max-w-2xl mx-auto">
+      <input type="text" id="spotlight-search" placeholder="Search spotlights..."
+        class="form-input flex-grow" aria-label="Search spotlights">
+      <select id="spotlight-category" class="filter-select" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        <option value="adventures">Adventures</option>
+        <option value="sports">Sports</option>
+        <option value="education">Education</option>
+        <option value="community">Community</option>
+        <option value="services">Services</option>
+        <option value="technology">Technology</option>
+      </select>
+    </div>
+
+    <p id="spotlight-count" class="text-sm mb-6 text-center" style="color: var(--color-text-light);"></p>
+
+    <!-- Spotlight Grid -->
+    <div id="spotlight-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for spotlight in spotlights %}
+        {% include "components/spotlight-card.njk" %}
+      {% endfor %}
+    </div>
+
+    {% if spotlights.length == 0 %}
+    <div class="card p-8 text-center">
+      <p class="text-lg mb-4" style="color: var(--color-text-light);">Spotlights coming soon!</p>
+      <p class="text-sm" style="color: var(--color-text-light);">We're discovering organizations that provide amazing accessible services and adventures.</p>
+    </div>
+    {% endif %}
+
+    <!-- Spotlight Write-ups -->
+    {% if collections.spotlightPosts.length > 0 %}
+    <div class="mt-16">
+      <h2 class="text-2xl font-bold mb-8" style="color: var(--color-primary);">In-Depth Spotlights</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {% for post in collections.spotlightPosts %}
+        <article class="card p-6">
+          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">Spotlight</span>
+          <h3 class="text-lg font-bold mt-3 mb-2">
+            <a href="{{ post.url }}" class="no-underline" style="color: var(--color-text);">{{ post.data.title }}</a>
+          </h3>
+          <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ post.data.excerpt }}</p>
+          <time class="text-xs" style="color: var(--color-text-light);">{{ post.date | dateFormat }}</time>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<script src="/js/spotlightFilter.js"></script>

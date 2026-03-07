@@ -1,0 +1,34 @@
+[
+  {
+    "name": "The Accessible Stall",
+    "description": "Two disabled friends discuss disability topics, share stories, and interview guests. Funny, honest, and thought-provoking conversations about living with a disability.",
+    "hosts": "Kyle Khachadurian & Emily Ladau",
+    "website": "https://www.theaccessiblestall.com",
+    "listenUrl": "https://www.theaccessiblestall.com",
+    "category": "Disability & Culture"
+  },
+  {
+    "name": "Disability After Dark",
+    "description": "Shining a bright light on what it's like to live with a disability, covering everything from relationships and parenting to travel and advocacy.",
+    "hosts": "Andrew Gurza",
+    "website": "https://www.disabilityafterdark.com",
+    "listenUrl": "https://www.disabilityafterdark.com",
+    "category": "Lifestyle"
+  },
+  {
+    "name": "Parenting Special Needs",
+    "description": "Real conversations about raising children with special needs, featuring parents and professionals sharing practical tips and emotional support.",
+    "hosts": "Various",
+    "website": "",
+    "listenUrl": "",
+    "category": "Parenting"
+  },
+  {
+    "name": "CripCamp: The Podcast",
+    "description": "Continuing the conversation started by the award-winning documentary, exploring disability rights, culture, and community with activists and advocates.",
+    "hosts": "Various",
+    "website": "",
+    "listenUrl": "",
+    "category": "Advocacy"
+  }
+]
