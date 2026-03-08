@@ -166,14 +166,21 @@
       "nonprofit"
     ],
     "location": "Northern Virginia",
-    "description": "Advocacy organization for people with intellectual and developmental disabilities, providing resources, support, and community.",
+    "area": "",
+    "description": "Advocacy organization for people with intellectual and developmental disabilities.",
+    "phone": "",
     "website": "https://thearcofnova.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
     "tags": [
+      "developmental",
       "advocacy",
-      "intellectual-disability",
-      "developmental"
+      "intellectual-disability"
     ],
-    "area": "Falls Church"
+    "source": "https://thearc.org/find-a-chapter/",
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Cameron's Coffee and Chocolates",
@@ -566,7 +573,7 @@
       "early-intervention"
     ],
     "location": "Northern Virginia",
-    "area": "Fairfax",
+    "area": "",
     "description": "Early intervention services for children birth to 3 in Fairfax County through the Infant & Toddler Connection.",
     "phone": "",
     "website": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
@@ -578,7 +585,7 @@
       "early-intervention"
     ],
     "source": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Virginia Department for Aging and Rehabilitative Services (DARS)",
@@ -598,7 +605,7 @@
       "transition"
     ],
     "source": "https://www.dars.virginia.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "ServiceSource",
@@ -638,7 +645,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Virginia Medicaid (DMAS)",
@@ -658,7 +665,7 @@
       "financial"
     ],
     "source": "https://www.dmas.virginia.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "ABLE National Resource Center",
@@ -678,7 +685,7 @@
       "financial"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Healthcare.gov - Appeals & Grievances",
@@ -698,7 +705,7 @@
       "insurance"
     ],
     "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Special Needs Alliance",
@@ -718,7 +725,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "The Arc of NoVA - Pooled Trust",
@@ -726,10 +733,10 @@
       "planning"
     ],
     "location": "Northern Virginia",
-    "area": "Falls Church",
+    "area": "",
     "description": "Pooled special needs trust program through The Arc of Northern Virginia for individuals with disabilities.",
     "phone": "",
-    "website": "https://thearcofnova.org/program/trust/",
+    "website": "https://www.thearcofnova.org/programs/trusts/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -737,8 +744,8 @@
     "tags": [
       "planning"
     ],
-    "source": "https://thearcofnova.org/program/trust/",
-    "lastScraped": "2026-03-06"
+    "source": "https://www.thearcofnova.org/programs/trusts/",
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "NAMI - National Alliance on Mental Illness",
@@ -758,7 +765,7 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/find-support/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Fairfax-Falls Church Community Services Board",
@@ -766,7 +773,7 @@
       "mental-health"
     ],
     "location": "Northern Virginia",
-    "area": "Fairfax",
+    "area": "",
     "description": "Mental health, substance use, and developmental disability services for Fairfax County residents.",
     "phone": "",
     "website": "https://www.fairfaxcounty.gov/community-services-board/",
@@ -778,7 +785,7 @@
       "mental-health"
     ],
     "source": "https://www.fairfaxcounty.gov/community-services-board/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Fairfax County FASTRAN",
@@ -786,7 +793,7 @@
       "transportation"
     ],
     "location": "Northern Virginia",
-    "area": "Fairfax",
+    "area": "",
     "description": "Accessible transportation services for Fairfax County residents with disabilities who cannot use regular public transit.",
     "phone": "",
     "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
@@ -798,7 +805,7 @@
       "transportation"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "WMATA MetroAccess",
@@ -818,7 +825,7 @@
       "transportation"
     ],
     "source": "https://www.wmata.com/service/accessibility/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Fairfax County Housing & Community Development",
@@ -826,7 +833,7 @@
       "housing"
     ],
     "location": "Northern Virginia",
-    "area": "Fairfax",
+    "area": "",
     "description": "Accessible and affordable housing resources, including Section 8 vouchers and housing for people with disabilities.",
     "phone": "",
     "website": "https://www.fairfaxcounty.gov/housing/",
@@ -838,7 +845,7 @@
       "housing"
     ],
     "source": "https://www.fairfaxcounty.gov/housing/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "National Alliance to End Homelessness",
@@ -858,7 +865,7 @@
       "housing"
     ],
     "source": "https://endhomelessness.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Children's National Hospital",
@@ -866,7 +873,7 @@
       "medical"
     ],
     "location": "National",
-    "area": "Washington, DC",
+    "area": "",
     "description": "Comprehensive pediatric medical center with specialty clinics for children with disabilities and complex medical needs.",
     "phone": "",
     "website": "https://www.childrensnational.org/",
@@ -878,7 +885,7 @@
       "medical"
     ],
     "source": "https://www.childrensnational.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Inova Children's Hospital",
@@ -886,7 +893,7 @@
       "medical"
     ],
     "location": "Northern Virginia",
-    "area": "Falls Church",
+    "area": "",
     "description": "Pediatric services including developmental pediatrics, neurology, and rehabilitation for children with disabilities in Northern Virginia.",
     "phone": "",
     "website": "https://www.inova.org/our-services/pediatrics",
@@ -898,7 +905,7 @@
       "medical"
     ],
     "source": "https://www.inova.org/our-services/pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Fairfax County Therapeutic Recreation Camps",
@@ -906,7 +913,7 @@
       "camps"
     ],
     "location": "Northern Virginia",
-    "area": "Fairfax",
+    "area": "",
     "description": "Summer and seasonal camps for children and teens with disabilities through Fairfax County Therapeutic Recreation.",
     "phone": "",
     "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
@@ -918,7 +925,7 @@
       "camps"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Camp Baker (The Arc of NoVA)",
@@ -958,7 +965,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Assistive Technology Act Programs",
@@ -978,7 +985,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Virginia Assistive Technology System (VATS)",
@@ -1018,7 +1025,7 @@
       "sports"
     ],
     "source": "https://www.specialolympicsva.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "BlazeSports America",
@@ -1058,7 +1065,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Rebuilding Together",
@@ -1078,7 +1085,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-08"
   },
   {
     "name": "Inova Fairfax Outpatient Pediatric Rehabilitation",

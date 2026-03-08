@@ -1,5 +1,59 @@
 [
   {
+    "name": "Disabled veterans find freedom and community on the slopes -",
+    "description": "Disabled veterans find freedom and community on the slopes - Richland Source",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSVYzSkswVUl0VUotS1diQzJBVHJUb3NUdnA0NjkxQmhMRnJ0OGs3UkZ2b3kzT2NxZDZTdmFkY3RQZ2pHRTRHcFFvSW5RdlY0bkk4ZkRhUHdyaEdnZEJXNDZtNGt2VGs2ajhTYm5GSFRoanVMNThSd0NSLU5SYWtoSG16NWdIWWtEdGRLVnhydGc?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-03-08"
+  },
+  {
+    "name": "Accessibility Festival Initiatives - Trend Hunter",
+    "description": "Accessibility Festival Initiatives - Trend Hunter",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1DMDVTTWJnWVVYWWFSZHlkU3NGWjltTHVYeXZDbWVkS3VkaHdlcy1OX2IwZ0hQMmpVMWtIbmEwQ1Y5UDZFZXhSVXM5enhRZTEzT2NmUWJmM0xBMWVReUR1T0NKYzJXZ9IBa0FVX3lxTE9sT1lvdXlvQWdBeDBHZ21ZdVRveHAyeElCNTRZb0JtWThYdnhWUXM3c0JBOUlfTXV1LUl2VWVYaklkeHc2dWQ2SDFNNE9Cbk5IMEE2eGxpWWVaMUdyQjBFMGRxdFF2SHFBLTUw?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-03-08"
+  },
+  {
+    "name": "RWJBarnabas Health’s Children’s Specialized Hospital Offers",
+    "description": "RWJBarnabas Health’s Children’s Specialized Hospital Offers IncludED Service to Help Organizations Strengthen Disability Accessibility and Inclusion | Newswise - Newswise",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMijwJBVV95cUxONC1QMml6YmtpTDRFTUFhM0ZGb2ZTakNCVF92NnRrNklGRm9pU0tuNjEyWGRsdlY4d1N3eWVpcFFfM2tFWFNzWDNrVkNCRFh5TlA5LUtPREh6dF9BX1hDUjRXX0dNcTdvVW9YTDJpQ0VTanRDYTVHWk9iVms3bGp6RWo0NGNjck1qNElZS0lidURKR0l3MjE1RHhQVnZsR2d6dGJBQlE4bFUwN2Z1LWlKc1ZUTDRwM043S283VGxmM0ZJcXNzcVZZMGwwTjFwMEZ6S2xDUXdEcUtZRXN6dGU3ZjRUUTRObjlUVnZnQUdPOWVLenBmUzkyaEViZDZpanZhOFpyeEFSNC1ydjE1eWpZ0gGPAkFVX3lxTE40LVAyaXpia2lMNEVNQWEzRkZvZlNqQ0JUX3Y2dGs2SUZGb2lTS242MTJYZGx2Vjh3U3d5ZWlwUV8za0VYU3NYM2tWQ0JEWHlOUDktS09ESHp0X0FfWENSNFdfR01xN29Vb1hMMmlDRVNqdENhNUdaT2JWazdsanpFajQ0Y2NyTWo0SVlLSWJ1REpHSXcyMTVEeFBWdmxHZ3p0YkFCUThsVTA3ZnUtaUpzVlRMNHAzTjdLbzdUbGYzRklxc3NxVlkwbDBOMXAwRnpLbENRd0RxS1lFc3p0ZTdmNFRRNE5uOVRWdmdBR085ZUt6cGZTOTJoRWJkNmlqdmE4WnJ4QVI0LXJ2MTV5alk?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-03-08"
+  },
+  {
     "name": "Accessible Adventures",
     "description": "Providing outdoor adventure experiences for individuals with disabilities, including adaptive hiking, kayaking, camping, and nature exploration programs that build confidence and community.",
     "category": "Adventures",
@@ -10,8 +64,12 @@
     },
     "thumbnail": "/images/spotlights/adventures.svg",
     "location": "National",
-    "tags": ["adaptive-recreation", "outdoors", "adventure"],
-    "featured": true,
+    "tags": [
+      "adaptive-recreation",
+      "outdoors",
+      "adventure"
+    ],
+    "featured": false,
     "date": "2026-03-07"
   },
   {
@@ -25,7 +83,12 @@
     },
     "thumbnail": "/images/spotlights/community.svg",
     "location": "National",
-    "tags": ["media", "film", "inclusion", "storytelling"],
+    "tags": [
+      "media",
+      "film",
+      "inclusion",
+      "storytelling"
+    ],
     "featured": false,
     "date": "2026-03-05"
   },
@@ -40,7 +103,11 @@
     },
     "thumbnail": "/images/spotlights/sports.svg",
     "location": "National",
-    "tags": ["adaptive-sports", "recreation", "athletics"],
+    "tags": [
+      "adaptive-sports",
+      "recreation",
+      "athletics"
+    ],
     "featured": false,
     "date": "2026-03-03"
   }
