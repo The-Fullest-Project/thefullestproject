@@ -3318,5 +3318,37 @@
     "tags": ["driver-rehabilitation", "vehicle-modification", "adaptive-driving", "evaluation"],
     "source": "https://www.driverehabcenter.com/",
     "lastScraped": "2026-03-08"
+  },
+  {
+    "name": "HEAV - Home Educators Association of Virginia (Special Needs)",
+    "category": ["homeschool"],
+    "location": "Northern Virginia",
+    "area": "Virginia",
+    "description": "Virginia's primary homeschool organization with a dedicated Special Needs section. Offers a special-needs homeschooling bundle, evaluator/tester/tutor directories, and articles on homeschooling children with learning disabilities in Virginia.",
+    "phone": "",
+    "website": "https://heav.org/special-needs/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free resources; membership available",
+    "tags": ["homeschool", "virginia", "special-needs", "evaluators", "support"],
+    "source": "https://heav.org/special-needs/",
+    "lastScraped": "2026-03-08"
+  },
+  {
+    "name": "VaHomeschoolers - Special Needs Guide",
+    "category": ["homeschool"],
+    "location": "Northern Virginia",
+    "area": "Virginia",
+    "description": "Organization of Virginia Homeschoolers providing a guide on homeschooling children with special needs in Virginia. Includes local support group listings and email discussion lists for parents homeschooling children with physical, developmental, medical, communication, or learning challenges.",
+    "phone": "",
+    "website": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["homeschool", "virginia", "special-needs", "support-groups", "guide"],
+    "source": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
+    "lastScraped": "2026-03-08"
   }
 ]

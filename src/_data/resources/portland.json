@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "name": "FACT Oregon (Family and Community Together)",
+    "category": ["homeschool", "education", "community"],
+    "location": "Portland",
+    "area": "Oregon",
+    "description": "Oregon's Statewide Parent Training and Information Center for families experiencing disability. Personalized special education support, IEP help, and disability advocacy from childhood through adulthood. On-demand trainings in multiple languages (Arabic, Chinese, Russian, Somali, Spanish, Ukrainian, Vietnamese).",
+    "phone": "503-786-6082",
+    "website": "https://factoregon.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["homeschool", "IEP", "advocacy", "multilingual", "parent-training"],
+    "source": "https://factoregon.org",
+    "lastScraped": "2026-03-08"
+  },
+  {
+    "name": "Oregon Home Education Network (OHEN) - Special Needs",
+    "category": ["homeschool", "community"],
+    "location": "Portland",
+    "area": "Oregon",
+    "description": "Maintains a community list for parents homeschooling special needs children in Oregon. Connects to Portland-area groups including the PDX Aspergers Network and Aut-2B-Home (for families homeschooling autistic spectrum children).",
+    "phone": "",
+    "website": "http://www.ohen.org/homeschooling-in-oregon/connect-to-community/special-needs/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["autism", "aspergers"],
+    "cost": "Free",
+    "tags": ["homeschool", "oregon", "special-needs", "autism", "community"],
+    "source": "http://www.ohen.org/homeschooling-in-oregon/connect-to-community/special-needs/",
+    "lastScraped": "2026-03-08"
+  }
+]
