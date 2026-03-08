@@ -132,6 +132,48 @@ A real-time discussion forum built on Cloudflare Workers + D1 (serverless SQLite
 
 ---
 
+### Multi-Language Support (Future)
+
+**Status:** Researched, not yet started
+**Effort:** Phase 1 (widget) ~1 hour; Phase 2 (full i18n) ~2-3 weeks
+**Cost:** $0
+
+#### Current State
+
+All 150-200+ UI strings are hardcoded in English across templates. No i18n infrastructure exists.
+
+#### Recommended Approach (Two Phases)
+
+**Phase 1 — Quick Win: Google Translate Widget**
+- Drop a translate widget in the nav or footer for immediate access
+- Zero site restructuring needed
+- Quality is variable but provides basic access for non-English speakers
+- Good stopgap while demand from specific language communities is assessed
+
+**Phase 2 — Full i18n: Eleventy Built-in Plugin**
+- Eleventy 3.x bundles an i18n plugin (no install needed)
+- Directory-based locale structure: `/en/about/`, `/es/about/`, etc.
+- Extract UI strings into translation JSON files (`_data/i18n/en.json`, `_data/i18n/es.json`)
+- Add a `t("key")` translation lookup filter for templates
+- Add language switcher UI component
+- Cross-locale URL linking via `locale_url` and `locale_links` filters
+
+#### Key Challenges
+
+| Challenge | Notes |
+|-----------|-------|
+| Resource data | Scrapers pull English content; need parallel translated datasets or auto-translation |
+| Blog/podcast content | User-authored; needs manual or AI-assisted translation workflow |
+| Gig board | User-submitted content; hardest to translate |
+| UI strings | ~150-200 strings to extract from nav, footer, forms, filters, page content |
+| Scraper pipeline | Would need refactoring to support locale-aware output |
+
+#### Alternative Considered
+
+**eleventy-plugin-i18n (third-party)** — More turnkey string localization with a universal `i18n` filter, but adds a dependency. Could pair with or replace the built-in plugin.
+
+---
+
 ### Location Expansion (Future)
 
 **Status:** Architecture supports it
