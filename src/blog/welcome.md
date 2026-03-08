@@ -4,6 +4,7 @@ title: "Welcome to The Fullest Project"
 date: 2026-03-06
 author: "Erin & Nicole"
 category: "Announcement"
+pinned: true
 excerpt: "We're excited to launch The Fullest Project — a centralized hub for disability resources, community, and support for caregivers."
 tags:
   - announcement

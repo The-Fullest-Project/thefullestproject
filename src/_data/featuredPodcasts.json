@@ -16,19 +16,19 @@
     "category": "Lifestyle"
   },
   {
-    "name": "Parenting Special Needs",
-    "description": "Real conversations about raising children with special needs, featuring parents and professionals sharing practical tips and emotional support.",
-    "hosts": "Various",
-    "website": "",
-    "listenUrl": "",
+    "name": "Parenting Special Needs Podcast",
+    "description": "Practical tips, life lessons, challenges, and joys of parenting children with special needs — from the creators of Parenting Special Needs Magazine.",
+    "hosts": "Chantai Snellgrove",
+    "website": "https://www.parentingspecialneeds.org/advice/podcast/",
+    "listenUrl": "https://podcasts.apple.com/us/podcast/parenting-special-needs-podcast/id1361869302",
     "category": "Parenting"
   },
   {
-    "name": "CripCamp: The Podcast",
-    "description": "Continuing the conversation started by the award-winning documentary, exploring disability rights, culture, and community with activists and advocates.",
-    "hosts": "Various",
-    "website": "",
-    "listenUrl": "",
-    "category": "Advocacy"
+    "name": "Parenting Impossible: The Special Needs Survival Podcast",
+    "description": "Honest, real conversations about the chaos and beauty of raising kids with disabilities — covering therapies, IEPs, marriage, self-care, and everything in between.",
+    "hosts": "Annette Dygert-Gearheart & Jason Gearheart",
+    "website": "https://parentingimpossiblepodcast.com",
+    "listenUrl": "https://podcasts.apple.com/us/podcast/parenting-impossible-the-special-needs-survival-podcast/id1480043957",
+    "category": "Parenting"
   }
 ]

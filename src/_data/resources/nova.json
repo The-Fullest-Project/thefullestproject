@@ -3286,5 +3286,37 @@
     ],
     "source": "https://www.fairfaxcounty.gov/parks/colvinrunmill/",
     "lastScraped": "2026-03-07"
+  },
+  {
+    "name": "Chairs for Stairs / Lorton Builders",
+    "category": ["home-modifications"],
+    "location": "Northern Virginia",
+    "area": "Lorton, VA",
+    "description": "Local NOVA contractor specializing in stairlifts, home accessibility modifications, and aging-in-place renovations. Serves the Northern Virginia area with residential accessibility solutions.",
+    "phone": "",
+    "website": "https://www.chairsforstairs.com/",
+    "address": "Lorton, VA",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["stairlift", "home-modification", "accessibility", "contractor", "nova"],
+    "source": "https://www.chairsforstairs.com/",
+    "lastScraped": "2026-03-08"
+  },
+  {
+    "name": "Driver Rehabilitation Center of Excellence, LLC",
+    "category": ["vehicle-mods", "therapy"],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Provides driver rehabilitation services and vehicle modification consultations for individuals with disabilities. Certified Driver Rehabilitation Specialists evaluate driving ability and recommend adaptive equipment.",
+    "phone": "",
+    "website": "https://www.driverehabcenter.com/",
+    "address": "",
+    "ageRange": "Teens and adults",
+    "disabilityTypes": ["mobility", "neurological", "visual"],
+    "cost": "Varies",
+    "tags": ["driver-rehabilitation", "vehicle-modification", "adaptive-driving", "evaluation"],
+    "source": "https://www.driverehabcenter.com/",
+    "lastScraped": "2026-03-08"
   }
 ]

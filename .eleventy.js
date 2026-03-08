@@ -15,6 +15,9 @@ module.exports = function(eleventyConfig) {
   // Custom collections
   eleventyConfig.addCollection("blogPosts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").sort((a, b) => {
+      const aPinned = a.data.pinned ? 1 : 0;
+      const bPinned = b.data.pinned ? 1 : 0;
+      if (aPinned !== bPinned) return bPinned - aPinned;
       return b.date - a.date;
     });
   });
