@@ -6276,5 +6276,147 @@
     ],
     "source": "https://www.autism-products.com/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Move United",
+    "category": [
+      "sports",
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The nation's leading community-based adaptive sports organization with 249 member organizations in 45 states, serving over 125,000 youth and adults annually across dozens of sports.",
+    "phone": "",
+    "website": "https://moveunitedsport.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "adaptive sports",
+      "umbrella organization",
+      "nationwide"
+    ],
+    "source": "https://moveunitedsport.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "National Wheelchair Basketball Association (NWBA)",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Founded in 1949, the primary governing body for wheelchair basketball in the US with over 200 teams across 22 conferences from youth to elite competition.",
+    "phone": "(719) 266-4082",
+    "website": "https://www.nwba.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "wheelchair basketball",
+      "competitive",
+      "youth"
+    ],
+    "source": "https://www.nwba.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "United States Wheelchair Rugby Association",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National governing body for wheelchair rugby with over 40 organized teams across the US, promoting the sport since 1988.",
+    "phone": "",
+    "website": "https://www.uswra.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "wheelchair rugby",
+      "quad rugby",
+      "competitive"
+    ],
+    "source": "https://www.uswra.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Disabled Martial Artists Alliance",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Promotes therapy through martial arts and fitness for people with disabilities. Provides instructor training and connects students with vetted adaptive martial arts programs nationwide.",
+    "phone": "",
+    "website": "https://adaptivemartialarts.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "martial arts",
+      "adaptive fitness",
+      "therapy"
+    ],
+    "source": "https://adaptivemartialarts.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Adaptive Yoga LIVE",
+    "category": [
+      "sports",
+      "therapy"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Free online adaptive yoga classes multiple times per week led by trained instructors, specifically designed for individuals with disabilities. Founded in 2020 to combat isolation.",
+    "phone": "",
+    "website": "https://adaptiveyogalive.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "adaptive yoga",
+      "online",
+      "free",
+      "accessibility"
+    ],
+    "source": "https://adaptiveyogalive.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Waves4All Adaptive Surf Club",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Empowers people with disabilities through adaptive surfing progression, inclusion, and accessibility with clinics and programs across multiple coastal locations.",
+    "phone": "",
+    "website": "https://waves4all.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Free",
+    "tags": [
+      "adaptive surfing",
+      "ocean",
+      "inclusion"
+    ],
+    "source": "https://waves4all.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

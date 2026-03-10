@@ -239,5 +239,84 @@
     ],
     "source": "https://www.rollettesdance.com",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Challenged Athletes Foundation (CAF)",
+    "category": [
+      "sports",
+      "nonprofit",
+      "financial"
+    ],
+    "location": "California",
+    "area": "San Diego",
+    "description": "Global leader empowering individuals with physical disabilities through grants for adaptive sports equipment, prosthetics, training, and competition travel. Has fulfilled over 52,000 funding requests since 1994.",
+    "phone": "(858) 866-0959",
+    "website": "https://www.challengedathletes.org/",
+    "address": "9591 Waples Street, San Diego, CA 92121",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Grants available",
+    "tags": [
+      "adaptive sports",
+      "grants",
+      "equipment",
+      "prosthetics"
+    ],
+    "source": "https://www.challengedathletes.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "BORP Adaptive Sports and Recreation",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "California",
+    "area": "Berkeley",
+    "description": "Leading adaptive sports provider in the SF Bay Area offering cycling, sled hockey, power soccer, and fitness programs. One of the world's largest adaptive bike collections.",
+    "phone": "(510) 849-4663",
+    "website": "https://www.borp.org/",
+    "address": "3075 Adeline Street, Suite 200, Berkeley, CA 94703",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Free or low cost",
+    "tags": [
+      "adaptive cycling",
+      "sled hockey",
+      "power soccer",
+      "fitness"
+    ],
+    "source": "https://www.borp.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "AmpSurf",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "California",
+    "area": "Pismo Beach",
+    "description": "Promotes rehabilitation through adaptive surfing and outdoor activities for people with disabilities, veterans, and first responders. Operates chapters across California and beyond since 2003.",
+    "phone": "",
+    "website": "https://www.ampsurf.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Free",
+    "tags": [
+      "adaptive surfing",
+      "veterans",
+      "rehabilitation",
+      "ocean"
+    ],
+    "source": "https://www.ampsurf.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

@@ -319,5 +319,30 @@
     ],
     "source": "https://www.lakeshore.org",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Lakeshore Foundation",
+    "category": [
+      "sports",
+      "nonprofit"
+    ],
+    "location": "Alabama",
+    "area": "Birmingham",
+    "description": "World leader in adaptive fitness and athletic performance, serving as the National Governing Body for USA Wheelchair Rugby. Offers 90+ weekly classes and competitive adaptive sports programs.",
+    "phone": "(205) 313-7400",
+    "website": "https://www.lakeshore.org/",
+    "address": "4000 Ridgeway Drive, Birmingham, AL 35209",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "wheelchair rugby",
+      "adaptive fitness",
+      "competitive sports"
+    ],
+    "source": "https://www.lakeshore.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

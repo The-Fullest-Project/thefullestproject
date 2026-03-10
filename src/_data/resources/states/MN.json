@@ -279,5 +279,28 @@
     ],
     "source": "https://www.fraser.org",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Mind Body Solutions",
+    "category": [
+      "sports",
+      "therapy"
+    ],
+    "location": "Minnesota",
+    "area": "Minneapolis",
+    "description": "Adaptive yoga studio transforming trauma, loss, and disability into hope by awakening the mind-body connection. Classes for people with disabilities and their caregivers.",
+    "phone": "",
+    "website": "https://www.mindbodysolutions.org/",
+    "address": "4212 Park Glen Rd, Minneapolis, MN 55416",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "adaptive yoga",
+      "mindfulness",
+      "caregivers"
+    ],
+    "source": "https://www.mindbodysolutions.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

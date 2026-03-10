@@ -1,7 +1,9 @@
 [
   {
     "name": "Early Intervention Colorado",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Colorado's Part C early intervention program supporting families with children birth to age three who have developmental delays or disabilities. Services include speech therapy, physical therapy, and other developmental services provided in natural learning environments at no cost to families.",
@@ -11,13 +13,17 @@
     "ageRange": "Birth to 3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://cdec.colorado.gov/early-intervention-for-infants-and-toddlers",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Colorado",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Promotes and protects the human rights of people with intellectual and developmental disabilities and supports their full inclusion in the community. Provides educational information, connects families to resources, and advocates on behalf of individuals with IDD.",
@@ -25,15 +31,22 @@
     "website": "https://thearc.org/chapter/the-arc-of-colorado/",
     "address": "1580 Logan Street, Suite 930, Denver, CO 80203",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability", "Developmental Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability",
+      "Developmental Disability"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://thearc.org/chapter/the-arc-of-colorado/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Colorado",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Improves the lives of more than 23,000 individuals with intellectual disabilities through free sports training and competitions, social events, and health education and screenings throughout Colorado.",
@@ -41,15 +54,21 @@
     "website": "https://specialolympicsco.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://specialolympicsco.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Law Colorado",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Colorado's Protection and Advocacy agency dedicated to eradicating discrimination, abuse, and neglect. Provides legal representation, investigation, advocacy, and education to protect and promote the rights of people with disabilities and older people for nearly 50 years.",
@@ -59,13 +78,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://disabilitylawco.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Colorado Division of Vocational Rehabilitation",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Assists people with disabilities to succeed at work and live independently. Services include work-based learning, training, job placement, supported employment, and pre-employment transition services for students with disabilities.",
@@ -75,13 +98,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://dvr.colorado.gov/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "NAMI Colorado",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Colorado affiliate of NAMI providing educational programs, support groups, and advocacy for individuals and families affected by mental illness. Mission is to build communities of recovery and hope through education, support, and advocacy.",
@@ -89,15 +116,21 @@
     "website": "https://namicolorado.org/",
     "address": "3333 S Bannock St Ste 430, Englewood, CO 80110",
     "ageRange": "",
-    "disabilityTypes": ["Mental Health"],
+    "disabilityTypes": [
+      "Mental Health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namicolorado.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Colorado Assistive Technology Act Program",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Managed by the Center for Inclusive Design and Engineering at CU Denver, providing AT information, services, device loans, and financial loans for education, employment, and community living. Includes the SWAAAC program for school-based assistive technology services.",
@@ -107,13 +140,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/colorado-assistive-technology-act-program",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Colorado ABLE",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Colorado's ABLE savings program for people with disabilities, allowing tax-advantaged savings while protecting eligibility for public assistance programs. Contributions may qualify for a state tax deduction. Minimum $25 to open an account.",
@@ -123,13 +160,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.coloradoable.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Children's Hospital Colorado - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "Comprehensive interdisciplinary care for children and youth with developmental delays and intellectual disabilities, including autism spectrum disorders. Specialized clinics for Deaf and Hard of Hearing, Fragile X, and eXtraordinarY Kids. Telehealth available.",
@@ -137,15 +178,23 @@
     "website": "https://www.childrenscolorado.org/doctors-and-departments/departments/neuroscience-institute/programs/developmental-pediatrics/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Autism", "Intellectual Disability", "Developmental Delay"],
+    "disabilityTypes": [
+      "Autism",
+      "Intellectual Disability",
+      "Developmental Delay"
+    ],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.childrenscolorado.org/doctors-and-departments/departments/neuroscience-institute/programs/developmental-pediatrics/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "National Sports Center for the Disabled (NSCD)",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Colorado",
     "area": "",
     "description": "One of the largest therapeutic recreation organizations in the world, serving over 3,000 children and adults with disabilities annually. Programs include alpine skiing, snowboarding, Nordic skiing, rock climbing, kayaking, and therapeutic horseback riding at Winter Park Resort and the Front Range.",
@@ -155,8 +204,62 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://nscd.org/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Adaptive Adventures",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "Colorado",
+    "area": "Westminster",
+    "description": "Free progressive outdoor adventures for individuals with physical disabilities including cycling, climbing, kayaking, skiing, waterskiing, and dragon boat racing.",
+    "phone": "(303) 679-2770",
+    "website": "https://adaptiveadventures.org/",
+    "address": "9053 Harlan Street, Suite 34, Westminster, CO 80031",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Free",
+    "tags": [
+      "cycling",
+      "climbing",
+      "kayaking",
+      "skiing",
+      "free"
+    ],
+    "source": "https://adaptiveadventures.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Adaptive Action Sports",
+    "category": [
+      "sports"
+    ],
+    "location": "Colorado",
+    "area": "Copper Mountain",
+    "description": "Trains adaptive athletes for the US Snowboarding Team while providing recreational skiing, snowboarding, skateboarding, and mountain biking programs year-round.",
+    "phone": "(360) 820-9268",
+    "website": "https://www.adacs.org/",
+    "address": "509 Copper Rd, Suite VS105, Copper Mountain, CO 80443",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "snowboarding",
+      "skiing",
+      "skateboarding",
+      "competitive"
+    ],
+    "source": "https://www.adacs.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

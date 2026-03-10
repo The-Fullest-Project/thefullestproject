@@ -1,7 +1,9 @@
 [
   {
     "name": "Hawaii Early Intervention Section",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Federal and state-mandated program providing developmental services for eligible children from birth to three years in five areas: physical, cognitive, communication, social-emotional, and adaptive. Services delivered in natural environments with the goal of coaching parents to support development.",
@@ -11,13 +13,17 @@
     "ageRange": "Birth to 3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://health.hawaii.gov/eis/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc in Hawaii",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Founded in 1954, provides quality direct and advocacy services for individuals with intellectual and developmental disabilities in Hawaii. Services include residential support, community programs, and systems advocacy with legislators to develop beneficial policies.",
@@ -25,15 +31,22 @@
     "website": "https://thearcinhawaii.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability", "Developmental Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability",
+      "Developmental Disability"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://thearcinhawaii.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Hawaii",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Serves more than 7,200 athletes and unified partners on every island in Hawaii. Offers training and competition in 10 sports with over 50 competitions annually, including 3 statewide competitions.",
@@ -41,15 +54,21 @@
     "website": "https://sohawaii.org/",
     "address": "91-610 Maunakapu Street, Ewa Beach, HI 96706",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://sohawaii.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Hawaii Disability Rights Center",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Hawaii's Protection and Advocacy System for people with disabilities. Provides legal advocacy, investigations of abuse and neglect, and protection of rights through PADD, PAIMI, and PAAT programs. Serves all islands statewide.",
@@ -59,13 +78,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://hawaiidisabilityrights.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Hawaii Division of Vocational Rehabilitation",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Assists people with disabilities to prepare for, secure, maintain, or advance in competitive employment. Services tailored to individual skills, interests, and abilities with offices on all major islands.",
@@ -75,13 +98,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://humanservices.hawaii.gov/vocationalrehab/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "NAMI Hawaii",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Established in 1991, NAMI Hawaii provides free support, education, information, and resources for individuals and families affected by mental illness. Programs include Peer-to-Peer and Family-to-Family educational courses.",
@@ -89,15 +116,21 @@
     "website": "https://namihawaii.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Mental Health"],
+    "disabilityTypes": [
+      "Mental Health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namihawaii.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Assistive Technology Resource Centers of Hawaii (ATRC)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Hawaii's designated Assistive Technology Act agency since 1991. Provides demos, training, equipment loans, computer redistribution, assessment, financial loans, and advocacy activities to help people with disabilities participate in community life.",
@@ -107,13 +140,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://atrc.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Hawaii ABLE Savings Program",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Tax-advantaged savings accounts for Hawaii residents with qualifying disabilities. Allows saving for qualified disability expenses while keeping federal and state benefits including SSI, Medicaid, and SNAP. Low annual fee of $35.",
@@ -123,13 +160,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.hawaiiablesavings.com/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kapiolani Medical Center for Women and Children",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "Hawaii's only children's hospital providing comprehensive pediatric specialty care including neurodevelopmental services, developmental and behavioral assessments, and NICU follow-up developmental monitoring. Located in Honolulu.",
@@ -137,15 +178,21 @@
     "website": "https://www.hawaiipacifichealth.org/kapiolani/services/pediatrics/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Developmental Delay"],
+    "disabilityTypes": [
+      "Developmental Delay"
+    ],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.hawaiipacifichealth.org/kapiolani/services/pediatrics/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "AccesSurf Hawaii",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Hawaii",
     "area": "",
     "description": "The only organization in Hawaii offering access to ocean and adaptive water sports, hosting over 40 events per year with 2,500+ ocean experiences annually. Programs include Day at the Beach, Wounded Warrior events, and competitive adaptive surfing. Hawaii's first Paralympic Sports Club.",
@@ -153,9 +200,14 @@
     "website": "https://www.accessurf.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Physical Disability", "Cognitive Disability"],
+    "disabilityTypes": [
+      "Physical Disability",
+      "Cognitive Disability"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.accessurf.org/",
     "lastScraped": "2026-03-06"
   }
