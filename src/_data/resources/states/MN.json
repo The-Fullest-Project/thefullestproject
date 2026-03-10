@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc Minnesota",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "State chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in Minnesota.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcminnesota.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota Help Me Grow / Early Intervention",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "Minnesota's early intervention program connecting families of infants and toddlers with developmental concerns to services from birth to age 3.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.helpmegrowmn.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Minnesota",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "Year-round sports training and athletic competition for Minnesotans with intellectual disabilities.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.somn.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Gillette Children's Specialty Healthcare",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Minnesota",
     "area": "St. Paul",
     "description": "Specialized pediatric healthcare for children with complex medical conditions, disabilities, and rare conditions.",
@@ -59,13 +73,17 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.gillettechildrens.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota Disability Law Center",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "Minnesota's designated protection and advocacy organization providing free legal services for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.mndlc.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota STAR Program (System of Technology to Achieve Results)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "Statewide assistive technology program providing device demonstrations, loans, and information for Minnesotans with disabilities.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://mn.gov/admin/star/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Minnesotans with disabilities to save without affecting means-tested benefits.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.savewithable.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota Department of Human Services - Disability Services Division",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "State agency providing disability services, Medicaid waivers, and supports for Minnesotans with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://mn.gov/dhs/people-we-serve/people-with-disabilities/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Courage (True Friends)",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Minnesota",
     "area": "Maple Lake",
     "description": "Residential camp for children and adults with disabilities providing adaptive recreation, horseback riding, and outdoor experiences.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.truefriends.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "PACER Center",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Minnesota",
     "area": "Minneapolis",
     "description": "National parent training and information center based in Minnesota, providing support and resources for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.pacer.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota Vocational Rehabilitation Services",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "State services helping Minnesotans with disabilities prepare for, find, and maintain competitive employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://mn.gov/deed/job-seekers/disabilities/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Minnesota Medicaid Home and Community-Based Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Minnesota",
     "area": "",
     "description": "Medicaid waiver programs providing home and community-based services for Minnesotans with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://mn.gov/dhs/people-we-serve/people-with-disabilities/services/home-community-based-services/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Metro Mobility Paratransit",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Minnesota",
     "area": "Twin Cities",
     "description": "ADA paratransit service providing demand-responsive transportation for eligible riders with disabilities in the Twin Cities metro area.",
@@ -203,13 +253,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://metrocouncil.org/Transportation/Services/Metro-Mobility.aspx",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Fraser Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Minnesota",
     "area": "Minneapolis",
     "description": "Comprehensive pediatric therapy services including occupational, physical, speech, and mental health therapy for children with disabilities.",
@@ -219,7 +274,9 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.fraser.org",
     "lastScraped": "2026-03-06"
   }

@@ -1,7 +1,9 @@
 [
   {
     "name": "Arkansas Division of Developmental Disabilities Services (DDS)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "State agency providing services and supports for individuals with developmental disabilities including waiver programs, case management, and community supports.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://humanservices.arkansas.gov/divisions/developmental-disabilities/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Arkansas Early Intervention (First Connections)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Part C early intervention program for infants and toddlers birth to age 3 with developmental delays, providing family-centered services and supports.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://humanservices.arkansas.gov/divisions/developmental-disabilities/first-connections/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Arkansas",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Statewide nonprofit advocating for and with people with intellectual and developmental disabilities, providing resources and community support.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcark.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Arkansas",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities throughout Arkansas.",
@@ -59,13 +73,17 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.specialolympicsarkansas.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Arkansas",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Federally designated protection and advocacy organization providing legal advocacy and rights protection for Arkansans with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsar.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Arkansas Lifespan Respite Coalition",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Respite care resources and referrals for family caregivers of individuals with disabilities or special health care needs.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://humanservices.arkansas.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Aldersgate",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Arkansas",
     "area": "Little Rock",
     "description": "Year-round camp and retreat center providing inclusive outdoor experiences for children and adults with disabilities and special health needs.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campaldersgate.net",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "INCREASING Capabilities Access Network (ICAN)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Arkansas assistive technology program providing device demonstrations, short-term loans, and assistance accessing AT solutions for individuals with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://ar-ican.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Arkansas ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Tax-advantaged savings accounts allowing individuals with disabilities to save without losing eligibility for public benefits.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.arkansasable.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Arkansas Medicaid Waiver Programs (ARChoices)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Home and community-based Medicaid waiver programs enabling individuals with disabilities to receive services in their homes and communities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://humanservices.arkansas.gov/divisions/medical-services/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Rock Region METRO Paratransit",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Arkansas",
     "area": "Little Rock",
     "description": "Paratransit transportation services for individuals with disabilities in the Little Rock metropolitan area.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.rrmetro.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Arkansas Development Finance Authority - Accessible Housing",
-    "category": ["housing"],
+    "category": [
+      "housing"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "State housing finance agency providing accessible and affordable housing resources for individuals with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["housing"],
+    "tags": [
+      "housing"
+    ],
     "source": "https://www.adfa.arkansas.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "UAMS Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Arkansas",
     "area": "Little Rock",
     "description": "Developmental and behavioral pediatrics at the University of Arkansas for Medical Sciences, providing comprehensive evaluations and care for children with developmental concerns.",
@@ -203,13 +253,18 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.uams.edu/pediatrics/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Easter Seals Arkansas Pediatric Therapy",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Pediatric therapy services including physical, occupational, and speech therapy for children with disabilities.",
@@ -219,13 +274,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.easterseals.com/arkansas/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Arkansas Rehabilitation Services - Employment",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Arkansas",
     "area": "",
     "description": "Vocational rehabilitation and employment services for individuals with disabilities seeking competitive integrated employment.",
@@ -235,7 +294,9 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://humanservices.arkansas.gov/divisions/services-for-the-blind/arkansas-rehabilitation-services/",
     "lastScraped": "2026-03-06"
   }

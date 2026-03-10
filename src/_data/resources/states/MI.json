@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc Michigan",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "State chapter of The Arc advocating for people with intellectual and developmental disabilities across Michigan.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcmi.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Early On Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Michigan's early intervention program providing services for infants and toddlers from birth to age 3 with developmental delays.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.1702earlyon.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Michigan",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities across Michigan.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.somi.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "C.S. Mott Children's Hospital - Developmental and Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Michigan",
     "area": "Ann Arbor",
     "description": "Comprehensive developmental and behavioral pediatric evaluations and treatment at a top-ranked children's hospital.",
@@ -59,13 +73,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.mottchildren.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Protection and Advocacy Service (MPAS)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Michigan's designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.mpas.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Assistive Technology Program (MATP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Statewide program providing assistive technology device demonstrations, loans, and information for Michiganders with disabilities.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.cenmi.org/matp",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "MiABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Michiganders with disabilities to save without impacting public benefits.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.miable.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Department of Health and Human Services - Developmental Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "State agency providing developmental disability services, Medicaid waivers, and support for individuals with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.michigan.gov/mdhhs",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Barefoot (Easterseals Michigan)",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Residential summer camp for children and adults with disabilities featuring adaptive recreation and outdoor activities.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.easterseals.com/michigan/our-programs/camping-recreation/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Alliance for Families",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Parent training and information center providing support, resources, and advocacy training for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.michiganallianceforfamilies.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Rehabilitation Services",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "State vocational rehabilitation services helping Michiganders with disabilities prepare for and obtain employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.michigan.gov/leo/bureaus-agencies/mrs",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Michigan Medicaid HCBS Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Michigan",
     "area": "",
     "description": "Medicaid waiver programs funding home and community-based services for Michiganders with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.michigan.gov/mdhhs/keep-mi-healthy/medicaidpolicywaivers",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "SMART Connector Paratransit",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Michigan",
     "area": "Southeast Michigan",
     "description": "ADA paratransit services providing door-to-door transportation for eligible riders with disabilities in the suburban Detroit area.",
@@ -203,13 +253,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.smartbus.org/services/connector",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Beaumont Children's Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Michigan",
     "area": "Southeast Michigan",
     "description": "Pediatric occupational, physical, and speech therapy services for children with developmental delays and disabilities.",
@@ -219,7 +274,9 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.beaumont.org/services/childrens/pediatric-rehabilitation",
     "lastScraped": "2026-03-06"
   }

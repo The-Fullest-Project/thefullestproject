@@ -1,7 +1,9 @@
 [
   {
     "name": "Agency for Persons with Disabilities (APD)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Florida state agency serving individuals with developmental disabilities including autism, cerebral palsy, Down syndrome, and intellectual disabilities through waiver programs and community supports.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://apd.myflorida.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida Early Steps",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Part C early intervention program for infants and toddlers birth to 36 months with developmental delays or established conditions.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.floridahealth.gov/programs-and-services/childrens-health/early-steps/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Florida",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Statewide nonprofit advocating for people with intellectual and developmental disabilities, with local chapters offering direct services throughout Florida.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcflorida.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Florida",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities at locations across Florida.",
@@ -59,13 +73,17 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.specialolympicsflorida.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Florida",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Federally designated protection and advocacy organization providing free legal services to Floridians with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsflorida.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida Respite Coalition",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Statewide coalition connecting family caregivers with respite care providers and resources for temporary relief.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://www.floridarespite.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Boggy Creek",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Florida",
     "area": "Eustis",
     "description": "Year-round camp for children with serious illnesses and disabilities, providing free medically supervised camp experiences.",
@@ -107,13 +133,17 @@
     "ageRange": "7-16",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campboggycreek.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida Alliance for Assistive Services and Technology (FAAST)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Florida's assistive technology program providing device demonstrations, equipment loans, and training for individuals with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.faast.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Tax-advantaged savings program allowing Floridians with disabilities to save without impacting eligibility for public benefits.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.ableunited.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida Medicaid Waiver Programs (iBudget)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Florida",
     "area": "",
     "description": "Home and community-based Medicaid waiver program providing individualized budgets for services for individuals with developmental disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://apd.myflorida.com/ibudget/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "LYNX ACCESS LYNX Paratransit (Orlando)",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Florida",
     "area": "Orlando",
     "description": "Paratransit transportation service for individuals with disabilities in the greater Orlando area who cannot use fixed-route bus service.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.golynx.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida Housing Finance Corporation - Accessible Housing",
-    "category": ["housing"],
+    "category": [
+      "housing"
+    ],
     "location": "Florida",
     "area": "",
     "description": "State housing agency providing information on accessible and affordable housing options for individuals with disabilities throughout Florida.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["housing"],
+    "tags": [
+      "housing"
+    ],
     "source": "https://www.floridahousing.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "UF Health Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Florida",
     "area": "Gainesville",
     "description": "Developmental and behavioral pediatrics at the University of Florida providing evaluations, diagnosis, and treatment for children with developmental concerns.",
@@ -203,13 +253,18 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://ufhealth.org/pediatrics",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Easter Seals South Florida Pediatric Therapy",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Florida",
     "area": "South Florida",
     "description": "Comprehensive pediatric therapy services including physical, occupational, speech, and behavioral therapy for children with disabilities.",
@@ -219,13 +274,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.easterseals.com/southflorida/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Florida Division of Vocational Rehabilitation - Employment",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Florida",
     "area": "",
     "description": "State vocational rehabilitation program providing employment services, job training, and placement for Floridians with disabilities.",
@@ -235,13 +294,17 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.rehabworks.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Miracle League of South Florida",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Florida",
     "area": "South Florida",
     "description": "Adaptive baseball league providing opportunities for children with disabilities to play baseball on a custom-designed accessible field.",
@@ -251,7 +314,9 @@
     "ageRange": "4-18",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.miracleleaguesouthflorida.com",
     "lastScraped": "2026-03-06"
   }

@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of Missouri",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "State chapter of The Arc advocating for people with intellectual and developmental disabilities across Missouri.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearc.org/find-a-chapter",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri First Steps Early Intervention",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Missouri's early intervention program providing services for infants and toddlers with developmental delays from birth to age 3.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.mofirststeps.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Missouri",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Year-round sports training and athletic competition for Missourians with intellectual disabilities.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.somo.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "St. Louis Children's Hospital - Developmental and Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Missouri",
     "area": "St. Louis",
     "description": "Comprehensive developmental and behavioral pediatric evaluations and treatment at a nationally ranked children's hospital.",
@@ -59,13 +73,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.stlouischildrens.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri Protection and Advocacy Services (Mo P&A)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Missouri's designated protection and advocacy organization providing legal advocacy for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.moadvocacy.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri Assistive Technology",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Statewide program providing assistive technology information, device demonstrations, and loans for Missourians with disabilities.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://at.mo.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri ABLE Account (MOABLE)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Missourians with disabilities to save without affecting means-tested public benefits.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.moable.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri Division of Developmental Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "State agency administering services and supports for Missourians with developmental disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://dmh.mo.gov/developmental-disabilities",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Barnabas",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Missouri",
     "area": "Purdy",
     "description": "Week-long summer camp for children and young adults with special needs and chronic illnesses featuring outdoor activities and one-on-one buddies.",
@@ -139,13 +173,17 @@
     "ageRange": "7-30",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campbarnabas.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri Parents Act (MPACT)",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Missouri's parent training and information center providing support, resources, and advocacy for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.missouriparentsact.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri Vocational Rehabilitation",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "State vocational rehabilitation services helping Missourians with disabilities prepare for and obtain employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Missouri Medicaid HCBS Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Missouri",
     "area": "",
     "description": "Medicaid waiver programs funding home and community-based services for Missourians with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://dmh.mo.gov/developmental-disabilities/programs/waiver-services",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Metro Transit (St. Louis) Call-A-Ride Paratransit",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Missouri",
     "area": "St. Louis",
     "description": "ADA paratransit service providing door-to-door transportation for eligible riders with disabilities in the St. Louis metro area.",
@@ -203,13 +253,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.metrostlouis.org/call-a-ride/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "SSM Health Cardinal Glennon Children's Hospital - Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Missouri",
     "area": "St. Louis",
     "description": "Pediatric occupational, physical, and speech therapy services for children with developmental delays and disabilities.",
@@ -219,7 +274,9 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.ssmhealth.com/cardinal-glennon",
     "lastScraped": "2026-03-06"
   }

@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of Indiana",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "State chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in Indiana.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcind.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana First Steps Early Intervention",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Indiana's early intervention program providing services for infants and toddlers with developmental delays from birth to age 3.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.in.gov/fssa/firststeps/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Indiana",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities across Indiana.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.soindiana.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Riley Children's Hospital - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Indiana",
     "area": "Indianapolis",
     "description": "Comprehensive developmental pediatric evaluations, diagnostics, and treatment at Indiana's premier children's hospital.",
@@ -59,13 +73,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.rileychildrens.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana Disability Rights",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Indiana's protection and advocacy organization providing legal services, advocacy, and information for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.indianadisabilityrights.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana ATTAIN Project - Assistive Technology",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Indiana's assistive technology act program offering device demonstrations, short-term loans, and training across the state.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.eastersealsci.com/attain",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana ABLE Account (INvestABLE)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Hoosiers with disabilities to save without impacting public benefits eligibility.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.investable.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana Bureau of Developmental Disabilities Services",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "State agency overseeing Medicaid waivers and services for individuals with developmental disabilities in Indiana.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.in.gov/fssa/ddrs/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Bradford Woods Adaptive Camp",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Indiana",
     "area": "Martinsville",
     "description": "Indiana University's outdoor education center offering adaptive camp programs and recreation for people with disabilities.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.bradfordwoods.iu.edu",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "IN*SOURCE - Indiana Resource Center for Families with Special Needs",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Parent training and information center providing support, resources, and advocacy training for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.insource.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana Vocational Rehabilitation Services",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "State vocational rehabilitation services helping individuals with disabilities prepare for, find, and maintain employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.in.gov/fssa/ddrs/rehabilitation-services/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "IndyGo Open Door Paratransit",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Indiana",
     "area": "Indianapolis",
     "description": "ADA complementary paratransit service providing door-to-door transportation for eligible riders with disabilities in the Indianapolis area.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.indygo.net/open-door/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Indiana Medicaid Home and Community-Based Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Indiana",
     "area": "",
     "description": "Medicaid waiver programs providing home and community-based services for Hoosiers with disabilities as alternatives to institutional care.",
@@ -203,13 +253,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.in.gov/fssa/ddrs/disability-services/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Easterseals Crossroads - Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Indiana",
     "area": "Indianapolis",
     "description": "Provides occupational, physical, and speech therapy services for children and adults with disabilities.",
@@ -219,7 +274,9 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.eastersealsci.com",
     "lastScraped": "2026-03-06"
   }

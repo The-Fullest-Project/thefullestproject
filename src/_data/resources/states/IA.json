@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of Iowa",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "State chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in Iowa.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearcofiowa.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Iowa Early ACCESS",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Iowa's early intervention system providing services for infants and toddlers from birth to age 3 with developmental delays.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.iowafamilysupport.org/early-access",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Iowa",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities across Iowa.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.soiowa.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "University of Iowa Stead Family Children's Hospital - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Iowa",
     "area": "Iowa City",
     "description": "Comprehensive developmental and behavioral pediatric services at Iowa's premier children's hospital.",
@@ -59,13 +73,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://uichildrens.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Iowa",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Iowa's designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsiowa.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Iowa Program for Assistive Technology (IPAT)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Statewide assistive technology program providing device demonstrations, short-term loans, and information for Iowans with disabilities.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.iowaat.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Iowa ABLE Savings Plan",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Iowans with disabilities to save without jeopardizing public benefits.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.iaable.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Iowa Department of Health and Human Services - Disability Services",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "State agency providing disability services, Medicaid waivers, and supports for Iowans with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://hhs.iowa.gov/disability-services",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Courageous of Iowa",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Iowa",
     "area": "Monticello",
     "description": "Year-round recreational and respite care camp for individuals with disabilities and special needs.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campcourageous.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "ASK Resource Center",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Iowa's parent training and information center providing support and resources for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.askresource.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Iowa Vocational Rehabilitation Services",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "State services helping Iowans with disabilities prepare for, find, and maintain competitive integrated employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.ivrs.iowa.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Iowa Medicaid Home and Community-Based Services Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Iowa",
     "area": "",
     "description": "Medicaid waiver programs providing home and community-based services to Iowans with disabilities as an alternative to institutional care.",
@@ -187,13 +233,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://hhs.iowa.gov/programs/welcome-iowa-medicaid/iowa-medicaid-programs",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "ChildServe Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Iowa",
     "area": "Des Moines",
     "description": "Pediatric therapy services including occupational, physical, and speech therapy for children with special health care needs.",
@@ -203,7 +254,9 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.childserve.org",
     "lastScraped": "2026-03-06"
   }

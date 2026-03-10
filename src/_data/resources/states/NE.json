@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of Nebraska",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "State chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in Nebraska.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arc-nebraska.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Nebraska Early Development Network",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Nebraska's early intervention program providing services for infants and toddlers from birth to age 3 with developmental delays.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.education.ne.gov/sped/edn/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Nebraska",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Year-round sports training and athletic competition for Nebraskans with intellectual disabilities.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.sone.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Children's Hospital & Medical Center - Developmental Medicine",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Nebraska",
     "area": "Omaha",
     "description": "Comprehensive developmental and behavioral pediatric evaluations and treatment at Nebraska's only dedicated children's hospital.",
@@ -59,13 +73,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.childrensomaha.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Nebraska",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Nebraska's designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsnebraska.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Nebraska Assistive Technology Partnership (ATP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Statewide program providing assistive technology device demonstrations, loans, and information for Nebraskans with disabilities.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://atp.nebraska.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Nebraska ABLE Account (ENABLE)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Nebraskans with disabilities to save without impacting public benefits.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.enablesavings.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Nebraska Department of Health and Human Services - Developmental Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "State agency providing developmental disability services, Medicaid waivers, and supports for Nebraskans with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Kindle",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Camp programs for children and families affected by various health and developmental challenges.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campkindle.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "PTI Nebraska (Parent Training and Information)",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Nebraska's parent training and information center providing support and resources for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.pti-nebraska.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Nebraska Vocational Rehabilitation",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "State vocational rehabilitation services helping Nebraskans with disabilities prepare for and obtain employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://vr.nebraska.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Nebraska Medicaid HCBS Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Nebraska",
     "area": "",
     "description": "Medicaid waiver programs funding home and community-based services for Nebraskans with disabilities.",
@@ -187,13 +233,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://dhhs.ne.gov/Pages/Medicaid-Home-and-Community-Based-Services.aspx",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Munroe-Meyer Institute Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Nebraska",
     "area": "Omaha",
     "description": "Comprehensive therapy services including occupational, physical, speech, and behavioral therapy for individuals with disabilities.",
@@ -203,7 +254,9 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.unmc.edu/mmi/",
     "lastScraped": "2026-03-06"
   }

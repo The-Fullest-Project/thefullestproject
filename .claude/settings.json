@@ -1,13 +1,28 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git *)",
-      "Bash(gh *)",
-      "Bash(node -e *)",
-      "Bash(npx *)",
-      "Bash(npm *)",
-      "Bash(PATH_PREFIX=* npx *)",
-      "Bash(MSYS_NO_PATHCONV=* PATH_PREFIX=* npx *)"
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Agent",
+      "TodoWrite",
+      "WebFetch",
+      "WebSearch",
+      "Skill",
+      "ToolSearch",
+      "AskUserQuestion",
+      "ExitPlanMode",
+      "EnterPlanMode",
+      "EnterWorktree",
+      "NotebookEdit",
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "TaskOutput",
+      "TaskStop",
+      "Bash(*)"
     ]
   },
   "hooks": {

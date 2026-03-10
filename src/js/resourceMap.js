@@ -1,15 +1,16 @@
 /**
  * Resource Map View
- * Toggles between list and map view on the resources page.
+ * Toggles between card, list, and map view on the resources page.
  * Uses Leaflet.js with OpenStreetMap tiles (free, no API key).
  */
 document.addEventListener('DOMContentLoaded', function() {
   var mapContainer = document.getElementById('resource-map');
   var resourceGrid = document.getElementById('resource-grid');
+  var cardViewBtn = document.getElementById('card-view-btn');
   var listViewBtn = document.getElementById('list-view-btn');
   var mapViewBtn = document.getElementById('map-view-btn');
 
-  if (!mapContainer || !resourceGrid || !listViewBtn || !mapViewBtn) return;
+  if (!mapContainer || !resourceGrid || !cardViewBtn || !listViewBtn || !mapViewBtn) return;
 
   // Known city coordinates (lat, lng)
   var cityCoords = {
@@ -42,7 +43,29 @@ document.addEventListener('DOMContentLoaded', function() {
     'north potomac': [39.0879, -77.2339],
     'great falls': [39.0001, -77.2884],
     'lynchburg': [37.4138, -79.1422],
+    'lorton': [38.7043, -77.2278],
     'northern virginia': [38.8816, -77.1712],
+    'clifton': [38.7804, -77.3867],
+    // Central Virginia
+    'richmond': [37.5407, -77.4360],
+    'charlottesville': [38.0293, -78.4767],
+    'fredericksburg': [38.3032, -77.4605],
+    'henrico': [37.5432, -77.3959],
+    'midlothian': [37.5021, -77.6483],
+    // Hampton Roads
+    'virginia beach': [36.8529, -75.9780],
+    'norfolk': [36.8508, -76.2859],
+    'hampton': [37.0299, -76.3452],
+    'newport news': [37.0871, -76.4730],
+    'chesapeake': [36.7682, -76.2875],
+    'hampton roads': [36.9000, -76.3000],
+    // Southwest Virginia
+    'roanoke': [37.2710, -79.9414],
+    'blacksburg': [37.2296, -80.4139],
+    'staunton': [38.1496, -79.0717],
+    'harrisonburg': [38.4496, -78.8689],
+    'danville': [36.5860, -79.3950],
+    'winchester': [39.1857, -78.1633],
     // DC / Maryland
     'washington, dc': [38.9072, -77.0369],
     'dc metro area': [38.9072, -77.0369],
@@ -120,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var map = null;
   var markers = [];
   var noDataMsg = null;
+  var currentView = 'cards'; // 'cards', 'list', or 'map'
 
   function initMap() {
     if (map) return;
@@ -130,129 +154,93 @@ document.addEventListener('DOMContentLoaded', function() {
     }).addTo(map);
   }
 
-  function showMapView() {
-    initMap();
-
-    // Clear existing markers and message
-    markers.forEach(function(m) { map.removeLayer(m); });
-    markers = [];
-    if (noDataMsg) { noDataMsg.remove(); noDataMsg = null; }
-
-    var cards = resourceGrid.querySelectorAll('.resource-card');
-    var bounds = [];
-
-    cards.forEach(function(card) {
-      if (card.style.display === 'none') return;
-
-      var area = (card.dataset.area || '').toLowerCase();
-      var location = card.dataset.location || '';
-      var name = card.querySelector('h3') ? card.querySelector('h3').textContent : '';
-      var desc = card.querySelector('p') ? card.querySelector('p').textContent : '';
-      var link = card.querySelector('a[href^="http"]');
-      var website = link ? link.getAttribute('href') : '';
-
-      // Find coordinates: try city first, then location/state level
-      var coords = cityCoords[area];
-      if (!coords) coords = locationCoords[location];
-      if (!coords) return;
-
-      // Add slight random offset to prevent overlapping markers
-      var lat = coords[0] + (Math.random() - 0.5) * 0.008;
-      var lng = coords[1] + (Math.random() - 0.5) * 0.008;
-
-      var popup = '<strong>' + name + '</strong>';
-      if (area) popup += '<br><em>' + area.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) + '</em>';
-      popup += '<br><span style="font-size:12px;">' + desc.substring(0, 100) + (desc.length > 100 ? '...' : '') + '</span>';
-      if (website) popup += '<br><a href="' + website + '" target="_blank">Visit Website</a>';
-
-      var marker = L.marker([lat, lng]).addTo(map).bindPopup(popup);
-      markers.push(marker);
-      bounds.push([lat, lng]);
-    });
-
-    if (bounds.length > 0) {
-      map.fitBounds(bounds, { padding: [30, 30] });
-    } else {
-      // Show message when no markers can be placed
-      noDataMsg = document.createElement('div');
-      noDataMsg.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;background:white;padding:16px 24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);text-align:center;font-size:14px;color:#555;';
-      noDataMsg.textContent = 'No map pins available for these resources. Try the list view.';
-      mapContainer.style.position = 'relative';
-      mapContainer.appendChild(noDataMsg);
-      map.setView([39, -95], 4);
-    }
-
-    resourceGrid.style.display = 'none';
-    mapContainer.style.display = 'block';
-    mapViewBtn.classList.add('active');
+  function clearActiveButtons() {
+    cardViewBtn.classList.remove('active');
     listViewBtn.classList.remove('active');
-
-    // Refresh map size after display change
-    setTimeout(function() { map.invalidateSize(); }, 100);
-  }
-
-  function isMapActive() {
-    return mapContainer.style.display !== 'none';
-  }
-
-  function refreshMapMarkers() {
-    if (!isMapActive()) return;
-    // Clear existing markers and message
-    markers.forEach(function(m) { map.removeLayer(m); });
-    markers = [];
-    if (noDataMsg) { noDataMsg.remove(); noDataMsg = null; }
-
-    var cards = resourceGrid.querySelectorAll('.resource-card');
-    var bounds = [];
-
-    cards.forEach(function(card) {
-      if (card.style.display === 'none') return;
-
-      var area = (card.dataset.area || '').toLowerCase();
-      var location = card.dataset.location || '';
-      var name = card.querySelector('h3') ? card.querySelector('h3').textContent : '';
-      var desc = card.querySelector('p') ? card.querySelector('p').textContent : '';
-      var link = card.querySelector('a[href^="http"]');
-      var website = link ? link.getAttribute('href') : '';
-
-      var coords = cityCoords[area];
-      if (!coords) coords = locationCoords[location];
-      if (!coords) return;
-
-      var lat = coords[0] + (Math.random() - 0.5) * 0.008;
-      var lng = coords[1] + (Math.random() - 0.5) * 0.008;
-
-      var popup = '<strong>' + name + '</strong>';
-      if (area) popup += '<br><em>' + area.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) + '</em>';
-      popup += '<br><span style="font-size:12px;">' + desc.substring(0, 100) + (desc.length > 100 ? '...' : '') + '</span>';
-      if (website) popup += '<br><a href="' + website + '" target="_blank">Visit Website</a>';
-
-      var marker = L.marker([lat, lng]).addTo(map).bindPopup(popup);
-      markers.push(marker);
-      bounds.push([lat, lng]);
-    });
-
-    if (bounds.length > 0) {
-      map.fitBounds(bounds, { padding: [30, 30] });
-    } else {
-      noDataMsg = document.createElement('div');
-      noDataMsg.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;background:white;padding:16px 24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);text-align:center;font-size:14px;color:#555;';
-      noDataMsg.textContent = 'No map pins available for these resources. Try the list view.';
-      mapContainer.style.position = 'relative';
-      mapContainer.appendChild(noDataMsg);
-      map.setView([39, -95], 4);
-    }
-  }
-
-  function showListView() {
-    resourceGrid.style.display = '';
-    mapContainer.style.display = 'none';
-    listViewBtn.classList.add('active');
     mapViewBtn.classList.remove('active');
   }
 
-  mapViewBtn.addEventListener('click', showMapView);
+  function showCardView() {
+    currentView = 'cards';
+    resourceGrid.style.display = '';
+    resourceGrid.classList.remove('list-view');
+    mapContainer.style.display = 'none';
+    clearActiveButtons();
+    cardViewBtn.classList.add('active');
+  }
+
+  function showListView() {
+    currentView = 'list';
+    resourceGrid.style.display = '';
+    resourceGrid.classList.add('list-view');
+    mapContainer.style.display = 'none';
+    clearActiveButtons();
+    listViewBtn.classList.add('active');
+  }
+
+  function showMapView() {
+    currentView = 'map';
+    initMap();
+    refreshMapMarkers();
+    resourceGrid.style.display = 'none';
+    resourceGrid.classList.remove('list-view');
+    mapContainer.style.display = 'block';
+    clearActiveButtons();
+    mapViewBtn.classList.add('active');
+    setTimeout(function() { map.invalidateSize(); }, 100);
+  }
+
+  function refreshMapMarkers() {
+    if (currentView !== 'map' || !map) return;
+    markers.forEach(function(m) { map.removeLayer(m); });
+    markers = [];
+    if (noDataMsg) { noDataMsg.remove(); noDataMsg = null; }
+
+    var cards = resourceGrid.querySelectorAll('.resource-card');
+    var bounds = [];
+
+    cards.forEach(function(card) {
+      if (card.style.display === 'none') return;
+
+      var area = (card.dataset.area || '').toLowerCase();
+      var location = card.dataset.location || '';
+      var name = card.querySelector('h3') ? card.querySelector('h3').textContent : '';
+      var desc = card.querySelector('p') ? card.querySelector('p').textContent : '';
+      var link = card.querySelector('a[href^="http"]');
+      var website = link ? link.getAttribute('href') : '';
+
+      var coords = cityCoords[area];
+      if (!coords) coords = locationCoords[location];
+      if (!coords) return;
+
+      var lat = coords[0] + (Math.random() - 0.5) * 0.008;
+      var lng = coords[1] + (Math.random() - 0.5) * 0.008;
+
+      var popup = '<strong>' + name + '</strong>';
+      if (area) popup += '<br><em>' + area.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) + '</em>';
+      popup += '<br><span style="font-size:12px;">' + desc.substring(0, 100) + (desc.length > 100 ? '...' : '') + '</span>';
+      if (website) popup += '<br><a href="' + website + '" target="_blank">Visit Website</a>';
+
+      var marker = L.marker([lat, lng]).addTo(map).bindPopup(popup);
+      markers.push(marker);
+      bounds.push([lat, lng]);
+    });
+
+    if (bounds.length > 0) {
+      map.fitBounds(bounds, { padding: [30, 30] });
+    } else {
+      noDataMsg = document.createElement('div');
+      noDataMsg.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;background:white;padding:16px 24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);text-align:center;font-size:14px;color:#555;';
+      noDataMsg.textContent = 'No map pins available for these resources. Try the card view.';
+      mapContainer.style.position = 'relative';
+      mapContainer.appendChild(noDataMsg);
+      map.setView([39, -95], 4);
+    }
+  }
+
+  cardViewBtn.addEventListener('click', showCardView);
   listViewBtn.addEventListener('click', showListView);
+  mapViewBtn.addEventListener('click', showMapView);
 
   // Re-render map markers when filters change
   var searchInput = document.getElementById('search-input');
@@ -260,7 +248,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var areaFilter = document.getElementById('area-filter');
   var categoryFilter = document.getElementById('category-filter');
 
-  // Use a small delay so filterResources() finishes hiding/showing cards first
   function onFilterChange() {
     setTimeout(refreshMapMarkers, 50);
   }
@@ -270,6 +257,6 @@ document.addEventListener('DOMContentLoaded', function() {
   if (areaFilter) areaFilter.addEventListener('change', onFilterChange);
   if (categoryFilter) categoryFilter.addEventListener('change', onFilterChange);
 
-  // Start in list view
-  showListView();
+  // Start in card view
+  showCardView();
 });

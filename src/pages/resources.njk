@@ -56,6 +56,7 @@ extraHead: |
             <option value="emergency">Emergency Preparedness</option>
             <option value="employment">Employment</option>
             <option value="dental">Dental & Oral Health</option>
+            <option value="disability-language">Disability Language & Advocacy</option>
             <option value="equipment">Equipment & Adaptive Gear</option>
             <option value="faith">Faith Communities</option>
             <option value="financial">Financial Assistance & Benefits</option>
@@ -80,7 +81,18 @@ extraHead: |
             <option value="service-animals">Service Animals</option>
             <option value="sibling-support">Sibling Support</option>
             <option value="planning">Special Needs Planning</option>
-            <option value="therapy">Therapy Providers</option>
+            <option value="switch-adapted">Switch-Adapted Toys & Devices</option>
+            <option value="therapy">Therapy Providers (All)</option>
+            <option value="therapy-aba">— ABA (Applied Behavior Analysis)</option>
+            <option value="therapy-aquatic">— Aquatic Therapy</option>
+            <option value="therapy-art">— Art Therapy</option>
+            <option value="therapy-equine">— Equine / Hippotherapy</option>
+            <option value="therapy-feeding">— Feeding Therapy</option>
+            <option value="therapy-music">— Music Therapy</option>
+            <option value="therapy-ot">— Occupational Therapy (OT)</option>
+            <option value="therapy-pt">— Physical Therapy (PT)</option>
+            <option value="therapy-speech">— Speech-Language Therapy</option>
+            <option value="therapy-vision">— Vision Therapy</option>
             <option value="transportation">Transportation</option>
             <option value="transition">Transition Services (18-21+)</option>
             <option value="vehicle-mods">Vehicle Modifications</option>
@@ -94,10 +106,13 @@ extraHead: |
     <div class="flex items-center justify-between mb-6">
       <p id="results-count" class="text-sm" style="color: var(--color-text-light);"></p>
       <div class="flex gap-1 rounded-lg overflow-hidden border" style="border-color: var(--color-primary);">
-        <button id="list-view-btn" class="px-3 py-1.5 text-sm font-semibold active" style="background-color: var(--color-primary); color: white;">
+        <button id="card-view-btn" class="view-toggle-btn px-3 py-1.5 text-sm font-semibold active" style="background-color: var(--color-primary); color: white;" aria-label="Card view">
+          Cards
+        </button>
+        <button id="list-view-btn" class="view-toggle-btn px-3 py-1.5 text-sm font-semibold" style="color: var(--color-primary);" aria-label="List view">
           List
         </button>
-        <button id="map-view-btn" class="px-3 py-1.5 text-sm font-semibold" style="color: var(--color-primary);">
+        <button id="map-view-btn" class="view-toggle-btn px-3 py-1.5 text-sm font-semibold" style="color: var(--color-primary);" aria-label="Map view">
           Map
         </button>
       </div>
@@ -157,11 +172,54 @@ extraHead: |
 <script src="/js/resourceFilter.js"></script>
 <script src="/js/resourceMap.js"></script>
 <style>
-  #list-view-btn.active, #map-view-btn.active {
+  .view-toggle-btn.active {
     background-color: var(--color-primary) !important;
     color: white !important;
   }
-  #list-view-btn:not(.active), #map-view-btn:not(.active) {
+  .view-toggle-btn:not(.active) {
     background-color: white;
+  }
+  /* List view styles */
+  #resource-grid.list-view {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0;
+  }
+  #resource-grid.list-view .resource-card {
+    border-radius: 0;
+    border-bottom: 1px solid var(--color-warm);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  #resource-grid.list-view .resource-card:first-child {
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+  #resource-grid.list-view .resource-card:last-child {
+    border-radius: 0 0 0.75rem 0.75rem;
+    border-bottom: none;
+  }
+  #resource-grid.list-view .resource-card .flex.items-start {
+    margin-bottom: 0;
+    flex-shrink: 0;
+    min-width: 200px;
+  }
+  #resource-grid.list-view .resource-card .flex.flex-wrap {
+    margin-bottom: 0;
+  }
+  #resource-grid.list-view .resource-card p.text-sm {
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 200px;
+  }
+  #resource-grid.list-view .resource-card p.text-xs {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    #resource-grid.list-view .resource-card {
+      flex-wrap: nowrap;
+    }
   }
 </style>

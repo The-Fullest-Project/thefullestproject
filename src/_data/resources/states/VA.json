@@ -1,5 +1,238 @@
 [
   {
+    "name": "A Mother's Rest",
+    "category": [
+      "respite"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Respite care organization providing rest and renewal for mothers of children with special needs.",
+    "phone": "",
+    "website": "https://www.amothersrest.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "respite",
+      "caregiver-support"
+    ],
+    "source": "https://www.amothersrest.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "ABA Centers of Virginia",
+    "category": [
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "In-home and community-based ABA therapy for children with autism, serving Arlington and greater Northern Virginia.",
+    "phone": "855-957-1892",
+    "website": "https://www.abacentersva.com/",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "in-home"
+    ],
+    "source": "https://www.abacentersva.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "ABC Behavior",
+    "category": [
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "manassas",
+    "description": "ABA therapy for individuals aged 1-21 with developmental disabilities across in-home, clinic, social group, and community settings.",
+    "phone": "",
+    "website": "https://abcbehavior.org/",
+    "address": "",
+    "ageRange": "Ages 1-21",
+    "disabilityTypes": [
+      "autism",
+      "developmental-disabilities"
+    ],
+    "cost": "",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "social-skills",
+      "in-home"
+    ],
+    "source": "https://abcbehavior.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "ABLE National Resource Center",
+    "category": [
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Information about ABLE accounts â€” tax-advantaged savings accounts for individuals with disabilities that don't affect benefits eligibility.",
+    "phone": "",
+    "website": "https://www.ablenrc.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ablenrc.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Achieve Beyond Pediatric Therapy & Autism Services",
+    "category": [
+      "therapy",
+      "therapy-aba",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Multi-disciplinary clinic offering speech, physical, occupational, and clinic-based ABA therapy for children from birth to age 21.",
+    "phone": "703-237-2219",
+    "website": "https://www.achievebeyondusa.com/locations/virginia/",
+    "address": "11200 Waples Mill Rd, Suite 100, Fairfax, VA 22030",
+    "ageRange": "Birth to 21",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Accepts private insurance",
+    "tags": [
+      "aba-therapy",
+      "speech-therapy",
+      "occupational-therapy",
+      "physical-therapy",
+      "autism"
+    ],
+    "source": "https://www.achievebeyondusa.com/locations/virginia/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Air and Space Museum - Accessibility",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Accessibility services at the Smithsonian Air and Space Museum Udvar-Hazy Center.",
+    "phone": "",
+    "website": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "museum",
+      "accessible",
+      "smithsonian"
+    ],
+    "source": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Alamo Drafthouse One Loudoun - Sensory-Friendly Screenings",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "ashburn",
+    "description": "Weekly 'Alamo For All' sensory-friendly screenings every Tuesday before 2:05 PM. Brighter lights, lower sound, no previews, and movement welcomed.",
+    "phone": "(571) 293-6808",
+    "website": "https://drafthouse.com/program/alamo-for-all",
+    "address": "20575 Easthampton Plaza, Ashburn, VA 20147",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Standard ticket price",
+    "tags": [
+      "sensory-friendly",
+      "movies",
+      "weekly-program"
+    ],
+    "source": "https://drafthouse.com/program/alamo-for-all",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Alamo Drafthouse Woodbridge - Sensory-Friendly Screenings",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "woodbridge",
+    "description": "Weekly 'Alamo For All' sensory-friendly screenings every Tuesday before 2:05 PM. Brighter lights, lower sound, no previews, and movement welcomed.",
+    "phone": "(571) 260-4413",
+    "website": "https://drafthouse.com/program/alamo-for-all",
+    "address": "15200 Potomac Town Place, Suite 100, Woodbridge, VA 22191",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Standard ticket price",
+    "tags": [
+      "sensory-friendly",
+      "movies",
+      "weekly-program"
+    ],
+    "source": "https://drafthouse.com/program/alamo-for-all",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "AMC Tysons Corner 16 - Sensory Friendly Films",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "mclean",
+    "description": "Sensory Friendly Films with Autism Society on 2nd/4th Saturday (family) and Wednesday evenings (mature). Lights up, sound down, audience free to move and talk.",
+    "phone": "",
+    "website": "https://www.amctheatres.com/programs/sensory-friendly-films",
+    "address": "1961 Chain Bridge Rd, McLean, VA 22102",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Standard ticket price",
+    "tags": [
+      "sensory-friendly",
+      "movies",
+      "autism-society-partner"
+    ],
+    "source": "https://www.amctheatres.com/programs/sensory-friendly-films",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Assistive Technology Act Programs",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "National network providing assistive technology information, device demonstrations, and lending programs in every state.",
+    "phone": "",
+    "website": "https://www.at3center.net/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://www.at3center.net/",
+    "lastScraped": "2026-03-06"
+  },
+  {
     "name": "AT Devices for Kids - RVA",
     "category": [
       "equipment"
@@ -21,256 +254,143 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Francesco's Closet at Wheatland Farm",
+    "name": "Attain ABA Therapy",
     "category": [
-      "equipment"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Equipment closet providing gently used adaptive equipment for children with special needs.",
-    "phone": "",
-    "website": "https://www.wheatlandfarm.org/francesco-s-closet",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "equipment-loaner",
-      "adaptive"
-    ],
-    "source": "https://www.wheatlandfarm.org/francesco-s-closet",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Equip for Children",
-    "category": [
-      "equipment"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Organization providing adaptive equipment to children who need it.",
-    "phone": "",
-    "website": "https://www.equipforchildren.org",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "equipment",
-      "adaptive"
-    ],
-    "source": "https://www.equipforchildren.org",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Therapeutic Recreation",
-    "category": [
-      "recreation",
-      "community"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Therapeutic recreation programs for individuals with disabilities through Fairfax County Neighborhood and Community Services.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "recreation",
-      "therapeutic",
-      "county-program"
-    ],
-    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "The J - Special Needs Programs",
-    "category": [
-      "recreation",
-      "community"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Special needs programs and inclusive activities at the Jewish Community Center.",
-    "phone": "",
-    "website": "https://www.thej.org/specialneeds/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "recreation",
-      "inclusive",
-      "community"
-    ],
-    "source": "https://www.thej.org/specialneeds/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Clemyjontri Park",
-    "category": [
-      "recreation"
-    ],
-    "location": "Virginia",
-    "area": "McLean",
-    "description": "Fully accessible playground designed for children of all abilities in McLean, VA.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/parks/clemyjontri/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "playground",
-      "accessible",
-      "wheelchair-friendly"
-    ],
-    "source": "https://www.fairfaxcounty.gov/parks/clemyjontri/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Accessible Trails",
-    "category": [
-      "recreation"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Directory of wheelchair and stroller-friendly trails throughout Fairfax County parks.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/parks/accessible/trails",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "trails",
-      "accessible",
-      "outdoor"
-    ],
-    "source": "https://www.fairfaxcounty.gov/parks/accessible/trails",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Meadowlark Botanical Gardens",
-    "category": [
-      "recreation"
-    ],
-    "location": "Virginia",
-    "area": "Vienna",
-    "description": "Beautiful botanical gardens with accessible paths in Vienna, VA.",
-    "phone": "",
-    "website": "https://www.novaparks.com/parks/meadowlark-botanical-gardens",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "gardens",
-      "accessible",
-      "outdoor"
-    ],
-    "source": "https://www.novaparks.com/parks/meadowlark-botanical-gardens",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Warrenton Aquatic Recreation Facility (WARF)",
-    "category": [
-      "recreation"
-    ],
-    "location": "Virginia",
-    "area": "Warrenton",
-    "description": "Aquatic recreation facility with accessible swimming programs.",
-    "phone": "",
-    "website": "https://www.warrentonva.gov/201/WARF",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "aquatic",
-      "swimming",
-      "accessible"
-    ],
-    "source": "https://www.warrentonva.gov/201/WARF",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Empower Therapy Group",
-    "category": [
-      "therapy"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Therapy services for children and families in the Northern Virginia area.",
-    "phone": "",
-    "website": "https://empowertherapygroup.net/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
       "therapy",
-      "pediatric"
-    ],
-    "source": "https://empowertherapygroup.net/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Speech & Hearing",
-    "category": [
-      "therapy"
+      "therapy-aba"
     ],
     "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Speech and hearing services provided through Fairfax County Health Department.",
+    "area": "herndon",
+    "description": "In-home, school-based, and remote ABA therapy for children with autism, plus parent training and BCBA supervision.",
     "phone": "",
-    "website": "https://www.fairfaxcounty.gov/health/speech-hearing",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "speech-therapy",
-      "hearing",
-      "county-program"
+    "website": "https://www.attainaba.com/behavior-analysis/aba-therapy-in-virginia/",
+    "address": "465 Herndon Parkway, Herndon, VA 20170",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism"
     ],
-    "source": "https://www.fairfaxcounty.gov/health/speech-hearing",
-    "lastScraped": "2026-03-06"
+    "cost": "Medicaid and most major insurance accepted",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "in-home",
+      "school-based",
+      "telehealth",
+      "parent-training"
+    ],
+    "source": "https://www.attainaba.com/behavior-analysis/aba-therapy-in-virginia/",
+    "lastScraped": "2026-03-09"
   },
   {
-    "name": "The Arc of Northern Virginia",
+    "name": "Autism Society of Northern Virginia",
     "category": [
       "nonprofit"
     ],
     "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Advocacy organization for people with intellectual and developmental disabilities, providing resources, support, and community.",
-    "phone": "",
-    "website": "https://thearcofnova.org",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
+    "area": "oakton",
+    "description": "Builds community for over 5,000 individuals and families affected by autism through education, advocacy, and support. Offers mini-grants up to $1,000/year for autism-related services.",
+    "phone": "571-328-5792",
+    "website": "https://www.asnv.org/",
+    "address": "10467 White Granite Drive, Suite 324, Oakton, VA 22124",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "autism"
+    ],
     "cost": "",
     "tags": [
+      "autism",
       "advocacy",
-      "intellectual-disability",
-      "developmental"
+      "support-groups",
+      "mini-grants",
+      "education"
     ],
-    "source": "https://thearcofnova.org",
+    "source": "https://www.asnv.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "B&O Railroad Museum - Sensory Sundays",
+    "category": [
+      "sensory",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Sensory-friendly Sundays at the B&O Railroad Museum in Baltimore, offering a calm environment for individuals with sensory processing needs.",
+    "phone": "",
+    "website": "https://www.borail.org/explore-learn/for-kids-families/sensory-awareness/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sensory-friendly",
+      "museum",
+      "baltimore"
+    ],
+    "source": "https://www.borail.org/explore-learn/for-kids-families/sensory-awareness/",
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Cameron's Coffee and Chocolates",
+    "name": "Belkowitz Law, PLLC",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Represents families in special education matters under IDEA, ADA, and Section 504 including IEP disputes, due process hearings, and school disciplinary cases. Free 30-minute initial consultation.",
+    "phone": "(703) 246-9270",
+    "website": "https://belkowitzlaw.com/",
+    "address": "10427 North Street, Suite 200, Fairfax, VA 22030",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free 30-minute initial consultation",
+    "tags": [
+      "iep-advocacy",
+      "special-education",
+      "disability-law",
+      "504-plan",
+      "due-process"
+    ],
+    "source": "https://belkowitzlaw.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Best Buddies in Virginia & DC",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "tysons",
+    "description": "One-to-one friendships, integrated employment, and leadership development for people with intellectual and developmental disabilities. Operates 93 friendship chapters across Virginia and DC.",
+    "phone": "833-646-6828",
+    "website": "https://www.bestbuddies.org/vadc/",
+    "address": "7956L Tysons Corner Center, Tysons, VA 22102",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "intellectual-disabilities",
+      "developmental-disabilities"
+    ],
+    "cost": "Free",
+    "tags": [
+      "friendship",
+      "social-inclusion",
+      "employment",
+      "leadership",
+      "peer-mentoring"
+    ],
+    "source": "https://www.bestbuddies.org/vadc/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Bitty and Beau's Coffee - Annapolis",
     "category": [
       "employment"
     ],
     "location": "Virginia",
     "area": "Northern Virginia",
-    "description": "Coffee and chocolate shop that employs individuals with disabilities, promoting inclusive employment.",
+    "description": "Coffee shop that employs people with intellectual and developmental disabilities. Location in Annapolis, MD.",
     "phone": "",
-    "website": "https://www.every1canwork.com",
+    "website": "https://www.bittyandbeauscoffee.com/location/annapolis/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -278,31 +398,10 @@
     "tags": [
       "employment",
       "inclusive",
-      "coffee"
+      "coffee",
+      "maryland"
     ],
-    "source": "https://www.every1canwork.com",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Jake's Ice Cream",
-    "category": [
-      "employment"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Ice cream shop committed to employing individuals with disabilities.",
-    "phone": "",
-    "website": "https://www.sweetjakesicecream.com",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "employment",
-      "inclusive",
-      "ice-cream"
-    ],
-    "source": "https://www.sweetjakesicecream.com",
+    "source": "https://www.bittyandbeauscoffee.com/location/annapolis/",
     "lastScraped": "2026-03-06"
   },
   {
@@ -329,70 +428,23 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Bitty and Beau's Coffee - Annapolis",
+    "name": "BlazeSports America",
     "category": [
-      "employment"
+      "sports"
     ],
     "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Coffee shop that employs people with intellectual and developmental disabilities. Location in Annapolis, MD.",
+    "area": "Statewide",
+    "description": "Adaptive sports and recreation programs for youth and adults with physical disabilities.",
     "phone": "",
-    "website": "https://www.bittyandbeauscoffee.com/location/annapolis/",
+    "website": "https://bfreinc.org/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "employment",
-      "inclusive",
-      "coffee",
-      "maryland"
+      "sports"
     ],
-    "source": "https://www.bittyandbeauscoffee.com/location/annapolis/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Disability Inclusion DC Metro",
-    "category": [
-      "community"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Resources and consulting for businesses wanting to become more disability-friendly.",
-    "phone": "",
-    "website": "https://di-dcmetro.org",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "business",
-      "inclusion",
-      "consulting"
-    ],
-    "source": "https://di-dcmetro.org",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "McLean Bible Church - Special Needs Ministry",
-    "category": [
-      "faith"
-    ],
-    "location": "Virginia",
-    "area": "Tysons",
-    "description": "Special needs ministry programs at McLean Bible Church, Tysons location.",
-    "phone": "",
-    "website": "https://mcleanbible.org/tysons/special-needs/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "church",
-      "ministry",
-      "special-needs"
-    ],
-    "source": "https://mcleanbible.org/tysons/special-needs/",
+    "source": "https://bfreinc.org/",
     "lastScraped": "2026-03-06"
   },
   {
@@ -418,6 +470,94 @@
     "lastScraped": "2026-03-06"
   },
   {
+    "name": "Cameron's Coffee and Chocolates",
+    "category": [
+      "employment"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Coffee and chocolate shop that employs individuals with disabilities, promoting inclusive employment.",
+    "phone": "",
+    "website": "https://www.every1canwork.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "employment",
+      "inclusive",
+      "coffee"
+    ],
+    "source": "https://www.every1canwork.com",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Camp Baker (The Arc of NoVA)",
+    "category": [
+      "camps"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Residential summer camp for teens and adults with intellectual and developmental disabilities.",
+    "phone": "",
+    "website": "https://soar365.org/find-support/summer-camp/get-started/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "camps"
+    ],
+    "source": "https://soar365.org/find-support/summer-camp/get-started/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Carbide Construction",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Specializes in ADA-compliant modular home additions with accessible bathrooms, user-friendly kitchens, wider hallways, and wheelchair-friendly layouts.",
+    "phone": "(703) 550-8711",
+    "website": "https://www.carbideconstruction.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "ADA-compliant",
+      "wheelchair-accessibility",
+      "home-additions",
+      "modular-construction"
+    ],
+    "source": "https://www.carbideconstruction.com/ada-addition-northern-virginia/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Care.com",
+    "category": [
+      "childcare"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Platform for finding caregivers, nannies, and attendants with special needs experience.",
+    "phone": "",
+    "website": "https://www.care.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "nanny",
+      "caregiver",
+      "platform"
+    ],
+    "source": "https://www.care.com",
+    "lastScraped": "2026-03-06"
+  },
+  {
     "name": "Centreville Baptist Church - Embrace",
     "category": [
       "faith"
@@ -440,26 +580,959 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "King of Kings Lutheran Church - Special Needs",
+    "name": "Chairs for Stairs / Lorton Builders",
     "category": [
-      "faith"
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "Lorton, VA",
+    "description": "Local NOVA contractor specializing in stairlifts, home accessibility modifications, and aging-in-place renovations. Serves the Northern Virginia area with residential accessibility solutions.",
+    "phone": "",
+    "website": "https://www.chairsforstairs.com/",
+    "address": "Lorton, VA",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "mobility"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "stairlift",
+      "home-modification",
+      "accessibility",
+      "contractor",
+      "nova"
+    ],
+    "source": "https://www.chairsforstairs.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Children's National Hospital",
+    "category": [
+      "medical"
     ],
     "location": "Virginia",
     "area": "Northern Virginia",
-    "description": "Special needs ministries at King of Kings Lutheran Church.",
+    "description": "Comprehensive pediatric medical center with specialty clinics for children with disabilities and complex medical needs.",
     "phone": "",
-    "website": "https://kofk.org/ministries-special-needs",
+    "website": "https://www.childrensnational.org/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "church",
-      "ministry",
-      "lutheran"
+      "medical"
     ],
-    "source": "https://kofk.org/ministries-special-needs",
+    "source": "https://www.childrensnational.org/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Children's National Hospital - Northern Virginia",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Outpatient specialty care location of Children's National Hospital offering pediatric specialty services including rehabilitation and therapy.",
+    "phone": "301-572-3542",
+    "website": "https://www.childrensnational.org/get-care/locations/northern-virginia",
+    "address": "3023 Hamaker Court, Suite 300, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "pediatric-specialists",
+      "hospital-based",
+      "multi-specialty"
+    ],
+    "source": "https://www.childrensnational.org/get-care/locations/northern-virginia",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Clemyjontri Park",
+    "category": [
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "McLean",
+    "description": "Fully accessible playground designed for children of all abilities in McLean, VA.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/parks/clemyjontri/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "playground",
+      "accessible",
+      "wheelchair-friendly"
+    ],
+    "source": "https://www.fairfaxcounty.gov/parks/clemyjontri/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Cloverleaf Equine Center",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Clifton",
+    "description": "Therapeutic horseback riding and equine-assisted activities for individuals with disabilities. Programs include hippotherapy, adaptive riding, and equine-facilitated learning. Serves children and adults with physical, cognitive, and emotional disabilities.",
+    "phone": "703-830-4012",
+    "website": "https://www.cloverleafequinecenter.org",
+    "address": "5765 Elk Lick Rd, Clifton, VA 20124",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "physical",
+      "cognitive",
+      "emotional"
+    ],
+    "cost": "",
+    "tags": [
+      "hippotherapy",
+      "therapeutic-riding",
+      "equine-therapy",
+      "adaptive-riding"
+    ],
+    "source": "https://www.cloverleafequinecenter.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Colvin Run Mill - Sensory-Friendly Events",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "great falls",
+    "description": "Fairfax County historic gristmill offering seasonal sensory-friendly events in a quiet environment including sensory-friendly Santa visits and holiday crafts.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/parks/colvinrunmill/",
+    "address": "10017 Colvin Run Road, Great Falls, VA 22066",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies by event",
+    "tags": [
+      "sensory-friendly",
+      "historic-site",
+      "seasonal-events",
+      "outdoors"
+    ],
+    "source": "https://www.fairfaxcounty.gov/parks/colvinrunmill/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Compass Behavioral Solutions - NOVA",
+    "category": [
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "manassas",
+    "description": "Home, office, and clinic-based ABA and mental health services for children and adolescents under 21 with developmental delays.",
+    "phone": "703-496-7804",
+    "website": "https://compassva.com/location/nova/",
+    "address": "7611 Coppermine Drive, Manassas, VA 20109",
+    "ageRange": "Birth-21",
+    "disabilityTypes": [
+      "autism",
+      "developmental-delays"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "mental-health",
+      "in-home"
+    ],
+    "source": "https://compassva.com/location/nova/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Cucinelli Geiger, PC",
+    "category": [
+      "legal",
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Elder law and special needs planning firm offering special needs trusts, ABLE accounts, guardianship/conservatorship, estate planning, and fiduciary services.",
+    "phone": "(703) 481-6464",
+    "website": "https://www.cucinelligeiger.com/practice_areas/virginia-special-needs-planning-attorneys.cfm",
+    "address": "4084 University Drive, Suite 202A, Fairfax, VA 22030",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "special-needs-trust",
+      "estate-planning",
+      "guardianship",
+      "ABLE-accounts"
+    ],
+    "source": "https://www.cucinelligeiger.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "DC Urban Mom - Nanny Forum",
+    "category": [
+      "childcare"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Online community forum for finding nannies and attendant care in the DC metro area.",
+    "phone": "",
+    "website": "https://www.dcurbanmom.com/nanny-forum/forums/show/8.page",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "nanny",
+      "childcare",
+      "forum"
+    ],
+    "source": "https://www.dcurbanmom.com/nanny-forum/forums/show/8.page",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Disability Inclusion DC Metro",
+    "category": [
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Resources and consulting for businesses wanting to become more disability-friendly.",
+    "phone": "",
+    "website": "https://di-dcmetro.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "business",
+      "inclusion",
+      "consulting"
+    ],
+    "source": "https://di-dcmetro.org",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "disAbility Law Center of Virginia (dLCV)",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Virginia's designated Protection and Advocacy organization providing free legal services and direct representation for Virginians with disabilities facing abuse, neglect, discrimination, and special education issues.",
+    "phone": "(800) 552-3962",
+    "website": "https://www.dlcv.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "disability-rights",
+      "advocacy",
+      "nonprofit",
+      "special-education",
+      "protection-and-advocacy"
+    ],
+    "source": "https://www.dlcv.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Down Syndrome Association of Northern Virginia",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "oakton",
+    "description": "Support, education, and community for families of individuals with Down syndrome across Arlington, Fairfax, Loudoun, Prince William, and Stafford counties.",
+    "phone": "703-621-7129",
+    "website": "https://www.dsanv.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "down-syndrome"
+    ],
+    "cost": "",
+    "tags": [
+      "down-syndrome",
+      "parent-support",
+      "community",
+      "education",
+      "events"
+    ],
+    "source": "https://www.dsanv.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Catherine Chao - Pediatric Gastroenterology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Gastroenterology at PSV. Fellowship trained at UCLA. Recipient of the Bronze Iams Quality Leadership Award for work with the Pediatric Feeding Team.",
+    "phone": "703-635-7324",
+    "website": "https://psvcare.org/specialist/catherine-chao-md/",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "digestive-disorders",
+      "feeding-difficulties"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "gastroenterology",
+      "psv",
+      "feeding-disorders"
+    ],
+    "source": "https://psvcare.org/specialist/catherine-chao-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Dagne Assefa - Pediatric Pulmonology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Pulmonology at PSV. Board-certified (FAAP, FCCP). Fluent in English, Amharic, and German.",
+    "phone": "703-635-2768",
+    "website": "https://psvcare.org/specialist/dagne-assefa-md-faap-fccp/",
+    "address": "3023 Hamaker Court, Suite 300, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "asthma",
+      "chronic-lung-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "pulmonology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/specialist/dagne-assefa-md-faap-fccp/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Dinesh Pillai - Pediatric Pulmonology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Pulmonology at PSV. Medical Director of Pulmonary Medicine. Developed the Severe Asthma Program and Aerodigestive Program. Specializes in severe asthma, aerodigestive diseases, and rare lung conditions.",
+    "phone": "703-635-2768",
+    "website": "https://psvcare.org/specialist/dinesh-pillai-md/",
+    "address": "3023 Hamaker Court, Suite 300, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "severe-asthma",
+      "chronic-lung-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "pulmonology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/specialist/dinesh-pillai-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Emily Hattwick - Pediatric Orthopedics",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Orthopedics at PSV. Medical Director of Orthopaedic Surgery & Sports Medicine. Specializes in pediatric hand surgery, congenital conditions, and post-traumatic deformities.",
+    "phone": "703-876-2788",
+    "website": "https://psvcare.org/physicians/emily-hattwick-md",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "congenital-hand-conditions",
+      "limb-deformities"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "orthopedics",
+      "psv",
+      "hand-surgery"
+    ],
+    "source": "https://psvcare.org/physicians/emily-hattwick-md",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Grace Felix - Pediatric Gastroenterology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Gastroenterology at PSV. Specializes in digestive and liver disorders in infants, children, and adolescents. Washingtonian Top Doctor.",
+    "phone": "703-635-7324",
+    "website": "https://psvcare.org/physicians/grace-felix-md",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "digestive-disorders",
+      "liver-disorders"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "gastroenterology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/physicians/grace-felix-md",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Ian Leibowitz - Pediatric Gastroenterology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Gastroenterology at Children's National. Division Chief of GI, Hepatology and Nutrition. Expert in inflammatory bowel disease, GERD, and celiac disease.",
+    "phone": "571-226-8380",
+    "website": "https://appointments.childrensnational.org/provider/ian-h-leibowitz/2359892",
+    "address": "3023 Hamaker Court, Suite 300, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "inflammatory-bowel-disease",
+      "celiac-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "gastroenterology",
+      "childrens-national"
+    ],
+    "source": "https://appointments.childrensnational.org/provider/ian-h-leibowitz/2359892",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Jacquelyn Calbert - Developmental Pediatrics",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Developmental Pediatrics at PSV. Medical Director of Neurodevelopmental Pediatrics. Kennedy Krieger/Johns Hopkins trained. Specializes in ADHD, autism, learning disabilities, and developmental delays.",
+    "phone": "703-876-2788",
+    "website": "https://psvcare.org/find-a-specialist-results?field_specialty_nid=401",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism",
+      "adhd",
+      "learning-disabilities",
+      "developmental-delays"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "developmental-pediatrics",
+      "psv",
+      "autism",
+      "adhd"
+    ],
+    "source": "https://psvcare.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Jason Goldberg - Pediatric Cardiology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Cardiology at Inova Children's. Director of Research and Director of Pediatric Heart Failure. Board certified in pediatric cardiology.",
+    "phone": "703-573-0504",
+    "website": "https://www.inova.org/doctors/jason-f-goldberg-md",
+    "address": "8260 Willow Oaks Corporate Dr, Suite 400, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "heart-failure",
+      "congenital-heart-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "cardiology",
+      "inova-childrens"
+    ],
+    "source": "https://www.inova.org/doctors/jason-f-goldberg-md",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Jin Hyuk Park - Pediatric Cardiology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Cardiology at Children's National Hospital (Northern Virginia). Over 20 years of experience as a pediatric cardiologist in Northern Virginia.",
+    "phone": "571-226-8380",
+    "website": "https://appointments.childrensnational.org/provider/jin-hyuk-park/2359687",
+    "address": "3023 Hamaker Court, Suite 300, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "congenital-heart-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "cardiology",
+      "childrens-national"
+    ],
+    "source": "https://appointments.childrensnational.org/provider/jin-hyuk-park/2359687",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Kinjal Parikh - Pediatric Cardiology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Cardiology at Inova Children's. Board-certified pediatric and fetal cardiologist specializing in noninvasive imaging, echocardiography, and pulmonary hypertension.",
+    "phone": "703-573-0504",
+    "website": "https://www.inova.org/doctors/kinjal-parikh-md",
+    "address": "8260 Willow Oaks Corporate Dr, Suite 400, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "congenital-heart-disease",
+      "pulmonary-hypertension"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "cardiology",
+      "inova-childrens"
+    ],
+    "source": "https://www.inova.org/doctors/kinjal-parikh-md",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Laurel Blakemore - Pediatric Orthopedics",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Orthopedics at PSV. CEO of PSV and board-certified pediatric orthopaedic surgeon. Past President of the Scoliosis Research Society. Specializes in scoliosis and complex spinal deformity.",
+    "phone": "703-876-2788",
+    "website": "https://psvcare.org/specialist/laurel-blakemore-md/",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "scoliosis",
+      "spinal-deformity"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "orthopedics",
+      "psv",
+      "scoliosis"
+    ],
+    "source": "https://psvcare.org/specialist/laurel-blakemore-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Mitchell Cohen - Pediatric Cardiology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "falls church",
+    "description": "Pediatric Cardiology at Inova Children's Heart Center. Co-Director of the Heart Center at Inova L.J. Murphy Children's Hospital.",
+    "phone": "703-573-0504",
+    "website": "https://www.inovachildrens.org/services/heart/team",
+    "address": "3300 Gallows Rd, Falls Church, VA 22042",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "congenital-heart-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "cardiology",
+      "inova-childrens"
+    ],
+    "source": "https://www.inovachildrens.org/services/heart/team",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Patricia Seo-Mayer - Pediatric Nephrology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Nephrology at PSV. Medical Director of Nephrology & Hypertension. Specializes in acute kidney injury, chronic kidney disease, congenital anomalies, nephrotic syndrome, and hypertension.",
+    "phone": "703-876-2788",
+    "website": "https://psvcare.org/physicians/patricia-seo-mayer-md",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "kidney-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "nephrology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/physicians/patricia-seo-mayer-md",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Rasheda Amin - Pediatric Nephrology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Nephrology at PSV. Fellowship trained at Children's National/George Washington University.",
+    "phone": "703-876-2788",
+    "website": "https://psvcare.org/physicians/rasheda-amin-md",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "kidney-disease"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "nephrology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/physicians/rasheda-amin-md",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Tarannum Lateef - Pediatric Neurology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Neurology at PSV. Board-certified with MD from Northwestern University and MPH in Epidemiology from George Washington University.",
+    "phone": "703-635-2873",
+    "website": "https://psvcare.org/specialist/tarannum-lateef-md/",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "epilepsy"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "neurology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/specialist/tarannum-lateef-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Thanh Nguyen - Pediatric Neurology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Neurology at PSV. Medical Director of Neurology. Specializes in seizures, epilepsy, headaches, movement disorders, cerebral palsy, tics, and neuro-critical care.",
+    "phone": "703-635-2873",
+    "website": "https://psvcare.org/specialist/thanh-nguyen-md/",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "epilepsy",
+      "cerebral-palsy"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "neurology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/specialist/thanh-nguyen-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. Thuy-Anh Vu - Pediatric Neurology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Neurology at PSV. Board-certified pediatric neurologist specializing in epilepsy and general child neurology.",
+    "phone": "703-635-2873",
+    "website": "https://psvcare.org/specialist/thuy-anh-vu-md/",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "epilepsy"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "neurology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/specialist/thuy-anh-vu-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Dr. William McClintock - Pediatric Neurology",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Pediatric Neurology at PSV. Director of the Tuberous Sclerosis Clinic. Specializes in general child neurology, spasticity, headaches, and tuberous sclerosis.",
+    "phone": "703-635-2873",
+    "website": "https://psvcare.org/specialist/william-mcclintock-md/",
+    "address": "3023 Hamaker Court, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "tuberous-sclerosis",
+      "spasticity"
+    ],
+    "cost": "",
+    "tags": [
+      "pediatric",
+      "neurology",
+      "psv"
+    ],
+    "source": "https://psvcare.org/specialist/william-mcclintock-md/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Driver Rehabilitation Center of Excellence, LLC",
+    "category": [
+      "vehicle-mods",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Provides driver rehabilitation services and vehicle modification consultations for individuals with disabilities. Certified Driver Rehabilitation Specialists evaluate driving ability and recommend adaptive equipment.",
+    "phone": "",
+    "website": "https://www.driverehabcenter.com/",
+    "address": "",
+    "ageRange": "Teens and adults",
+    "disabilityTypes": [
+      "mobility",
+      "neurological",
+      "visual"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "driver-rehabilitation",
+      "vehicle-modification",
+      "adaptive-driving",
+      "evaluation"
+    ],
+    "source": "https://www.driverehabcenter.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Education Advocates of Northern Virginia, LLC",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "herndon",
+    "description": "Educational advocate with legal background specializing in helping families navigate the special education system and secure appropriate IEP services.",
+    "phone": "(703) 620-0206",
+    "website": "https://www.educationadvocatesnova.com/",
+    "address": "3224 Navy Drive, Herndon, VA 20171",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "iep-advocacy",
+      "special-education",
+      "504-plan",
+      "education-advocacy"
+    ],
+    "source": "https://www.educationadvocatesnova.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Empower Therapy Group",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Therapy services for children and families in the Northern Virginia area.",
+    "phone": "",
+    "website": "https://empowertherapygroup.net/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "therapy",
+      "pediatric"
+    ],
+    "source": "https://empowertherapygroup.net/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "ENDependence Center of Northern Virginia (ECNV)",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Independent living center administering Virginia Housing Accessibility Grants of up to $8,000 for ramps, chairlifts, bathroom/kitchen modifications, and door widening. Available to homeowners, renters, and veterans.",
+    "phone": "(703) 525-3268",
+    "website": "https://www.ecnv.org",
+    "address": "2300 Clarendon Blvd, Ste 250, Arlington, VA 22201",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free grants up to $8,000 (income-qualified)",
+    "tags": [
+      "accessibility",
+      "grants",
+      "nonprofit",
+      "wheelchair-ramps",
+      "bathroom-modifications",
+      "independent-living"
+    ],
+    "source": "https://www.ecnv.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Epilepsy Foundation of Virginia",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Statewide organization serving Virginians with epilepsy since 1978. Provides educational trainings, support networks, and self-management programs at no cost.",
+    "phone": "434-924-8669",
+    "website": "https://www.epilepsyva.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "epilepsy"
+    ],
+    "cost": "Free",
+    "tags": [
+      "epilepsy",
+      "seizure-disorders",
+      "education",
+      "support-networks"
+    ],
+    "source": "https://www.epilepsyva.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Equip for Children",
+    "category": [
+      "equipment"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Organization providing adaptive equipment to children who need it.",
+    "phone": "",
+    "website": "https://www.equipforchildren.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "equipment",
+      "adaptive"
+    ],
+    "source": "https://www.equipforchildren.org",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Equipment Connections for Children (ECFC)",
+    "category": [
+      "nonprofit",
+      "equipment"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Connects families of children with disabilities to donated adaptive equipment at no cost including standing frames, walkers, bath equipment, adaptive bicycles, and therapy equipment. Serves over 600 families annually.",
+    "phone": "",
+    "website": "https://www.equipforchildren.org/",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "adaptive-equipment",
+      "assistive-technology",
+      "free-equipment",
+      "walkers",
+      "wheelchairs"
+    ],
+    "source": "https://www.equipforchildren.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Exceptional Children's Center",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-speech",
+      "therapy-feeding"
+    ],
+    "location": "Virginia",
+    "area": "springfield",
+    "description": "Pediatric therapy center offering occupational therapy, speech-language therapy, and feeding therapy, specializing in developmental and behavioral challenges.",
+    "phone": "703-971-0602",
+    "website": "https://www.exceptionalchildrenscenter.com/",
+    "address": "7001 A Loisdale Rd, Springfield, VA 22150",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "Insurance accepted",
+    "tags": [
+      "occupational-therapy",
+      "speech-therapy",
+      "feeding-therapy"
+    ],
+    "source": "https://www.exceptionalchildrenscenter.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Expressive Speech and Feeding",
+    "category": [
+      "therapy",
+      "therapy-speech",
+      "therapy-feeding"
+    ],
+    "location": "Virginia",
+    "area": "herndon",
+    "description": "Private practice specializing in pediatric speech therapy and feeding therapy for children from birth to 8 years in the Reston and Herndon area.",
+    "phone": "703-672-0634",
+    "website": "https://expressivespeechandfeeding.com/",
+    "address": "2622 Quincy Adams Dr, Herndon, VA 20171",
+    "ageRange": "Birth-8",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "speech-therapy",
+      "feeding-therapy"
+    ],
+    "source": "https://expressivespeechandfeeding.com/",
+    "lastScraped": "2026-03-09"
   },
   {
     "name": "Fairfax Church - Accessibility",
@@ -484,70 +1557,970 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Waterfront Church DC - Special Needs Ministry",
+    "name": "Fairfax County Accessible Trails",
     "category": [
-      "faith"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Special needs ministry at Waterfront Church in Washington, DC.",
-    "phone": "",
-    "website": "https://waterfrontchurchdc.com/special-needs-ministry/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "church",
-      "ministry",
-      "dc"
-    ],
-    "source": "https://waterfrontchurchdc.com/special-needs-ministry/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Thomas Roads Baptist Church - Special Needs",
-    "category": [
-      "faith"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Special needs engagement programs at Thomas Roads Baptist Church.",
-    "phone": "",
-    "website": "https://trbc.org/engage/special-needs/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "church",
-      "ministry",
-      "baptist"
-    ],
-    "source": "https://trbc.org/engage/special-needs/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "B&O Railroad Museum - Sensory Sundays",
-    "category": [
-      "sensory",
       "recreation"
     ],
     "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Sensory-friendly Sundays at the B&O Railroad Museum in Baltimore, offering a calm environment for individuals with sensory processing needs.",
+    "area": "Fairfax County",
+    "description": "Directory of wheelchair and stroller-friendly trails throughout Fairfax County parks.",
     "phone": "",
-    "website": "https://www.borail.org/explore-learn/for-kids-families/sensory-awareness/",
+    "website": "https://www.fairfaxcounty.gov/parks/accessible/trails",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
+      "trails",
+      "accessible",
+      "outdoor"
+    ],
+    "source": "https://www.fairfaxcounty.gov/parks/accessible/trails",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Child Care Assistance and Referral (CCAR)",
+    "category": [
+      "childcare"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Child care financial assistance and referral services for eligible Fairfax County families.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/office-for-children/child-care-assistance-and-referral",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "childcare",
+      "financial-assistance",
+      "county-program"
+    ],
+    "source": "https://www.fairfaxcounty.gov/office-for-children/child-care-assistance-and-referral",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Early Intervention",
+    "category": [
+      "early-intervention"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Early intervention services for children birth to 3 in Fairfax County through the Infant & Toddler Connection.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "early-intervention"
+    ],
+    "source": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County FASTRAN",
+    "category": [
+      "transportation"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Accessible transportation services for Fairfax County residents with disabilities who cannot use regular public transit.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transportation"
+    ],
+    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Housing & Community Development",
+    "category": [
+      "housing"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Accessible and affordable housing resources, including Section 8 vouchers and housing for people with disabilities.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/housing/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "housing"
+    ],
+    "source": "https://www.fairfaxcounty.gov/housing/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Sensory Room",
+    "category": [
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Sensory room available through Fairfax County Therapeutic Recreation program.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/sensory-room",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sensory-room",
+      "county-program"
+    ],
+    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/sensory-room",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Speech & Hearing",
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Speech and hearing services provided through Fairfax County Health Department.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/health/speech-hearing",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "speech-therapy",
+      "hearing",
+      "county-program"
+    ],
+    "source": "https://www.fairfaxcounty.gov/health/speech-hearing",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Therapeutic Recreation",
+    "category": [
+      "recreation",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Therapeutic recreation programs for individuals with disabilities through Fairfax County Neighborhood and Community Services.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "recreation",
+      "therapeutic",
+      "county-program"
+    ],
+    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax County Therapeutic Recreation Camps",
+    "category": [
+      "camps"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Summer and seasonal camps for children and teens with disabilities through Fairfax County Therapeutic Recreation.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "camps"
+    ],
+    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Fairfax Pediatric Therapy",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-speech",
+      "therapy-music"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Occupational therapy, speech therapy, music therapy, and adapted yoga classes with in-clinic, in-home, and teletherapy options.",
+    "phone": "571-587-6244",
+    "website": "https://fairfaxpediatrictherapy.com/",
+    "address": "3975 University Drive, Suite 450, Fairfax, VA 22030",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "speech-therapy",
+      "music-therapy",
+      "yoga",
+      "telehealth"
+    ],
+    "source": "https://fairfaxpediatrictherapy.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Fairfax-Falls Church Community Services Board",
+    "category": [
+      "mental-health"
+    ],
+    "location": "Virginia",
+    "area": "Fairfax County",
+    "description": "Mental health, substance use, and developmental disability services for Fairfax County residents.",
+    "phone": "",
+    "website": "https://www.fairfaxcounty.gov/community-services-board/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.fairfaxcounty.gov/community-services-board/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Farr Law Firm, P.C.",
+    "category": [
+      "legal",
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Premier estate planning and elder law firm providing special needs trust planning, guardianship, Medicaid asset protection, and comprehensive special needs planning.",
+    "phone": "(703) 691-1888",
+    "website": "https://www.farrlawfirm.com/special-needs-planning/",
+    "address": "10640 Main Street, Suite 200, Fairfax, VA 22030",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "special-needs-trust",
+      "estate-planning",
+      "guardianship",
+      "medicaid-planning"
+    ],
+    "source": "https://www.farrlawfirm.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Flywheel Centers",
+    "category": [
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "alexandria",
+    "description": "ABA therapy center offering in-home visits and center-based sessions for children with autism. Accepts TRICARE.",
+    "phone": "866-642-9433",
+    "website": "https://flywheelcenters.com/",
+    "address": "44 Canal Center Plaza, Alexandria, VA 22314",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted, TRICARE accepted",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "in-home",
+      "tricare"
+    ],
+    "source": "https://flywheelcenters.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Formed Families Forward",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Supports foster, kinship, and adoptive families of children and youth with disabilities and special needs. Provides training, peer support, and resource navigation.",
+    "phone": "703-539-2904",
+    "website": "https://formedfamiliesforward.org/",
+    "address": "10304 Eaton Place, Suite 100, Fairfax, VA 22030",
+    "ageRange": "Children and youth",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "foster-families",
+      "adoptive-families",
+      "kinship-care",
+      "training",
+      "resource-navigation"
+    ],
+    "source": "https://formedfamiliesforward.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Francesco's Closet at Wheatland Farm",
+    "category": [
+      "equipment"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Equipment closet providing gently used adaptive equipment for children with special needs.",
+    "phone": "",
+    "website": "https://www.wheatlandfarm.org/francesco-s-closet",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "equipment-loaner",
+      "adaptive"
+    ],
+    "source": "https://www.wheatlandfarm.org/francesco-s-closet",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "FUNdamentals and Building Blocks Therapy",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "falls church",
+    "description": "Pediatric speech, language, and occupational therapy practice serving Northern Virginia and Washington, DC since 2016.",
+    "phone": "703-533-8819",
+    "website": "https://buildingblockstherapy.com/",
+    "address": "450 W Broad St, Suite 215, Falls Church, VA 22046",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "speech-therapy"
+    ],
+    "source": "https://buildingblockstherapy.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "George Washington's Mount Vernon - Sensory-Friendly Family Morning",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "alexandria",
+    "description": "Early morning access (8-9 AM) for neurodivergent families before general opening. Sensory bags, quiet room, and hands-on Mansion tours with pre-visit social narratives.",
+    "phone": "(703) 780-2000",
+    "website": "https://www.mountvernon.org/plan-your-visit/calendar/events/sensory-friendly-family-morning",
+    "address": "3200 Mount Vernon Memorial Highway, Mount Vernon, VA 22121",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "$11 adults/youth; free under 5",
+    "tags": [
+      "sensory-friendly",
+      "historic-site",
+      "sensory-bags",
+      "social-narratives"
+    ],
+    "source": "https://www.mountvernon.org/plan-your-visit/calendar/events/sensory-friendly-family-morning",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Glickman Design Build",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "north potomac",
+    "description": "Design-build firm with a dedicated Accessible Design Division specializing in modifications for families of children with special needs and aging adults. CAPS and Universal Design Certified staff.",
+    "phone": "(703) 832-8150",
+    "website": "https://www.glickmandesignbuild.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "universal-design",
+      "aging-in-place",
+      "wheelchair-accessibility",
+      "bathroom-modifications"
+    ],
+    "source": "https://www.glickmandesignbuild.com/services/mobility-solutions/accessible-design/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Good Beginnings Therapy",
+    "category": [
+      "therapy",
+      "therapy-pt"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Over 30 years of comprehensive occupational and physical therapy for children addressing fine/gross motor skills, sensory processing, self-care, and self-regulation.",
+    "phone": "703-536-1817",
+    "website": "https://gbtherapy.org/",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "Accepts many insurances; does not accept Medicaid",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "sensory-processing"
+    ],
+    "source": "https://gbtherapy.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Hale Ball Murphy, PLC",
+    "category": [
+      "legal",
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "AV-rated firm serving Northern Virginia since 1980, offering special needs trusts, guardianship, conservatorship, powers of attorney, and estate planning.",
+    "phone": "(703) 591-4900",
+    "website": "https://haleball.com/practice-area/special-needs-planning/",
+    "address": "10511 Judicial Drive, Fairfax, VA 22030",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "special-needs-trust",
+      "estate-planning",
+      "guardianship",
+      "conservatorship"
+    ],
+    "source": "https://haleball.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "HandyPro of Northern Virginia",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Home modification company using universal design principles to install grab bars, walk-in tubs, stair lifts, wheelchair ramps, walk-in showers, and widen doorways. Free in-home safety assessments.",
+    "phone": "(703) 408-0197",
+    "website": "https://www.handypro.com/local-service-category/northern-virginia-home-modification",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "universal-design",
+      "grab-bars",
+      "wheelchair-ramps",
+      "bathroom-modifications",
+      "stair-lifts"
+    ],
+    "source": "https://www.handypro.com/local-service-category/northern-virginia-home-modification",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Healthcare.gov - Appeals & Grievances",
+    "category": [
+      "insurance"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Federal resource for understanding your rights when insurance denies coverage, including how to file appeals for therapies and equipment.",
+    "phone": "",
+    "website": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "insurance"
+    ],
+    "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "HEAV - Home Educators Association of Virginia (Special Needs)",
+    "category": [
+      "homeschool"
+    ],
+    "location": "Virginia",
+    "area": "Virginia",
+    "description": "Virginia's primary homeschool organization with a dedicated Special Needs section. Offers a special-needs homeschooling bundle, evaluator/tester/tutor directories, and articles on homeschooling children with learning disabilities in Virginia.",
+    "phone": "",
+    "website": "https://heav.org/special-needs/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free resources; membership available",
+    "tags": [
+      "homeschool",
+      "virginia",
+      "special-needs",
+      "evaluators",
+      "support"
+    ],
+    "source": "https://heav.org/special-needs/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Infinity ABA Therapy & Autism Services",
+    "category": [
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "ABA therapy for children with autism and ADHD. Programs include 1:1 in-home therapy, Early Learners Social Club, and full-day preschool.",
+    "phone": "571-241-8557",
+    "website": "https://www.infinityaba.com/",
+    "address": "11211 Waples Mill Rd, Fairfax, VA 22030",
+    "ageRange": "Pediatric (18 months and up)",
+    "disabilityTypes": [
+      "autism",
+      "adhd"
+    ],
+    "cost": "",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "social-skills",
+      "preschool"
+    ],
+    "source": "https://www.infinityaba.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Inova Children's Hospital",
+    "category": [
+      "medical"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Pediatric services including developmental pediatrics, neurology, and rehabilitation for children with disabilities in Northern Virginia.",
+    "phone": "",
+    "website": "https://www.inova.org/our-services/pediatrics",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "medical"
+    ],
+    "source": "https://www.inova.org/our-services/pediatrics",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Inova Fairfax Outpatient Pediatric Rehabilitation",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-pt",
+      "therapy-speech",
+      "therapy-feeding"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Hospital-based pediatric rehabilitation offering occupational therapy, physical therapy, and speech therapy through Inova Children's Hospital. Specializes in feeding and swallowing disorders.",
+    "phone": "703-776-6080",
+    "website": "https://www.inova.org/locations/inova-fairfax-outpatient-pediatric-rehabilitation",
+    "address": "8260 Willow Oaks Corporate Dr, Suite 450, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "feeding-therapy",
+      "hospital-based"
+    ],
+    "source": "https://www.inova.org/locations/inova-fairfax-outpatient-pediatric-rehabilitation",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Inova Loudoun Hospital Pediatric Rehabilitation",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-pt",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "leesburg",
+    "description": "Hospital-based pediatric rehabilitation offering OT, PT, and speech therapy for infants through adolescents with parent education and involvement.",
+    "phone": "703-858-6667",
+    "website": "https://www.inovachildrens.org/rehabilitation/ilh",
+    "address": "44035 Riverside Parkway, Suite 500, Leesburg, VA 20176",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "hospital-based"
+    ],
+    "source": "https://www.inovachildrens.org/rehabilitation/ilh",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Jake's Ice Cream",
+    "category": [
+      "employment"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Ice cream shop committed to employing individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.sweetjakesicecream.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "employment",
+      "inclusive",
+      "ice-cream"
+    ],
+    "source": "https://www.sweetjakesicecream.com",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Jill's House",
+    "category": [
+      "respite"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Overnight respite care for children with intellectual disabilities, giving families a break.",
+    "phone": "",
+    "website": "https://www.jillshouse.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "respite",
+      "overnight",
+      "intellectual-disability"
+    ],
+    "source": "https://www.jillshouse.org",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Kennedy Center - Sensory-Friendly Performances",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "washington, dc",
+    "description": "Performances with reduced sound, dimmed lights, limited strobe effects, designated quiet areas, and freedom to move during shows. Pre-visit social stories and activity books provided.",
+    "phone": "(202) 416-8727",
+    "website": "https://www.kennedy-center.org/visit/accessibility/sensory/",
+    "address": "2700 F St NW, Washington, DC 20566",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies by performance",
+    "tags": [
+      "sensory-friendly",
+      "performing-arts",
+      "theater",
+      "music"
+    ],
+    "source": "https://www.kennedy-center.org/visit/accessibility/sensory/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "King of Kings Lutheran Church - Special Needs",
+    "category": [
+      "faith"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Special needs ministries at King of Kings Lutheran Church.",
+    "phone": "",
+    "website": "https://kofk.org/ministries-special-needs",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "church",
+      "ministry",
+      "lutheran"
+    ],
+    "source": "https://kofk.org/ministries-special-needs",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Law Office of Grace E. Kim, PC",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Specializes exclusively in special education and education law, handling IEP disputes, due process claims, Section 504, ADA matters, and school discipline from pre-K through graduation.",
+    "phone": "(703) 225-3395",
+    "website": "https://www.gekimlaw.com/",
+    "address": "11325 Random Hills Road, Suite 360-110, Fairfax, VA 22030",
+    "ageRange": "Pre-K to 22",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "iep-advocacy",
+      "special-education",
+      "disability-law",
+      "504-plan",
+      "due-process"
+    ],
+    "source": "https://www.gekimlaw.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "LEGO Discovery Center - Sensory-Friendly Mornings",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "springfield",
+    "description": "First Wednesday of each month at 10 AM with reduced lighting and music. KultureCity certified as sensory inclusive with trained staff.",
+    "phone": "(571) 506-4322",
+    "website": "https://www.legolanddiscoverycenter.com/",
+    "address": "6563 Springfield Mall, Suite 12004, Springfield, VA 22150",
+    "ageRange": "Ages 2-12",
+    "disabilityTypes": [],
+    "cost": "Admission required",
+    "tags": [
+      "sensory-friendly",
+      "indoor-play",
+      "KultureCity-certified"
+    ],
+    "source": "https://www.legolanddiscoverycenter.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Little Hands Pediatric Therapy",
+    "category": [
+      "therapy",
+      "therapy-speech",
+      "therapy-feeding"
+    ],
+    "location": "Virginia",
+    "area": "ashburn",
+    "description": "Speech, occupational, physical, and feeding therapy in clinic, at home, school, or daycare throughout Loudoun and western Fairfax counties.",
+    "phone": "571-207-8850",
+    "website": "https://littlehandspediatrictherapy.com/",
+    "address": "42395 Ryan Rd, Suite 112, Ashburn, VA 20148",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "feeding-therapy",
+      "in-home"
+    ],
+    "source": "https://littlehandspediatrictherapy.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Live In Place",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "sterling",
+    "description": "Employs Occupational Therapists who are Certified Aging-in-Place Specialists to assess homes and install stair lifts, ramps, grab bars, and entrance modifications. Over 5,000 families served since 2007.",
+    "phone": "(703) 433-0380",
+    "website": "https://www.liveinplace.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "aging-in-place",
+      "grab-bars",
+      "stair-lifts",
+      "wheelchair-ramps",
+      "home-assessment"
+    ],
+    "source": "https://www.liveinplace.com/home-solutions",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "McCandlish Lillard, P.C.",
+    "category": [
+      "legal",
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Full-service firm with elder law and special needs practice led by Certified Elder Law Attorney, offering special needs trusts, guardianships, conservatorships, and estate planning.",
+    "phone": "(703) 273-2288",
+    "website": "https://mccandlaw.com/practice/elder-law-special-needs/",
+    "address": "11350 Random Hills Road, Suite 500, Fairfax, VA 22030",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "special-needs-trust",
+      "estate-planning",
+      "guardianship",
+      "elder-law"
+    ],
+    "source": "https://mccandlaw.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "McLean Bible Church - Special Needs Ministry",
+    "category": [
+      "faith"
+    ],
+    "location": "Virginia",
+    "area": "Tysons",
+    "description": "Special needs ministry programs at McLean Bible Church, Tysons location.",
+    "phone": "",
+    "website": "https://mcleanbible.org/tysons/special-needs/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "church",
+      "ministry",
+      "special-needs"
+    ],
+    "source": "https://mcleanbible.org/tysons/special-needs/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Meadowlark Botanical Gardens",
+    "category": [
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Vienna",
+    "description": "Beautiful botanical gardens with accessible paths in Vienna, VA.",
+    "phone": "",
+    "website": "https://www.novaparks.com/parks/meadowlark-botanical-gardens",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "gardens",
+      "accessible",
+      "outdoor"
+    ],
+    "source": "https://www.novaparks.com/parks/meadowlark-botanical-gardens",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "NAMI - National Alliance on Mental Illness",
+    "category": [
+      "mental-health"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Mental health support, education, and advocacy. Includes support groups for caregivers and individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.nami.org/find-support/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.nami.org/find-support/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "NAMI Northern Virginia",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Free mental health support, education, and resources for individuals with mental illness and their families. Offers Family-to-Family classes and parent support groups for caregivers of children under 18.",
+    "phone": "571-458-7310",
+    "website": "https://nami-northernvirginia.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "mental-health"
+    ],
+    "cost": "Free",
+    "tags": [
+      "mental-health",
+      "support-groups",
+      "family-education",
+      "advocacy",
+      "caregiver-support"
+    ],
+    "source": "https://nami-northernvirginia.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "National Air and Space Museum - Udvar-Hazy Center (Sensory Resources)",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "chantilly",
+    "description": "Sensory bags with noise-reduction headphones and fidgets available at Welcome Center. Social narratives provided for visit preparation. Free admission.",
+    "phone": "(703) 572-4118",
+    "website": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "address": "14390 Air and Space Museum Pkwy, Chantilly, VA 20151",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free admission; parking fee applies",
+    "tags": [
       "sensory-friendly",
       "museum",
-      "baltimore"
+      "sensory-bags",
+      "free"
     ],
-    "source": "https://www.borail.org/explore-learn/for-kids-families/sensory-awareness/",
+    "source": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "National Alliance to End Homelessness",
+    "category": [
+      "housing"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Resources and advocacy for housing solutions including accessible housing for individuals with disabilities.",
+    "phone": "",
+    "website": "https://endhomelessness.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "housing"
+    ],
+    "source": "https://endhomelessness.org/",
     "lastScraped": "2026-03-06"
   },
   {
@@ -575,30 +2548,6 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Port Discovery Children's Museum",
-    "category": [
-      "sensory",
-      "recreation"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Children's museum in Baltimore with sensory-friendly accommodations and KultureCity certification.",
-    "phone": "",
-    "website": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sensory-friendly",
-      "museum",
-      "children",
-      "baltimore"
-    ],
-    "source": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
-    "lastScraped": "2026-03-06"
-  },
-  {
     "name": "National Children's Museum - Accessibility",
     "category": [
       "sensory",
@@ -623,679 +2572,317 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Air and Space Museum - Accessibility",
+    "name": "National Children's Museum - Sensory-Friendly Hours",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "washington, dc",
+    "description": "Sensory-friendly hours with adjusted lighting and sound. Free sensory backpacks with noise-reduction headphones and fidgets available at admission desk.",
+    "phone": "(202) 844-2486",
+    "website": "https://nationalchildrensmuseum.org/explore/programs/sensory-friendly-hours",
+    "address": "1300 Pennsylvania Ave NW, Washington, DC 20004",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sensory-friendly",
+      "children",
+      "museum",
+      "sensory-bags"
+    ],
+    "source": "https://nationalchildrensmuseum.org/explore/programs/sensory-friendly-hours",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Next Day Access (Northern Virginia)",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "sterling",
+    "description": "Mobility solutions including wheelchair ramps, stair lifts, grab bars, vertical platform lifts, and vehicle lifts. Free in-home consultations with rental and purchase options.",
+    "phone": "(703) 854-0001",
+    "website": "https://www.nextdayaccess.com/fairfax-va/",
+    "address": "45681 Oakbrook Court, Unit 110, Sterling, VA 20166",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "wheelchair-ramps",
+      "stair-lifts",
+      "grab-bars",
+      "equipment-rental"
+    ],
+    "source": "https://www.nextdayaccess.com/fairfax-va/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Parents of Autistic Children of Northern Virginia (POAC-NoVA)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "burke",
+    "description": "Volunteer-run nonprofit where families help families navigate autism. Operates a listserv, membership meetings, parent support groups, and educational programs.",
+    "phone": "703-391-2251",
+    "website": "https://poac-nova.org/",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Free",
+    "tags": [
+      "autism",
+      "parent-support",
+      "support-groups",
+      "education",
+      "volunteer-run"
+    ],
+    "source": "https://poac-nova.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Patterson Behavior Services",
+    "category": [
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "In-home ABA therapy for young children by a doctoral-level BCBA-D. Serves Arlington, Alexandria, Falls Church, and Fairfax.",
+    "phone": "571-317-1044",
+    "website": "https://www.pattersonbehavior.com/",
+    "address": "4342 4th St N, Arlington, VA 22203",
+    "ageRange": "Pediatric (1-21)",
+    "disabilityTypes": [
+      "autism",
+      "developmental-disabilities"
+    ],
+    "cost": "",
+    "tags": [
+      "aba-therapy",
+      "autism",
+      "in-home"
+    ],
+    "source": "https://www.pattersonbehavior.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Pediatric Therapy Specialists (NOVA Ped Therapy)",
+    "category": [
+      "therapy",
+      "therapy-pt"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Motor and sensory-based occupational and physical therapy for developmental delays, sensory processing, ASD, and ADHD.",
+    "phone": "703-503-5300",
+    "website": "https://novapedtherapy.com/",
+    "address": "9673 Main Street, Suite A, Fairfax, VA 22031",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism",
+      "adhd",
+      "developmental-delays"
+    ],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "sensory-processing"
+    ],
+    "source": "https://novapedtherapy.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Pediatric Therapy Studio",
+    "category": [
+      "therapy",
+      "therapy-aba",
+      "therapy-ot",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "ABA therapy, speech therapy, and occupational therapy for children with autism, speech delays, and developmental challenges.",
+    "phone": "",
+    "website": "https://www.pediatrictherapystudio.com/",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism",
+      "speech-delays",
+      "developmental-delays"
+    ],
+    "cost": "Accepts insurance",
+    "tags": [
+      "aba-therapy",
+      "speech-therapy",
+      "occupational-therapy",
+      "autism"
+    ],
+    "source": "https://www.pediatrictherapystudio.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Pizer Law, PLLC",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Special education attorney representing families of students with autism, ADHD, emotional disabilities, and learning disabilities. Handles IEPs, due process, and school meetings.",
+    "phone": "(703) 241-1391",
+    "website": "https://pizer.law/",
+    "address": "2503-D North Harrison Street, #1137, Arlington, VA 22207",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "adhd",
+      "learning-disabilities"
+    ],
+    "cost": "",
+    "tags": [
+      "iep-advocacy",
+      "special-education",
+      "disability-law",
+      "504-plan",
+      "autism"
+    ],
+    "source": "https://pizer.law/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Playworks Therapy",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Pediatric occupational therapy and speech-language therapy for children up to 16 years with clinical and virtual sessions.",
+    "phone": "703-243-4600",
+    "website": "https://www.playworksspeech.com/",
+    "address": "4620 Lee Hwy, Suite 215, Arlington, VA 22207",
+    "ageRange": "Pediatric (up to 16)",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "speech-therapy",
+      "telehealth"
+    ],
+    "source": "https://www.playworksspeech.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Port Discovery Children's Museum",
     "category": [
       "sensory",
       "recreation"
     ],
     "location": "Virginia",
     "area": "Northern Virginia",
-    "description": "Accessibility services at the Smithsonian Air and Space Museum Udvar-Hazy Center.",
+    "description": "Children's museum in Baltimore with sensory-friendly accommodations and KultureCity certification.",
     "phone": "",
-    "website": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "website": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
+      "sensory-friendly",
       "museum",
-      "accessible",
-      "smithsonian"
+      "children",
+      "baltimore"
     ],
-    "source": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
+    "source": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Fairfax County Sensory Room",
+    "name": "Premier Pediatric Therapy Source",
     "category": [
-      "sensory"
+      "therapy",
+      "therapy-speech"
     ],
     "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Sensory room available through Fairfax County Therapeutic Recreation program.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/sensory-room",
-    "address": "",
-    "ageRange": "",
+    "area": "annandale",
+    "description": "Therapist-owned practice providing occupational, physical, speech, and nutrition therapy in clinic, home, community, and telehealth.",
+    "phone": "703-879-2479",
+    "website": "https://premierpedstherapy.com/",
+    "address": "6715 Little River Turnpike, Suite 200, Annandale, VA 22003",
+    "ageRange": "Pediatric",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "sensory-room",
-      "county-program"
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "nutrition",
+      "telehealth",
+      "in-home"
     ],
-    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/sensory-room",
-    "lastScraped": "2026-03-06"
+    "source": "https://premierpedstherapy.com/",
+    "lastScraped": "2026-03-09"
   },
   {
-    "name": "A Mother's Rest",
+    "name": "Progressive Pediatric Therapy",
     "category": [
-      "respite"
+      "therapy",
+      "therapy-equine",
+      "therapy-speech",
+      "therapy-art",
+      "therapy-aquatic"
     ],
     "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Respite care organization providing rest and renewal for mothers of children with special needs.",
-    "phone": "",
-    "website": "https://www.amothersrest.org/",
-    "address": "",
-    "ageRange": "",
+    "area": "falls church",
+    "description": "One-on-one physical, occupational, speech, and art therapy for infants through school-age children. Also offers hippotherapy and aquatic therapy.",
+    "phone": "703-606-6213",
+    "website": "https://www.progressivepediatrics.net/",
+    "address": "150 South Washington Street, Suite 203, Falls Church, VA 22046",
+    "ageRange": "Pediatric",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "respite",
-      "caregiver-support"
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "art-therapy",
+      "hippotherapy",
+      "aquatic-therapy"
     ],
-    "source": "https://www.amothersrest.org/",
-    "lastScraped": "2026-03-06"
+    "source": "https://www.progressivepediatrics.net/",
+    "lastScraped": "2026-03-09"
   },
   {
-    "name": "Jill's House",
+    "name": "Proud Moments ABA - Alexandria",
     "category": [
-      "respite"
+      "therapy",
+      "therapy-aba"
     ],
     "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Overnight respite care for children with intellectual disabilities, giving families a break.",
+    "area": "alexandria",
+    "description": "Evidence-based ABA therapy for Autism Spectrum Disorder with tailored treatment plans, behavior intervention, and parent engagement support.",
     "phone": "",
-    "website": "https://www.jillshouse.org",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
+    "website": "https://www.proudmomentsaba.com/alexandria-va-aba-therapy",
+    "address": "2560 Huntington Ave, Suite 104, Alexandria, VA 22303",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism"
+    ],
     "cost": "",
     "tags": [
-      "respite",
-      "overnight",
-      "intellectual-disability"
+      "aba-therapy",
+      "autism",
+      "in-home"
     ],
-    "source": "https://www.jillshouse.org",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Virginia Disability Parking Pass",
-    "category": [
-      "government"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "How to apply for a disability parking permit through the Virginia DMV.",
-    "phone": "",
-    "website": "https://www.dmv.virginia.gov/licenses-ids/disability/apply-assist",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "parking",
-      "dmv",
-      "accessibility"
-    ],
-    "source": "https://www.dmv.virginia.gov/licenses-ids/disability/apply-assist",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Child Care Assistance and Referral (CCAR)",
-    "category": [
-      "childcare"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Child care financial assistance and referral services for eligible Fairfax County families.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/office-for-children/child-care-assistance-and-referral",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "childcare",
-      "financial-assistance",
-      "county-program"
-    ],
-    "source": "https://www.fairfaxcounty.gov/office-for-children/child-care-assistance-and-referral",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "DC Urban Mom - Nanny Forum",
-    "category": [
-      "childcare"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Online community forum for finding nannies and attendant care in the DC metro area.",
-    "phone": "",
-    "website": "https://www.dcurbanmom.com/nanny-forum/forums/show/8.page",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "nanny",
-      "childcare",
-      "forum"
-    ],
-    "source": "https://www.dcurbanmom.com/nanny-forum/forums/show/8.page",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Care.com",
-    "category": [
-      "childcare"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Platform for finding caregivers, nannies, and attendants with special needs experience.",
-    "phone": "",
-    "website": "https://www.care.com",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "nanny",
-      "caregiver",
-      "platform"
-    ],
-    "source": "https://www.care.com",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Virginia Early Intervention (Infant & Toddler Connection)",
-    "category": [
-      "early-intervention"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Virginia's early intervention system for infants and toddlers (birth to age 3) with developmental delays or disabilities. Free evaluation and services.",
-    "phone": "",
-    "website": "https://itcva.online/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "early-intervention"
-    ],
-    "source": "https://itcva.online/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Early Intervention",
-    "category": [
-      "early-intervention"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Early intervention services for children birth to 3 in Fairfax County through the Infant & Toddler Connection.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "early-intervention"
-    ],
-    "source": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Virginia Department for Aging and Rehabilitative Services (DARS)",
-    "category": [
-      "transition"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Vocational rehabilitation and transition services for youth and adults with disabilities in Virginia.",
-    "phone": "",
-    "website": "https://www.dars.virginia.gov/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "transition"
-    ],
-    "source": "https://www.dars.virginia.gov/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "ServiceSource",
-    "category": [
-      "transition"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Non-profit helping people with disabilities achieve employment, independence, and integration through vocational training and job placement.",
-    "phone": "",
-    "website": "https://www.servicesfource.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "transition"
-    ],
-    "source": "https://www.servicesfource.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Social Security Disability Benefits (SSI/SSDI)",
-    "category": [
-      "financial"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Federal disability benefits including Supplemental Security Income (SSI) and Social Security Disability Insurance (SSDI).",
-    "phone": "",
-    "website": "https://www.ssa.gov/benefits/disability/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "financial"
-    ],
-    "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Virginia Medicaid (DMAS)",
-    "category": [
-      "financial"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Virginia's Medicaid program including waiver programs for individuals with disabilities, covering therapies, equipment, and personal care.",
-    "phone": "",
-    "website": "https://www.dmas.virginia.gov/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "financial"
-    ],
-    "source": "https://www.dmas.virginia.gov/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "ABLE National Resource Center",
-    "category": [
-      "financial"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Information about ABLE accounts — tax-advantaged savings accounts for individuals with disabilities that don't affect benefits eligibility.",
-    "phone": "",
-    "website": "https://www.ablenrc.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "financial"
-    ],
-    "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Healthcare.gov - Appeals & Grievances",
-    "category": [
-      "insurance"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Federal resource for understanding your rights when insurance denies coverage, including how to file appeals for therapies and equipment.",
-    "phone": "",
-    "website": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "insurance"
-    ],
-    "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Special Needs Alliance",
-    "category": [
-      "planning"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "National network of attorneys specializing in special needs planning, including special needs trusts, guardianship, and estate planning.",
-    "phone": "",
-    "website": "https://www.specialneedsalliance.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "planning"
-    ],
-    "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "The Arc of NoVA - Pooled Trust",
-    "category": [
-      "planning"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Pooled special needs trust program through The Arc of Northern Virginia for individuals with disabilities.",
-    "phone": "",
-    "website": "https://www.thearcofnova.org/programs/trusts/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "planning"
-    ],
-    "source": "https://www.thearcofnova.org/programs/trusts/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "NAMI - National Alliance on Mental Illness",
-    "category": [
-      "mental-health"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Mental health support, education, and advocacy. Includes support groups for caregivers and individuals with disabilities.",
-    "phone": "",
-    "website": "https://www.nami.org/find-support/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "mental-health"
-    ],
-    "source": "https://www.nami.org/find-support/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax-Falls Church Community Services Board",
-    "category": [
-      "mental-health"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Mental health, substance use, and developmental disability services for Fairfax County residents.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/community-services-board/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "mental-health"
-    ],
-    "source": "https://www.fairfaxcounty.gov/community-services-board/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County FASTRAN",
-    "category": [
-      "transportation"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Accessible transportation services for Fairfax County residents with disabilities who cannot use regular public transit.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "transportation"
-    ],
-    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "WMATA MetroAccess",
-    "category": [
-      "transportation"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Paratransit service for people with disabilities who cannot use regular Metro bus or rail in the DC metro area.",
-    "phone": "",
-    "website": "https://www.wmata.com/service/accessibility/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "transportation"
-    ],
-    "source": "https://www.wmata.com/service/accessibility/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Housing & Community Development",
-    "category": [
-      "housing"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Accessible and affordable housing resources, including Section 8 vouchers and housing for people with disabilities.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/housing/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "housing"
-    ],
-    "source": "https://www.fairfaxcounty.gov/housing/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "National Alliance to End Homelessness",
-    "category": [
-      "housing"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Resources and advocacy for housing solutions including accessible housing for individuals with disabilities.",
-    "phone": "",
-    "website": "https://endhomelessness.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "housing"
-    ],
-    "source": "https://endhomelessness.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Children's National Hospital",
-    "category": [
-      "medical"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Comprehensive pediatric medical center with specialty clinics for children with disabilities and complex medical needs.",
-    "phone": "",
-    "website": "https://www.childrensnational.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "medical"
-    ],
-    "source": "https://www.childrensnational.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Inova Children's Hospital",
-    "category": [
-      "medical"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Pediatric services including developmental pediatrics, neurology, and rehabilitation for children with disabilities in Northern Virginia.",
-    "phone": "",
-    "website": "https://www.inova.org/our-services/pediatrics",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "medical"
-    ],
-    "source": "https://www.inova.org/our-services/pediatrics",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Fairfax County Therapeutic Recreation Camps",
-    "category": [
-      "camps"
-    ],
-    "location": "Virginia",
-    "area": "Fairfax County",
-    "description": "Summer and seasonal camps for children and teens with disabilities through Fairfax County Therapeutic Recreation.",
-    "phone": "",
-    "website": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "camps"
-    ],
-    "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Camp Baker (The Arc of NoVA)",
-    "category": [
-      "camps"
-    ],
-    "location": "Virginia",
-    "area": "Northern Virginia",
-    "description": "Residential summer camp for teens and adults with intellectual and developmental disabilities.",
-    "phone": "",
-    "website": "https://soar365.org/find-support/summer-camp/get-started/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "camps"
-    ],
-    "source": "https://soar365.org/find-support/summer-camp/get-started/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Sibling Support Project (Sibshops)",
-    "category": [
-      "sibling-support"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "National program providing peer support and education for brothers and sisters of people with special health, developmental, and mental health concerns.",
-    "phone": "",
-    "website": "https://siblingsupport.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sibling-support"
-    ],
-    "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Assistive Technology Act Programs",
-    "category": [
-      "assistive-tech"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "National network providing assistive technology information, device demonstrations, and lending programs in every state.",
-    "phone": "",
-    "website": "https://www.at3center.net/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "assistive-tech"
-    ],
-    "source": "https://www.at3center.net/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Virginia Assistive Technology System (VATS)",
-    "category": [
-      "assistive-tech"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Virginia's AT Act program providing device demonstrations, short-term loans, and information about assistive technology.",
-    "phone": "",
-    "website": "https://www.vats.virginia.gov/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "assistive-tech"
-    ],
-    "source": "https://www.vats.virginia.gov/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "Special Olympics Virginia",
-    "category": [
-      "sports"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Year-round sports training and competitions for children and adults with intellectual disabilities.",
-    "phone": "",
-    "website": "https://www.specialolympicsva.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sports"
-    ],
-    "source": "https://www.specialolympicsva.org/",
-    "lastScraped": "2026-03-06"
-  },
-  {
-    "name": "BlazeSports America",
-    "category": [
-      "sports"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Adaptive sports and recreation programs for youth and adults with physical disabilities.",
-    "phone": "",
-    "website": "https://bfreinc.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sports"
-    ],
-    "source": "https://bfreinc.org/",
-    "lastScraped": "2026-03-06"
+    "source": "https://www.proudmomentsaba.com/alexandria-va-aba-therapy",
+    "lastScraped": "2026-03-09"
   },
   {
     "name": "Ready.gov - People with Disabilities",
@@ -1336,5 +2923,1471 @@
     ],
     "source": "https://www.rebuildingtogether.org/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Rebuilding Together Arlington/Fairfax/Falls Church",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Nonprofit providing free home repairs and accessibility modifications for low-income homeowners. Installs grab bars, stair rails, wheelchair ramps, stairlifts, and comfort-height toilets at no cost.",
+    "phone": "(703) 528-1999",
+    "website": "https://rebuildingtogether-aff.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free (income-qualified)",
+    "tags": [
+      "accessibility",
+      "free-modifications",
+      "nonprofit",
+      "grab-bars",
+      "wheelchair-ramps",
+      "low-income"
+    ],
+    "source": "https://rebuildingtogether-aff.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Schroeder Design Build",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Family-owned design-build firm with two registered architects specializing in accessible design and aging-in-place renovations including wider doorways, step-free entryways, and accessible bathrooms.",
+    "phone": "",
+    "website": "https://schroederdesignbuild.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "universal-design",
+      "aging-in-place",
+      "bathroom-modifications",
+      "design-build"
+    ],
+    "source": "https://schroederdesignbuild.com/accessible-design-aging-in-place-northern-va/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Sentara Northern Virginia - Pediatric Therapy",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-pt",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "woodbridge",
+    "description": "Pediatric therapy program offering individualized OT, PT, and speech therapy for autism, cerebral palsy, cognitive impairment, and sensory integration.",
+    "phone": "",
+    "website": "https://www.sentara.com/medicalservices/rehabilitation-and-therapy/specialty-therapy-services/pediatric-therapy",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism",
+      "cerebral-palsy"
+    ],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "hospital-based"
+    ],
+    "source": "https://www.sentara.com/medicalservices/rehabilitation-and-therapy/specialty-therapy-services/pediatric-therapy",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "ServiceSource",
+    "category": [
+      "transition"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Non-profit helping people with disabilities achieve employment, independence, and integration through vocational training and job placement.",
+    "phone": "",
+    "website": "https://www.servicesfource.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://www.servicesfource.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Sibling Support Project (Sibshops)",
+    "category": [
+      "sibling-support"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "National program providing peer support and education for brothers and sisters of people with special health, developmental, and mental health concerns.",
+    "phone": "",
+    "website": "https://siblingsupport.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sibling-support"
+    ],
+    "source": "https://siblingsupport.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Skills on the Hill",
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Pediatric therapy practice offering occupational, physical, and speech-language therapy for children from birth through teens across home, community, and school settings.",
+    "phone": "",
+    "website": "https://skillsonthehill.com/",
+    "address": "2301 Columbia Pike, #125a, Arlington, VA 22204",
+    "ageRange": "Pediatric (birth through teens)",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy"
+    ],
+    "source": "https://skillsonthehill.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Smithsonian Morning at the Museum (Sensory-Friendly)",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "washington, dc",
+    "description": "Free sensory-friendly program where pre-registered families visit a Smithsonian museum before it opens. Includes social narratives, sensory maps, visual schedules, and calming spaces.",
+    "phone": "",
+    "website": "https://access.si.edu/program/morning-museum",
+    "address": "",
+    "ageRange": "Children, teens, and young adults",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "sensory-friendly",
+      "museums",
+      "free"
+    ],
+    "source": "https://access.si.edu/program/morning-museum",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Smithsonian's National Zoo - Sensory-Friendly Resources",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "washington, dc",
+    "description": "Downloadable social narratives, tactile elements throughout the zoo, and Aira Access app for verbal descriptions and wayfinding. Free admission.",
+    "phone": "(202) 633-4888",
+    "website": "https://nationalzoo.si.edu/visit/accessibility-and-sensory-information",
+    "address": "3001 Connecticut Ave NW, Washington, DC 20008",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "sensory-friendly",
+      "zoo",
+      "social-narratives",
+      "outdoors",
+      "free"
+    ],
+    "source": "https://nationalzoo.si.edu/visit/accessibility-and-sensory-information",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Social Security Disability Benefits (SSI/SSDI)",
+    "category": [
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Federal disability benefits including Supplemental Security Income (SSI) and Social Security Disability Insurance (SSDI).",
+    "phone": "",
+    "website": "https://www.ssa.gov/benefits/disability/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.ssa.gov/benefits/disability/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Needs Alliance",
+    "category": [
+      "planning"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "National network of attorneys specializing in special needs planning, including special needs trusts, guardianship, and estate planning.",
+    "phone": "",
+    "website": "https://www.specialneedsalliance.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "planning"
+    ],
+    "source": "https://www.specialneedsalliance.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Olympics Virginia",
+    "category": [
+      "sports"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Year-round sports training and competitions for children and adults with intellectual disabilities.",
+    "phone": "",
+    "website": "https://www.specialolympicsva.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://www.specialolympicsva.org/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Special Olympics Virginia - Area 26 (Northern Virginia)",
+    "category": [
+      "nonprofit",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Year-round sports training and athletic competition for children and adults with intellectual disabilities across Fairfax County, Arlington, and Alexandria. Supports over 3,500 athletes.",
+    "phone": "703-359-4301",
+    "website": "https://www.novasova.org/",
+    "address": "11350 Random Hills Road C-140, Fairfax, VA 22030",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "intellectual-disabilities"
+    ],
+    "cost": "Free",
+    "tags": [
+      "sports",
+      "athletics",
+      "inclusion",
+      "recreation",
+      "social"
+    ],
+    "source": "https://www.novasova.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Sweet Julia Grace Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "manassas",
+    "description": "Blesses, celebrates, and loves children who are seriously ill or have special needs. Provides adaptive equipment, home modifications, dream trips, and family support.",
+    "phone": "",
+    "website": "https://www.sweetjuliagrace.org/",
+    "address": "9000 Mike Garcia Drive #140, Manassas, VA 20109",
+    "ageRange": "Children",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "family-support",
+      "adaptive-equipment",
+      "grants",
+      "wish-fulfillment",
+      "home-modifications"
+    ],
+    "source": "https://www.sweetjuliagrace.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Arc of Northern Virginia",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Advocacy organization for people with intellectual and developmental disabilities, providing resources, support, and community.",
+    "phone": "",
+    "website": "https://thearcofnova.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "advocacy",
+      "intellectual-disability",
+      "developmental"
+    ],
+    "source": "https://thearcofnova.org",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of NoVA - Pooled Trust",
+    "category": [
+      "planning"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Pooled special needs trust program through The Arc of Northern Virginia for individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.thearcofnova.org/programs/trusts/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "planning"
+    ],
+    "source": "https://www.thearcofnova.org/programs/trusts/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The J - Special Needs Programs",
+    "category": [
+      "recreation",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Special needs programs and inclusive activities at the Jewish Community Center.",
+    "phone": "",
+    "website": "https://www.thej.org/specialneeds/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "recreation",
+      "inclusive",
+      "community"
+    ],
+    "source": "https://www.thej.org/specialneeds/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Law Office of Aubrey Carew Sizer, PLLC",
+    "category": [
+      "legal",
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "springfield",
+    "description": "Customized and affordable estate planning, special needs planning, guardianships, conservatorships, and long-term care planning throughout Northern Virginia.",
+    "phone": "(571) 403-2619",
+    "website": "https://www.carewsizerlaw.com/special-needs-planning-for-the-disabled",
+    "address": "6564 Loisdale Court, Suite 600, Springfield, VA 22150",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "special-needs-trust",
+      "estate-planning",
+      "guardianship",
+      "conservatorship"
+    ],
+    "source": "https://www.carewsizerlaw.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Law Office of Joan H. Proper, PC",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "manassas",
+    "description": "Devoted to student legal issues with a focus on special education law, representing parents in IEP and 504 matters for students with autism, learning disabilities, and emotional disabilities.",
+    "phone": "(703) 291-6660",
+    "website": "https://www.jproperlaw.com/education-law/",
+    "address": "9300 West Courthouse Road, Suite 202, Manassas, VA 20110",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "learning-disabilities"
+    ],
+    "cost": "",
+    "tags": [
+      "iep-advocacy",
+      "special-education",
+      "disability-law",
+      "504-plan"
+    ],
+    "source": "https://www.jproperlaw.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Sack Law Firm, P.C.",
+    "category": [
+      "legal",
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "mclean",
+    "description": "Special needs law services including special needs trusts, guardianships, conservatorships, and special education advocacy for families in Northern Virginia.",
+    "phone": "(703) 883-0102",
+    "website": "https://www.sacklaw.com/practice-areas/special-education-and-related-services/",
+    "address": "8270 Greensboro Drive, Suite 810, McLean, VA 22102",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "special-needs-trust",
+      "guardianship",
+      "special-education",
+      "iep-advocacy"
+    ],
+    "source": "https://www.sacklaw.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Speech and Language Center",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "sterling",
+    "description": "Speech therapy, occupational therapy, and behavioral therapy in Loudoun County for children with communication, developmental, and behavioral needs.",
+    "phone": "",
+    "website": "https://speechandlanguagecenter.com/",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "speech-therapy",
+      "occupational-therapy",
+      "behavioral-therapy"
+    ],
+    "source": "https://speechandlanguagecenter.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Thomas Roads Baptist Church - Special Needs",
+    "category": [
+      "faith"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Special needs engagement programs at Thomas Roads Baptist Church.",
+    "phone": "",
+    "website": "https://trbc.org/engage/special-needs/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "church",
+      "ministry",
+      "baptist"
+    ],
+    "source": "https://trbc.org/engage/special-needs/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "TLC Occupational Therapy",
+    "category": [
+      "therapy",
+      "therapy-ot"
+    ],
+    "location": "Virginia",
+    "area": "purcellville",
+    "description": "Pediatric occupational therapy for sensory processing disorders, food texture aversions, autism, Down syndrome, and developmental delays.",
+    "phone": "703-239-3365",
+    "website": "https://www.tlcotllc.com/",
+    "address": "205 E Hirst Rd, Suite 205, Purcellville, VA 20132",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [
+      "autism",
+      "down-syndrome",
+      "sensory-processing"
+    ],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "sensory-processing"
+    ],
+    "source": "https://www.tlcotllc.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Tuomey Law Firm",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "leesburg",
+    "description": "Special education advocacy including IEP and 504 plan support across Loudoun, Prince William, Fairfax, and Arlington counties.",
+    "phone": "(571) 565-5440",
+    "website": "https://tuomeylawfirm.com/special-education-advocacy/",
+    "address": "208 Church Street SE, Leesburg, VA 20176",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "iep-advocacy",
+      "special-education",
+      "504-plan"
+    ],
+    "source": "https://tuomeylawfirm.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "VaHomeschoolers - Special Needs Guide",
+    "category": [
+      "homeschool"
+    ],
+    "location": "Virginia",
+    "area": "Virginia",
+    "description": "Organization of Virginia Homeschoolers providing a guide on homeschooling children with special needs in Virginia. Includes local support group listings and email discussion lists for parents homeschooling children with physical, developmental, medical, communication, or learning challenges.",
+    "phone": "",
+    "website": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "homeschool",
+      "virginia",
+      "special-needs",
+      "support-groups",
+      "guide"
+    ],
+    "source": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Veteran Built Homes",
+    "category": [
+      "home-modifications"
+    ],
+    "location": "Virginia",
+    "area": "woodbridge",
+    "description": "Veteran-owned remodeling company offering kitchen, bathroom, and basement remodeling with accessible layout options. Provides guidance on Virginia Livable Home Tax Credit.",
+    "phone": "(571) 570-9027",
+    "website": "https://www.vetbuilthomes.com",
+    "address": "12302 Beechnut Ct, Woodbridge, VA 22192",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "accessibility",
+      "bathroom-modifications",
+      "veteran-owned",
+      "remodeling"
+    ],
+    "source": "https://www.vetbuilthomes.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "VHC Health Outpatient Rehabilitation",
+    "category": [
+      "therapy",
+      "therapy-ot",
+      "therapy-pt",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "arlington",
+    "description": "Outpatient rehabilitation at Virginia Hospital Center offering physical therapy, occupational therapy, and speech-language therapy for patients of all ages.",
+    "phone": "703-558-6507",
+    "website": "https://www.vhchealth.org/medical-services/rehabilitation/",
+    "address": "1851 N. George Mason Drive, Ground Floor, Arlington, VA 22207",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "occupational-therapy",
+      "physical-therapy",
+      "speech-therapy",
+      "hospital-based"
+    ],
+    "source": "https://www.vhchealth.org/medical-services/rehabilitation/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Virginia Assistive Technology System (VATS)",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Virginia's AT Act program providing device demonstrations, short-term loans, and information about assistive technology.",
+    "phone": "",
+    "website": "https://www.vats.virginia.gov/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "assistive-tech"
+    ],
+    "source": "https://www.vats.virginia.gov/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Department for Aging and Rehabilitative Services (DARS)",
+    "category": [
+      "transition"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Vocational rehabilitation and transition services for youth and adults with disabilities in Virginia.",
+    "phone": "",
+    "website": "https://www.dars.virginia.gov/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://www.dars.virginia.gov/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Disability Parking Pass",
+    "category": [
+      "government"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "How to apply for a disability parking permit through the Virginia DMV.",
+    "phone": "",
+    "website": "https://www.dmv.virginia.gov/licenses-ids/disability/apply-assist",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "parking",
+      "dmv",
+      "accessibility"
+    ],
+    "source": "https://www.dmv.virginia.gov/licenses-ids/disability/apply-assist",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Early Intervention (Infant & Toddler Connection)",
+    "category": [
+      "early-intervention"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Virginia's early intervention system for infants and toddlers (birth to age 3) with developmental delays or disabilities. Free evaluation and services.",
+    "phone": "",
+    "website": "https://itcva.online/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "early-intervention"
+    ],
+    "source": "https://itcva.online/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Virginia Medicaid (DMAS)",
+    "category": [
+      "financial"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Virginia's Medicaid program including waiver programs for individuals with disabilities, covering therapies, equipment, and personal care.",
+    "phone": "",
+    "website": "https://www.dmas.virginia.gov/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "financial"
+    ],
+    "source": "https://www.dmas.virginia.gov/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Warrenton Aquatic Recreation Facility (WARF)",
+    "category": [
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Warrenton",
+    "description": "Aquatic recreation facility with accessible swimming programs.",
+    "phone": "",
+    "website": "https://www.warrentonva.gov/201/WARF",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "aquatic",
+      "swimming",
+      "accessible"
+    ],
+    "source": "https://www.warrentonva.gov/201/WARF",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Waterfront Church DC - Special Needs Ministry",
+    "category": [
+      "faith"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Special needs ministry at Waterfront Church in Washington, DC.",
+    "phone": "",
+    "website": "https://waterfrontchurchdc.com/special-needs-ministry/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "church",
+      "ministry",
+      "dc"
+    ],
+    "source": "https://waterfrontchurchdc.com/special-needs-ministry/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "We Rock the Spectrum - Loudoun",
+    "category": [
+      "recreation",
+      "sensory"
+    ],
+    "location": "Virginia",
+    "area": "ashburn",
+    "description": "Indoor sensory play gym for all ability levels with zip line, trampoline, swings, climbing structure, arts and crafts, and a dedicated calming room.",
+    "phone": "(571) 479-8567",
+    "website": "https://werockthespectrumloudounva.com/",
+    "address": "21720 Red Rum Dr, Suites 177-182, Ashburn, VA 20147",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sensory-friendly",
+      "indoor-play",
+      "sensory-gym",
+      "calming-room"
+    ],
+    "source": "https://werockthespectrumloudounva.com/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Wheatland Farm - Hippotherapy & Therapeutic Riding",
+    "category": [
+      "therapy",
+      "therapy-equine"
+    ],
+    "location": "Virginia",
+    "area": "Purcellville",
+    "description": "Hippotherapy and therapeutic horseback riding programs for individuals with disabilities. Uses equine movement as a treatment tool to improve balance, coordination, strength, and sensory processing. Part of Wheatland Farm's comprehensive disability services.",
+    "phone": "",
+    "website": "https://www.wheatlandfarm.org",
+    "address": "Purcellville, VA",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "hippotherapy",
+      "therapeutic-riding",
+      "equine-therapy"
+    ],
+    "source": "https://www.wheatlandfarm.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "WMATA MetroAccess",
+    "category": [
+      "transportation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Paratransit service for people with disabilities who cannot use regular Metro bus or rail in the DC metro area.",
+    "phone": "",
+    "website": "https://www.wmata.com/service/accessibility/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transportation"
+    ],
+    "source": "https://www.wmata.com/service/accessibility/",
+    "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Childrens Hospital of Richmond at VCU - Developmental Pediatrics",
+    "category": [
+      "medical",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Comprehensive developmental pediatrics program offering evaluation, diagnosis, and treatment for children with developmental disabilities, autism, and complex medical needs.",
+    "phone": "(804) 828-9000",
+    "website": "https://www.chrichmond.org/",
+    "address": "1000 East Broad Street, Richmond, VA 23219",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "developmental",
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "developmental pediatrics",
+      "autism",
+      "evaluation",
+      "hospital"
+    ],
+    "source": "https://www.chrichmond.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Richmond Arc",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Local chapter of The Arc providing advocacy, community programs, and support services for individuals with intellectual and developmental disabilities in the greater Richmond area.",
+    "phone": "(804) 649-8481",
+    "website": "https://www.richmondarc.org/",
+    "address": "2 N 2nd Street, Suite 100, Richmond, VA 23219",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "advocacy",
+      "community",
+      "intellectual disability"
+    ],
+    "source": "https://www.richmondarc.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Sportable - Adaptive Sports Richmond",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Provides adaptive sports and recreation programs including wheelchair basketball, sled hockey, cycling, rowing, and more for individuals with physical disabilities and visual impairments.",
+    "phone": "(804) 340-2991",
+    "website": "https://www.sportable.org/",
+    "address": "1 Sanger Avenue, Richmond, VA 23220",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical",
+      "visual"
+    ],
+    "cost": "Free or low cost",
+    "tags": [
+      "adaptive sports",
+      "wheelchair basketball",
+      "sled hockey",
+      "recreation"
+    ],
+    "source": "https://www.sportable.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Virginia Family Special Education Connection (VFSEC)",
+    "category": [
+      "education",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Parent-led organization helping families navigate special education services, IEP processes, and disability resources across Virginia.",
+    "phone": "",
+    "website": "https://www.vfsec.org/",
+    "address": "",
+    "ageRange": "0-21",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "special education",
+      "IEP",
+      "parent support",
+      "advocacy"
+    ],
+    "source": "https://www.vfsec.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "St. Josephs Villa - Sarah Dooley Center for Autism",
+    "category": [
+      "therapy",
+      "therapy-aba",
+      "education"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Comprehensive autism services including ABA therapy, special education programs, residential services, and outpatient behavioral health for children and young adults with autism.",
+    "phone": "(804) 553-3200",
+    "website": "https://www.sjvrichmond.org/",
+    "address": "8000 Brook Road, Richmond, VA 23227",
+    "ageRange": "2-22",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted, scholarships available",
+    "tags": [
+      "autism",
+      "ABA",
+      "special education",
+      "residential"
+    ],
+    "source": "https://www.sjvrichmond.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "disAbility Law Center of Virginia",
+    "category": [
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Virginia's designated protection and advocacy agency providing free legal services to people with disabilities, including special education, disability rights, abuse/neglect investigations, and ADA compliance.",
+    "phone": "(800) 552-3962",
+    "website": "https://www.dlcv.org/",
+    "address": "1512 Willow Lawn Drive, Suite 100, Richmond, VA 23230",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "legal",
+      "advocacy",
+      "protection",
+      "disability rights",
+      "ADA"
+    ],
+    "source": "https://www.dlcv.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Childrens Hospital of The Kings Daughters (CHKD)",
+    "category": [
+      "medical",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Norfolk",
+    "description": "Pediatric hospital offering comprehensive therapy services, developmental evaluations, and specialty care for children with disabilities in the Hampton Roads region.",
+    "phone": "(757) 668-7000",
+    "website": "https://www.chkd.org/",
+    "address": "601 Childrens Lane, Norfolk, VA 23507",
+    "ageRange": "0-21",
+    "disabilityTypes": [],
+    "cost": "Insurance accepted",
+    "tags": [
+      "pediatric",
+      "hospital",
+      "therapy",
+      "developmental evaluation"
+    ],
+    "source": "https://www.chkd.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Access Adaptive Sports - Hampton Roads",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Virginia Beach",
+    "description": "Adaptive sports organization serving the Hampton Roads area with programs including surfing, cycling, kayaking, and other recreational activities for individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.accessadaptivesports.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Free or low cost",
+    "tags": [
+      "adaptive sports",
+      "surfing",
+      "cycling",
+      "kayaking"
+    ],
+    "source": "https://www.accessadaptivesports.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Arc of South Hampton Roads",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Virginia Beach",
+    "description": "Local Arc chapter providing community-based services, day support programs, respite care, and advocacy for individuals with intellectual and developmental disabilities.",
+    "phone": "(757) 461-4NRC",
+    "website": "https://www.arcshr.org/",
+    "address": "958 First Colonial Road, Virginia Beach, VA 23454",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "advocacy",
+      "day support",
+      "respite",
+      "community programs"
+    ],
+    "source": "https://www.arcshr.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Eggleston Services",
+    "category": [
+      "employment",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Norfolk",
+    "description": "Provides employment training, job placement, and community integration services for adults with disabilities in the Hampton Roads area. Programs include janitorial services, document management, and supported employment.",
+    "phone": "(757) 858-8011",
+    "website": "https://www.egglestonservices.org/",
+    "address": "1161 Ingleside Road, Norfolk, VA 23502",
+    "ageRange": "18+",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "employment",
+      "job training",
+      "supported employment",
+      "community integration"
+    ],
+    "source": "https://www.egglestonservices.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Hampton Roads Community Action Program (HRCAP) - Disability Services",
+    "category": [
+      "government",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Newport News",
+    "description": "Community action agency providing disability support services, case management, and resource referrals for low-income individuals with disabilities in Hampton Roads.",
+    "phone": "(757) 247-0379",
+    "website": "https://www.hrcapinc.org/",
+    "address": "2410 Wickham Avenue, Newport News, VA 23607",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "community action",
+      "case management",
+      "low income",
+      "referrals"
+    ],
+    "source": "https://www.hrcapinc.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "UVA Childrens Hospital - Developmental Pediatrics",
+    "category": [
+      "medical",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "University of Virginia comprehensive developmental pediatrics program offering diagnosis, treatment, and therapy services for children with developmental disabilities, autism, and genetic conditions.",
+    "phone": "(434) 924-2275",
+    "website": "https://uvahealth.com/services/childrens",
+    "address": "1204 West Main Street, Charlottesville, VA 22903",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "developmental",
+      "autism",
+      "genetic"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "developmental pediatrics",
+      "university hospital",
+      "autism",
+      "genetics"
+    ],
+    "source": "https://uvahealth.com/services/childrens",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Arc of the Piedmont",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "Serves individuals with intellectual and developmental disabilities in the Charlottesville and central Virginia area through community programs, advocacy, and family support.",
+    "phone": "(434) 977-4002",
+    "website": "https://www.arcpiedmont.org/",
+    "address": "200 Garrett Street, Suite T, Charlottesville, VA 22902",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "advocacy",
+      "community programs",
+      "family support"
+    ],
+    "source": "https://www.arcpiedmont.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Region Ten Community Services Board",
+    "category": [
+      "mental-health",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "Community services board providing mental health, intellectual disability, and substance use services for the Charlottesville-area region including emergency services, case management, and residential programs.",
+    "phone": "(434) 972-1800",
+    "website": "https://www.regionten.org/",
+    "address": "500 Old Lynchburg Road, Charlottesville, VA 22903",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "mental health"
+    ],
+    "cost": "Sliding scale",
+    "tags": [
+      "mental health",
+      "case management",
+      "residential",
+      "emergency services"
+    ],
+    "source": "https://www.regionten.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Charlottesville Therapeutic Riding Program",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "Equine-assisted therapy and adaptive riding programs for individuals with physical, cognitive, and emotional disabilities in the central Virginia area.",
+    "phone": "",
+    "website": "https://www.ridectrp.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical",
+      "cognitive",
+      "emotional"
+    ],
+    "cost": "Varies, scholarships available",
+    "tags": [
+      "hippotherapy",
+      "equine therapy",
+      "therapeutic riding",
+      "adaptive riding"
+    ],
+    "source": "https://www.ridectrp.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Blue Ridge Independent Living Center",
+    "category": [
+      "community",
+      "housing"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Independent living center serving individuals with disabilities in the Roanoke Valley and New River Valley with housing assistance, peer mentoring, skills training, and advocacy.",
+    "phone": "(540) 342-1231",
+    "website": "https://www.brilc.org/",
+    "address": "1502-D Williamson Road, Roanoke, VA 24012",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "independent living",
+      "housing",
+      "peer mentoring",
+      "skills training"
+    ],
+    "source": "https://www.brilc.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Carilion Childrens - Developmental Pediatrics",
+    "category": [
+      "medical",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Pediatric developmental services at Carilion Clinic including evaluation, diagnosis, and treatment for children with developmental delays, autism, ADHD, and learning disabilities.",
+    "phone": "(540) 981-7000",
+    "website": "https://www.carilionclinic.org/childrens",
+    "address": "1906 Belleview Avenue SE, Roanoke, VA 24014",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "developmental",
+      "autism",
+      "ADHD",
+      "learning"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "developmental pediatrics",
+      "autism",
+      "ADHD",
+      "evaluation"
+    ],
+    "source": "https://www.carilionclinic.org/childrens",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Arc of Roanoke Valley",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Provides services and advocacy for people with intellectual and developmental disabilities in the Roanoke Valley including residential services, day support, and community engagement programs.",
+    "phone": "(540) 344-2120",
+    "website": "https://www.roanokevalleyarc.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "advocacy",
+      "residential",
+      "day support",
+      "community"
+    ],
+    "source": "https://www.roanokevalleyarc.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "New River Valley Community Services Board",
+    "category": [
+      "mental-health",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Blacksburg",
+    "description": "Community services board providing developmental disability services, mental health support, substance use treatment, and case management for the New River Valley region.",
+    "phone": "(540) 961-8300",
+    "website": "https://www.nrvcs.org/",
+    "address": "700 University City Boulevard, Blacksburg, VA 24060",
+    "ageRange": "",
+    "disabilityTypes": [
+      "developmental",
+      "mental health"
+    ],
+    "cost": "Sliding scale",
+    "tags": [
+      "mental health",
+      "developmental disability",
+      "case management"
+    ],
+    "source": "https://www.nrvcs.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "TAP - Total Action for Progress Disability Services",
+    "category": [
+      "employment",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Community action agency offering disability employment services, job coaching, skills training, and community integration support in the Roanoke and Alleghany Highlands areas.",
+    "phone": "(540) 767-6220",
+    "website": "https://www.tapintohope.org/",
+    "address": "302 Second Street SW, Roanoke, VA 24011",
+    "ageRange": "18+",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "employment",
+      "job coaching",
+      "skills training",
+      "community action"
+    ],
+    "source": "https://www.tapintohope.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Virginia Board for People with Disabilities (VBPD)",
+    "category": [
+      "government",
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "State agency promoting full participation of people with disabilities in Virginia through advocacy, policy development, grant-making, and public awareness initiatives.",
+    "phone": "(800) 846-4464",
+    "website": "https://www.vaboard.org/",
+    "address": "1100 Bank Street, 7th Floor, Richmond, VA 23219",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "state agency",
+      "advocacy",
+      "policy",
+      "grants"
+    ],
+    "source": "https://www.vaboard.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Arc of Virginia",
+    "category": [
+      "nonprofit",
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Statewide advocacy organization for people with intellectual and developmental disabilities providing legislative advocacy, family support, and connections to local Arc chapters across Virginia.",
+    "phone": "(804) 649-8481",
+    "website": "https://www.thearcofva.org/",
+    "address": "2025 E Main Street, Suite 120, Richmond, VA 23223",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Free",
+    "tags": [
+      "advocacy",
+      "legislative",
+      "statewide",
+      "family support"
+    ],
+    "source": "https://www.thearcofva.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Parent Educational Advocacy Training Center (PEATC)",
+    "category": [
+      "education",
+      "legal"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Virginia's federally funded Parent Training and Information Center helping families navigate special education, understand disability rights, and advocate effectively for their children with disabilities.",
+    "phone": "(800) 869-6782",
+    "website": "https://www.peatc.org/",
+    "address": "8003 Forbes Place, Suite 310, Springfield, VA 22151",
+    "ageRange": "0-26",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "special education",
+      "IEP",
+      "parent training",
+      "advocacy",
+      "disability rights"
+    ],
+    "source": "https://www.peatc.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Virginia Commonwealth University - Autism Center for Excellence (VCU-ACE)",
+    "category": [
+      "education",
+      "therapy",
+      "therapy-aba"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "Statewide resource providing autism training, technical assistance to schools, and evidence-based practice resources for educators and families of individuals with autism spectrum disorder.",
+    "phone": "(804) 828-1851",
+    "website": "https://vcuautismcenter.org/",
+    "address": "",
+    "ageRange": "0-22",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Free",
+    "tags": [
+      "autism",
+      "training",
+      "schools",
+      "evidence-based practices"
+    ],
+    "source": "https://vcuautismcenter.org/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Virginia Department of Education - Special Education",
+    "category": [
+      "education",
+      "government"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "State department overseeing special education services, IEP compliance, dispute resolution, and resources for families navigating the special education system in Virginia public schools.",
+    "phone": "(804) 225-2075",
+    "website": "https://www.doe.virginia.gov/teaching-learning-assessment/specialized-instruction/special-education",
+    "address": "101 N 14th Street, Richmond, VA 23219",
+    "ageRange": "2-22",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "special education",
+      "IEP",
+      "state agency",
+      "dispute resolution"
+    ],
+    "source": "https://www.doe.virginia.gov/",
+    "lastScraped": "2026-03-09"
   }
 ]

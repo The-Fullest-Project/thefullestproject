@@ -1,7 +1,9 @@
 [
   {
     "name": "Kentucky Cabinet for Health and Family Services - Department for Behavioral Health, Developmental and Intellectual Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "State agency providing services and supports for Kentuckians with developmental and intellectual disabilities including waiver programs and community services.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://dbhdid.ky.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Early Intervention System (First Steps)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Part C early intervention program providing developmental services for infants and toddlers birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://chfs.ky.gov/agencies/dph/dmch/ecdb/Pages/firststeps.aspx",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Kentucky",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Statewide advocacy organization for people with intellectual and developmental disabilities, providing resources, support, and policy advocacy.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcofky.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Kentucky",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Year-round sports training and athletic competition for children and adults with intellectual disabilities throughout Kentucky.",
@@ -59,13 +73,17 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.soky.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Protection and Advocacy (Disability Rights Kentucky)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Federally designated protection and advocacy organization providing legal advocacy for Kentuckians with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsky.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Lifespan Respite Project",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Respite care resources and referrals for family caregivers of individuals with disabilities or special needs across Kentucky.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://chfs.ky.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp KYSOC (Kentucky Sheriffs' Boys and Girls Ranch)",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Kentucky",
     "area": "Gilbertsville",
     "description": "Summer camp program for children with disabilities and special needs in a supportive outdoor environment.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.kysoc.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Assistive Technology Service (KATS) Network",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Kentucky's assistive technology program providing device demonstrations, equipment loans, and AT training for individuals with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://katsnet.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky ABLE Account (STABLE KY)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Tax-advantaged savings accounts enabling Kentuckians with disabilities to save without impacting eligibility for public benefits.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.stableaccount.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Medicaid Waiver Programs (Michelle P. Waiver / SCL Waiver)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "Home and community-based Medicaid waiver programs for individuals with intellectual and developmental disabilities to receive services in their communities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://dbhdid.ky.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "TARC3 Paratransit (Louisville)",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Kentucky",
     "area": "Louisville",
     "description": "Paratransit transportation service for individuals with disabilities in the Louisville metro area.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.ridetarc.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Housing Corporation - Accessible Housing",
-    "category": ["housing"],
+    "category": [
+      "housing"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "State housing finance agency providing resources for accessible and affordable housing options for Kentuckians with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["housing"],
+    "tags": [
+      "housing"
+    ],
     "source": "https://www.kyhousing.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "University of Louisville Developmental Pediatrics - Weisskopf Child Evaluation Center",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Kentucky",
     "area": "Louisville",
     "description": "Comprehensive developmental evaluations, diagnosis, and treatment for children with developmental disabilities and concerns.",
@@ -203,13 +253,18 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://louisville.edu/medicine/departments/pediatrics",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Cardinal Hill Rehabilitation Hospital Pediatric Therapy",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Kentucky",
     "area": "Lexington",
     "description": "Pediatric rehabilitation and therapy services including physical, occupational, and speech therapy for children with disabilities.",
@@ -219,13 +274,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.cardinalhill.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kentucky Office of Vocational Rehabilitation - Employment",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Kentucky",
     "area": "",
     "description": "State vocational rehabilitation program providing employment services, job training, and placement for Kentuckians with disabilities.",
@@ -235,7 +294,9 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://kcc.ky.gov/Vocational-Rehabilitation/",
     "lastScraped": "2026-03-06"
   }

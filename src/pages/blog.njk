@@ -1,24 +1,50 @@
 ---
 layout: layouts/base.njk
-title: Blog
+title: Stories & News
 description: "Stories, insights, and practical advice from experts and caregivers in the disability community."
-pagination:
-  data: collections.blogPosts
-  size: 10
-  alias: posts
-permalink: "{% if pagination.pageNumber == 0 %}/blog/{% else %}/blog/{{ pagination.pageNumber + 1 }}/{% endif %}"
+permalink: /blog/
 ---
 
 <section class="py-12">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Blog</h1>
-    <p class="text-center mb-12" style="color: var(--color-text-light);">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Stories & News</h1>
+    <p class="text-center mb-8" style="color: var(--color-text-light);">
       Stories, insights, and practical advice from experts and caregivers in the disability community.
     </p>
 
-    <div class="space-y-8">
-      {% for post in posts %}
-      <article class="card p-8">
+    <!-- Topic filter -->
+    <div class="card p-4 mb-8">
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-end">
+        <div class="flex-grow">
+          <label for="blog-search" class="block text-sm font-semibold mb-2">Search Articles</label>
+          <input type="text" id="blog-search" placeholder="Search by title or keyword..." class="form-input">
+        </div>
+        <div>
+          <label for="blog-topic-filter" class="block text-sm font-semibold mb-2">Filter by Topic</label>
+          <select id="blog-topic-filter" class="filter-select">
+            <option value="">All Topics</option>
+            {% set categories = [] %}
+            {% for post in collections.blogPosts %}
+              {% if post.data.category and post.data.category not in categories %}
+                {% set categories = (categories.push(post.data.category), categories) %}
+              {% endif %}
+            {% endfor %}
+            {% for cat in categories | sort %}
+            <option value="{{ cat }}">{{ cat }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <p id="blog-results-count" class="text-sm mb-4" style="color: var(--color-text-light);"></p>
+
+    <div id="blog-list" class="space-y-8">
+      {% for post in collections.blogPosts %}
+      <article class="card p-8 blog-article"
+               data-category="{{ post.data.category or '' }}"
+               data-title="{{ post.data.title | lower }}"
+               data-excerpt="{{ (post.data.excerpt or '') | lower }}">
         <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ post.data.category or "Story" }}</span>
         <h2 class="text-2xl font-bold mt-3 mb-3">
           <a href="{{ post.url }}" class="no-underline" style="color: var(--color-primary);">{{ post.data.title }}</a>
@@ -41,17 +67,56 @@ permalink: "{% if pagination.pageNumber == 0 %}/blog/{% else %}/blog/{{ paginati
       </div>
       {% endfor %}
     </div>
-
-    <!-- Pagination -->
-    {% if pagination.pages.length > 1 %}
-    <nav class="mt-12 flex justify-center gap-4" aria-label="Blog pagination">
-      {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}" class="btn-secondary text-sm no-underline">Newer Posts</a>
-      {% endif %}
-      {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}" class="btn-secondary text-sm no-underline">Older Posts</a>
-      {% endif %}
-    </nav>
-    {% endif %}
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var searchInput = document.getElementById('blog-search');
+  var topicFilter = document.getElementById('blog-topic-filter');
+  var blogList = document.getElementById('blog-list');
+  var resultsCount = document.getElementById('blog-results-count');
+
+  if (!blogList) return;
+
+  var articles = blogList.querySelectorAll('.blog-article');
+
+  function filterArticles() {
+    var searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    var selectedTopic = topicFilter ? topicFilter.value : '';
+    var visibleCount = 0;
+
+    articles.forEach(function(article) {
+      var title = article.getAttribute('data-title') || '';
+      var excerpt = article.getAttribute('data-excerpt') || '';
+      var category = article.getAttribute('data-category') || '';
+      var show = true;
+
+      if (searchTerm && !title.includes(searchTerm) && !excerpt.includes(searchTerm)) {
+        show = false;
+      }
+      if (selectedTopic && category !== selectedTopic) {
+        show = false;
+      }
+
+      article.style.display = show ? '' : 'none';
+      if (show) visibleCount++;
+    });
+
+    if (resultsCount) {
+      resultsCount.textContent = visibleCount + ' article' + (visibleCount !== 1 ? 's' : '') + ' found';
+    }
+  }
+
+  if (searchInput) searchInput.addEventListener('input', filterArticles);
+  if (topicFilter) topicFilter.addEventListener('change', filterArticles);
+
+  // Check URL params for initial filter
+  var urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('topic') && topicFilter) {
+    topicFilter.value = urlParams.get('topic');
+  }
+
+  filterArticles();
+});
+</script>

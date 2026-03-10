@@ -1,7 +1,9 @@
 [
   {
     "name": "Alabama Department of Rehabilitation Services (ADRS)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "State agency providing services for children and adults with disabilities including early intervention, vocational rehabilitation, and independent living services.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.rehab.alabama.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama Early Intervention System (AEIS)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Part C early intervention program providing developmental services for infants and toddlers birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.rehab.alabama.gov/services/ei",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Alabama",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Statewide advocacy organization for people with intellectual and developmental disabilities, offering resources, support, and community programs.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearcofal.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Alabama",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Year-round sports training and athletic competition for children and adults with intellectual disabilities across Alabama.",
@@ -59,13 +73,17 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.specialolympicsalabama.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama Disability Rights (Alabama Disabilities Advocacy Program)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Federally mandated protection and advocacy system providing legal advocacy for Alabamians with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.adap.ua.edu",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama Respite Network",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Respite care referral network helping families of children and adults with disabilities find temporary relief care services.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://www.rehab.alabama.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp ASCCA",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Alabama's Special Camp for Children and Adults, offering year-round programs and summer camp for individuals with disabilities.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campascca.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "STAR (Statewide Technology Access and Response) for Alabamians with Disabilities",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Assistive technology program providing device demonstrations, short-term loans, and assistance accessing assistive technology for Alabamians with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.rehab.alabama.gov/services/vrs/at",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama ABLE Savings Plan",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Tax-advantaged savings accounts for individuals with disabilities to save without affecting eligibility for public benefits like Medicaid and SSI.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.alabamaable.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama Medicaid Waiver Programs",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Home and community-based Medicaid waiver programs providing services for individuals with intellectual disabilities and other conditions to remain in their communities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.medicaid.alabama.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "ClasTran Paratransit (Birmingham)",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Alabama",
     "area": "Birmingham",
     "description": "Paratransit and demand-response transportation service for individuals with disabilities in the Birmingham metro area.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.clastran.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama Housing Finance Authority - Accessible Housing",
-    "category": ["housing"],
+    "category": [
+      "housing"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "State housing authority providing information on accessible and affordable housing options for individuals with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["housing"],
+    "tags": [
+      "housing"
+    ],
     "source": "https://www.ahfa.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "UAB Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Alabama",
     "area": "Birmingham",
     "description": "Developmental and behavioral pediatrics program at the University of Alabama at Birmingham providing comprehensive evaluations and treatment for children with developmental concerns.",
@@ -203,13 +253,18 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.uab.edu/medicine/pediatrics",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Easter Seals of Central Alabama Pediatric Therapy",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Pediatric therapy services including physical, occupational, and speech therapy for children with disabilities.",
@@ -219,13 +274,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.easterseals.com/central-alabama/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Alabama Vocational Rehabilitation Service - Employment",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Alabama",
     "area": "",
     "description": "Employment services including job training, placement, and support for individuals with disabilities seeking competitive integrated employment.",
@@ -235,13 +294,17 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.rehab.alabama.gov/services/vrs",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Lakeshore Foundation Adaptive Recreation",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Alabama",
     "area": "Birmingham",
     "description": "Adaptive sports and recreation programs for individuals with physical disabilities including wheelchair sports, fitness, and wellness programs.",
@@ -251,7 +314,9 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.lakeshore.org",
     "lastScraped": "2026-03-06"
   }

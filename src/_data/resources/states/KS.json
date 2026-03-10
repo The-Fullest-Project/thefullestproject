@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of Kansas",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "State chapter of The Arc advocating for people with intellectual and developmental disabilities across Kansas.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arckansas.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kansas Infant-Toddler Services (tiny-k)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Kansas early intervention program providing services for infants and toddlers from birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.kdhe.ks.gov/726/Infant-Toddler-Services",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Kansas",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Year-round sports training and athletic competition for Kansans with intellectual disabilities.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.ksso.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Children's Mercy Kansas City - Developmental and Behavioral Health",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Kansas",
     "area": "Kansas City",
     "description": "Comprehensive developmental and behavioral health services for children at a nationally recognized children's hospital.",
@@ -59,13 +73,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.childrensmercy.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Center of Kansas",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Kansas' designated protection and advocacy organization providing legal advocacy for people with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.drckansas.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Assistive Technology for Kansans",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Kansas assistive technology program providing device demonstrations, loans, and information to individuals with disabilities.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://atk.ku.edu",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kansas ABLE Savings Plan",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible Kansans with disabilities to save without affecting means-tested benefits.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.savewithable.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kansas Department for Aging and Disability Services (KDADS)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "State agency overseeing disability services, Medicaid waivers, and supports for Kansans with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.kdads.ks.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Hope - Paraquad",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Adaptive camp programs providing outdoor recreation and social opportunities for youth and adults with disabilities.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.paraquad.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Families Together Inc.",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Kansas parent training and information center providing support, education, and resources for families of children with disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.familiestogetherinc.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kansas Vocational Rehabilitation Services",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "State services supporting Kansans with disabilities in preparing for, finding, and keeping competitive employment.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.dcf.ks.gov/services/RS/Pages/default.aspx",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Kansas Medicaid HCBS Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Kansas",
     "area": "",
     "description": "Medicaid waiver programs funding home and community-based services for Kansans with disabilities.",
@@ -187,13 +233,18 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.kdads.ks.gov/commissions/home-community-based-services-(hcbs)",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Rainbows United Therapy Services",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Kansas",
     "area": "Wichita",
     "description": "Pediatric therapy services including occupational, physical, and speech therapy for children with special needs.",
@@ -203,7 +254,9 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.rainbowsunited.org",
     "lastScraped": "2026-03-06"
   }

@@ -1,7 +1,9 @@
 [
   {
     "name": "Louisiana Office for Citizens with Developmental Disabilities (OCDD)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "State agency administering services for individuals with developmental disabilities including waiver programs, support coordination, and community-based services.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://ldh.la.gov/page/ocdd",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana Early Intervention (EarlySteps)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Part C early intervention program providing developmental services for infants and toddlers birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://ldh.la.gov/page/earlysteps",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Louisiana",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Statewide nonprofit advocacy organization for people with intellectual and developmental disabilities providing resources and community support.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearcla.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Louisiana",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities throughout Louisiana.",
@@ -59,13 +73,17 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.laso.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Louisiana (The Advocacy Center)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Federally designated protection and advocacy organization providing legal advocacy and rights protection for Louisianans with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.advocacyla.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana Lifespan Respite Care Program",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Respite care resources and referral services for family caregivers of individuals with disabilities or chronic health conditions.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://ldh.la.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "MedCamps of Louisiana",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Summer and weekend camp programs for children with disabilities and special medical needs at no cost to families.",
@@ -107,13 +133,17 @@
     "ageRange": "8-18",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.medcamps.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana Assistive Technology Access Network (LATAN)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Louisiana's assistive technology program providing device demonstrations, equipment loans, and AT solutions for individuals with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.latan.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Tax-advantaged savings accounts for individuals with disabilities enabling savings without affecting public benefits eligibility.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.stableaccount.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana Medicaid Waiver Programs (ROW / NOW)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Home and community-based Medicaid waiver programs (Residential Options Waiver and New Opportunities Waiver) for individuals with developmental disabilities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://ldh.la.gov/page/ocdd",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "JET Paratransit (New Orleans RTA)",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Louisiana",
     "area": "New Orleans",
     "description": "Paratransit transportation service for individuals with disabilities in the New Orleans area who are unable to use fixed-route transit.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.norta.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana Housing Corporation - Accessible Housing",
-    "category": ["housing"],
+    "category": [
+      "housing"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "State housing authority providing accessible and affordable housing resources for individuals with disabilities throughout Louisiana.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["housing"],
+    "tags": [
+      "housing"
+    ],
     "source": "https://www.lhc.la.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Children's Hospital New Orleans - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Louisiana",
     "area": "New Orleans",
     "description": "Developmental and behavioral pediatrics providing comprehensive evaluations and treatment for children with developmental concerns.",
@@ -203,13 +253,18 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.chnola.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Easter Seals Louisiana Pediatric Therapy",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "Pediatric therapy services including physical, occupational, and speech therapy for children with disabilities.",
@@ -219,13 +274,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.easterseals.com/louisiana/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Louisiana Rehabilitation Services (LRS) - Employment",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Louisiana",
     "area": "",
     "description": "State vocational rehabilitation program providing job training, placement, and employment support for Louisianans with disabilities.",
@@ -235,7 +294,9 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.laworks.net",
     "lastScraped": "2026-03-06"
   }

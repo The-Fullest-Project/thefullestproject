@@ -1,7 +1,9 @@
 [
   {
     "name": "Mississippi Department of Mental Health - Division of Intellectual and Developmental Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "State agency providing services and supports for Mississippians with intellectual and developmental disabilities including waiver programs and community services.",
@@ -11,13 +13,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.dmh.ms.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi Early Intervention (First Steps)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Part C early intervention program for infants and toddlers birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +33,17 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.msdh.ms.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of Mississippi",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Statewide advocacy organization for people with intellectual and developmental disabilities, providing resources and community support.",
@@ -43,13 +53,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcms.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Mississippi",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities throughout Mississippi.",
@@ -59,13 +73,17 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.specialolympicsms.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights Mississippi",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Federally designated protection and advocacy organization providing legal advocacy and rights protection for Mississippians with disabilities.",
@@ -75,13 +93,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.drms.ms",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi Respite Care Program",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Respite care services and referrals for family caregivers of individuals with disabilities throughout Mississippi.",
@@ -91,13 +113,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://www.dmh.ms.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Camp Tik-A-Witha",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Summer camp program for children and teens with disabilities providing outdoor recreation and social experiences.",
@@ -107,13 +133,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.msfb.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi Project START (Success Through Assistive/Rehabilitative Technology)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Mississippi's assistive technology program providing device demonstrations, equipment loans, and AT services for individuals with disabilities.",
@@ -123,13 +153,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.msprojectstart.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Tax-advantaged savings accounts for individuals with disabilities to save without affecting eligibility for public benefits.",
@@ -139,13 +173,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.stableaccount.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi Medicaid Waiver Programs (IDD Waiver)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "Home and community-based Medicaid waiver programs for individuals with intellectual and developmental disabilities to receive services in their communities.",
@@ -155,13 +193,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://medicaid.ms.gov",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "JATRAN Paratransit (Jackson)",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Mississippi",
     "area": "Jackson",
     "description": "Paratransit transportation service for individuals with disabilities in the Jackson metropolitan area.",
@@ -171,13 +213,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.jacksonms.gov/jatran/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi Home Corporation - Accessible Housing",
-    "category": ["housing"],
+    "category": [
+      "housing"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "State housing finance agency providing resources for accessible and affordable housing for Mississippians with disabilities.",
@@ -187,13 +233,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["housing"],
+    "tags": [
+      "housing"
+    ],
     "source": "https://www.mshomecorp.com",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "UMMC Center for Advancement of Youth (Developmental Pediatrics)",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Mississippi",
     "area": "Jackson",
     "description": "Developmental and behavioral pediatrics at the University of Mississippi Medical Center providing comprehensive evaluations and care for children with developmental concerns.",
@@ -203,13 +253,18 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.umc.edu",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Methodist Rehabilitation Center Pediatric Therapy",
-    "category": ["therapy"],
+    "category": [
+      "therapy",
+      "therapy-speech"
+    ],
     "location": "Mississippi",
     "area": "Jackson",
     "description": "Pediatric rehabilitation and therapy services including physical, occupational, and speech therapy for children with disabilities.",
@@ -219,13 +274,17 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["therapy"],
+    "tags": [
+      "therapy"
+    ],
     "source": "https://www.methodistonline.org",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Mississippi Department of Rehabilitation Services - Employment",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Mississippi",
     "area": "",
     "description": "State vocational rehabilitation program providing employment services, job training, and placement for Mississippians with disabilities.",
@@ -235,7 +294,9 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.mdrs.ms.gov",
     "lastScraped": "2026-03-06"
   }
