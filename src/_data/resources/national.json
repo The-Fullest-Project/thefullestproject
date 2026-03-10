@@ -7295,5 +7295,356 @@
     ],
     "source": "https://independentliving.com/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "CHARGE Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides family support including new parent education, sibling and grandparent support groups, national conferences, training for professionals, and advocacy for individuals with CHARGE syndrome. Offers Spanish-language support.",
+    "phone": "(800) 442-7604",
+    "website": "https://www.chargesyndrome.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "CHARGE syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "CHARGE syndrome",
+      "family support",
+      "rare disease",
+      "conferences"
+    ],
+    "source": "https://www.chargesyndrome.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "PRISMS (Smith-Magenis Syndrome)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides information and support to families of persons with Smith-Magenis syndrome. Sponsors research, connects families with regional representatives, and offers webinars and educational resources for newly diagnosed families.",
+    "phone": "(972) 231-0035",
+    "website": "https://www.prisms.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "Smith-Magenis syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Smith-Magenis",
+      "rare disease",
+      "family support",
+      "research"
+    ],
+    "source": "https://www.prisms.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Kabuki Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Parent-led foundation driving Kabuki syndrome research. Provides a Quick Start Guide for newly diagnosed families, global community events, connections to expert clinicians, and a global census for tracking affected individuals.",
+    "phone": "(646) 234-8625",
+    "website": "https://www.kabukisyndromefoundation.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "Kabuki syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Kabuki syndrome",
+      "rare disease",
+      "research",
+      "family support"
+    ],
+    "source": "https://www.kabukisyndromefoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "SOFT (Trisomy 18, 13 Support)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Voluntary nonprofit providing support, information, and connections for families confronting a diagnosis of trisomy 18, 13, or related chromosomal conditions. Connects parents to local contacts and organizes annual conferences.",
+    "phone": "(800) 716-7638",
+    "website": "https://trisomy.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "trisomy 18",
+      "trisomy 13"
+    ],
+    "cost": "Free",
+    "tags": [
+      "trisomy",
+      "chromosomal disorders",
+      "rare disease",
+      "family support"
+    ],
+    "source": "https://trisomy.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Cerebral Palsy Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides expert advice, fact sheets, videos, podcasts, and a family toolkit for newly diagnosed families. Focused on lowering the age of detection from 2 years to 6 months so babies can start therapy earlier.",
+    "phone": "",
+    "website": "https://cpresource.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "cerebral palsy"
+    ],
+    "cost": "Free",
+    "tags": [
+      "cerebral palsy",
+      "early detection",
+      "family toolkit",
+      "resources"
+    ],
+    "source": "https://cpresource.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Lissencephaly Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Nonprofit dedicated to empowering families and educating communities about lissencephaly, a rare neurological disorder. Provides equipment grants, family support programs, newly diagnosed family packets, and awareness events.",
+    "phone": "",
+    "website": "https://www.lissfoundation.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "lissencephaly"
+    ],
+    "cost": "Free",
+    "tags": [
+      "lissencephaly",
+      "rare disease",
+      "equipment grants",
+      "family support"
+    ],
+    "source": "https://www.lissfoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "United Leukodystrophy Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Supports families facing leukodystrophy diagnoses for over 35 years. Provides referrals, support groups, professional and patient education, and educational materials connecting families with medical resources and peer support.",
+    "phone": "(800) 728-5483",
+    "website": "https://ulf.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "leukodystrophy"
+    ],
+    "cost": "Free",
+    "tags": [
+      "leukodystrophy",
+      "rare disease",
+      "support groups",
+      "referrals"
+    ],
+    "source": "https://ulf.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Dup15q Alliance",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides family support and advocacy for Dup15q syndrome for over 30 years. Offers resources for newly diagnosed families, annual conferences, and connections to research and clinical trial opportunities.",
+    "phone": "(313) 509-7984",
+    "website": "https://dup15q.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "Dup15q syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Dup15q",
+      "chromosome 15",
+      "rare disease",
+      "clinical trials"
+    ],
+    "source": "https://dup15q.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Child Neurology Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Collaborative center of education, resources, and support for children with neurologic conditions. Offers free one-on-one Peer Support Specialists, the RARE Child Neurology Workgroup, and connections to medical professionals.",
+    "phone": "",
+    "website": "https://www.childneurologyfoundation.org/",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [
+      "neurological"
+    ],
+    "cost": "Free",
+    "tags": [
+      "child neurology",
+      "peer support",
+      "rare diseases",
+      "neurological"
+    ],
+    "source": "https://www.childneurologyfoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Noonan Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Supports, educates, and advocates for individuals affected by Noonan syndrome, a genetic disorder causing unusual facial features, short stature, and heart defects. Offers support groups, biennial conferences, and educational resources.",
+    "phone": "(866) 875-8928",
+    "website": "https://www.teamnoonan.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "Noonan syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Noonan syndrome",
+      "genetic disorder",
+      "family support",
+      "conferences"
+    ],
+    "source": "https://www.teamnoonan.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "4p- Support Group (Wolf-Hirschhorn Syndrome)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Nonprofit for families of children with Wolf-Hirschhorn syndrome (4p-), a rare genetic disorder caused by deletion on chromosome 4. Offers newsletters, biannual conferences, regional gatherings, and peer connections.",
+    "phone": "",
+    "website": "https://4p-supportgroup.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "Wolf-Hirschhorn syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Wolf-Hirschhorn",
+      "4p-",
+      "rare disease",
+      "family support"
+    ],
+    "source": "https://4p-supportgroup.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Aicardi Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides information, financial support, and a support network for individuals with Aicardi syndrome and their families. Hosts the OurAicardiLife community and funds research.",
+    "phone": "(800) 374-8518",
+    "website": "https://aicardisyndromefoundation.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "Aicardi syndrome"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Aicardi syndrome",
+      "rare disease",
+      "research funding",
+      "family support"
+    ],
+    "source": "https://aicardisyndromefoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "SMA Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Focuses on accelerating drug discovery and development of treatments for spinal muscular atrophy. Partners with biotech companies to advance therapeutic candidates and connects families to SMA resources worldwide.",
+    "phone": "(646) 253-7100",
+    "website": "https://smafoundation.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "spinal muscular atrophy"
+    ],
+    "cost": "Free",
+    "tags": [
+      "SMA",
+      "spinal muscular atrophy",
+      "drug discovery",
+      "research"
+    ],
+    "source": "https://smafoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Cerebral Palsy Family Network (CPFN)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The world's largest online community for connecting and supporting families of children with cerebral palsy. Offers a care guide, treatment information, financial resources, and tools to manage a child's care.",
+    "phone": "",
+    "website": "https://cpfamilynetwork.org/",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [
+      "cerebral palsy"
+    ],
+    "cost": "Free",
+    "tags": [
+      "cerebral palsy",
+      "online community",
+      "care guide",
+      "family support"
+    ],
+    "source": "https://cpfamilynetwork.org/",
+    "lastScraped": "2026-03-10"
   }
 ]
