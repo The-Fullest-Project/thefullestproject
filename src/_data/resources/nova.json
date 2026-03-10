@@ -2707,7 +2707,7 @@
     "area": "fairfax",
     "description": "Developmental Pediatrics at PSV. Medical Director of Neurodevelopmental Pediatrics. Kennedy Krieger/Johns Hopkins trained. Specializes in ADHD, autism, learning disabilities, and developmental delays.",
     "phone": "703-876-2788",
-    "website": "https://psvcare.org/find-a-specialist-results?field_specialty_nid=401",
+    "website": "https://psvcare.org/find-specialist",
     "address": "3023 Hamaker Court, Fairfax, VA 22031",
     "ageRange": "Pediatric",
     "disabilityTypes": [
@@ -3310,13 +3310,13 @@
     "area": "",
     "description": "Provides driver rehabilitation services and vehicle modification consultations for individuals with disabilities. Certified Driver Rehabilitation Specialists evaluate driving ability and recommend adaptive equipment.",
     "phone": "",
-    "website": "https://www.driverehabcenter.com/",
+    "website": "https://www.driverrehabcenter.com/",
     "address": "",
     "ageRange": "Teens and adults",
     "disabilityTypes": ["mobility", "neurological", "visual"],
     "cost": "Varies",
     "tags": ["driver-rehabilitation", "vehicle-modification", "adaptive-driving", "evaluation"],
-    "source": "https://www.driverehabcenter.com/",
+    "source": "https://www.driverrehabcenter.com/",
     "lastScraped": "2026-03-08"
   },
   {

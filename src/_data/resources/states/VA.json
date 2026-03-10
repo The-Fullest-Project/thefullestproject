@@ -1028,7 +1028,7 @@
     "area": "fairfax",
     "description": "Developmental Pediatrics at PSV. Medical Director of Neurodevelopmental Pediatrics. Kennedy Krieger/Johns Hopkins trained. Specializes in ADHD, autism, learning disabilities, and developmental delays.",
     "phone": "703-876-2788",
-    "website": "https://psvcare.org/find-a-specialist-results?field_specialty_nid=401",
+    "website": "https://psvcare.org/find-specialist",
     "address": "3023 Hamaker Court, Fairfax, VA 22031",
     "ageRange": "Pediatric",
     "disabilityTypes": [
@@ -1328,7 +1328,7 @@
     "area": "Northern Virginia",
     "description": "Provides driver rehabilitation services and vehicle modification consultations for individuals with disabilities. Certified Driver Rehabilitation Specialists evaluate driving ability and recommend adaptive equipment.",
     "phone": "",
-    "website": "https://www.driverehabcenter.com/",
+    "website": "https://www.driverrehabcenter.com/",
     "address": "",
     "ageRange": "Teens and adults",
     "disabilityTypes": [
@@ -1343,7 +1343,7 @@
       "adaptive-driving",
       "evaluation"
     ],
-    "source": "https://www.driverehabcenter.com/",
+    "source": "https://www.driverrehabcenter.com/",
     "lastScraped": "2026-03-09"
   },
   {
@@ -3932,7 +3932,7 @@
     "area": "Virginia Beach",
     "description": "Adaptive sports organization serving the Hampton Roads area with programs including surfing, cycling, kayaking, and other recreational activities for individuals with disabilities.",
     "phone": "",
-    "website": "https://www.accessadaptivesports.org/",
+    "website": "https://hradaptivesports.com/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [
@@ -3945,7 +3945,7 @@
       "cycling",
       "kayaking"
     ],
-    "source": "https://www.accessadaptivesports.org/",
+    "source": "https://hradaptivesports.com/",
     "lastScraped": "2026-03-09"
   },
   {
@@ -3958,7 +3958,7 @@
     "area": "Virginia Beach",
     "description": "Local Arc chapter providing community-based services, day support programs, respite care, and advocacy for individuals with intellectual and developmental disabilities.",
     "phone": "(757) 461-4NRC",
-    "website": "https://www.arcshr.org/",
+    "website": "https://www.thearcofshr.org/",
     "address": "958 First Colonial Road, Virginia Beach, VA 23454",
     "ageRange": "",
     "disabilityTypes": [
@@ -3972,7 +3972,7 @@
       "respite",
       "community programs"
     ],
-    "source": "https://www.arcshr.org/",
+    "source": "https://www.thearcofshr.org/",
     "lastScraped": "2026-03-09"
   },
   {
@@ -4196,7 +4196,7 @@
     "area": "Roanoke",
     "description": "Provides services and advocacy for people with intellectual and developmental disabilities in the Roanoke Valley including residential services, day support, and community engagement programs.",
     "phone": "(540) 344-2120",
-    "website": "https://www.roanokevalleyarc.org/",
+    "website": "https://www.arcgrv.org/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [
@@ -4210,7 +4210,7 @@
       "day support",
       "community"
     ],
-    "source": "https://www.roanokevalleyarc.org/",
+    "source": "https://www.arcgrv.org/",
     "lastScraped": "2026-03-09"
   },
   {

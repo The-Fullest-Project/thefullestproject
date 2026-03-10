@@ -4182,7 +4182,7 @@
     "area": "",
     "description": "Specializes in switch-adapted toys and devices for children with physical disabilities. Offers pre-adapted toys ready to use with accessibility switches, plus DIY switch adaptation guides and tutorials.",
     "phone": "",
-    "website": "https://www.switchkids.com.au",
+    "website": "https://www.switchtoyfamily.com/",
     "address": "",
     "ageRange": "Children",
     "disabilityTypes": [
@@ -4195,7 +4195,7 @@
       "diy",
       "children"
     ],
-    "source": "https://www.switchkids.com.au",
+    "source": "https://www.switchtoyfamily.com/",
     "lastScraped": "2026-03-09"
   },
   {
@@ -5071,7 +5071,7 @@
     "area": "",
     "description": "The National Center on Disability and Journalism style guide provides recommended language and terminology for reporting on disability topics. Essential reference for caregivers and advocates.",
     "phone": "",
-    "website": "https://ncdj.org/style-guide/",
+    "website": "https://cronkite.asu.edu/ncdj/disability-language-style-guide",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -5083,7 +5083,7 @@
       "advocacy",
       "terminology"
     ],
-    "source": "https://ncdj.org/style-guide/",
+    "source": "https://cronkite.asu.edu/ncdj/disability-language-style-guide",
     "lastScraped": "2026-03-09"
   },
   {
@@ -5320,7 +5320,7 @@
     "area": "",
     "description": "CDC guidelines on inclusive communication practices when interacting with people who have disabilities. Covers preferred terminology, communication tips, and resources for caregivers and health professionals.",
     "phone": "",
-    "website": "https://www.cdc.gov/disability/communication/index.html",
+    "website": "https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
@@ -5332,7 +5332,7 @@
       "health",
       "guidelines"
     ],
-    "source": "https://www.cdc.gov/disability/communication/index.html",
+    "source": "https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html",
     "lastScraped": "2026-03-09"
   },
   {
