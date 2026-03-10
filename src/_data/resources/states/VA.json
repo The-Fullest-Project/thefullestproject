@@ -4909,5 +4909,29 @@
     ],
     "source": "https://rideonranch.org",
     "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Brownley Law Group - Disability Advocacy",
+    "category": [
+      "legal",
+      "education"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Special education law firm with attorneys, advocates, and educational consultants helping families with IEP development, school selection, test score analysis, and professional referrals in Northern Virginia.",
+    "phone": "(703) 758-5562",
+    "website": "https://brownleylaw.com/advocacy/",
+    "address": "11710 Plaza America Drive, Suite 2000, Reston, VA 20190",
+    "ageRange": "0-22",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "special education law",
+      "IEP",
+      "school selection",
+      "advocacy"
+    ],
+    "source": "https://brownleylaw.com/advocacy/",
+    "lastScraped": "2026-03-10"
   }
 ]

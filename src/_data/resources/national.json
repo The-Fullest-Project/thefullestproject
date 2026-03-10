@@ -6199,30 +6199,6 @@
     "lastScraped": "2026-03-10"
   },
   {
-    "name": "Brownley Law - Disability Advocacy",
-    "category": [
-      "legal"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Law firm providing disability advocacy services including special education law, IEP disputes, disability discrimination claims, and ADA compliance assistance for families and individuals.",
-    "phone": "",
-    "website": "https://brownleylaw.com/advocacy/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "Varies",
-    "tags": [
-      "disability law",
-      "IEP",
-      "ADA",
-      "discrimination",
-      "legal advocacy"
-    ],
-    "source": "https://brownleylaw.com/advocacy/",
-    "lastScraped": "2026-03-10"
-  },
-  {
     "name": "GNAO1 Foundation",
     "category": [
       "nonprofit"
@@ -6840,6 +6816,179 @@
       "classroom"
     ],
     "source": "https://www.timetimer.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Disability Rights Advocates (DRA)",
+    "category": [
+      "legal"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading national nonprofit disability rights legal center that never charges clients for representation. Uses high-impact litigation and advocacy to reform systems that discriminate against people with disabilities.",
+    "phone": "",
+    "website": "https://dralegal.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "disability rights",
+      "litigation",
+      "free legal",
+      "civil rights"
+    ],
+    "source": "https://dralegal.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Disability Rights Education & Defense Fund (DREDF)",
+    "category": [
+      "legal",
+      "education"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National nonprofit providing disability civil rights litigation, parent training on special education rights, and advocacy resources. Operates a Parent Training & Information Center with sample letters and forms.",
+    "phone": "(510) 644-2555",
+    "website": "https://dredf.org/",
+    "address": "3075 Adeline Street, Suite 210, Berkeley, CA 94703",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "civil rights",
+      "parent training",
+      "special education",
+      "litigation"
+    ],
+    "source": "https://dredf.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Special Needs Alliance (SNA)",
+    "category": [
+      "legal",
+      "financial",
+      "planning"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National network of attorneys specializing in disability law, public benefits, and estate planning. Members help families create special needs trusts, navigate SSI/Medicaid eligibility, and plan for long-term financial security.",
+    "phone": "",
+    "website": "https://www.specialneedsalliance.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "special needs trust",
+      "estate planning",
+      "SSI",
+      "Medicaid",
+      "attorneys"
+    ],
+    "source": "https://www.specialneedsalliance.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Council of Parent Attorneys and Advocates (COPAA)",
+    "category": [
+      "legal",
+      "education"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National association of 3,400+ parent advocates and attorneys protecting the legal rights of students with disabilities. Offers SEAT advocate training and helps families find local advocates and attorneys.",
+    "phone": "",
+    "website": "https://www.copaa.org/",
+    "address": "",
+    "ageRange": "0-21",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "parent advocates",
+      "attorneys",
+      "SEAT training",
+      "special education"
+    ],
+    "source": "https://www.copaa.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Learning Disabilities Association of America (LDA)",
+    "category": [
+      "education",
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National nonprofit providing parent education on learning disabilities, IEP guidance, evaluation support, and advocacy through state affiliates. Resources on dyslexia, dyscalculia, and other learning differences.",
+    "phone": "(412) 341-1515",
+    "website": "https://ldaamerica.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "learning disability"
+    ],
+    "cost": "Free",
+    "tags": [
+      "learning disabilities",
+      "dyslexia",
+      "IEP",
+      "advocacy"
+    ],
+    "source": "https://ldaamerica.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "National Center for Learning Disabilities (NCLD)",
+    "category": [
+      "education",
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Empowers parents to advocate for children with learning and attention issues. Provides special education resources, recruits parent advocates for policy influence, and supports 1 in 5 students with learning differences.",
+    "phone": "",
+    "website": "https://ncld.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "learning disability",
+      "ADHD"
+    ],
+    "cost": "Free",
+    "tags": [
+      "learning disabilities",
+      "attention issues",
+      "advocacy",
+      "policy"
+    ],
+    "source": "https://ncld.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Parent Center Hub",
+    "category": [
+      "education"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Central resource for finding your state's federally funded Parent Training and Information Center. Nearly 100 centers nationwide help families navigate special education, IEPs, and disability rights at no cost.",
+    "phone": "",
+    "website": "https://www.parentcenterhub.org/find-your-center/",
+    "address": "",
+    "ageRange": "0-26",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "parent training",
+      "PTI",
+      "special education",
+      "find local center"
+    ],
+    "source": "https://www.parentcenterhub.org/",
     "lastScraped": "2026-03-10"
   }
 ]

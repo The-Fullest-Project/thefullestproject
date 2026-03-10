@@ -1036,5 +1036,29 @@
     ],
     "source": "https://trimet.org/lift/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Disability Rights Oregon",
+    "category": [
+      "legal",
+      "education"
+    ],
+    "location": "Oregon",
+    "area": "Portland",
+    "description": "Oregon's Protection & Advocacy organization providing legal advocacy for people with disabilities. Children's Rights project focuses on special education, foster care, and systemic change.",
+    "phone": "(503) 243-2081",
+    "website": "https://www.droregon.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "protection and advocacy",
+      "special education",
+      "legal",
+      "statewide"
+    ],
+    "source": "https://www.droregon.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

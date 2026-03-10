@@ -209,5 +209,28 @@
     ],
     "source": "https://outdoorsforall.org/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "PAVE (Partnerships for Action, Voices for Empowerment)",
+    "category": [
+      "education"
+    ],
+    "location": "Washington",
+    "area": "",
+    "description": "Washington State's Parent Training and Information Center providing one-on-one support, workshops, and resources to empower families of children with disabilities in the public school system.",
+    "phone": "(800) 572-7368",
+    "website": "https://wapave.org/",
+    "address": "",
+    "ageRange": "0-21",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "parent training",
+      "PTI",
+      "workshops",
+      "one-on-one support"
+    ],
+    "source": "https://wapave.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

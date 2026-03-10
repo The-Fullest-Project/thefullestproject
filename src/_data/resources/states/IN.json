@@ -279,5 +279,28 @@
     ],
     "source": "https://www.eastersealsci.com",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "IEP-Hope, Inc.",
+    "category": [
+      "education"
+    ],
+    "location": "Indiana",
+    "area": "",
+    "description": "Nonprofit offering free support, education, training, advocacy services, and resources to Indiana parents of children with IEPs and 504 plans at no cost to families.",
+    "phone": "",
+    "website": "https://www.iep-hope.org/",
+    "address": "",
+    "ageRange": "0-22",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "IEP",
+      "504",
+      "free advocacy",
+      "parent support"
+    ],
+    "source": "https://www.iep-hope.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

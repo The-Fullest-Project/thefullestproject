@@ -318,5 +318,51 @@
     ],
     "source": "https://www.ampsurf.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Hope4Families Special Education Law Firm",
+    "category": [
+      "legal",
+      "education"
+    ],
+    "location": "California",
+    "area": "Los Angeles",
+    "description": "California special education law firm providing free legal representation for students with disabilities in IEP disputes, 504 plan issues, and school placement disagreements.",
+    "phone": "",
+    "website": "https://www.hope4familiesca.org/",
+    "address": "4859 West Slauson Avenue, Los Angeles, CA 90056",
+    "ageRange": "0-22",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "special education law",
+      "IEP",
+      "504",
+      "free legal"
+    ],
+    "source": "https://www.hope4familiesca.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Classroom Matters",
+    "category": [
+      "education"
+    ],
+    "location": "California",
+    "area": "Berkeley",
+    "description": "Educational advocacy firm helping families navigate special education including IEP goals, accommodations, document review, and 504 plans. Offers free initial consultations and 1-on-1 advocacy at IEP meetings.",
+    "phone": "(510) 540-8646",
+    "website": "https://www.classroommatters.com/advocacy-iep-504",
+    "address": "",
+    "ageRange": "0-22",
+    "disabilityTypes": [],
+    "cost": "Free initial consultation",
+    "tags": [
+      "IEP advocacy",
+      "504 plans",
+      "educational consulting"
+    ],
+    "source": "https://www.classroommatters.com/",
+    "lastScraped": "2026-03-10"
   }
 ]
