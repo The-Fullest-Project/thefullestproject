@@ -5387,5 +5387,79 @@
     ],
     "source": "https://www.aarp.org/caregiving/",
     "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Adaptive Tech Solutions",
+    "category": [
+      "switch-adapted",
+      "assistive-tech",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Therapist-owned company operated by a 30+ year speech-language pathologist. Hand-adapts nearly all products on-site. Offers switch-adapted toys, communication devices, and the affordable Switch It Up! switch.",
+    "phone": "",
+    "website": "https://www.adaptivetechsolutions.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "switch-adapted toys",
+      "communication devices",
+      "SLP-owned"
+    ],
+    "source": "https://www.adaptivetechsolutions.com",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "National Lekotek Center",
+    "category": [
+      "switch-adapted",
+      "assistive-tech",
+      "recreation"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Facilitates inclusion of children with disabilities through therapeutic play-based family sessions and toy lending libraries. AblePlay website provides independent ratings and reviews of toys by disability category.",
+    "phone": "",
+    "website": "https://www.lekotek.org",
+    "address": "",
+    "ageRange": "0-8",
+    "disabilityTypes": [
+      "developmental"
+    ],
+    "cost": "Free or low cost",
+    "tags": [
+      "toy library",
+      "therapeutic play",
+      "toy reviews",
+      "inclusion"
+    ],
+    "source": "https://www.lekotek.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "RePlay for Kids",
+    "category": [
+      "switch-adapted",
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Organization coordinating toy-adapting volunteers and maintaining a directory of toy-adapting organizations nationwide. Connects families of children with disabilities to adapted toy resources.",
+    "phone": "",
+    "website": "https://replayforkids.org",
+    "address": "",
+    "ageRange": "0-12",
+    "disabilityTypes": [],
+    "cost": "Free or low cost",
+    "tags": [
+      "adapted toys",
+      "volunteers",
+      "directory"
+    ],
+    "source": "https://replayforkids.org",
+    "lastScraped": "2026-03-09"
   }
 ]

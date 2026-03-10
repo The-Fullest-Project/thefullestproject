@@ -4389,5 +4389,525 @@
     ],
     "source": "https://www.doe.virginia.gov/",
     "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "SOAR365",
+    "category": [
+      "therapy",
+      "therapy-speech",
+      "therapy-pt",
+      "recreation",
+      "respite",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Nonprofit serving 2,100+ families annually with disability therapy services (speech, physical), adult day support, after school care, respite, summer camp, and pre-vocational training for individuals with disabilities from newborns to seniors.",
+    "phone": "(804) 358-1874",
+    "website": "https://soar365.org",
+    "address": "3600 Saunders Ave, Richmond, VA 23227",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "therapy",
+      "respite",
+      "day support",
+      "summer camp"
+    ],
+    "source": "https://soar365.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Richmond Behavioral Health Authority (RBHA)",
+    "category": [
+      "government",
+      "mental-health",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Community services board providing developmental disability services, support coordination, early intervention, psychiatric services, and crisis stabilization for children and adults with intellectual disabilities in the Richmond area.",
+    "phone": "(804) 819-4000",
+    "website": "https://www.rbha.org",
+    "address": "107 South Fifth Street, Richmond, VA 23219",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Sliding scale",
+    "tags": [
+      "mental health",
+      "crisis",
+      "early intervention",
+      "case management"
+    ],
+    "source": "https://www.rbha.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Friendship Circle of Virginia",
+    "category": [
+      "community",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Nonprofit creating inclusive community by facilitating friendships and social opportunities for people with and without disabilities. Hosts annual Disability Expo and regular social programs.",
+    "phone": "(804) 740-2000",
+    "website": "https://friendshipcircleva.org",
+    "address": "212 North Gaskins Road, Richmond, VA 23238",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "inclusion",
+      "social",
+      "friendship",
+      "expo"
+    ],
+    "source": "https://friendshipcircleva.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Autism Society of Central Virginia",
+    "category": [
+      "community",
+      "education",
+      "sibling-support"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "Over 40 years of services, advocacy, and support for individuals with autism. Offers social groups, caregiver support groups, Autism Friendly Communities training, Lego Club, educational workshops, and sibling programs.",
+    "phone": "(804) 257-0192",
+    "website": "https://ascv.org",
+    "address": "8730 Stony Point Parkway, Suite 150, Richmond, VA 23235",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Free or low cost",
+    "tags": [
+      "autism",
+      "support groups",
+      "social groups",
+      "sibling support"
+    ],
+    "source": "https://ascv.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Galloping Acres Therapeutic Riding",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Richmond",
+    "description": "PATH International member center providing equine-assisted services including therapeutic riding, equine-assisted learning, and mounted therapy programs for individuals with disabilities.",
+    "phone": "(804) 357-4231",
+    "website": "https://www.gallopingacres.org",
+    "address": "11353 Rocky Ridge Road, Glen Allen, VA 23059",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "hippotherapy",
+      "equine therapy",
+      "therapeutic riding"
+    ],
+    "source": "https://www.gallopingacres.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Endependence Center",
+    "category": [
+      "nonprofit",
+      "community",
+      "employment"
+    ],
+    "location": "Virginia",
+    "area": "Norfolk",
+    "description": "Center for Independent Living operated by and for individuals with disabilities in South Hampton Roads. Services include advocacy, peer counseling, independent living skills, housing assistance, employment, and assistive technology support.",
+    "phone": "(757) 461-8007",
+    "website": "https://endependence.org",
+    "address": "6300 East Virginia Beach Blvd, Norfolk, VA 23502",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "independent living",
+      "peer counseling",
+      "assistive technology",
+      "housing"
+    ],
+    "source": "https://endependence.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "EQUI-KIDS Therapeutic Riding Center",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "recreation",
+      "camps"
+    ],
+    "location": "Virginia",
+    "area": "Virginia Beach",
+    "description": "Founded 1989, provides equine-assisted services on 92 acres including therapeutic riding, hippotherapy, equine-assisted psychotherapy, speech therapy, programs for veterans, and summer inclusion camps.",
+    "phone": "(757) 721-7350",
+    "website": "https://www.equikids.org",
+    "address": "2626 Heritage Park Drive, Virginia Beach, VA 23456",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "cerebral palsy",
+      "Down syndrome",
+      "spina bifida"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "hippotherapy",
+      "equine therapy",
+      "summer camp",
+      "veterans"
+    ],
+    "source": "https://www.equikids.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "NAMI Coastal Virginia",
+    "category": [
+      "mental-health",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Virginia Beach",
+    "description": "NAMI affiliate serving Chesapeake, Norfolk, Portsmouth, Virginia Beach, and the Eastern Shore with free support groups, education programs like Family-to-Family and Peer-to-Peer, and advocacy.",
+    "phone": "(757) 499-2041",
+    "website": "https://www.namicoastalvirginia.org",
+    "address": "291 Independence Blvd, Suite 225, Virginia Beach, VA 23462",
+    "ageRange": "",
+    "disabilityTypes": [
+      "mental health"
+    ],
+    "cost": "Free",
+    "tags": [
+      "mental health",
+      "support groups",
+      "NAMI",
+      "education"
+    ],
+    "source": "https://www.namicoastalvirginia.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Norfolk Community Services Board",
+    "category": [
+      "government",
+      "mental-health"
+    ],
+    "location": "Virginia",
+    "area": "Norfolk",
+    "description": "Provides treatment for Norfolk residents with mental health, intellectual disability, and substance use needs. Offers developmental disability support coordination, behavioral health services, and 24/7 crisis intervention.",
+    "phone": "(757) 756-5600",
+    "website": "https://norfolk.gov/996/Norfolk-Community-Services-Board",
+    "address": "7447 Central Business Park Dr, Norfolk, VA 23513",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "mental health"
+    ],
+    "cost": "Sliding scale",
+    "tags": [
+      "mental health",
+      "crisis intervention",
+      "case management"
+    ],
+    "source": "https://norfolk.gov/996/Norfolk-Community-Services-Board",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "F.R.E.E. Foundation (Foundation for Rehabilitation Equipment & Endowment)",
+    "category": [
+      "equipment"
+    ],
+    "location": "Virginia",
+    "area": "Virginia Beach",
+    "description": "Volunteer-led nonprofit collecting, sanitizing, and gifting donated mobility equipment (walkers, wheelchairs, power chairs, scooters, shower chairs) to low-income uninsured or under-insured adults in Hampton Roads.",
+    "phone": "(757) 771-6183",
+    "website": "https://www.free-foundation.org",
+    "address": "5457 Greenwich Rd, Virginia Beach, VA 23462",
+    "ageRange": "18+",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Free",
+    "tags": [
+      "mobility equipment",
+      "wheelchair",
+      "donated equipment",
+      "low income"
+    ],
+    "source": "https://www.free-foundation.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Eliza Hope Foundation and Therapy Center",
+    "category": [
+      "therapy",
+      "therapy-pt",
+      "therapy-speech",
+      "therapy-ot"
+    ],
+    "location": "Virginia",
+    "area": "Virginia Beach",
+    "description": "Therapy center for children with Autism Spectrum Disorder and developmental delays. Services include physical therapy, speech therapy, occupational therapy, neurofeedback, and autism diagnostic testing (ADOS).",
+    "phone": "(757) 702-8194",
+    "website": "https://elizahope.org",
+    "address": "629 Phoenix Drive, Suite 115, Virginia Beach, VA 23452",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "autism",
+      "developmental"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "autism",
+      "OT",
+      "PT",
+      "speech therapy",
+      "ADOS"
+    ],
+    "source": "https://elizahope.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Independence Resource Center",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "Center for Independent Living providing peer counseling, independent living skills training, advocacy, adaptive equipment at discounted prices, ADA consulting, and transportation/housing assistance.",
+    "phone": "(434) 971-9629",
+    "website": "https://charlottesvilleirc.org",
+    "address": "815 Cherry Avenue, Charlottesville, VA 22903",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free or low cost",
+    "tags": [
+      "independent living",
+      "peer counseling",
+      "adaptive equipment",
+      "ADA"
+    ],
+    "source": "https://charlottesvilleirc.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Charlottesville Adaptive Recreation",
+    "category": [
+      "recreation",
+      "sports"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "City parks and recreation program providing adaptive classes, trips, camps, and events for individuals ages 6+ with disabilities including wheelchair basketball, therapeutic exercise, hiking, swimming, and cooking.",
+    "phone": "(434) 970-3269",
+    "website": "https://www.charlottesville.gov/368/Adaptive",
+    "address": "233 4th Street NW, Charlottesville, VA 22902",
+    "ageRange": "6+",
+    "disabilityTypes": [],
+    "cost": "Low cost",
+    "tags": [
+      "adaptive recreation",
+      "wheelchair basketball",
+      "swimming",
+      "camps"
+    ],
+    "source": "https://www.charlottesville.gov/368/Adaptive",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "UVA Sheila C. Johnson Center for Clinical Services",
+    "category": [
+      "therapy",
+      "education"
+    ],
+    "location": "Virginia",
+    "area": "Charlottesville",
+    "description": "Multidisciplinary university clinic providing personalized autism assessments for toddlers through adolescents, diagnostic evaluations, treatment planning, parent training, and intervention services.",
+    "phone": "(434) 924-7034",
+    "website": "https://education.virginia.edu/research-initiatives/sheila-c-johnson-center-clinical-services",
+    "address": "417 Emmet Street South, Charlottesville, VA 22903",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "autism",
+      "evaluation",
+      "parent training",
+      "university"
+    ],
+    "source": "https://education.virginia.edu/",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Valley Associates for Independent Living (VAIL)",
+    "category": [
+      "nonprofit",
+      "community"
+    ],
+    "location": "Virginia",
+    "area": "Harrisonburg",
+    "description": "Center for Independent Living serving the Shenandoah Valley. Provides advocacy, peer counseling, independent living skills training, and information/referral services for people with disabilities.",
+    "phone": "(540) 433-6513",
+    "website": "https://govail.org",
+    "address": "3210 Peoples Drive, Suite 220, Harrisonburg, VA 22801",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "independent living",
+      "peer counseling",
+      "Shenandoah Valley"
+    ],
+    "source": "https://govail.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Blue Ridge Center for Therapeutic Horsemanship",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Shenandoah Valley",
+    "description": "Provides equine-assisted activities for individuals with disabling conditions in the northern Shenandoah Valley. Serves adults and children from age four at Evergreen Farm near Berryville.",
+    "phone": "(540) 533-2777",
+    "website": "https://brcth.org",
+    "address": "P.O. Box 438, Boyce, VA 22620",
+    "ageRange": "4+",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "hippotherapy",
+      "equine therapy",
+      "therapeutic riding"
+    ],
+    "source": "https://brcth.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Roanoke Valley Speech & Hearing Center",
+    "category": [
+      "therapy",
+      "therapy-speech",
+      "hearing"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Provides audiology, speech language pathology, hearing conservation services, hearing testing, hearing aid fitting/programming/repairs, and mobile industrial hearing testing for children and adults.",
+    "phone": "(540) 343-0165",
+    "website": "https://www.rvshc.org",
+    "address": "2030 Colonial Ave SW, Roanoke, VA 24015",
+    "ageRange": "",
+    "disabilityTypes": [
+      "hearing",
+      "speech"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "speech therapy",
+      "audiology",
+      "hearing aids"
+    ],
+    "source": "https://www.rvshc.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Therapeutic Recreation Services of the Roanoke Valley",
+    "category": [
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Over 40 years serving the Roanoke Valley as the regional provider of specialized adaptive recreation programs for individuals with developmental disabilities, visual impairments, and head injuries.",
+    "phone": "(540) 772-7529",
+    "website": "https://www.roanokecountyparks.com/199/Therapeutic-Recreation",
+    "address": "3738 Brambleton Ave SW, Roanoke, VA 24018",
+    "ageRange": "",
+    "disabilityTypes": [
+      "developmental",
+      "visual",
+      "brain injury"
+    ],
+    "cost": "Low cost",
+    "tags": [
+      "adaptive recreation",
+      "therapeutic recreation"
+    ],
+    "source": "https://www.roanokecountyparks.com/199/Therapeutic-Recreation",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Healing Strides of Virginia",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Roanoke",
+    "description": "Only PATH Premier Accredited Center in the Roanoke Valley. Nonprofit therapeutic horsemanship center on 28 acres with 20+ horses offering therapeutic riding, hippotherapy, equine-assisted psychotherapy, and mental health services since 1991.",
+    "phone": "(540) 334-5825",
+    "website": "https://www.healingstridesofva.org",
+    "address": "Boones Mill, VA",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies, scholarships available",
+    "tags": [
+      "hippotherapy",
+      "equine therapy",
+      "PATH accredited",
+      "mental health"
+    ],
+    "source": "https://www.healingstridesofva.org",
+    "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "Ride-On Ranch Equine Assisted Therapies",
+    "category": [
+      "therapy",
+      "therapy-equine",
+      "therapy-ot",
+      "therapy-pt",
+      "therapy-speech"
+    ],
+    "location": "Virginia",
+    "area": "Lovettsville",
+    "description": "Nonprofit in western Loudoun County providing occupational therapy, physical therapy, speech pathology, and equine mental health therapy services including hippotherapy by licensed therapists.",
+    "phone": "(703) 298-5319",
+    "website": "https://rideonranch.org",
+    "address": "Morrisonville Road, Lovettsville, VA",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Insurance accepted",
+    "tags": [
+      "hippotherapy",
+      "OT",
+      "PT",
+      "speech therapy",
+      "equine"
+    ],
+    "source": "https://rideonranch.org",
+    "lastScraped": "2026-03-09"
   }
 ]
