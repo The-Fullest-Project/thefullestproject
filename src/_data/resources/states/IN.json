@@ -302,5 +302,32 @@
     ],
     "source": "https://www.iep-hope.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Noble / The Arc of Greater Indianapolis",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Indiana",
+    "area": "Indianapolis",
+    "description": "Local Arc chapter serving Marion and Hamilton Counties, providing advocacy and support services for people with developmental disabilities.",
+    "phone": "(317) 375-2708",
+    "website": "https://www.mynoblelife.org/",
+    "address": "7701 E 21st St, Indianapolis, IN 46219",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Indianapolis",
+      "developmental disabilities"
+    ],
+    "source": "https://www.mynoblelife.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

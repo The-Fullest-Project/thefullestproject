@@ -299,5 +299,32 @@
     ],
     "source": "https://www.mdrs.ms.gov",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of Northeast Mississippi",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Mississippi",
+    "area": "Tupelo",
+    "description": "Volunteer-based local Arc chapter serving northeast Mississippi, providing advocacy and community programs for individuals with intellectual, developmental, and other disabilities.",
+    "phone": "(662) 212-1850",
+    "website": "https://arcnems.org/",
+    "address": "231 Rankin Blvd, Tupelo, MS 38804",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "volunteer",
+      "Tupelo"
+    ],
+    "source": "https://arcnems.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

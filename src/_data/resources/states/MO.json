@@ -279,5 +279,61 @@
     ],
     "source": "https://www.ssmhealth.com/cardinal-glennon",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "St. Louis Arc",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Missouri",
+    "area": "St. Louis",
+    "description": "Established in 1950, providing advocacy, employment, community living, and support services for people with disabilities and their families in the St. Louis area.",
+    "phone": "(314) 569-2211",
+    "website": "https://www.slarc.org/",
+    "address": "1177 N Warson Road, Saint Louis, MO 63132",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "employment",
+      "community living",
+      "St. Louis"
+    ],
+    "source": "https://www.slarc.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of the Ozarks",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Missouri",
+    "area": "Springfield",
+    "description": "Local Arc chapter serving southwest Missouri, providing community support, applied behavior analysis, family advocacy, and community living services.",
+    "phone": "",
+    "website": "https://thearcoftheozarks.org/",
+    "address": "1501 E Pythian St, Springfield, MO 65802",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "ABA",
+      "community living",
+      "Springfield"
+    ],
+    "source": "https://thearcoftheozarks.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

@@ -279,5 +279,59 @@
     ],
     "source": "https://www.beaumont.org/services/childrens/pediatric-rehabilitation",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc Detroit",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Michigan",
+    "area": "Detroit",
+    "description": "Local Arc chapter serving Detroit, Highland Park, and Hamtramck, providing advocacy and community programs for people with intellectual and developmental disabilities.",
+    "phone": "(313) 831-0202",
+    "website": "https://www.arc-detroit.org/",
+    "address": "51 West Hancock Street, Detroit, MI 48201",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Detroit",
+      "developmental disabilities"
+    ],
+    "source": "https://www.arc-detroit.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc Kent County",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Michigan",
+    "area": "Grand Rapids",
+    "description": "Local Arc chapter serving Kent County, providing disability services, advocacy, and community inclusion programs for individuals with intellectual and developmental disabilities.",
+    "phone": "(616) 459-3339",
+    "website": "https://www.arckent.org/",
+    "address": "2922 Fuller Ave NE Suite 201, Grand Rapids, MI 49505",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Grand Rapids",
+      "community inclusion"
+    ],
+    "source": "https://www.arckent.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

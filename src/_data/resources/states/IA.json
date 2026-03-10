@@ -259,5 +259,59 @@
     ],
     "source": "https://www.childserve.org",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of East Central Iowa",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Iowa",
+    "area": "Cedar Rapids",
+    "description": "Local Arc chapter providing advocacy, information and referral, respite care, and supported community living for individuals with intellectual and developmental disabilities.",
+    "phone": "(319) 365-0487",
+    "website": "https://arceci.org/",
+    "address": "680 2nd Street SE, Cedar Rapids, IA 52401",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "respite care",
+      "community living"
+    ],
+    "source": "https://arceci.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Southeast Iowa",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Iowa",
+    "area": "Iowa City",
+    "description": "Founded in 1957, providing advocacy, respite care, and supported community living for children and adults with intellectual and developmental disabilities in Johnson and surrounding counties.",
+    "phone": "(319) 351-5017",
+    "website": "https://www.arcsei.org/",
+    "address": "2620 Muscatine Ave, Iowa City, IA 52240",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "respite",
+      "Iowa City"
+    ],
+    "source": "https://www.arcsei.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

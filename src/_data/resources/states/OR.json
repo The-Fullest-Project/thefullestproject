@@ -1060,5 +1060,86 @@
     ],
     "source": "https://www.droregon.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc Portland Metro",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Oregon",
+    "area": "Portland",
+    "description": "Local Arc chapter serving Portland metro area, providing advocacy, services, and supports for individuals with intellectual and developmental disabilities and their families.",
+    "phone": "(503) 223-7279",
+    "website": "https://thearcpdx.org/",
+    "address": "6929 NE Halsey, Portland, OR 97213",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Portland",
+      "developmental disabilities"
+    ],
+    "source": "https://thearcpdx.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Lane County",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Oregon",
+    "area": "Eugene",
+    "description": "Local Arc chapter serving Lane County, providing advocacy and community-based services for people with intellectual and developmental disabilities.",
+    "phone": "(541) 343-5256",
+    "website": "https://arclane.org/",
+    "address": "4181 E Street, Springfield, OR 97478",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Lane County",
+      "developmental disabilities"
+    ],
+    "source": "https://arclane.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Benton County",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Oregon",
+    "area": "Corvallis",
+    "description": "Local Arc chapter serving Benton County, providing supports and services for people with intellectual and developmental disabilities.",
+    "phone": "(541) 753-1711",
+    "website": "https://arcbenton.org/",
+    "address": "928 NW Beca Avenue, Corvallis, OR 97330",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Benton County",
+      "developmental disabilities"
+    ],
+    "source": "https://arcbenton.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

@@ -319,5 +319,59 @@
     ],
     "source": "https://www.blazesports.org",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of Southwest Georgia",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Georgia",
+    "area": "Albany",
+    "description": "Local Arc chapter founded in 1963, providing advocacy, after-school programs, and community-based services for individuals with intellectual and developmental disabilities in southwest Georgia.",
+    "phone": "(229) 888-6852",
+    "website": "https://thearcswga.org/",
+    "address": "220 Stuart Avenue, Albany, GA 31707",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "after-school",
+      "developmental disabilities"
+    ],
+    "source": "https://thearcswga.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc Macon",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Georgia",
+    "area": "Macon",
+    "description": "Local Arc chapter providing community programs and support services for people with intellectual and developmental disabilities in the Macon area.",
+    "phone": "(478) 477-7764",
+    "website": "https://thearcmacon.org/",
+    "address": "4664 Sheraton Dr, Macon, GA 31210",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Macon",
+      "developmental disabilities"
+    ],
+    "source": "https://thearcmacon.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

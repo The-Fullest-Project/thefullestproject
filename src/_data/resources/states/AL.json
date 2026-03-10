@@ -344,5 +344,61 @@
     ],
     "source": "https://www.lakeshore.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Central Alabama",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Alabama",
+    "area": "Birmingham",
+    "description": "Local Arc chapter serving the Birmingham area, providing lifelong support services for people with intellectual and developmental disabilities.",
+    "phone": "(205) 323-6383",
+    "website": "https://www.arcofcentralalabama.org/",
+    "address": "6001 Crestwood Boulevard, Birmingham, AL 35212",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Birmingham",
+      "developmental disabilities"
+    ],
+    "source": "https://www.arcofcentralalabama.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Madison County",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Alabama",
+    "area": "Huntsville",
+    "description": "Local Arc chapter championing advocacy, acceptance, and inclusion for people with intellectual and developmental disabilities, including group homes, early childhood programs, and an autism clinic.",
+    "phone": "(256) 539-2266",
+    "website": "https://hsvarc.org/",
+    "address": "1100 Washington St NW, Huntsville, AL 35801",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental",
+      "autism"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Huntsville",
+      "autism clinic",
+      "group homes"
+    ],
+    "source": "https://hsvarc.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

@@ -319,5 +319,87 @@
     ],
     "source": "https://www.miracleleaguesouthflorida.com",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc Jacksonville",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Florida",
+    "area": "Jacksonville",
+    "description": "Local Arc chapter serving and advocating for individuals with intellectual and developmental differences, providing residential, employment, and community programs.",
+    "phone": "(904) 355-0155",
+    "website": "https://arcjacksonville.org/",
+    "address": "1050 N Davis St, Jacksonville, FL 32209",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "employment",
+      "residential",
+      "Jacksonville"
+    ],
+    "source": "https://arcjacksonville.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc Tampa Bay",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Florida",
+    "area": "Tampa Bay",
+    "description": "Local Arc chapter providing services for individuals with intellectual and developmental disabilities in the Tampa Bay region.",
+    "phone": "(727) 799-3330",
+    "website": "https://www.thearctb.org/",
+    "address": "1501 N Belcher Rd Ste 249, Clearwater, FL 33765",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Tampa Bay",
+      "developmental disabilities"
+    ],
+    "source": "https://www.thearctb.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of South Florida",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Florida",
+    "area": "Miami",
+    "description": "Local Arc chapter serving over 1,000 Miami-Dade County citizens with intellectual and developmental disabilities through community programs and support services.",
+    "phone": "",
+    "website": "https://arcsofla.org/",
+    "address": "14100 Palmetto Frontage Road, Suite 200, Miami Lakes, FL 33016",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Miami",
+      "developmental disabilities"
+    ],
+    "source": "https://arcsofla.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

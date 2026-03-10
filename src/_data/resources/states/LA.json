@@ -299,5 +299,59 @@
     ],
     "source": "https://www.laworks.net",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of Greater New Orleans",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Louisiana",
+    "area": "New Orleans",
+    "description": "Local Arc chapter serving the Greater New Orleans area, providing advocacy and support services for individuals with intellectual and developmental disabilities and their families.",
+    "phone": "(504) 881-1904",
+    "website": "",
+    "address": "925 Labarre Road, Metairie, LA 70001",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "New Orleans",
+      "developmental disabilities"
+    ],
+    "source": "https://thearc.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc Baton Rouge",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Louisiana",
+    "area": "Baton Rouge",
+    "description": "Local Arc chapter serving the Baton Rouge area, providing community programs, advocacy, and support services for people with intellectual and developmental disabilities.",
+    "phone": "(225) 927-0855",
+    "website": "",
+    "address": "12616 Jefferson Highway, Baton Rouge, LA 70816",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Baton Rouge",
+      "developmental disabilities"
+    ],
+    "source": "https://thearc.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

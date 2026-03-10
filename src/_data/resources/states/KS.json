@@ -259,5 +259,32 @@
     ],
     "source": "https://www.rainbowsunited.org",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "AbilityPoint (The Arc of Sedgwick County)",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Kansas",
+    "area": "Wichita",
+    "description": "Local Arc chapter serving Sedgwick County, providing advocacy, employment services, and community support for people with intellectual and developmental disabilities.",
+    "phone": "(316) 943-1191",
+    "website": "https://abilitypoint.org/",
+    "address": "2919 W 2nd St N, Wichita, KS 67203",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "employment",
+      "Wichita"
+    ],
+    "source": "https://abilitypoint.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

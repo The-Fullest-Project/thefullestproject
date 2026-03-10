@@ -299,5 +299,59 @@
     ],
     "source": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of the Triangle",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "North Carolina",
+    "area": "Raleigh",
+    "description": "Local Arc chapter serving the Raleigh-Durham Triangle area, providing advocacy and community support for people with intellectual and developmental disabilities.",
+    "phone": "(919) 942-5119",
+    "website": "",
+    "address": "5121 Hollyridge Drive, Raleigh, NC 27612",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Raleigh",
+      "Triangle"
+    ],
+    "source": "https://thearc.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Mecklenburg County",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "North Carolina",
+    "area": "Charlotte",
+    "description": "Local Arc chapter serving Mecklenburg County/Charlotte area with advocacy and support services for individuals with intellectual and developmental disabilities.",
+    "phone": "(704) 332-4535",
+    "website": "",
+    "address": "4108 Park Road, Suite 200, Charlotte, NC 28209",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Charlotte",
+      "developmental disabilities"
+    ],
+    "source": "https://thearc.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

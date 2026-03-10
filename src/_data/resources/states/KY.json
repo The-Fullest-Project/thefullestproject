@@ -299,5 +299,32 @@
     ],
     "source": "https://kcc.ky.gov/Vocational-Rehabilitation/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of Greater Louisville",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Kentucky",
+    "area": "Louisville",
+    "description": "Local Arc chapter providing advocacy and community services for individuals with intellectual and developmental disabilities in the greater Louisville area.",
+    "phone": "(502) 939-8273",
+    "website": "https://arcofky.org/",
+    "address": "177 Travis Road, Shepherdsville, KY 40165",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Louisville",
+      "developmental disabilities"
+    ],
+    "source": "https://arcofky.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

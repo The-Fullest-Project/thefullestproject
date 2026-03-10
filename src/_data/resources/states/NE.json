@@ -259,5 +259,32 @@
     ],
     "source": "https://www.unmc.edu/mmi/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "The Arc of Omaha at Ollie Webb Center",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Nebraska",
+    "area": "Omaha",
+    "description": "Local Arc chapter at the Ollie Webb Center serving the Omaha area, providing advocacy, inclusion programs, and support for individuals with intellectual and developmental disabilities.",
+    "phone": "(402) 346-5220",
+    "website": "",
+    "address": "1941 S 42nd St Ste 122, Omaha, NE 68105",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "Omaha",
+      "inclusion"
+    ],
+    "source": "https://thearc.org/",
+    "lastScraped": "2026-03-10"
   }
 ]

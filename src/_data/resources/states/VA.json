@@ -4933,5 +4933,32 @@
     ],
     "source": "https://brownleylaw.com/advocacy/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "The Arc of Central Virginia",
+    "category": [
+      "nonprofit",
+      "advocacy"
+    ],
+    "location": "Virginia",
+    "area": "Lynchburg",
+    "description": "Local Arc chapter providing day support programs, advocacy, and community-based services for individuals with intellectual and developmental disabilities in the Lynchburg area.",
+    "phone": "(434) 845-4071",
+    "website": "https://arcofcva.org/",
+    "address": "1508 Bedford Ave, Lynchburg, VA 24504",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "Arc",
+      "advocacy",
+      "day support",
+      "developmental disabilities"
+    ],
+    "source": "https://arcofcva.org/",
+    "lastScraped": "2026-03-10"
   }
 ]
