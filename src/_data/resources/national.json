@@ -6990,5 +6990,310 @@
     ],
     "source": "https://www.parentcenterhub.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Therapy Shoppe",
+    "category": [
+      "sensory",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Occupational therapist-owned retailer specializing in sensory products, fidget tools, fine motor supplies, and therapy equipment for children and adults with sensory processing needs, autism, and ADHD.",
+    "phone": "(800) 261-5590",
+    "website": "https://www.therapyshoppe.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "sensory",
+      "autism",
+      "ADHD"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "sensory products",
+      "fidget tools",
+      "therapy equipment",
+      "OT supplies"
+    ],
+    "source": "https://www.therapyshoppe.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Sensory Goods",
+    "category": [
+      "sensory",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Specializes in customizable, handcrafted weighted blankets and sensory products for individuals with autism, sensory processing disorders, chronic pain, and sleep disorders. Offers medical-grade weighted therapy items.",
+    "phone": "(800) 875-7367",
+    "website": "https://sensorygoods.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "sensory",
+      "autism"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "weighted blankets",
+      "sensory products",
+      "handcrafted",
+      "customizable"
+    ],
+    "source": "https://sensorygoods.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Autism Community Store",
+    "category": [
+      "sensory",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Retailer of sensory toys, educational materials, weighted blankets, social skills activities, and safety products for the autism community. Features handmade weighted items filled with organic millet.",
+    "phone": "(866) 709-4344",
+    "website": "https://autismcommunitystore.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "sensory toys",
+      "weighted blankets",
+      "social skills",
+      "safety products"
+    ],
+    "source": "https://autismcommunitystore.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "TFH Special Needs Toys",
+    "category": [
+      "sensory",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Family-owned company specializing in sensory room design and equipment, multisensory toys, and therapeutic products for individuals with special needs. Offers commercial-grade and home-use sensory solutions.",
+    "phone": "(800) 467-6222",
+    "website": "https://specialneedstoys.com/usa/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "sensory room",
+      "multisensory toys",
+      "therapeutic products",
+      "sensory design"
+    ],
+    "source": "https://specialneedstoys.com/usa/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Different Roads to Learning",
+    "category": [
+      "assistive-tech",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "One-stop shop for autism teaching tools and ABA therapy materials with over 600 products including visual timers, communication aids, assessment tools, and educational resources for learners on the autism spectrum.",
+    "phone": "",
+    "website": "https://difflearn.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "ABA therapy",
+      "visual timers",
+      "communication aids",
+      "teaching tools"
+    ],
+    "source": "https://difflearn.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Forbes AAC",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading provider of augmentative and alternative communication (AAC) speech-generating devices, accessories, and support services. Helps individuals with speech and language impairments communicate.",
+    "phone": "(419) 589-7688",
+    "website": "https://www.forbesaac.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "speech"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "AAC",
+      "speech-generating devices",
+      "communication",
+      "assistive technology"
+    ],
+    "source": "https://www.forbesaac.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Silverts Adaptive Clothing",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "North America's leading adaptive apparel brand with nearly 100 years of expertise. Offers adaptive clothing with open-back designs, side-open pants, magnetic snap fasteners, and easy-touch closures for seniors and individuals with disabilities.",
+    "phone": "(800) 387-7088",
+    "website": "https://www.silverts.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "adaptive clothing",
+      "open-back",
+      "magnetic closures",
+      "easy dressing"
+    ],
+    "source": "https://www.silverts.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "IZ Adaptive",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Fashion-forward adaptive clothing designed for wheelchair users and people with limited mobility. Features patented IZ Seamless Technology pants that reduce pressure sore risk, plus stylish wardrobe basics.",
+    "phone": "",
+    "website": "https://izadaptive.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "mobility"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "adaptive clothing",
+      "wheelchair fashion",
+      "seamless technology",
+      "pressure sore prevention"
+    ],
+    "source": "https://izadaptive.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "June Adaptive",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive clothing with innovative open-back designs, snap closures at shoulders and waistband, enabling dressing from seated, standing, or lying positions. Reduces caregiver strain while maintaining dignity and style.",
+    "phone": "",
+    "website": "https://www.juneadaptive.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "mobility"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "adaptive clothing",
+      "open-back",
+      "snap closures",
+      "caregiver-friendly"
+    ],
+    "source": "https://www.juneadaptive.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Ovidis Adaptive Clothing",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive clothing brand offering stylish, easy-wear apparel designed to simplify caregiver-assisted dressing. Features soft, resilient fabrics with adaptive closures for seniors and individuals with mobility limitations.",
+    "phone": "(833) 736-7362",
+    "website": "https://ovidis.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "mobility"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "adaptive clothing",
+      "easy-wear",
+      "caregiver-assisted dressing"
+    ],
+    "source": "https://ovidis.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Fat Brain Toys - Special Needs",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Award-winning toy retailer with a dedicated special needs section featuring toys and games organized by disability type including learning disabilities, autism, fine motor challenges, and sensory processing needs.",
+    "phone": "",
+    "website": "https://www.fatbraintoys.com/special_needs/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "learning disability"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "special needs toys",
+      "games",
+      "fine motor",
+      "educational"
+    ],
+    "source": "https://www.fatbraintoys.com/special_needs/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Independent Living Aids (ILA)",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Comprehensive retailer of daily living aids including low vision products, amplified phones, adaptive kitchen tools, and assistive devices that help individuals with disabilities maintain independence at home.",
+    "phone": "(800) 537-2118",
+    "website": "https://independentliving.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "vision",
+      "hearing"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "daily living aids",
+      "low vision",
+      "adaptive kitchen",
+      "independence"
+    ],
+    "source": "https://independentliving.com/",
+    "lastScraped": "2026-03-10"
   }
 ]
