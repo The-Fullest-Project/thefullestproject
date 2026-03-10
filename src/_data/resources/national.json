@@ -6418,5 +6418,428 @@
     ],
     "source": "https://waves4all.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Rett Syndrome Research Trust",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Funds research to develop treatments and a cure for Rett syndrome, a rare genetic neurological disorder. Provides family resources, research updates, and community connections.",
+    "phone": "",
+    "website": "https://reverserett.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic",
+      "neurological"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Rett syndrome",
+      "genetic",
+      "research",
+      "rare disease"
+    ],
+    "source": "https://reverserett.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Prader-Willi Syndrome Association",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "National organization providing education, support, and research advocacy for Prader-Willi syndrome, a complex genetic condition. Offers crisis intervention, publications, and an annual conference.",
+    "phone": "(800) 926-4797",
+    "website": "https://www.pwsausa.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Prader-Willi",
+      "genetic",
+      "family support",
+      "research"
+    ],
+    "source": "https://www.pwsausa.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Williams Syndrome Association",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Dedicated to improving the lives of individuals with Williams syndrome through education, enrichment programs, and research. Provides family resources and an annual convention.",
+    "phone": "(800) 806-1871",
+    "website": "https://williams-syndrome.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Williams syndrome",
+      "genetic",
+      "education",
+      "enrichment"
+    ],
+    "source": "https://williams-syndrome.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "National Fragile X Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides support, education, and research funding for Fragile X syndrome, the most common inherited cause of intellectual disability and autism. Offers family support programs and regional events.",
+    "phone": "(800) 688-8765",
+    "website": "https://fragilex.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic",
+      "intellectual"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Fragile X",
+      "genetic",
+      "intellectual disability",
+      "autism"
+    ],
+    "source": "https://fragilex.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Tuberous Sclerosis Alliance",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Dedicated to finding a cure for tuberous sclerosis complex (TSC) while improving the lives of those affected through research, education, advocacy, and support services.",
+    "phone": "(800) 225-6872",
+    "website": "https://www.tsalliance.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic",
+      "neurological"
+    ],
+    "cost": "Free",
+    "tags": [
+      "TSC",
+      "tuberous sclerosis",
+      "genetic",
+      "research"
+    ],
+    "source": "https://www.tsalliance.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "International CDKL5 Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Funds research to find treatments for CDKL5 deficiency disorder, a rare genetic condition causing seizures and developmental impairments. Connects families and builds community.",
+    "phone": "",
+    "website": "https://www.cdkl5.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic",
+      "neurological"
+    ],
+    "cost": "Free",
+    "tags": [
+      "CDKL5",
+      "genetic",
+      "seizures",
+      "research"
+    ],
+    "source": "https://www.cdkl5.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Global Genes",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading rare disease patient advocacy organization connecting, empowering, and inspiring the rare disease community. Provides RARE toolkit, advocacy training, and connects patients to resources.",
+    "phone": "",
+    "website": "https://globalgenes.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "rare disease",
+      "genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "rare disease",
+      "genetic",
+      "advocacy",
+      "toolkit"
+    ],
+    "source": "https://globalgenes.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Fun and Function",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Therapeutic products for children with special needs including sensory tools, weighted products, fine motor aids, oral motor tools, and social-emotional learning materials. Designed by pediatric therapists.",
+    "phone": "(800) 231-6329",
+    "website": "https://funandfunction.com/",
+    "address": "",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "sensory",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "sensory products",
+      "therapeutic",
+      "weighted",
+      "fine motor"
+    ],
+    "source": "https://funandfunction.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "National Autism Resources",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Online store specializing in autism and special needs products including visual supports, sensory tools, social skills materials, calming products, and educational resources for home, school, and therapy settings.",
+    "phone": "(877) 249-2393",
+    "website": "https://www.nationalautismresources.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "sensory"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "autism products",
+      "visual supports",
+      "social skills",
+      "sensory"
+    ],
+    "source": "https://www.nationalautismresources.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "ARK Therapeutic",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Manufacturer of oral motor and sensory tools including chewable jewelry, vibrating tools, feeding therapy products, and Z-Vibe oral motor exercisers used by speech therapists and families worldwide.",
+    "phone": "(877) 275-8432",
+    "website": "https://www.arktherapeutic.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "sensory",
+      "oral motor"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "oral motor",
+      "chewable jewelry",
+      "feeding therapy",
+      "sensory"
+    ],
+    "source": "https://www.arktherapeutic.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Harkla",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Sensory products designed for children with autism and sensory processing challenges including compression vests, weighted blankets, indoor swings, and calming tools. Founded by a pediatric occupational therapist.",
+    "phone": "",
+    "website": "https://harkla.co/",
+    "address": "",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "autism",
+      "sensory"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "compression vest",
+      "weighted blanket",
+      "indoor swing",
+      "sensory"
+    ],
+    "source": "https://harkla.co/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Southpaw Enterprises",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Professional-grade sensory integration equipment and therapy products including swings, climbing structures, ball pits, weighted products, and sensory room solutions for clinics, schools, and homes.",
+    "phone": "(800) 228-1698",
+    "website": "https://www.southpaw.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "sensory"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "sensory integration",
+      "therapy equipment",
+      "swings",
+      "sensory rooms"
+    ],
+    "source": "https://www.southpaw.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Mayer-Johnson (Tobii Dynavox)",
+    "category": [
+      "assistive-tech",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading provider of AAC (augmentative and alternative communication) devices, software, and symbol-based communication tools including Boardmaker and the PCS symbol library used worldwide.",
+    "phone": "(800) 344-1778",
+    "website": "https://goboardmaker.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "speech",
+      "communication"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "AAC",
+      "communication",
+      "Boardmaker",
+      "PCS symbols"
+    ],
+    "source": "https://goboardmaker.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Proloquo2Go (AssistiveWare)",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Award-winning AAC app for iPad and iPhone used by over 200,000 people worldwide. Provides symbol-based and text-based communication for individuals with speech difficulties including autism, cerebral palsy, and Down syndrome.",
+    "phone": "",
+    "website": "https://www.assistiveware.com/products/proloquo2go",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "speech",
+      "autism",
+      "cerebral palsy"
+    ],
+    "cost": "$249.99 (one-time purchase)",
+    "tags": [
+      "AAC",
+      "iPad app",
+      "communication",
+      "symbols"
+    ],
+    "source": "https://www.assistiveware.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Special Supplies",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Affordable sensory and special needs products including chew necklaces, noise-canceling headphones, fidget tools, weighted lap pads, and visual timer aids for individuals with autism and sensory needs.",
+    "phone": "",
+    "website": "https://specialsupplies.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "sensory"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "chew necklaces",
+      "headphones",
+      "fidgets",
+      "weighted"
+    ],
+    "source": "https://specialsupplies.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Time Timer",
+    "category": [
+      "equipment",
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Visual timer products designed to help individuals with autism, ADHD, and learning disabilities understand the passage of time. Used in homes, schools, and therapy settings worldwide.",
+    "phone": "",
+    "website": "https://www.timetimer.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "ADHD"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "visual timer",
+      "time management",
+      "autism",
+      "ADHD",
+      "classroom"
+    ],
+    "source": "https://www.timetimer.com/",
+    "lastScraped": "2026-03-10"
   }
 ]
