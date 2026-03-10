@@ -4960,5 +4960,515 @@
     ],
     "source": "https://arcofcva.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Centria Autism",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "ABA therapy provider for children with autism spectrum disorder. Offers individualized treatment plans with board-certified behavior analysts.",
+    "phone": "(855) 772-8847",
+    "website": "https://centriahealthcare.com",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "ABA",
+      "autism",
+      "therapy",
+      "behavioral"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Little Leaves Behavioral Services",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Center-based ABA therapy for children ages 1-6 with autism spectrum disorder. Serves Maryland, DC, and Northern Virginia.",
+    "phone": "(202) 420-8359",
+    "website": "https://littleleaves.org",
+    "address": "",
+    "ageRange": "1-6",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "ABA",
+      "autism",
+      "early intervention",
+      "center-based"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Dream Bigger ABA",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Statewide",
+    "description": "In-home and in-school ABA therapy services for children ages 2-18 across all of Virginia.",
+    "phone": "(571) 666-6674",
+    "website": "https://dreambiggeraba.com",
+    "address": "",
+    "ageRange": "2-18",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "ABA",
+      "in-home",
+      "in-school",
+      "autism"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Paving Pathways ABA",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "ABA therapy services provided in home and school settings. Located in Alexandria, serving Northern Virginia families.",
+    "phone": "(571) 357-5582",
+    "website": "https://pavingpathways.com",
+    "address": "1500 King St Suite 301, Alexandria, VA 22314",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "ABA",
+      "in-home",
+      "in-school",
+      "Alexandria"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "New Hope Health ABA",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "ABA therapy, assessments, and treatment planning for individuals with autism. Located in Fairfax.",
+    "phone": "(571) 334-1743",
+    "website": "https://nhhaba.com",
+    "address": "10304 Eaton Pl Suite 100, Fairfax, VA 22030",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism"
+    ],
+    "cost": "Insurance accepted",
+    "tags": [
+      "ABA",
+      "assessments",
+      "treatment planning",
+      "Fairfax"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Spectrum Therapy Services",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Occupational therapy, speech-language pathology, and physical therapy services for children and adults.",
+    "phone": "(804) 205-0355",
+    "website": "https://spectrumtherapyservices.com",
+    "address": "35 Walpole St #207, Stafford, VA 22554",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Insurance accepted",
+    "tags": [
+      "OT",
+      "speech therapy",
+      "physical therapy"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "SunnyDays Pediatric Therapy",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Physical therapy and occupational therapy for infants and toddlers ages 0-3. Early intervention specialists located in Fairfax.",
+    "phone": "(202) 570-4723",
+    "website": "https://sunnydayspt.com",
+    "address": "10400 Eaton Place Suite 211, Fairfax, VA 22030",
+    "ageRange": "0-3",
+    "disabilityTypes": [],
+    "cost": "Insurance accepted",
+    "tags": [
+      "early intervention",
+      "PT",
+      "OT",
+      "infants",
+      "toddlers"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Kranzler Autism Programs and Services (KAPS)",
+    "category": [
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Therapy for autistic, ADHD, and neurodivergent individuals ages 6 and up. Offers in-person sessions in McLean and virtual options.",
+    "phone": "",
+    "website": "https://kapscommunity.com",
+    "address": "",
+    "ageRange": "6+",
+    "disabilityTypes": [
+      "autism",
+      "ADHD"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "autism",
+      "ADHD",
+      "neurodivergent",
+      "therapy",
+      "McLean"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Patient Centered Services (PCS)",
+    "category": [
+      "home-care"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Home health care including 24/7 support, private duty nursing, and Medicaid services for individuals with disabilities.",
+    "phone": "(703) 656-0582",
+    "website": "https://pcs-homecare.com",
+    "address": "1690 Old Bridge Rd Suite 210, Woodbridge, VA 22192",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Medicaid accepted",
+    "tags": [
+      "home care",
+      "nursing",
+      "Medicaid",
+      "24/7 support"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "CareBuilders at Home",
+    "category": [
+      "home-care"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Home care services including hourly, overnight, and 24/7 care for individuals with disabilities. Located in Alexandria.",
+    "phone": "(703) 344-0414",
+    "website": "https://carebuildersathome.com",
+    "address": "5100 Leesburg Pike Suite 200-I, Alexandria, VA 22302",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "home care",
+      "overnight",
+      "24/7",
+      "Alexandria"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Infinity Care IHS",
+    "category": [
+      "home-care"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "In-home supports for individuals with developmental and intellectual disabilities. Located in Falls Church.",
+    "phone": "(240) 804-7023",
+    "website": "https://infinitycareihs.com",
+    "address": "100 W Jefferson St Suite 200, Falls Church, VA 22046",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "in-home support",
+      "developmental disabilities",
+      "Falls Church"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Gabriel Homes",
+    "category": [
+      "residential"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Residential placement and community integration services for adults with intellectual and developmental disabilities in Reston and Herndon.",
+    "phone": "(703) 476-1592",
+    "website": "https://gabrielhomes.org",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "residential",
+      "group homes",
+      "community integration",
+      "Reston"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "CareHome LLC",
+    "category": [
+      "residential"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "24/7 residential care for adults with developmental disabilities in Sterling, Virginia.",
+    "phone": "(703) 202-0185",
+    "website": "https://carehomeva.com",
+    "address": "1110 S Dickenson Ave, Sterling, VA 20164",
+    "ageRange": "Adults",
+    "disabilityTypes": [
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "residential",
+      "24/7 care",
+      "Sterling",
+      "group home"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Milestone Group Home & Nursing",
+    "category": [
+      "residential"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Residential services for individuals with intellectual and developmental disabilities in Springfield.",
+    "phone": "(571) 378-1161",
+    "website": "https://milestonehealthservices.com",
+    "address": "7500 Hamlet St, Springfield, VA 22151",
+    "ageRange": "",
+    "disabilityTypes": [
+      "intellectual",
+      "developmental"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "residential",
+      "nursing",
+      "group home",
+      "Springfield"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Family-Run Individual Group Homes of Virginia (FamilyRIGH)",
+    "category": [
+      "residential"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Helps families create and operate their own group homes for loved ones with disabilities. Provides guidance on licensing and operations.",
+    "phone": "",
+    "website": "https://familyrigh.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "group homes",
+      "family-run",
+      "licensing",
+      "guidance"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Pursuit Adaptive Sports and Recreation",
+    "category": [
+      "adaptive-sports",
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Adaptive sports including cycling, sailing, rock climbing, skiing, and horseback riding for adults with physical disabilities in the DC/Maryland/Virginia area.",
+    "phone": "",
+    "website": "https://pursuitadaptivesports.org",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "adaptive sports",
+      "cycling",
+      "sailing",
+      "rock climbing",
+      "skiing"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Bright Beats Interactive Music",
+    "category": [
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Free interactive music sessions for children of all abilities. Inclusive music programming in Northern Virginia.",
+    "phone": "",
+    "website": "https://brightbeats.org",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "music",
+      "inclusive",
+      "free",
+      "children"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Interplay Orchestra",
+    "category": [
+      "recreation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Orchestra program for adults 18+ with disabilities. Offers in-person sessions in Bethesda and virtual participation options.",
+    "phone": "(301) 678-3880",
+    "website": "https://interplayorchestra.org",
+    "address": "",
+    "ageRange": "18+",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "orchestra",
+      "music",
+      "adults",
+      "inclusive"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Claire C. Kelly, Esq. - Special Needs Estate Planning",
+    "category": [
+      "legal",
+      "planning"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Attorney specializing in estate planning, special needs trusts, and guardianship for families of individuals with disabilities.",
+    "phone": "(703) 745-5565",
+    "website": "https://trustsandwealth.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "estate planning",
+      "trusts",
+      "guardianship",
+      "attorney"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "SafeinHome - Remote Supports",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Remote supports and assistive technology solutions for independent living. Helps individuals with disabilities live more independently through technology.",
+    "phone": "(703) 586-5037",
+    "website": "https://safeinhome.com",
+    "address": "15025 Priest Lane, Amissville, VA 20106",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "assistive technology",
+      "remote supports",
+      "independent living"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "VA Transportation Healthcare",
+    "category": [
+      "transportation"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Non-emergency medical transportation including wheelchair-accessible, stretcher, and ambulatory transport services.",
+    "phone": "(571) 450-1300",
+    "website": "https://vatransportationhealthcare.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "medical transportation",
+      "wheelchair",
+      "non-emergency"
+    ],
+    "source": "https://thearcofnova.org/resources/business-directory/",
+    "lastScraped": "2026-03-10"
   }
 ]
