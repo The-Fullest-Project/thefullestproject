@@ -1,7 +1,9 @@
 [
   {
     "name": "California Early Start Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "California",
     "area": "",
     "description": "California's Part C early intervention program for eligible infants and toddlers (birth to 36 months) with developmental delays or disabilities and their families. Coordinated through regional centers and local education agencies, providing therapy services and family support at no cost for evaluation and service coordination.",
@@ -11,13 +13,17 @@
     "ageRange": "Birth to 3",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.dds.ca.gov/services/early-start/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "The Arc of California",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "California",
     "area": "",
     "description": "Advocates for people with intellectual and developmental disabilities since 1950. Monitors legislation, mobilizes grassroots advocacy, and provides educational events, resources, and trainings for the disability community in English and Spanish.",
@@ -25,15 +31,22 @@
     "website": "https://thearcca.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability", "Developmental Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability",
+      "Developmental Disability"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://thearcca.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Special Olympics Southern California",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "California",
     "area": "",
     "description": "Offers 12 sports across 4 seasons, serving nearly 25,000 athletes with intellectual disabilities in community and school-based programs across 11 Southern California counties. Includes Unified Sports and health programs.",
@@ -41,15 +54,21 @@
     "website": "https://sosc.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://sosc.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Disability Rights California",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "California",
     "area": "",
     "description": "The largest disability rights organization in the nation and California's designated Protection and Advocacy agency. Provides litigation, legal representation, advocacy, investigations, and public policy work to protect the rights of people with disabilities.",
@@ -59,13 +78,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsca.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "California Department of Rehabilitation",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "California",
     "area": "",
     "description": "Administers the largest vocational rehabilitation program in the country, helping job seekers with disabilities obtain competitive employment. Services include career guidance, job training, assistive technology, and independent living skills through 85 field offices statewide.",
@@ -75,13 +98,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.dor.ca.gov/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "NAMI California",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "California",
     "area": "",
     "description": "California's state NAMI organization providing support for more than 20,000 Californians a year through mental health programs, advocacy, and education. Coordinates with affiliates statewide.",
@@ -89,15 +116,21 @@
     "website": "https://namica.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Mental Health"],
+    "disabilityTypes": [
+      "Mental Health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namica.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Ability Tools - California Assistive Technology Program",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "California",
     "area": "",
     "description": "California's Assistive Technology Act Program operated in partnership with the Department of Rehabilitation. Services include AT Exchange marketplace, device lending libraries, financial loan program, information and referral, and reuse programs statewide.",
@@ -107,13 +140,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://abilitytools.org/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "CalABLE",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "California",
     "area": "",
     "description": "California's ABLE savings and investment plan helping people with disabilities save for qualified disability expenses while maintaining benefit eligibility. Contributions and earnings are 100% federal and California state tax-free when used for qualified expenses.",
@@ -123,13 +160,17 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://calable.ca.gov/",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Children's Hospital Los Angeles - Developmental-Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "California",
     "area": "",
     "description": "Addresses medical and psychosocial aspects of children's developmental and behavioral issues. The Boone Fetter Clinic offers comprehensive diagnoses and follow-up care for neurodevelopmental, behavioral, attention, and feeding difficulties with a multidisciplinary team.",
@@ -137,15 +178,24 @@
     "website": "https://www.chla.org/behavioral-health-institute/developmental-behavioral-pediatrics",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Autism", "ADHD", "Developmental Delay", "Cerebral Palsy"],
+    "disabilityTypes": [
+      "Autism",
+      "ADHD",
+      "Developmental Delay",
+      "Cerebral Palsy"
+    ],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.chla.org/behavioral-health-institute/developmental-behavioral-pediatrics",
     "lastScraped": "2026-03-06"
   },
   {
     "name": "Angel City Sports",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "California",
     "area": "",
     "description": "Los Angeles-based nonprofit providing year-round adaptive sports opportunities for kids, adults, and veterans with physical disabilities or visual impairments. Over 250 adaptive sports clinics per year and hosts the Angel City Games, the largest Paralympic-style event in the Western US.",
@@ -153,10 +203,41 @@
     "website": "https://angelcitysports.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Physical Disability", "Visual Impairment"],
+    "disabilityTypes": [
+      "Physical Disability",
+      "Visual Impairment"
+    ],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://angelcitysports.org/",
     "lastScraped": "2026-03-06"
+  },
+  {
+    "name": "Rollettes Dance Team",
+    "category": [
+      "sports",
+      "recreation"
+    ],
+    "location": "California",
+    "area": "Los Angeles",
+    "description": "Wheelchair dance team empowering women and girls who use wheelchairs through dance, community, and performance. Founded by Chelsie Hill, the Rollettes inspire confidence and break barriers in adaptive dance.",
+    "phone": "",
+    "website": "https://www.rollettesdance.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "physical"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "wheelchair dance",
+      "adaptive dance",
+      "empowerment",
+      "performance"
+    ],
+    "source": "https://www.rollettesdance.com",
+    "lastScraped": "2026-03-10"
   }
 ]

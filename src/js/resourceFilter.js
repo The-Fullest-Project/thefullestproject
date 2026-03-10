@@ -57,6 +57,24 @@ document.addEventListener('DOMContentLoaded', function() {
     areaFilter.value = urlParams.get('area').toLowerCase();
   }
 
+  // Region-to-city mapping: selecting a region also shows resources in its sub-areas
+  var regionCities = {
+    'northern virginia': ['fairfax', 'fairfax county', 'arlington', 'alexandria', 'mclean', 'vienna', 'tysons', 'reston', 'herndon', 'sterling', 'ashburn', 'leesburg', 'purcellville', 'lovettsville', 'manassas', 'woodbridge', 'springfield', 'annandale', 'chantilly', 'centreville', 'burke', 'oakton', 'great falls', 'falls church', 'clifton', 'lorton', 'north potomac', 'warrenton'],
+    'hampton roads': ['virginia beach', 'norfolk', 'hampton', 'newport news', 'chesapeake', 'portsmouth', 'suffolk'],
+    'richmond': ['henrico', 'midlothian', 'glen allen'],
+    'roanoke': ['salem', 'boones mill'],
+    'shenandoah valley': ['harrisonburg', 'staunton', 'winchester']
+  };
+
+  function areaMatchesFilter(resourceArea, selectedArea) {
+    if (!selectedArea) return true;
+    if (resourceArea === selectedArea) return true;
+    // If a region is selected, also match its sub-cities
+    var cities = regionCities[selectedArea];
+    if (cities && cities.indexOf(resourceArea) !== -1) return true;
+    return false;
+  }
+
   function filterResources() {
     var searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
     var selectedLocation = locationFilter ? locationFilter.value : '';
@@ -84,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
         show = false;
       }
 
-      // Area/city filter
-      if (selectedArea && area !== selectedArea) {
+      // Area/city filter (with region-to-city mapping)
+      if (selectedArea && !areaMatchesFilter(area, selectedArea)) {
         show = false;
       }
 

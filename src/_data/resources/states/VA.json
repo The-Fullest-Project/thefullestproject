@@ -3833,7 +3833,7 @@
     "area": "Richmond",
     "description": "Parent-led organization helping families navigate special education services, IEP processes, and disability resources across Virginia.",
     "phone": "",
-    "website": "https://www.vfsec.org/",
+    "website": "https://vafamilysped.org/",
     "address": "",
     "ageRange": "0-21",
     "disabilityTypes": [],
@@ -3844,7 +3844,7 @@
       "parent support",
       "advocacy"
     ],
-    "source": "https://www.vfsec.org/",
+    "source": "https://vafamilysped.org/",
     "lastScraped": "2026-03-09"
   },
   {
@@ -3858,7 +3858,7 @@
     "area": "Richmond",
     "description": "Comprehensive autism services including ABA therapy, special education programs, residential services, and outpatient behavioral health for children and young adults with autism.",
     "phone": "(804) 553-3200",
-    "website": "https://www.sjvrichmond.org/",
+    "website": "https://www.neverstopbelieving.org/",
     "address": "8000 Brook Road, Richmond, VA 23227",
     "ageRange": "2-22",
     "disabilityTypes": [
@@ -3871,7 +3871,7 @@
       "special education",
       "residential"
     ],
-    "source": "https://www.sjvrichmond.org/",
+    "source": "https://www.neverstopbelieving.org/",
     "lastScraped": "2026-03-09"
   },
   {

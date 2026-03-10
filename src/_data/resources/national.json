@@ -4369,35 +4369,6 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "The Arc of Northern Virginia",
-    "category": [
-      "nonprofit",
-      "legal",
-      "community"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Chapter of The Arc advocating for and serving people with intellectual and developmental disabilities. Provides information, referrals, advocacy support, and community programs.",
-    "phone": "703-208-1119",
-    "website": "https://thearcofnova.org/",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": [
-      "intellectual-disability",
-      "developmental"
-    ],
-    "cost": "",
-    "tags": [
-      "arc",
-      "advocacy",
-      "intellectual-disability",
-      "community",
-      "nova"
-    ],
-    "source": "https://thearcofnova.org/",
-    "lastScraped": "2026-03-08"
-  },
-  {
     "name": "The Arc of the United States",
     "category": [
       "nonprofit",
@@ -5461,5 +5432,849 @@
     ],
     "source": "https://replayforkids.org",
     "lastScraped": "2026-03-09"
+  },
+  {
+    "name": "The Bow Foundation (GNAO1)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Supports families affected by GNAO1, a rare genetic neurological disorder causing movement disorders and epilepsy. Funds research, raises awareness, and connects GNAO1 families with resources and community.",
+    "phone": "",
+    "website": "https://gnao1.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "GNAO1",
+      "epilepsy",
+      "movement disorder",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "GNAO1",
+      "rare-disease",
+      "genetic-mutation",
+      "epilepsy",
+      "research",
+      "family-support"
+    ],
+    "source": "https://gnao1.org",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Sweet Julia Grace Foundation",
+    "category": [
+      "nonprofit",
+      "equipment"
+    ],
+    "location": "National",
+    "area": "Northern Virginia, West Virginia",
+    "description": "Family-started foundation honoring Julia, who passed from I-cell disease. Fills non-medical gaps for children who are seriously ill or have special needs — building ramps, providing adaptive equipment, granting wishes, home modifications, and dream trips for families.",
+    "phone": "",
+    "website": "https://www.sweetjuliagrace.org/",
+    "address": "",
+    "ageRange": "0-18",
+    "disabilityTypes": [
+      "I-cell disease",
+      "rare disease",
+      "special needs",
+      "medical complexity"
+    ],
+    "cost": "Free (grant-based)",
+    "tags": [
+      "family-started",
+      "adaptive-equipment",
+      "home-modifications",
+      "wish-granting",
+      "rare-disease",
+      "I-cell"
+    ],
+    "source": "https://www.sweetjuliagrace.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Angelman Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Advances awareness and treatment of Angelman syndrome through education, research funding, and support for individuals and families. Maintains a contact registry and hosts educational conferences for the AS community.",
+    "phone": "(800) 432-6435",
+    "website": "https://angelman.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Angelman syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Angelman-syndrome",
+      "rare-disease",
+      "genetic",
+      "research",
+      "family-support"
+    ],
+    "source": "https://angelman.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Foundation for Angelman Syndrome Therapeutics (FAST)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The largest non-governmental funder of Angelman syndrome research in the world. Parent-founded organization driving transformative research and clinical trials toward a cure, with 9 global chapters and over $43 million raised since inception.",
+    "phone": "",
+    "website": "https://cureangelman.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Angelman syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Angelman-syndrome",
+      "rare-disease",
+      "research",
+      "clinical-trials",
+      "family-founded"
+    ],
+    "source": "https://cureangelman.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "International Rett Syndrome Foundation (IRSF)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Leading research, family support, and advocacy organization for Rett syndrome. Has funded over $60 million in peer-reviewed research grants and provides in-depth resources, education, and community connections for caregivers.",
+    "phone": "",
+    "website": "https://www.rettsyndrome.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Rett syndrome",
+      "MECP2",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Rett-syndrome",
+      "MECP2",
+      "rare-disease",
+      "genetic",
+      "research",
+      "family-support"
+    ],
+    "source": "https://www.rettsyndrome.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Rett Syndrome Research Trust (RSRT)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The largest worldwide funder of Rett syndrome research, advancing genetic medicines that target the root cause. Has invested over $92 million in research toward cures for Rett syndrome caused by MECP2 mutations.",
+    "phone": "",
+    "website": "https://reverserett.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Rett syndrome",
+      "MECP2",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Rett-syndrome",
+      "MECP2",
+      "rare-disease",
+      "gene-therapy",
+      "research"
+    ],
+    "source": "https://reverserett.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Foundation for Prader-Willi Research (FPWR)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Funds research to better understand and treat Prader-Willi syndrome, a complex genetic condition causing chronic hunger, obesity risk, and developmental delays. Connects families with clinical trials and educational resources.",
+    "phone": "",
+    "website": "https://www.fpwr.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Prader-Willi syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Prader-Willi",
+      "rare-disease",
+      "genetic",
+      "research",
+      "family-support"
+    ],
+    "source": "https://www.fpwr.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Prader-Willi Syndrome Association (USA)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Founded in 1975, provides a national and international network of information, support services, and research for families and professionals involved with Prader-Willi syndrome. Offers crisis support, educational materials, and chapter-based family connections.",
+    "phone": "(941) 312-0400",
+    "website": "https://www.pwsausa.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Prader-Willi syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Prader-Willi",
+      "rare-disease",
+      "family-network",
+      "crisis-support"
+    ],
+    "source": "https://www.pwsausa.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "National Fragile X Foundation (NFXF)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Established in 1984, unites the Fragile X community through educational support, awareness, and research advancement. Hosts an international conference every two years attended by 1,000+ people from 50+ countries, connecting families with clinicians and researchers.",
+    "phone": "(800) 688-8765",
+    "website": "https://fragilex.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Fragile X syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Fragile-X",
+      "rare-disease",
+      "genetic",
+      "research",
+      "family-support",
+      "conferences"
+    ],
+    "source": "https://fragilex.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "FRAXA Research Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Directly funds research grants and fellowships at top universities worldwide to find treatments and a cure for Fragile X syndrome. Partners with biomedical and pharmaceutical companies to bridge the gap between research discoveries and actual treatments.",
+    "phone": "",
+    "website": "https://www.fraxa.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Fragile X syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Fragile-X",
+      "rare-disease",
+      "research-grants",
+      "gene-therapy"
+    ],
+    "source": "https://www.fraxa.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "TSC Alliance (Tuberous Sclerosis)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Founded in 1974 by four mothers of children with TSC, the TSC Alliance is the leading nonprofit for tuberous sclerosis complex. Catalyzes new treatments, drives research toward a cure, and provides lifelong support including discussion groups, educational materials, and family services.",
+    "phone": "(800) 225-6872",
+    "website": "https://www.tscalliance.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "tuberous sclerosis complex",
+      "epilepsy",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "tuberous-sclerosis",
+      "TSC",
+      "rare-disease",
+      "epilepsy",
+      "research",
+      "family-founded"
+    ],
+    "source": "https://www.tscalliance.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Cure SMA",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The largest nonprofit dedicated to spinal muscular atrophy. Provides a nationwide support system including care packages, information packets, and family support staff while funding a comprehensive research program for treatments across all SMA types and ages.",
+    "phone": "(800) 886-1762",
+    "website": "https://www.curesma.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "spinal muscular atrophy",
+      "SMA",
+      "neuromuscular"
+    ],
+    "cost": "Free",
+    "tags": [
+      "SMA",
+      "spinal-muscular-atrophy",
+      "rare-disease",
+      "research",
+      "care-packages",
+      "family-support"
+    ],
+    "source": "https://www.curesma.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Dravet Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Volunteer-run nonprofit raising research funds for Dravet syndrome and related epilepsies. Has awarded over $3.6 million in research grants and fellowships since 2009. Maintains an international patient registry and offers patient assistance grants.",
+    "phone": "",
+    "website": "https://dravetfoundation.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Dravet syndrome",
+      "epilepsy",
+      "SCN1A",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Dravet-syndrome",
+      "epilepsy",
+      "rare-disease",
+      "genetic",
+      "research",
+      "patient-registry"
+    ],
+    "source": "https://dravetfoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "International Foundation for CDKL5 Research",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Funds scientific research and maintains the International CDKL5 Disorder Database. CDKL5 deficiency disorder causes early-onset seizures and severe developmental delays, primarily affecting girls. Provides family support and drives clinical research toward treatments.",
+    "phone": "",
+    "website": "https://www.cdkl5.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "CDKL5 deficiency disorder",
+      "epilepsy",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "CDKL5",
+      "rare-disease",
+      "epilepsy",
+      "genetic",
+      "research",
+      "patient-database"
+    ],
+    "source": "https://www.cdkl5.com/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Loulou Foundation (CDKL5)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Private nonprofit advancing research and therapeutics for CDKL5 Deficiency Disorder. Since 2015, has funded over 100 research projects in 60+ labs across four continents. Hosts the annual CDKL5 Forum, the preeminent scientific meeting for this condition.",
+    "phone": "",
+    "website": "https://www.louloufoundation.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "CDKL5 deficiency disorder",
+      "epilepsy",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "CDKL5",
+      "rare-disease",
+      "research",
+      "scientific-forum",
+      "therapeutics"
+    ],
+    "source": "https://www.louloufoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Lennox-Gastaut Syndrome (LGS) Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Dedicated to improving lives of individuals with Lennox-Gastaut syndrome, a severe form of childhood-onset epilepsy. Funds research grants through their Cure LGS 365 program, educates the public, and supports affected families.",
+    "phone": "",
+    "website": "https://www.lgsfoundation.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Lennox-Gastaut syndrome",
+      "epilepsy",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Lennox-Gastaut",
+      "LGS",
+      "epilepsy",
+      "rare-disease",
+      "research-grants"
+    ],
+    "source": "https://www.lgsfoundation.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "FOXG1 Research Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Parent-led global organization driving research to cure FOXG1 syndrome, a rare neurodevelopmental disorder causing seizures, movement difficulties, and limited communication. Supports and advocates for patients and families worldwide.",
+    "phone": "",
+    "website": "https://www.foxg1research.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "FOXG1 syndrome",
+      "rare genetic",
+      "epilepsy"
+    ],
+    "cost": "Free",
+    "tags": [
+      "FOXG1",
+      "rare-disease",
+      "genetic",
+      "research",
+      "parent-led"
+    ],
+    "source": "https://www.foxg1research.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Phelan-McDermid Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Supports everyone living with Phelan-McDermid syndrome, a rare neurodevelopmental condition caused by changes in the SHANK3 gene. Funds research toward treatments and cures while providing family resources, conferences, and community connections.",
+    "phone": "",
+    "website": "https://pmsf.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Phelan-McDermid syndrome",
+      "SHANK3",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Phelan-McDermid",
+      "SHANK3",
+      "rare-disease",
+      "genetic",
+      "research",
+      "family-support"
+    ],
+    "source": "https://pmsf.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Cornelia de Lange Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "International family support network serving over 3,500 individuals with Cornelia de Lange syndrome, a rare genetic condition occurring in 1 in 10,000 births. Ensures early and accurate diagnosis, promotes research, and provides family support services.",
+    "phone": "(800) 223-8355",
+    "website": "https://www.cdlsusa.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Cornelia de Lange syndrome",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Cornelia-de-Lange",
+      "CdLS",
+      "rare-disease",
+      "genetic",
+      "family-network",
+      "diagnosis-support"
+    ],
+    "source": "https://www.cdlsusa.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "5p- Society (Cri du Chat Syndrome)",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Founded in 1986 by parents of children with 5p- syndrome (Cri du Chat), a rare chromosomal deletion disorder affecting 50-60 U.S. births annually. Provides family support services, annual national meetings, newsletters, grandparent support, and a reference library.",
+    "phone": "",
+    "website": "https://fivepminus.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Cri du Chat syndrome",
+      "5p- syndrome",
+      "chromosomal deletion"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Cri-du-Chat",
+      "5p-minus",
+      "rare-disease",
+      "chromosomal",
+      "parent-founded",
+      "family-support"
+    ],
+    "source": "https://fivepminus.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "STXBP1 Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Raises awareness of STXBP1-related disorders and accelerates therapy development. Member of COMBINEDBrain, a consortium of 25 rare disease advocacy groups pooling resources to speed clinical trial readiness for neurodevelopmental disorders.",
+    "phone": "",
+    "website": "https://www.stxbp1disorders.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "STXBP1",
+      "epilepsy",
+      "rare genetic",
+      "neurodevelopmental"
+    ],
+    "cost": "Free",
+    "tags": [
+      "STXBP1",
+      "rare-disease",
+      "genetic-epilepsy",
+      "research",
+      "COMBINEDBrain"
+    ],
+    "source": "https://www.stxbp1disorders.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "FamilieSCN2A Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Parent-created 501(c)(3) and global leader in SCN2A-related autism and epilepsy research, advocacy, and community. Serves 1,000+ families worldwide with research grants, patient assistance grants, family event grants, and a bereavement and crisis program.",
+    "phone": "",
+    "website": "https://www.scn2a.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "SCN2A",
+      "epilepsy",
+      "autism",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "SCN2A",
+      "rare-disease",
+      "genetic-epilepsy",
+      "autism",
+      "parent-founded",
+      "crisis-support"
+    ],
+    "source": "https://www.scn2a.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "SynGAP Research Fund",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Entirely parent-led nonprofit supporting research and development of treatments for SYNGAP1-related disorder, which causes intellectual disability and epilepsy. Has committed over $1.2 million to research with 100% of donations going directly to science.",
+    "phone": "",
+    "website": "https://curesyngap1.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "SYNGAP1",
+      "epilepsy",
+      "intellectual disability",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "SYNGAP1",
+      "rare-disease",
+      "genetic-epilepsy",
+      "research",
+      "parent-led"
+    ],
+    "source": "https://curesyngap1.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "KCNT1 Epilepsy Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Parent-founded nonprofit accelerating research and drug development for KCNT1-related epilepsy. In five years, elevated KCNT1 from a relatively unknown condition to one with a professional clinical network, international patient registry, natural history study, and biobank.",
+    "phone": "",
+    "website": "https://www.kcnt1epilepsy.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "KCNT1",
+      "epilepsy",
+      "rare genetic"
+    ],
+    "cost": "Free",
+    "tags": [
+      "KCNT1",
+      "rare-disease",
+      "genetic-epilepsy",
+      "research",
+      "patient-registry",
+      "parent-founded"
+    ],
+    "source": "https://www.kcnt1epilepsy.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "CureGRIN Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Parent-run charity improving the lives of people with GRI Disorders (GRIA, GRID, GRIK, and GRIN) through research, education, and support. These rare genetic conditions affect brain receptors critical for learning, memory, and development.",
+    "phone": "",
+    "website": "https://curegrin.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "GRIN disorders",
+      "rare genetic",
+      "neurodevelopmental"
+    ],
+    "cost": "Free",
+    "tags": [
+      "GRIN",
+      "rare-disease",
+      "genetic",
+      "neurodevelopmental",
+      "research",
+      "parent-run"
+    ],
+    "source": "https://curegrin.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Malan Syndrome Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Volunteer, parent-led organization improving lives of individuals affected by Malan syndrome, a rare genetic overgrowth and neurodevelopmental condition caused by changes in the NFIX gene affecting brain, muscle, and skeletal development. Provides support, outreach, and funds research.",
+    "phone": "",
+    "website": "https://www.malansyndrome.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "Malan syndrome",
+      "NFIX",
+      "rare genetic",
+      "neurodevelopmental"
+    ],
+    "cost": "Free",
+    "tags": [
+      "Malan-syndrome",
+      "NFIX",
+      "rare-disease",
+      "overgrowth",
+      "parent-led"
+    ],
+    "source": "https://www.malansyndrome.org/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Educational Success Alliance",
+    "category": [
+      "legal",
+      "education"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Provides educational advocacy services helping families navigate special education, IEP development, 504 plans, and school disputes. Works with families to ensure children with disabilities receive appropriate educational services.",
+    "phone": "",
+    "website": "https://www.educationalsuccessalliance.com",
+    "address": "",
+    "ageRange": "3-21",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "IEP advocacy",
+      "504 plans",
+      "special education",
+      "educational advocacy"
+    ],
+    "source": "https://www.educationalsuccessalliance.com",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Brownley Law - Disability Advocacy",
+    "category": [
+      "legal"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Law firm providing disability advocacy services including special education law, IEP disputes, disability discrimination claims, and ADA compliance assistance for families and individuals.",
+    "phone": "",
+    "website": "https://brownleylaw.com/advocacy/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "disability law",
+      "IEP",
+      "ADA",
+      "discrimination",
+      "legal advocacy"
+    ],
+    "source": "https://brownleylaw.com/advocacy/",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "GNAO1 Foundation",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Foundation dedicated to supporting families affected by GNAO1 gene mutations, funding research, and connecting families worldwide. Provides resources, community support, and advances understanding of GNAO1-related disorders.",
+    "phone": "",
+    "website": "https://gnao1.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "genetic",
+      "neurological"
+    ],
+    "cost": "Free",
+    "tags": [
+      "GNAO1",
+      "genetic mutation",
+      "rare disease",
+      "research",
+      "family support"
+    ],
+    "source": "https://gnao1.org",
+    "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "Autism Products",
+    "category": [
+      "equipment",
+      "sensory"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Online retailer specializing in autism support products including sensory tools, weighted blankets, fidgets, visual schedules, noise-canceling headphones, and other therapeutic products for individuals with autism and sensory needs.",
+    "phone": "",
+    "website": "https://www.autism-products.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [
+      "autism",
+      "sensory"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "sensory products",
+      "weighted blankets",
+      "fidgets",
+      "visual schedules",
+      "autism"
+    ],
+    "source": "https://www.autism-products.com/",
+    "lastScraped": "2026-03-10"
   }
 ]

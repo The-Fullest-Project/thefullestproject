@@ -1,0 +1,171 @@
+---
+layout: layouts/base.njk
+title: Events & Activities
+description: "Find sensory-friendly events, adaptive sports, and inclusive activities for individuals with disabilities and their families."
+permalink: /events/
+---
+
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">Events & Activities</h1>
+    <p class="text-center mb-12 max-w-2xl mx-auto" style="color: var(--color-text-light);">
+      Discover sensory-friendly events, adaptive sports, and inclusive activities for individuals with disabilities and their families.
+    </p>
+
+    <!-- Filters -->
+    <div class="card p-6 mb-8">
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-end">
+        <div class="flex-grow">
+          <label for="event-search" class="block text-sm font-semibold mb-2">Search</label>
+          <input type="text" id="event-search" placeholder="Search events..." class="form-input">
+        </div>
+        <div>
+          <label for="event-type-filter" class="block text-sm font-semibold mb-2">Type</label>
+          <select id="event-type-filter" class="filter-select">
+            <option value="">All Types</option>
+            <option value="sensory-friendly">Sensory-Friendly</option>
+            <option value="adaptive-sports">Adaptive Sports</option>
+            <option value="adaptive-recreation">Adaptive Recreation</option>
+            <option value="fundraiser">Fundraisers & Walks</option>
+            <option value="workshop">Workshops & Training</option>
+            <option value="support-group">Support Groups</option>
+            <option value="camp">Camps</option>
+          </select>
+        </div>
+        <div>
+          <label for="event-location-filter" class="block text-sm font-semibold mb-2">Location</label>
+          <select id="event-location-filter" class="filter-select">
+            <option value="">All Locations</option>
+            <option value="National">National</option>
+            {% for state in states %}
+            <option value="{{ state.name }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <p id="event-results-count" class="text-sm mb-6" style="color: var(--color-text-light);"></p>
+
+    <!-- Events List -->
+    <div id="events-list" class="space-y-4">
+      {% for event in events %}
+      <div class="card p-6 event-card"
+           data-type="{{ event.type }}"
+           data-location="{{ event.location }}"
+           data-name="{{ event.name | lower }}"
+           data-description="{{ event.description | lower }}"
+           data-venue="{{ event.venue | lower }}"
+           data-area="{{ event.area | default('') | lower }}"
+           data-tags="{{ event.tags | join(',') | lower }}">
+        <div class="flex flex-col md:flex-row md:items-start gap-4">
+          <div class="flex-grow">
+            <div class="flex flex-wrap items-center gap-2 mb-2">
+              <h3 class="text-lg font-bold" style="color: var(--color-primary);">{{ event.name }}</h3>
+            </div>
+            <p class="text-sm mb-2" style="color: var(--color-text);">{{ event.venue }}</p>
+            <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ event.description }}</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ event.type | replace("-", " ") | title }}</span>
+              {% if event.frequency %}
+              <span class="tag" style="background-color: var(--color-accent-light, #e8f4f8); color: var(--color-accent);">{{ event.frequency }}</span>
+              {% endif %}
+              {% if event.area %}
+              <span class="tag" style="background-color: var(--color-warm-light); color: var(--color-text);">{{ event.area }}</span>
+              {% elif event.location == "National" %}
+              <span class="tag" style="background-color: var(--color-accent); color: white;">National</span>
+              {% endif %}
+              {% if event.cost == "Free" %}
+              <span class="tag" style="background-color: #d4edda; color: #155724;">Free</span>
+              {% endif %}
+              {% if event.ageRange %}
+              <span class="tag" style="background-color: #f0f0f0; color: var(--color-text-light);">Ages: {{ event.ageRange }}</span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="flex-shrink-0 md:text-right">
+            {% if event.website %}
+            <a href="{{ event.website }}" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm no-underline inline-block">
+              Learn More &rarr;
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="card p-8 text-center">
+        <p class="text-lg mb-4" style="color: var(--color-text-light);">Events coming soon!</p>
+        <p style="color: var(--color-text-light);">We're compiling sensory-friendly events and adaptive activities. Check back soon.</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Submit CTA -->
+    <div class="mt-12 text-center card p-8">
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Know About an Event?</h2>
+      <p class="mb-6" style="color: var(--color-text-light);">Help us grow our events listing by sharing sensory-friendly and adaptive events in your area.</p>
+      <a href="/contact/" class="btn-primary no-underline">Share an Event</a>
+    </div>
+
+    {% include "components/disclaimer.njk" %}
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var searchInput = document.getElementById('event-search');
+  var typeFilter = document.getElementById('event-type-filter');
+  var locationFilter = document.getElementById('event-location-filter');
+  var eventsList = document.getElementById('events-list');
+  var resultsCount = document.getElementById('event-results-count');
+
+  if (!eventsList) return;
+
+  var cards = eventsList.querySelectorAll('.event-card');
+
+  function filterEvents() {
+    var searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    var selectedType = typeFilter ? typeFilter.value : '';
+    var selectedLocation = locationFilter ? locationFilter.value : '';
+    var visibleCount = 0;
+
+    cards.forEach(function(card) {
+      var name = card.getAttribute('data-name') || '';
+      var description = card.getAttribute('data-description') || '';
+      var venue = card.getAttribute('data-venue') || '';
+      var type = card.getAttribute('data-type') || '';
+      var location = card.getAttribute('data-location') || '';
+      var tags = card.getAttribute('data-tags') || '';
+      var show = true;
+
+      if (searchTerm && !name.includes(searchTerm) && !description.includes(searchTerm) && !venue.includes(searchTerm) && !tags.includes(searchTerm)) {
+        show = false;
+      }
+      if (selectedType && type !== selectedType) {
+        show = false;
+      }
+      if (selectedLocation && location !== selectedLocation) {
+        show = false;
+      }
+
+      card.style.display = show ? '' : 'none';
+      if (show) visibleCount++;
+    });
+
+    if (resultsCount) {
+      resultsCount.textContent = visibleCount + ' event' + (visibleCount !== 1 ? 's' : '') + ' found';
+    }
+  }
+
+  if (searchInput) searchInput.addEventListener('input', filterEvents);
+  if (typeFilter) typeFilter.addEventListener('change', filterEvents);
+  if (locationFilter) locationFilter.addEventListener('change', filterEvents);
+
+  // URL param support
+  var urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('type') && typeFilter) typeFilter.value = urlParams.get('type');
+  if (urlParams.get('location') && locationFilter) locationFilter.value = urlParams.get('location');
+
+  filterEvents();
+});
+</script>
