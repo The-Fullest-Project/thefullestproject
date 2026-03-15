@@ -1,5 +1,59 @@
 [
   {
+    "name": "What Are Adaptive Sports? - Mass General Brigham",
+    "description": "What Are Adaptive Sports? - Mass General Brigham",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc0tqU1kzcldNNWkxWG85RXdvMFB6UVUxQlp6YjBGYUFER0NoSU02OFNvNmlwM3Y1MXJXM3kyTTRZTjRGczJzVmtGTVYwTTdpbm9jWG1EUUQ0eU8xbGlERllvMzJZMnlhTUtmLWJvOFVPV0xPbnFJcEw2NFhacVdDSW1pS2hEVWxHTVVoVkNLRQ?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-03-15"
+  },
+  {
+    "name": "What Are Adaptive Sports? - Mass General Brigham",
+    "description": "What Are Adaptive Sports? - Mass General Brigham",
+    "category": "Sports",
+    "website": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc0tqU1kzcldNNWkxWG85RXdvMFB6UVUxQlp6YjBGYUFER0NoSU02OFNvNmlwM3Y1MXJXM3kyTTRZTjRGczJzVmtGTVYwTTdpbm9jWG1EUUQ0eU8xbGlERllvMzJZMnlhTUtmLWJvOFVPV0xPbnFJcEw2NFhacVdDSW1pS2hEVWxHTVVoVkNLRQ?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/sports.svg",
+    "location": "National",
+    "tags": [
+      "sports",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-03-15"
+  },
+  {
+    "name": "Funding the ADA’s Promise - New America",
+    "description": "Funding the ADA’s Promise - New America",
+    "category": "Education",
+    "website": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RZHVmRVB3VUw0WlZNSG1PWVJkdzBrY3R0ZGI2djJCRWJJSDA3THR4TFZMT3RCUFQtOFlhTlJaUEt2dGtxQlIxZ3hXWnlVYi00d1IwakJzWmxlTzM4OElQc2g4dDZhMU5TMnUzQkF3?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/education.svg",
+    "location": "National",
+    "tags": [
+      "education",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-03-15"
+  },
+  {
     "name": "Disabled veterans find freedom and community on the slopes -",
     "description": "Disabled veterans find freedom and community on the slopes - Richland Source",
     "category": "Adventures",
@@ -14,7 +68,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-03-08"
   },
   {

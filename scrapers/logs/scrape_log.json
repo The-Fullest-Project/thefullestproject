@@ -67,5 +67,55 @@
         "slug": "families-defend-disability-services-amid-medicaid-cuts-kff-h"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-03-15T02:43:45.261573",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "added",
+        "name": "What Are Adaptive Sports? - Mass General Brigham",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc0tqU1kzcldNNWkxWG85RXdvMFB6UVUxQlp6YjBGYUFER0NoSU02OFNvNmlwM3Y1MXJXM3kyTTRZTjRGczJzVmtGTVYwTTdpbm9jWG1EUUQ0eU8xbGlERllvMzJZMnlhTUtmLWJvOFVPV0xPbnFJcEw2NFhacVdDSW1pS2hEVWxHTVVoVkNLRQ?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "What Are Adaptive Sports? - Mass General Brigham",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc0tqU1kzcldNNWkxWG85RXdvMFB6UVUxQlp6YjBGYUFER0NoSU02OFNvNmlwM3Y1MXJXM3kyTTRZTjRGczJzVmtGTVYwTTdpbm9jWG1EUUQ0eU8xbGlERllvMzJZMnlhTUtmLWJvOFVPV0xPbnFJcEw2NFhacVdDSW1pS2hEVWxHTVVoVkNLRQ?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Funding the ADA’s Promise - New America",
+        "category": "Education",
+        "website": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RZHVmRVB3VUw0WlZNSG1PWVJkdzBrY3R0ZGI2djJCRWJJSDA3THR4TFZMT3RCUFQtOFlhTlJaUEt2dGtxQlIxZ3hXWnlVYi00d1IwakJzWmxlTzM4OElQc2g4dDZhMU5TMnUzQkF3?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-03-15T02:43:47.369262",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "\"Care Out Loud\" National Public Awareness and Resource Campaign Delivers Free Tools, Visibility and Support to the 63 Million U.S. Caregivers - PR Newswire",
+        "source": "PR Newswire",
+        "slug": "care-out-loud-national-public-awareness-and-resource-campaig"
+      },
+      {
+        "action": "created_post",
+        "title": "A sudden change to how VA evaluates disabilities triggers swift backlash - Federal News Network",
+        "source": "Federal News Network",
+        "slug": "a-sudden-change-to-how-va-evaluates-disabilities-triggers-sw"
+      },
+      {
+        "action": "created_post",
+        "title": "Interdisciplinary Research Initiative Uses Assistive Technology to Support Students with Developmental Disabilities - Lehigh University",
+        "source": "Lehigh University",
+        "slug": "interdisciplinary-research-initiative-uses-assistive-technol"
+      }
+    ]
   }
 ]
