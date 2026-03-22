@@ -1,5 +1,41 @@
 [
   {
+    "name": "The Business Case for Inclusion",
+    "description": "The Business Case for Inclusion: Why Disability Inclusion Matters in Business Today - Disability Belongs™",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb0ZqZTdseTk4ejBWVFNOVlRKSzVCSmdZOG9OQ1VHQ3NkRVRDb0t5TWlmN2VxSzZqY2NhQm1oVVNLdXI0WTlWM0drRUFTT25MNFlsZlJrUnZLaThHbVFxZzBzQlBhblNnSjRnZHhha2lVOVNjeWV5VnRZZHJqbzVJRUd4VmtNYVJXTW1j?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-03-22"
+  },
+  {
+    "name": "Students navigate support, challenges within Seton Hall’s Di",
+    "description": "Students navigate support, challenges within Seton Hall’s Disability Support Services - The Setonian",
+    "category": "Education",
+    "website": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFNHSHFwd0VUWDdJRGZDRHhhZnVaZGNTR1NDSjRJOFV0UFdYRkRpS1lLREgxRjFVRWRsYUVYSmwxNl9IdW10ZC0xUnRXSkZvQlZfTzBtUmRQMlVPYXJWanJUME4tektWZWFLTjE1cUJqbTN6MXpVcHNQWlI3WDFkTGRJS0NsLVlPRWFQRDVJRDUxRWZxR3QxNnBRRlhOYkRkcEFoTEFoQ05WdHAtcTRzcllZMDRvbmNKb3lQU0ZRZHptek1wZ1E?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/education.svg",
+    "location": "National",
+    "tags": [
+      "education",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-03-22"
+  },
+  {
     "name": "What Are Adaptive Sports? - Mass General Brigham",
     "description": "What Are Adaptive Sports? - Mass General Brigham",
     "category": "Adventures",
@@ -14,7 +50,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-03-15"
   },
   {
