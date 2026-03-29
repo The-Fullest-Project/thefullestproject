@@ -1,5 +1,41 @@
 [
   {
+    "name": "EDAN urges greater disability inclusion as CSW70 concludes i",
+    "description": "EDAN urges greater disability inclusion as CSW70 concludes in New York - World Council of Churches",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWmQ4NGdneTR0NXBoUXFrekRBcko2YTNRT0FsR3NJTTJZejBHTzBtdWhUcVJ2ZlZNRnZHazJMSGNlTGYtNGthNWYzTnVkV0NIWHdXeExFODc1R1dVNm5NdXNMVnZVN0ROUEFoUDJOZXRWaWpfMVVuTnI0TUxsMGo3VmVTcUxpT0dkclhfdVpsZ3lUQnNhOXVlczF1WHVZeUJaMnVF?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-03-29"
+  },
+  {
+    "name": "NCED Expands Disability Support Across Nevada - University o",
+    "description": "NCED Expands Disability Support Across Nevada - University of Nevada, Reno",
+    "category": "Education",
+    "website": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ib2oxODZuWUVnVlZaS05SLW0zaDNiazZTQ1ZOQVk4bDFDcmpIeXhmV08wZGN5UzVoa0lCNnFoREZ1bzlRMEo5R3dibGdjZHIzY08xTlltQ05vS283dWFDMlBtSEVLNFA2WlN1ZGwwU25BT2UzWGN0VUNmUExkMmc?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/education.svg",
+    "location": "National",
+    "tags": [
+      "education",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-03-29"
+  },
+  {
     "name": "The Business Case for Inclusion",
     "description": "The Business Case for Inclusion: Why Disability Inclusion Matters in Business Today - Disability Belongs™",
     "category": "Community",
@@ -14,7 +50,7 @@
       "community",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-03-22"
   },
   {

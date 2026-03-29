@@ -161,5 +161,49 @@
         "slug": "code-to-inclusion-how-inclusive-digital-infrastructure-and-a"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-03-29T02:45:43.737265",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "added",
+        "name": "EDAN urges greater disability inclusion as CSW70 concludes i",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWmQ4NGdneTR0NXBoUXFrekRBcko2YTNRT0FsR3NJTTJZejBHTzBtdWhUcVJ2ZlZNRnZHazJMSGNlTGYtNGthNWYzTnVkV0NIWHdXeExFODc1R1dVNm5NdXNMVnZVN0ROUEFoUDJOZXRWaWpfMVVuTnI0TUxsMGo3VmVTcUxpT0dkclhfdVpsZ3lUQnNhOXVlczF1WHVZeUJaMnVF?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "NCED Expands Disability Support Across Nevada - University o",
+        "category": "Education",
+        "website": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ib2oxODZuWUVnVlZaS05SLW0zaDNiazZTQ1ZOQVk4bDFDcmpIeXhmV08wZGN5UzVoa0lCNnFoREZ1bzlRMEo5R3dibGdjZHIzY08xTlltQ05vS283dWFDMlBtSEVLNFA2WlN1ZGwwU25BT2UzWGN0VUNmUExkMmc?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-03-29T02:45:46.524420",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "Misericordia symposium stresses self-care for caregivers - Wilkes-Barre Citizens' Voice",
+        "source": "Wilkes-Barre Citizens' Voice",
+        "slug": "misericordia-symposium-stresses-self-care-for-caregivers-wil"
+      },
+      {
+        "action": "created_post",
+        "title": "Save 88% on a lifetime subscription to Sterling Stock Picker - Neowin",
+        "source": "Neowin",
+        "slug": "save-88-on-a-lifetime-subscription-to-sterling-stock-picker"
+      },
+      {
+        "action": "created_post",
+        "title": "DfE proposes to strip most assistive software out of Disabled Students’ Allowance - Wonkhe",
+        "source": "Wonkhe",
+        "slug": "dfe-proposes-to-strip-most-assistive-software-out-of-disable"
+      }
+    ]
   }
 ]
