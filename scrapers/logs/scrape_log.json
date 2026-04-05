@@ -205,5 +205,55 @@
         "slug": "dfe-proposes-to-strip-most-assistive-software-out-of-disable"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-04-05T02:48:11.967084",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Ski For Life",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaGVGOWpOOEppS1pjZXdDWHhlSEhVYmdBQ0Y2NGhkU0FxY2RUT3lpeFozZktxb2E2OU13cFhGb1JSSURRV1MxZ2JrTU9sdFp4WGQ5UjRSVzAtRzdHR3J0QzRZMVB4YWxBR0hNY1hReE1vWDA2cnA3MF8xSnhLN1dGWVl3WTZOY25tMThrc0N2eTVYaDVzRU9tRXNBUDhZZ0p5eFlYYzZzZTduNnRkVWZpRldvXzI0QXBKV2Jwcjh6RXZYQ0dCX3ZKVkNld9IB3wFBVV95cUxNYjVzUHZzek84cHJQd2xYR05pOVhKcnVwcHNZRXZETE9EUVJnS2JpMzBrblRLY0t0akRIM2JrX1ZGTGwydWM3dTdBbDkyaFpyRTc4VkRwOUdHanhJN2ZvWFdablRZakM1Qm9NV3ZPa3VJSGg1Snl1X1UzNThFZm1hOTBFeDZWcWxyWFVGbHYwd2Z5bnRnWWVPYmYxOU8wdWc5MWJBd1kyTXN5c2lDX1lpM1BmM25RdnREU1V1Q2w3LWpQUmJVSlIyVGE4M055Z2NPdGJ3eXhnVGl2SDRid193?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Special Growers unveils accessible picnic table, launches pl",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUC1tMlM4dU5RUUZzbVRacFpJYWVYcTZZS2gtZGxnWEVkQ2J4TXRaTk0tQkhLZEVHNTdpWndfVm9pOHkyNV9CY2x0Slhxd1Bxb1dUSG9VWlZUSHNLMjNGWWFzRmVjbFNPV19xSWgzWncwUjFvR3dnM1RaVnJXVGJhaTR5ZWdLTlhZa1RxclZ0NTlZS0VvbjJ0ancwaTd3V05pRjVxNkZDTzJ6cDNlb2QtejBTYXNXa1I3V2ctRVR4ZXNRaXBUaFZLUzh5cE03ZE1neTFKQlFJaVF1QThqUWktN1Z3?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Ski For Life",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaGVGOWpOOEppS1pjZXdDWHhlSEhVYmdBQ0Y2NGhkU0FxY2RUT3lpeFozZktxb2E2OU13cFhGb1JSSURRV1MxZ2JrTU9sdFp4WGQ5UjRSVzAtRzdHR3J0QzRZMVB4YWxBR0hNY1hReE1vWDA2cnA3MF8xSnhLN1dGWVl3WTZOY25tMThrc0N2eTVYaDVzRU9tRXNBUDhZZ0p5eFlYYzZzZTduNnRkVWZpRldvXzI0QXBKV2Jwcjh6RXZYQ0dCX3ZKVkNld9IB3wFBVV95cUxNYjVzUHZzek84cHJQd2xYR05pOVhKcnVwcHNZRXZETE9EUVJnS2JpMzBrblRLY0t0akRIM2JrX1ZGTGwydWM3dTdBbDkyaFpyRTc4VkRwOUdHanhJN2ZvWFdablRZakM1Qm9NV3ZPa3VJSGg1Snl1X1UzNThFZm1hOTBFeDZWcWxyWFVGbHYwd2Z5bnRnWWVPYmYxOU8wdWc5MWJBd1kyTXN5c2lDX1lpM1BmM25RdnREU1V1Q2w3LWpQUmJVSlIyVGE4M055Z2NPdGJ3eXhnVGl2SDRid193?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-04-05T02:48:13.940696",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "World Backup Day 2026: Expert Insights from the Field - Solutions Review",
+        "source": "Solutions Review",
+        "slug": "world-backup-day-2026-expert-insights-from-the-field-solutio"
+      },
+      {
+        "action": "created_post",
+        "title": "A practical toolkit for supporting neurodivergent learners - Times Higher Education",
+        "source": "Times Higher Education",
+        "slug": "a-practical-toolkit-for-supporting-neurodivergent-learners-t"
+      },
+      {
+        "action": "created_post",
+        "title": "Autism Never Sleeps: Inside Divjakë’s Community Centre Changing Lives - United Nations Sustainable Development Group",
+        "source": "United Nations Sustainable Development Group",
+        "slug": "autism-never-sleeps-inside-divjakës-community-centre-changin"
+      }
+    ]
   }
 ]

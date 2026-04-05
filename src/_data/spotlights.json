@@ -1,5 +1,59 @@
 [
   {
+    "name": "Ski For Life",
+    "description": "Ski For Life: Oregon adaptive sports program opens slopes to students with disabilities - OregonLive.com",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaGVGOWpOOEppS1pjZXdDWHhlSEhVYmdBQ0Y2NGhkU0FxY2RUT3lpeFozZktxb2E2OU13cFhGb1JSSURRV1MxZ2JrTU9sdFp4WGQ5UjRSVzAtRzdHR3J0QzRZMVB4YWxBR0hNY1hReE1vWDA2cnA3MF8xSnhLN1dGWVl3WTZOY25tMThrc0N2eTVYaDVzRU9tRXNBUDhZZ0p5eFlYYzZzZTduNnRkVWZpRldvXzI0QXBKV2Jwcjh6RXZYQ0dCX3ZKVkNld9IB3wFBVV95cUxNYjVzUHZzek84cHJQd2xYR05pOVhKcnVwcHNZRXZETE9EUVJnS2JpMzBrblRLY0t0akRIM2JrX1ZGTGwydWM3dTdBbDkyaFpyRTc4VkRwOUdHanhJN2ZvWFdablRZakM1Qm9NV3ZPa3VJSGg1Snl1X1UzNThFZm1hOTBFeDZWcWxyWFVGbHYwd2Z5bnRnWWVPYmYxOU8wdWc5MWJBd1kyTXN5c2lDX1lpM1BmM25RdnREU1V1Q2w3LWpQUmJVSlIyVGE4M055Z2NPdGJ3eXhnVGl2SDRid193?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-04-05"
+  },
+  {
+    "name": "Special Growers unveils accessible picnic table, launches pl",
+    "description": "Special Growers unveils accessible picnic table, launches plant sale amid community support - WBIR",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUC1tMlM4dU5RUUZzbVRacFpJYWVYcTZZS2gtZGxnWEVkQ2J4TXRaTk0tQkhLZEVHNTdpWndfVm9pOHkyNV9CY2x0Slhxd1Bxb1dUSG9VWlZUSHNLMjNGWWFzRmVjbFNPV19xSWgzWncwUjFvR3dnM1RaVnJXVGJhaTR5ZWdLTlhZa1RxclZ0NTlZS0VvbjJ0ancwaTd3V05pRjVxNkZDTzJ6cDNlb2QtejBTYXNXa1I3V2ctRVR4ZXNRaXBUaFZLUzh5cE03ZE1neTFKQlFJaVF1QThqUWktN1Z3?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-05"
+  },
+  {
+    "name": "Ski For Life",
+    "description": "Ski For Life: Oregon adaptive sports program opens slopes to students with disabilities - OregonLive.com",
+    "category": "Sports",
+    "website": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaGVGOWpOOEppS1pjZXdDWHhlSEhVYmdBQ0Y2NGhkU0FxY2RUT3lpeFozZktxb2E2OU13cFhGb1JSSURRV1MxZ2JrTU9sdFp4WGQ5UjRSVzAtRzdHR3J0QzRZMVB4YWxBR0hNY1hReE1vWDA2cnA3MF8xSnhLN1dGWVl3WTZOY25tMThrc0N2eTVYaDVzRU9tRXNBUDhZZ0p5eFlYYzZzZTduNnRkVWZpRldvXzI0QXBKV2Jwcjh6RXZYQ0dCX3ZKVkNld9IB3wFBVV95cUxNYjVzUHZzek84cHJQd2xYR05pOVhKcnVwcHNZRXZETE9EUVJnS2JpMzBrblRLY0t0akRIM2JrX1ZGTGwydWM3dTdBbDkyaFpyRTc4VkRwOUdHanhJN2ZvWFdablRZakM1Qm9NV3ZPa3VJSGg1Snl1X1UzNThFZm1hOTBFeDZWcWxyWFVGbHYwd2Z5bnRnWWVPYmYxOU8wdWc5MWJBd1kyTXN5c2lDX1lpM1BmM25RdnREU1V1Q2w3LWpQUmJVSlIyVGE4M055Z2NPdGJ3eXhnVGl2SDRid193?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/sports.svg",
+    "location": "National",
+    "tags": [
+      "sports",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-05"
+  },
+  {
     "name": "EDAN urges greater disability inclusion as CSW70 concludes i",
     "description": "EDAN urges greater disability inclusion as CSW70 concludes in New York - World Council of Churches",
     "category": "Community",
@@ -14,7 +68,7 @@
       "community",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-03-29"
   },
   {
