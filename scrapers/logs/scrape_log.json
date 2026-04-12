@@ -255,5 +255,55 @@
         "slug": "autism-never-sleeps-inside-divjakës-community-centre-changin"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-04-12T02:53:52.322646",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Bowling Green nonprofit expands outdoor access for people wi",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNc3RHRFRKazRVR2xCMUNYczYyalZfWXY1bUJ1REE1MVc5emtjUElwWm5ONWxwTUMyRkt3SFVBTm5mNDA0LWR0d1pJVEVkOTQ3YjNOTWVRbmxRVnkwc1VXZUwtUkxaYnpwUEVhZlNSVzNfSWVxcThqVWtOV0RVNmVIeFFBQmVtanBmZU1ydDVRTDRzay1vYzNPYi13c2dqQ1BBZENaY2hPNXNLN1dNRjdZLVVRcDB4VWd5QzlSX29peGxFbVZkX2pDaWl3azRIYVZPenQ1bUlqejM5NjdlVEZiZzlQR2hOZw?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Fello Marks 65 Years of Disability Services, Advocacy, and I",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORGR1dEJOUUdGd1NjU0lBVEwtenBERk9sODBJX0h4V1RvX2gtNGIyZnU0SkVyS1ZXY2FBdFdMaV82eFFySDM0VkZwd0poUk1nNi12YUllSzZIYmRnWmN6YS1GYjI3cXNKb3VvWGNxNFZ0SE5sQjQ5eGgzalhFck53bDExUTNiNG5lNGp6ZXJtLUpocVZHSjY3SERNZ1NNQkxYNnFIQVpmVzU3dlIwQjNGTXRVUUlVRlcwS1RmeWR6TlZzemJu?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "New Americans with Disabilities Act Title II Accessibility Requirements for Public Colleges and Universities",
+        "category": "Education",
+        "website": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdTNBUzF2LV9zbkZidWprZjZJaV9nWk10VVBVMU5aQVExbzJ5MU05anBDV1I1UkFlZjVvc2o0Z0N2UnEtN0JXTXRnTl93NFZRbXdKa0dzTWJBcnp1dEY4M1hwTmx5dUFRam5zXzlGRXdreU1lWGY4X2xWNXRvWWdBbGlyT3F6WGYwTGd6cG5BNnNwUW02NDBPNDNsTS00a2JIZHRDR1VDbUdneDVmSlFWMThTUGdoTHpBSEJPb2czQURzMDV6UzlramstYmlVb0Y2Z1cxSmxmM2htam9fLUxuOUdvaFF4aFQ5aUdKeVNXRTRiWFg1Snc?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-04-12T02:53:54.568256",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "One in 5 people with disabilities report bias from financial firms - Stock Titan",
+        "source": "Stock Titan",
+        "slug": "one-in-5-people-with-disabilities-report-bias-from-financial"
+      },
+      {
+        "action": "created_post",
+        "title": "Green Shield Pest Solutions Shares Expert Insights on Specialized Treatments for Stratham, NH Residential and Commercial Properties - InsideNoVa.com",
+        "source": "InsideNoVa.com",
+        "slug": "green-shield-pest-solutions-shares-expert-insights-on-specia"
+      },
+      {
+        "action": "created_post",
+        "title": "Making Tax Digital: HMRC equality review finds possible ‘minor impacts’ based on disability, age and religion - PublicTechnology",
+        "source": "PublicTechnology",
+        "slug": "making-tax-digital-hmrc-equality-review-finds-possible-minor"
+      }
+    ]
   }
 ]

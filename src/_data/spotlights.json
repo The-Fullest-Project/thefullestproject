@@ -1,5 +1,59 @@
 [
   {
+    "name": "Bowling Green nonprofit expands outdoor access for people wi",
+    "description": "Bowling Green nonprofit expands outdoor access for people with disabilities - WDRB",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNc3RHRFRKazRVR2xCMUNYczYyalZfWXY1bUJ1REE1MVc5emtjUElwWm5ONWxwTUMyRkt3SFVBTm5mNDA0LWR0d1pJVEVkOTQ3YjNOTWVRbmxRVnkwc1VXZUwtUkxaYnpwUEVhZlNSVzNfSWVxcThqVWtOV0RVNmVIeFFBQmVtanBmZU1ydDVRTDRzay1vYzNPYi13c2dqQ1BBZENaY2hPNXNLN1dNRjdZLVVRcDB4VWd5QzlSX29peGxFbVZkX2pDaWl3azRIYVZPenQ1bUlqejM5NjdlVEZiZzlQR2hOZw?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-04-12"
+  },
+  {
+    "name": "Fello Marks 65 Years of Disability Services, Advocacy, and I",
+    "description": "Fello Marks 65 Years of Disability Services, Advocacy, and Inclusive Housing in Maryland - Eye On Annapolis",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORGR1dEJOUUdGd1NjU0lBVEwtenBERk9sODBJX0h4V1RvX2gtNGIyZnU0SkVyS1ZXY2FBdFdMaV82eFFySDM0VkZwd0poUk1nNi12YUllSzZIYmRnWmN6YS1GYjI3cXNKb3VvWGNxNFZ0SE5sQjQ5eGgzalhFck53bDExUTNiNG5lNGp6ZXJtLUpocVZHSjY3SERNZ1NNQkxYNnFIQVpmVzU3dlIwQjNGTXRVUUlVRlcwS1RmeWR6TlZzemJu?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-12"
+  },
+  {
+    "name": "New Americans with Disabilities Act Title II Accessibility Requirements for Public Colleges and Universities",
+    "description": "New Americans with Disabilities Act Title II Accessibility Requirements for Public Colleges and Universities: What In-House Counsel Should Do Now - New York State Bar Association",
+    "category": "Education",
+    "website": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdTNBUzF2LV9zbkZidWprZjZJaV9nWk10VVBVMU5aQVExbzJ5MU05anBDV1I1UkFlZjVvc2o0Z0N2UnEtN0JXTXRnTl93NFZRbXdKa0dzTWJBcnp1dEY4M1hwTmx5dUFRam5zXzlGRXdreU1lWGY4X2xWNXRvWWdBbGlyT3F6WGYwTGd6cG5BNnNwUW02NDBPNDNsTS00a2JIZHRDR1VDbUdneDVmSlFWMThTUGdoTHpBSEJPb2czQURzMDV6UzlramstYmlVb0Y2Z1cxSmxmM2htam9fLUxuOUdvaFF4aFQ5aUdKeVNXRTRiWFg1Snc?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/education.svg",
+    "location": "National",
+    "tags": [
+      "education",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-12"
+  },
+  {
     "name": "Ski For Life",
     "description": "Ski For Life: Oregon adaptive sports program opens slopes to students with disabilities - OregonLive.com",
     "category": "Adventures",
@@ -14,7 +68,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-04-05"
   },
   {
