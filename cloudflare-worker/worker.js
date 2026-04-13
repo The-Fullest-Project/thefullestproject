@@ -5,7 +5,7 @@
  *
  * Environment variables (set in Cloudflare dashboard):
  *   GITHUB_TOKEN       — GitHub Personal Access Token (repo scope)
- *   GITHUB_REPO        — "PMBerrigan/thefullestproject"
+ *   GITHUB_REPO        — "The-Fullest-Project/thefullestproject"
  *   FORMSPREE_ID       — Formspree form ID for gig submissions (xojkvvlo)
  *   ALLOWED_ORIGIN     — "https://thefullestproject.org"
  *   ADMIN_KEY          — Secret key for admin actions (close any gig)

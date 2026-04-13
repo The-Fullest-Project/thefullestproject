@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: PMBerrigan/thefullestproject
+  repo: The-Fullest-Project/thefullestproject
   branch: main
 
 media_folder: "src/images/blog"
