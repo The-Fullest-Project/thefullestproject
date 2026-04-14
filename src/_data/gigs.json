@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "id": "gig-20260414-e4f4",
+    "title": "test",
+    "type": "offering-help",
+    "category": "transportation",
+    "description": "test",
+    "location": "Northern Virginia",
+    "remote": true,
+    "compensation": "volunteer",
+    "rate": "",
+    "timeline": "1 week",
+    "postedDate": "2026-04-14",
+    "expiresDate": "2026-04-28",
+    "status": "open",
+    "posterFirstName": "Patrick",
+    "posterEmail": "patrick.m.berrigan@gmail.com",
+    "skills": [
+      "research"
+    ],
+    "tags": [
+      "transportation"
+    ]
+  }
+]
