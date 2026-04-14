@@ -2,6 +2,8 @@ backend:
   name: github
   repo: The-Fullest-Project/thefullestproject
   branch: main
+  base_url: https://decap-oauth.patrick-m-berrigan.workers.dev
+  auth_endpoint: auth
 
 media_folder: "src/images/blog"
 public_folder: "/images/blog"
