@@ -120,17 +120,20 @@ function renderResult(env, payload) {
 (function() {
   var message = ${JSON.stringify(message)};
   var allowed = ${JSON.stringify(allowedOrigin)};
-  function sendOnce() {
-    if (!window.opener) return;
+  if (!window.opener) return;
+  function sendToken() {
     window.opener.postMessage(message, allowed);
   }
   window.addEventListener("message", function(e) {
     if (e.data === "authorizing:github") {
-      sendOnce();
+      sendToken();
     }
   });
-  sendOnce();
-  setTimeout(function(){ window.close(); }, 1000);
+  // Step 1: announce readiness to the opener
+  window.opener.postMessage("authorizing:github", allowed);
+  // Fallback: if the opener ack never arrives, send anyway after a short delay
+  setTimeout(sendToken, 1500);
+  setTimeout(function(){ window.close(); }, 3000);
 })();
 </script>
 </body>
