@@ -1,5 +1,59 @@
 [
   {
+    "name": "Adaptive sports program visits Southern Arizona P.E. classes",
+    "description": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow - AZ Luminaria",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-04-19"
+  },
+  {
+    "name": "Launch of the report \"Disability Inclusion in Health Systems",
+    "description": "Launch of the report \"Disability Inclusion in Health Systems and Emergency Management in Latin America and the Caribbean\" - Pan American Health Organization (PAHO)",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQko5UlJfcDMySFljZlZITmIzY1c2UThVakhVR3lSbWsxeF9pa24xNFhVSUpEbXhFeWlURDFfMlVYTzgwbjFmb1NnRUU3dVBSX3BGNGFCUkpwX3dmMDgyVlJaTHJKUkZHQ2FSVDFYcVZiWEl4NUN2Y2FuYmNuY3I2M292NFBKaVVBZmJfYjhybFQ1aEh1dVRWSGM0ZUlPR2pFYXU5S0RaU1ZHNEp2dXhmVHFwdHk5aEhRY3l3T0I2bTA?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-19"
+  },
+  {
+    "name": "Adaptive sports program visits Southern Arizona P.E. classes",
+    "description": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow - AZ Luminaria",
+    "category": "Sports",
+    "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/sports.svg",
+    "location": "National",
+    "tags": [
+      "sports",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-19"
+  },
+  {
     "name": "Bowling Green nonprofit expands outdoor access for people wi",
     "description": "Bowling Green nonprofit expands outdoor access for people with disabilities - WDRB",
     "category": "Adventures",
@@ -14,7 +68,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-04-12"
   },
   {

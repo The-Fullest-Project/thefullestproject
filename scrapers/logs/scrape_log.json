@@ -305,5 +305,55 @@
         "slug": "making-tax-digital-hmrc-equality-review-finds-possible-minor"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-04-19T03:17:10.758845",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Adaptive sports program visits Southern Arizona P.E. classes",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Launch of the report \"Disability Inclusion in Health Systems",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQko5UlJfcDMySFljZlZITmIzY1c2UThVakhVR3lSbWsxeF9pa24xNFhVSUpEbXhFeWlURDFfMlVYTzgwbjFmb1NnRUU3dVBSX3BGNGFCUkpwX3dmMDgyVlJaTHJKUkZHQ2FSVDFYcVZiWEl4NUN2Y2FuYmNuY3I2M292NFBKaVVBZmJfYjhybFQ1aEh1dVRWSGM0ZUlPR2pFYXU5S0RaU1ZHNEp2dXhmVHFwdHk5aEhRY3l3T0I2bTA?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Adaptive sports program visits Southern Arizona P.E. classes",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-04-19T03:17:12.894615",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "A proposed federal personnel shift could chill whistleblowers long before anyone gets fired - Federal News Network",
+        "source": "Federal News Network",
+        "slug": "a-proposed-federal-personnel-shift-could-chill-whistleblower"
+      },
+      {
+        "action": "created_post",
+        "title": "Innovate Now backs startups designing assistive tech with users - TechCabal",
+        "source": "TechCabal",
+        "slug": "innovate-now-backs-startups-designing-assistive-tech-with-us"
+      },
+      {
+        "action": "created_post",
+        "title": "Make learning accessible to all in higher education - Times Higher Education",
+        "source": "Times Higher Education",
+        "slug": "make-learning-accessible-to-all-in-higher-education-times-hi"
+      }
+    ]
   }
 ]
