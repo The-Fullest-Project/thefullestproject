@@ -3452,5 +3452,21 @@
     "tags": ["home-modifications", "accessibility", "universal-design", "aging-in-place", "ada"],
     "source": "https://www.glickmandesignbuild.com/",
     "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "PlayTime Pediatric Therapies",
+    "category": ["therapy-pt", "therapy-aquatic"],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Pediatric physical therapy and aquatic therapy services. Specializes in play-based therapy for children with developmental, neurological, and orthopedic conditions.",
+    "phone": "",
+    "website": "https://www.playtime-pt.com/services-7",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["physical-therapy", "aquatic-therapy", "pediatric", "play-based"],
+    "source": "https://www.playtime-pt.com/",
+    "lastScraped": "2026-04-21"
   }
 ]

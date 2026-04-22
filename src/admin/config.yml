@@ -10,7 +10,7 @@ public_folder: "/images/blog"
 
 collections:
   - name: "blog"
-    label: "Blog Posts"
+    label: "Articles"
     folder: "src/blog"
     create: true
     slug: "{{slug}}"

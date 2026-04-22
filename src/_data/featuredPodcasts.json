@@ -30,5 +30,13 @@
     "website": "https://parentingimpossiblepodcast.com",
     "listenUrl": "https://podcasts.apple.com/us/podcast/parenting-impossible-the-special-needs-survival-podcast/id1480043957",
     "category": "Parenting"
+  },
+  {
+    "name": "Once Upon a Gene",
+    "description": "Conversations with rare disease parents, disabled adults, caregivers, and professionals — honest stories about parenting, identity, and advocacy in the rare disease world.",
+    "hosts": "Effie Parks",
+    "website": "https://effieparks.com/podcast",
+    "listenUrl": "https://effieparks.com/podcast",
+    "category": "Rare Disease & Caregiving"
   }
 ]

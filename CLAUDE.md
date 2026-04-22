@@ -12,7 +12,7 @@ A connection hub for caregivers of individuals with disabilities to find nationa
 | Build Tool | @tailwindcss/cli | 4.x | Compiles Tailwind input CSS to output |
 | Scraping | Python (scrapling, httpx) | 3.12 | Automated resource data collection |
 | Forms | Formspree | — | Contact, resource submission, and newsletter forms |
-| Deployment | FTP to GoDaddy | — | Static file upload to shared hosting |
+| Deployment | GitHub Pages | — | Static site hosting via GitHub Actions deploy |
 | CI/CD | GitHub Actions | — | Auto-deploy on push to main; weekly scrape job |
 
 ## Quick Start
@@ -29,8 +29,7 @@ npm run dev
 # Build for production
 npm run build
 
-# Deploy to GoDaddy (requires .env with FTP credentials)
-npm run deploy
+# Deploy (auto-deploys via GitHub Pages on push to main)
 ```
 
 ### Scraper Setup (optional)
@@ -95,12 +94,12 @@ the-fullest-project/
 ├── _site/                      # Built output (gitignored)
 ├── .eleventy.js                # Eleventy configuration
 ├── .github/workflows/
-│   ├── deploy.yml              # Build + FTP deploy on push to main
+│   ├── deploy.yml              # Build + deploy to GitHub Pages on push to main
 │   ├── scrape.yml              # Weekly scrape → commit → build → deploy
 │   └── gig-publish.yml         # Auto-publish gig from Formspree webhook
-├── deploy.js                   # Manual FTP deployment script
+├── deploy.js                   # Legacy FTP deployment script (unused — deployment via GitHub Pages)
 ├── package.json                # Node.js dependencies and scripts
-├── .env.example                # FTP credential template
+├── .env.example                # Legacy FTP credential template
 └── .gitignore
 ```
 
@@ -230,24 +229,19 @@ Client-side JavaScript is minimal and vanilla — just a mobile nav toggle (`mai
 | `npm run build:11ty` | Build Eleventy only |
 | `npm run build:css` | Build Tailwind CSS only (minified) |
 | `npm run serve` | Eleventy dev server without Tailwind watch |
-| `npm run deploy` | Full build then FTP deploy via `deploy.js` |
+| `npm run deploy` | Full build (deploy is handled by GitHub Pages on push) |
 | `python scrapers/run_all.py` | Run all resource scrapers |
 
 ## Environment Variables
 
-| Variable | Required | Description | Example |
-|----------|----------|-------------|---------|
-| `FTP_HOST` | For deploy | GoDaddy FTP server hostname | `ftp.thefullestproject.org` |
-| `FTP_USER` | For deploy | FTP username | — |
-| `FTP_PASSWORD` | For deploy | FTP password | — |
-| `FTP_REMOTE_DIR` | No | Remote directory (default: `/public_html`) | `/public_html` |
+Deployment is handled automatically via GitHub Pages. No environment variables are needed for deploy — just push to `main`.
 
-Copy `.env.example` to `.env` and fill in credentials for local deploys. CI/CD uses GitHub Secrets.
+Legacy FTP variables (`FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR`) are no longer used.
 
 ## CI/CD Workflows
 
 ### Build and Deploy (`.github/workflows/deploy.yml`)
-Triggers on push to `main`. Installs Node 20, runs `npm run build`, deploys `_site/` to GoDaddy via FTP.
+Triggers on push to `main`. Installs Node 20, runs `npm run build`, deploys `_site/` to GitHub Pages.
 
 ### Weekly Scrape (`.github/workflows/scrape.yml`)
 Runs every Sunday at midnight UTC (or manual trigger). Installs Python 3.12, runs all scrapers, commits updated resource data to the repo, then builds and deploys the site.
@@ -268,7 +262,7 @@ Runs every Sunday at midnight UTC (or manual trigger). Installs Python 3.12, run
 |---------|---------|---------------|
 | Formspree | Form handling (contact, resource submission, newsletter) | Form IDs in `src/_data/site.json` under `formspree` |
 | Google Fonts | Nunito + Open Sans typefaces | Loaded in `base.njk` `<head>` |
-| GoDaddy | Web hosting (shared, FTP-based) | FTP credentials in `.env` / GitHub Secrets |
+| GitHub Pages | Static site hosting | Auto-deploys via `deploy.yml` workflow on push to main |
 | GitHub Actions | CI/CD for build, deploy, and weekly scraping | `.github/workflows/` |
 
 
@@ -285,7 +279,7 @@ When working on tasks involving these technologies, invoke the corresponding ski
 | nunjucks | Writes and manages Nunjucks templates, layouts, components, and data-driven page rendering |
 | python | Develops Python 3.12 scrapers using scrapling and httpx for resource data collection |
 | json | Structures resource data, site metadata, and scraper output in JSON format |
-| ftp | Deploys static site to GoDaddy via FTP using Node.js deployment script |
+| ftp | Legacy — deployment now handled by GitHub Pages |
 | github-actions | Configures CI/CD workflows for automated build, deploy, and weekly scraping jobs |
 | markdown | Authors blog posts and podcast episodes with YAML front matter and markdown content |
 | mapping-user-journeys | Maps in-app journeys and identifies friction points in code |

@@ -20,7 +20,7 @@ extraHead: |
       <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-end">
         <div class="flex-grow">
           <label for="search-input" class="block text-sm font-semibold mb-2">Search</label>
-          <input type="text" id="search-input" placeholder="Search resources..." class="form-input">
+          <input type="text" id="search-input" placeholder="Search resources..." class="form-input" style="border: 2px solid var(--color-primary); box-shadow: 0 0 0 3px rgba(43, 107, 79, 0.15);">
         </div>
         <div>
           <label for="location-filter" class="block text-sm font-semibold mb-2">Location</label>
@@ -44,6 +44,7 @@ extraHead: |
             <option value="">All Categories</option>
             <option value="influencers">Accessible Influencers</option>
             <option value="gaming">Accessible Gaming</option>
+            <option value="artists">Artists</option>
             <option value="clothing">Adaptive Clothing</option>
             <option value="sports">Adaptive Sports & Fitness</option>
             <option value="assistive-tech">Assistive Technology</option>
@@ -84,7 +85,7 @@ extraHead: |
             <option value="medical-dental">— Dental Specialists</option>
             <option value="medical-genetics">— Genetics & Rare Disease</option>
             <option value="medical-primary">— Primary Care / Pediatrics</option>
-            <option value="mental-health">Mental Health</option>
+            <option value="movies">Movies & Short Films</option>
             <option value="nonprofit">Non-Profits & Foundations</option>
             <option value="nutrition">Nutrition & Feeding</option>
             <option value="recreation">Recreation & Activities</option>
@@ -174,7 +175,7 @@ extraHead: |
     <!-- Submit CTA -->
     <div class="mt-12 text-center card p-8">
       <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Know a Resource We're Missing?</h2>
-      <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about.</p>
+      <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about. Or do you see a link that isn't working quite right? Let us know!</p>
       <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
     </div>
 

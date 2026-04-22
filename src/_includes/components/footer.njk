@@ -40,12 +40,23 @@
       <!-- Newsletter -->
       <div>
         <h3 class="text-lg font-bold mb-4" style="font-family: var(--font-heading);">Stay Connected</h3>
-        <p class="text-sm opacity-80 mb-4">Get updates on new resources, blog posts, and community news.</p>
+        <p class="text-sm opacity-80 mb-4">Get updates on new resources and community news.</p>
         <form action="https://formspree.io/f/{{ site.formspree.newsletter }}" method="POST" class="flex flex-col gap-2">
           <label for="footer-email" class="sr-only">Email address</label>
           <input type="email" id="footer-email" name="email" placeholder="Your email" required
             class="form-input text-sm" style="background-color: white; color: var(--color-text);">
-          <button type="submit" class="btn-secondary text-sm text-center">Subscribe</button>
+          <fieldset class="flex flex-col gap-1 text-xs opacity-80 mt-1">
+            <legend class="sr-only">Subscription preferences</legend>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" name="weekly_resources" value="yes" checked class="rounded">
+              Weekly Resource Updates
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" name="monthly_mailer" value="yes" class="rounded">
+              Monthly Mailer Subscription
+            </label>
+          </fieldset>
+          <button type="submit" class="btn-secondary text-sm text-center mt-1">Subscribe</button>
         </form>
       </div>
     </div>

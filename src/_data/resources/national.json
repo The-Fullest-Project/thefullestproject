@@ -753,15 +753,13 @@
   {
     "name": "BraunAbility",
     "category": [
-      "vehicle-mods",
-      "equipment"
+      "vehicle-mods"
     ],
     "location": "National",
     "area": "",
-    "description": "World's leading manufacturer of wheelchair accessible vehicles and wheelchair lifts. Offers converted minivans, SUVs, and commercial vehicles plus vehicle modification services.",
-    "phone": "1-800-488-0359",
-    "website": "https://www.braunability.com/",
-    "instagram": "https://www.instagram.com/braunability/",
+    "description": "Industry leader in wheelchair accessible vehicles for over 50 years. Offers converted minivans, accessible SUVs, wheelchair lifts, and adaptive seating solutions.",
+    "phone": "",
+    "website": "https://www.braunability.com/us/en.html",
     "address": "",
     "ageRange": "All ages",
     "disabilityTypes": [
@@ -769,13 +767,13 @@
     ],
     "cost": "Varies",
     "tags": [
-      "vehicle-modification",
       "wheelchair-van",
       "accessible-vehicle",
+      "wheelchair-lift",
       "mobility"
     ],
     "source": "https://www.braunability.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-04-21"
   },
   {
     "name": "BraunAbility Turny Evo",
@@ -2762,8 +2760,8 @@
     ],
     "location": "National",
     "area": "",
-    "description": "Sells and services wheelchair-accessible vehicles nationwide. Offers van conversions, hand controls, wheelchair lifts, turning seats, and other vehicle modifications with locations across the U.S.",
-    "phone": "1-877-275-4907",
+    "description": "Largest wheelchair accessible vehicle dealer in the U.S. with 90+ locations nationwide. Sells and services wheelchair vans, adaptive driving equipment, and accessible vehicles.",
+    "phone": "",
     "website": "https://www.mobilityworks.com/",
     "address": "",
     "ageRange": "All ages",
@@ -2772,13 +2770,13 @@
     ],
     "cost": "Varies",
     "tags": [
-      "vehicle-modification",
       "wheelchair-van",
-      "hand-controls",
-      "accessible-vehicle"
+      "accessible-vehicle",
+      "adaptive-driving",
+      "dealer"
     ],
-    "source": "https://www.mobilityworks.com/",
-    "lastScraped": "2026-03-08"
+    "source": "https://www.mobilityworks.com/locations/",
+    "lastScraped": "2026-04-21"
   },
   {
     "name": "Molly Burke (Instagram)",
@@ -2905,26 +2903,6 @@
     ],
     "source": "https://www.amazon.com/My-Brother-Charlie-Holly-Robinson/dp/0545094666",
     "lastScraped": "2026-03-08"
-  },
-  {
-    "name": "NAMI - National Alliance on Mental Illness",
-    "category": [
-      "mental-health"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Mental health support, education, and advocacy including support groups for caregivers.",
-    "phone": "",
-    "website": "https://www.nami.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "mental-health"
-    ],
-    "source": "https://www.nami.org/",
-    "lastScraped": "2026-04-19"
   },
   {
     "name": "NATHHAN - National Challenged Homeschoolers",
@@ -3122,7 +3100,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Nike FlyEase",
+    "name": "Nike EasyOn",
     "category": [
       "clothing"
     ],
@@ -6420,28 +6398,28 @@
   {
     "name": "Global Genes",
     "category": [
+      "caregiver-support",
       "nonprofit"
     ],
     "location": "National",
     "area": "",
-    "description": "Leading rare disease patient advocacy organization connecting, empowering, and inspiring the rare disease community. Provides RARE toolkit, advocacy training, and connects patients to resources.",
+    "description": "Leading rare disease advocacy organization offering educational programs, patient navigation services (RARE Concierge), and the annual RARE Advocacy Summit. Connects families with resources and community.",
     "phone": "",
     "website": "https://globalgenes.org/",
     "address": "",
-    "ageRange": "",
+    "ageRange": "All ages",
     "disabilityTypes": [
-      "rare disease",
-      "genetic"
+      "rare-disease"
     ],
     "cost": "Free",
     "tags": [
-      "rare disease",
-      "genetic",
+      "rare-disease",
       "advocacy",
-      "toolkit"
+      "navigation",
+      "concierge"
     ],
     "source": "https://globalgenes.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-04-21"
   },
   {
     "name": "Fun and Function",
@@ -7517,7 +7495,9 @@
   },
   {
     "name": "NKH Crusaders Rare Connections Support Group",
-    "category": ["caregiver-support"],
+    "category": [
+      "caregiver-support"
+    ],
     "location": "National",
     "area": "",
     "description": "Monthly virtual support group meetings for rare disease caregivers. Meets 1st Tuesday at 12:00 PM EST and 3rd Thursday at 8:00 PM EST.",
@@ -7525,15 +7505,25 @@
     "website": "https://www.nkhcrusaders.com/support-group",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["rare-disease"],
+    "disabilityTypes": [
+      "rare-disease"
+    ],
     "cost": "Free",
-    "tags": ["support-group", "rare-disease", "caregiver", "virtual"],
+    "tags": [
+      "support-group",
+      "rare-disease",
+      "caregiver",
+      "virtual"
+    ],
     "source": "https://www.nkhcrusaders.com/support-group",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "NORD (National Organization for Rare Disorders)",
-    "category": ["caregiver-support", "nonprofit"],
+    "category": [
+      "caregiver-support",
+      "nonprofit"
+    ],
     "location": "National",
     "area": "",
     "description": "Comprehensive database for disease-specific organizations, educational resources, and caregiver respite programs. Provides peer support, information, and advocacy for rare disease patients and families.",
@@ -7541,15 +7531,25 @@
     "website": "https://rarediseases.org",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["rare-disease"],
+    "disabilityTypes": [
+      "rare-disease"
+    ],
     "cost": "Free",
-    "tags": ["rare-disease", "database", "advocacy", "respite"],
+    "tags": [
+      "rare-disease",
+      "database",
+      "advocacy",
+      "respite"
+    ],
     "source": "https://rarediseases.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Give an Hour",
-    "category": ["caregiver-support", "mental-health"],
+    "category": [
+      "caregiver-support",
+      "mental-health"
+    ],
     "location": "National",
     "area": "",
     "description": "National nonprofit providing free mental health resources, peer support groups, and counseling through volunteer professionals. Dedicated program serving rare disease caregivers to reduce burnout and isolation.",
@@ -7559,29 +7559,21 @@
     "ageRange": "Adults",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["mental-health", "caregiver", "burnout", "peer-support", "rare-disease"],
+    "tags": [
+      "mental-health",
+      "caregiver",
+      "burnout",
+      "peer-support",
+      "rare-disease"
+    ],
     "source": "https://giveanhour.org/",
     "lastScraped": "2026-04-21"
   },
   {
-    "name": "Global Genes",
-    "category": ["caregiver-support", "nonprofit"],
-    "location": "National",
-    "area": "",
-    "description": "Leading rare disease advocacy organization offering educational programs, patient navigation services (RARE Concierge), and the annual RARE Advocacy Summit. Connects families with resources and community.",
-    "phone": "",
-    "website": "https://globalgenes.org/",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": ["rare-disease"],
-    "cost": "Free",
-    "tags": ["rare-disease", "advocacy", "navigation", "concierge"],
-    "source": "https://globalgenes.org/",
-    "lastScraped": "2026-04-21"
-  },
-  {
     "name": "Lottie's Light Foundation",
-    "category": ["caregiver-support"],
+    "category": [
+      "caregiver-support"
+    ],
     "location": "National",
     "area": "",
     "description": "Rare disease family foundation offering a care coordination platform for organizing medical information, managing medications, and sharing details with caregivers and providers. Hosts a podcast for rare disease parents.",
@@ -7589,15 +7581,25 @@
     "website": "https://lottieslight.org/family-resources/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["rare-disease"],
+    "disabilityTypes": [
+      "rare-disease"
+    ],
     "cost": "Free",
-    "tags": ["rare-disease", "care-coordination", "podcast", "family-support"],
+    "tags": [
+      "rare-disease",
+      "care-coordination",
+      "podcast",
+      "family-support"
+    ],
     "source": "https://lottieslight.org/",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Little Lobbyists",
-    "category": ["community", "legal"],
+    "category": [
+      "community",
+      "legal"
+    ],
     "location": "National",
     "area": "",
     "description": "Family-led nonprofit that advocates for policies to protect and improve the lives of people with complex medical needs and disabilities. Lobbies for accessible healthcare, education, and community inclusion.",
@@ -7607,13 +7609,22 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["advocacy", "lobbying", "policy", "healthcare", "complex-medical"],
+    "tags": [
+      "advocacy",
+      "lobbying",
+      "policy",
+      "healthcare",
+      "complex-medical"
+    ],
     "source": "https://littlelobbyists.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "AAC Institute",
-    "category": ["assistive-tech", "education"],
+    "category": [
+      "assistive-tech",
+      "education"
+    ],
     "location": "National",
     "area": "",
     "description": "Research and education organization focused on augmentative and alternative communication (AAC). Provides resources, research, and support for individuals who use AAC devices and their families.",
@@ -7621,31 +7632,25 @@
     "website": "https://aacinstitute.org",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["communication"],
+    "disabilityTypes": [
+      "communication"
+    ],
     "cost": "Free",
-    "tags": ["aac", "communication", "assistive-technology", "research"],
+    "tags": [
+      "aac",
+      "communication",
+      "assistive-technology",
+      "research"
+    ],
     "source": "https://aacinstitute.org",
     "lastScraped": "2026-04-21"
   },
   {
-    "name": "BraunAbility",
-    "category": ["vehicle-mods"],
-    "location": "National",
-    "area": "",
-    "description": "Industry leader in wheelchair accessible vehicles for over 50 years. Offers converted minivans, accessible SUVs, wheelchair lifts, and adaptive seating solutions.",
-    "phone": "",
-    "website": "https://www.braunability.com/us/en.html",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": ["mobility"],
-    "cost": "Varies",
-    "tags": ["wheelchair-van", "accessible-vehicle", "wheelchair-lift", "mobility"],
-    "source": "https://www.braunability.com/",
-    "lastScraped": "2026-04-21"
-  },
-  {
     "name": "Turny Evo Transfer Seat (BraunAbility)",
-    "category": ["vehicle-mods", "equipment"],
+    "category": [
+      "vehicle-mods",
+      "equipment"
+    ],
     "location": "National",
     "area": "",
     "description": "Power swivel transfer seat that rotates, extends outside the vehicle, and lowers to wheelchair height. Compatible with 200+ vehicle makes and models of trucks, vans, and SUVs.",
@@ -7653,31 +7658,25 @@
     "website": "https://www.braunability.com/us/en/mobility-products/vehicle-seating/turny-evo.html",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["mobility"],
+    "disabilityTypes": [
+      "mobility"
+    ],
     "cost": "Varies",
-    "tags": ["transfer-seat", "vehicle-seat", "wheelchair", "mobility"],
+    "tags": [
+      "transfer-seat",
+      "vehicle-seat",
+      "wheelchair",
+      "mobility"
+    ],
     "source": "https://www.braunability.com/",
     "lastScraped": "2026-04-21"
   },
   {
-    "name": "MobilityWorks",
-    "category": ["vehicle-mods"],
-    "location": "National",
-    "area": "",
-    "description": "Largest wheelchair accessible vehicle dealer in the U.S. with 90+ locations nationwide. Sells and services wheelchair vans, adaptive driving equipment, and accessible vehicles.",
-    "phone": "",
-    "website": "https://www.mobilityworks.com/",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": ["mobility"],
-    "cost": "Varies",
-    "tags": ["wheelchair-van", "accessible-vehicle", "adaptive-driving", "dealer"],
-    "source": "https://www.mobilityworks.com/locations/",
-    "lastScraped": "2026-04-21"
-  },
-  {
     "name": "Wheelable Wilderness",
-    "category": ["recreation", "community"],
+    "category": [
+      "recreation",
+      "community"
+    ],
     "location": "National",
     "area": "",
     "description": "Organization promoting accessible outdoor adventures and wilderness experiences for people with disabilities. Provides information on wheelchair-accessible trails, parks, and nature activities.",
@@ -7685,15 +7684,25 @@
     "website": "https://www.wheelablewilderness.com",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["mobility"],
+    "disabilityTypes": [
+      "mobility"
+    ],
     "cost": "Free",
-    "tags": ["outdoors", "trails", "accessibility", "nature", "wheelchair"],
+    "tags": [
+      "outdoors",
+      "trails",
+      "accessibility",
+      "nature",
+      "wheelchair"
+    ],
     "source": "https://www.wheelablewilderness.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Apple - The Greatest (Inclusion Campaign)",
-    "category": ["inclusion"],
+    "category": [
+      "inclusion"
+    ],
     "location": "National",
     "area": "",
     "description": "Apple's 'The Greatest' campaign highlighting accessibility features and celebrating people with disabilities in everyday life. A powerful video showcasing inclusive technology and representation.",
@@ -7703,8 +7712,646 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["inclusion", "accessibility", "technology", "representation", "video"],
+    "tags": [
+      "inclusion",
+      "accessibility",
+      "technology",
+      "representation",
+      "video"
+    ],
     "source": "https://www.youtube.com/watch?v=KmFPWxjmnqE",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "MobilityWorks - Fairfax",
+    "category": [
+      "vehicle-mods"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "MobilityWorks wheelchair accessible vehicle dealer. Sales, service, and rentals of wheelchair vans and adaptive driving equipment.",
+    "phone": "",
+    "website": "https://www.mobilityworks.com/virginia/fairfax/",
+    "address": "Fairfax, VA",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "wheelchair-van",
+      "accessible-vehicle",
+      "dealer",
+      "mobility"
+    ],
+    "source": "https://www.mobilityworks.com/locations/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "MobilityWorks - Sterling",
+    "category": [
+      "vehicle-mods"
+    ],
+    "location": "Virginia",
+    "area": "sterling",
+    "description": "MobilityWorks wheelchair accessible vehicle dealer. Sales, service, and rentals of wheelchair vans and adaptive driving equipment.",
+    "phone": "",
+    "website": "https://www.mobilityworks.com/virginia/sterling/",
+    "address": "Sterling, VA",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "wheelchair-van",
+      "accessible-vehicle",
+      "dealer",
+      "mobility"
+    ],
+    "source": "https://www.mobilityworks.com/locations/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Learn more",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Exhibitor at Abilities Expo — the largest disability event in the U.S. Visit their website to learn about their products and services.",
+    "phone": "",
+    "website": "https://www.abilitiesconference.com/?utm_source=abilities.com&amp;utm_medium=referral&amp;utm_campaign=header",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "abilities-expo",
+      "exhibitor",
+      "disability-products"
+    ],
+    "source": "https://www.abilities.com/exhibitors",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Abilities International Accessibility Conference",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Exhibitor at Abilities Expo — the largest disability event in the U.S. Visit their website to learn about their products and services.",
+    "phone": "",
+    "website": "https://www.abilitiesconference.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "abilities-expo",
+      "exhibitor",
+      "disability-products"
+    ],
+    "source": "https://www.abilities.com/exhibitors",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Exhibitor List &amp; Floor Plan",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Exhibitor at Abilities Expo — the largest disability event in the U.S. Visit their website to learn about their products and services.",
+    "phone": "",
+    "website": "https://s15.a2zinc.net/Clients/AbilitiesExpo/la2026/Public/EventMap.aspx?shmode=E&amp;shExhList=1",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "abilities-expo",
+      "exhibitor",
+      "disability-products"
+    ],
+    "source": "https://www.abilities.com/exhibitors",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Exhibitor Portal",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Exhibitor at Abilities Expo — the largest disability event in the U.S. Visit their website to learn about their products and services.",
+    "phone": "",
+    "website": "https://s15.a2zinc.net/clients/AbilitiesExpo/LA2026/Public/e_Login.aspx?FromPage=e_ExhibitorConsole",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "abilities-expo",
+      "exhibitor",
+      "disability-products"
+    ],
+    "source": "https://www.abilities.com/exhibitors",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Exhibitor Registration",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Exhibitor at Abilities Expo — the largest disability event in the U.S. Visit their website to learn about their products and services.",
+    "phone": "",
+    "website": "https://events.tpni.com/Attendee/Default.aspx?C=70003574&amp;M=30011060&amp;Mode=HTML",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "abilities-expo",
+      "exhibitor",
+      "disability-products"
+    ],
+    "source": "https://www.abilities.com/exhibitors",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Vatu",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Exhibitor at Abilities Expo — the largest disability event in the U.S. Visit their website to learn about their products and services.",
+    "phone": "",
+    "website": "https://vatu.dev",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "abilities-expo",
+      "exhibitor",
+      "disability-products"
+    ],
+    "source": "https://www.abilities.com/exhibitors",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "https://nymacgenetics.org/contact/",
+    "category": [
+      "medical",
+      "caregiver-support"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Resource from Medically Complex Caregiver resource guide. Visit their website for condition-specific information and support.",
+    "phone": "",
+    "website": "https://nymacgenetics.org/contact/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "medically-complex",
+      "caregiver-resource"
+    ],
+    "source": "https://www.medicallycomplexcaregiver.com/resourcebycondition",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Bowhead Corp",
+    "category": ["equipment"],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive equipment and assistive technology solutions for individuals with disabilities.",
+    "phone": "",
+    "website": "https://www.bowheadcorp.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["adaptive-equipment", "assistive-technology"],
+    "source": "https://www.bowheadcorp.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Cerebral Palsy Research Network (CPRN)",
+    "category": ["medical", "nonprofit"],
+    "location": "National",
+    "area": "",
+    "description": "National network improving care for people with cerebral palsy through research, data collection, and evidence-based practices. Connects families with clinical resources.",
+    "phone": "",
+    "website": "https://cprn.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["cerebral-palsy"],
+    "cost": "Free",
+    "tags": ["cerebral-palsy", "research", "clinical-network"],
+    "source": "https://cprn.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "KultureCity",
+    "category": ["sensory", "community"],
+    "location": "National",
+    "area": "",
+    "description": "Leading nonprofit promoting sensory accessibility and inclusion. Certifies venues as Sensory Inclusive through staff training, sensory bags, and quiet spaces. Over 1,000+ certified locations nationwide.",
+    "phone": "",
+    "website": "https://www.kulturecity.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["autism", "sensory"],
+    "cost": "Free",
+    "tags": ["sensory-inclusive", "certification", "venues", "autism"],
+    "source": "https://www.kulturecity.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Project DSNP",
+    "category": ["insurance", "financial"],
+    "location": "National",
+    "area": "",
+    "description": "Resource for Dual Eligible Special Needs Plans (D-SNP) — Medicare Advantage plans for individuals with both Medicare and Medicaid. Helps navigate insurance options for people with disabilities.",
+    "phone": "",
+    "website": "https://projectdsnp.com",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["insurance", "medicare", "medicaid", "dual-eligible"],
+    "source": "https://projectdsnp.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "SleepSafe Beds",
+    "category": ["equipment", "safety"],
+    "location": "National",
+    "area": "",
+    "description": "Safety beds for children and adults with special needs including seizure disorders, autism, and mobility challenges. Height-adjustable with padded safety rails.",
+    "phone": "",
+    "website": "https://sleepsafebed.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["seizure", "autism", "mobility"],
+    "cost": "Varies",
+    "tags": ["safety-bed", "special-needs", "seizure", "sleep"],
+    "source": "https://sleepsafebed.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Safe Place Bedding",
+    "category": ["equipment", "safety"],
+    "location": "National",
+    "area": "",
+    "description": "Enclosed safety beds and sleep systems for individuals with special needs. Provides secure sleep environments for those with seizure disorders or behavioral needs.",
+    "phone": "",
+    "website": "https://safeplacebedding.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["seizure", "behavioral"],
+    "cost": "Varies",
+    "tags": ["safety-bed", "enclosed-bed", "special-needs", "sleep"],
+    "source": "https://safeplacebedding.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "The Safety Sleeper",
+    "category": ["equipment", "safety"],
+    "location": "National",
+    "area": "",
+    "description": "Enclosed safety sleep system designed for individuals with special needs. Portable, breathable, and designed for home and travel use.",
+    "phone": "",
+    "website": "https://safetysleeper.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["seizure", "autism", "mobility"],
+    "cost": "Varies",
+    "tags": ["safety-bed", "portable", "travel", "sleep"],
+    "source": "https://safetysleeper.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Catalyst Sports",
+    "category": ["sports", "recreation"],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive sports organization offering cycling, climbing, paddling, skiing, and more for individuals with physical disabilities. Programs in Asheville, Atlanta, and other locations.",
+    "phone": "",
+    "website": "https://www.catalystsports.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["adaptive-sports", "cycling", "climbing", "skiing", "paddling"],
+    "source": "https://www.catalystsports.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "National Park Service - Accessibility",
+    "category": ["recreation"],
+    "location": "National",
+    "area": "",
+    "description": "National Park Service accessibility information for parks nationwide. Find accessible trails, facilities, programs, and accommodations at national parks including Great Smoky Mountains.",
+    "phone": "",
+    "website": "https://www.nps.gov/grsm/planyourvisit/accessibility.htm",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Free - Varies",
+    "tags": ["national-parks", "accessible-trails", "outdoors", "recreation"],
+    "source": "https://www.nps.gov/grsm/planyourvisit/accessibility.htm",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "The Peanut Butter Falcon (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Adventure film starring Zack Gottsagen, an actor with Down syndrome, on a journey to fulfill his dream of attending a wrestling school. A celebration of friendship and determination.",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=peanut+butter+falcon+trailer",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["down-syndrome"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "down-syndrome", "representation", "adventure"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "CODA (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Academy Award-winning film about a hearing child of deaf adults navigating her passion for music while supporting her family's fishing business.",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=coda+movie+trailer",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["deaf"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "deaf", "representation", "academy-award"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Wonder (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Film based on the bestselling novel about Auggie Pullman, a boy with facial differences, navigating fifth grade and inspiring those around him with kindness.",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=wonder+movie+trailer",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["craniofacial"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "craniofacial", "inclusion", "kindness"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "The Theory of Everything (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Biographical film about Stephen Hawking's life, his groundbreaking work in physics, and living with ALS (motor neurone disease).",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=theory+of+everything+trailer",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": ["als", "mobility"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "als", "biography", "representation"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Out of My Mind (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Film based on Sharon Draper's novel about Melody, a brilliant girl with cerebral palsy who cannot speak or walk, and her journey to be heard.",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=out+of+my+mind+movie+trailer",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["cerebral-palsy"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "cerebral-palsy", "communication", "representation"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "The Upside (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Comedy-drama about an unlikely friendship between a paralyzed billionaire and his caregiver. Based on a true story of connection across differences.",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=the+upside+movie+trailer",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": ["mobility", "quadriplegia"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "quadriplegia", "caregiver", "friendship"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Finding Nemo (Film)",
+    "category": ["movies"],
+    "location": "National",
+    "area": "",
+    "description": "Beloved animated film featuring characters with disabilities including Nemo's lucky fin (limb difference), Dory's short-term memory loss, and themes of overcoming limitations.",
+    "phone": "",
+    "website": "https://www.youtube.com/results?search_query=finding+nemo+trailer",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["limb-difference"],
+    "cost": "Streaming/Purchase",
+    "tags": ["movie", "animated", "limb-difference", "family"],
+    "source": "",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "SOAR365",
+    "category": ["nonprofit", "employment", "recreation"],
+    "location": "National",
+    "area": "",
+    "description": "Nonprofit empowering individuals with disabilities through employment services, day support, creative arts, and community integration programs.",
+    "phone": "",
+    "website": "https://soar365.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["employment", "day-support", "creative-arts", "community"],
+    "source": "https://soar365.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Sensory Fit Play",
+    "category": ["sensory", "recreation"],
+    "location": "National",
+    "area": "",
+    "description": "Sensory-friendly play and fitness experiences designed for children with sensory processing differences, autism, and developmental needs.",
+    "phone": "",
+    "website": "https://sensoryfitplay.com",
+    "address": "",
+    "ageRange": "Children",
+    "disabilityTypes": ["autism", "sensory"],
+    "cost": "Varies",
+    "tags": ["sensory", "play", "fitness", "children"],
+    "source": "https://sensoryfitplay.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Librarey - Accessible Reading",
+    "category": ["assistive-tech", "education"],
+    "location": "National",
+    "area": "",
+    "description": "Accessible reading platform and resources for individuals with print disabilities, dyslexia, and visual impairments.",
+    "phone": "",
+    "website": "https://www.librarey.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["vision", "dyslexia"],
+    "cost": "Varies",
+    "tags": ["reading", "accessible", "dyslexia", "assistive-tech"],
+    "source": "https://www.librarey.com/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "MyMejo",
+    "category": ["assistive-tech", "community"],
+    "location": "National",
+    "area": "",
+    "description": "Platform connecting individuals with disabilities to personalized resources, tools, and community support.",
+    "phone": "",
+    "website": "https://www.mymejo.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["platform", "resources", "community"],
+    "source": "https://www.mymejo.com/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Courageous Parents Network",
+    "category": ["caregiver-support"],
+    "location": "National",
+    "area": "",
+    "description": "Peer support and guidance for parents of children with serious illness. Provides video stories, guides, and community for families navigating complex medical journeys.",
+    "phone": "",
+    "website": "https://courageousparentsnetwork.org",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["caregiver", "peer-support", "serious-illness", "families"],
+    "source": "https://courageousparentsnetwork.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Charlie French Fine Art",
+    "category": ["artists"],
+    "location": "National",
+    "area": "",
+    "description": "Fine artist with a disability creating original artwork. Showcases how art and creativity thrive regardless of physical limitations.",
+    "phone": "",
+    "website": "https://www.charliefrenchfineart.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["artist", "fine-art", "disability", "representation"],
+    "source": "https://www.charliefrenchfineart.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Art Enables",
+    "category": ["artists", "community"],
+    "location": "District of Columbia",
+    "area": "washington, dc",
+    "description": "Art studio and gallery in Washington, DC empowering artists with disabilities. Provides studio space, professional development, and gallery exhibitions for artists with intellectual and developmental disabilities.",
+    "phone": "",
+    "website": "https://art-enables.org",
+    "address": "Washington, DC",
+    "ageRange": "Adults",
+    "disabilityTypes": ["intellectual-disability", "developmental"],
+    "cost": "Free",
+    "tags": ["artist", "gallery", "studio", "intellectual-disability"],
+    "source": "https://art-enables.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Art Stream",
+    "category": ["recreation", "community"],
+    "location": "National",
+    "area": "",
+    "description": "Visual and performing arts programs for teens and adults with intellectual and developmental disabilities. Creates inclusive artistic experiences.",
+    "phone": "",
+    "website": "https://art-stream.org",
+    "address": "",
+    "ageRange": "Teens and Adults",
+    "disabilityTypes": ["intellectual-disability", "developmental"],
+    "cost": "Varies",
+    "tags": ["arts", "performing-arts", "visual-arts", "inclusion"],
+    "source": "https://art-stream.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Virginia Navigator",
+    "category": ["recreation", "community"],
+    "location": "Virginia",
+    "area": "",
+    "description": "Virginia-based resource navigation platform connecting individuals and families with local recreation, community, and support services.",
+    "phone": "",
+    "website": "https://virginiannavigator.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["navigation", "virginia", "recreation", "community"],
+    "source": "https://virginiannavigator.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "ArtXV",
+    "category": ["artists", "community"],
+    "location": "National",
+    "area": "",
+    "description": "Arts organization promoting creative expression and accessibility in the arts for individuals with disabilities.",
+    "phone": "",
+    "website": "https://artxv.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["arts", "accessibility", "creative-expression"],
+    "source": "https://artxv.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Children's National - Kids in Action",
+    "category": ["sports", "recreation"],
+    "location": "District of Columbia",
+    "area": "washington, dc",
+    "description": "Community recreation therapy program at Children's National Hospital offering adaptive sports and recreation activities for children with disabilities and chronic conditions.",
+    "phone": "",
+    "website": "https://www.childrensnational.org/get-care/departments/rehabilitation-specialized-care/community-and-rec-therapy/kids-in-action",
+    "address": "Washington, DC",
+    "ageRange": "Children",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": ["adaptive-sports", "recreation", "children", "hospital"],
+    "source": "https://www.childrensnational.org/",
     "lastScraped": "2026-04-21"
   }
 ]
