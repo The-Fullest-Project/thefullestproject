@@ -1,4 +1,17 @@
-# The Fullest Project — Monthly Mailer Business Plan
+# The Fullest Project — Subscriber Experience & Monthly Mailer Business Plan
+
+## Current State: "Stay Connected" Gap
+
+The site footer on every page has a "Stay Connected" newsletter signup form (Formspree form ID `meeroozw`). When a user enters their email and clicks Subscribe:
+
+- **What happens:** Their email is stored in Formspree's submission log, visible in the [Formspree dashboard](https://formspree.io/).
+- **What doesn't happen:** No confirmation email. No welcome message. No weekly updates. No content of any kind is ever sent to the subscriber.
+
+**This is the #1 gap to close.** Users who sign up and hear nothing will lose trust. The form is collecting emails with an implied promise ("Get updates on new resources, articles, and community news") that isn't being fulfilled.
+
+**To fix this**, an email delivery platform must be selected and integrated before any subscription tiers or preference options are added. See the [platform comparison](#email--subscription-platform) below. Until then, the form collects emails that can be imported into the chosen platform once it's ready.
+
+---
 
 ## Concept
 
@@ -257,12 +270,6 @@ After each weekly scrape, the digest script:
 3. Generates a text summary
 4. Sends it to info@thefullestproject.org via Formspree
 5. Saves a copy to `scrapers/logs/weekly_digest.txt`
-
-### Newsletter Current State
-
-Newsletter signup exists (Formspree form in footer, form ID `meeroozw`). When a user subscribes, their email is stored in Formspree's submission log — visible in the Formspree dashboard. However, **no automated emails are sent to subscribers**. Formspree only collects emails; it does not have newsletter/drip campaign functionality. Subscribers currently receive nothing after signing up.
-
-**Action needed:** Set up an email delivery service (see platform comparison above) before adding weekly/monthly subscription options to the form. Adding preference checkboxes without a delivery backend creates a broken promise to users.
 
 ### AI-Generated Weekly Resource Email
 
