@@ -43,25 +43,44 @@ After each weekly scrape, the digest script:
 
 **Action needed before adding subscription tiers:** Set up an email delivery service (Mailchimp, ConvertKit, or SendGrid) before adding weekly/monthly subscription options to the form. Adding preference checkboxes without a delivery backend creates a broken promise to users.
 
-### Implementation options
+### Platform Comparison
 
-**Option A: Mailchimp/ConvertKit integration (Recommended)**
-1. Create a Mailchimp account (free up to 500 contacts)
-2. Replace Formspree newsletter form with Mailchimp embed form
-3. Set up an automated weekly email campaign:
-   - Trigger: every Sunday after scrape
-   - Content: list of new resources added that week (from `weekly_digest.txt`)
-   - Template: branded email with resource cards + links
-4. Segment subscribers: "weekly updates" vs. "monthly mailer" based on form checkboxes
+| Platform | Free Tier | Best For | Paid Pricing | Integration |
+|----------|-----------|----------|-------------|-------------|
+| **Buttondown** | 100 subscribers | Simple resource digests. Markdown-native — paste the weekly digest directly. Minimal UI, fast setup. No bloat. | $9/mo (1K subs) | Embed form or API. Supports RSS-to-email (could auto-send from blog RSS). |
+| **MailerLite** | 1,000 subscribers | Best free tier with automation. Visual email builder, landing pages, A/B testing. Good balance of power and simplicity. | $10/mo (500+ subs) | Embed form, JavaScript widget, or API. Has automation workflows for welcome sequences. |
+| **Brevo (Sendinblue)** | Unlimited contacts, 300 emails/day | Highest free sending volume. Transactional + marketing emails in one platform. Good if you also want to send scrape digest emails programmatically. | $9/mo (5K emails/mo) | API-first. Can send from GitHub Actions directly via API. Also has an embed form builder. |
+| **Kit (ConvertKit)** | 10,000 subscribers | Best for growing audience + paid subscriptions (monthly mailer). Built-in paid newsletter and digital product support. Strong for creators. | $25/mo (1K subs) | Embed form or landing page. Supports tags for segmentation (weekly vs. monthly). Has commerce built in for the physical mailer subscription. |
+| **Beehiiv** | 2,500 subscribers | Modern newsletter platform with built-in monetization, referral programs, and analytics. Good if the newsletter becomes a standalone product. | $39/mo (1K+ subs) | Embed form or custom domain. Has a referral/growth program built in. |
+| **Substack** | Unlimited (free newsletters) | Zero-cost option if newsletters become article-driven. Handles both free and paid subscriptions. Readers subscribe on Substack, not your site. | 10% of paid subs | Separate Substack page (not embedded on your site). Less control over branding. |
+| **Mailchimp** | 500 contacts | Most widely known. Good template editor, audience segmentation. Free tier is small but serviceable for launch. | $13/mo (500+ contacts) | Embed form, popup, or API. Extensive template library. |
+| **SendGrid (Twilio)** | 100 emails/day | Developer-friendly API. Best if you want to send programmatically from GitHub Actions with full HTML control. No visual editor — you build templates in code. | $15/mo (50K emails/mo) | Pure API. Add key as GitHub Secret, send from `scrape_digest.py` or a dedicated workflow step. |
+| **Resend** | 3,000 emails/mo | Modern developer-first email API. Beautiful default templates. React Email support. Easiest API integration for a static site + GitHub Actions pipeline. | $20/mo (50K emails/mo) | API only. Simple integration — `curl` or Python `requests` from CI. |
 
-**Option B: GitHub Action → SendGrid**
-1. Add SendGrid API key as GitHub Secret
-2. After the scrape, generate an HTML email from the digest
-3. Send via SendGrid API to all subscribers
-4. Subscriber list managed in a JSON file in the repo (or a Google Sheet)
+### Recommended approach by growth stage
 
-### Recommended next step
-Start with Mailchimp — free tier covers early growth, has audience segmentation, and provides an email editor for non-technical editing of the weekly update.
+**Now (0-100 subscribers):** **Buttondown** or **MailerLite**
+- Buttondown if you want dead-simple markdown digests with zero learning curve
+- MailerLite if you want a visual editor and welcome automation on a generous free tier
+
+**Growth (100-1,000 subscribers):** **Kit (ConvertKit)**
+- When you're ready to add the monthly mailer as a paid product, Kit handles both free newsletters and paid subscriptions in one platform
+- Tag-based segmentation makes it easy to separate weekly update subscribers from monthly mailer subscribers
+
+**Scale (1,000+ subscribers):** **Beehiiv** or **Brevo**
+- Beehiiv if the newsletter becomes a standalone growth channel (referral programs, monetization)
+- Brevo if you need high-volume transactional emails alongside marketing (scrape digests + newsletter + welcome emails all in one)
+
+### Implementation steps (same regardless of platform)
+
+1. Create account on chosen platform
+2. Replace Formspree newsletter form in `src/_includes/components/footer.njk` with the platform's embed form
+3. Import existing subscriber emails from Formspree dashboard
+4. Create a branded email template matching site colors (teal `#2B6B4F`, amber `#E8913A`)
+5. Set up the weekly email:
+   - **Manual:** Copy `scrapers/logs/weekly_digest.txt` content into the platform's editor, polish, send
+   - **Automated:** Use the platform's API from GitHub Actions to send programmatically after scrape
+6. Once working, add subscription preference options (weekly updates vs. monthly mailer) back to the form
 
 ---
 
