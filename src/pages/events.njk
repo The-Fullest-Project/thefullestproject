@@ -45,7 +45,17 @@ permalink: /events/
       </div>
     </div>
 
-    <p id="event-results-count" class="text-sm mb-6" style="color: var(--color-text-light);"></p>
+    <!-- View Toggle -->
+    <div class="flex items-center justify-between mb-6">
+      <p id="event-results-count" class="text-sm" style="color: var(--color-text-light);"></p>
+      <div class="flex gap-1 rounded-lg overflow-hidden border" style="border-color: var(--color-primary);">
+        <button id="event-list-view-btn" class="px-3 py-1.5 text-sm font-semibold" style="background-color: var(--color-primary); color: white;" aria-label="List view">List</button>
+        <button id="event-calendar-view-btn" class="px-3 py-1.5 text-sm font-semibold" style="background-color: white; color: var(--color-primary);" aria-label="Calendar view">Calendar</button>
+      </div>
+    </div>
+
+    <!-- Calendar View (hidden by default) -->
+    <div id="event-calendar" class="hidden"></div>
 
     <!-- Events List -->
     <div id="events-list" class="space-y-4">
@@ -111,6 +121,7 @@ permalink: /events/
   </div>
 </section>
 
+<script src="/js/eventCalendar.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var searchInput = document.getElementById('event-search');
