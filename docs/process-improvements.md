@@ -39,7 +39,9 @@ After each weekly scrape, the digest script:
 
 ## 3. Newsletter: Weekly Resource Updates
 
-**Current state:** Newsletter signup exists (Formspree form in footer). Subscribers are collected but **no automated emails are sent** — Formspree only forwards form submissions, it does not send newsletters.
+**Current state:** Newsletter signup exists (Formspree form in footer, form ID `meeroozw`). When a user subscribes, their email is stored in Formspree's submission log — visible in the Formspree dashboard. However, **no automated emails are sent to subscribers**. Formspree only collects emails; it does not have newsletter/drip campaign functionality. Subscribers currently receive nothing after signing up.
+
+**Action needed before adding subscription tiers:** Set up an email delivery service (Mailchimp, ConvertKit, or SendGrid) before adding weekly/monthly subscription options to the form. Adding preference checkboxes without a delivery backend creates a broken promise to users.
 
 ### Implementation options
 

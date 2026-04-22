@@ -260,7 +260,7 @@ Runs every Sunday at midnight UTC (or manual trigger). Installs Python 3.12, run
 
 | Service | Purpose | Configuration |
 |---------|---------|---------------|
-| Formspree | Form handling (contact, resource submission, newsletter) | Form IDs in `src/_data/site.json` under `formspree` |
+| Formspree | Form handling (contact, resource submission, newsletter signup) | Form IDs in `src/_data/site.json` under `formspree`. **Note:** Newsletter form collects emails only — no automated email delivery is configured. Subscribers can be viewed in the Formspree dashboard. A mail delivery service (Mailchimp, etc.) is needed before sending recurring emails. |
 | Google Fonts | Nunito + Open Sans typefaces | Loaded in `base.njk` `<head>` |
 | GitHub Pages | Static site hosting | Auto-deploys via `deploy.yml` workflow on push to main |
 | GitHub Actions | CI/CD for build, deploy, and weekly scraping | `.github/workflows/` |
