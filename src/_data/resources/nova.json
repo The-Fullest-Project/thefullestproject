@@ -403,7 +403,7 @@
       "sensory",
       "recreation"
     ],
-    "location": "Northern Virginia",
+    "location": "Maryland",
     "description": "Children's museum in Baltimore with sensory-friendly accommodations and KultureCity certification.",
     "website": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
     "tags": [
@@ -412,7 +412,7 @@
       "children",
       "baltimore"
     ],
-    "area": "Baltimore, MD"
+    "area": "baltimore, md"
   },
   {
     "name": "National Children's Museum - Accessibility",
@@ -872,8 +872,8 @@
     "category": [
       "medical"
     ],
-    "location": "National",
-    "area": "",
+    "location": "District of Columbia",
+    "area": "washington, dc",
     "description": "Comprehensive pediatric medical center with specialty clinics for children with disabilities and complex medical needs.",
     "phone": "",
     "website": "https://www.childrensnational.org/",
@@ -3346,8 +3346,8 @@
     "category": [
       "homeschool"
     ],
-    "location": "Northern Virginia",
-    "area": "Virginia",
+    "location": "Virginia",
+    "area": "Statewide",
     "description": "Virginia's primary homeschool organization with a dedicated Special Needs section. Offers a special-needs homeschooling bundle, evaluator/tester/tutor directories, and articles on homeschooling children with learning disabilities in Virginia.",
     "phone": "",
     "website": "https://heav.org/special-needs/",
@@ -3370,8 +3370,8 @@
     "category": [
       "homeschool"
     ],
-    "location": "Northern Virginia",
-    "area": "Virginia",
+    "location": "Virginia",
+    "area": "Statewide",
     "description": "Organization of Virginia Homeschoolers providing a guide on homeschooling children with special needs in Virginia. Includes local support group listings and email discussion lists for parents homeschooling children with physical, developmental, medical, communication, or learning challenges.",
     "phone": "",
     "website": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
@@ -3388,5 +3388,69 @@
     ],
     "source": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
     "lastScraped": "2026-03-08"
+  },
+  {
+    "name": "Driver Rehabilitation Center of Excellence LLC",
+    "category": ["vehicle-mods", "therapy"],
+    "location": "Northern Virginia",
+    "area": "chantilly",
+    "description": "Personalized driver evaluations, adaptive equipment installation, and rehabilitation services for individuals with disabilities. Also has a Chester, VA location.",
+    "phone": "",
+    "website": "https://www.driverrehabcenter.com/",
+    "address": "Chantilly, VA",
+    "ageRange": "Adults",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["driving", "adaptive-equipment", "rehabilitation", "vehicle-mods"],
+    "source": "https://www.driverrehabcenter.com/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Key Center School (FCPS)",
+    "category": ["education"],
+    "location": "Northern Virginia",
+    "area": "springfield",
+    "description": "Fairfax County Public Schools day school serving students ages 5-22 with intellectual disabilities (severe) and/or autism. Provides specialized educational programming and life skills training.",
+    "phone": "",
+    "website": "https://keycenter.fcps.edu/",
+    "address": "Springfield, VA",
+    "ageRange": "5-22",
+    "disabilityTypes": ["intellectual-disability", "autism"],
+    "cost": "Free (public school)",
+    "tags": ["school", "special-education", "autism", "intellectual-disability", "fcps"],
+    "source": "https://keycenter.fcps.edu/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Kilmer Center (FCPS)",
+    "category": ["education"],
+    "location": "Northern Virginia",
+    "area": "fairfax",
+    "description": "Fairfax County Public Schools special education center providing comprehensive programs for students with significant disabilities. Serves ages 5-22 with individualized educational plans.",
+    "phone": "",
+    "website": "https://schoolprofiles.fcps.edu/schlprfl/f?p=108:50:::::P0_CURRENT_SCHOOL_ID:121",
+    "address": "Fairfax, VA",
+    "ageRange": "5-22",
+    "disabilityTypes": [],
+    "cost": "Free (public school)",
+    "tags": ["school", "special-education", "fcps"],
+    "source": "https://schoolprofiles.fcps.edu/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Glickman Design Build",
+    "category": ["home-modifications"],
+    "location": "Northern Virginia",
+    "area": "",
+    "description": "Award-winning design-build firm since 1975 specializing in accessible and universal design home modifications including wheelchair accessibility, aging-in-place solutions, and ADA-compliant remodeling. Serves Northern Virginia, Maryland, and DC.",
+    "phone": "",
+    "website": "https://www.glickmandesignbuild.com/",
+    "address": "Northern Virginia",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["home-modifications", "accessibility", "universal-design", "aging-in-place", "ada"],
+    "source": "https://www.glickmandesignbuild.com/",
+    "lastScraped": "2026-04-21"
   }
 ]

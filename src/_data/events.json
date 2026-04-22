@@ -362,5 +362,33 @@
     "ageRange": "Children",
     "recurring": true,
     "tags": ["gym", "sensory-friendly", "autism", "play", "classes"]
+  },
+  {
+    "name": "NKH Crusaders Rare Connections Support Group (Morning)",
+    "venue": "Virtual (Zoom)",
+    "type": "support-group",
+    "location": "National",
+    "area": "",
+    "frequency": "1st Tuesday of each month at 12:00 PM EST",
+    "description": "Monthly virtual support group meeting for rare disease caregivers, hosted by NKH Crusaders. Connect with other families navigating rare disease care.",
+    "website": "https://www.nkhcrusaders.com/support-group",
+    "cost": "Free",
+    "ageRange": "Adults",
+    "recurring": true,
+    "tags": ["support-group", "rare-disease", "caregiver", "virtual"]
+  },
+  {
+    "name": "NKH Crusaders Rare Connections Support Group (Evening)",
+    "venue": "Virtual (Zoom)",
+    "type": "support-group",
+    "location": "National",
+    "area": "",
+    "frequency": "3rd Thursday of each month at 8:00 PM EST",
+    "description": "Monthly evening virtual support group for rare disease caregivers, hosted by NKH Crusaders. An alternative time for families who can't attend daytime meetings.",
+    "website": "https://www.nkhcrusaders.com/support-group",
+    "cost": "Free",
+    "ageRange": "Adults",
+    "recurring": true,
+    "tags": ["support-group", "rare-disease", "caregiver", "virtual"]
   }
 ]

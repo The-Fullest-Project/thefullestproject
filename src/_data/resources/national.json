@@ -30,34 +30,6 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Aaron Philip",
-    "category": [
-      "influencers",
-      "inclusion"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "First Black transgender wheelchair-using model signed to a major modeling agency. Advocates for disability representation in fashion and media.",
-    "phone": "",
-    "website": "https://www.instagram.com/aaron___philip/",
-    "instagram": "https://www.instagram.com/aaron___philip/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [
-      "mobility"
-    ],
-    "cost": "Free",
-    "tags": [
-      "instagram",
-      "influencer",
-      "model",
-      "fashion",
-      "representation"
-    ],
-    "source": "https://www.instagram.com/aaron___philip/",
-    "lastScraped": "2026-03-08"
-  },
-  {
     "name": "Abilities Expo",
     "category": [
       "community",
@@ -207,7 +179,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Accessible Adventures",
+    "name": "Accessible Adventures (Instagram)",
     "category": [
       "influencers",
       "recreation"
@@ -234,7 +206,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Accessible Play VA",
+    "name": "Accessible Play VA (Instagram)",
     "category": [
       "influencers",
       "recreation"
@@ -399,7 +371,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Amanda Griffith Atkins",
+    "name": "Amanda Griffith Atkins (Instagram)",
     "category": [
       "influencers",
       "books"
@@ -910,7 +882,7 @@
   {
     "name": "Caregiver Action Network",
     "category": [
-      "mental-health"
+      "caregiver-support"
     ],
     "location": "National",
     "area": "",
@@ -2600,7 +2572,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Madison Tevlin",
+    "name": "Madison Tevlin (Instagram)",
     "category": [
       "influencers"
     ],
@@ -2627,7 +2599,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Magical Mendy",
+    "name": "Magical Mendy (Instagram)",
     "category": [
       "influencers"
     ],
@@ -2809,7 +2781,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Molly Burke",
+    "name": "Molly Burke (Instagram)",
     "category": [
       "influencers"
     ],
@@ -3523,7 +3495,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Raising Disabled Podcast",
+    "name": "Raising Disabled Podcast (Instagram)",
     "category": [
       "influencers"
     ],
@@ -3745,7 +3717,7 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "Shane Burcaw",
+    "name": "Shane Burcaw (Instagram)",
     "category": [
       "influencers"
     ],
@@ -4034,7 +4006,7 @@
     "lastScraped": "2026-03-08"
   },
   {
-    "name": "Spin the Globe - Sylvia Longmire",
+    "name": "Spin the Globe - Sylvia Longmire (Instagram)",
     "category": [
       "influencers",
       "recreation"
@@ -4238,7 +4210,7 @@
     "lastScraped": "2026-03-06"
   },
   {
-    "name": "The Able Fables (Instagram)",
+    "name": "The Able Fables",
     "category": [
       "influencers",
       "books"
@@ -7542,5 +7514,197 @@
     ],
     "source": "https://cpfamilynetwork.org/",
     "lastScraped": "2026-03-10"
+  },
+  {
+    "name": "NKH Crusaders Rare Connections Support Group",
+    "category": ["caregiver-support"],
+    "location": "National",
+    "area": "",
+    "description": "Monthly virtual support group meetings for rare disease caregivers. Meets 1st Tuesday at 12:00 PM EST and 3rd Thursday at 8:00 PM EST.",
+    "phone": "",
+    "website": "https://www.nkhcrusaders.com/support-group",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": ["rare-disease"],
+    "cost": "Free",
+    "tags": ["support-group", "rare-disease", "caregiver", "virtual"],
+    "source": "https://www.nkhcrusaders.com/support-group",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "NORD (National Organization for Rare Disorders)",
+    "category": ["caregiver-support", "nonprofit"],
+    "location": "National",
+    "area": "",
+    "description": "Comprehensive database for disease-specific organizations, educational resources, and caregiver respite programs. Provides peer support, information, and advocacy for rare disease patients and families.",
+    "phone": "",
+    "website": "https://rarediseases.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["rare-disease"],
+    "cost": "Free",
+    "tags": ["rare-disease", "database", "advocacy", "respite"],
+    "source": "https://rarediseases.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Give an Hour",
+    "category": ["caregiver-support", "mental-health"],
+    "location": "National",
+    "area": "",
+    "description": "National nonprofit providing free mental health resources, peer support groups, and counseling through volunteer professionals. Dedicated program serving rare disease caregivers to reduce burnout and isolation.",
+    "phone": "",
+    "website": "https://giveanhour.org/",
+    "address": "",
+    "ageRange": "Adults",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["mental-health", "caregiver", "burnout", "peer-support", "rare-disease"],
+    "source": "https://giveanhour.org/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Global Genes",
+    "category": ["caregiver-support", "nonprofit"],
+    "location": "National",
+    "area": "",
+    "description": "Leading rare disease advocacy organization offering educational programs, patient navigation services (RARE Concierge), and the annual RARE Advocacy Summit. Connects families with resources and community.",
+    "phone": "",
+    "website": "https://globalgenes.org/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["rare-disease"],
+    "cost": "Free",
+    "tags": ["rare-disease", "advocacy", "navigation", "concierge"],
+    "source": "https://globalgenes.org/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Lottie's Light Foundation",
+    "category": ["caregiver-support"],
+    "location": "National",
+    "area": "",
+    "description": "Rare disease family foundation offering a care coordination platform for organizing medical information, managing medications, and sharing details with caregivers and providers. Hosts a podcast for rare disease parents.",
+    "phone": "",
+    "website": "https://lottieslight.org/family-resources/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["rare-disease"],
+    "cost": "Free",
+    "tags": ["rare-disease", "care-coordination", "podcast", "family-support"],
+    "source": "https://lottieslight.org/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Little Lobbyists",
+    "category": ["community", "legal"],
+    "location": "National",
+    "area": "",
+    "description": "Family-led nonprofit that advocates for policies to protect and improve the lives of people with complex medical needs and disabilities. Lobbies for accessible healthcare, education, and community inclusion.",
+    "phone": "",
+    "website": "https://littlelobbyists.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["advocacy", "lobbying", "policy", "healthcare", "complex-medical"],
+    "source": "https://littlelobbyists.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "AAC Institute",
+    "category": ["assistive-tech", "education"],
+    "location": "National",
+    "area": "",
+    "description": "Research and education organization focused on augmentative and alternative communication (AAC). Provides resources, research, and support for individuals who use AAC devices and their families.",
+    "phone": "",
+    "website": "https://aacinstitute.org",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["communication"],
+    "cost": "Free",
+    "tags": ["aac", "communication", "assistive-technology", "research"],
+    "source": "https://aacinstitute.org",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "BraunAbility",
+    "category": ["vehicle-mods"],
+    "location": "National",
+    "area": "",
+    "description": "Industry leader in wheelchair accessible vehicles for over 50 years. Offers converted minivans, accessible SUVs, wheelchair lifts, and adaptive seating solutions.",
+    "phone": "",
+    "website": "https://www.braunability.com/us/en.html",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["wheelchair-van", "accessible-vehicle", "wheelchair-lift", "mobility"],
+    "source": "https://www.braunability.com/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Turny Evo Transfer Seat (BraunAbility)",
+    "category": ["vehicle-mods", "equipment"],
+    "location": "National",
+    "area": "",
+    "description": "Power swivel transfer seat that rotates, extends outside the vehicle, and lowers to wheelchair height. Compatible with 200+ vehicle makes and models of trucks, vans, and SUVs.",
+    "phone": "",
+    "website": "https://www.braunability.com/us/en/mobility-products/vehicle-seating/turny-evo.html",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["transfer-seat", "vehicle-seat", "wheelchair", "mobility"],
+    "source": "https://www.braunability.com/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "MobilityWorks",
+    "category": ["vehicle-mods"],
+    "location": "National",
+    "area": "",
+    "description": "Largest wheelchair accessible vehicle dealer in the U.S. with 90+ locations nationwide. Sells and services wheelchair vans, adaptive driving equipment, and accessible vehicles.",
+    "phone": "",
+    "website": "https://www.mobilityworks.com/",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Varies",
+    "tags": ["wheelchair-van", "accessible-vehicle", "adaptive-driving", "dealer"],
+    "source": "https://www.mobilityworks.com/locations/",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Wheelable Wilderness",
+    "category": ["recreation", "community"],
+    "location": "National",
+    "area": "",
+    "description": "Organization promoting accessible outdoor adventures and wilderness experiences for people with disabilities. Provides information on wheelchair-accessible trails, parks, and nature activities.",
+    "phone": "",
+    "website": "https://www.wheelablewilderness.com",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": ["mobility"],
+    "cost": "Free",
+    "tags": ["outdoors", "trails", "accessibility", "nature", "wheelchair"],
+    "source": "https://www.wheelablewilderness.com",
+    "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "Apple - The Greatest (Inclusion Campaign)",
+    "category": ["inclusion"],
+    "location": "National",
+    "area": "",
+    "description": "Apple's 'The Greatest' campaign highlighting accessibility features and celebrating people with disabilities in everyday life. A powerful video showcasing inclusive technology and representation.",
+    "phone": "",
+    "website": "https://www.youtube.com/watch?v=KmFPWxjmnqE",
+    "address": "",
+    "ageRange": "All ages",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": ["inclusion", "accessibility", "technology", "representation", "video"],
+    "source": "https://www.youtube.com/watch?v=KmFPWxjmnqE",
+    "lastScraped": "2026-04-21"
   }
 ]

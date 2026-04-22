@@ -67,10 +67,16 @@ permalink: /podcast/
         <p class="text-xs mb-2" style="color: var(--color-accent);">Hosted by {{ podcast.hosts }}</p>
         {% endif %}
         <p class="text-sm mb-4" style="color: var(--color-text-light);">{{ podcast.description }}</p>
-        {% if podcast.website %}
-        <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer"
-           class="btn-primary text-xs no-underline">Listen Now</a>
-        {% endif %}
+        <div class="flex gap-2 flex-wrap">
+          {% if podcast.listenUrl %}
+          <a href="{{ podcast.listenUrl }}" target="_blank" rel="noopener noreferrer"
+             class="btn-primary text-xs no-underline">Listen Now</a>
+          {% endif %}
+          {% if podcast.website and podcast.website != podcast.listenUrl %}
+          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer"
+             class="btn-secondary text-xs no-underline">Website</a>
+          {% endif %}
+        </div>
       </article>
       {% endfor %}
     </div>

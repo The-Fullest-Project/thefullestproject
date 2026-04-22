@@ -17,6 +17,29 @@ BLOG_DIR = Path(__file__).parent.parent.parent / "src" / "blog"
 LOG_DIR = Path(__file__).parent.parent / "logs"
 MAX_NEW_PER_RUN = 3
 
+# Quality filters — reject articles that match these patterns
+BLOCKED_DOMAINS = {
+    "neowin.net", "tradersunion.com", "solutionsreview.com",
+    "benzinga.com", "fool.com", "investopedia.com",
+    "cointelegraph.com", "coindesk.com", "techradar.com",
+    "pcmag.com", "tomsguide.com", "zdnet.com",
+}
+
+BLOCKED_TITLE_KEYWORDS = [
+    "stock", "trading", "forex", "crypto", "bitcoin", "pest control",
+    "subscription", "coupon", "discount", "investment", "backup day",
+    "black friday", "cyber monday", "prime day", "deal alert",
+    "save on", "save %", "lifetime subscription", "vpn deal",
+]
+
+REQUIRED_RELEVANCE_KEYWORDS = [
+    "disability", "disabled", "caregiver", "caregiving", "accessibility",
+    "accessible", "adaptive", "inclusion", "inclusive", "special needs",
+    "assistive", "wheelchair", "autism", "iep", "504 plan",
+    "sensory", "therapy", "rehabilitation", "prosthetic",
+    "deaf", "blind", "cerebral palsy", "down syndrome",
+]
+
 
 def slugify(text):
     """Convert text to a URL-safe slug."""
@@ -204,6 +227,23 @@ def run():
         slug = slugify(article["title"])
         if slug in existing_slugs:
             print(f"Skipping duplicate: {slug}")
+            continue
+
+        # Quality filter: blocked domains
+        article_url = article.get("url", "").lower()
+        if any(domain in article_url for domain in BLOCKED_DOMAINS):
+            print(f"Skipping blocked domain: {article['title']}")
+            continue
+
+        # Quality filter: blocked title keywords
+        title_lower = article["title"].lower()
+        if any(kw in title_lower for kw in BLOCKED_TITLE_KEYWORDS):
+            print(f"Skipping blocked keyword: {article['title']}")
+            continue
+
+        # Quality filter: must contain at least one relevance keyword
+        if not any(kw in title_lower for kw in REQUIRED_RELEVANCE_KEYWORDS):
+            print(f"Skipping irrelevant (no disability keyword): {article['title']}")
             continue
 
         create_blog_post(article)

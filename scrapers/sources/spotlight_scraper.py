@@ -17,6 +17,14 @@ SPOTLIGHTS_FILE = DATA_DIR / "spotlights.json"
 LOG_DIR = Path(__file__).parent.parent / "logs"
 MAX_NEW_PER_RUN = 3
 
+# Relevance filter — spotlight titles must contain at least one keyword
+RELEVANCE_KEYWORDS = [
+    "disability", "disabled", "accessible", "accessibility", "adaptive",
+    "inclusion", "inclusive", "special needs", "assistive", "wheelchair",
+    "autism", "sensory", "therapy", "rehabilitation", "prosthetic",
+    "deaf", "blind", "cerebral palsy", "down syndrome", "caregiver",
+]
+
 # Category-to-thumbnail mapping
 CATEGORY_THUMBNAILS = {
     "adventures": "/images/spotlights/adventures.svg",
@@ -149,8 +157,22 @@ def fetch_spotlights_from_web():
                     source = extract_xml_tag(item, "source")
 
                     if title and link:
-                        # Extract a potential organization name from title
-                        org_name = title.split(":")[0].strip() if ":" in title else title[:60].strip()
+                        # Relevance check — skip articles without disability keywords
+                        title_lower = title.lower()
+                        if not any(kw in title_lower for kw in RELEVANCE_KEYWORDS):
+                            print(f"Skipping irrelevant spotlight: {title}")
+                            continue
+
+                        # Extract organization name from title
+                        # Prefer text before colon/dash separators, but validate length
+                        org_name = title
+                        for sep in [":", " - ", " — ", " | "]:
+                            if sep in title:
+                                candidate = title.split(sep)[0].strip()
+                                if 3 <= len(candidate) <= 80:
+                                    org_name = candidate
+                                break
+                        org_name = org_name[:80].strip()
 
                         new_spotlights.append(make_spotlight(
                             name=org_name,
