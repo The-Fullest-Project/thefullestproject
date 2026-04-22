@@ -55,11 +55,14 @@ jobs:
             echo "No gigs expiring soon"
           fi
 
+      - name: Generate and send scrape digest
+        run: python scrapers/sources/scrape_digest.py
+
       - name: Commit updated data
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add src/_data/resources/ src/_data/stories.json src/_data/spotlights.json src/_data/gigs.json src/blog/ scrapers/logs/
+          git add src/_data/resources/ src/_data/stories.json src/_data/spotlights.json src/_data/gigs.json src/blog/ scrapers/logs/ scrapers/output/
           git diff --staged --quiet || git commit -m "Weekly scrape: update resources, stories, spotlights, blog, and gigs"
           git push
 
