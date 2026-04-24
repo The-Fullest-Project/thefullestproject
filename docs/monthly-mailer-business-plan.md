@@ -243,21 +243,60 @@ For the paid monthly mailer tier specifically, you also need payment processing:
 
 ### Auto-Add Resources via Email
 
-**Current state:** Resources are submitted via the [Submit a Resource](/submit-resource/) Formspree form or added manually to JSON files.
+**Current state:** Resources are submitted via the [Submit a Resource](/submit-resource/) Formspree form or added manually to JSON files. Distribution emails from other organizations contain valuable resources and events but must be manually reviewed and entered.
 
-**Proposed improvement:** Allow resources to be submitted by emailing info@thefullestproject.org with a structured format, then auto-ingested.
+**Solution:** Set up a dedicated email address on thefullestproject.org. Forward or send any newsletter, resource list, or event announcement to that address. A Cloudflare Email Worker receives the email, uses Claude AI to extract resources and events, and commits them to a pending review queue on the site.
 
-**Option A: Formspree → Cloudflare Worker (Recommended)**
-- Formspree already forwards submissions to email
-- Add a Cloudflare Worker that receives a webhook from Formspree
-- Worker parses the submission and creates a GitHub commit (same pattern as gig-publisher)
-- Resources go into a `pending_resources.json` file for manual review before merging into the live site
+#### Step 1: Nicole creates a new email address in GoDaddy
 
-**Option B: Email parsing via Zapier/Make**
-- Set up a Zapier workflow: email to info@ → parse fields → append to Google Sheet → manual approval → GitHub commit
-- Lower technical lift but adds a paid dependency
+Create a new email address on thefullestproject.org in GoDaddy Admin. This can be whatever name feels right. Some suggestions:
 
-**Recommended next step:** Extend the existing gig-publisher Worker pattern to handle resource submissions. The form already exists at `/submit-resource/` — just need the auto-commit pipeline behind it.
+| Option | Vibe |
+|--------|------|
+| `resources@thefullestproject.org` | Clear and professional |
+| `add@thefullestproject.org` | Short and action-oriented |
+| `submit@thefullestproject.org` | Matches the existing submit-resource page |
+| `inbox@thefullestproject.org` | Generic catch-all feel |
+| `discover@thefullestproject.org` | On-brand — aligns with resource discovery mission |
+
+Pick whichever feels right — it can be anything. This address is for internal use (forwarding distribution emails for processing), not public-facing.
+
+#### Step 2: Set up Cloudflare Email Routing
+
+Once the email address is created:
+
+1. In Cloudflare dashboard → thefullestproject.org → **Email Routing** → Enable
+2. Add a **custom address rule**: route the new address (e.g., `resources@`) to a Cloudflare Email Worker
+3. This only affects the one address — all other email (`info@`, `hello@`, etc.) stays on GoDaddy untouched
+4. Cloudflare will ask you to add an MX record for email routing. This is safe to add alongside GoDaddy's MX records since Cloudflare Email Routing uses destination-based routing rules
+
+**Note:** If adding the Cloudflare MX record would conflict with GoDaddy email, an alternative is to create the address on a subdomain (e.g., `ingest@mail.thefullestproject.org`) where Cloudflare has full MX control without affecting the main domain's email.
+
+#### Step 3: Build the Email Worker (dev team)
+
+A new Cloudflare Email Worker (`resource-ingest`) that:
+
+1. Receives the raw email from Cloudflare Email Routing
+2. Extracts the text/HTML body
+3. Calls Claude API (Haiku) with a prompt: "Extract any disability resources, organizations, or events from this email. Return structured JSON with name, website, description, and category."
+4. Commits extracted resources to `src/_data/pending_resources.json` on GitHub
+5. Sends a summary notification to `info@thefullestproject.org`: "3 resources extracted from [email subject] — review at /admin/"
+
+#### Step 4: Review and approve
+
+- Extracted resources land in `pending_resources.json` — not live on the site yet
+- Team reviews in Decap CMS or on GitHub
+- Approved resources are moved to the appropriate JSON file (`national.json`, `nova.json`, etc.)
+- Rejected resources are deleted from pending
+
+#### How to use it (once set up)
+
+1. Receive a newsletter or resource email from another organization
+2. Forward it to `resources@thefullestproject.org` (or whatever address was chosen)
+3. Within minutes, get a notification at `info@` with what was extracted
+4. Review and approve in the CMS
+
+No manual data entry. No copy-paste. Just forward and review.
 
 ### Scrape Digest Email (Implemented)
 
