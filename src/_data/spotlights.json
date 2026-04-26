@@ -1,6 +1,6 @@
 [
   {
-    "name": "Adaptive sports program visits Southern Arizona P.E. classes",
+    "name": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow",
     "description": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow - AZ Luminaria",
     "category": "Adventures",
     "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5",
@@ -15,6 +15,60 @@
       "auto-discovered"
     ],
     "featured": true,
+    "date": "2026-04-26"
+  },
+  {
+    "name": "Preview of the report \"Disability Inclusion in Health Systems and Emergency Mana",
+    "description": "Preview of the report \"Disability Inclusion in Health Systems and Emergency Management in Latin America and the Caribbean\" - Pan American Health Organization (PAHO)",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2JDWjRYNG9oRlVfdjVfU0VGMG1VRmFoWjhfTllJeUJMR2RnUDBTZW9kaDRKOC0zOWh2UUFTOUdhNGtpenNlU2F6VlZSZ0tYcWRuMi1mRE16LW9XVVJMckJOMnFnRjBPdVdRRXptc2ZYek5UOHU3QzZfbzdoYkdiMjFKN0pGZ2d2LWR3eFh4cDJhME9EOVY2ak9tSUJYTjdaSWYydXlzYU1WOHdvNlM4MTNYZy1DSmo3WWthRQ?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-26"
+  },
+  {
+    "name": "Veterans Affairs Offers $16M in Grants for Adaptive Sports Programs",
+    "description": "Veterans Affairs Offers $16M in Grants for Adaptive Sports Programs - The Presidential Prayer Team",
+    "category": "Sports",
+    "website": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQWtWem9HaTNLZVN6SWZsaFFCS0FMUlVnMHJLUGlzeFRBSDM1QW5TV01jd0E5NUFULXlBNkRYWE5iMzhZV29WN0J1YUNXaGo2dVBYSkRUSDg1dHl5MlgxTkR3T0ZjNzJSZEZWMDJOMDN0aWQ5aVU3bmEtRklrU1ZSQWoxQnd2SzhTZHMwQm1YTXBqSEVDRXNOdEZ4OXl0MFEtbjFwUWg4SVZmTXBPVTJ1Y2xDWVd4S044?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/sports.svg",
+    "location": "National",
+    "tags": [
+      "sports",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-04-26"
+  },
+  {
+    "name": "Adaptive sports program visits Southern Arizona P.E. classes",
+    "description": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow - AZ Luminaria",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": false,
     "date": "2026-04-19"
   },
   {

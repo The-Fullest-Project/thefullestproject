@@ -1,0 +1,15 @@
+Weekly Scrape Digest — 2026-04-26
+==================================================
+
+Scraper: spotlight_scraper
+  Entries processed: 3
+  - [added] Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow
+  - [added] Preview of the report "Disability Inclusion in Health Systems and Emergency Mana
+  - [added] Veterans Affairs Offers $16M in Grants for Adaptive Sports Programs
+
+Scraper: blog_content
+  Entries processed: 1
+  - [created_post] What M-PESA did for fintech, Bernard Chiira wants for assistive tech - TechCabal
+
+—
+The Fullest Project | thefullestproject.org

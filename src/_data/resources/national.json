@@ -95,15 +95,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "financial",
-      "savings",
       "tax-advantaged",
-      "disability",
       "financial-planning",
-      "able-act"
+      "able-act",
+      "financial",
+      "disability",
+      "savings"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "AbleData",
@@ -123,7 +123,7 @@
       "assistive-tech"
     ],
     "source": "https://abledata.acl.gov/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "AbleGamers Charity",
@@ -414,7 +414,7 @@
       "camps"
     ],
     "source": "https://www.acacamps.org/campers-families/find-a-camp",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "AngelSense GPS Tracker",
@@ -539,7 +539,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "AssistiveWare - Proloquo2Go",
@@ -880,7 +880,7 @@
   {
     "name": "Caregiver Action Network",
     "category": [
-      "caregiver-support"
+      "mental-health"
     ],
     "location": "National",
     "area": "",
@@ -892,15 +892,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "caregiver",
       "help-desk",
-      "grief",
+      "support",
+      "caregiver",
       "mental-health",
       "anticipatory-grief",
-      "support"
+      "grief"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Carewell",
@@ -1120,7 +1120,7 @@
       "assistive-tech"
     ],
     "source": "https://www.closingthegap.com/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Coalition for Responsible Home Education (CRHE)",
@@ -1199,27 +1199,25 @@
   {
     "name": "Courageous Parents Network",
     "category": [
-      "grief",
-      "community"
+      "caregiver-support"
     ],
     "location": "National",
     "area": "",
-    "description": "Nonprofit equipping and empowering families caring for a child with a serious medical condition. Videos, podcasts, guides addressing anticipatory grief, decision-making around serious illness, and end-of-life planning. Monthly Zoom support meetings.",
+    "description": "Peer support and guidance for parents of children with serious illness. Provides video stories, guides, and community for families navigating complex medical journeys.",
     "phone": "",
-    "website": "https://courageousparentsnetwork.org/",
+    "website": "https://courageousparentsnetwork.org",
     "address": "",
     "ageRange": "Adults",
     "disabilityTypes": [],
     "cost": "Free",
     "tags": [
-      "grief",
-      "anticipatory-grief",
+      "caregiver",
+      "peer-support",
       "serious-illness",
-      "end-of-life",
-      "support"
+      "families"
     ],
-    "source": "https://courageousparentsnetwork.org/",
-    "lastScraped": "2026-03-08"
+    "source": "https://courageousparentsnetwork.org",
+    "lastScraped": "2026-04-21"
   },
   {
     "name": "Dental Lifeline Network",
@@ -1368,7 +1366,7 @@
       "early-intervention"
     ],
     "source": "https://ectacenter.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Easterseals",
@@ -1652,7 +1650,7 @@
       "insurance"
     ],
     "source": "https://familyvoices.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Feeding Matters",
@@ -1761,7 +1759,7 @@
       "medical"
     ],
     "source": "https://palfreyassociates.com/disability-friendly-doctor/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Firefly by Leckey",
@@ -2097,7 +2095,7 @@
       "housing"
     ],
     "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "HumanWare - Braille & Low Vision",
@@ -2751,7 +2749,7 @@
       "sports"
     ],
     "source": "https://www.miracleleague.com/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "MobilityWorks",
@@ -2947,7 +2945,7 @@
       "financial"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "National Down Syndrome Congress",
@@ -3301,7 +3299,7 @@
       "transition"
     ],
     "source": "https://www.pacer.org/transition/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Parent Center Hub (CPIR)",
@@ -3542,7 +3540,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Rebuilding Together",
@@ -3562,7 +3560,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Rifton Equipment",
@@ -3737,15 +3735,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "peer",
+      "advocacy",
+      "support",
       "sibling-support",
       "sibling",
-      "advocacy",
-      "network",
-      "support"
+      "peer",
+      "network"
     ],
     "source": "https://www.siblingleadership.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -3765,7 +3763,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Smartbox - Grid AAC",
@@ -3812,7 +3810,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Sonic Alert",
@@ -3936,7 +3934,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Special Olympics",
@@ -3956,7 +3954,7 @@
       "sports"
     ],
     "source": "https://www.specialolympics.org/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "SPED Homeschool",
@@ -4487,7 +4485,7 @@
       "transition"
     ],
     "source": "https://thinkcollege.net/",
-    "lastScraped": "2026-04-19"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "This Beach Is Loud!",
@@ -7737,13 +7735,13 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "wheelchair-van",
-      "accessible-vehicle",
+      "mobility",
       "dealer",
-      "mobility"
+      "accessible-vehicle",
+      "wheelchair-van"
     ],
     "source": "https://www.mobilityworks.com/locations/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "MobilityWorks - Sterling",
@@ -7760,13 +7758,13 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "wheelchair-van",
-      "accessible-vehicle",
+      "mobility",
       "dealer",
-      "mobility"
+      "accessible-vehicle",
+      "wheelchair-van"
     ],
     "source": "https://www.mobilityworks.com/locations/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Learn more",
@@ -7784,11 +7782,11 @@
     "cost": "",
     "tags": [
       "abilities-expo",
-      "exhibitor",
-      "disability-products"
+      "disability-products",
+      "exhibitor"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Abilities International Accessibility Conference",
@@ -7806,11 +7804,11 @@
     "cost": "",
     "tags": [
       "abilities-expo",
-      "exhibitor",
-      "disability-products"
+      "disability-products",
+      "exhibitor"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Exhibitor List &amp; Floor Plan",
@@ -7828,11 +7826,11 @@
     "cost": "",
     "tags": [
       "abilities-expo",
-      "exhibitor",
-      "disability-products"
+      "disability-products",
+      "exhibitor"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Exhibitor Portal",
@@ -7850,11 +7848,11 @@
     "cost": "",
     "tags": [
       "abilities-expo",
-      "exhibitor",
-      "disability-products"
+      "disability-products",
+      "exhibitor"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Exhibitor Registration",
@@ -7872,11 +7870,11 @@
     "cost": "",
     "tags": [
       "abilities-expo",
-      "exhibitor",
-      "disability-products"
+      "disability-products",
+      "exhibitor"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Vatu",
@@ -7894,11 +7892,11 @@
     "cost": "",
     "tags": [
       "abilities-expo",
-      "exhibitor",
-      "disability-products"
+      "disability-products",
+      "exhibitor"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "https://nymacgenetics.org/contact/",
@@ -7920,11 +7918,13 @@
       "caregiver-resource"
     ],
     "source": "https://www.medicallycomplexcaregiver.com/resourcebycondition",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-26"
   },
   {
     "name": "Bowhead Corp",
-    "category": ["equipment"],
+    "category": [
+      "equipment"
+    ],
     "location": "National",
     "area": "",
     "description": "Adaptive equipment and assistive technology solutions for individuals with disabilities.",
@@ -7934,13 +7934,19 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Varies",
-    "tags": ["adaptive-equipment", "assistive-technology"],
+    "tags": [
+      "adaptive-equipment",
+      "assistive-technology"
+    ],
     "source": "https://www.bowheadcorp.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Cerebral Palsy Research Network (CPRN)",
-    "category": ["medical", "nonprofit"],
+    "category": [
+      "medical",
+      "nonprofit"
+    ],
     "location": "National",
     "area": "",
     "description": "National network improving care for people with cerebral palsy through research, data collection, and evidence-based practices. Connects families with clinical resources.",
@@ -7948,15 +7954,24 @@
     "website": "https://cprn.org",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["cerebral-palsy"],
+    "disabilityTypes": [
+      "cerebral-palsy"
+    ],
     "cost": "Free",
-    "tags": ["cerebral-palsy", "research", "clinical-network"],
+    "tags": [
+      "cerebral-palsy",
+      "research",
+      "clinical-network"
+    ],
     "source": "https://cprn.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "KultureCity",
-    "category": ["sensory", "community"],
+    "category": [
+      "sensory",
+      "community"
+    ],
     "location": "National",
     "area": "",
     "description": "Leading nonprofit promoting sensory accessibility and inclusion. Certifies venues as Sensory Inclusive through staff training, sensory bags, and quiet spaces. Over 1,000+ certified locations nationwide.",
@@ -7964,15 +7979,26 @@
     "website": "https://www.kulturecity.org",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["autism", "sensory"],
+    "disabilityTypes": [
+      "autism",
+      "sensory"
+    ],
     "cost": "Free",
-    "tags": ["sensory-inclusive", "certification", "venues", "autism"],
+    "tags": [
+      "sensory-inclusive",
+      "certification",
+      "venues",
+      "autism"
+    ],
     "source": "https://www.kulturecity.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Project DSNP",
-    "category": ["insurance", "financial"],
+    "category": [
+      "insurance",
+      "financial"
+    ],
     "location": "National",
     "area": "",
     "description": "Resource for Dual Eligible Special Needs Plans (D-SNP) — Medicare Advantage plans for individuals with both Medicare and Medicaid. Helps navigate insurance options for people with disabilities.",
@@ -7982,13 +8008,21 @@
     "ageRange": "Adults",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["insurance", "medicare", "medicaid", "dual-eligible"],
+    "tags": [
+      "insurance",
+      "medicare",
+      "medicaid",
+      "dual-eligible"
+    ],
     "source": "https://projectdsnp.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "SleepSafe Beds",
-    "category": ["equipment", "safety"],
+    "category": [
+      "equipment",
+      "safety"
+    ],
     "location": "National",
     "area": "",
     "description": "Safety beds for children and adults with special needs including seizure disorders, autism, and mobility challenges. Height-adjustable with padded safety rails.",
@@ -7996,15 +8030,27 @@
     "website": "https://sleepsafebed.com",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["seizure", "autism", "mobility"],
+    "disabilityTypes": [
+      "seizure",
+      "autism",
+      "mobility"
+    ],
     "cost": "Varies",
-    "tags": ["safety-bed", "special-needs", "seizure", "sleep"],
+    "tags": [
+      "safety-bed",
+      "special-needs",
+      "seizure",
+      "sleep"
+    ],
     "source": "https://sleepsafebed.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Safe Place Bedding",
-    "category": ["equipment", "safety"],
+    "category": [
+      "equipment",
+      "safety"
+    ],
     "location": "National",
     "area": "",
     "description": "Enclosed safety beds and sleep systems for individuals with special needs. Provides secure sleep environments for those with seizure disorders or behavioral needs.",
@@ -8012,15 +8058,26 @@
     "website": "https://safeplacebedding.com",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["seizure", "behavioral"],
+    "disabilityTypes": [
+      "seizure",
+      "behavioral"
+    ],
     "cost": "Varies",
-    "tags": ["safety-bed", "enclosed-bed", "special-needs", "sleep"],
+    "tags": [
+      "safety-bed",
+      "enclosed-bed",
+      "special-needs",
+      "sleep"
+    ],
     "source": "https://safeplacebedding.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "The Safety Sleeper",
-    "category": ["equipment", "safety"],
+    "category": [
+      "equipment",
+      "safety"
+    ],
     "location": "National",
     "area": "",
     "description": "Enclosed safety sleep system designed for individuals with special needs. Portable, breathable, and designed for home and travel use.",
@@ -8028,15 +8085,27 @@
     "website": "https://safetysleeper.com",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["seizure", "autism", "mobility"],
+    "disabilityTypes": [
+      "seizure",
+      "autism",
+      "mobility"
+    ],
     "cost": "Varies",
-    "tags": ["safety-bed", "portable", "travel", "sleep"],
+    "tags": [
+      "safety-bed",
+      "portable",
+      "travel",
+      "sleep"
+    ],
     "source": "https://safetysleeper.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Catalyst Sports",
-    "category": ["sports", "recreation"],
+    "category": [
+      "sports",
+      "recreation"
+    ],
     "location": "National",
     "area": "",
     "description": "Adaptive sports organization offering cycling, climbing, paddling, skiing, and more for individuals with physical disabilities. Programs in Asheville, Atlanta, and other locations.",
@@ -8044,15 +8113,25 @@
     "website": "https://www.catalystsports.org",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["mobility"],
+    "disabilityTypes": [
+      "mobility"
+    ],
     "cost": "Varies",
-    "tags": ["adaptive-sports", "cycling", "climbing", "skiing", "paddling"],
+    "tags": [
+      "adaptive-sports",
+      "cycling",
+      "climbing",
+      "skiing",
+      "paddling"
+    ],
     "source": "https://www.catalystsports.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "National Park Service - Accessibility",
-    "category": ["recreation"],
+    "category": [
+      "recreation"
+    ],
     "location": "National",
     "area": "",
     "description": "National Park Service accessibility information for parks nationwide. Find accessible trails, facilities, programs, and accommodations at national parks including Great Smoky Mountains.",
@@ -8060,15 +8139,24 @@
     "website": "https://www.nps.gov/grsm/planyourvisit/accessibility.htm",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["mobility"],
+    "disabilityTypes": [
+      "mobility"
+    ],
     "cost": "Free - Varies",
-    "tags": ["national-parks", "accessible-trails", "outdoors", "recreation"],
+    "tags": [
+      "national-parks",
+      "accessible-trails",
+      "outdoors",
+      "recreation"
+    ],
     "source": "https://www.nps.gov/grsm/planyourvisit/accessibility.htm",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "The Peanut Butter Falcon (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Adventure film starring Zack Gottsagen, an actor with Down syndrome, on a journey to fulfill his dream of attending a wrestling school. A celebration of friendship and determination.",
@@ -8076,15 +8164,24 @@
     "website": "https://www.youtube.com/results?search_query=peanut+butter+falcon+trailer",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["down-syndrome"],
+    "disabilityTypes": [
+      "down-syndrome"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "down-syndrome", "representation", "adventure"],
+    "tags": [
+      "movie",
+      "down-syndrome",
+      "representation",
+      "adventure"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "CODA (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Academy Award-winning film about a hearing child of deaf adults navigating her passion for music while supporting her family's fishing business.",
@@ -8092,15 +8189,24 @@
     "website": "https://www.youtube.com/results?search_query=coda+movie+trailer",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["deaf"],
+    "disabilityTypes": [
+      "deaf"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "deaf", "representation", "academy-award"],
+    "tags": [
+      "movie",
+      "deaf",
+      "representation",
+      "academy-award"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Wonder (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Film based on the bestselling novel about Auggie Pullman, a boy with facial differences, navigating fifth grade and inspiring those around him with kindness.",
@@ -8108,15 +8214,24 @@
     "website": "https://www.youtube.com/results?search_query=wonder+movie+trailer",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["craniofacial"],
+    "disabilityTypes": [
+      "craniofacial"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "craniofacial", "inclusion", "kindness"],
+    "tags": [
+      "movie",
+      "craniofacial",
+      "inclusion",
+      "kindness"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "The Theory of Everything (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Biographical film about Stephen Hawking's life, his groundbreaking work in physics, and living with ALS (motor neurone disease).",
@@ -8124,15 +8239,25 @@
     "website": "https://www.youtube.com/results?search_query=theory+of+everything+trailer",
     "address": "",
     "ageRange": "Adults",
-    "disabilityTypes": ["als", "mobility"],
+    "disabilityTypes": [
+      "als",
+      "mobility"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "als", "biography", "representation"],
+    "tags": [
+      "movie",
+      "als",
+      "biography",
+      "representation"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Out of My Mind (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Film based on Sharon Draper's novel about Melody, a brilliant girl with cerebral palsy who cannot speak or walk, and her journey to be heard.",
@@ -8140,15 +8265,24 @@
     "website": "https://www.youtube.com/results?search_query=out+of+my+mind+movie+trailer",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["cerebral-palsy"],
+    "disabilityTypes": [
+      "cerebral-palsy"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "cerebral-palsy", "communication", "representation"],
+    "tags": [
+      "movie",
+      "cerebral-palsy",
+      "communication",
+      "representation"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "The Upside (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Comedy-drama about an unlikely friendship between a paralyzed billionaire and his caregiver. Based on a true story of connection across differences.",
@@ -8156,15 +8290,25 @@
     "website": "https://www.youtube.com/results?search_query=the+upside+movie+trailer",
     "address": "",
     "ageRange": "Adults",
-    "disabilityTypes": ["mobility", "quadriplegia"],
+    "disabilityTypes": [
+      "mobility",
+      "quadriplegia"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "quadriplegia", "caregiver", "friendship"],
+    "tags": [
+      "movie",
+      "quadriplegia",
+      "caregiver",
+      "friendship"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Finding Nemo (Film)",
-    "category": ["movies"],
+    "category": [
+      "movies"
+    ],
     "location": "National",
     "area": "",
     "description": "Beloved animated film featuring characters with disabilities including Nemo's lucky fin (limb difference), Dory's short-term memory loss, and themes of overcoming limitations.",
@@ -8172,15 +8316,26 @@
     "website": "https://www.youtube.com/results?search_query=finding+nemo+trailer",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["limb-difference"],
+    "disabilityTypes": [
+      "limb-difference"
+    ],
     "cost": "Streaming/Purchase",
-    "tags": ["movie", "animated", "limb-difference", "family"],
+    "tags": [
+      "movie",
+      "animated",
+      "limb-difference",
+      "family"
+    ],
     "source": "",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "SOAR365",
-    "category": ["nonprofit", "employment", "recreation"],
+    "category": [
+      "nonprofit",
+      "employment",
+      "recreation"
+    ],
     "location": "National",
     "area": "",
     "description": "Nonprofit empowering individuals with disabilities through employment services, day support, creative arts, and community integration programs.",
@@ -8190,13 +8345,21 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Varies",
-    "tags": ["employment", "day-support", "creative-arts", "community"],
+    "tags": [
+      "employment",
+      "day-support",
+      "creative-arts",
+      "community"
+    ],
     "source": "https://soar365.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Sensory Fit Play",
-    "category": ["sensory", "recreation"],
+    "category": [
+      "sensory",
+      "recreation"
+    ],
     "location": "National",
     "area": "",
     "description": "Sensory-friendly play and fitness experiences designed for children with sensory processing differences, autism, and developmental needs.",
@@ -8204,15 +8367,26 @@
     "website": "https://sensoryfitplay.com",
     "address": "",
     "ageRange": "Children",
-    "disabilityTypes": ["autism", "sensory"],
+    "disabilityTypes": [
+      "autism",
+      "sensory"
+    ],
     "cost": "Varies",
-    "tags": ["sensory", "play", "fitness", "children"],
+    "tags": [
+      "sensory",
+      "play",
+      "fitness",
+      "children"
+    ],
     "source": "https://sensoryfitplay.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Librarey - Accessible Reading",
-    "category": ["assistive-tech", "education"],
+    "category": [
+      "assistive-tech",
+      "education"
+    ],
     "location": "National",
     "area": "",
     "description": "Accessible reading platform and resources for individuals with print disabilities, dyslexia, and visual impairments.",
@@ -8220,15 +8394,26 @@
     "website": "https://www.librarey.com/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["vision", "dyslexia"],
+    "disabilityTypes": [
+      "vision",
+      "dyslexia"
+    ],
     "cost": "Varies",
-    "tags": ["reading", "accessible", "dyslexia", "assistive-tech"],
+    "tags": [
+      "reading",
+      "accessible",
+      "dyslexia",
+      "assistive-tech"
+    ],
     "source": "https://www.librarey.com/",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "MyMejo",
-    "category": ["assistive-tech", "community"],
+    "category": [
+      "assistive-tech",
+      "community"
+    ],
     "location": "National",
     "area": "",
     "description": "Platform connecting individuals with disabilities to personalized resources, tools, and community support.",
@@ -8238,29 +8423,19 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Varies",
-    "tags": ["platform", "resources", "community"],
+    "tags": [
+      "platform",
+      "resources",
+      "community"
+    ],
     "source": "https://www.mymejo.com/",
     "lastScraped": "2026-04-21"
   },
   {
-    "name": "Courageous Parents Network",
-    "category": ["caregiver-support"],
-    "location": "National",
-    "area": "",
-    "description": "Peer support and guidance for parents of children with serious illness. Provides video stories, guides, and community for families navigating complex medical journeys.",
-    "phone": "",
-    "website": "https://courageousparentsnetwork.org",
-    "address": "",
-    "ageRange": "Adults",
-    "disabilityTypes": [],
-    "cost": "Free",
-    "tags": ["caregiver", "peer-support", "serious-illness", "families"],
-    "source": "https://courageousparentsnetwork.org",
-    "lastScraped": "2026-04-21"
-  },
-  {
     "name": "Charlie French Fine Art",
-    "category": ["artists"],
+    "category": [
+      "artists"
+    ],
     "location": "National",
     "area": "",
     "description": "Fine artist with a disability creating original artwork. Showcases how art and creativity thrive regardless of physical limitations.",
@@ -8270,13 +8445,21 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Varies",
-    "tags": ["artist", "fine-art", "disability", "representation"],
+    "tags": [
+      "artist",
+      "fine-art",
+      "disability",
+      "representation"
+    ],
     "source": "https://www.charliefrenchfineart.com",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Art Enables",
-    "category": ["artists", "community"],
+    "category": [
+      "artists",
+      "community"
+    ],
     "location": "District of Columbia",
     "area": "washington, dc",
     "description": "Art studio and gallery in Washington, DC empowering artists with disabilities. Provides studio space, professional development, and gallery exhibitions for artists with intellectual and developmental disabilities.",
@@ -8284,15 +8467,26 @@
     "website": "https://art-enables.org",
     "address": "Washington, DC",
     "ageRange": "Adults",
-    "disabilityTypes": ["intellectual-disability", "developmental"],
+    "disabilityTypes": [
+      "intellectual-disability",
+      "developmental"
+    ],
     "cost": "Free",
-    "tags": ["artist", "gallery", "studio", "intellectual-disability"],
+    "tags": [
+      "artist",
+      "gallery",
+      "studio",
+      "intellectual-disability"
+    ],
     "source": "https://art-enables.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Art Stream",
-    "category": ["recreation", "community"],
+    "category": [
+      "recreation",
+      "community"
+    ],
     "location": "National",
     "area": "",
     "description": "Visual and performing arts programs for teens and adults with intellectual and developmental disabilities. Creates inclusive artistic experiences.",
@@ -8300,15 +8494,26 @@
     "website": "https://art-stream.org",
     "address": "",
     "ageRange": "Teens and Adults",
-    "disabilityTypes": ["intellectual-disability", "developmental"],
+    "disabilityTypes": [
+      "intellectual-disability",
+      "developmental"
+    ],
     "cost": "Varies",
-    "tags": ["arts", "performing-arts", "visual-arts", "inclusion"],
+    "tags": [
+      "arts",
+      "performing-arts",
+      "visual-arts",
+      "inclusion"
+    ],
     "source": "https://art-stream.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Virginia Navigator",
-    "category": ["recreation", "community"],
+    "category": [
+      "recreation",
+      "community"
+    ],
     "location": "Virginia",
     "area": "",
     "description": "Virginia-based resource navigation platform connecting individuals and families with local recreation, community, and support services.",
@@ -8318,13 +8523,21 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["navigation", "virginia", "recreation", "community"],
+    "tags": [
+      "navigation",
+      "virginia",
+      "recreation",
+      "community"
+    ],
     "source": "https://virginiannavigator.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "ArtXV",
-    "category": ["artists", "community"],
+    "category": [
+      "artists",
+      "community"
+    ],
     "location": "National",
     "area": "",
     "description": "Arts organization promoting creative expression and accessibility in the arts for individuals with disabilities.",
@@ -8334,13 +8547,20 @@
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Varies",
-    "tags": ["arts", "accessibility", "creative-expression"],
+    "tags": [
+      "arts",
+      "accessibility",
+      "creative-expression"
+    ],
     "source": "https://artxv.org",
     "lastScraped": "2026-04-21"
   },
   {
     "name": "Children's National - Kids in Action",
-    "category": ["sports", "recreation"],
+    "category": [
+      "sports",
+      "recreation"
+    ],
     "location": "District of Columbia",
     "area": "washington, dc",
     "description": "Community recreation therapy program at Children's National Hospital offering adaptive sports and recreation activities for children with disabilities and chronic conditions.",
@@ -8350,8 +8570,33 @@
     "ageRange": "Children",
     "disabilityTypes": [],
     "cost": "Varies",
-    "tags": ["adaptive-sports", "recreation", "children", "hospital"],
+    "tags": [
+      "adaptive-sports",
+      "recreation",
+      "children",
+      "hospital"
+    ],
     "source": "https://www.childrensnational.org/",
     "lastScraped": "2026-04-21"
+  },
+  {
+    "name": "NAMI - National Alliance on Mental Illness",
+    "category": [
+      "mental-health"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Mental health support, education, and advocacy including support groups for caregivers.",
+    "phone": "",
+    "website": "https://www.nami.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "mental-health"
+    ],
+    "source": "https://www.nami.org/",
+    "lastScraped": "2026-04-26"
   }
 ]

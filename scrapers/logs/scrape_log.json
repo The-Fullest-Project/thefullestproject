@@ -355,5 +355,43 @@
         "slug": "make-learning-accessible-to-all-in-higher-education-times-hi"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-04-26T06:30:09.149882",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFctcmtXSVBDb1hLOV81UUdVMjlOTEhBLUlLUkVDdlY5M3dTRVkybkxuWF9Fb0c1elVXRFFYTy13ampjMjhIUmVBYmoyUXdVQTFxTHM5dEJyMUlmNU1OUGZNMHFrcFlnSVZtNjJxdE9MZGdRcjlpc3gxRVBlTWZLWHpoWEtlNzhWUm9hcnE2U2NQcFItWUJhR3ZRZVlxUFJvRlhWTUtTSzVwQWpMUVAxcHpNdE4?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Preview of the report \"Disability Inclusion in Health Systems and Emergency Mana",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2JDWjRYNG9oRlVfdjVfU0VGMG1VRmFoWjhfTllJeUJMR2RnUDBTZW9kaDRKOC0zOWh2UUFTOUdhNGtpenNlU2F6VlZSZ0tYcWRuMi1mRE16LW9XVVJMckJOMnFnRjBPdVdRRXptc2ZYek5UOHU3QzZfbzdoYkdiMjFKN0pGZ2d2LWR3eFh4cDJhME9EOVY2ak9tSUJYTjdaSWYydXlzYU1WOHdvNlM4MTNYZy1DSmo3WWthRQ?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Veterans Affairs Offers $16M in Grants for Adaptive Sports Programs",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQWtWem9HaTNLZVN6SWZsaFFCS0FMUlVnMHJLUGlzeFRBSDM1QW5TV01jd0E5NUFULXlBNkRYWE5iMzhZV29WN0J1YUNXaGo2dVBYSkRUSDg1dHl5MlgxTkR3T0ZjNzJSZEZWMDJOMDN0aWQ5aVU3bmEtRklrU1ZSQWoxQnd2SzhTZHMwQm1YTXBqSEVDRXNOdEZ4OXl0MFEtbjFwUWg4SVZmTXBPVTJ1Y2xDWVd4S044?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-04-26T06:30:11.152050",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "What M-PESA did for fintech, Bernard Chiira wants for assistive tech - TechCabal",
+        "source": "TechCabal",
+        "slug": "what-m-pesa-did-for-fintech-bernard-chiira-wants-for-assisti"
+      }
+    ]
   }
 ]
