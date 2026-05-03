@@ -1,5 +1,41 @@
 [
   {
+    "name": "Officials open new accessible kayak launch, dog beach at Idaho State Park near B",
+    "description": "Officials open new accessible kayak launch, dog beach at Idaho State Park near Boise - Idaho Capital Sun",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTVZZZkQ0YUtOMHVEeUNob3RhU1d0V3NxSmVmVUdwcWtITEdub2FvaTBNZkp6NmJDVVJtTUNoSHA2Y0Fyc2J2WUs3bTRySlRnYkNjTVUySEdXaE96RHhFUUVmYzZHX2Uta2RoNHZqR1Z6OEdlem1yNVd1bDhzSGR3NVJkc3hYeU0wRGdDTjNvdldPbTZuZExkY2pBZzFYa2F1d3FoLVBxZmxveEh6WWdfdmJJMkY5cUZYbVhzR1pnQnc?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-05-03"
+  },
+  {
+    "name": "Accessible by Design",
+    "description": "Accessible by Design: Disability and the Inclusive Campus - The Chronicle of Higher Education",
+    "category": "Education",
+    "website": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdHdJZDVaWHpBaHItOEJrZWF6QVV5STAtOWtNc285WjV1djVmQmZZb05vTjNsSHN5UTktNzFvbXV0V2Z1SDMzWndCR2pvQjhHTnNmcWtLTjM3TFN5aGM5eEJrWHBGWGpVVXhUZlpEREZTSzJSWFpxN3BZMmNLZjlXWl91bkFWWGo0UnlyV0loR1pCSVFZZDZKb3VVcExXdw?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/education.svg",
+    "location": "National",
+    "tags": [
+      "education",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-05-03"
+  },
+  {
     "name": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow",
     "description": "Adaptive sports program visits Southern Arizona P.E. classes, wheelchairs in tow - AZ Luminaria",
     "category": "Adventures",
@@ -14,7 +50,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-04-26"
   },
   {
