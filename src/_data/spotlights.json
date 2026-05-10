@@ -1,5 +1,23 @@
 [
   {
+    "name": "Disability-inclusive infrastructure foundational to community life for millions",
+    "description": "Disability-inclusive infrastructure foundational to community life for millions with disabilities - ohchr",
+    "category": "Community",
+    "website": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbU5GcmZqbExCSXM3QmxzZlFzUVhMQjVzV2IxT1JyYTVMMDM2NjJFVnZKMUViaUM4d1cydHdTd0tLcENES2ZITHNxTnc0NUZTaWRYZzhsUTRtVjBNSkVGWUR5clh3NmFhUzZCV3I2dG1KRE9jUnEwZ2tfMjc5Ti1YTDN5OFZBRU9hbldDdzJuX1dIQ24tREY5cGJqSGROQXEtMWtqZUw2QTNHa3pZV19yd0dkVQ?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/community.svg",
+    "location": "National",
+    "tags": [
+      "community",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-05-10"
+  },
+  {
     "name": "Officials open new accessible kayak launch, dog beach at Idaho State Park near B",
     "description": "Officials open new accessible kayak launch, dog beach at Idaho State Park near Boise - Idaho Capital Sun",
     "category": "Adventures",
@@ -14,7 +32,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-05-03"
   },
   {

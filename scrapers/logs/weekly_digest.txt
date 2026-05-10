@@ -1,14 +1,15 @@
-Weekly Scrape Digest — 2026-05-03
+Weekly Scrape Digest — 2026-05-10
 ==================================================
 
 Scraper: spotlight_scraper
-  Entries processed: 2
-  - [added] Officials open new accessible kayak launch, dog beach at Idaho State Park near B
-  - [added] Accessible by Design
+  Entries processed: 1
+  - [added] Disability-inclusive infrastructure foundational to community life for millions
 
 Scraper: blog_content
-  Entries processed: 1
-  - [created_post] For disabled employees, financial security depends on benefits and guidance - Employee Benefit News
+  Entries processed: 3
+  - [created_post] KARE Supports Kinship Caregivers and Connects Them to Resources - Fairfax County (.gov)
+  - [created_post] Abilities Expo in Edison brings resources, technology and advocacy to the disability community - News12 | Long Island
+  - [created_post] National Hotline For IDD Caregivers Proposed - Disability Scoop
 
 —
 The Fullest Project | thefullestproject.org

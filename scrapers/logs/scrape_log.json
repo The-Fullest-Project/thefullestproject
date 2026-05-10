@@ -425,5 +425,43 @@
         "slug": "for-disabled-employees-financial-security-depends-on-benefit"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-05-10T07:49:23.401954",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Disability-inclusive infrastructure foundational to community life for millions",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbU5GcmZqbExCSXM3QmxzZlFzUVhMQjVzV2IxT1JyYTVMMDM2NjJFVnZKMUViaUM4d1cydHdTd0tLcENES2ZITHNxTnc0NUZTaWRYZzhsUTRtVjBNSkVGWUR5clh3NmFhUzZCV3I2dG1KRE9jUnEwZ2tfMjc5Ti1YTDN5OFZBRU9hbldDdzJuX1dIQ24tREY5cGJqSGROQXEtMWtqZUw2QTNHa3pZV19yd0dkVQ?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-05-10T07:49:25.228635",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "KARE Supports Kinship Caregivers and Connects Them to Resources - Fairfax County (.gov)",
+        "source": "Fairfax County (.gov)",
+        "slug": "kare-supports-kinship-caregivers-and-connects-them-to-resour"
+      },
+      {
+        "action": "created_post",
+        "title": "Abilities Expo in Edison brings resources, technology and advocacy to the disability community - News12 | Long Island",
+        "source": "News12 | Long Island",
+        "slug": "abilities-expo-in-edison-brings-resources-technology-and-adv"
+      },
+      {
+        "action": "created_post",
+        "title": "National Hotline For IDD Caregivers Proposed - Disability Scoop",
+        "source": "Disability Scoop",
+        "slug": "national-hotline-for-idd-caregivers-proposed-disability-scoo"
+      }
+    ]
   }
 ]
