@@ -1,5 +1,41 @@
 [
   {
+    "name": "Army Veteran finds new purpose through VA Adaptive Sports",
+    "description": "Army Veteran finds new purpose through VA Adaptive Sports - VA News (.gov)",
+    "category": "Adventures",
+    "website": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YZXc3MXgzNlRmcThFaWttdFdEQ2luYmhVcjlRYXhjUWxfR1ZsaVpLUVA0b2FtOWlVbmc0NkUtVVhrS1RzbHlIRVpwUFNkTTU3UEVtS2Y4SlFIa0FrV3JyWlIyb3lmaHNfbF9LRUZ2ekFtY2dvZmhTblpYOA?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/adventures.svg",
+    "location": "National",
+    "tags": [
+      "adventures",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-05-17"
+  },
+  {
+    "name": "Wired for Equity",
+    "description": "Wired for Equity: Bridging the Disability Gap in Classrooms - New America",
+    "category": "Education",
+    "website": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNW9JNGx6VmRFZVNyMVhJLVNmVEdONXpVVE1fb1ZzU1dWV01hN0dqYzJrOXUydUxIdVpHaGlPQmpsUGpZR0NlckljeWFUTlpxUzktdDU3dzJhX0EwSVBTbExqYVNZUjlkcTZpTTd0NEo3OWNnQkxEaHM1dDBRMG5vdklTZHV6bzVDREcyTFNULTRfMDlVcTYtSw?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/education.svg",
+    "location": "National",
+    "tags": [
+      "education",
+      "auto-discovered"
+    ],
+    "featured": false,
+    "date": "2026-05-17"
+  },
+  {
     "name": "Disability-inclusive infrastructure foundational to community life for millions",
     "description": "Disability-inclusive infrastructure foundational to community life for millions with disabilities - ohchr",
     "category": "Community",
@@ -14,7 +50,7 @@
       "community",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-05-10"
   },
   {

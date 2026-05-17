@@ -463,5 +463,49 @@
         "slug": "national-hotline-for-idd-caregivers-proposed-disability-scoo"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-05-17T08:34:22.513027",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Army Veteran finds new purpose through VA Adaptive Sports",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YZXc3MXgzNlRmcThFaWttdFdEQ2luYmhVcjlRYXhjUWxfR1ZsaVpLUVA0b2FtOWlVbmc0NkUtVVhrS1RzbHlIRVpwUFNkTTU3UEVtS2Y4SlFIa0FrV3JyWlIyb3lmaHNfbF9LRUZ2ekFtY2dvZmhTblpYOA?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Wired for Equity",
+        "category": "Education",
+        "website": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNW9JNGx6VmRFZVNyMVhJLVNmVEdONXpVVE1fb1ZzU1dWV01hN0dqYzJrOXUydUxIdVpHaGlPQmpsUGpZR0NlckljeWFUTlpxUzktdDU3dzJhX0EwSVBTbExqYVNZUjlkcTZpTTd0NEo3OWNnQkxEaHM1dDBRMG5vdklTZHV6bzVDREcyTFNULTRfMDlVcTYtSw?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-05-17T08:34:24.580555",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "Together We Can: Building Relief and Inclusion for Families - Il Mattino",
+        "source": "Il Mattino",
+        "slug": "together-we-can-building-relief-and-inclusion-for-families-i"
+      },
+      {
+        "action": "created_post",
+        "title": "Applause Report: 78% of Organizations Leverage AI for Accessibility Testing, but Apps Still Stumble With Assistive Tech - Business Wire",
+        "source": "Business Wire",
+        "slug": "applause-report-78-of-organizations-leverage-ai-for-accessib"
+      },
+      {
+        "action": "created_post",
+        "title": "Wealthy Students More Likely to Get Disability Accommodations, Study Finds - The 74",
+        "source": "The 74",
+        "slug": "wealthy-students-more-likely-to-get-disability-accommodation"
+      }
+    ]
   }
 ]

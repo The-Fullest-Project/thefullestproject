@@ -1,15 +1,16 @@
-Weekly Scrape Digest — 2026-05-10
+Weekly Scrape Digest — 2026-05-17
 ==================================================
 
 Scraper: spotlight_scraper
-  Entries processed: 1
-  - [added] Disability-inclusive infrastructure foundational to community life for millions
+  Entries processed: 2
+  - [added] Army Veteran finds new purpose through VA Adaptive Sports
+  - [added] Wired for Equity
 
 Scraper: blog_content
   Entries processed: 3
-  - [created_post] KARE Supports Kinship Caregivers and Connects Them to Resources - Fairfax County (.gov)
-  - [created_post] Abilities Expo in Edison brings resources, technology and advocacy to the disability community - News12 | Long Island
-  - [created_post] National Hotline For IDD Caregivers Proposed - Disability Scoop
+  - [created_post] Together We Can: Building Relief and Inclusion for Families - Il Mattino
+  - [created_post] Applause Report: 78% of Organizations Leverage AI for Accessibility Testing, but Apps Still Stumble With Assistive Tech - Business Wire
+  - [created_post] Wealthy Students More Likely to Get Disability Accommodations, Study Finds - The 74
 
 —
 The Fullest Project | thefullestproject.org
