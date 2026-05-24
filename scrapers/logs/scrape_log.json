@@ -507,5 +507,49 @@
         "slug": "wealthy-students-more-likely-to-get-disability-accommodation"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-05-24T03:55:58.399009",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "added",
+        "name": "How adaptive sports are transforming youth mental health",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5wVWprX21TQVhCUWdLeTdCeVBobVI2ZnVOOHJVWnBwcFc4S3JGcWdfOTEzTlhzTkpxOTFJUlBaa1QtWlBlUUNZZTJMWjRiYzRRT3VZbTV3?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "How adaptive sports are transforming youth mental health",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5wVWprX21TQVhCUWdLeTdCeVBobVI2ZnVOOHJVWnBwcFc4S3JGcWdfOTEzTlhzTkpxOTFJUlBaa1QtWlBlUUNZZTJMWjRiYzRRT3VZbTV3?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-05-24T03:56:00.276092",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "Alzheimer’s Seminar Highlights Dementia Care and Caregiver Support - Love FM Belize",
+        "source": "Love FM Belize",
+        "slug": "alzheimers-seminar-highlights-dementia-care-and-caregiver-su"
+      },
+      {
+        "action": "created_post",
+        "title": "Public review of the draft Global road map towards universal access to assistive technology - World Health Organization (WHO)",
+        "source": "World Health Organization (WHO)",
+        "slug": "public-review-of-the-draft-global-road-map-towards-universal"
+      },
+      {
+        "action": "created_post",
+        "title": "Disability Organizations Call on Congress to Prioritize Care, Access, Representation and Basic Dignity, not Violence and Detention - DREDF",
+        "source": "DREDF",
+        "slug": "disability-organizations-call-on-congress-to-prioritize-care"
+      }
+    ]
   }
 ]
