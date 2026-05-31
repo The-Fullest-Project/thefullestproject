@@ -1,16 +1,14 @@
-Weekly Scrape Digest — 2026-05-24
+Weekly Scrape Digest — 2026-05-31
 ==================================================
 
 Scraper: spotlight_scraper
-  Entries processed: 2
-  - [added] How adaptive sports are transforming youth mental health
-  - [added] How adaptive sports are transforming youth mental health
+  Entries processed: 3
+  - [added] Chicago elementary school students get lesson in compassion through adaptive spo
+  - [added] Chicago elementary school students get lesson in compassion through adaptive spo
+  - [added] Amid School Techlash, Accessibility Advocates Worry About Exclusion
 
 Scraper: blog_content
-  Entries processed: 3
-  - [created_post] Alzheimer’s Seminar Highlights Dementia Care and Caregiver Support - Love FM Belize
-  - [created_post] Public review of the draft Global road map towards universal access to assistive technology - World Health Organization (WHO)
-  - [created_post] Disability Organizations Call on Congress to Prioritize Care, Access, Representation and Basic Dignity, not Violence and Detention - DREDF
+  Entries processed: 1
 
 —
 The Fullest Project | thefullestproject.org

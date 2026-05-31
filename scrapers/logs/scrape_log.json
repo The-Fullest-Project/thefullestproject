@@ -551,5 +551,40 @@
         "slug": "disability-organizations-call-on-congress-to-prioritize-care"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-05-31T04:08:35.854455",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "added",
+        "name": "Chicago elementary school students get lesson in compassion through adaptive spo",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaXNCbTVEbHMwa1I1UVlqdWdncjdqN21tbUk2UFJxaV9lSU9objV6RmI1RFJ1WmxlaGhaU2owQ0wyWDlhQlNuQlVnLU5mTXhNQlM3bnByNy1jWmo2aC1QUVFydU40MVRVNlVwMGFqT2NRNXhPLV9aQnZRUld2LVNnVV9XUXNZbjNGcnJFVHBodFlGUlBsaW4wNFN3STBpQQ?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Chicago elementary school students get lesson in compassion through adaptive spo",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaXNCbTVEbHMwa1I1UVlqdWdncjdqN21tbUk2UFJxaV9lSU9objV6RmI1RFJ1WmxlaGhaU2owQ0wyWDlhQlNuQlVnLU5mTXhNQlM3bnByNy1jWmo2aC1QUVFydU40MVRVNlVwMGFqT2NRNXhPLV9aQnZRUld2LVNnVV9XUXNZbjNGcnJFVHBodFlGUlBsaW4wNFN3STBpQQ?oc=5"
+      },
+      {
+        "action": "added",
+        "name": "Amid School Techlash, Accessibility Advocates Worry About Exclusion",
+        "category": "Education",
+        "website": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQakxJQnFkRXdIS2xlbUxnMVBZQlU0VG1VN05GWVRhd0h1U0VMUHVyaExrSnhtZjVMMTlsRTRqcVdlWm5CaW9LUEZ5aFFUeXM2elJNUzhFMFhLLTRwaWsyQkxnOU1XNm8tMTRvSWhVWUdFVXpZT25fVUFtYVllSFU4SnVHem1mLTc5amFDQWh3dFdfT25LdThUUjF5Tl9OdlhqLUlaejk3b0U1UQ?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-05-31T04:08:37.964255",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_posts"
+      }
+    ]
   }
 ]
