@@ -1,14 +1,14 @@
-Weekly Scrape Digest — 2026-05-31
+Weekly Scrape Digest — 2026-06-07
 ==================================================
 
 Scraper: spotlight_scraper
-  Entries processed: 3
-  - [added] Chicago elementary school students get lesson in compassion through adaptive spo
-  - [added] Chicago elementary school students get lesson in compassion through adaptive spo
-  - [added] Amid School Techlash, Accessibility Advocates Worry About Exclusion
+  Entries processed: 1
 
 Scraper: blog_content
-  Entries processed: 1
+  Entries processed: 3
+  - [created_post] Transportation Services for Older Adults: What Caregivers Should Know - AARP
+  - [created_post] Screen time limits call for nuance, disability advocates say - K-12 Dive
+  - [created_post] Disability Services NY, a New Online Resource Launched; Connects New Yorkers With Disabilities to Services - Business Wire
 
 —
 The Fullest Project | thefullestproject.org

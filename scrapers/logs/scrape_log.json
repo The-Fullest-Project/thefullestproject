@@ -586,5 +586,40 @@
         "action": "no_new_posts"
       }
     ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-06-07T04:14:07.554507",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_found"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-06-07T04:14:09.704676",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "created_post",
+        "title": "Transportation Services for Older Adults: What Caregivers Should Know - AARP",
+        "source": "AARP",
+        "slug": "transportation-services-for-older-adults-what-caregivers-sho"
+      },
+      {
+        "action": "created_post",
+        "title": "Screen time limits call for nuance, disability advocates say - K-12 Dive",
+        "source": "K-12 Dive",
+        "slug": "screen-time-limits-call-for-nuance-disability-advocates-say"
+      },
+      {
+        "action": "created_post",
+        "title": "Disability Services NY, a New Online Resource Launched; Connects New Yorkers With Disabilities to Services - Business Wire",
+        "source": "Business Wire",
+        "slug": "disability-services-ny-a-new-online-resource-launched-connec"
+      }
+    ]
   }
 ]
