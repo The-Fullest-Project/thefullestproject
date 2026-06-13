@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-1fd961a5",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040233+00:00"
-    },
-    "payload": {
-      "title": "Daegu Disabled Youth Sports Festival Embraces Participation Joy - 조선일보",
-      "sourceName": "조선일보",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcWdXZzFpaGFiMlRFVG1TbGdfeU50TGpVWHNtTkNTajF1dnNzbklGajdGOWxNTG9TaVk0YjVIbExzelQxSm5HUEtrYkpGcnlZd1JmRm1IaFl6a3hpZ1hOQ1lvSjBOZG9TZnljckVISUY2VHRNNUx5Ri1xVGRlRGVkY01WS3FuQQ?oc=5",
-      "excerpt": "Read this inspiring story about adaptive sports achievement.",
-      "category": "Achievement",
-      "date": "2026-06-11",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-20a5cb02",
     "type": "story",
     "status": "pending",
