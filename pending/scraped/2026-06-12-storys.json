@@ -19,25 +19,6 @@
     }
   },
   {
-    "id": "sty-20260612-5cc282b4",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040266+00:00"
-    },
-    "payload": {
-      "title": "Graduate Students Recognized for Achievements in Education Leadership - Seton Hall",
-      "sourceName": "Seton Hall",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVHA1MlBtVFNyQ2dMYUJLZzZKbUV1MjBkazJ1OU41OGZYUEpMUjlpT3VSTzhJWi1Xd21oNWhhQVNfbFIwTUtSRVA5MVg2TjVQaGV6T3JEZFFEcGhsOUpuYk51ZnNYZUhHRE5CVlFrc3o4VUlXS0dsQkNXTVIwVnlLMEw2QzBXbENYQ015SWhOazRqZFJuZE9ORk5QbEZLcHYwU1Baamh3TUJhZ2tNVWJxVg?oc=5",
-      "excerpt": "Read this inspiring story about inclusive education success story.",
-      "category": "Education",
-      "date": "2026-06-08",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-e28dd05a",
     "type": "story",
     "status": "pending",
