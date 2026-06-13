@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-22059925",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040180+00:00"
-    },
-    "payload": {
-      "title": "Topics - How children with disabilities experience digital exclusion - Charity Digital",
-      "sourceName": "Charity Digital",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNY21EZ0pNczdBUGJmTWxnaHBxMzU1S1hHcXowYklYTUVFV1JYdl95bUY5YTVwNmNCajQ5WXVWdldKTWk3cDJNYlVfcXh6ZUVxRXd0MVc0RnZ2dS0yVXBHbGRtSUVLc29EVDdEandseXAtR2xTS21ZMDd4bXNDSFltdDh2dkFMa0RFa2VYb2dERjlzWFpOQ3FpUzM0SkhObF9RcUFLSQ?oc=5",
-      "excerpt": "Read this inspiring story about disability inclusion positive story.",
-      "category": "Inclusion",
-      "date": "2026-06-09",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-e320923b",
     "type": "story",
     "status": "pending",
