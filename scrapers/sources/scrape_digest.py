@@ -58,9 +58,9 @@ def count_new_blog_posts():
 
 
 def summarize_pending():
-    """Prune stale queued items, then count what awaits review and what this
-    run queued. Returns (totals_by_type, queued_today_by_type, pruned_list)."""
-    pruned = pending_store.prune_stale()
+    """Count what awaits review and what this run queued, by type. Read-only —
+    pruning happens in its own workflow step before this. Returns
+    (totals_by_type, queued_today_by_type)."""
     totals = {}
     queued_today = {}
     today = date.today().isoformat()
@@ -69,14 +69,23 @@ def summarize_pending():
         totals[t] = totals.get(t, 0) + 1
         if env.get("origin", {}).get("submittedAt", "").startswith(today):
             queued_today[t] = queued_today.get(t, 0) + 1
-    return totals, queued_today, pruned
+    return totals, queued_today
+
+
+def source_health_alerts(logs):
+    """Source runs from this batch whose status indicates a problem (a source
+    down, or HTTP-200-but-zero-parsed schema break) — surfaced loudly so a
+    silent rot gets noticed."""
+    bad = {"FAILED", "PARSED_ZERO", "NO_TARGETS"}
+    return [log for log in logs if log.get("status") in bad]
 
 
 def generate_digest():
     """Generate a text digest of the weekly scrape."""
     logs = load_scrape_log()
     blog_count, blog_titles = count_new_blog_posts()
-    pending_totals, queued_today, pruned = summarize_pending()
+    pending_totals, queued_today = summarize_pending()
+    alerts = source_health_alerts(logs)
 
     lines = [
         f"Weekly Scrape Digest — {date.today().isoformat()}",
@@ -84,49 +93,11 @@ def generate_digest():
         "",
     ]
 
-    # Review queue summary
-    if pending_totals:
-        lines.append("AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/")
-        for t in sorted(pending_totals):
-            today_note = f" ({queued_today[t]} new this run)" if queued_today.get(t) else ""
-            lines.append(f"  {t}: {pending_totals[t]} pending{today_note}")
-        lines.append("")
-    else:
-        lines.append("Review queue is empty — nothing awaiting approval.")
-        lines.append("")
-
-    if pruned:
-        lines.append(f"Expired unreviewed after 28 days ({len(pruned)}):")
-        for p in pruned[:10]:
-            lines.append(f"  - [{p['type']}] {p['title']}")
-        if len(pruned) > 10:
-            lines.append(f"  ... and {len(pruned) - 10} more")
-        lines.append("")
-
-    # Summarize scraper activity
+    lines += _alert_lines(alerts)
+    lines += _pending_lines(pending_totals, queued_today)
     for log in logs:
-        scraper = log.get("scraper", "unknown")
-        entries = log.get("entries", [])
-        count = log.get("entries_found", len(entries))
-
-        lines.append(f"Scraper: {scraper}")
-        lines.append(f"  Entries processed: {count}")
-
-        for entry in entries[:10]:
-            action = entry.get("action", "")
-            name = entry.get("name", entry.get("title", entry.get("slug", "")))
-            if name:
-                lines.append(f"  - [{action}] {name}")
-        if len(entries) > 10:
-            lines.append(f"  ... and {len(entries) - 10} more")
-        lines.append("")
-
-    # Blog posts
-    if blog_count > 0:
-        lines.append(f"New Articles: {blog_count}")
-        for title in blog_titles:
-            lines.append(f"  - {title}")
-        lines.append("")
+        lines += _scraper_lines(log)
+    lines += _blog_lines(blog_count, blog_titles)
 
     if not logs and blog_count == 0:
         lines.append("No new resources or articles were added this week.")
@@ -134,8 +105,53 @@ def generate_digest():
 
     lines.append("—")
     lines.append("The Fullest Project | thefullestproject.org")
-
     return "\n".join(lines)
+
+
+def _alert_lines(alerts):
+    if not alerts:
+        return []
+    out = ["!! SOURCE HEALTH ALERTS — a scraper may be broken:"]
+    for a in alerts:
+        out.append(f"  - {a.get('scraper')}: {a.get('status')} "
+                   f"({a.get('targets_succeeded', 0)}/{a.get('targets_attempted', 0)} targets ok, "
+                   f"{a.get('entries_found', 0)} parsed)")
+    out.append("")
+    return out
+
+
+def _pending_lines(pending_totals, queued_today):
+    if not pending_totals:
+        return ["Review queue is empty — nothing awaiting approval.", ""]
+    out = ["AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/"]
+    for t in sorted(pending_totals):
+        today_note = f" ({queued_today[t]} new this run)" if queued_today.get(t) else ""
+        out.append(f"  {t}: {pending_totals[t]} pending{today_note}")
+    out.append("")
+    return out
+
+
+def _scraper_lines(log):
+    entries = log.get("entries", [])
+    out = [f"Scraper: {log.get('scraper', 'unknown')}",
+           f"  Entries processed: {log.get('entries_found', len(entries))}"]
+    for entry in entries[:10]:
+        name = entry.get("name", entry.get("title", entry.get("slug", "")))
+        if name:
+            out.append(f"  - [{entry.get('action', '')}] {name}")
+    if len(entries) > 10:
+        out.append(f"  ... and {len(entries) - 10} more")
+    out.append("")
+    return out
+
+
+def _blog_lines(blog_count, blog_titles):
+    if blog_count <= 0:
+        return []
+    out = [f"New Articles: {blog_count}"]
+    out += [f"  - {title}" for title in blog_titles]
+    out.append("")
+    return out
 
 
 def send_digest(digest_text):

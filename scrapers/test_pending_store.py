@@ -73,8 +73,9 @@ class PendingStoreTests(unittest.TestCase):
         with open(self.ps.SUBMISSIONS_FILE, "w", encoding="utf-8") as f:
             json.dump([submission], f)
         keys = self.ps.load_pending_keys("resource")
-        self.assertIn(("Scraped Org", "Oregon"), keys)
-        self.assertIn(("Submitted Org", "Texas"), keys)
+        # keys are normalized (case/whitespace-insensitive) via resource_key
+        self.assertIn(("scraped org", "oregon"), keys)
+        self.assertIn(("submitted org", "texas"), keys)
 
     def test_load_pending_keys_blog_has_urls_and_slugs(self):
         payload = {"title": "An Article", "url": "https://example.org/a", "slug": "an-article"}
@@ -157,6 +158,15 @@ class PendingStoreTests(unittest.TestCase):
         self._seed_live("national.json", [cross])
         self._seed_live("nova.json", [])
         self.bs.save_resources([cross], "nova.json", origin_detail="test")
+        self.assertEqual(len(list(self.ps.iter_pending("resource"))), 0)
+
+    def test_dedup_is_case_and_whitespace_insensitive(self):
+        live = self.bs.make_resource("Arc of NoVA", ["nonprofit"], "Virginia", "d")
+        self._seed_live("states/VA.json", [live])
+        # Same org, different case/spacing — must NOT be queued as a duplicate
+        variant = self.bs.make_resource("  ARC OF NOVA ", ["nonprofit"], "virginia", "d2")
+        queued, _ = self.bs.queue_new_resources([variant], "test")
+        self.assertEqual(queued, 0)
         self.assertEqual(len(list(self.ps.iter_pending("resource"))), 0)
 
 

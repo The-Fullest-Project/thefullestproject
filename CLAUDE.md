@@ -187,7 +187,18 @@ All NEW content is gated behind admin approval; only updates to already-live ent
 - Scrapers save to both `scrapers/output/` and `src/_data/resources/`
 - `save_resources()` gates publication: existing entries update live; NEW entries queue to `pending/` for admin approval (see `scrapers/pending_store.py`)
 - Rejected items land in `scrapers/blocklist.json` (urls + names) and are never re-queued — the three content scrapers check it too
-- Tests: `python scrapers/test_pending_store.py` (stdlib unittest, no deps)
+- Tests: `python scrapers/test_pending_store.py` + `python scrapers/test_discovery_scrapers.py` (stdlib unittest, no deps)
+
+### Resource Discovery vs Curated Catalogs (see `scrapers/README.md`)
+
+The audit (June 2026) found the legacy "scrapers" were ~97% hand-curated seed lists, not live discovery, and the declared `scrapling` stack was never installed. Real automated discovery now comes from free, key-less, structured sources, each a module in `scrapers/sources/` auto-discovered by `run_all.py`:
+
+- **Discovery scrapers** (`osm_overpass.py` — primary, OpenStreetMap Overpass; `cms_providers.py` — CMS home-health supplement; `news_leads.py` — Google News leads, OFF by default per ToS): query live sources and **queue-only** via `base_scraper.queue_new_resources()` — they NEVER write live files, so curated data is never overwritten. Dedup is case/whitespace-insensitive `(name, location)` via `pending_store.resource_key`.
+- **Fail-loud**: `scrapers/_source_health.py` `SourceRun` logs `FAILED`/`PARSED_ZERO` (a source down, or HTTP-200-but-zero-parsed schema break) so `scrape_digest.py` surfaces it in the weekly email — no more silent seed-fallback hiding an outage.
+- **Curated catalogs** (`national_resources.py`, `nova_resources.py`): hand-maintained lists; do NO live discovery (docstrings say so). Flow through `save_resources()`.
+- **Extraction** (`scrapers/_extraction.py`): free schema.org/JSON-LD/OG/tel: field-fill; optional Claude-Haiku fallback is OFF unless `TFP_LLM_ENRICH=1` (paid). Never regex page body for phone (yields garbage).
+- **Licence attribution** (required, in footer): OpenStreetMap ODbL + CMS public-domain.
+- **Volume control**: OSM sweeps all 50 + DC rotated by week under `TFP_OSM_MAX_TOTAL`/`TFP_OSM_MAX_PER_STATE` caps (set in `scrape.yml`); `prune_stale()` expires unreviewed scraper items (news 28d, resources 60d) but never human submissions; runs as its own workflow step before commit.
 
 ### Resource Data Schema
 ```json

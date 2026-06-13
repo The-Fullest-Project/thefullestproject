@@ -9,9 +9,11 @@ Layout:
   pending/submissions.json             - website submissions (worker-only writer)
   pending/scraped/<date>-<type>s.json  - weekly scraper batches (Actions-only creator)
 
-The weekly Action only ever CREATES new dated batch files; the worker only
-EDITS or DELETES existing ones, so the two writers never touch the same file
-and git conflicts are structurally impossible.
+Within a week the Action writes only its own dated batch files and the worker
+writes only submissions.json / edits existing batches — the two never touch the
+same file, so git conflicts between the Sunday scrape and portal approvals are
+structurally impossible. (A same-day re-run of the Action rewrites that day's
+own batch file, which is still single-writer and safe.)
 
 pending/ lives outside src/_data so Eleventy never builds pending data into
 the site. Set TFP_PENDING_DIR to relocate the store (used by tests).
@@ -49,8 +51,18 @@ def _key_string(item_type, payload):
     return json.dumps(payload, sort_keys=True)
 
 
+def resource_key(name, location):
+    """Canonical (name, location) dedup key — case- and whitespace-insensitive,
+    so 'ARC OF NOVA' / 'Arc of NoVA' collapse to one. Used everywhere resource
+    dedup happens (live files, pending, queue_new_resources)."""
+    return ((name or "").strip().lower(), (location or "").strip().lower())
+
+
 def new_id(item_type, payload):
-    """Deterministic id: re-scrapes of the same item always produce the same id."""
+    """Id for an envelope. The hash is stable per item, but the date prefix
+    means a re-scrape on a different day yields a different id — intentional,
+    since cross-day dedup is done by resource_key/(name,location) via
+    load_pending_keys, never by id."""
     digest = hashlib.sha256(
         f"{item_type}|{_key_string(item_type, payload)}".encode("utf-8")
     ).hexdigest()[:8]
@@ -144,7 +156,7 @@ def load_pending_keys(item_type):
             continue
         payload = env.get("payload", {})
         if item_type == "resource":
-            keys.add((payload.get("name", ""), payload.get("location", "")))
+            keys.add(resource_key(payload.get("name", ""), payload.get("location", "")))
         elif item_type == "story":
             keys.add(payload.get("sourceUrl", ""))
         elif item_type == "spotlight":
@@ -159,9 +171,11 @@ def load_pending_keys(item_type):
 def _envelope_age_days(env, now):
     """Age in days, or None if the timestamp is missing/unparseable."""
     submitted = env.get("origin", {}).get("submittedAt", "")
+    if not isinstance(submitted, str) or not submitted:
+        return None
     try:
         ts = datetime.fromisoformat(submitted)
-    except ValueError:
+    except (ValueError, TypeError):
         return None
     if ts.tzinfo is None:
         ts = ts.replace(tzinfo=timezone.utc)
@@ -177,13 +191,33 @@ def _prune_summary(env):
     }
 
 
-def _prune_file(path, types, max_age_days, now):
+NEWS_TYPES = ("story", "blog", "spotlight")
+
+
+def _prune_threshold(env, news_age, scraper_resource_age):
+    """Max allowed age (days) for this envelope, or None if it must never prune.
+
+    News-type items expire at news_age regardless of origin. Auto-discovered
+    resources (origin.type == 'scraper') expire at the longer scraper_resource_age
+    so reviewers get ample time. Human-entered items (submission / quick-submit /
+    bulk-import) are NEVER auto-pruned.
+    """
+    t = env.get("type")
+    if t in NEWS_TYPES:
+        return news_age
+    if t == "resource" and env.get("origin", {}).get("type") == "scraper":
+        return scraper_resource_age
+    return None
+
+
+def _prune_file(path, news_age, scraper_resource_age, now):
     """Rewrite one batch file without its stale envelopes. Returns pruned summaries."""
     items = _load_json(path, [])
     kept, pruned = [], []
     for env in items:
-        age = _envelope_age_days(env, now) if env.get("type") in types else None
-        if age is not None and age > max_age_days:
+        threshold = _prune_threshold(env, news_age, scraper_resource_age)
+        age = _envelope_age_days(env, now) if threshold is not None else None
+        if age is not None and age > threshold:
             pruned.append(_prune_summary(env))
         else:
             kept.append(env)
@@ -196,17 +230,22 @@ def _prune_file(path, types, max_age_days, now):
     return pruned
 
 
-def prune_stale(max_age_days=28, types=("story", "blog", "spotlight")):
-    """Drop unreviewed news-type envelopes older than max_age_days so the queue
-    stays fresh. Resources and human submissions are never auto-pruned.
-    Deletes batch files that end up empty. Returns summaries of pruned items."""
+def prune_stale(max_age_days=28, scraper_resource_age_days=60):
+    """Drop stale unreviewed envelopes so the queue can't grow unbounded.
+
+    News-type items (story/blog/spotlight) expire after max_age_days; auto-
+    discovered resources after the longer scraper_resource_age_days. Human-
+    entered submissions are never auto-pruned. Deletes emptied batch files.
+    Returns summaries of pruned items.
+    """
     if not os.path.isdir(SCRAPED_DIR):
         return []
     now = datetime.now(timezone.utc)
     pruned = []
     for fn in sorted(os.listdir(SCRAPED_DIR)):
         if fn.endswith(".json"):
-            pruned.extend(_prune_file(os.path.join(SCRAPED_DIR, fn), types, max_age_days, now))
+            pruned.extend(_prune_file(
+                os.path.join(SCRAPED_DIR, fn), max_age_days, scraper_resource_age_days, now))
     if pruned:
         print(f"Pruned {len(pruned)} stale unreviewed item(s) from the pending queue")
     return pruned

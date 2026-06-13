@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from base_scraper import make_resource, save_resources, load_existing, merge_resources
+from base_scraper import make_resource, queue_new_resources
 
 
 # Keyword-to-category mapping for vendor classification
@@ -131,9 +131,9 @@ def scrape():
 
     print(f"Found {len(vendors)} vendors from Abilities Expo")
 
-    existing = load_existing('national.json')
-    merged = merge_resources(existing, vendors)
-    save_resources(merged, 'national.json')
+    # Queue-only: new exhibitors go to review; existing live entries untouched.
+    queued, _ = queue_new_resources(vendors, "abilities_expo")
+    print(f"Queued {queued} new exhibitor(s) for review")
 
 
 def seed_vendors():

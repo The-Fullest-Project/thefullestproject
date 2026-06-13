@@ -1,2 +1,7 @@
-scrapling>=0.2
-httpx>=0.27
+# The scraper pipeline runs on the Python 3.12 standard library only
+# (urllib, json, re) — no third-party packages are required for the weekly run.
+# `pip install -r scrapers/requirements.txt` is a harmless no-op.
+#
+# Optional extras (NOT installed by default; features degrade gracefully without them):
+#   scrapling>=0.2    # legacy phone/address enrichment in nova_resources.py (skipped if absent)
+#   anthropic>=0.40   # only needed if TFP_LLM_ENRICH=1 to enable _extraction.py's LLM fallback

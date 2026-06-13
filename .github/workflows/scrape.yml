@@ -29,6 +29,15 @@ jobs:
         run: pip install -r scrapers/requirements.txt
 
       - name: Run scrapers
+        env:
+          # Bound the weekly review-queue intake so a small team isn't flooded.
+          # All 50 states + DC are still covered: osm_overpass rotates the state
+          # order by week, so successive runs reach different states under the
+          # run-wide cap. Raise/unset these for a faster full national backfill.
+          # cms_providers defaults to pilot states; news_leads stays off unless
+          # TFP_NEWS_LEADS=1.
+          TFP_OSM_MAX_PER_STATE: "25"
+          TFP_OSM_MAX_TOTAL: "250"
         run: python scrapers/run_all.py
 
       - name: Fetch positive stories
@@ -54,6 +63,9 @@ jobs:
           else
             echo "No gigs expiring soon"
           fi
+
+      - name: Prune stale unreviewed pending items
+        run: python -c "import sys; sys.path.insert(0, 'scrapers'); import pending_store; pending_store.prune_stale()"
 
       - name: Generate and send scrape digest
         run: python scrapers/sources/scrape_digest.py

@@ -1,5 +1,9 @@
 """
-Scraper for national disability resources across all categories.
+Curated catalog of national disability resources.
+
+NOTE: despite the historical "scraper" naming, this module does NO live web
+scraping — it publishes a hand-maintained list (NATIONAL_SOURCES). Genuine
+automated discovery lives in osm_overpass.py and cms_providers.py.
 """
 
 import sys

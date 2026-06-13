@@ -49,16 +49,18 @@ def save_resources(resources, filename, origin_detail=None):
 
     filename can include subdirectory, e.g. 'states/VA.json'
     """
-    prior_keys = {(r['name'], r.get('location', '')) for r in load_existing(filename)}
+    prior_keys = {pending_store.resource_key(r['name'], r.get('location', ''))
+                  for r in load_existing(filename)}
     live, new = [], []
     for r in resources:
-        key = (r['name'], r.get('location', ''))
+        key = pending_store.resource_key(r['name'], r.get('location', ''))
         (live if key in prior_keys else new).append(r)
 
     if new:
         # Guard against duplicates already live in another file or already queued
         seen = all_live_resource_keys() | pending_store.load_pending_keys('resource')
-        new = [r for r in new if (r['name'], r.get('location', '')) not in seen]
+        new = [r for r in new
+               if pending_store.resource_key(r['name'], r.get('location', '')) not in seen]
     if new:
         if origin_detail is None:
             origin_detail = _caller_module_name()
@@ -106,16 +108,43 @@ def _load_entry_list(path):
 
 
 def all_live_resource_keys():
-    """(name, location) keys across every live resource file."""
+    """Canonical resource keys across every live resource file (case/whitespace
+    insensitive — see pending_store.resource_key)."""
     keys = set()
     for root, _dirs, files in os.walk(DATA_DIR):
         for fn in files:
             if not fn.endswith('.json'):
                 continue
             for r in _load_entry_list(os.path.join(root, fn)):
-                if isinstance(r, dict) and 'name' in r:
-                    keys.add((r['name'], r.get('location', '')))
+                if isinstance(r, dict) and r.get('name'):
+                    keys.add(pending_store.resource_key(r['name'], r.get('location', '')))
     return keys
+
+
+def queue_new_resources(candidates, origin_detail, target_file=None, seen=None):
+    """Queue resource dicts for admin review, skipping any that are already live
+    or already pending. Unlike save_resources(), this NEVER writes live data
+    files — discovery scrapers must only ADD candidates to review, never modify
+    hand-curated entries. Pass a shared `seen` set across calls (e.g. a 50-state
+    loop) to dedup within the run too. Returns (queued_count, seen_set).
+    """
+    if seen is None:
+        seen = all_live_resource_keys() | pending_store.load_pending_keys('resource')
+    fresh = []
+    for c in candidates:
+        if not c.get('name'):
+            continue
+        key = pending_store.resource_key(c.get('name', ''), c.get('location', ''))
+        if key in seen:
+            continue
+        seen.add(key)
+        fresh.append(c)
+    queued = 0
+    if fresh:
+        envelopes = [pending_store.make_envelope('resource', c, origin_detail, target_file=target_file)
+                     for c in fresh]
+        queued = pending_store.queue_items('resource', envelopes)
+    return queued, seen
 
 
 def _caller_module_name():

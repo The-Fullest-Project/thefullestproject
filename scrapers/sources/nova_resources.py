@@ -1,6 +1,11 @@
 """
-Scraper for Northern Virginia disability resources across all categories.
-Uses scrapling to fetch and parse resource directories.
+Curated catalog of Northern Virginia disability resources.
+
+NOTE: despite the historical "scraper" naming, the resource entries are a
+hand-maintained list (SOURCES). The optional scrapling enrichment block only
+tries to fill phone/address on existing entries and is skipped entirely when
+scrapling isn't installed (the default). Genuine automated discovery lives in
+osm_overpass.py and cms_providers.py.
 """
 
 import sys

@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from base_scraper import make_resource, save_resources, load_existing, merge_resources
+from base_scraper import make_resource, queue_new_resources
 
 
 # US state name → abbreviation mapping for location normalization
@@ -156,10 +156,10 @@ def scrape():
 
     print(f"Found {len(locations)} MobilityWorks locations")
 
-    # Save to national.json (merge)
-    existing = load_existing('national.json')
-    merged = merge_resources(existing, locations)
-    save_resources(merged, 'national.json')
+    # Queue-only: new locations go to review (routed by location on approval);
+    # existing live entries untouched.
+    queued, _ = queue_new_resources(locations, "mobilityworks")
+    print(f"Queued {queued} new location(s) for review")
 
 
 def seed_locations():
