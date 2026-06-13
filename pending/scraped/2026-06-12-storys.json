@@ -19,25 +19,6 @@
     }
   },
   {
-    "id": "sty-20260612-478a00a0",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040292+00:00"
-    },
-    "payload": {
-      "title": "Bill Simmons: TIME100 Most Influential People in Sports 2026 - Time Magazine",
-      "sourceName": "Time Magazine",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPR1pXTE5OMEdvbWNsME40d1FRLWNld20xc3J2RkhfODV1RW1UdVRPSnZ5UFMyRHhmX3BwNHczUFRvY0VuMmttSXM0TThSTlNtLVMyYjk1YWZCSHh3NlltZnJtOFUxS3VNQmtaaHFfeUNmV2N1NTBlV09RYlpfeFBWcmRuYw?oc=5",
-      "excerpt": "Read this inspiring story about adaptive recreation services launch.",
-      "category": "Story",
-      "date": "2026-06-09",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-fc752041",
     "type": "story",
     "status": "pending",
