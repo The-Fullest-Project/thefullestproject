@@ -1,23 +1,5 @@
 [
   {
-    "id": "blg-20260612-22f2d002",
-    "type": "blog",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "blog_content",
-      "submittedAt": "2026-06-13T01:19:17.631749+00:00"
-    },
-    "payload": {
-      "title": "How useful are smart glasses in improving accessibility in higher education? - Times Higher Education",
-      "source": "Times Higher Education",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONVVyckdTYXdvY0ExVG5iUEFSSEFhUDdodmJLTGRtVlhBdzlPaDlzbk5iOGhNTVVVNkNTSlpaWlFRUFl5QVZNbHVnSmhETEFEWFNRaENjSWQ2a2s0TmpjMmhOdVFURWlYaXBtU1FvWnlQNk5vaUp5aHQzV1ZlLW80MXVGN0xlV3o0cGkwcmNfYmozTTAzZ0lSWmJyMWN0eVI0ejFXSW5vZmhFZVFjMEtWNlRJTQ?oc=5",
-      "date": "2026-06-13",
-      "category": "Adaptive Technology",
-      "slug": "how-useful-are-smart-glasses-in-improving-accessibility-in-h"
-    }
-  },
-  {
     "id": "blg-20260612-5a382c64",
     "type": "blog",
     "status": "pending",
