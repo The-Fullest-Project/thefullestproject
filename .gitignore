@@ -7,3 +7,6 @@ src/css/output.css
 Thumbs.db
 nul
 docs/
+__pycache__/
+*.pyc
+.mcp.json
