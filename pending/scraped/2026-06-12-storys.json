@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-20a5cb02",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040241+00:00"
-    },
-    "payload": {
-      "title": "Folmus to host four-team wheelchair basketball invitational tournament in Lagos - Sporting Life Nigeria",
-      "sourceName": "Sporting Life Nigeria",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOREpUcjA1LWRyQ0NBNUkyZ21oMlZ1cXBLUnREWDdMZ0swZHMyd0p2Qmxydklfd3VOZGphMm0zM2ZrWG5UbEZYWGJPNFZpTnVNbVhoVnUtMEhLMFZNbV9sb05fdHg1d3JZT2tXZFFwQUJ0MXNlLU5ScUw1TjFSeHdhXzljbnBWVTJfT0NoNGs4QkprYzhZRkIycFJWNHFLbnpON1Y1UWJQbklEd01I0gGsAUFVX3lxTE5ESlRyMDUtZHJDQ0E1STJnbWgyVnVxcEtSdERYN0xnSzBkczJ3SnZCbHJ2SV93dU5kamEybTMzZmtYblRsRlhYYk80VmlOdU1tWGhWdS0wSEswVk1tX2xvTl90eDV3cllPa1dkUXBBQnQxc2UtTlJxTDVOMVJ4d2FfOWNucFZVMl9PQ2g0azhCSmtjOFlGQjJwUlY0cUtuek43VjVRYlBuSUR3TUg?oc=5",
-      "excerpt": "Read this inspiring story about adaptive sports achievement.",
-      "category": "Achievement",
-      "date": "2026-06-11",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-f70bb749",
     "type": "story",
     "status": "pending",
