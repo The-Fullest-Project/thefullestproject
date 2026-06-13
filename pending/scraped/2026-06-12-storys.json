@@ -19,25 +19,6 @@
     }
   },
   {
-    "id": "sty-20260612-e0a73e86",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040306+00:00"
-    },
-    "payload": {
-      "title": "Nonprofit supporting disability services in Kalispell receives surprise donation - NBC Montana",
-      "sourceName": "NBC Montana",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdFdVQjBPY3BwWFhkWXpPOHRTeGg5a0NMdHNwbE5PRHBMX28xMkZUQ0N4UG5QUE1sX2ZsX1ZVZ0EzN1Fkb1h0NXh5M1Y0X0JhbE5JVDRKbWZ2LVZKNElubUs1cGNQX2dkc1AxOGpsdXh1WDhDMmFKX21SbkdUTDBIT2FoNFFfM2k3dzMzLUc2Qm9ySk5QTUhTNENoQVFmcHJULXd0NWZoSmlhYW8yWDd4SEFmdHM?oc=5",
-      "excerpt": "Read this inspiring story about disability nonprofit community impact.",
-      "category": "Story",
-      "date": "2026-06-12",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-5a597776",
     "type": "story",
     "status": "pending",
