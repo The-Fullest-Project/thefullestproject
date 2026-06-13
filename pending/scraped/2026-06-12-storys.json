@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-1c81de32",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040218+00:00"
-    },
-    "payload": {
-      "title": "Special Needs Fishing Day aims to create inclusion at Lake Gordon - Texomashomepage.com",
-      "sourceName": "Texomashomepage.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTjVDZi1sNjgzWXRuR21obWI5Sk5qenlnc1VNU2oySjdnWE5nNWxnQVRTd3VSSm5WNy1kVU5JenpCUDQ1YXBtUTFaeFoyNTVsdnpZbkpCdnFjbzRBM1BHbG5Fb2I2MC1Zb3pDU0ZTaVlMeDN3Q0tWaHlJdXEyeXJaOC00Y2d0TzkxRXRaeVNuWFA5N1RHN290V21HY1lySl9aSGhJdF9SUHBuUnJJQjVzV0Y5dDDSAboBQVVfeXFMTmRVaUJ3R2RtTHdwTUgtM1QyLXVvWnRScTN6dHlsN2tkY3loM3RXWXN0cHpLRVBpcmxCRVY1ZUhTYWtoS21DZUVmVnBvc2ZDWHdwUk81UTF4SUlhbkJ0MTcxMTlYYUJqMlJpZW5RcjRhQ2tiMTdTQy02RW16c3RvcUFBZnFZTWVrcXNBclJ6ZUFaMGptYjZtUnRjTkZxckltQmQ3Yi1IWFVyZFNEeGxHV2YxM3Rfa3Jwdzh3?oc=5",
-      "excerpt": "Read this inspiring story about special needs community inspiring.",
-      "category": "Story",
-      "date": "2026-06-11",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-767a27b7",
     "type": "story",
     "status": "pending",
