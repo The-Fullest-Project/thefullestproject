@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-767a27b7",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040226+00:00"
-    },
-    "payload": {
-      "title": "Summer Activity Ideas for Children with Disabilities - San Diego County Office of Education | SDCOE",
-      "sourceName": "San Diego County Office of Education | SDCOE",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWjh5UnFHbTFtZ2NzbnhXMzgwSDVvLWdFX25USVcyeVNYaHhvb3BMZXNQNTFMX3FsZ1BXRE9vUkFrZlpyc2RzT0tOamNWMjd0Ync2QmZLU3BJTkFBd0E0NHF4UlZWbEVLOFZKUGNWV0ZFSE5IUnlJc2NzMDlzZW5aVG04VXpVQzgyUEo3QzF5Q2NtSUdPSGJMbGVvMlBfWmFGWEVneXZEbHloMk14MGJ6dzBBYw?oc=5",
-      "excerpt": "Read this inspiring story about special needs community inspiring.",
-      "category": "Story",
-      "date": "2026-06-12",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-1fd961a5",
     "type": "story",
     "status": "pending",
