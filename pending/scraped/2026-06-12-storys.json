@@ -19,25 +19,6 @@
     }
   },
   {
-    "id": "sty-20260612-e28dd05a",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040282+00:00"
-    },
-    "payload": {
-      "title": "Finding Freedom at 110 Feet in the Air - The New York Times",
-      "sourceName": "The New York Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQmFEVUxQd3NPQzNibXNQdHpseUVxU19SaktQNzZqem8wcHp3VzhHTzF0SGNJdG9ZVUtVcWU5ZVpnbHh4RHpQSC1pYkxQWDI1UGJQV0ZnV1JWUGttZ3ZGeUxRN2lXSEZKV2FTcE9rNEFxa1dacjlObmpqUF9yMEVrengtbXo?oc=5",
-      "excerpt": "Read this inspiring story about accessible adventures disability program.",
-      "category": "Story",
-      "date": "2026-06-07",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-478a00a0",
     "type": "story",
     "status": "pending",
