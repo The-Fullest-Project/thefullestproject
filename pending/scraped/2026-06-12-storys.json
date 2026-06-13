@@ -19,25 +19,6 @@
     }
   },
   {
-    "id": "sty-20260612-5a597776",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040312+00:00"
-    },
-    "payload": {
-      "title": "Cross-Cutting / Intersectional Impact: Mid-June Update (6 new opportunities!) - Substack",
-      "sourceName": "Substack",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRHB6V0ZyNXp0Y21obUxNUThyUFRkNU1sVnZueWJFTEJPTFBhNlh6QkpUNElma19TNnhBX2E2SFVLLTZra2xWZTBVZVdaSXRRRGJGeXVndjlsbW5VZnBlQ1BPMEQ4bHoxRUM2ZUxUME5RSFl2Qk1ieV9QQUNMSDNwSkNR?oc=5",
-      "excerpt": "Read this inspiring story about disability nonprofit community impact.",
-      "category": "Story",
-      "date": "2026-06-09",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-6d9f2710",
     "type": "story",
     "status": "pending",
