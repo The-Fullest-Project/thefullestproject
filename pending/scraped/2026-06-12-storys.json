@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-e320923b",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040206+00:00"
-    },
-    "payload": {
-      "title": "From Class 8 Dropout To Inspiring 2 Lakh+ People - The Better India",
-      "sourceName": "The Better India",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONi1QU2pDM2FMb3FJWmtRVVBZYjhZZ2FnZW5LOER5V1JmSnNLT0RuLU4zcW94a1BNOTFqeFdHZDNsd0hRbDJmbG9sWjM1UDZXYm05SjE2VE5EYXVBbVU0MzczTk14OVlEVkFBVUdIYW83ZzROVlZ5Tk5OUzVUUHIwbWMxWUFVMmVoR2ItLXJKLVNoYmFkZlVONFUyYnZ1WU94a1p2ZjR2d3ZyaVBuUUp1StIBsAFBVV95cUxONi1QU2pDM2FMb3FJWmtRVVBZYjhZZ2FnZW5LOER5V1JmSnNLT0RuLU4zcW94a1BNOTFqeFdHZDNsd0hRbDJmbG9sWjM1UDZXYm05SjE2VE5EYXVBbVU0MzczTk14OVlEVkFBVUdIYW83ZzROVlZ5Tk5OUzVUUHIwbWMxWUFVMmVoR2ItLXJKLVNoYmFkZlVONFUyYnZ1WU94a1p2ZjR2d3ZyaVBuUUp1Sg?oc=5",
-      "excerpt": "Read this inspiring story about disability inclusion positive story.",
-      "category": "Inclusion",
-      "date": "2026-06-10",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-1c81de32",
     "type": "story",
     "status": "pending",
