@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-548bb31c",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040253+00:00"
-    },
-    "payload": {
-      "title": "N.S. says it's on schedule to move people with disabilities out of institutions - CBC",
-      "sourceName": "CBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONmJWNDV3T1J1bE0yXzZVYTFGUER5TE9YMXZjUF9icjVPUjQ0M3VmZzVjU2pQNzBQZzFsSDNjYURpVXl4V25VbkdEUktqSmdmNjMxN2F4d3BUYWhfU1QzQUd5N2JPVjhlclZJR3ZZUVUwUWU3M0hieGEtLVh1eFRYa2h5SmE0WmtRbldhMWNpUG5lWFRydEN6ZXA3X21YZXVlUHdBZmgzNXNpLUUw?oc=5",
-      "excerpt": "Read this inspiring story about disability rights milestone.",
-      "category": "News",
-      "date": "2026-06-10",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-699bf477",
     "type": "story",
     "status": "pending",
