@@ -1,5 +1,24 @@
 [
   {
+    "name": "Veterans of every generation find their stride in adaptive sports",
+    "description": "Veterans of every generation find their stride in adaptive sports - VA News (.gov)",
+    "category": "Sports",
+    "website": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcmlmRmJRR2JuODNoMXlveXJ5SFJVQzVVVFNJeUs2OHBqd0JVVng4enRuOXcyTmVMWW9zUVVfSXBQeGo0LUlWLTkzak5SWWp2R2VGakNuR0FFazBYUzFuOFQ5aFFYRDU2d3FNbWU0VERaeE05ZlhybEw1N1RnWjB0eFhDdEJuVXczMXd6ZWx1cFlRWXRRc09iSA?oc=5",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    },
+    "thumbnail": "/images/spotlights/sports.svg",
+    "location": "National",
+    "tags": [
+      "sports",
+      "auto-discovered"
+    ],
+    "featured": true,
+    "date": "2026-06-12",
+    "approvedAt": "2026-06-13"
+  },
+  {
     "name": "Chicago elementary school students get lesson in compassion through adaptive spo",
     "description": "Chicago elementary school students get lesson in compassion through adaptive sports - CBS News",
     "category": "Adventures",
@@ -14,7 +33,7 @@
       "adventures",
       "auto-discovered"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-05-31"
   },
   {
