@@ -12,7 +12,9 @@ permalink: /submit-resource/
       Know of a program, service, or organization that supports individuals with disabilities? Help us build a more complete directory by sharing it below.
     </p>
 
-    <form action="https://formspree.io/f/{{ site.formspree.submitResource }}" method="POST" class="space-y-6">
+    <form id="resource-form" action="https://formspree.io/f/{{ site.formspree.submitResource }}" method="POST"
+      data-worker-url="{{ site.adminWorkerUrl }}/submit" class="space-y-6">
+      <input type="hidden" id="resource-origin" name="submissionSource" value="site-form">
       <div>
         <label for="resource-name" class="block text-sm font-semibold mb-2">Resource/Organization Name *</label>
         <input type="text" id="resource-name" name="resourceName" required class="form-input" placeholder="Name of the resource or organization">
@@ -35,36 +37,9 @@ permalink: /submit-resource/
         <label for="resource-category" class="block text-sm font-semibold mb-2">Category *</label>
         <select id="resource-category" name="category" required class="form-input">
           <option value="">Select category...</option>
-          <option value="therapy">Therapy Providers</option>
-          <option value="equipment">Equipment & Adaptive Gear</option>
-          <option value="education">Education & IEP</option>
-          <option value="recreation">Recreation & Activities</option>
-          <option value="respite">Respite Care</option>
-          <option value="employment">Employment</option>
-          <option value="nonprofit">Non-Profits & Foundations</option>
-          <option value="faith">Faith Communities</option>
-          <option value="sensory">Sensory-Friendly Venues</option>
-          <option value="childcare">Childcare</option>
-          <option value="legal">Legal & Advocacy</option>
-          <option value="clothing">Adaptive Clothing</option>
-          <option value="community">Community Groups</option>
-          <option value="government">Government Services</option>
-          <option value="early-intervention">Early Intervention (0-3)</option>
-          <option value="transition">Transition Services (18-21+)</option>
-          <option value="financial">Financial Assistance & Benefits</option>
-          <option value="insurance">Insurance & Appeals</option>
-          <option value="planning">Special Needs Planning</option>
-          <option value="mental-health">Mental Health</option>
-          <option value="transportation">Transportation</option>
-          <option value="housing">Housing</option>
-          <option value="medical">Medical Providers</option>
-          <option value="camps">Camps & After-School</option>
-          <option value="sibling-support">Sibling Support</option>
-          <option value="assistive-tech">Assistive Technology</option>
-          <option value="sports">Adaptive Sports & Fitness</option>
-          <option value="emergency">Emergency Preparedness</option>
-          <option value="home-modifications">Home Modifications</option>
-          <option value="other">Other</option>
+          {% for cat in categories %}
+          <option value="{{ cat.value }}">{{ cat.label }}</option>
+          {% endfor %}
         </select>
       </div>
       <div>
@@ -80,8 +55,9 @@ permalink: /submit-resource/
         <input type="email" id="submitter-email" name="submitterEmail" class="form-input" placeholder="In case we have questions">
       </div>
       <div>
-        <button type="submit" class="btn-primary w-full text-center text-lg">Submit Resource</button>
+        <button type="submit" id="resource-submit-btn" class="btn-primary w-full text-center text-lg">Submit Resource</button>
       </div>
+      <div id="submit-status" class="hidden mt-4 p-4 rounded-lg text-center font-semibold" role="status" aria-live="polite"></div>
     </form>
 
     <div class="mt-8 text-center">
@@ -106,6 +82,58 @@ permalink: /submit-resource/
       var el = document.getElementById(id);
       if (el && fields[id]) el.value = decodeURIComponent(fields[id]);
     });
+    // Mark this submission as coming from the Quick Submit bookmarklet
+    var origin = document.getElementById('resource-origin');
+    if (origin) origin.value = 'quick-submit';
   }
+})();
+
+// Submit to the admin worker (review queue) if configured; fall back to
+// Formspree natively when the worker is unreachable
+(function() {
+  var form = document.getElementById('resource-form');
+  var workerUrl = form ? form.getAttribute('data-worker-url') : '';
+  if (!form || !workerUrl || workerUrl.indexOf('http') !== 0) return;
+
+  form.addEventListener('submit', function handler(e) {
+    e.preventDefault();
+    var btn = document.getElementById('resource-submit-btn');
+    var status = document.getElementById('submit-status');
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    status.className = 'hidden mt-4 p-4 rounded-lg text-center font-semibold';
+
+    fetch(workerUrl, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(function(res) {
+      if (res.status >= 500) { throw { fallback: true }; }
+      return res.json().then(function(data) { return { ok: res.ok, data: data }; });
+    })
+    .then(function(result) {
+      if (result.ok) {
+        status.textContent = result.data.message || 'Thank you! Your resource has been submitted for review.';
+        status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
+        status.style.backgroundColor = 'var(--color-warm-light)';
+        status.style.color = 'var(--color-primary)';
+        form.reset();
+      } else {
+        status.textContent = 'Error: ' + (result.data.error || 'Something went wrong') + '. Please check the form and try again.';
+        status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
+        status.style.backgroundColor = '#fef2f2';
+        status.style.color = '#b91c1c';
+      }
+    })
+    .catch(function() {
+      // Worker unreachable or erroring — submit natively to Formspree instead
+      form.removeEventListener('submit', handler);
+      form.submit();
+    })
+    .finally(function() {
+      btn.disabled = false;
+      btn.textContent = 'Submit Resource';
+    });
+  });
 })();
 </script>

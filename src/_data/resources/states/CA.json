@@ -17,7 +17,12 @@
       "early-intervention"
     ],
     "source": "https://www.dds.ca.gov/services/early-start/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of California",
@@ -40,7 +45,12 @@
       "nonprofit"
     ],
     "source": "https://thearcca.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Southern California",
@@ -62,7 +72,12 @@
       "sports"
     ],
     "source": "https://sosc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights California",
@@ -82,7 +97,12 @@
       "legal"
     ],
     "source": "https://www.disabilityrightsca.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "California Department of Rehabilitation",
@@ -102,7 +122,12 @@
       "government"
     ],
     "source": "https://www.dor.ca.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI California",
@@ -124,7 +149,12 @@
       "mental-health"
     ],
     "source": "https://namica.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ability Tools - California Assistive Technology Program",
@@ -144,7 +174,12 @@
       "assistive-tech"
     ],
     "source": "https://abilitytools.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CalABLE",
@@ -164,7 +199,12 @@
       "financial"
     ],
     "source": "https://calable.ca.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's Hospital Los Angeles - Developmental-Behavioral Pediatrics",
@@ -189,7 +229,12 @@
       "medical"
     ],
     "source": "https://www.chla.org/behavioral-health-institute/developmental-behavioral-pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Angel City Sports",
@@ -212,7 +257,12 @@
       "sports"
     ],
     "source": "https://angelcitysports.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rollettes Dance Team",
@@ -238,7 +288,12 @@
       "performance"
     ],
     "source": "https://www.rollettesdance.com",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Challenged Athletes Foundation (CAF)",
@@ -265,7 +320,12 @@
       "prosthetics"
     ],
     "source": "https://www.challengedathletes.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "BORP Adaptive Sports and Recreation",
@@ -291,7 +351,12 @@
       "fitness"
     ],
     "source": "https://www.borp.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AmpSurf",
@@ -317,7 +382,12 @@
       "ocean"
     ],
     "source": "https://www.ampsurf.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hope4Families Special Education Law Firm",
@@ -341,7 +411,12 @@
       "free legal"
     ],
     "source": "https://www.hope4familiesca.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Classroom Matters",
@@ -363,6 +438,11 @@
       "educational consulting"
     ],
     "source": "https://www.classroommatters.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

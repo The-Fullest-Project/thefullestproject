@@ -51,3 +51,165 @@ collections:
       - { label: "Audio URL", name: "audioUrl", widget: "string", required: false }
       - { label: "Excerpt", name: "excerpt", widget: "text" }
       - { label: "Show Notes", name: "body", widget: "markdown" }
+
+  - name: "siteContent"
+    label: "Site Pages"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "src/_data/homepage.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - label: "Primary Button"
+                name: "primaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+              - label: "Secondary Button"
+                name: "secondaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+          - label: "Mission"
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Bold closing line", name: "emphasis", widget: "string" }
+          - label: "Feature Cards"
+            name: "features"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                collapsed: true
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Icon (emoji)", name: "icon", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Link URL", name: "url", widget: "string" }
+          - label: "Stories Section"
+            name: "stories"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string" }
+              - { label: "Empty-state message", name: "emptyMessage", widget: "text" }
+              - { label: "Empty-state button label", name: "emptyCtaLabel", widget: "string" }
+              - { label: "Browse-all button label", name: "browseAllLabel", widget: "string" }
+          - label: "Spotlight Section"
+            name: "spotlight"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string" }
+              - { label: "View-all button label", name: "viewAllLabel", widget: "string" }
+          - label: "Newsletter"
+            name: "newsletter"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Email placeholder", name: "placeholder", widget: "string" }
+              - { label: "Button label", name: "buttonLabel", widget: "string" }
+          - label: "Coverage / Stats"
+            name: "coverage"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Stat 1 label (the count itself is automatic)", name: "statResourcesLabel", widget: "string" }
+              - { label: "Stat 2 value", name: "statLocationsValue", widget: "string" }
+              - { label: "Stat 2 label", name: "statLocationsLabel", widget: "string" }
+              - { label: "Stat 3 value", name: "statCategoriesValue", widget: "string" }
+              - { label: "Stat 3 label", name: "statCategoriesLabel", widget: "string" }
+              - { label: "Button label", name: "ctaLabel", widget: "string" }
+
+      - label: "About Page"
+        name: "about"
+        file: "src/_data/about.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "body", widget: "text" }
+          - label: "The Problem"
+            name: "problem"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+              - { label: "Bold closing line", name: "emphasis", widget: "string" }
+          - label: "Three-Phase Approach"
+            name: "approach"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Phases"
+                name: "phases"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Founders"
+            name: "founders"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Bios"
+                name: "bios"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Location", name: "location", widget: "string" }
+                  - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+                  - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+                  - { label: "Highlight (bold summary)", name: "highlight", widget: "text" }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - label: "Primary Button"
+                name: "primaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+              - label: "Secondary Button"
+                name: "secondaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+
+      - label: "Page Headers"
+        name: "pageHeaders"
+        file: "src/_data/pages.json"
+        fields:
+          - label: "Blog Listing"
+            name: "blog"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }

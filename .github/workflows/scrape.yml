@@ -62,8 +62,14 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add src/_data/resources/ src/_data/stories.json src/_data/spotlights.json src/_data/gigs.json src/blog/ scrapers/logs/ scrapers/output/
-          git diff --staged --quiet || git commit -m "Weekly scrape: update resources, stories, spotlights, blog, and gigs"
+          # stories.json, spotlights.json, and src/blog/ are no longer written at
+          # scrape time — new content is queued under pending/ for admin review
+          # and published by the tfp-admin-api worker on approval.
+          git add src/_data/resources/ src/_data/gigs.json pending/ scrapers/logs/ scrapers/output/
+          git diff --staged --quiet || git commit -m "Weekly scrape: update existing data, queue new items for review"
+          # Worker approval commits may land mid-run; the file sets are disjoint
+          # (the Action only creates new dated batch files), so rebase is clean.
+          git pull --rebase origin main
           git push
 
       - name: Setup Node.js

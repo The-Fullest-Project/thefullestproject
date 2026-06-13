@@ -20,7 +20,12 @@
       "adaptive-equipment"
     ],
     "source": "https://www.accesstechnologiesinc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Albertina Kerr",
@@ -46,7 +51,12 @@
       "crisis-support"
     ],
     "source": "https://www.albertinakerr.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Society of Oregon",
@@ -71,7 +81,12 @@
       "family-support"
     ],
     "source": "https://autismsocietyoregon.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Beaverton Inclusive Playground (Howard M. Terpenning Recreation Complex)",
@@ -93,7 +108,12 @@
       "accessible"
     ],
     "source": "https://www.beavertonoregon.gov/Facilities/Facility/Details/Howard-M-Terpenning-Recreation-Complex-11",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Meadowood Springs",
@@ -118,7 +138,12 @@
       "residential"
     ],
     "source": "https://www.meadowoodsprings.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Easter Seals Oregon",
@@ -141,7 +166,12 @@
       "disability-services"
     ],
     "source": "https://www.easterseals.com/oregon/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FACT Oregon",
@@ -164,7 +194,12 @@
       "system-navigation"
     ],
     "source": "https://factoregon.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FACT Oregon (Family and Community Together)",
@@ -190,7 +225,12 @@
       "parent-training"
     ],
     "source": "https://factoregon.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Harper's Playground",
@@ -213,7 +253,12 @@
       "universal-design"
     ],
     "source": "https://www.harpersplayground.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Independent Living Resources (ILR)",
@@ -236,7 +281,12 @@
       "advocacy"
     ],
     "source": "https://www.ilr.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mt. Hood Kiwanis Camp",
@@ -259,7 +309,12 @@
       "year-round"
     ],
     "source": "https://www.mhkc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Multnomah County Developmental Disabilities Division",
@@ -285,7 +340,12 @@
       "community"
     ],
     "source": "https://www.multco.us/dd",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Oregon",
@@ -307,7 +367,12 @@
       "advocacy"
     ],
     "source": "https://namior.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Northwest Access Fund",
@@ -330,7 +395,12 @@
       "home-modifications"
     ],
     "source": "https://www.nwaccessfund.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon ABLE Savings Plan",
@@ -353,7 +423,12 @@
       "financial-planning"
     ],
     "source": "https://www.oregonablesavings.com/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Commission for the Blind",
@@ -378,7 +453,12 @@
       "independent-living"
     ],
     "source": "https://www.oregon.gov/blind/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Council on Developmental Disabilities (OCDD)",
@@ -403,7 +483,12 @@
       "self-determination"
     ],
     "source": "https://www.ocdd.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Department of Developmental Disabilities Services (ODDS)",
@@ -428,7 +513,12 @@
       "case-management"
     ],
     "source": "https://www.oregon.gov/odhs/developmental-disabilities/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Disability Parking Permit",
@@ -451,7 +541,12 @@
       "accessibility"
     ],
     "source": "https://www.oregon.gov/odot/DMV/Pages/driverid/disability_parking.aspx",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Disability Rights (Disability Rights Oregon)",
@@ -474,7 +569,12 @@
       "civil-rights"
     ],
     "source": "https://www.droregon.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Early Intervention / Early Childhood Special Education (EI/ECSE)",
@@ -496,7 +596,12 @@
       "developmental-delay"
     ],
     "source": "https://www.oregon.gov/ode/students-and-family/specialeducation/earlyintervention/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Emergency Management - Access and Functional Needs",
@@ -518,7 +623,12 @@
       "disaster-planning"
     ],
     "source": "https://www.oregon.gov/oem/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Family Support Network",
@@ -541,7 +651,12 @@
       "behavioral-health"
     ],
     "source": "https://www.ofsn.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Family to Family Health Information Center (OF2F)",
@@ -564,7 +679,12 @@
       "parent-training"
     ],
     "source": "https://oregonfamily2family.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Health & Science University (OHSU) - Child Development & Rehabilitation Center (CDRC)",
@@ -591,7 +711,12 @@
       "multidisciplinary"
     ],
     "source": "https://www.ohsu.edu/child-development-rehabilitation-center",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Health Plan (OHP) - Medicaid",
@@ -614,7 +739,12 @@
       "insurance"
     ],
     "source": "https://www.oregon.gov/oha/hsd/ohp/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Home Education Network (OHEN) - Special Needs",
@@ -642,7 +772,12 @@
       "community"
     ],
     "source": "http://www.ohen.org/homeschooling-in-oregon/connect-to-community/special-needs/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Housing and Community Services - Disability Housing",
@@ -664,7 +799,12 @@
       "accessible"
     ],
     "source": "https://www.oregon.gov/ohcs/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Office on Disability and Health",
@@ -687,7 +827,12 @@
       "disability-data"
     ],
     "source": "https://www.oregon.gov/oha/PH/DiseasesConditions/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Parent Training and Information Center (PTI)",
@@ -710,7 +855,12 @@
       "special-education"
     ],
     "source": "https://www.orpti.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Post-Secondary Transition Programs",
@@ -733,7 +883,12 @@
       "iep"
     ],
     "source": "https://www.oregon.gov/ode/students-and-family/specialeducation/transitions/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Respite Program (Lifespan Respite)",
@@ -755,7 +910,12 @@
       "temporary-care"
     ],
     "source": "https://www.oregon.gov/odhs/providers-partners/idd/pages/respite.aspx",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon School for the Deaf",
@@ -780,7 +940,12 @@
       "residential"
     ],
     "source": "https://www.oregon.gov/osd/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Technology Access Program (OTAP)",
@@ -802,7 +967,12 @@
       "demonstrations"
     ],
     "source": "https://www.accesstechnologiesinc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oregon Vocational Rehabilitation Services (VR)",
@@ -825,7 +995,12 @@
       "job-training"
     ],
     "source": "https://www.oregon.gov/odhs/vr/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Portland Children's Museum - Accessibility",
@@ -848,7 +1023,12 @@
       "children"
     ],
     "source": "https://www.portlandcm.org/visit/accessibility",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Portland Parks & Recreation - Adaptive & Inclusive Recreation",
@@ -871,7 +1051,12 @@
       "parks"
     ],
     "source": "https://www.portland.gov/parks/adaptive-inclusive-recreation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Portland Sensory-Friendly Events at OMSI",
@@ -896,7 +1081,12 @@
       "science"
     ],
     "source": "https://www.omsi.edu/accessibility",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Providence Inclusive Recreation & Adapted Sports",
@@ -919,7 +1109,12 @@
       "inclusive"
     ],
     "source": "https://www.providence.org/services/rehabilitation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rebuilding Together Portland",
@@ -941,7 +1136,12 @@
       "ramps"
     ],
     "source": "https://www.rtpdx.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ride Connection",
@@ -963,7 +1163,12 @@
       "travel-training"
     ],
     "source": "https://rideconnection.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Oregon",
@@ -988,7 +1193,12 @@
       "inclusion"
     ],
     "source": "https://www.soor.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Oregon",
@@ -1013,7 +1223,12 @@
       "developmental"
     ],
     "source": "https://thearcoregon.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TriMet LIFT Paratransit",
@@ -1035,7 +1250,12 @@
       "door-to-door"
     ],
     "source": "https://trimet.org/lift/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Oregon",
@@ -1059,7 +1279,12 @@
       "statewide"
     ],
     "source": "https://www.droregon.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Portland Metro",
@@ -1086,7 +1311,12 @@
       "developmental disabilities"
     ],
     "source": "https://thearcpdx.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Lane County",
@@ -1113,7 +1343,12 @@
       "developmental disabilities"
     ],
     "source": "https://arclane.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Benton County",
@@ -1140,6 +1375,11 @@
       "developmental disabilities"
     ],
     "source": "https://arcbenton.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

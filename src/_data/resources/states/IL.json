@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of Illinois",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "State chapter of The Arc advocating for people with intellectual and developmental disabilities across Illinois.",
@@ -11,13 +13,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearcofil.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois Early Intervention Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Statewide early intervention services for infants and toddlers from birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +38,22 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.dhs.state.il.us/page.aspx?item=31183",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Illinois",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Year-round sports training and athletic competition for children and adults with intellectual disabilities in Illinois.",
@@ -43,13 +63,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.soill.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lurie Children's Hospital - Developmental and Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Illinois",
     "area": "Chicago",
     "description": "Comprehensive developmental and behavioral pediatric evaluations and treatment at one of the top children's hospitals in the nation.",
@@ -59,13 +88,22 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.luriechildrens.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Equip for Equality",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Illinois' federally designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -75,13 +113,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.equipforequality.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois Respite Coalition",
-    "category": ["respite"],
+    "category": [
+      "respite"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Connects families of individuals with disabilities to respite care providers and resources across Illinois.",
@@ -91,13 +138,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["respite"],
+    "tags": [
+      "respite"
+    ],
     "source": "https://www.illinoisrespitecoalition.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois Assistive Technology Program (IATP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Provides assistive technology device demonstrations, loans, and resources to individuals with disabilities throughout Illinois.",
@@ -107,13 +163,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.iltech.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible individuals with disabilities to save without affecting means-tested benefits.",
@@ -123,13 +188,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.illinoisable.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois Division of Developmental Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "State agency providing services, support, and programs for individuals with developmental disabilities in Illinois.",
@@ -139,13 +213,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.dhs.state.il.us/page.aspx?item=29738",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pace Paratransit Services",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "Illinois",
     "area": "Chicagoland",
     "description": "ADA paratransit services providing door-to-door transportation for individuals with disabilities in the Chicago suburban area.",
@@ -155,13 +238,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.pacebus.com/paratransit",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois Medicaid Home and Community-Based Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "Medicaid waiver programs providing home and community-based services for individuals with disabilities as an alternative to institutional care.",
@@ -171,13 +263,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.dhs.state.il.us/page.aspx?item=100384",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Red Leaf",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "Illinois",
     "area": "Ingleside",
     "description": "Residential summer camp for children and adults with developmental disabilities offering outdoor recreation and social activities.",
@@ -187,13 +288,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.keshet.org/camp-red-leaf",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Family Resource Center on Disabilities",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "Illinois",
     "area": "Chicago",
     "description": "Provides parent training, information, and support to help families navigate disability services and education systems.",
@@ -203,13 +313,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.frcd.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Illinois Employment and Economic Opportunity for Persons with Disabilities Task Force",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "Illinois",
     "area": "",
     "description": "State programs and resources supporting competitive integrated employment for individuals with disabilities.",
@@ -219,8 +338,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.dhs.state.il.us/page.aspx?item=32306",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

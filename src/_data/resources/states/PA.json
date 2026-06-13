@@ -1,7 +1,9 @@
 [
   {
     "name": "Pennsylvania Early Intervention Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Pennsylvania's early intervention program providing coaching support and services to families with children birth to age five with developmental delays and disabilities. Services include physical, occupational, speech, hearing, and vision therapy provided in homes and community settings at no cost.",
@@ -9,15 +11,27 @@
     "website": "https://www.pa.gov/agencies/dhs/resources/early-learning-child-care/early-intervention-services",
     "address": "",
     "ageRange": "Birth to 5",
-    "disabilityTypes": ["developmental-delays", "all-disabilities"],
+    "disabilityTypes": [
+      "developmental-delays",
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.pa.gov/agencies/dhs/resources/early-learning-child-care/early-intervention-services",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Pennsylvania",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Largest advocacy organization for individuals with intellectual and developmental disabilities in Pennsylvania since 1949. Over 40 local chapters representing over 14,000 members, offering customized employment programs, inclusive education, and ACRE certification training.",
@@ -25,15 +39,27 @@
     "website": "https://thearcpa.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities", "developmental-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities",
+      "developmental-disabilities"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://thearcpa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Pennsylvania",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Year-round sports organization operating in 9 geographic regions around the state, providing athletic training and competitions for athletes of all ages with intellectual disabilities at no cost. Includes regional and state-level competitions and the annual Polar Plunge fundraiser.",
@@ -41,15 +67,26 @@
     "website": "https://specialolympicspa.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://specialolympicspa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Pennsylvania",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Pennsylvania's federally-mandated protection and advocacy agency. Provides legal advice, advocacy, and referral services to over 6,800 callers annually through a toll-free intake system. Helps with disability-related issues in employment, education, housing, access, and voting.",
@@ -57,15 +94,26 @@
     "website": "https://www.disabilityrightspa.org/",
     "address": "1800 JFK Boulevard, Suite 900, Philadelphia, PA 19103",
     "ageRange": "All ages",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightspa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pennsylvania Office of Vocational Rehabilitation (OVR)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Provides vocational rehabilitation services through 21 district offices in all 67 counties. Services include vocational guidance, counseling, goal setting, individualized plans for employment, and job placement at no cost. The Hiram G. Andrews Center in Johnstown provides comprehensive vocational training.",
@@ -73,15 +121,26 @@
     "website": "https://www.pa.gov/agencies/dli/programs-services/disability-and-vocational-rehabilitation/vocational-rehabilitation",
     "address": "",
     "ageRange": "Working age adults and transition-age youth",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.pa.gov/agencies/dli/programs-services/disability-and-vocational-rehabilitation/vocational-rehabilitation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Keystone Pennsylvania",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Pennsylvania's state NAMI organization dedicated to improving the lives of children, adolescents, adults, and families affected by mental illness. Affiliates across the state provide free peer-led support groups, education programs, and advocacy.",
@@ -89,15 +148,26 @@
     "website": "https://www.namikeystonepa.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["mental-health"],
+    "disabilityTypes": [
+      "mental-health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://www.namikeystonepa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TechOWL (Technology for Our Whole Lives)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Pennsylvania's Assistive Technology Act program, a project of Temple University's Institute on Disabilities. Offers nine regional AT Resource Centers with free lending library, device demonstrations, consultations, mini grants up to $400, and equipment reuse programs.",
@@ -105,15 +175,26 @@
     "website": "https://techowlpa.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://techowlpa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PA ABLE Savings Program",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Pennsylvania's ABLE savings program, the fifth largest in the nation with over 11,500 accounts and $185 million saved. Provides tax-free saving for disability-related expenses while maintaining government benefits. PA residents can deduct up to $19,000 per year in contributions from state income taxes.",
@@ -121,15 +202,26 @@
     "website": "https://www.paable.gov/",
     "address": "",
     "ageRange": "All ages (disability onset before age 46)",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.paable.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's Hospital of Philadelphia (CHOP) - Developmental and Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "The largest developmental and behavioral pediatrics division in the tri-state region, offering comprehensive care for children with developmental and behavioral disorders. Multidisciplinary team of physicians, psychiatrists, psychologists, and therapists at multiple locations in PA and NJ.",
@@ -137,15 +229,30 @@
     "website": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
     "address": "",
     "ageRange": "Birth to 21",
-    "disabilityTypes": ["autism", "adhd", "developmental-delays", "intellectual-disabilities", "learning-disabilities"],
+    "disabilityTypes": [
+      "autism",
+      "adhd",
+      "developmental-delays",
+      "intellectual-disabilities",
+      "learning-disabilities"
+    ],
     "cost": "Insurance accepted",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pennsylvania Center for Adapted Sports (PCAS)",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Pennsylvania",
     "area": "",
     "description": "Established in 1995 to improve the health and well-being of people with disabilities through inclusive sport, wellness, and recreation. Offers cycling, climbing, kayaking, rowing, skiing, sitting volleyball, yoga, swimming, hockey, and triathlon, serving over 500 individuals annually.",
@@ -153,10 +260,20 @@
     "website": "https://centeronline.com/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["physical-disabilities", "all-disabilities"],
+    "disabilityTypes": [
+      "physical-disabilities",
+      "all-disabilities"
+    ],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://centeronline.com/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

@@ -17,7 +17,12 @@
       "nonprofit"
     ],
     "source": "https://www.arckansas.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kansas Infant-Toddler Services (tiny-k)",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.kdhe.ks.gov/726/Infant-Toddler-Services",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Kansas",
@@ -57,7 +67,12 @@
       "sports"
     ],
     "source": "https://www.ksso.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's Mercy Kansas City - Developmental and Behavioral Health",
@@ -77,7 +92,12 @@
       "medical"
     ],
     "source": "https://www.childrensmercy.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Center of Kansas",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.drckansas.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Assistive Technology for Kansans",
@@ -117,7 +142,12 @@
       "assistive-tech"
     ],
     "source": "https://atk.ku.edu",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kansas ABLE Savings Plan",
@@ -137,7 +167,12 @@
       "financial"
     ],
     "source": "https://www.savewithable.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kansas Department for Aging and Disability Services (KDADS)",
@@ -157,7 +192,12 @@
       "government"
     ],
     "source": "https://www.kdads.ks.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Hope - Paraquad",
@@ -177,7 +217,12 @@
       "camps"
     ],
     "source": "https://www.paraquad.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Families Together Inc.",
@@ -197,7 +242,12 @@
       "community"
     ],
     "source": "https://www.familiestogetherinc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kansas Vocational Rehabilitation Services",
@@ -217,7 +267,12 @@
       "employment"
     ],
     "source": "https://www.dcf.ks.gov/services/RS/Pages/default.aspx",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kansas Medicaid HCBS Waivers",
@@ -237,7 +292,12 @@
       "financial"
     ],
     "source": "https://www.kdads.ks.gov/commissions/home-community-based-services-(hcbs)",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rainbows United Therapy Services",
@@ -258,7 +318,12 @@
       "therapy"
     ],
     "source": "https://www.rainbowsunited.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AbilityPoint (The Arc of Sedgwick County)",
@@ -285,6 +350,11 @@
       "Wichita"
     ],
     "source": "https://abilitypoint.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

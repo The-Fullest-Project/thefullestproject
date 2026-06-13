@@ -1,7 +1,9 @@
 [
   {
     "name": "South Dakota Birth to Three",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "South Dakota's Part C early intervention program providing developmental services for infants and toddlers from birth to age 3.",
@@ -11,13 +13,22 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://dhs.sd.gov/birthtothree/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of South Dakota",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "State chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in South Dakota.",
@@ -27,13 +38,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearc.org/find-a-chapter",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics South Dakota",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "Year-round sports training and athletic competition for South Dakotans with intellectual disabilities.",
@@ -43,13 +63,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.sosd.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights South Dakota",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "South Dakota's designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -59,13 +88,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.drsdlaw.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "South Dakota Division of Rehabilitation Services",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "State vocational rehabilitation services helping South Dakotans with disabilities prepare for and obtain employment.",
@@ -75,13 +113,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://dhs.sd.gov/rehabservices/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI South Dakota",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "State chapter of the National Alliance on Mental Illness dedicated to improving the lives of persons affected by mental illness through support, education, and advocacy since 1987.",
@@ -91,13 +138,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namisouthdakota.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "South Dakota Assistive Technology Project (DakotaLink)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "Statewide assistive technology program providing device demonstrations, loans, and information for South Dakotans with disabilities.",
@@ -107,13 +163,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.dakotalink.net",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "South Dakota ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "South Dakota",
     "area": "",
     "description": "Tax-advantaged ABLE savings accounts for eligible South Dakotans with disabilities to save without impacting public benefits.",
@@ -123,13 +188,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.savewithable.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sanford Children's Hospital - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "South Dakota",
     "area": "Sioux Falls",
     "description": "Comprehensive developmental and behavioral pediatric evaluations and treatment for children at Sanford Children's in Sioux Falls.",
@@ -139,13 +213,22 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.sanfordhealth.org/medical-services/childrens",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sioux Wheelers Adaptive Sports",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "South Dakota",
     "area": "Sioux Falls",
     "description": "Nonprofit providing adaptive sports opportunities for youth and adults with physical disabilities, including wheelchair basketball and other competitive and recreational sports.",
@@ -155,8 +238,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.siouxwheelers.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

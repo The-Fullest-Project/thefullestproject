@@ -1,7 +1,9 @@
 [
   {
     "name": "Wisconsin Birth to 3 Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Wisconsin's Part C early intervention program helping children under age 3 who have developmental delays or disabilities, with services provided in the child's home or community.",
@@ -11,13 +13,22 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.dhs.wisconsin.gov/birthto3/index.htm",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Wisconsin",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "State chapter of The Arc with 25 local chapters, developing programs and advocating for public policy that gives people with intellectual and developmental disabilities opportunities to learn, live, and work inclusively.",
@@ -27,13 +38,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://arcwi.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Wisconsin",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Year-round sports training and athletic competition in 19 Olympic-type sports for more than 10,000 athletes with intellectual disabilities across Wisconsin.",
@@ -43,13 +63,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://specialolympicswisconsin.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Wisconsin",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Wisconsin's designated Protection and Advocacy agency advancing the dignity, equality, and self-determination of people with disabilities through legal services and advocacy.",
@@ -59,13 +88,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://disabilityrightswi.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wisconsin Division of Vocational Rehabilitation (DVR)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Federal/state program helping people with disabilities obtain, maintain, and advance employment through counseling, training, and job placement services.",
@@ -75,13 +113,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://dwd.wisconsin.gov/dvr/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Wisconsin",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "State chapter of the National Alliance on Mental Illness, founded in Wisconsin in 1979, offering advocacy, free mental health support, education programs, and online support groups.",
@@ -91,13 +138,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namiwisconsin.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wisconsin Assistive Technology Program (WisTech)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Statewide assistive technology program providing device demonstrations, information, training, and AT certification for providers, serving people of all ages with disabilities.",
@@ -107,13 +163,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://www.dhs.wisconsin.gov/wistech/index.htm",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wisconsin ABLE Account (via National ABLE)",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Tax-advantaged ABLE savings accounts for Wisconsinites with disabilities. Wisconsin does not yet have its own state program but residents may open accounts through any state program that accepts non-residents.",
@@ -123,13 +188,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://dfi.wi.gov/Pages/EducationalServices/PersonalFinance/ABLESavingsAccounts.aspx",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's Wisconsin - Center for Child Development",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Wisconsin",
     "area": "Milwaukee",
     "description": "Dedicated to the care of children with developmental challenges from infancy through adolescence, providing evaluations and treatment for autism, developmental delays, learning disorders, and behavioral concerns.",
@@ -139,13 +213,22 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://childrenswi.org/medical-care/center-for-child-development",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wisconsin Adaptive Sports Association (WASA)",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Wisconsin",
     "area": "",
     "description": "Nonprofit promoting community collaboration of adaptive sports and recreation opportunities for people with physical disabilities and visual impairments, offering wheelchair basketball, sled hockey, tennis, and more.",
@@ -155,8 +238,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.wasa.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

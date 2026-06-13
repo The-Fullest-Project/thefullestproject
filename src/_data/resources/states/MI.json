@@ -17,7 +17,12 @@
       "nonprofit"
     ],
     "source": "https://www.arcmi.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Early On Program",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.1702earlyon.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Michigan",
@@ -57,7 +67,12 @@
       "sports"
     ],
     "source": "https://www.somi.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "C.S. Mott Children's Hospital - Developmental and Behavioral Pediatrics",
@@ -77,7 +92,12 @@
       "medical"
     ],
     "source": "https://www.mottchildren.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Protection and Advocacy Service (MPAS)",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.mpas.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Assistive Technology Program (MATP)",
@@ -117,7 +142,12 @@
       "assistive-tech"
     ],
     "source": "https://www.cenmi.org/matp",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MiABLE Account",
@@ -137,7 +167,12 @@
       "financial"
     ],
     "source": "https://www.miable.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Department of Health and Human Services - Developmental Disabilities",
@@ -157,7 +192,12 @@
       "government"
     ],
     "source": "https://www.michigan.gov/mdhhs",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Barefoot (Easterseals Michigan)",
@@ -177,7 +217,12 @@
       "camps"
     ],
     "source": "https://www.easterseals.com/michigan/our-programs/camping-recreation/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Alliance for Families",
@@ -197,7 +242,12 @@
       "community"
     ],
     "source": "https://www.michiganallianceforfamilies.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Rehabilitation Services",
@@ -217,7 +267,12 @@
       "employment"
     ],
     "source": "https://www.michigan.gov/leo/bureaus-agencies/mrs",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Michigan Medicaid HCBS Waivers",
@@ -237,7 +292,12 @@
       "financial"
     ],
     "source": "https://www.michigan.gov/mdhhs/keep-mi-healthy/medicaidpolicywaivers",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SMART Connector Paratransit",
@@ -257,7 +317,12 @@
       "transportation"
     ],
     "source": "https://www.smartbus.org/services/connector",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Beaumont Children's Therapy Services",
@@ -278,7 +343,12 @@
       "therapy"
     ],
     "source": "https://www.beaumont.org/services/childrens/pediatric-rehabilitation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Detroit",
@@ -305,7 +375,12 @@
       "developmental disabilities"
     ],
     "source": "https://www.arc-detroit.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Kent County",
@@ -332,6 +407,11 @@
       "community inclusion"
     ],
     "source": "https://www.arckent.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

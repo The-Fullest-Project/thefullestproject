@@ -20,7 +20,12 @@
       "early-intervention"
     ],
     "source": "https://www.mass.gov/orgs/early-intervention-division",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Massachusetts",
@@ -44,7 +49,12 @@
       "nonprofit"
     ],
     "source": "https://thearcofmass.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Massachusetts",
@@ -66,7 +76,12 @@
       "sports"
     ],
     "source": "https://www.specialolympicsma.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Law Center",
@@ -88,7 +103,12 @@
       "legal"
     ],
     "source": "https://www.dlc-ma.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MassAbility (Massachusetts Rehabilitation Commission)",
@@ -110,7 +130,12 @@
       "government"
     ],
     "source": "https://www.mass.gov/info-details/vocational-rehabilitation-vr",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Massachusetts",
@@ -132,7 +157,12 @@
       "mental-health"
     ],
     "source": "https://namimass.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MassMATCH (Maximizing Assistive Technology in Consumer's Hands)",
@@ -154,7 +184,12 @@
       "assistive-tech"
     ],
     "source": "https://www.massmatch.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Attainable Savings Plan (Massachusetts ABLE)",
@@ -176,7 +211,12 @@
       "financial"
     ],
     "source": "https://www.fidelity.com/able/attainable/overview",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Boston Children's Hospital - Developmental Medicine Center",
@@ -202,7 +242,12 @@
       "medical"
     ],
     "source": "https://www.childrenshospital.org/programs/developmental-medicine-center",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Spaulding Adaptive Sports Centers",
@@ -225,7 +270,12 @@
       "sports"
     ],
     "source": "https://spauldingrehab.org/conditions-services/adaptive-sports",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Federation for Children with Special Needs",
@@ -248,6 +298,11 @@
       "PTI"
     ],
     "source": "https://fcsn.org/pti/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

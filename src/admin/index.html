@@ -8,5 +8,15 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@3.8.4/dist/decap-cms.js"></script>
+  <script>
+    // Cross-link to the review portal (Decap has no custom-nav hook)
+    window.addEventListener('DOMContentLoaded', function() {
+      var link = document.createElement('a');
+      link.href = '/admin/review/';
+      link.textContent = 'Review Queue';
+      link.style.cssText = 'position:fixed;bottom:16px;right:16px;z-index:9999;background:#2B6B4F;color:#fff;padding:10px 16px;border-radius:8px;font-family:sans-serif;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.25);';
+      document.body.appendChild(link);
+    });
+  </script>
 </body>
 </html>

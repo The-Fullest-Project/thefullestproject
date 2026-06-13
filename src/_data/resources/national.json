@@ -27,7 +27,12 @@
       "children"
     ],
     "source": "https://www.4pawsforability.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Abilities Expo",
@@ -53,7 +58,12 @@
       "networking"
     ],
     "source": "https://www.abilities.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Able Fables",
@@ -78,7 +88,12 @@
       "stories"
     ],
     "source": "https://www.ablefables.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ABLE National Resource Center",
@@ -103,7 +118,12 @@
       "financial"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AbleData",
@@ -123,7 +143,12 @@
       "assistive-tech"
     ],
     "source": "https://abledata.acl.gov/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AbleGamers Charity",
@@ -148,7 +173,12 @@
       "free-equipment"
     ],
     "source": "https://ablegamers.org",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AbleNet",
@@ -176,7 +206,12 @@
       "adapted"
     ],
     "source": "https://www.ablenetinc.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Accessible Adventures (Instagram)",
@@ -203,7 +238,12 @@
       "outdoors"
     ],
     "source": "https://www.instagram.com/accessible.adventures/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Accessible Play VA (Instagram)",
@@ -229,7 +269,12 @@
       "virginia"
     ],
     "source": "https://www.instagram.com/accessibleplayva/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ActivStyle",
@@ -260,7 +305,12 @@
       "home-delivery"
     ],
     "source": "https://www.activstyle.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ADA.gov - Service Animals Resource",
@@ -285,7 +335,12 @@
       "discrimination"
     ],
     "source": "https://www.ada.gov/topics/service-animals/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptabilities",
@@ -314,7 +369,12 @@
       "switches"
     ],
     "source": "https://adaptabilities.net",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Aeroflow Urology",
@@ -340,7 +400,12 @@
       "home-delivery"
     ],
     "source": "https://aeroflowurology.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "All About Learning Press",
@@ -368,7 +433,12 @@
       "orton-gillingham"
     ],
     "source": "https://www.allaboutlearningpress.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Amanda Griffith Atkins (Instagram)",
@@ -394,7 +464,12 @@
       "parenting"
     ],
     "source": "https://www.instagram.com/amanda.griffith.atkins/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "American Camp Association - Find a Camp",
@@ -414,7 +489,12 @@
       "camps"
     ],
     "source": "https://www.acacamps.org/campers-families/find-a-camp",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AngelSense GPS Tracker",
@@ -442,7 +522,12 @@
       "wearable"
     ],
     "source": "https://www.angelsense.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Apple - Accessibility",
@@ -468,7 +553,12 @@
       "corporate"
     ],
     "source": "https://www.apple.com/accessibility/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Aquatrek",
@@ -496,7 +586,12 @@
       "adaptive"
     ],
     "source": "https://www.aquatrek2.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Assistance Dogs International (ADI)",
@@ -519,7 +614,12 @@
       "find-provider"
     ],
     "source": "https://assistancedogsinternational.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Assistive Technology Act Programs",
@@ -539,7 +639,12 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AssistiveWare - Proloquo2Go",
@@ -568,7 +673,12 @@
       "nonspeaking"
     ],
     "source": "https://www.assistiveware.com/products/proloquo2go",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Speaks",
@@ -593,7 +703,12 @@
       "advocacy"
     ],
     "source": "https://www.autismspeaks.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Speaks - Dental Tool Kit",
@@ -619,7 +734,12 @@
       "sensory"
     ],
     "source": "https://www.autismspeaks.org/tool-kit/autism-dental-care",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Barton Reading and Spelling System",
@@ -647,7 +767,12 @@
       "curriculum"
     ],
     "source": "https://bartonreading.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Being the Other One: Growing Up with a Brother or Sister Who Has Special Needs",
@@ -671,7 +796,12 @@
       "personal-stories"
     ],
     "source": "https://www.amazon.com/Being-Other-One-Growing-Brother/dp/1590301501",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Bellman & Symfon - Home Alerting System",
@@ -699,7 +829,12 @@
       "vibration"
     ],
     "source": "https://us.bellman.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Best Buddies International",
@@ -726,7 +861,12 @@
       "social"
     ],
     "source": "https://www.bestbuddies.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Billy Footwear",
@@ -748,7 +888,12 @@
       "accessible"
     ],
     "source": "https://billyfootwear.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "BraunAbility",
@@ -773,7 +918,12 @@
       "mobility"
     ],
     "source": "https://www.braunability.com/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "BraunAbility Turny Evo",
@@ -800,7 +950,12 @@
       "car-seat"
     ],
     "source": "https://www.braunability.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ByoWave Proteus Controller",
@@ -827,7 +982,12 @@
       "Xbox"
     ],
     "source": "https://byowave.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Canine Companions",
@@ -855,7 +1015,12 @@
       "veterans"
     ],
     "source": "https://canine.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CAPS - Certified Aging-in-Place Specialist",
@@ -875,7 +1040,12 @@
       "home-modifications"
     ],
     "source": "https://www.nahb.org/education-and-events/credentials/certified-aging-in-place-specialist-caps",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Caregiver Action Network",
@@ -900,7 +1070,12 @@
       "support"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Carewell",
@@ -924,7 +1099,12 @@
       "nurse-support"
     ],
     "source": "https://www.carewell.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CBO Baby",
@@ -946,7 +1126,12 @@
       "body-suits"
     ],
     "source": "https://www.cbobaby.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CCMOO Clothing",
@@ -968,7 +1153,12 @@
       "body-suits"
     ],
     "source": "https://www.ccmooclothing.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CDC - Learn the Signs. Act Early.",
@@ -988,7 +1178,12 @@
       "early-intervention"
     ],
     "source": "https://www.cdc.gov/act-early/index.html",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Challenged Athletes Foundation",
@@ -1015,7 +1210,12 @@
       "funding"
     ],
     "source": "https://www.challengedathletes.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Charlie Foundation",
@@ -1044,7 +1244,12 @@
       "foundation"
     ],
     "source": "https://charliefoundation.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Christopher & Dana Reeve Foundation",
@@ -1073,7 +1278,12 @@
       "spinal-cord"
     ],
     "source": "https://www.christopherreeve.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ClearCaptions - Free Captioned Phone",
@@ -1100,7 +1310,12 @@
       "telephone"
     ],
     "source": "https://clearcaptions.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Closing the Gap",
@@ -1120,7 +1335,12 @@
       "assistive-tech"
     ],
     "source": "https://www.closingthegap.com/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Coalition for Responsible Home Education (CRHE)",
@@ -1145,7 +1365,12 @@
       "evidence-based"
     ],
     "source": "https://crhe.org/guides/resources-for-homeschool-parents/disabilities/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Colin Farrell Foundation",
@@ -1170,7 +1395,12 @@
       "grants"
     ],
     "source": "https://colinfarrellfoundation.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CoughDrop AAC",
@@ -1194,7 +1424,12 @@
       "eye-tracking"
     ],
     "source": "https://www.mycoughdrop.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Courageous Parents Network",
@@ -1217,7 +1452,12 @@
       "families"
     ],
     "source": "https://courageousparentsnetwork.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dental Lifeline Network",
@@ -1242,7 +1482,12 @@
       "nationwide"
     ],
     "source": "https://dentallifeline.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Differently Wired: Raising an Exceptional Child in a Conventional World",
@@ -1270,7 +1515,12 @@
       "guide"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dining with Dignity",
@@ -1299,7 +1549,12 @@
       "silverware"
     ],
     "source": "https://diningwithdignity.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Visibility: First-Person Stories from the Twenty-First Century",
@@ -1322,7 +1577,12 @@
       "personal-stories"
     ],
     "source": "https://www.amazon.com/Disability-Visibility-First-Person-Stories-Twenty-First/dp/1984899422",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Downs Designs",
@@ -1346,7 +1606,12 @@
       "jeans"
     ],
     "source": "https://downsdesigns.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Early Childhood Technical Assistance Center (ECTA)",
@@ -1366,7 +1631,12 @@
       "early-intervention"
     ],
     "source": "https://ectacenter.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Easterseals",
@@ -1389,7 +1659,12 @@
       "camps"
     ],
     "source": "https://www.easterseals.com/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "El Deafo",
@@ -1415,7 +1690,12 @@
       "newbery"
     ],
     "source": "https://www.amazon.com/El-Deafo-Cece-Bell/dp/1419712179",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Enabling Devices",
@@ -1444,7 +1724,12 @@
       "sensory"
     ],
     "source": "https://enablingdevices.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Enabling Devices (formerly Toys for Special Children)",
@@ -1473,7 +1758,12 @@
       "sensory"
     ],
     "source": "https://enablingdevices.com",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Envision Glasses",
@@ -1501,7 +1791,12 @@
       "wearable"
     ],
     "source": "https://www.letsenvision.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Epilepsy Foundation",
@@ -1527,7 +1822,12 @@
       "advocacy"
     ],
     "source": "https://www.epilepsy.com/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "eSpecial Needs - Adaptive Dining",
@@ -1554,7 +1854,12 @@
       "OT-designed"
     ],
     "source": "https://especialneeds.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Everything No One Tells You About Parenting a Disabled Child",
@@ -1579,7 +1884,12 @@
       "new-diagnosis"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "EZ-ACCESS",
@@ -1605,7 +1915,12 @@
       "home-access"
     ],
     "source": "https://www.ezaccess.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Family Caregiver Alliance",
@@ -1630,7 +1945,12 @@
       "identity"
     ],
     "source": "https://www.caregiver.org/resource/grief-and-loss/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Family Voices",
@@ -1650,7 +1970,12 @@
       "insurance"
     ],
     "source": "https://familyvoices.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Feeding Matters",
@@ -1674,7 +1999,12 @@
       "feeding-disorder"
     ],
     "source": "https://www.feedingmatters.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Feeding Tube Awareness - Adaptive Clothing Guide",
@@ -1695,7 +2025,12 @@
       "feeding-tube"
     ],
     "source": "https://www.feedingtubeawareness.org/adaptive-clothing/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Feeding Tube Awareness Foundation",
@@ -1719,7 +2054,12 @@
       "nonprofit"
     ],
     "source": "https://www.feedingtubeawareness.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FEMA - Disability & Access",
@@ -1739,7 +2079,12 @@
       "emergency"
     ],
     "source": "https://www.fema.gov/about/offices/disability",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Finding Disability-Friendly Doctors",
@@ -1759,7 +2104,12 @@
       "medical"
     ],
     "source": "https://palfreyassociates.com/disability-friendly-doctor/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Firefly by Leckey",
@@ -1786,7 +2136,12 @@
       "postural-support"
     ],
     "source": "https://www.fireflyfriends.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Frog Mobility LLC",
@@ -1812,7 +2167,12 @@
       "gait-trainer"
     ],
     "source": "https://www.thefrogfoundation.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Get Your Joy Back: Banishing Resentment and Reclaiming Confidence in Your Special Needs Family",
@@ -1835,7 +2195,12 @@
       "resentment"
     ],
     "source": "https://www.amazon.com/Get-Your-Joy-Back-Resentment/dp/0825443563",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "GlassOuse - Hands-Free Head Mouse",
@@ -1863,7 +2228,12 @@
       "adaptive"
     ],
     "source": "https://glassouse.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "GRIT Freedom Chair",
@@ -1890,7 +2260,12 @@
       "equipment"
     ],
     "source": "https://www.gogrit.us/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "HDIS (Home Delivery Incontinence Supplies)",
@@ -1914,7 +2289,12 @@
       "major-brands"
     ],
     "source": "https://www.hdis.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Home Care Delivered (HCD)",
@@ -1945,7 +2325,12 @@
       "pediatric"
     ],
     "source": "https://www.hcd.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Homeschooling with Dyslexia",
@@ -1974,7 +2359,12 @@
       "community"
     ],
     "source": "https://homeschoolingwithdyslexia.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "How to Build a Thriving Marriage as You Care for Children with Disabilities",
@@ -1997,7 +2387,12 @@
       "self-care"
     ],
     "source": "https://www.amazon.com/Build-Thriving-Marriage-Children-Disabilities/dp/0802433472",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "How You Can Handle More Than You Can Handle",
@@ -2022,7 +2417,12 @@
       "inspiration"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "HSLDA - Special Needs Homeschool Program",
@@ -2047,7 +2447,12 @@
       "consulting"
     ],
     "source": "https://hslda.org/teaching-my-kids/special-needs",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Huckleberry Hiking",
@@ -2075,7 +2480,12 @@
       "recreation"
     ],
     "source": "https://www.huckleberryhiking.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "HUD - Fair Housing & Disability",
@@ -2095,7 +2505,12 @@
       "housing"
     ],
     "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "HumanWare - Braille & Low Vision",
@@ -2123,7 +2538,12 @@
       "display"
     ],
     "source": "https://store.humanware.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ian's Walk: A Story About Autism",
@@ -2149,7 +2569,12 @@
       "picture-book"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Inclusive TLC (Technology, Learning, Communication)",
@@ -2178,7 +2603,12 @@
       "cause-and-effect"
     ],
     "source": "https://www.inclusivetlc.com",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "InnoCaption - Free Call Captioning",
@@ -2205,7 +2635,12 @@
       "app"
     ],
     "source": "https://www.innocaption.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Jiobit GPS Tracker",
@@ -2231,7 +2666,12 @@
       "wearable"
     ],
     "source": "https://www.jiobit.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Juniper Adaptive",
@@ -2253,7 +2693,12 @@
       "kids"
     ],
     "source": "https://www.juniperunlimited.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Just Ask!: Be Different, Be Brave, Be You",
@@ -2276,7 +2721,12 @@
       "picture-book"
     ],
     "source": "https://www.amazon.com/Just-Ask-Different-Brave-You/dp/0525514120",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Keto Hope Foundation",
@@ -2304,7 +2754,12 @@
       "foundation"
     ],
     "source": "https://www.ketohopefoundation.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Khan Academy",
@@ -2329,7 +2784,12 @@
       "self-paced"
     ],
     "source": "https://www.khanacademy.org",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kohl's Adaptive Clothing",
@@ -2350,7 +2810,12 @@
       "sensory-friendly"
     ],
     "source": "https://www.kohls.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kozie Clothes",
@@ -2374,7 +2839,12 @@
       "tagless"
     ],
     "source": "https://www.kozieclothes.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Laughing at My Nightmare",
@@ -2399,7 +2869,12 @@
       "personal-story"
     ],
     "source": "https://www.amazon.com/Laughing-My-Nightmare-Shane-Burcaw/dp/1250080460",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Learning Ally",
@@ -2429,7 +2904,12 @@
       "reading"
     ],
     "source": "https://learningally.org",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Let's Go Play! Inclusion",
@@ -2454,7 +2934,12 @@
       "diversity"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "LIFTech (Lekotek Illinois Families Touching Technology)",
@@ -2481,7 +2966,12 @@
       "toy-adaptation"
     ],
     "source": "https://www.lekotek.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lingraphica",
@@ -2510,7 +3000,12 @@
       "Medicare"
     ],
     "source": "https://lingraphica.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Love That Max",
@@ -2537,7 +3032,12 @@
       "influencer"
     ],
     "source": "https://www.lovethatmax.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lucky Fin Project",
@@ -2565,7 +3065,12 @@
       "community"
     ],
     "source": "https://luckyfinproject.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Madison Tevlin (Instagram)",
@@ -2592,7 +3097,12 @@
       "inclusion"
     ],
     "source": "https://www.instagram.com/madisontevlin/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Magical Mendy (Instagram)",
@@ -2617,7 +3127,12 @@
       "advocacy"
     ],
     "source": "https://www.instagram.com/magicalmendy/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MakeGood 3D Printed Wheelchair",
@@ -2644,7 +3159,12 @@
       "adaptive"
     ],
     "source": "https://www.makegood.design/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Makey Makey",
@@ -2673,7 +3193,12 @@
       "diy-switches"
     ],
     "source": "https://makeymakey.com",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Medical Mutts",
@@ -2703,7 +3228,12 @@
       "train-your-own"
     ],
     "source": "https://www.medicalmutts.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Microsoft Accessibility",
@@ -2729,7 +3259,12 @@
       "xbox"
     ],
     "source": "https://www.microsoft.com/en-us/accessibility",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Miracle League",
@@ -2749,7 +3284,12 @@
       "sports"
     ],
     "source": "https://www.miracleleague.com/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MobilityWorks",
@@ -2774,7 +3314,12 @@
       "dealer"
     ],
     "source": "https://www.mobilityworks.com/locations/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Molly Burke (Instagram)",
@@ -2801,7 +3346,12 @@
       "inclusion"
     ],
     "source": "https://www.instagram.com/mollyburkeofficial/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mount'n Mover",
@@ -2828,7 +3378,12 @@
       "device-mounting"
     ],
     "source": "https://www.mountnmover.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Move United (formerly DSUSA)",
@@ -2848,7 +3403,12 @@
       "sports"
     ],
     "source": "https://moveunitedsport.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Muscular Dystrophy Association (MDA)",
@@ -2874,7 +3434,12 @@
       "camps"
     ],
     "source": "https://www.mda.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "My Brother Charlie",
@@ -2900,7 +3465,12 @@
       "children-book"
     ],
     "source": "https://www.amazon.com/My-Brother-Charlie-Holly-Robinson/dp/0545094666",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NATHHAN - National Challenged Homeschoolers",
@@ -2925,7 +3495,12 @@
       "newsletter"
     ],
     "source": "https://nathhan.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Disability Rights Network",
@@ -2945,7 +3520,12 @@
       "financial"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Down Syndrome Congress",
@@ -2969,7 +3549,12 @@
       "family-support"
     ],
     "source": "https://www.ndsccenter.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Down Syndrome Society (NDSS)",
@@ -2993,7 +3578,12 @@
       "advocacy"
     ],
     "source": "https://www.ndss.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Organization for Rare Disorders (NORD)",
@@ -3017,7 +3607,12 @@
       "financial-assistance"
     ],
     "source": "https://rarediseases.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Parks Disability Access Pass",
@@ -3040,7 +3635,12 @@
       "free"
     ],
     "source": "https://www.nps.gov/subjects/accessibility/interagency-access-pass.htm",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Ramp",
@@ -3066,7 +3666,12 @@
       "portable"
     ],
     "source": "https://www.nationalramp.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NIDCR - Dental Care for Developmental Disabilities",
@@ -3095,7 +3700,12 @@
       "developmental-disabilities"
     ],
     "source": "https://www.nidcr.nih.gov/health-info/developmental-disabilities",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Nike EasyOn",
@@ -3117,7 +3727,12 @@
       "hands-free"
     ],
     "source": "https://www.nike.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "No More Meltdowns",
@@ -3145,7 +3760,12 @@
       "meltdowns"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NorthShore Care Supply",
@@ -3170,7 +3790,12 @@
       "free-samples"
     ],
     "source": "https://www.northshorecare.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Numotion",
@@ -3197,7 +3822,12 @@
       "insurance"
     ],
     "source": "https://www.numotion.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Oley Foundation",
@@ -3221,7 +3851,12 @@
       "nonprofit"
     ],
     "source": "https://oley.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "OrCam MyEye",
@@ -3249,7 +3884,12 @@
       "vision"
     ],
     "source": "https://www.orcam.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Otsimo - Special Education App",
@@ -3279,7 +3919,12 @@
       "games"
     ],
     "source": "https://otsimo.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PACER Center - Transition Resources",
@@ -3299,7 +3944,12 @@
       "transition"
     ],
     "source": "https://www.pacer.org/transition/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Parent Center Hub (CPIR)",
@@ -3325,7 +3975,12 @@
       "advocacy"
     ],
     "source": "https://www.parentcenterhub.org",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Parentgiving",
@@ -3351,7 +4006,12 @@
       "expert-support"
     ],
     "source": "https://www.parentgiving.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PAWS with a Cause",
@@ -3384,7 +4044,12 @@
       "autism"
     ],
     "source": "https://pawswithacause.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Permobil",
@@ -3412,7 +4077,12 @@
       "mobility"
     ],
     "source": "https://www.permobil.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PRC-Saltillo (Prentke Romich Company)",
@@ -3441,7 +4111,12 @@
       "assistive-technology"
     ],
     "source": "https://www.prc-saltillo.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "QuadStick - Mouth-Operated Controller",
@@ -3468,7 +4143,12 @@
       "adaptive"
     ],
     "source": "https://www.quadstick.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Raising Disabled Podcast (Instagram)",
@@ -3493,7 +4173,12 @@
       "influencer"
     ],
     "source": "",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "RAM Mounts - Wheelchair Accessibility",
@@ -3520,7 +4205,12 @@
       "hands-free"
     ],
     "source": "https://rammount.com/collections/accessibility-wheelchair-mounts",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ready.gov - People with Disabilities",
@@ -3540,7 +4230,12 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rebuilding Together",
@@ -3560,7 +4255,12 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rifton Equipment",
@@ -3587,7 +4287,12 @@
       "adaptive-equipment"
     ],
     "source": "https://www.rifton.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "RJ Cooper & Associates",
@@ -3613,7 +4318,12 @@
       "switch-interfaces"
     ],
     "source": "https://www.rjcooper.com",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rules",
@@ -3640,7 +4350,12 @@
       "middle-grade"
     ],
     "source": "https://www.amazon.com/Rules-Cynthia-Lord/dp/0439443830",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "S2 Medical Supply â€” Kids Corner",
@@ -3668,7 +4383,12 @@
       "special-needs"
     ],
     "source": "https://www.s2medicalsupply.com/kids-corner/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SBSK (Special Books by Special Kids)",
@@ -3690,7 +4410,12 @@
       "acceptance"
     ],
     "source": "https://sbsk.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Shane Burcaw (Instagram)",
@@ -3718,7 +4443,12 @@
       "relationships"
     ],
     "source": "https://www.instagram.com/shaneburcaw/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sibling Leadership Network",
@@ -3743,7 +4473,12 @@
       "support"
     ],
     "source": "https://www.siblingleadership.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -3763,7 +4498,12 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Smartbox - Grid AAC",
@@ -3790,7 +4530,12 @@
       "environmental-control"
     ],
     "source": "https://thinksmartbox.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Social Security Disability Benefits (SSI/SSDI)",
@@ -3810,7 +4555,12 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sonic Alert",
@@ -3838,7 +4588,12 @@
       "strobe"
     ],
     "source": "https://www.sonicalert.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SOS Approach to Feeding",
@@ -3867,7 +4622,12 @@
       "evidence-based"
     ],
     "source": "https://sosapproachtofeeding.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Care Dentistry Association (SCDA)",
@@ -3890,7 +4650,12 @@
       "professional-organization"
     ],
     "source": "https://www.thescda.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Children, Challenged Parents",
@@ -3914,7 +4679,12 @@
       "autism"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Needs Alliance",
@@ -3934,7 +4704,12 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics",
@@ -3954,7 +4729,12 @@
       "sports"
     ],
     "source": "https://www.specialolympics.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SPED Homeschool",
@@ -3979,7 +4759,12 @@
       "nonprofit"
     ],
     "source": "https://www.spedhomeschool.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Spin the Globe - Sylvia Longmire (Instagram)",
@@ -4007,7 +4792,12 @@
       "accessibility"
     ],
     "source": "https://www.instagram.com/spintheglobe1/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Spina Bifida Association",
@@ -4031,7 +4821,12 @@
       "advocacy"
     ],
     "source": "https://www.spinabifidaassociation.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sunrise Medical",
@@ -4058,7 +4853,12 @@
       "seating"
     ],
     "source": "https://www.sunrisemedical.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Switch Kids",
@@ -4084,7 +4884,12 @@
       "children"
     ],
     "source": "https://www.switchtoyfamily.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Target - Adaptive Backpacks & Gear",
@@ -4107,7 +4912,12 @@
       "backpack"
     ],
     "source": "https://www.target.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Target - Cat & Jack Adaptive",
@@ -4130,7 +4940,12 @@
       "kids"
     ],
     "source": "https://www.target.com",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Tecla-e Accessibility Hub",
@@ -4161,7 +4976,12 @@
       "computer-access"
     ],
     "source": "https://gettecla.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TED Talks on Disability",
@@ -4183,7 +5003,12 @@
       "ted-talks"
     ],
     "source": "https://www.ted.com/talks?sort=relevance&q=disability",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Able Fables",
@@ -4209,7 +5034,12 @@
       "influencer"
     ],
     "source": "https://www.theablefables.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Accessible Home: Designing for All Ages and Abilities",
@@ -4232,7 +5062,12 @@
       "accessibility"
     ],
     "source": "https://www.amazon.com/Accessible-Home-Designing-Ages-Abilities/dp/1600854915",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc",
@@ -4254,7 +5089,12 @@
       "developmental"
     ],
     "source": "https://thearc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of the United States",
@@ -4283,7 +5123,12 @@
       "nonprofit"
     ],
     "source": "https://thearc.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc's Wings for Autism/All",
@@ -4311,7 +5156,12 @@
       "anxiety"
     ],
     "source": "https://thearc.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Compassionate Friends - Loss of a Special Needs Child",
@@ -4336,7 +5186,12 @@
       "support-group"
     ],
     "source": "https://www.compassionatefriends.org/death-special-needs-child/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Dougy Center - National Grief Center",
@@ -4364,7 +5219,12 @@
       "bereavement"
     ],
     "source": "https://www.dougy.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Out-of-Sync Child",
@@ -4389,7 +5249,12 @@
       "practical-guide"
     ],
     "source": "https://www.amazon.com/Out-Sync-Child-Recognizing-Sensory-Processing/dp/0399531653",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Sibling Slam Book: What It's Really Like to Have a Brother or Sister with Special Needs",
@@ -4413,7 +5278,12 @@
       "slam-book"
     ],
     "source": "https://www.amazon.com/Sibling-Slam-Book-Really-Brother/dp/1890627844",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Sibling Survival Guide",
@@ -4438,7 +5308,12 @@
       "family"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Universal Design for Learning Guidelines",
@@ -4465,7 +5340,12 @@
       "free"
     ],
     "source": "https://udlguidelines.cast.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Think College",
@@ -4485,7 +5365,12 @@
       "transition"
     ],
     "source": "https://thinkcollege.net/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "This Beach Is Loud!",
@@ -4511,7 +5396,12 @@
       "beach"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Tim Tebow Foundation - Night to Shine",
@@ -4535,7 +5425,12 @@
       "social"
     ],
     "source": "https://www.timtebowfoundation.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Time4Learning",
@@ -4564,7 +5459,12 @@
       "adaptive"
     ],
     "source": "https://www.time4learning.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Tobii Dynavox",
@@ -4595,7 +5495,12 @@
       "speech"
     ],
     "source": "https://www.tobiidynavox.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Tommy Hilfiger Adaptive",
@@ -4622,7 +5527,12 @@
       "corporate"
     ],
     "source": "https://usa.tommy.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Understood.org",
@@ -4654,7 +5564,12 @@
       "community"
     ],
     "source": "https://www.understood.org",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "United Cerebral Palsy (UCP)",
@@ -4678,7 +5593,12 @@
       "advocacy"
     ],
     "source": "https://ucp.org/",
-    "lastScraped": "2026-03-07"
+    "lastScraped": "2026-03-07",
+    "dateAdded": "2026-03-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "United Spinal Association",
@@ -4706,7 +5626,12 @@
       "resources"
     ],
     "source": "https://www.unitedspinal.org/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Views from Our Shoes: Growing Up with a Brother or Sister with Special Needs",
@@ -4730,7 +5655,12 @@
       "personal-stories"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "VMI - Vantage Mobility International",
@@ -4755,7 +5685,12 @@
       "conversion"
     ],
     "source": "https://www.vantagemobility.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "We're All Wonders",
@@ -4780,7 +5715,12 @@
       "picture-book"
     ],
     "source": "https://www.amazon.com/Were-All-Wonders-R-Palacio/dp/1524766496",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "World Institute on Disability - Accessibility Resources",
@@ -4801,7 +5741,12 @@
       "universal-design"
     ],
     "source": "https://wid.org/accessibility-universal-design-resources/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wrightslaw",
@@ -4828,7 +5773,12 @@
       "homeschool"
     ],
     "source": "https://www.wrightslaw.com",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "You Will Dream New Dreams",
@@ -4852,7 +5802,12 @@
       "hope"
     ],
     "source": "https://www.amazon.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Youth Crews",
@@ -4877,7 +5832,12 @@
       "adaptive"
     ],
     "source": "https://youthcrews.com/",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Zappos Adaptive",
@@ -4904,7 +5864,12 @@
       "corporate"
     ],
     "source": "https://www.zappos.com/e/adaptive",
-    "lastScraped": "2026-03-08"
+    "lastScraped": "2026-03-08",
+    "dateAdded": "2026-03-08",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NCDJ Disability Language Style Guide",
@@ -4928,7 +5893,12 @@
       "terminology"
     ],
     "source": "https://cronkite.asu.edu/ncdj/disability-language-style-guide",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ADA National Network - Guidelines for Writing About People with Disabilities",
@@ -4952,7 +5922,12 @@
       "guidelines"
     ],
     "source": "https://adata.org/factsheet/ADANN-writing",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Belongs (formerly RespectAbility)",
@@ -4977,7 +5952,12 @@
       "representation"
     ],
     "source": "https://www.disabilitybelongs.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Center for Disability Rights - Language Guide",
@@ -5000,7 +5980,12 @@
       "guidelines"
     ],
     "source": "https://cdrnys.org/disability-writing-journalism-guidelines/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "American Association of People with Disabilities (AAPD)",
@@ -5025,7 +6010,12 @@
       "language"
     ],
     "source": "https://www.aapd.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc - Disability Language and Etiquette",
@@ -5053,7 +6043,12 @@
       "advocacy"
     ],
     "source": "https://thearc.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autistic Self Advocacy Network (ASAN)",
@@ -5080,7 +6075,12 @@
       "community"
     ],
     "source": "https://autisticadvocacy.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Disability Rights Network (NDRN)",
@@ -5105,7 +6105,12 @@
       "language"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Talking to Children About Disability - Disability Rights Florida",
@@ -5129,7 +6134,12 @@
       "education"
     ],
     "source": "https://disabilityrightsflorida.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Seattle Childrens - Talking to Kids About Disabilities",
@@ -5153,7 +6163,12 @@
       "hospital"
     ],
     "source": "https://www.seattlechildrens.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CDC - Communicating with and about People with Disabilities",
@@ -5177,7 +6192,12 @@
       "guidelines"
     ],
     "source": "https://www.cdc.gov/disability-and-health/articles-documents/communicating-with-and-about-people-with-disabilities.html",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AARP Caregiver Resource - Disability Glossary and Language Guide",
@@ -5201,7 +6221,12 @@
       "advocacy"
     ],
     "source": "https://www.aarp.org/caregiving/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Tech Solutions",
@@ -5225,7 +6250,12 @@
       "SLP-owned"
     ],
     "source": "https://www.adaptivetechsolutions.com",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Lekotek Center",
@@ -5252,7 +6282,12 @@
       "inclusion"
     ],
     "source": "https://www.lekotek.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "RePlay for Kids",
@@ -5275,7 +6310,12 @@
       "directory"
     ],
     "source": "https://replayforkids.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Bow Foundation (GNAO1)",
@@ -5305,7 +6345,12 @@
       "family-support"
     ],
     "source": "https://gnao1.org",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sweet Julia Grace Foundation",
@@ -5336,7 +6381,12 @@
       "I-cell"
     ],
     "source": "https://www.sweetjuliagrace.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Angelman Syndrome Foundation",
@@ -5363,7 +6413,12 @@
       "family-support"
     ],
     "source": "https://angelman.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Foundation for Angelman Syndrome Therapeutics (FAST)",
@@ -5390,7 +6445,12 @@
       "family-founded"
     ],
     "source": "https://cureangelman.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "International Rett Syndrome Foundation (IRSF)",
@@ -5419,7 +6479,12 @@
       "family-support"
     ],
     "source": "https://www.rettsyndrome.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rett Syndrome Research Trust (RSRT)",
@@ -5447,7 +6512,12 @@
       "research"
     ],
     "source": "https://reverserett.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Foundation for Prader-Willi Research (FPWR)",
@@ -5474,7 +6544,12 @@
       "family-support"
     ],
     "source": "https://www.fpwr.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Prader-Willi Syndrome Association (USA)",
@@ -5500,7 +6575,12 @@
       "crisis-support"
     ],
     "source": "https://www.pwsausa.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Fragile X Foundation (NFXF)",
@@ -5528,7 +6608,12 @@
       "conferences"
     ],
     "source": "https://fragilex.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FRAXA Research Foundation",
@@ -5554,7 +6639,12 @@
       "gene-therapy"
     ],
     "source": "https://www.fraxa.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TSC Alliance (Tuberous Sclerosis)",
@@ -5583,7 +6673,12 @@
       "family-founded"
     ],
     "source": "https://www.tscalliance.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cure SMA",
@@ -5612,7 +6707,12 @@
       "family-support"
     ],
     "source": "https://www.curesma.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dravet Syndrome Foundation",
@@ -5642,7 +6742,12 @@
       "patient-registry"
     ],
     "source": "https://dravetfoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "International Foundation for CDKL5 Research",
@@ -5671,7 +6776,12 @@
       "patient-database"
     ],
     "source": "https://www.cdkl5.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Loulou Foundation (CDKL5)",
@@ -5699,7 +6809,12 @@
       "therapeutics"
     ],
     "source": "https://www.louloufoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lennox-Gastaut Syndrome (LGS) Foundation",
@@ -5727,7 +6842,12 @@
       "research-grants"
     ],
     "source": "https://www.lgsfoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FOXG1 Research Foundation",
@@ -5755,7 +6875,12 @@
       "parent-led"
     ],
     "source": "https://www.foxg1research.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Phelan-McDermid Syndrome Foundation",
@@ -5784,7 +6909,12 @@
       "family-support"
     ],
     "source": "https://pmsf.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cornelia de Lange Syndrome Foundation",
@@ -5812,7 +6942,12 @@
       "diagnosis-support"
     ],
     "source": "https://www.cdlsusa.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "5p- Society (Cri du Chat Syndrome)",
@@ -5841,7 +6976,12 @@
       "family-support"
     ],
     "source": "https://fivepminus.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "STXBP1 Foundation",
@@ -5870,7 +7010,12 @@
       "COMBINEDBrain"
     ],
     "source": "https://www.stxbp1disorders.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FamilieSCN2A Foundation",
@@ -5900,7 +7045,12 @@
       "crisis-support"
     ],
     "source": "https://www.scn2a.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SynGAP Research Fund",
@@ -5929,7 +7079,12 @@
       "parent-led"
     ],
     "source": "https://curesyngap1.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "KCNT1 Epilepsy Foundation",
@@ -5958,7 +7113,12 @@
       "parent-founded"
     ],
     "source": "https://www.kcnt1epilepsy.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CureGRIN Foundation",
@@ -5987,7 +7147,12 @@
       "parent-run"
     ],
     "source": "https://curegrin.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Malan Syndrome Foundation",
@@ -6016,7 +7181,12 @@
       "parent-led"
     ],
     "source": "https://www.malansyndrome.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Educational Success Alliance",
@@ -6040,7 +7210,12 @@
       "educational advocacy"
     ],
     "source": "https://www.educationalsuccessalliance.com",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "GNAO1 Foundation",
@@ -6067,7 +7242,12 @@
       "family support"
     ],
     "source": "https://gnao1.org",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Products",
@@ -6095,7 +7275,12 @@
       "autism"
     ],
     "source": "https://www.autism-products.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Move United",
@@ -6118,7 +7303,12 @@
       "nationwide"
     ],
     "source": "https://moveunitedsport.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Wheelchair Basketball Association (NWBA)",
@@ -6142,7 +7332,12 @@
       "youth"
     ],
     "source": "https://www.nwba.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "United States Wheelchair Rugby Association",
@@ -6166,7 +7361,12 @@
       "competitive"
     ],
     "source": "https://www.uswra.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disabled Martial Artists Alliance",
@@ -6188,7 +7388,12 @@
       "therapy"
     ],
     "source": "https://adaptivemartialarts.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Yoga LIVE",
@@ -6212,7 +7417,12 @@
       "accessibility"
     ],
     "source": "https://adaptiveyogalive.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Waves4All Adaptive Surf Club",
@@ -6237,7 +7447,12 @@
       "inclusion"
     ],
     "source": "https://waves4all.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rett Syndrome Research Trust",
@@ -6263,7 +7478,12 @@
       "rare disease"
     ],
     "source": "https://reverserett.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Prader-Willi Syndrome Association",
@@ -6288,7 +7508,12 @@
       "research"
     ],
     "source": "https://www.pwsausa.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Williams Syndrome Association",
@@ -6313,7 +7538,12 @@
       "enrichment"
     ],
     "source": "https://williams-syndrome.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Fragile X Foundation",
@@ -6339,7 +7569,12 @@
       "autism"
     ],
     "source": "https://fragilex.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Tuberous Sclerosis Alliance",
@@ -6365,7 +7600,12 @@
       "research"
     ],
     "source": "https://www.tsalliance.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "International CDKL5 Foundation",
@@ -6391,7 +7631,12 @@
       "research"
     ],
     "source": "https://www.cdkl5.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Global Genes",
@@ -6417,7 +7662,12 @@
       "concierge"
     ],
     "source": "https://globalgenes.org/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fun and Function",
@@ -6444,7 +7694,12 @@
       "fine motor"
     ],
     "source": "https://funandfunction.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Autism Resources",
@@ -6471,7 +7726,12 @@
       "sensory"
     ],
     "source": "https://www.nationalautismresources.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ARK Therapeutic",
@@ -6498,7 +7758,12 @@
       "sensory"
     ],
     "source": "https://www.arktherapeutic.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Harkla",
@@ -6525,7 +7790,12 @@
       "sensory"
     ],
     "source": "https://harkla.co/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Southpaw Enterprises",
@@ -6551,7 +7821,12 @@
       "sensory rooms"
     ],
     "source": "https://www.southpaw.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mayer-Johnson (Tobii Dynavox)",
@@ -6578,7 +7853,12 @@
       "PCS symbols"
     ],
     "source": "https://goboardmaker.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Proloquo2Go (AssistiveWare)",
@@ -6605,7 +7885,12 @@
       "symbols"
     ],
     "source": "https://www.assistiveware.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Supplies",
@@ -6632,7 +7917,12 @@
       "weighted"
     ],
     "source": "https://specialsupplies.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Time Timer",
@@ -6660,7 +7950,12 @@
       "classroom"
     ],
     "source": "https://www.timetimer.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Advocates (DRA)",
@@ -6683,7 +7978,12 @@
       "civil rights"
     ],
     "source": "https://dralegal.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Education & Defense Fund (DREDF)",
@@ -6707,7 +8007,12 @@
       "litigation"
     ],
     "source": "https://dredf.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Needs Alliance (SNA)",
@@ -6733,7 +8038,12 @@
       "attorneys"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Council of Parent Attorneys and Advocates (COPAA)",
@@ -6757,7 +8067,12 @@
       "special education"
     ],
     "source": "https://www.copaa.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Learning Disabilities Association of America (LDA)",
@@ -6783,7 +8098,12 @@
       "advocacy"
     ],
     "source": "https://ldaamerica.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Center for Learning Disabilities (NCLD)",
@@ -6810,7 +8130,12 @@
       "policy"
     ],
     "source": "https://ncld.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Parent Center Hub",
@@ -6833,7 +8158,12 @@
       "find local center"
     ],
     "source": "https://www.parentcenterhub.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Therapy Shoppe",
@@ -6861,7 +8191,12 @@
       "OT supplies"
     ],
     "source": "https://www.therapyshoppe.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sensory Goods",
@@ -6888,7 +8223,12 @@
       "customizable"
     ],
     "source": "https://sensorygoods.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Community Store",
@@ -6914,7 +8254,12 @@
       "safety products"
     ],
     "source": "https://autismcommunitystore.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TFH Special Needs Toys",
@@ -6938,7 +8283,12 @@
       "sensory design"
     ],
     "source": "https://specialneedstoys.com/usa/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Different Roads to Learning",
@@ -6964,7 +8314,12 @@
       "teaching tools"
     ],
     "source": "https://difflearn.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Forbes AAC",
@@ -6989,7 +8344,12 @@
       "assistive technology"
     ],
     "source": "https://www.forbesaac.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Silverts Adaptive Clothing",
@@ -7012,7 +8372,12 @@
       "easy dressing"
     ],
     "source": "https://www.silverts.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "IZ Adaptive",
@@ -7037,7 +8402,12 @@
       "pressure sore prevention"
     ],
     "source": "https://izadaptive.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "June Adaptive",
@@ -7062,7 +8432,12 @@
       "caregiver-friendly"
     ],
     "source": "https://www.juneadaptive.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ovidis Adaptive Clothing",
@@ -7086,7 +8461,12 @@
       "caregiver-assisted dressing"
     ],
     "source": "https://ovidis.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fat Brain Toys - Special Needs",
@@ -7112,7 +8492,12 @@
       "educational"
     ],
     "source": "https://www.fatbraintoys.com/special_needs/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Independent Living Aids (ILA)",
@@ -7138,7 +8523,12 @@
       "independence"
     ],
     "source": "https://independentliving.com/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CHARGE Syndrome Foundation",
@@ -7163,7 +8553,12 @@
       "conferences"
     ],
     "source": "https://www.chargesyndrome.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PRISMS (Smith-Magenis Syndrome)",
@@ -7188,7 +8583,12 @@
       "research"
     ],
     "source": "https://www.prisms.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kabuki Syndrome Foundation",
@@ -7213,7 +8613,12 @@
       "family support"
     ],
     "source": "https://www.kabukisyndromefoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SOFT (Trisomy 18, 13 Support)",
@@ -7239,7 +8644,12 @@
       "family support"
     ],
     "source": "https://trisomy.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cerebral Palsy Foundation",
@@ -7264,7 +8674,12 @@
       "resources"
     ],
     "source": "https://cpresource.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lissencephaly Foundation",
@@ -7289,7 +8704,12 @@
       "family support"
     ],
     "source": "https://www.lissfoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "United Leukodystrophy Foundation",
@@ -7314,7 +8734,12 @@
       "referrals"
     ],
     "source": "https://ulf.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dup15q Alliance",
@@ -7339,7 +8764,12 @@
       "clinical trials"
     ],
     "source": "https://dup15q.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Child Neurology Foundation",
@@ -7364,7 +8794,12 @@
       "neurological"
     ],
     "source": "https://www.childneurologyfoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Noonan Syndrome Foundation",
@@ -7389,7 +8824,12 @@
       "conferences"
     ],
     "source": "https://www.teamnoonan.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "4p- Support Group (Wolf-Hirschhorn Syndrome)",
@@ -7414,7 +8854,12 @@
       "family support"
     ],
     "source": "https://4p-supportgroup.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Aicardi Syndrome Foundation",
@@ -7439,7 +8884,12 @@
       "family support"
     ],
     "source": "https://aicardisyndromefoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SMA Foundation",
@@ -7464,7 +8914,12 @@
       "research"
     ],
     "source": "https://smafoundation.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cerebral Palsy Family Network (CPFN)",
@@ -7489,7 +8944,12 @@
       "family support"
     ],
     "source": "https://cpfamilynetwork.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NKH Crusaders Rare Connections Support Group",
@@ -7514,7 +8974,12 @@
       "virtual"
     ],
     "source": "https://www.nkhcrusaders.com/support-group",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NORD (National Organization for Rare Disorders)",
@@ -7540,7 +9005,12 @@
       "respite"
     ],
     "source": "https://rarediseases.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Give an Hour",
@@ -7565,7 +9035,12 @@
       "rare-disease"
     ],
     "source": "https://giveanhour.org/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lottie's Light Foundation",
@@ -7590,7 +9065,12 @@
       "family-support"
     ],
     "source": "https://lottieslight.org/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Little Lobbyists",
@@ -7615,7 +9095,12 @@
       "complex-medical"
     ],
     "source": "https://littlelobbyists.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AAC Institute",
@@ -7641,7 +9126,12 @@
       "research"
     ],
     "source": "https://aacinstitute.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Turny Evo Transfer Seat (BraunAbility)",
@@ -7667,7 +9157,12 @@
       "mobility"
     ],
     "source": "https://www.braunability.com/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wheelable Wilderness",
@@ -7694,7 +9189,12 @@
       "wheelchair"
     ],
     "source": "https://www.wheelablewilderness.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Apple - The Greatest (Inclusion Campaign)",
@@ -7718,7 +9218,12 @@
       "video"
     ],
     "source": "https://www.youtube.com/watch?v=KmFPWxjmnqE",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MobilityWorks - Fairfax",
@@ -7741,7 +9246,12 @@
       "accessible-vehicle"
     ],
     "source": "https://www.mobilityworks.com/locations/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MobilityWorks - Sterling",
@@ -7764,7 +9274,12 @@
       "accessible-vehicle"
     ],
     "source": "https://www.mobilityworks.com/locations/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Learn more",
@@ -7786,7 +9301,12 @@
       "abilities-expo"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Abilities International Accessibility Conference",
@@ -7808,7 +9328,12 @@
       "abilities-expo"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Exhibitor List &amp; Floor Plan",
@@ -7830,7 +9355,12 @@
       "abilities-expo"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Exhibitor Portal",
@@ -7852,7 +9382,12 @@
       "abilities-expo"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Exhibitor Registration",
@@ -7874,7 +9409,12 @@
       "abilities-expo"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Vatu",
@@ -7896,7 +9436,12 @@
       "abilities-expo"
     ],
     "source": "https://www.abilities.com/exhibitors",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "https://nymacgenetics.org/contact/",
@@ -7918,7 +9463,12 @@
       "medically-complex"
     ],
     "source": "https://www.medicallycomplexcaregiver.com/resourcebycondition",
-    "lastScraped": "2026-05-10"
+    "lastScraped": "2026-05-10",
+    "dateAdded": "2026-05-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Bowhead Corp",
@@ -7939,7 +9489,12 @@
       "assistive-technology"
     ],
     "source": "https://www.bowheadcorp.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cerebral Palsy Research Network (CPRN)",
@@ -7964,7 +9519,12 @@
       "clinical-network"
     ],
     "source": "https://cprn.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "KultureCity",
@@ -7991,7 +9551,12 @@
       "autism"
     ],
     "source": "https://www.kulturecity.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Project DSNP",
@@ -8015,7 +9580,12 @@
       "dual-eligible"
     ],
     "source": "https://projectdsnp.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SleepSafe Beds",
@@ -8043,7 +9613,12 @@
       "sleep"
     ],
     "source": "https://sleepsafebed.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Safe Place Bedding",
@@ -8070,7 +9645,12 @@
       "sleep"
     ],
     "source": "https://safeplacebedding.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Safety Sleeper",
@@ -8098,7 +9678,12 @@
       "sleep"
     ],
     "source": "https://safetysleeper.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Catalyst Sports",
@@ -8125,7 +9710,12 @@
       "paddling"
     ],
     "source": "https://www.catalystsports.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Park Service - Accessibility",
@@ -8150,7 +9740,12 @@
       "recreation"
     ],
     "source": "https://www.nps.gov/grsm/planyourvisit/accessibility.htm",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Peanut Butter Falcon (Film)",
@@ -8175,7 +9770,12 @@
       "adventure"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CODA (Film)",
@@ -8200,7 +9800,12 @@
       "academy-award"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wonder (Film)",
@@ -8225,7 +9830,12 @@
       "kindness"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Theory of Everything (Film)",
@@ -8251,7 +9861,12 @@
       "representation"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Out of My Mind (Film)",
@@ -8276,7 +9891,12 @@
       "representation"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Upside (Film)",
@@ -8302,7 +9922,12 @@
       "friendship"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Finding Nemo (Film)",
@@ -8327,7 +9952,12 @@
       "family"
     ],
     "source": "",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SOAR365",
@@ -8352,7 +9982,12 @@
       "community"
     ],
     "source": "https://soar365.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sensory Fit Play",
@@ -8379,7 +10014,12 @@
       "children"
     ],
     "source": "https://sensoryfitplay.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Librarey - Accessible Reading",
@@ -8406,7 +10046,12 @@
       "assistive-tech"
     ],
     "source": "https://www.librarey.com/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MyMejo",
@@ -8429,7 +10074,12 @@
       "community"
     ],
     "source": "https://www.mymejo.com/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Charlie French Fine Art",
@@ -8452,7 +10102,12 @@
       "representation"
     ],
     "source": "https://www.charliefrenchfineart.com",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Art Enables",
@@ -8479,7 +10134,12 @@
       "intellectual-disability"
     ],
     "source": "https://art-enables.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Art Stream",
@@ -8506,7 +10166,12 @@
       "inclusion"
     ],
     "source": "https://art-stream.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Navigator",
@@ -8530,7 +10195,12 @@
       "community"
     ],
     "source": "https://virginiannavigator.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ArtXV",
@@ -8553,7 +10223,12 @@
       "creative-expression"
     ],
     "source": "https://artxv.org",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's National - Kids in Action",
@@ -8577,7 +10252,12 @@
       "hospital"
     ],
     "source": "https://www.childrensnational.org/",
-    "lastScraped": "2026-04-21"
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI - National Alliance on Mental Illness",
@@ -8597,7 +10277,12 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Medically Complex Caregiver",
@@ -8619,6 +10304,11 @@
       "medically-complex"
     ],
     "source": "https://www.medicallycomplexcaregiver.com",
-    "lastScraped": "2026-06-07"
+    "lastScraped": "2026-06-07",
+    "dateAdded": "2026-06-07",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

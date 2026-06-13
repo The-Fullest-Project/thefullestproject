@@ -17,7 +17,12 @@
       "nonprofit"
     ],
     "source": "https://www.thearcofiowa.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Iowa Early ACCESS",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.iowafamilysupport.org/early-access",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Iowa",
@@ -57,7 +67,12 @@
       "sports"
     ],
     "source": "https://www.soiowa.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "University of Iowa Stead Family Children's Hospital - Developmental Pediatrics",
@@ -77,7 +92,12 @@
       "medical"
     ],
     "source": "https://uichildrens.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Iowa",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.disabilityrightsiowa.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Iowa Program for Assistive Technology (IPAT)",
@@ -117,7 +142,12 @@
       "assistive-tech"
     ],
     "source": "https://www.iowaat.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Iowa ABLE Savings Plan",
@@ -137,7 +167,12 @@
       "financial"
     ],
     "source": "https://www.iaable.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Iowa Department of Health and Human Services - Disability Services",
@@ -157,7 +192,12 @@
       "government"
     ],
     "source": "https://hhs.iowa.gov/disability-services",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Courageous of Iowa",
@@ -177,7 +217,12 @@
       "camps"
     ],
     "source": "https://www.campcourageous.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ASK Resource Center",
@@ -197,7 +242,12 @@
       "community"
     ],
     "source": "https://www.askresource.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Iowa Vocational Rehabilitation Services",
@@ -217,7 +267,12 @@
       "employment"
     ],
     "source": "https://www.ivrs.iowa.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Iowa Medicaid Home and Community-Based Services Waivers",
@@ -237,7 +292,12 @@
       "financial"
     ],
     "source": "https://hhs.iowa.gov/programs/welcome-iowa-medicaid/iowa-medicaid-programs",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ChildServe Therapy Services",
@@ -258,7 +318,12 @@
       "therapy"
     ],
     "source": "https://www.childserve.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of East Central Iowa",
@@ -285,7 +350,12 @@
       "community living"
     ],
     "source": "https://arceci.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Southeast Iowa",
@@ -312,6 +382,11 @@
       "Iowa City"
     ],
     "source": "https://www.arcsei.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

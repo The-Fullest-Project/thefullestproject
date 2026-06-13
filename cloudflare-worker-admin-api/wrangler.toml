@@ -1,0 +1,8 @@
+name = "tfp-admin-api"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+# Secrets (set via `wrangler secret put <NAME>` or the Cloudflare dashboard):
+#   GITHUB_TOKEN, GITHUB_REPO, ALLOWED_ORIGIN, ADMIN_KEY,
+#   FORMSPREE_SUBMIT_ID, FORMSPREE_NEWSLETTER_ID,
+#   BREVO_API_KEY, BREVO_LIST_ID, BREVO_THANKYOU_TEMPLATE_ID, BREVO_DOI_TEMPLATE_ID

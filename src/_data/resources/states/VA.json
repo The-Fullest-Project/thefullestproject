@@ -18,7 +18,12 @@
       "caregiver-support"
     ],
     "source": "https://www.amothersrest.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ABA Centers of Virginia",
@@ -43,7 +48,12 @@
       "in-home"
     ],
     "source": "https://www.abacentersva.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ABC Behavior",
@@ -70,7 +80,12 @@
       "in-home"
     ],
     "source": "https://abcbehavior.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ABLE National Resource Center",
@@ -90,7 +105,12 @@
       "financial"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Achieve Beyond Pediatric Therapy & Autism Services",
@@ -118,7 +138,12 @@
       "autism"
     ],
     "source": "https://www.achievebeyondusa.com/locations/virginia/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Air and Space Museum - Accessibility",
@@ -141,7 +166,12 @@
       "smithsonian"
     ],
     "source": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alamo Drafthouse One Loudoun - Sensory-Friendly Screenings",
@@ -164,7 +194,12 @@
       "weekly-program"
     ],
     "source": "https://drafthouse.com/program/alamo-for-all",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alamo Drafthouse Woodbridge - Sensory-Friendly Screenings",
@@ -187,7 +222,12 @@
       "weekly-program"
     ],
     "source": "https://drafthouse.com/program/alamo-for-all",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AMC Tysons Corner 16 - Sensory Friendly Films",
@@ -210,7 +250,12 @@
       "autism-society-partner"
     ],
     "source": "https://www.amctheatres.com/programs/sensory-friendly-films",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Assistive Technology Act Programs",
@@ -230,7 +275,12 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AT Devices for Kids - RVA",
@@ -251,7 +301,12 @@
       "loaner"
     ],
     "source": "https://rva.atdevicesforkids.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Attain ABA Therapy",
@@ -279,7 +334,12 @@
       "parent-training"
     ],
     "source": "https://www.attainaba.com/behavior-analysis/aba-therapy-in-virginia/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Society of Northern Virginia",
@@ -305,7 +365,12 @@
       "education"
     ],
     "source": "https://www.asnv.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "B&O Railroad Museum - Sensory Sundays",
@@ -328,7 +393,12 @@
       "baltimore"
     ],
     "source": "https://www.borail.org/explore-learn/for-kids-families/sensory-awareness/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Belkowitz Law, PLLC",
@@ -352,7 +422,12 @@
       "due-process"
     ],
     "source": "https://belkowitzlaw.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Best Buddies in Virginia & DC",
@@ -379,7 +454,12 @@
       "peer-mentoring"
     ],
     "source": "https://www.bestbuddies.org/vadc/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Bitty and Beau's Coffee - Annapolis",
@@ -402,7 +482,12 @@
       "maryland"
     ],
     "source": "https://www.bittyandbeauscoffee.com/location/annapolis/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Bitty and Beau's Coffee - Washington DC",
@@ -425,7 +510,12 @@
       "dc"
     ],
     "source": "https://www.bittyandbeauscoffee.com/location/washington/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "BlazeSports America",
@@ -445,7 +535,12 @@
       "sports"
     ],
     "source": "https://bfreinc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Burke Community Church - Special Needs",
@@ -467,7 +562,12 @@
       "inclusive"
     ],
     "source": "https://www.burkecommunity.com/specialneeds/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cameron's Coffee and Chocolates",
@@ -489,7 +589,12 @@
       "coffee"
     ],
     "source": "https://www.every1canwork.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Baker (The Arc of NoVA)",
@@ -509,7 +614,12 @@
       "camps"
     ],
     "source": "https://soar365.org/find-support/summer-camp/get-started/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Carbide Construction",
@@ -533,7 +643,12 @@
       "modular-construction"
     ],
     "source": "https://www.carbideconstruction.com/ada-addition-northern-virginia/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Care.com",
@@ -555,7 +670,12 @@
       "platform"
     ],
     "source": "https://www.care.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Centreville Baptist Church - Embrace",
@@ -577,7 +697,12 @@
       "special-needs"
     ],
     "source": "https://centrevillebaptist.org/embrace",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Chairs for Stairs / Lorton Builders",
@@ -603,7 +728,12 @@
       "nova"
     ],
     "source": "https://www.chairsforstairs.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's National Hospital",
@@ -623,7 +753,12 @@
       "medical"
     ],
     "source": "https://www.childrensnational.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's National Hospital - Northern Virginia",
@@ -645,7 +780,12 @@
       "multi-specialty"
     ],
     "source": "https://www.childrensnational.org/get-care/locations/northern-virginia",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Clemyjontri Park",
@@ -667,7 +807,12 @@
       "wheelchair-friendly"
     ],
     "source": "https://www.fairfaxcounty.gov/parks/clemyjontri/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cloverleaf Equine Center",
@@ -696,7 +841,12 @@
       "adaptive-riding"
     ],
     "source": "https://www.cloverleafequinecenter.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Colvin Run Mill - Sensory-Friendly Events",
@@ -720,7 +870,12 @@
       "outdoors"
     ],
     "source": "https://www.fairfaxcounty.gov/parks/colvinrunmill/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Compass Behavioral Solutions - NOVA",
@@ -747,7 +902,12 @@
       "in-home"
     ],
     "source": "https://compassva.com/location/nova/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Cucinelli Geiger, PC",
@@ -771,7 +931,12 @@
       "ABLE-accounts"
     ],
     "source": "https://www.cucinelligeiger.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "DC Urban Mom - Nanny Forum",
@@ -793,7 +958,12 @@
       "forum"
     ],
     "source": "https://www.dcurbanmom.com/nanny-forum/forums/show/8.page",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Inclusion DC Metro",
@@ -815,7 +985,12 @@
       "consulting"
     ],
     "source": "https://di-dcmetro.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "disAbility Law Center of Virginia (dLCV)",
@@ -839,7 +1014,12 @@
       "protection-and-advocacy"
     ],
     "source": "https://www.dlcv.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Down Syndrome Association of Northern Virginia",
@@ -865,7 +1045,12 @@
       "events"
     ],
     "source": "https://www.dsanv.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Catherine Chao - Pediatric Gastroenterology",
@@ -891,7 +1076,12 @@
       "feeding-disorders"
     ],
     "source": "https://psvcare.org/specialist/catherine-chao-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Dagne Assefa - Pediatric Pulmonology",
@@ -916,7 +1106,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/specialist/dagne-assefa-md-faap-fccp/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Dinesh Pillai - Pediatric Pulmonology",
@@ -941,7 +1136,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/specialist/dinesh-pillai-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Emily Hattwick - Pediatric Orthopedics",
@@ -967,7 +1167,12 @@
       "hand-surgery"
     ],
     "source": "https://psvcare.org/physicians/emily-hattwick-md",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Grace Felix - Pediatric Gastroenterology",
@@ -992,7 +1197,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/physicians/grace-felix-md",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Ian Leibowitz - Pediatric Gastroenterology",
@@ -1017,7 +1227,12 @@
       "childrens-national"
     ],
     "source": "https://appointments.childrensnational.org/provider/ian-h-leibowitz/2359892",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Jacquelyn Calbert - Developmental Pediatrics",
@@ -1046,7 +1261,12 @@
       "adhd"
     ],
     "source": "https://psvcare.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Jason Goldberg - Pediatric Cardiology",
@@ -1071,7 +1291,12 @@
       "inova-childrens"
     ],
     "source": "https://www.inova.org/doctors/jason-f-goldberg-md",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Jin Hyuk Park - Pediatric Cardiology",
@@ -1095,7 +1320,12 @@
       "childrens-national"
     ],
     "source": "https://appointments.childrensnational.org/provider/jin-hyuk-park/2359687",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Kinjal Parikh - Pediatric Cardiology",
@@ -1120,7 +1350,12 @@
       "inova-childrens"
     ],
     "source": "https://www.inova.org/doctors/kinjal-parikh-md",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Laurel Blakemore - Pediatric Orthopedics",
@@ -1146,7 +1381,12 @@
       "scoliosis"
     ],
     "source": "https://psvcare.org/specialist/laurel-blakemore-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Mitchell Cohen - Pediatric Cardiology",
@@ -1170,7 +1410,12 @@
       "inova-childrens"
     ],
     "source": "https://www.inovachildrens.org/services/heart/team",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Patricia Seo-Mayer - Pediatric Nephrology",
@@ -1194,7 +1439,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/physicians/patricia-seo-mayer-md",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Rasheda Amin - Pediatric Nephrology",
@@ -1218,7 +1468,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/physicians/rasheda-amin-md",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Tarannum Lateef - Pediatric Neurology",
@@ -1242,7 +1497,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/specialist/tarannum-lateef-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Thanh Nguyen - Pediatric Neurology",
@@ -1267,7 +1527,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/specialist/thanh-nguyen-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. Thuy-Anh Vu - Pediatric Neurology",
@@ -1291,7 +1556,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/specialist/thuy-anh-vu-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dr. William McClintock - Pediatric Neurology",
@@ -1316,7 +1586,12 @@
       "psv"
     ],
     "source": "https://psvcare.org/specialist/william-mcclintock-md/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Driver Rehabilitation Center of Excellence, LLC",
@@ -1344,7 +1619,12 @@
       "evaluation"
     ],
     "source": "https://www.driverrehabcenter.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Education Advocates of Northern Virginia, LLC",
@@ -1367,7 +1647,12 @@
       "education-advocacy"
     ],
     "source": "https://www.educationadvocatesnova.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Empower Therapy Group",
@@ -1388,7 +1673,12 @@
       "pediatric"
     ],
     "source": "https://empowertherapygroup.net/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ENDependence Center of Northern Virginia (ECNV)",
@@ -1413,7 +1703,12 @@
       "independent-living"
     ],
     "source": "https://www.ecnv.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Epilepsy Foundation of Virginia",
@@ -1438,7 +1733,12 @@
       "support-networks"
     ],
     "source": "https://www.epilepsyva.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Equip for Children",
@@ -1459,7 +1759,12 @@
       "adaptive"
     ],
     "source": "https://www.equipforchildren.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Equipment Connections for Children (ECFC)",
@@ -1484,7 +1789,12 @@
       "wheelchairs"
     ],
     "source": "https://www.equipforchildren.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Exceptional Children's Center",
@@ -1509,7 +1819,12 @@
       "feeding-therapy"
     ],
     "source": "https://www.exceptionalchildrenscenter.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Expressive Speech and Feeding",
@@ -1532,7 +1847,12 @@
       "feeding-therapy"
     ],
     "source": "https://expressivespeechandfeeding.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax Church - Accessibility",
@@ -1554,7 +1874,12 @@
       "inclusive"
     ],
     "source": "https://www.fairfax.cc/accessibility/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Accessible Trails",
@@ -1576,7 +1901,12 @@
       "outdoor"
     ],
     "source": "https://www.fairfaxcounty.gov/parks/accessible/trails",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Child Care Assistance and Referral (CCAR)",
@@ -1598,7 +1928,12 @@
       "county-program"
     ],
     "source": "https://www.fairfaxcounty.gov/office-for-children/child-care-assistance-and-referral",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Early Intervention",
@@ -1618,7 +1953,12 @@
       "early-intervention"
     ],
     "source": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County FASTRAN",
@@ -1638,7 +1978,12 @@
       "transportation"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Housing & Community Development",
@@ -1658,7 +2003,12 @@
       "housing"
     ],
     "source": "https://www.fairfaxcounty.gov/housing/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Sensory Room",
@@ -1679,7 +2029,12 @@
       "county-program"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/sensory-room",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Speech & Hearing",
@@ -1702,7 +2057,12 @@
       "county-program"
     ],
     "source": "https://www.fairfaxcounty.gov/health/speech-hearing",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Therapeutic Recreation",
@@ -1725,7 +2085,12 @@
       "county-program"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax County Therapeutic Recreation Camps",
@@ -1745,7 +2110,12 @@
       "camps"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax Pediatric Therapy",
@@ -1772,7 +2142,12 @@
       "telehealth"
     ],
     "source": "https://fairfaxpediatrictherapy.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fairfax-Falls Church Community Services Board",
@@ -1792,7 +2167,12 @@
       "mental-health"
     ],
     "source": "https://www.fairfaxcounty.gov/community-services-board/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Farr Law Firm, P.C.",
@@ -1816,7 +2196,12 @@
       "medicaid-planning"
     ],
     "source": "https://www.farrlawfirm.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Flywheel Centers",
@@ -1842,7 +2227,12 @@
       "tricare"
     ],
     "source": "https://flywheelcenters.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Formed Families Forward",
@@ -1866,7 +2256,12 @@
       "resource-navigation"
     ],
     "source": "https://formedfamiliesforward.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Francesco's Closet at Wheatland Farm",
@@ -1887,7 +2282,12 @@
       "adaptive"
     ],
     "source": "https://www.wheatlandfarm.org/francesco-s-closet",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "FUNdamentals and Building Blocks Therapy",
@@ -1910,7 +2310,12 @@
       "speech-therapy"
     ],
     "source": "https://buildingblockstherapy.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "George Washington's Mount Vernon - Sensory-Friendly Family Morning",
@@ -1934,7 +2339,12 @@
       "social-narratives"
     ],
     "source": "https://www.mountvernon.org/plan-your-visit/calendar/events/sensory-friendly-family-morning",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Glickman Design Build",
@@ -1958,7 +2368,12 @@
       "bathroom-modifications"
     ],
     "source": "https://www.glickmandesignbuild.com/services/mobility-solutions/accessible-design/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Good Beginnings Therapy",
@@ -1981,7 +2396,12 @@
       "sensory-processing"
     ],
     "source": "https://gbtherapy.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hale Ball Murphy, PLC",
@@ -2005,7 +2425,12 @@
       "conservatorship"
     ],
     "source": "https://haleball.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "HandyPro of Northern Virginia",
@@ -2030,7 +2455,12 @@
       "stair-lifts"
     ],
     "source": "https://www.handypro.com/local-service-category/northern-virginia-home-modification",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Healthcare.gov - Appeals & Grievances",
@@ -2050,7 +2480,12 @@
       "insurance"
     ],
     "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "HEAV - Home Educators Association of Virginia (Special Needs)",
@@ -2074,7 +2509,12 @@
       "support"
     ],
     "source": "https://heav.org/special-needs/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Infinity ABA Therapy & Autism Services",
@@ -2101,7 +2541,12 @@
       "preschool"
     ],
     "source": "https://www.infinityaba.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Inova Children's Hospital",
@@ -2121,7 +2566,12 @@
       "medical"
     ],
     "source": "https://www.inova.org/our-services/pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Inova Fairfax Outpatient Pediatric Rehabilitation",
@@ -2149,7 +2599,12 @@
       "hospital-based"
     ],
     "source": "https://www.inova.org/locations/inova-fairfax-outpatient-pediatric-rehabilitation",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Inova Loudoun Hospital Pediatric Rehabilitation",
@@ -2175,7 +2630,12 @@
       "hospital-based"
     ],
     "source": "https://www.inovachildrens.org/rehabilitation/ilh",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Jake's Ice Cream",
@@ -2197,7 +2657,12 @@
       "ice-cream"
     ],
     "source": "https://www.sweetjakesicecream.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Jill's House",
@@ -2219,7 +2684,12 @@
       "intellectual-disability"
     ],
     "source": "https://www.jillshouse.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kennedy Center - Sensory-Friendly Performances",
@@ -2243,7 +2713,12 @@
       "music"
     ],
     "source": "https://www.kennedy-center.org/visit/accessibility/sensory/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "King of Kings Lutheran Church - Special Needs",
@@ -2265,7 +2740,12 @@
       "lutheran"
     ],
     "source": "https://kofk.org/ministries-special-needs",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Law Office of Grace E. Kim, PC",
@@ -2289,7 +2769,12 @@
       "due-process"
     ],
     "source": "https://www.gekimlaw.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "LEGO Discovery Center - Sensory-Friendly Mornings",
@@ -2312,7 +2797,12 @@
       "KultureCity-certified"
     ],
     "source": "https://www.legolanddiscoverycenter.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Little Hands Pediatric Therapy",
@@ -2338,7 +2828,12 @@
       "in-home"
     ],
     "source": "https://littlehandspediatrictherapy.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Live In Place",
@@ -2363,7 +2858,12 @@
       "home-assessment"
     ],
     "source": "https://www.liveinplace.com/home-solutions",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "McCandlish Lillard, P.C.",
@@ -2387,7 +2887,12 @@
       "elder-law"
     ],
     "source": "https://mccandlaw.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "McLean Bible Church - Special Needs Ministry",
@@ -2409,7 +2914,12 @@
       "special-needs"
     ],
     "source": "https://mcleanbible.org/tysons/special-needs/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Meadowlark Botanical Gardens",
@@ -2431,7 +2941,12 @@
       "outdoor"
     ],
     "source": "https://www.novaparks.com/parks/meadowlark-botanical-gardens",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI - National Alliance on Mental Illness",
@@ -2451,7 +2966,12 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/find-support/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Northern Virginia",
@@ -2477,7 +2997,12 @@
       "caregiver-support"
     ],
     "source": "https://nami-northernvirginia.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Air and Space Museum - Udvar-Hazy Center (Sensory Resources)",
@@ -2501,7 +3026,12 @@
       "free"
     ],
     "source": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Alliance to End Homelessness",
@@ -2521,7 +3051,12 @@
       "housing"
     ],
     "source": "https://endhomelessness.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Aquarium - Accessibility",
@@ -2545,7 +3080,12 @@
       "baltimore"
     ],
     "source": "https://aqua.org/visit/accessibility",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Children's Museum - Accessibility",
@@ -2569,7 +3109,12 @@
       "dc"
     ],
     "source": "https://nationalchildrensmuseum.org/visit/#accessibility",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Children's Museum - Sensory-Friendly Hours",
@@ -2593,7 +3138,12 @@
       "sensory-bags"
     ],
     "source": "https://nationalchildrensmuseum.org/explore/programs/sensory-friendly-hours",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Next Day Access (Northern Virginia)",
@@ -2617,7 +3167,12 @@
       "equipment-rental"
     ],
     "source": "https://www.nextdayaccess.com/fairfax-va/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Parents of Autistic Children of Northern Virginia (POAC-NoVA)",
@@ -2643,7 +3198,12 @@
       "volunteer-run"
     ],
     "source": "https://poac-nova.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Patterson Behavior Services",
@@ -2669,7 +3229,12 @@
       "in-home"
     ],
     "source": "https://www.pattersonbehavior.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pediatric Therapy Specialists (NOVA Ped Therapy)",
@@ -2696,7 +3261,12 @@
       "sensory-processing"
     ],
     "source": "https://novapedtherapy.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pediatric Therapy Studio",
@@ -2726,7 +3296,12 @@
       "autism"
     ],
     "source": "https://www.pediatrictherapystudio.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pizer Law, PLLC",
@@ -2754,7 +3329,12 @@
       "autism"
     ],
     "source": "https://pizer.law/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Playworks Therapy",
@@ -2778,7 +3358,12 @@
       "telehealth"
     ],
     "source": "https://www.playworksspeech.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Port Discovery Children's Museum",
@@ -2802,7 +3387,12 @@
       "baltimore"
     ],
     "source": "https://venue.kulturecity.org/venues/port-discovery-childrens-museum",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Premier Pediatric Therapy Source",
@@ -2828,7 +3418,12 @@
       "in-home"
     ],
     "source": "https://premierpedstherapy.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Progressive Pediatric Therapy",
@@ -2857,7 +3452,12 @@
       "aquatic-therapy"
     ],
     "source": "https://www.progressivepediatrics.net/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Proud Moments ABA - Alexandria",
@@ -2882,7 +3482,12 @@
       "in-home"
     ],
     "source": "https://www.proudmomentsaba.com/alexandria-va-aba-therapy",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ready.gov - People with Disabilities",
@@ -2902,7 +3507,12 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rebuilding Together",
@@ -2922,7 +3532,12 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rebuilding Together Arlington/Fairfax/Falls Church",
@@ -2947,7 +3562,12 @@
       "low-income"
     ],
     "source": "https://rebuildingtogether-aff.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Schroeder Design Build",
@@ -2971,7 +3591,12 @@
       "design-build"
     ],
     "source": "https://schroederdesignbuild.com/accessible-design-aging-in-place-northern-va/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sentara Northern Virginia - Pediatric Therapy",
@@ -3000,7 +3625,12 @@
       "hospital-based"
     ],
     "source": "https://www.sentara.com/medicalservices/rehabilitation-and-therapy/specialty-therapy-services/pediatric-therapy",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ServiceSource",
@@ -3020,7 +3650,12 @@
       "transition"
     ],
     "source": "https://www.servicesfource.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -3040,7 +3675,12 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Skills on the Hill",
@@ -3063,7 +3703,12 @@
       "speech-therapy"
     ],
     "source": "https://skillsonthehill.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Smithsonian Morning at the Museum (Sensory-Friendly)",
@@ -3086,7 +3731,12 @@
       "free"
     ],
     "source": "https://access.si.edu/program/morning-museum",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Smithsonian's National Zoo - Sensory-Friendly Resources",
@@ -3111,7 +3761,12 @@
       "free"
     ],
     "source": "https://nationalzoo.si.edu/visit/accessibility-and-sensory-information",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Social Security Disability Benefits (SSI/SSDI)",
@@ -3131,7 +3786,12 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Needs Alliance",
@@ -3151,7 +3811,12 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Virginia",
@@ -3171,7 +3836,12 @@
       "sports"
     ],
     "source": "https://www.specialolympicsva.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Virginia - Area 26 (Northern Virginia)",
@@ -3198,7 +3868,12 @@
       "social"
     ],
     "source": "https://www.novasova.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sweet Julia Grace Foundation",
@@ -3222,7 +3897,12 @@
       "home-modifications"
     ],
     "source": "https://www.sweetjuliagrace.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Northern Virginia",
@@ -3244,7 +3924,12 @@
       "developmental"
     ],
     "source": "https://thearcofnova.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of NoVA - Pooled Trust",
@@ -3264,7 +3949,12 @@
       "planning"
     ],
     "source": "https://www.thearcofnova.org/programs/trusts/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The J - Special Needs Programs",
@@ -3287,7 +3977,12 @@
       "community"
     ],
     "source": "https://www.thej.org/specialneeds/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Law Office of Aubrey Carew Sizer, PLLC",
@@ -3311,7 +4006,12 @@
       "conservatorship"
     ],
     "source": "https://www.carewsizerlaw.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Law Office of Joan H. Proper, PC",
@@ -3337,7 +4037,12 @@
       "504-plan"
     ],
     "source": "https://www.jproperlaw.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Sack Law Firm, P.C.",
@@ -3361,7 +4066,12 @@
       "iep-advocacy"
     ],
     "source": "https://www.sacklaw.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Speech and Language Center",
@@ -3385,7 +4095,12 @@
       "behavioral-therapy"
     ],
     "source": "https://speechandlanguagecenter.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Thomas Roads Baptist Church - Special Needs",
@@ -3407,7 +4122,12 @@
       "baptist"
     ],
     "source": "https://trbc.org/engage/special-needs/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TLC Occupational Therapy",
@@ -3433,7 +4153,12 @@
       "sensory-processing"
     ],
     "source": "https://www.tlcotllc.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Tuomey Law Firm",
@@ -3455,7 +4180,12 @@
       "504-plan"
     ],
     "source": "https://tuomeylawfirm.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "VaHomeschoolers - Special Needs Guide",
@@ -3479,7 +4209,12 @@
       "guide"
     ],
     "source": "https://vahomeschoolers.org/guide/homeschooling-special-needs",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Veteran Built Homes",
@@ -3502,7 +4237,12 @@
       "remodeling"
     ],
     "source": "https://www.vetbuilthomes.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "VHC Health Outpatient Rehabilitation",
@@ -3528,7 +4268,12 @@
       "hospital-based"
     ],
     "source": "https://www.vhchealth.org/medical-services/rehabilitation/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Assistive Technology System (VATS)",
@@ -3548,7 +4293,12 @@
       "assistive-tech"
     ],
     "source": "https://www.vats.virginia.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Department for Aging and Rehabilitative Services (DARS)",
@@ -3568,7 +4318,12 @@
       "transition"
     ],
     "source": "https://www.dars.virginia.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Disability Parking Pass",
@@ -3590,7 +4345,12 @@
       "accessibility"
     ],
     "source": "https://www.dmv.virginia.gov/licenses-ids/disability/apply-assist",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Early Intervention (Infant & Toddler Connection)",
@@ -3610,7 +4370,12 @@
       "early-intervention"
     ],
     "source": "https://itcva.online/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Medicaid (DMAS)",
@@ -3630,7 +4395,12 @@
       "financial"
     ],
     "source": "https://www.dmas.virginia.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Warrenton Aquatic Recreation Facility (WARF)",
@@ -3652,7 +4422,12 @@
       "accessible"
     ],
     "source": "https://www.warrentonva.gov/201/WARF",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Waterfront Church DC - Special Needs Ministry",
@@ -3674,7 +4449,12 @@
       "dc"
     ],
     "source": "https://waterfrontchurchdc.com/special-needs-ministry/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "We Rock the Spectrum - Loudoun",
@@ -3698,7 +4478,12 @@
       "calming-room"
     ],
     "source": "https://werockthespectrumloudounva.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Wheatland Farm - Hippotherapy & Therapeutic Riding",
@@ -3721,7 +4506,12 @@
       "equine-therapy"
     ],
     "source": "https://www.wheatlandfarm.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "WMATA MetroAccess",
@@ -3741,7 +4531,12 @@
       "transportation"
     ],
     "source": "https://www.wmata.com/service/accessibility/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Childrens Hospital of Richmond at VCU - Developmental Pediatrics",
@@ -3768,7 +4563,12 @@
       "hospital"
     ],
     "source": "https://www.chrichmond.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Richmond Arc",
@@ -3794,7 +4594,12 @@
       "intellectual disability"
     ],
     "source": "https://www.richmondarc.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sportable - Adaptive Sports Richmond",
@@ -3821,7 +4626,12 @@
       "recreation"
     ],
     "source": "https://www.sportable.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Family Special Education Connection (VFSEC)",
@@ -3845,7 +4655,12 @@
       "advocacy"
     ],
     "source": "https://vafamilysped.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "St. Josephs Villa - Sarah Dooley Center for Autism",
@@ -3872,7 +4687,12 @@
       "residential"
     ],
     "source": "https://www.neverstopbelieving.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "disAbility Law Center of Virginia",
@@ -3896,7 +4716,12 @@
       "ADA"
     ],
     "source": "https://www.dlcv.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Childrens Hospital of The Kings Daughters (CHKD)",
@@ -3920,7 +4745,12 @@
       "developmental evaluation"
     ],
     "source": "https://www.chkd.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Access Adaptive Sports - Hampton Roads",
@@ -3946,7 +4776,12 @@
       "kayaking"
     ],
     "source": "https://hradaptivesports.com/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of South Hampton Roads",
@@ -3973,7 +4808,12 @@
       "community programs"
     ],
     "source": "https://www.thearcofshr.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Eggleston Services",
@@ -3997,7 +4837,12 @@
       "community integration"
     ],
     "source": "https://www.egglestonservices.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hampton Roads Community Action Program (HRCAP) - Disability Services",
@@ -4021,7 +4866,12 @@
       "referrals"
     ],
     "source": "https://www.hrcapinc.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "UVA Childrens Hospital - Developmental Pediatrics",
@@ -4049,7 +4899,12 @@
       "genetics"
     ],
     "source": "https://uvahealth.com/services/childrens",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of the Piedmont",
@@ -4075,7 +4930,12 @@
       "family support"
     ],
     "source": "https://www.arcpiedmont.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Region Ten Community Services Board",
@@ -4102,7 +4962,12 @@
       "emergency services"
     ],
     "source": "https://www.regionten.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Charlottesville Therapeutic Riding Program",
@@ -4131,7 +4996,12 @@
       "adaptive riding"
     ],
     "source": "https://www.ridectrp.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Blue Ridge Independent Living Center",
@@ -4155,7 +5025,12 @@
       "skills training"
     ],
     "source": "https://www.brilc.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Carilion Childrens - Developmental Pediatrics",
@@ -4184,7 +5059,12 @@
       "evaluation"
     ],
     "source": "https://www.carilionclinic.org/childrens",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Roanoke Valley",
@@ -4211,7 +5091,12 @@
       "community"
     ],
     "source": "https://www.arcgrv.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "New River Valley Community Services Board",
@@ -4237,7 +5122,12 @@
       "case management"
     ],
     "source": "https://www.nrvcs.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TAP - Total Action for Progress Disability Services",
@@ -4261,7 +5151,12 @@
       "community action"
     ],
     "source": "https://www.tapintohope.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Board for People with Disabilities (VBPD)",
@@ -4285,7 +5180,12 @@
       "grants"
     ],
     "source": "https://www.vaboard.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Virginia",
@@ -4312,7 +5212,12 @@
       "family support"
     ],
     "source": "https://www.thearcofva.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Parent Educational Advocacy Training Center (PEATC)",
@@ -4337,7 +5242,12 @@
       "disability rights"
     ],
     "source": "https://www.peatc.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Commonwealth University - Autism Center for Excellence (VCU-ACE)",
@@ -4364,7 +5274,12 @@
       "evidence-based practices"
     ],
     "source": "https://vcuautismcenter.org/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Virginia Department of Education - Special Education",
@@ -4388,7 +5303,12 @@
       "dispute resolution"
     ],
     "source": "https://www.doe.virginia.gov/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SOAR365",
@@ -4416,7 +5336,12 @@
       "summer camp"
     ],
     "source": "https://soar365.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Richmond Behavioral Health Authority (RBHA)",
@@ -4444,7 +5369,12 @@
       "case management"
     ],
     "source": "https://www.rbha.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Friendship Circle of Virginia",
@@ -4468,7 +5398,12 @@
       "expo"
     ],
     "source": "https://friendshipcircleva.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Autism Society of Central Virginia",
@@ -4495,7 +5430,12 @@
       "sibling support"
     ],
     "source": "https://ascv.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Galloping Acres Therapeutic Riding",
@@ -4519,7 +5459,12 @@
       "therapeutic riding"
     ],
     "source": "https://www.gallopingacres.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Endependence Center",
@@ -4544,7 +5489,12 @@
       "housing"
     ],
     "source": "https://endependence.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "EQUI-KIDS Therapeutic Riding Center",
@@ -4575,7 +5525,12 @@
       "veterans"
     ],
     "source": "https://www.equikids.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Coastal Virginia",
@@ -4601,7 +5556,12 @@
       "education"
     ],
     "source": "https://www.namicoastalvirginia.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Norfolk Community Services Board",
@@ -4627,7 +5587,12 @@
       "case management"
     ],
     "source": "https://norfolk.gov/996/Norfolk-Community-Services-Board",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "F.R.E.E. Foundation (Foundation for Rehabilitation Equipment & Endowment)",
@@ -4652,7 +5617,12 @@
       "low income"
     ],
     "source": "https://www.free-foundation.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Eliza Hope Foundation and Therapy Center",
@@ -4682,7 +5652,12 @@
       "ADOS"
     ],
     "source": "https://elizahope.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Independence Resource Center",
@@ -4706,7 +5681,12 @@
       "ADA"
     ],
     "source": "https://charlottesvilleirc.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Charlottesville Adaptive Recreation",
@@ -4730,7 +5710,12 @@
       "camps"
     ],
     "source": "https://www.charlottesville.gov/368/Adaptive",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "UVA Sheila C. Johnson Center for Clinical Services",
@@ -4756,7 +5741,12 @@
       "university"
     ],
     "source": "https://education.virginia.edu/",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Valley Associates for Independent Living (VAIL)",
@@ -4779,7 +5769,12 @@
       "Shenandoah Valley"
     ],
     "source": "https://govail.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Blue Ridge Center for Therapeutic Horsemanship",
@@ -4803,7 +5798,12 @@
       "therapeutic riding"
     ],
     "source": "https://brcth.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Roanoke Valley Speech & Hearing Center",
@@ -4830,7 +5830,12 @@
       "hearing aids"
     ],
     "source": "https://www.rvshc.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Therapeutic Recreation Services of the Roanoke Valley",
@@ -4855,7 +5860,12 @@
       "therapeutic recreation"
     ],
     "source": "https://www.roanokecountyparks.com/199/Therapeutic-Recreation",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Healing Strides of Virginia",
@@ -4880,7 +5890,12 @@
       "mental health"
     ],
     "source": "https://www.healingstridesofva.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ride-On Ranch Equine Assisted Therapies",
@@ -4908,7 +5923,12 @@
       "equine"
     ],
     "source": "https://rideonranch.org",
-    "lastScraped": "2026-03-09"
+    "lastScraped": "2026-03-09",
+    "dateAdded": "2026-03-09",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Brownley Law Group - Disability Advocacy",
@@ -4932,7 +5952,12 @@
       "advocacy"
     ],
     "source": "https://brownleylaw.com/advocacy/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Central Virginia",
@@ -4959,7 +5984,12 @@
       "developmental disabilities"
     ],
     "source": "https://arcofcva.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Centria Autism",
@@ -4984,7 +6014,12 @@
       "behavioral"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Little Leaves Behavioral Services",
@@ -5009,7 +6044,12 @@
       "center-based"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Dream Bigger ABA",
@@ -5034,7 +6074,12 @@
       "autism"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Paving Pathways ABA",
@@ -5059,7 +6104,12 @@
       "Alexandria"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "New Hope Health ABA",
@@ -5084,7 +6134,12 @@
       "Fairfax"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Spectrum Therapy Services",
@@ -5106,7 +6161,12 @@
       "physical therapy"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SunnyDays Pediatric Therapy",
@@ -5130,7 +6190,12 @@
       "toddlers"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kranzler Autism Programs and Services (KAPS)",
@@ -5157,7 +6222,12 @@
       "McLean"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Patient Centered Services (PCS)",
@@ -5180,7 +6250,12 @@
       "24/7 support"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CareBuilders at Home",
@@ -5203,7 +6278,12 @@
       "Alexandria"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Infinity Care IHS",
@@ -5228,7 +6308,12 @@
       "Falls Church"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Gabriel Homes",
@@ -5254,7 +6339,12 @@
       "Reston"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "CareHome LLC",
@@ -5279,7 +6369,12 @@
       "group home"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Milestone Group Home & Nursing",
@@ -5305,7 +6400,12 @@
       "Springfield"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Family-Run Individual Group Homes of Virginia (FamilyRIGH)",
@@ -5328,7 +6428,12 @@
       "guidance"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pursuit Adaptive Sports and Recreation",
@@ -5355,7 +6460,12 @@
       "skiing"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Bright Beats Interactive Music",
@@ -5378,7 +6488,12 @@
       "children"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Interplay Orchestra",
@@ -5401,7 +6516,12 @@
       "inclusive"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Claire C. Kelly, Esq. - Special Needs Estate Planning",
@@ -5425,7 +6545,12 @@
       "attorney"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SafeinHome - Remote Supports",
@@ -5447,7 +6572,12 @@
       "independent living"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "VA Transportation Healthcare",
@@ -5469,6 +6599,11 @@
       "non-emergency"
     ],
     "source": "https://thearcofnova.org/resources/business-directory/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

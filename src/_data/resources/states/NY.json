@@ -20,7 +20,12 @@
       "early-intervention"
     ],
     "source": "https://www.health.ny.gov/community/infants_children/early_intervention/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc New York",
@@ -43,7 +48,12 @@
       "nonprofit"
     ],
     "source": "https://thearcny.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics New York",
@@ -65,7 +75,12 @@
       "sports"
     ],
     "source": "https://www.specialolympics-ny.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights New York (DRNY)",
@@ -87,7 +102,12 @@
       "legal"
     ],
     "source": "https://www.drny.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ACCES-VR (Adult Career and Continuing Education Services - Vocational Rehabilitation)",
@@ -109,7 +129,12 @@
       "government"
     ],
     "source": "https://www.acces.nysed.gov/vr",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI New York State",
@@ -131,7 +156,12 @@
       "mental-health"
     ],
     "source": "https://naminys.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TRAID Program (Technology Related Assistance for Individuals with Disabilities)",
@@ -153,7 +183,12 @@
       "assistive-tech"
     ],
     "source": "https://www.justicecenter.ny.gov/traid-program",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NY ABLE",
@@ -175,7 +210,12 @@
       "financial"
     ],
     "source": "https://www.mynyable.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Sports Foundation",
@@ -198,7 +238,12 @@
       "sports"
     ],
     "source": "https://www.adaptivesportsfoundation.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Climbing Group",
@@ -224,6 +269,11 @@
       "national"
     ],
     "source": "https://www.adaptiveclimbinggroup.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

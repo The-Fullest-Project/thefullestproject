@@ -1,7 +1,9 @@
 [
   {
     "name": "Ohio Help Me Grow Early Intervention",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "Ohio's Part C early intervention program connecting families of infants and toddlers from birth to age 3 with developmental supports and services.",
@@ -11,13 +13,22 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.helpmegrow.ohio.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Ohio",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "State chapter of The Arc advocating for people with intellectual and developmental disabilities across Ohio.",
@@ -27,13 +38,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearcofohio.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Ohio",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities across Ohio.",
@@ -43,13 +63,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.sooh.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Ohio",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "Ohio's designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -59,13 +88,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.disabilityrightsohio.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Opportunities for Ohioans with Disabilities (OOD)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "State agency providing vocational rehabilitation and employment services for Ohioans with disabilities.",
@@ -75,13 +113,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://ood.ohio.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Ohio",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "State chapter of the National Alliance on Mental Illness offering advocacy, free mental health support, online groups, and award-winning education programs for individuals and families affected by mental illness.",
@@ -91,13 +138,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namiohio.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ohio Assistive Technology (AT Ohio)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "Statewide program providing assistive technology device demonstrations, loans, and information for Ohioans with disabilities.",
@@ -107,13 +163,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://atohio.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Ohio STABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Ohio",
     "area": "",
     "description": "Tax-advantaged ABLE savings accounts for eligible Ohioans with disabilities to save without affecting means-tested benefits.",
@@ -123,13 +188,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.stableaccount.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Nationwide Children's Hospital - Developmental and Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Ohio",
     "area": "Columbus",
     "description": "Comprehensive developmental and behavioral pediatric services at one of the largest children's hospitals in the country.",
@@ -139,13 +213,22 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.nationwidechildrens.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Sports Connection",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Ohio",
     "area": "Powell",
     "description": "Nonprofit serving children, veterans, and adults with disabilities through adaptive outdoor recreation and education across 44 Ohio counties, offering cycling, kayaking, skiing, and more.",
@@ -155,8 +238,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://adaptivesportsconnection.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

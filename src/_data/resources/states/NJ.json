@@ -20,7 +20,12 @@
       "early-intervention"
     ],
     "source": "https://www.njeis.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of New Jersey",
@@ -43,7 +48,12 @@
       "nonprofit"
     ],
     "source": "https://www.arcnj.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics New Jersey",
@@ -65,7 +75,12 @@
       "sports"
     ],
     "source": "https://www.sonj.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights New Jersey",
@@ -87,7 +102,12 @@
       "legal"
     ],
     "source": "https://disabilityrightsnj.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "New Jersey Division of Vocational Rehabilitation Services (DVRS)",
@@ -109,7 +129,12 @@
       "government"
     ],
     "source": "https://www.nj.gov/labor/career-services/special-services/individuals-with-disabilities/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI New Jersey",
@@ -131,7 +156,12 @@
       "mental-health"
     ],
     "source": "https://naminj.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Richard West Assistive Technology Advocacy Center (ATAC)",
@@ -153,7 +183,12 @@
       "assistive-tech"
     ],
     "source": "https://at4nj.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NJ ABLE",
@@ -175,7 +210,12 @@
       "financial"
     ],
     "source": "https://savewithable.com/nj/home.html",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's Specialized Hospital - Developmental Behavioral Pediatrics",
@@ -201,7 +241,12 @@
       "medical"
     ],
     "source": "https://www.rwjbh.org/childrens-specialized-hospital/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "New Jersey Adaptive Recreation (NJAR)",
@@ -224,7 +269,12 @@
       "sports"
     ],
     "source": "https://www.njadaptiverecreation.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "SPAN Parent Advocacy Network",
@@ -247,6 +297,11 @@
       "advocacy"
     ],
     "source": "https://spanadvocacy.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

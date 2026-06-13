@@ -17,7 +17,12 @@
       "government"
     ],
     "source": "https://www.rehab.alabama.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama Early Intervention System (AEIS)",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.rehab.alabama.gov/services/ei",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Alabama",
@@ -57,7 +67,12 @@
       "nonprofit"
     ],
     "source": "https://www.thearcofal.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Alabama",
@@ -77,7 +92,12 @@
       "sports"
     ],
     "source": "https://www.specialolympicsalabama.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama Disability Rights (Alabama Disabilities Advocacy Program)",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.adap.ua.edu",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama Respite Network",
@@ -117,7 +142,12 @@
       "respite"
     ],
     "source": "https://www.rehab.alabama.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp ASCCA",
@@ -137,7 +167,12 @@
       "camps"
     ],
     "source": "https://www.campascca.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "STAR (Statewide Technology Access and Response) for Alabamians with Disabilities",
@@ -157,7 +192,12 @@
       "assistive-tech"
     ],
     "source": "https://www.rehab.alabama.gov/services/vrs/at",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama ABLE Savings Plan",
@@ -177,7 +217,12 @@
       "financial"
     ],
     "source": "https://www.alabamaable.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama Medicaid Waiver Programs",
@@ -197,7 +242,12 @@
       "financial"
     ],
     "source": "https://www.medicaid.alabama.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ClasTran Paratransit (Birmingham)",
@@ -217,7 +267,12 @@
       "transportation"
     ],
     "source": "https://www.clastran.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama Housing Finance Authority - Accessible Housing",
@@ -237,7 +292,12 @@
       "housing"
     ],
     "source": "https://www.ahfa.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "UAB Developmental Pediatrics",
@@ -257,7 +317,12 @@
       "medical"
     ],
     "source": "https://www.uab.edu/medicine/pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Easter Seals of Central Alabama Pediatric Therapy",
@@ -278,7 +343,12 @@
       "therapy"
     ],
     "source": "https://www.easterseals.com/central-alabama/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Alabama Vocational Rehabilitation Service - Employment",
@@ -298,7 +368,12 @@
       "employment"
     ],
     "source": "https://www.rehab.alabama.gov/services/vrs",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lakeshore Foundation Adaptive Recreation",
@@ -318,7 +393,12 @@
       "sports"
     ],
     "source": "https://www.lakeshore.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Lakeshore Foundation",
@@ -343,7 +423,12 @@
       "competitive sports"
     ],
     "source": "https://www.lakeshore.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Central Alabama",
@@ -370,7 +455,12 @@
       "developmental disabilities"
     ],
     "source": "https://www.arcofcentralalabama.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Madison County",
@@ -399,6 +489,11 @@
       "group homes"
     ],
     "source": "https://hsvarc.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

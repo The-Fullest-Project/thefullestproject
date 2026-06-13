@@ -1,7 +1,9 @@
 [
   {
     "name": "South Carolina Early Intervention (BabyNet)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "Part C early intervention program serving infants and toddlers birth to age 3 with developmental delays or disabilities and their families.",
@@ -11,13 +13,22 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.scdhhs.gov/BabyNet",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of South Carolina",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "Statewide advocacy organization for people with intellectual and developmental disabilities, providing resources, programs, and community support.",
@@ -27,13 +38,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.arcsc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics South Carolina",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "Year-round sports training and competition for children and adults with intellectual disabilities throughout South Carolina.",
@@ -43,13 +63,22 @@
     "ageRange": "8+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.so-sc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Protection and Advocacy for People with Disabilities (P&A SC)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "Federally designated protection and advocacy organization providing legal advocacy for South Carolinians with disabilities.",
@@ -59,13 +88,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.pandasc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "South Carolina Vocational Rehabilitation Department",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "State vocational rehabilitation program providing employment services, job training, and placement for South Carolinians with disabilities.",
@@ -75,13 +113,22 @@
     "ageRange": "16+",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.scvrd.net",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI South Carolina",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "State chapter of the National Alliance on Mental Illness providing free mental health support, educational classes, online support groups, and advocacy for individuals and families affected by mental illness.",
@@ -91,13 +138,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namisc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "South Carolina Assistive Technology Program (SCATP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "South Carolina's assistive technology program providing device demonstrations, equipment loans, and AT training for individuals with disabilities.",
@@ -107,13 +163,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://scatp.med.sc.edu",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Palmetto ABLE Savings Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "South Carolina",
     "area": "",
     "description": "Tax-advantaged ABLE savings accounts for South Carolinians with disabilities to save without affecting eligibility for public benefits.",
@@ -123,13 +188,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.palmettoable.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MUSC Shawn Jenkins Children's Hospital - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "South Carolina",
     "area": "Charleston",
     "description": "Developmental and behavioral pediatrics at the Medical University of South Carolina providing comprehensive evaluations and treatment for children with developmental concerns.",
@@ -139,13 +213,22 @@
     "ageRange": "0-21",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://musckids.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Coastal Adaptive Sports",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "South Carolina",
     "area": "Myrtle Beach",
     "description": "Nonprofit facilitating adaptive sports opportunities and recreation activities to enhance the lives of individuals and families with disabilities, including wheelchair basketball, cycling, and surfing.",
@@ -155,8 +238,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.coastaladaptivesports.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

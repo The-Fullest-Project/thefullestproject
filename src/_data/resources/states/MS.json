@@ -17,7 +17,12 @@
       "government"
     ],
     "source": "https://www.dmh.ms.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi Early Intervention (First Steps)",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.msdh.ms.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Mississippi",
@@ -57,7 +67,12 @@
       "nonprofit"
     ],
     "source": "https://www.arcms.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Mississippi",
@@ -77,7 +92,12 @@
       "sports"
     ],
     "source": "https://www.specialolympicsms.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Mississippi",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.drms.ms",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi Respite Care Program",
@@ -117,7 +142,12 @@
       "respite"
     ],
     "source": "https://www.dmh.ms.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Tik-A-Witha",
@@ -137,7 +167,12 @@
       "camps"
     ],
     "source": "https://www.msfb.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi Project START (Success Through Assistive/Rehabilitative Technology)",
@@ -157,7 +192,12 @@
       "assistive-tech"
     ],
     "source": "https://www.msprojectstart.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi ABLE Account",
@@ -177,7 +217,12 @@
       "financial"
     ],
     "source": "https://www.stableaccount.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi Medicaid Waiver Programs (IDD Waiver)",
@@ -197,7 +242,12 @@
       "financial"
     ],
     "source": "https://medicaid.ms.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "JATRAN Paratransit (Jackson)",
@@ -217,7 +267,12 @@
       "transportation"
     ],
     "source": "https://www.jacksonms.gov/jatran/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi Home Corporation - Accessible Housing",
@@ -237,7 +292,12 @@
       "housing"
     ],
     "source": "https://www.mshomecorp.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "UMMC Center for Advancement of Youth (Developmental Pediatrics)",
@@ -257,7 +317,12 @@
       "medical"
     ],
     "source": "https://www.umc.edu",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Methodist Rehabilitation Center Pediatric Therapy",
@@ -278,7 +343,12 @@
       "therapy"
     ],
     "source": "https://www.methodistonline.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mississippi Department of Rehabilitation Services - Employment",
@@ -298,7 +368,12 @@
       "employment"
     ],
     "source": "https://www.mdrs.ms.gov",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Northeast Mississippi",
@@ -325,6 +400,11 @@
       "Tupelo"
     ],
     "source": "https://arcnems.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

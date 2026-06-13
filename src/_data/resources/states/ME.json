@@ -1,7 +1,9 @@
 [
   {
     "name": "Early Intervention for ME (Birth to Three)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Maine's early intervention program helping children from birth to three achieve developmental milestones. Family-focused specialists show caregivers how to incorporate learning opportunities into everyday activities. Free assessments and evaluations through 9 regional sites statewide.",
@@ -9,15 +11,27 @@
     "website": "https://www.maine.gov/doe/earlyinterventionforme",
     "address": "",
     "ageRange": "Birth to 3",
-    "disabilityTypes": ["developmental-delays", "all-disabilities"],
+    "disabilityTypes": [
+      "developmental-delays",
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.maine.gov/doe/earlyinterventionforme",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Maine",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Affiliated chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in Maine, supporting full inclusion and participation in the community throughout their lifetimes.",
@@ -25,15 +39,27 @@
     "website": "https://thearc.org/chapter/maine/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities", "developmental-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities",
+      "developmental-disabilities"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://thearc.org/chapter/maine/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Maine",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Year-round sports training and competition program serving over 5,000 athletes with intellectual disabilities. Offers 90+ events each year at local, state, national, and international levels across multiple sports including skiing, track and field, and bowling.",
@@ -41,15 +67,26 @@
     "website": "https://www.somaine.org/",
     "address": "525 Main Street, Unit D, South Portland, ME 04106",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.somaine.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Maine",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Maine's designated Protection and Advocacy agency, providing no-cost advocacy and legal services to people with disabilities who have experienced a violation of their legal or civil rights. Employs 36 staff including 13 attorneys.",
@@ -57,15 +94,26 @@
     "website": "https://drme.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://drme.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Maine Bureau of Rehabilitation Services - Division of Vocational Rehabilitation",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Department of Labor program helping people with physical, mental, or emotional disabilities find and keep a job. Services include career exploration, training, job placement, and tools/equipment needed for employment, all provided at no cost.",
@@ -73,15 +121,26 @@
     "website": "https://www.maine.gov/rehab/dvr/",
     "address": "",
     "ageRange": "Working age adults and transition-age youth",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.maine.gov/rehab/dvr/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Maine",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Dedicated to building better lives for 1 in 4 Mainers affected by mental illness through support, education, and advocacy. Offers the NAMI Helpline, educational programming, workshops, conferences, support groups, and a teen text line.",
@@ -89,15 +148,26 @@
     "website": "https://namimaine.org/",
     "address": "52 Water Street, Hallowell, ME 04347",
     "ageRange": "All ages",
-    "disabilityTypes": ["mental-health"],
+    "disabilityTypes": [
+      "mental-health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namimaine.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Maine CITE (Community Inclusion through Technology)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Statewide program helping people with disabilities increase independence through assistive technology. Provides free device demonstrations, short-term loans, equipment reuse, information, and training. The mPower Loan Program offers affordable loans for AT purchases and home modifications.",
@@ -105,15 +175,26 @@
     "website": "https://mainecite.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free services; low-interest loans available",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://mainecite.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "ABLE ME",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Maine's ABLE savings program administered by Bangor Savings Bank, helping eligible individuals with disabilities save for qualified disability expenses without jeopardizing SSI, Medicaid, or other benefits. FDIC-insured checking account with no annual set fee and no restrictions on disbursements.",
@@ -121,15 +202,26 @@
     "website": "https://www.maine.gov/treasurer/ABLE-MAINE",
     "address": "",
     "ageRange": "All ages (disability onset before age 46)",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "No annual account fee",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.maine.gov/treasurer/ABLE-MAINE",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Barbara Bush Children's Hospital - Developmental-Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Maine",
     "area": "",
     "description": "Part of MaineHealth Maine Medical Center, providing comprehensive behavioral and developmental services for infants, children, teens, and young adults aged 0-21 throughout Maine. Team includes board-certified developmental and behavioral specialists and neuropsychologists.",
@@ -137,15 +229,29 @@
     "website": "https://www.mainehealth.org/barbara-bush-childrens-hospital/care-services-mainehealth-barbara-bush-childrens-hospital/pediatric-developmental-disorder-care-mainehealth-barbara-bush-childrens",
     "address": "",
     "ageRange": "Birth to 21",
-    "disabilityTypes": ["developmental-delays", "autism", "adhd", "learning-disabilities"],
+    "disabilityTypes": [
+      "developmental-delays",
+      "autism",
+      "adhd",
+      "learning-disabilities"
+    ],
     "cost": "Insurance accepted",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.mainehealth.org/barbara-bush-childrens-hospital",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Maine Adaptive Sports & Recreation",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Maine",
     "area": "",
     "description": "The largest year-round adaptive recreation program in Maine since 1982, offering alpine skiing, snowboarding, Nordic skiing, cycling, golf, paddling, hiking, and more. All lessons are 100% free including lift tickets, equipment, and instruction. Supported by over 400 trained volunteers.",
@@ -153,10 +259,20 @@
     "website": "https://maineadaptive.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["physical-disabilities", "cognitive-disabilities"],
+    "disabilityTypes": [
+      "physical-disabilities",
+      "cognitive-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://maineadaptive.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

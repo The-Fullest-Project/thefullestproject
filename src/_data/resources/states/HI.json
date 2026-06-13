@@ -17,7 +17,12 @@
       "early-intervention"
     ],
     "source": "https://health.hawaii.gov/eis/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc in Hawaii",
@@ -40,7 +45,12 @@
       "nonprofit"
     ],
     "source": "https://thearcinhawaii.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Hawaii",
@@ -62,7 +72,12 @@
       "sports"
     ],
     "source": "https://sohawaii.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hawaii Disability Rights Center",
@@ -82,7 +97,12 @@
       "legal"
     ],
     "source": "https://hawaiidisabilityrights.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hawaii Division of Vocational Rehabilitation",
@@ -102,7 +122,12 @@
       "government"
     ],
     "source": "https://humanservices.hawaii.gov/vocationalrehab/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Hawaii",
@@ -124,7 +149,12 @@
       "mental-health"
     ],
     "source": "https://namihawaii.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Assistive Technology Resource Centers of Hawaii (ATRC)",
@@ -144,7 +174,12 @@
       "assistive-tech"
     ],
     "source": "https://atrc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hawaii ABLE Savings Program",
@@ -164,7 +199,12 @@
       "financial"
     ],
     "source": "https://www.hawaiiablesavings.com/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Kapiolani Medical Center for Women and Children",
@@ -186,7 +226,12 @@
       "medical"
     ],
     "source": "https://www.hawaiipacifichealth.org/kapiolani/services/pediatrics/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AccesSurf Hawaii",
@@ -209,6 +254,11 @@
       "sports"
     ],
     "source": "https://www.accessurf.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

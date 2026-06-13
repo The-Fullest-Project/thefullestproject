@@ -1,7 +1,9 @@
 [
   {
     "name": "Arizona Early Intervention Program (AzEIP)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Arizona's statewide interagency system of early intervention services and supports for families of infants and toddlers, birth until age three, with disabilities or delays. Services include specialized instruction, physical therapy, occupational therapy, and speech therapy provided through local service-providing agencies.",
@@ -11,13 +13,22 @@
     "ageRange": "Birth to 3",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://des.az.gov/azeip",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Arizona",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Advocates for the rights and full community participation of all people with intellectual and developmental disabilities in Arizona. Partners with local chapters to provide services, support, advocacy, and public policy efforts statewide.",
@@ -25,15 +36,27 @@
     "website": "https://arcarizona.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability", "Developmental Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability",
+      "Developmental Disability"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://arcarizona.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Arizona",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Provides year-round sports training and athletic competition in 16 state-level sports for children and adults with intellectual disabilities. Programs include Unified Sports where athletes with and without disabilities play together, plus free health screenings.",
@@ -41,15 +64,26 @@
     "website": "https://specialolympicsarizona.org/",
     "address": "2455 N. Citrus Rd. Bldg 64, Phoenix, AZ",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://specialolympicsarizona.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Arizona Center for Disability Law (Disability Rights Arizona)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Arizona's federally designated Protection and Advocacy system. A nonprofit public interest law firm dedicated to protecting the rights of individuals with physical, mental, psychiatric, sensory, and cognitive disabilities through free legal services, advocacy, and investigations.",
@@ -59,13 +93,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://disabilityrightsaz.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Arizona Rehabilitation Services Administration",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "State agency helping individuals with disabilities achieve employment goals. Services include vocational evaluation, job training, job search, job placement, transportation, and job site modification. Part of the Arizona Department of Economic Security.",
@@ -75,13 +118,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://des.az.gov/services/employment/rehabilitation-services/vocational-rehabilitation-vr",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Arizona",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Arizona affiliate of the National Alliance on Mental Illness providing free mental health support, education, advocacy, and resources for individuals and families affected by mental illness throughout the state.",
@@ -89,15 +141,26 @@
     "website": "https://namiarizona.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Mental Health"],
+    "disabilityTypes": [
+      "Mental Health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namiarizona.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Arizona Technology Access Program (AzTAP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Arizona's Assistive Technology Act Program, part of the Institute for Human Development at Northern Arizona University. Provides device demonstrations, loan programs, alternative financing through AzLAT, and education about assistive technology for persons with disabilities of all ages.",
@@ -107,13 +170,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://aztap.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "AZ ABLE",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Arizona's ABLE savings program allowing persons with disabilities to save and invest money without losing eligibility for public benefits like Medicaid and SSI. Tax-free growth and withdrawals when used for qualified disability expenses.",
@@ -123,13 +195,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://az-able.com/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Phoenix Children's Hospital - Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Premier resource for developmental pediatrics evaluating and treating children with developmental delays, autism, ADHD, Down syndrome, Fragile X, and other neurodevelopmental disorders. Multiple clinic locations throughout the Phoenix area.",
@@ -137,15 +218,29 @@
     "website": "https://phoenixchildrens.org/specialties-conditions/developmental-pediatrics",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Autism", "ADHD", "Down Syndrome", "Developmental Delay"],
+    "disabilityTypes": [
+      "Autism",
+      "ADHD",
+      "Down Syndrome",
+      "Developmental Delay"
+    ],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://phoenixchildrens.org/specialties-conditions/developmental-pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Arizona Disabled Sports",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Arizona",
     "area": "",
     "description": "Offers adaptive sports opportunities for individuals with intellectual, developmental, and physical disabilities. Weekly programs include archery, aquatics, basketball, bowling, cycling, golf, hiking, kayaking, power soccer, wheelchair basketball, wheelchair tennis, and yoga.",
@@ -155,8 +250,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.arizonadisabledsports.com/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

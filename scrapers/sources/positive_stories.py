@@ -13,6 +13,9 @@ from pathlib import Path
 # Add parent directory to path for base_scraper imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import pending_store
+from base_scraper import load_blocklist
+
 DATA_DIR = Path(__file__).parent.parent.parent / "src" / "_data"
 STORIES_FILE = DATA_DIR / "stories.json"
 MAX_STORIES = 6  # Keep the 6 most recent stories
@@ -192,31 +195,44 @@ def get_seed_stories():
 
 
 def run():
-    """Main scraper function."""
+    """Main scraper function.
+
+    New stories are queued to pending/ for admin review — stories.json is
+    only updated when an item is approved in the review portal (which also
+    applies the MAX_STORIES cap at that point).
+    """
     print("Fetching positive stories...")
 
     existing = load_existing_stories()
     existing_urls = {s.get("sourceUrl") for s in existing}
+    pending_urls = pending_store.load_pending_keys("story")
+    blocklist = load_blocklist()
 
     # Try to fetch from web
     new_stories = fetch_stories_from_web()
 
-    # Filter out duplicates
-    new_stories = [s for s in new_stories if s["sourceUrl"] not in existing_urls]
+    # Filter out duplicates (live + already queued) and rejected items
+    new_stories = [
+        s for s in new_stories
+        if s["sourceUrl"] not in existing_urls
+        and s["sourceUrl"] not in pending_urls
+        and s["sourceUrl"] not in blocklist.get("urls", [])
+        and s["title"] not in blocklist.get("names", [])
+    ]
+
+    if not new_stories and not existing:
+        # No existing stories and no web results — queue seed stories
+        print("No web results found, queueing seed stories for initial population")
+        new_stories = get_seed_stories()
 
     if new_stories:
-        print(f"Found {len(new_stories)} new stories from web search")
-        all_stories = existing + new_stories
-    elif not existing:
-        # No existing stories and no web results — use seed stories
-        print("No web results found, using seed stories for initial population")
-        all_stories = get_seed_stories()
+        envelopes = [pending_store.make_envelope("story", s, "positive_stories")
+                     for s in new_stories]
+        pending_store.queue_items("story", envelopes)
     else:
-        print("No new stories found, keeping existing stories")
-        all_stories = existing
+        print("No new stories found")
 
-    save_stories(all_stories)
-    return all_stories
+    return new_stories
 
 
 if __name__ == "__main__":

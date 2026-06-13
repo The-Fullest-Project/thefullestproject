@@ -13,6 +13,7 @@
   "coverage": "All 50 US States + DC + National",
   "googleAnalytics": "",
   "gigWorkerUrl": "https://gig-publisher.patrick-m-berrigan.workers.dev",
+  "adminWorkerUrl": "https://tfp-admin-api.patrick-m-berrigan.workers.dev",
   "formspree": {
     "contact": "mzdjzzvw",
     "submitResource": "xpqywwla",

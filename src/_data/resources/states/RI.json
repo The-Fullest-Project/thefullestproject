@@ -1,7 +1,9 @@
 [
   {
     "name": "Rhode Island Early Intervention Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Promotes the growth and development of infants and toddlers with developmental disabilities or delays in speech, physical abilities, and social skills. Services provided at no cost in places where children usually play or take part in daily activities. RI Medicaid eligibility not required.",
@@ -9,15 +11,27 @@
     "website": "https://eohhs.ri.gov/Consumer/FamilieswithChildren/EarlyIntervention.aspx",
     "address": "",
     "ageRange": "Birth to 3",
-    "disabilityTypes": ["developmental-delays", "all-disabilities"],
+    "disabilityTypes": [
+      "developmental-delays",
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://eohhs.ri.gov/Consumer/FamilieswithChildren/EarlyIntervention.aspx",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Rhode Island",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Part of a nationwide network of over 550 chapters dedicated to supporting individuals with intellectual and developmental disabilities. Offers advocacy, residential and vocational services, person-centered and financial planning, and programs guiding families through the special education system.",
@@ -25,15 +39,27 @@
     "website": "https://ri.thearc.org/",
     "address": "PO Box 3929, Pawtucket, RI 02861",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities", "developmental-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities",
+      "developmental-disabilities"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://ri.thearc.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Rhode Island",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Provides over 1,600 year-round sports training and athletic competition opportunities for more than 3,000 children and adults with intellectual disabilities. Hosts over 40 statewide tournaments and competitions each year in 20 sports, all at no cost.",
@@ -41,15 +67,26 @@
     "website": "https://specialolympicsri.org/",
     "address": "370 George Washington Highway, Smithfield, RI 02917",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://specialolympicsri.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Rhode Island (DRRI)",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Rhode Island's independent federally mandated Protection and Advocacy System, established in 1977. Administers nine federally funded programs providing individual representation, systems change advocacy, and investigation of abuse and neglect for people with disabilities.",
@@ -57,15 +94,26 @@
     "website": "https://drri.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://drri.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rhode Island Office of Rehabilitation Services (ORS)",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Division of the RI Department of Human Services supporting Rhode Islanders with disabilities through vocational rehabilitation services. Helps individuals choose, prepare for, obtain, and maintain employment, with many services including education and training covered by ORS.",
@@ -73,15 +121,26 @@
     "website": "https://ors.ri.gov/",
     "address": "",
     "ageRange": "Working age adults and transition-age youth",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://ors.ri.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Rhode Island",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Nonprofit providing support, advocacy, and education to schools, families, and individuals living with mental illness. Offers the Family to Family program (12-week course), Peer to Peer program (10-week course), and support groups, all free of charge.",
@@ -89,15 +148,26 @@
     "website": "https://namirhodeisland.org/",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["mental-health"],
+    "disabilityTypes": [
+      "mental-health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namirhodeisland.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Rhode Island Assistive Technology Access Partnership (ATAP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Statewide partnership of organizations improving access to assistive technology for individuals with disabilities. Provides device demonstrations, loans, reuse, training, and information through the Central Resource Center and Resource Center for Children and Youth.",
@@ -105,15 +175,26 @@
     "website": "https://ors.ri.gov/assistive-technology/assistive-technology-access-partnership-atap",
     "address": "",
     "ageRange": "All ages",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://ors.ri.gov/assistive-technology/assistive-technology-access-partnership-atap",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "RI's ABLE",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Rhode Island's ABLE savings program allowing individuals with disabilities to save for qualified disability expenses on a tax-deferred basis without limiting SSI, Medicaid, and other federal programs. Open an account online with as little as $25.",
@@ -121,15 +202,26 @@
     "website": "https://savewithable.com/ri/home.html",
     "address": "",
     "ageRange": "All ages (disability onset before age 46)",
-    "disabilityTypes": ["all-disabilities"],
+    "disabilityTypes": [
+      "all-disabilities"
+    ],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://savewithable.com/ri/home.html",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Hasbro Children's Hospital - Children's Neurodevelopment Center",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Rhode Island's only pediatric hospital and teaching hospital of Brown University. The Children's Neurodevelopment Center (CNDC) provides evaluation and treatment of children with neurological, developmental, metabolic, and behavioral disorders, including rehab services and spasticity management.",
@@ -137,15 +229,28 @@
     "website": "https://www.brownhealth.org/centers-services/childrens-neurodevelopment-center",
     "address": "",
     "ageRange": "Birth to 21",
-    "disabilityTypes": ["developmental-delays", "neurological-disorders", "autism"],
+    "disabilityTypes": [
+      "developmental-delays",
+      "neurological-disorders",
+      "autism"
+    ],
     "cost": "Insurance accepted",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.brownhealth.org/centers-services/childrens-neurodevelopment-center",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Rhode Island - Unified & Adaptive Sports",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Rhode Island",
     "area": "",
     "description": "Beyond competitive Special Olympics sports, SORI offers school-based inclusion programs, community-based programs, child development programs, Healthy Athletes health screenings, and volunteer opportunities for individuals with and without intellectual disabilities.",
@@ -153,10 +258,20 @@
     "website": "https://specialolympicsri.org/",
     "address": "370 George Washington Highway, Smithfield, RI 02917",
     "ageRange": "All ages",
-    "disabilityTypes": ["intellectual-disabilities", "all-disabilities"],
+    "disabilityTypes": [
+      "intellectual-disabilities",
+      "all-disabilities"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://specialolympicsri.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

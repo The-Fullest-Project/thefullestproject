@@ -12,6 +12,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import pending_store
+from base_scraper import load_blocklist
+
 DATA_DIR = Path(__file__).parent.parent.parent / "src" / "_data"
 SPOTLIGHTS_FILE = DATA_DIR / "spotlights.json"
 LOG_DIR = Path(__file__).parent.parent / "logs"
@@ -193,16 +196,30 @@ def fetch_spotlights_from_web():
 
 
 def run():
-    """Main scraper function."""
+    """Main scraper function.
+
+    New spotlights are queued to pending/ for admin review — spotlights.json
+    is only updated on approval in the review portal, which also handles the
+    featured rotation (unfeature all, feature the newly approved one).
+    """
     print("Discovering accessible service organizations...")
 
     existing = load_existing()
     existing_names = {s.get("name", "").lower().strip() for s in existing}
+    pending_names = pending_store.load_pending_keys("spotlight")
+    blocklist = load_blocklist()
+    blocked_names = {n.lower().strip() for n in blocklist.get("names", [])}
 
     new_spotlights = fetch_spotlights_from_web()
 
-    # Filter duplicates by name
-    new_spotlights = [s for s in new_spotlights if s["name"].lower().strip() not in existing_names]
+    # Filter duplicates (live + already queued) and rejected items
+    new_spotlights = [
+        s for s in new_spotlights
+        if s["name"].lower().strip() not in existing_names
+        and s["name"].lower().strip() not in pending_names
+        and s["name"].lower().strip() not in blocked_names
+        and s["website"] not in blocklist.get("urls", [])
+    ]
 
     # Limit new additions
     new_spotlights = new_spotlights[:MAX_NEW_PER_RUN]
@@ -210,29 +227,23 @@ def run():
     log_entries = []
 
     if new_spotlights:
-        print(f"Found {len(new_spotlights)} new spotlights")
-
-        # Rotate featured: unfeatured all existing, feature the newest
-        for s in existing:
-            s["featured"] = False
-        new_spotlights[0]["featured"] = True
-
-        all_spotlights = new_spotlights + existing
+        envelopes = [pending_store.make_envelope("spotlight", s, "spotlight_scraper")
+                     for s in new_spotlights]
+        pending_store.queue_items("spotlight", envelopes)
 
         for s in new_spotlights:
             log_entries.append({
-                "action": "added",
+                "action": "queued",
                 "name": s["name"],
                 "category": s["category"],
                 "website": s["website"]
             })
     else:
         print("No new spotlights found")
-        all_spotlights = existing
         log_entries.append({"action": "no_new_found"})
 
-    save_spotlights(all_spotlights, log_entries)
-    return all_spotlights
+    write_log("spotlight_scraper", log_entries)
+    return new_spotlights
 
 
 if __name__ == "__main__":

@@ -17,7 +17,12 @@
       "early-intervention"
     ],
     "source": "https://dcyf.wa.gov/services/child-development-supports/esit",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Washington State",
@@ -40,7 +45,12 @@
       "nonprofit"
     ],
     "source": "https://arcwa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Washington",
@@ -62,7 +72,12 @@
       "sports"
     ],
     "source": "https://specialolympicswashington.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Washington",
@@ -82,7 +97,12 @@
       "legal"
     ],
     "source": "https://www.disabilityrightswa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Washington State Division of Vocational Rehabilitation",
@@ -102,7 +122,12 @@
       "government"
     ],
     "source": "https://www.dshs.wa.gov/dvr",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Washington",
@@ -124,7 +149,12 @@
       "mental-health"
     ],
     "source": "https://namiwa.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Washington Assistive Technology Act Program (WATAP)",
@@ -144,7 +174,12 @@
       "assistive-tech"
     ],
     "source": "https://watap.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Washington State ABLE Savings Plan",
@@ -164,7 +199,12 @@
       "financial"
     ],
     "source": "https://washingtonstateable.com/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Seattle Children's Hospital - Neurodevelopmental Center",
@@ -188,7 +228,12 @@
       "medical"
     ],
     "source": "https://www.seattlechildrens.org/clinics/neurodevelopmental/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Outdoors for All Foundation",
@@ -208,7 +253,12 @@
       "sports"
     ],
     "source": "https://outdoorsforall.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PAVE (Partnerships for Action, Voices for Empowerment)",
@@ -231,6 +281,11 @@
       "one-on-one support"
     ],
     "source": "https://wapave.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

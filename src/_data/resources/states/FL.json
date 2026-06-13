@@ -17,7 +17,12 @@
       "government"
     ],
     "source": "https://apd.myflorida.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida Early Steps",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.floridahealth.gov/programs-and-services/childrens-health/early-steps/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Florida",
@@ -57,7 +67,12 @@
       "nonprofit"
     ],
     "source": "https://www.arcflorida.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Florida",
@@ -77,7 +92,12 @@
       "sports"
     ],
     "source": "https://www.specialolympicsflorida.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Florida",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.disabilityrightsflorida.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida Respite Coalition",
@@ -117,7 +142,12 @@
       "respite"
     ],
     "source": "https://www.floridarespite.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Boggy Creek",
@@ -137,7 +167,12 @@
       "camps"
     ],
     "source": "https://www.campboggycreek.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida Alliance for Assistive Services and Technology (FAAST)",
@@ -157,7 +192,12 @@
       "assistive-tech"
     ],
     "source": "https://www.faast.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida ABLE Account",
@@ -177,7 +217,12 @@
       "financial"
     ],
     "source": "https://www.ableunited.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida Medicaid Waiver Programs (iBudget)",
@@ -197,7 +242,12 @@
       "financial"
     ],
     "source": "https://apd.myflorida.com/ibudget/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "LYNX ACCESS LYNX Paratransit (Orlando)",
@@ -217,7 +267,12 @@
       "transportation"
     ],
     "source": "https://www.golynx.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida Housing Finance Corporation - Accessible Housing",
@@ -237,7 +292,12 @@
       "housing"
     ],
     "source": "https://www.floridahousing.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "UF Health Developmental Pediatrics",
@@ -257,7 +317,12 @@
       "medical"
     ],
     "source": "https://ufhealth.org/pediatrics",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Easter Seals South Florida Pediatric Therapy",
@@ -278,7 +343,12 @@
       "therapy"
     ],
     "source": "https://www.easterseals.com/southflorida/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Florida Division of Vocational Rehabilitation - Employment",
@@ -298,7 +368,12 @@
       "employment"
     ],
     "source": "https://www.rehabworks.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Miracle League of South Florida",
@@ -318,7 +393,12 @@
       "sports"
     ],
     "source": "https://www.miracleleaguesouthflorida.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Jacksonville",
@@ -346,7 +426,12 @@
       "Jacksonville"
     ],
     "source": "https://arcjacksonville.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Tampa Bay",
@@ -373,7 +458,12 @@
       "developmental disabilities"
     ],
     "source": "https://www.thearctb.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of South Florida",
@@ -400,6 +490,11 @@
       "developmental disabilities"
     ],
     "source": "https://arcsofla.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

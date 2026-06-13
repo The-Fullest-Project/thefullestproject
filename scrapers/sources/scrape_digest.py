@@ -12,6 +12,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+import pending_store
+
 LOG_DIR = Path(__file__).parent.parent / "logs"
 DATA_DIR = Path(__file__).parent.parent.parent / "src" / "_data"
 BLOG_DIR = Path(__file__).parent.parent.parent / "src" / "blog"
@@ -55,16 +57,51 @@ def count_new_blog_posts():
     return count, new_posts
 
 
+def summarize_pending():
+    """Prune stale queued items, then count what awaits review and what this
+    run queued. Returns (totals_by_type, queued_today_by_type, pruned_list)."""
+    pruned = pending_store.prune_stale()
+    totals = {}
+    queued_today = {}
+    today = date.today().isoformat()
+    for env in pending_store.iter_pending():
+        t = env.get("type", "unknown")
+        totals[t] = totals.get(t, 0) + 1
+        if env.get("origin", {}).get("submittedAt", "").startswith(today):
+            queued_today[t] = queued_today.get(t, 0) + 1
+    return totals, queued_today, pruned
+
+
 def generate_digest():
     """Generate a text digest of the weekly scrape."""
     logs = load_scrape_log()
     blog_count, blog_titles = count_new_blog_posts()
+    pending_totals, queued_today, pruned = summarize_pending()
 
     lines = [
         f"Weekly Scrape Digest — {date.today().isoformat()}",
         "=" * 50,
         "",
     ]
+
+    # Review queue summary
+    if pending_totals:
+        lines.append("AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/")
+        for t in sorted(pending_totals):
+            today_note = f" ({queued_today[t]} new this run)" if queued_today.get(t) else ""
+            lines.append(f"  {t}: {pending_totals[t]} pending{today_note}")
+        lines.append("")
+    else:
+        lines.append("Review queue is empty — nothing awaiting approval.")
+        lines.append("")
+
+    if pruned:
+        lines.append(f"Expired unreviewed after 28 days ({len(pruned)}):")
+        for p in pruned[:10]:
+            lines.append(f"  - [{p['type']}] {p['title']}")
+        if len(pruned) > 10:
+            lines.append(f"  ... and {len(pruned) - 10} more")
+        lines.append("")
 
     # Summarize scraper activity
     for log in logs:

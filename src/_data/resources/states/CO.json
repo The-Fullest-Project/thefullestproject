@@ -17,7 +17,12 @@
       "early-intervention"
     ],
     "source": "https://cdec.colorado.gov/early-intervention-for-infants-and-toddlers",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Colorado",
@@ -40,7 +45,12 @@
       "nonprofit"
     ],
     "source": "https://thearc.org/chapter/the-arc-of-colorado/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Colorado",
@@ -62,7 +72,12 @@
       "sports"
     ],
     "source": "https://specialolympicsco.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Law Colorado",
@@ -82,7 +97,12 @@
       "legal"
     ],
     "source": "https://disabilitylawco.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Colorado Division of Vocational Rehabilitation",
@@ -102,7 +122,12 @@
       "government"
     ],
     "source": "https://dvr.colorado.gov/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Colorado",
@@ -124,7 +149,12 @@
       "mental-health"
     ],
     "source": "https://namicolorado.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Colorado Assistive Technology Act Program",
@@ -144,7 +174,12 @@
       "assistive-tech"
     ],
     "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/colorado-assistive-technology-act-program",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Colorado ABLE",
@@ -164,7 +199,12 @@
       "financial"
     ],
     "source": "https://www.coloradoable.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Children's Hospital Colorado - Developmental Pediatrics",
@@ -188,7 +228,12 @@
       "medical"
     ],
     "source": "https://www.childrenscolorado.org/doctors-and-departments/departments/neuroscience-institute/programs/developmental-pediatrics/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "National Sports Center for the Disabled (NSCD)",
@@ -208,7 +253,12 @@
       "sports"
     ],
     "source": "https://nscd.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Adventures",
@@ -235,7 +285,12 @@
       "free"
     ],
     "source": "https://adaptiveadventures.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Adaptive Action Sports",
@@ -260,6 +315,11 @@
       "competitive"
     ],
     "source": "https://www.adacs.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

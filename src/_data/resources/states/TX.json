@@ -1,7 +1,9 @@
 [
   {
     "name": "Texas Early Childhood Intervention (ECI)",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Statewide program for families with children birth to 36 months with developmental delays, disabilities, or certain medical diagnoses. Services include case management, specialized skills training, physical, occupational, and speech therapy, nursing, and counseling in natural environments. Sliding-fee scale based on family income.",
@@ -11,13 +13,22 @@
     "ageRange": "Birth to 3",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.hhs.texas.gov/services/disability/early-childhood-intervention-services",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc of Texas",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Founded in 1953, advocates for the rights of Texans with intellectual and developmental disabilities. Provides resources on education, guardianship, employment, and finances. Operates the Master Pooled Trust and a network of 23 local chapters across Texas.",
@@ -25,15 +36,27 @@
     "website": "https://www.thearcoftexas.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability", "Developmental Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability",
+      "Developmental Disability"
+    ],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearcoftexas.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Texas",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Provides sports training and competitions for over 60,000 people with intellectual disabilities across Texas each year. Offers a variety of Olympic-type sports with statewide and regional competitions throughout the year.",
@@ -41,15 +64,26 @@
     "website": "https://www.sotx.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Intellectual Disability"],
+    "disabilityTypes": [
+      "Intellectual Disability"
+    ],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.sotx.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Disability Rights Texas",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Texas's designated Protection and Advocacy agency providing direct legal assistance, protecting rights through courts, advocating for disability-friendly laws, and making referrals. Ensures full and equal participation in society for people with disabilities.",
@@ -59,13 +93,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://disabilityrightstx.org/en/home/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Texas Workforce Commission - Vocational Rehabilitation Services",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Helps people with disabilities prepare for, find, and keep jobs or advance in employment. Services include career exploration, disability supports, training for credentials, job search assistance, and on-the-job support. Online self-referral available through Start My VR.",
@@ -75,13 +118,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.twc.texas.gov/programs/vocational-rehabilitation",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "NAMI Texas",
-    "category": ["mental-health"],
+    "category": [
+      "mental-health"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Texas affiliate of NAMI providing advocacy, free mental health support, online groups, and education for individuals and families affected by mental illness. Local affiliates include NAMI Central Texas and NAMI North Texas.",
@@ -89,15 +141,26 @@
     "website": "https://namitexas.org/",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Mental Health"],
+    "disabilityTypes": [
+      "Mental Health"
+    ],
     "cost": "Free",
-    "tags": ["mental-health"],
+    "tags": [
+      "mental-health"
+    ],
     "source": "https://namitexas.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Texas Technology Access Program (TTAP)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Leads Texas's efforts under the federal Assistive Technology Act. Provides AT device loans (35-day terms with free shipping), statewide demonstration centers, recycle and reuse programs through Project Mend, financing, training, and public awareness activities.",
@@ -107,13 +170,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://ttap.disabilitystudies.utexas.edu/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Texas ABLE",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Texas's ABLE savings program allowing individuals with disabilities to save up to $100,000 without impacting SSI benefits, or up to $500,000 account balance limit. Tax-free withdrawals for qualified disability expenses. $50 minimum to open; $25 minimum for subsequent contributions.",
@@ -123,13 +195,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.texasable.org/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Texas Children's Hospital - Meyer Center for Developmental Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "Texas",
     "area": "",
     "description": "The largest children's hospital in the US with the Meyer Center providing comprehensive diagnostic and treatment planning for neurodevelopmental conditions including intellectual disabilities, autism, ADHD, cerebral palsy, Down syndrome, and Fragile X. Specialized follow-up clinics available.",
@@ -137,15 +218,30 @@
     "website": "https://www.texaschildrens.org/departments/developmental-pediatrics-and-autism/programs-and-services",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Autism", "ADHD", "Down Syndrome", "Cerebral Palsy", "Intellectual Disability"],
+    "disabilityTypes": [
+      "Autism",
+      "ADHD",
+      "Down Syndrome",
+      "Cerebral Palsy",
+      "Intellectual Disability"
+    ],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.texaschildrens.org/departments/developmental-pediatrics-and-autism/programs-and-services",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "TIRR Memorial Hermann Adapted Sports",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "Texas",
     "area": "",
     "description": "Houston-based adapted sports and recreation program for youth and adults with physical disabilities. Programs include wheelchair basketball (NWBA Division 1 and 3 teams), wheelchair rugby, handcycling, wheelchair softball, racing, powerlifting, and fitness training.",
@@ -153,10 +249,19 @@
     "website": "https://memorialhermann.org/services/specialties/tirr/patients-visitors/adapted-sports",
     "address": "",
     "ageRange": "",
-    "disabilityTypes": ["Physical Disability"],
+    "disabilityTypes": [
+      "Physical Disability"
+    ],
     "cost": "",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://memorialhermann.org/services/specialties/tirr/patients-visitors/adapted-sports",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

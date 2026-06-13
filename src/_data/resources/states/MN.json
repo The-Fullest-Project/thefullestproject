@@ -17,7 +17,12 @@
       "nonprofit"
     ],
     "source": "https://www.arcminnesota.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota Help Me Grow / Early Intervention",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.helpmegrowmn.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Minnesota",
@@ -57,7 +67,12 @@
       "sports"
     ],
     "source": "https://www.somn.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Gillette Children's Specialty Healthcare",
@@ -77,7 +92,12 @@
       "medical"
     ],
     "source": "https://www.gillettechildrens.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota Disability Law Center",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.mndlc.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota STAR Program (System of Technology to Achieve Results)",
@@ -117,7 +142,12 @@
       "assistive-tech"
     ],
     "source": "https://mn.gov/admin/star/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota ABLE Account",
@@ -137,7 +167,12 @@
       "financial"
     ],
     "source": "https://www.savewithable.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota Department of Human Services - Disability Services Division",
@@ -157,7 +192,12 @@
       "government"
     ],
     "source": "https://mn.gov/dhs/people-we-serve/people-with-disabilities/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Courage (True Friends)",
@@ -177,7 +217,12 @@
       "camps"
     ],
     "source": "https://www.truefriends.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "PACER Center",
@@ -197,7 +242,12 @@
       "community"
     ],
     "source": "https://www.pacer.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota Vocational Rehabilitation Services",
@@ -217,7 +267,12 @@
       "employment"
     ],
     "source": "https://mn.gov/deed/job-seekers/disabilities/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Minnesota Medicaid Home and Community-Based Waivers",
@@ -237,7 +292,12 @@
       "financial"
     ],
     "source": "https://mn.gov/dhs/people-we-serve/people-with-disabilities/services/home-community-based-services/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Metro Mobility Paratransit",
@@ -257,7 +317,12 @@
       "transportation"
     ],
     "source": "https://metrocouncil.org/Transportation/Services/Metro-Mobility.aspx",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Fraser Therapy Services",
@@ -278,7 +343,12 @@
       "therapy"
     ],
     "source": "https://www.fraser.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Mind Body Solutions",
@@ -301,7 +371,12 @@
       "caregivers"
     ],
     "source": "https://www.mindbodysolutions.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "The Arc Northland",
@@ -328,6 +403,11 @@
       "inclusion"
     ],
     "source": "https://arcnorthland.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

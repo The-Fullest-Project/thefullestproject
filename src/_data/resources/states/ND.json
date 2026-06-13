@@ -1,7 +1,9 @@
 [
   {
     "name": "The Arc of North Dakota",
-    "category": ["nonprofit"],
+    "category": [
+      "nonprofit"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "State chapter of The Arc promoting and protecting the rights of people with intellectual and developmental disabilities in North Dakota.",
@@ -11,13 +13,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["nonprofit"],
+    "tags": [
+      "nonprofit"
+    ],
     "source": "https://www.thearc.org/find-a-chapter",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "North Dakota Early Intervention Program",
-    "category": ["early-intervention"],
+    "category": [
+      "early-intervention"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "North Dakota's early intervention services for infants and toddlers from birth to age 3 with developmental delays or disabilities.",
@@ -27,13 +38,22 @@
     "ageRange": "0-3",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["early-intervention"],
+    "tags": [
+      "early-intervention"
+    ],
     "source": "https://www.nd.gov/dhs/services/disabilities/earlyintervention/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics North Dakota",
-    "category": ["sports"],
+    "category": [
+      "sports"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "Year-round sports training and athletic competition for North Dakotans with intellectual disabilities.",
@@ -43,13 +63,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "source": "https://www.specialolympicsnd.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Sanford Children's Hospital - Developmental and Behavioral Pediatrics",
-    "category": ["medical"],
+    "category": [
+      "medical"
+    ],
     "location": "North Dakota",
     "area": "Fargo",
     "description": "Comprehensive developmental and behavioral pediatric evaluations and treatment services for children in the Fargo region.",
@@ -59,13 +88,22 @@
     "ageRange": "0-18",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["medical"],
+    "tags": [
+      "medical"
+    ],
     "source": "https://www.sanfordhealth.org/medical-services/childrens",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Protection & Advocacy Project of North Dakota",
-    "category": ["legal"],
+    "category": [
+      "legal"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "North Dakota's designated protection and advocacy organization providing legal services and advocacy for people with disabilities.",
@@ -75,13 +113,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["legal"],
+    "tags": [
+      "legal"
+    ],
     "source": "https://www.ndpanda.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "North Dakota Assistive Technology (NDAT)",
-    "category": ["assistive-tech"],
+    "category": [
+      "assistive-tech"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "Statewide program providing assistive technology device demonstrations, loans, and information for North Dakotans with disabilities.",
@@ -91,13 +138,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["assistive-tech"],
+    "tags": [
+      "assistive-tech"
+    ],
     "source": "https://ndassistive.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "North Dakota ABLE Account",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "Tax-advantaged savings accounts for eligible North Dakotans with disabilities to save without affecting means-tested benefits.",
@@ -107,13 +163,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.savewithable.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "North Dakota Department of Health and Human Services - Developmental Disabilities",
-    "category": ["government"],
+    "category": [
+      "government"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "State agency providing developmental disability services, Medicaid waivers, and supports for North Dakotans with disabilities.",
@@ -123,13 +188,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["government"],
+    "tags": [
+      "government"
+    ],
     "source": "https://www.nd.gov/dhs/services/disabilities/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Camp Grassick",
-    "category": ["camps"],
+    "category": [
+      "camps"
+    ],
     "location": "North Dakota",
     "area": "Dawson",
     "description": "Residential summer camp for children and adults with disabilities in North Dakota providing outdoor activities and recreation.",
@@ -139,13 +213,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["camps"],
+    "tags": [
+      "camps"
+    ],
     "source": "https://www.campgrassick.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Pathfinder Parent Center",
-    "category": ["community"],
+    "category": [
+      "community"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "North Dakota's parent training and information center providing support and resources for families of children with disabilities.",
@@ -155,13 +238,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["community"],
+    "tags": [
+      "community"
+    ],
     "source": "https://www.pathfinder-nd.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "North Dakota Vocational Rehabilitation",
-    "category": ["employment"],
+    "category": [
+      "employment"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "State services helping North Dakotans with disabilities prepare for, find, and maintain competitive employment.",
@@ -171,13 +263,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "Free",
-    "tags": ["employment"],
+    "tags": [
+      "employment"
+    ],
     "source": "https://www.nd.gov/dhs/dvr/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "North Dakota Medicaid HCBS Waivers",
-    "category": ["financial"],
+    "category": [
+      "financial"
+    ],
     "location": "North Dakota",
     "area": "",
     "description": "Medicaid waiver programs providing home and community-based services for North Dakotans with disabilities.",
@@ -187,13 +288,22 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["financial"],
+    "tags": [
+      "financial"
+    ],
     "source": "https://www.nd.gov/dhs/services/disabilities/hcbs.html",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "MATBUS Paratransit",
-    "category": ["transportation"],
+    "category": [
+      "transportation"
+    ],
     "location": "North Dakota",
     "area": "Fargo-Moorhead",
     "description": "ADA paratransit service providing demand-responsive transportation for eligible riders with disabilities in the Fargo-Moorhead area.",
@@ -203,8 +313,15 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": ["transportation"],
+    "tags": [
+      "transportation"
+    ],
     "source": "https://www.matbus.com/rider-info/mat-paratransit",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

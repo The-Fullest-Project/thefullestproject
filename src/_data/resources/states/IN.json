@@ -17,7 +17,12 @@
       "nonprofit"
     ],
     "source": "https://www.arcind.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana First Steps Early Intervention",
@@ -37,7 +42,12 @@
       "early-intervention"
     ],
     "source": "https://www.in.gov/fssa/firststeps/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Special Olympics Indiana",
@@ -57,7 +67,12 @@
       "sports"
     ],
     "source": "https://www.soindiana.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Riley Children's Hospital - Developmental Pediatrics",
@@ -77,7 +92,12 @@
       "medical"
     ],
     "source": "https://www.rileychildrens.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana Disability Rights",
@@ -97,7 +117,12 @@
       "legal"
     ],
     "source": "https://www.indianadisabilityrights.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana ATTAIN Project - Assistive Technology",
@@ -117,7 +142,12 @@
       "assistive-tech"
     ],
     "source": "https://www.eastersealsci.com/attain",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana ABLE Account (INvestABLE)",
@@ -137,7 +167,12 @@
       "financial"
     ],
     "source": "https://www.investable.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana Bureau of Developmental Disabilities Services",
@@ -157,7 +192,12 @@
       "government"
     ],
     "source": "https://www.in.gov/fssa/ddrs/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Bradford Woods Adaptive Camp",
@@ -177,7 +217,12 @@
       "camps"
     ],
     "source": "https://www.bradfordwoods.iu.edu",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "IN*SOURCE - Indiana Resource Center for Families with Special Needs",
@@ -197,7 +242,12 @@
       "community"
     ],
     "source": "https://www.insource.org",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana Vocational Rehabilitation Services",
@@ -217,7 +267,12 @@
       "employment"
     ],
     "source": "https://www.in.gov/fssa/ddrs/rehabilitation-services/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "IndyGo Open Door Paratransit",
@@ -237,7 +292,12 @@
       "transportation"
     ],
     "source": "https://www.indygo.net/open-door/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Indiana Medicaid Home and Community-Based Waivers",
@@ -257,7 +317,12 @@
       "financial"
     ],
     "source": "https://www.in.gov/fssa/ddrs/disability-services/",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Easterseals Crossroads - Therapy Services",
@@ -278,7 +343,12 @@
       "therapy"
     ],
     "source": "https://www.eastersealsci.com",
-    "lastScraped": "2026-03-06"
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "IEP-Hope, Inc.",
@@ -301,7 +371,12 @@
       "parent support"
     ],
     "source": "https://www.iep-hope.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   },
   {
     "name": "Noble / The Arc of Greater Indianapolis",
@@ -328,6 +403,11 @@
       "developmental disabilities"
     ],
     "source": "https://www.mynoblelife.org/",
-    "lastScraped": "2026-03-10"
+    "lastScraped": "2026-03-10",
+    "dateAdded": "2026-03-10",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

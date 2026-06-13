@@ -11,7 +11,10 @@ A connection hub for caregivers of individuals with disabilities to find nationa
 | Styling | Tailwind CSS | 4.x | Utility-first CSS with custom design tokens |
 | Build Tool | @tailwindcss/cli | 4.x | Compiles Tailwind input CSS to output |
 | Scraping | Python (scrapling, httpx) | 3.12 | Automated resource data collection |
-| Forms | Formspree | — | Contact, resource submission, and newsletter forms |
+| Forms | Formspree | — | Contact, resource submission, and newsletter forms (notification + fallback path) |
+| Serverless | Cloudflare Workers | — | `gig-publisher` (gig auto-publish), `tfp-admin-api` (review portal backend + intake), `decap-oauth` (GitHub OAuth) |
+| CMS | Decap CMS | 3.8.x | `/admin/` editing for blog, podcast, and Site Pages (home/about/blog copy via JSON file collections) |
+| Email | Brevo | — | Email distribution database, double-opt-in newsletter, transactional submitter thank-yous |
 | Deployment | GitHub Pages | — | Static site hosting via GitHub Actions deploy |
 | CI/CD | GitHub Actions | — | Auto-deploy on push to main; weekly scrape job |
 
@@ -111,6 +114,18 @@ Resource data flows through a two-stage pipeline: Python scrapers collect and no
 
 Client-side JavaScript is minimal and vanilla — just a mobile nav toggle (`main.js`) and a resource filter/search (`resourceFilter.js`) that reads `data-*` attributes from rendered resource cards.
 
+### Admin Review Pipeline
+
+All NEW content is gated behind admin approval; only updates to already-live entries publish automatically:
+
+- **Pending store** (repo-root `pending/`, deliberately outside `src/_data` so Eleventy never builds it): `pending/submissions.json` (written only by the worker) + `pending/scraped/<date>-<type>s.json` (created only by the weekly Action). Disjoint writers — no git conflicts. Envelope schema documented in `pending/README.md`.
+- **Scraper gating** lives in `base_scraper.save_resources()` and `scrapers/pending_store.py` — the six resource source modules are untouched. `positive_stories.py`, `spotlight_scraper.py`, and `blog_content.py` queue instead of writing live; the blog `.md` is generated at approval time by the worker (`renderBlogMarkdown()` — keep in sync with `blog_content.create_blog_post()`).
+- **Review portal** at `/admin/review/` (`src/admin/review/`, vanilla JS, no build step): GitHub OAuth via the decap-oauth worker popup (PAT paste fallback; `?mock=1` fixtures for localhost — the popup only completes on production). Tabs: Review Queue, Recently Added (weekly history + origin analytics from `/api/site-index.json`), Bulk Import (CSV via vendored PapaParse), Emails (Brevo contacts, read-only).
+- **Worker** `cloudflare-worker-admin-api/` (deployed as `tfp-admin-api`): public `/submit` + `/newsletter` intake, admin `/pending` `/approve` `/reject` `/bulk-import` `/emails`. Admin auth = GitHub token with push permission on the repo. Approvals are ONE atomic git-tree commit with conflict re-apply retry; rejects blocklist scraper items in `scrapers/blocklist.json`. Worker commits to main auto-deploy via Pages.
+- **Provenance**: every live resource carries `dateAdded` + `origin {type: scraper|submission|quick-submit|bulk-import, detail}` (legacy entries backfilled as `legacy-backfill` by `scripts/backfill-date-added.js`).
+- **Email**: emails NEVER enter the public repo. Brevo holds the distribution list ("TFP Community", attributes SOURCE/DATE_ADDED/OPT_IN_STATUS). New submitter emails get a transactional thank-you; list membership only via Brevo double-opt-in (redirects to `/subscribed/`). Brevo calls no-op gracefully when secrets are unset.
+- Unreviewed stories/spotlights/blog candidates auto-prune after 28 days (`pending_store.prune_stale`, run by the digest step); resources and human submissions never auto-prune.
+
 ### Key Modules
 
 | Module | Location | Purpose |
@@ -170,6 +185,9 @@ Client-side JavaScript is minimal and vanilla — just a mobile nav toggle (`mai
 - Always merge with existing data via `merge_resources()` to preserve manual entries
 - Deduplication key is `(name, location)` tuple
 - Scrapers save to both `scrapers/output/` and `src/_data/resources/`
+- `save_resources()` gates publication: existing entries update live; NEW entries queue to `pending/` for admin approval (see `scrapers/pending_store.py`)
+- Rejected items land in `scrapers/blocklist.json` (urls + names) and are never re-queued — the three content scrapers check it too
+- Tests: `python scrapers/test_pending_store.py` (stdlib unittest, no deps)
 
 ### Resource Data Schema
 ```json
@@ -187,7 +205,9 @@ Client-side JavaScript is minimal and vanilla — just a mobile nav toggle (`mai
   "cost": "",
   "tags": ["tag1", "tag2"],
   "source": "https://...",
-  "lastScraped": "2026-03-06"
+  "lastScraped": "2026-03-06",
+  "dateAdded": "2026-06-12",
+  "origin": { "type": "scraper | submission | quick-submit | bulk-import", "detail": "module-or-form-name" }
 }
 ```
 
@@ -260,7 +280,10 @@ Runs every Sunday at midnight UTC (or manual trigger). Installs Python 3.12, run
 
 | Service | Purpose | Configuration |
 |---------|---------|---------------|
-| Formspree | Form handling (contact, resource submission, newsletter signup) | Form IDs in `src/_data/site.json` under `formspree`. **Note:** Newsletter form collects emails only — no automated email delivery is configured. Subscribers can be viewed in the Formspree dashboard. A mail delivery service (Mailchimp, etc.) is needed before sending recurring emails. |
+| Formspree | Form notifications + no-JS fallback (contact, resource submission, newsletter) | Form IDs in `src/_data/site.json` under `formspree`. Resource + newsletter forms POST to the `tfp-admin-api` worker first and fall back to Formspree when it is unreachable. |
+| Brevo | Email distribution database, newsletter double-opt-in, transactional thank-yous, campaigns | API key + list/template ids are `tfp-admin-api` worker secrets (`BREVO_*`). List "TFP Community"; contact attributes SOURCE, DATE_ADDED, OPT_IN_STATUS. |
+| Cloudflare Workers | `gig-publisher` (`cloudflare-worker/`), `tfp-admin-api` (`cloudflare-worker-admin-api/`), `decap-oauth` (external repo) | Deployed via `npx wrangler deploy`; secrets in the Cloudflare dashboard (see each worker's README). |
+| Decap CMS | Content editing at `/admin/` (blog, podcast, Site Pages) + entry to the review portal at `/admin/review/` | `src/admin/config.yml`; GitHub backend with OAuth via the decap-oauth worker. |
 | Google Fonts | Nunito + Open Sans typefaces | Loaded in `base.njk` `<head>` |
 | GitHub Pages | Static site hosting | Auto-deploys via `deploy.yml` workflow on push to main |
 | GitHub Actions | CI/CD for build, deploy, and weekly scraping | `.github/workflows/` |
