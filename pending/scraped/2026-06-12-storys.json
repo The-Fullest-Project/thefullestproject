@@ -1,24 +1,5 @@
 [
   {
-    "id": "sty-20260612-f70bb749",
-    "type": "story",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "positive_stories",
-      "submittedAt": "2026-06-13T01:19:13.040247+00:00"
-    },
-    "payload": {
-      "title": "Milestone Evening Honors Legacy of Supporting Individuals With Disabilities - Westfair Communications",
-      "sourceName": "Westfair Communications",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLUxvdU5FNkZRb0tWSEloc2ZmWDdid0RWS19RSFVJaUVpUllWOHJBZXZac3ZHY25Lczd3ZUhBc3EtTUdlQ3k1RjJzVXZuelNrXzcybTg5UVNfNmJ1M0h0QUNmSHN2SFdzdzFkdVExVVVDRU9NY3kxQTA2Q2ZJTlozMmxUR0Q2MjlPS3QtT3FGbGpzeGRjbDk5MjJTdUVaUzlzRDJnYjhsZlRtYl8xMDI4aGZhUnM?oc=5",
-      "excerpt": "Read this inspiring story about disability rights milestone.",
-      "category": "News",
-      "date": "2026-06-11",
-      "addedDate": "2026-06-12"
-    }
-  },
-  {
     "id": "sty-20260612-548bb31c",
     "type": "story",
     "status": "pending",
