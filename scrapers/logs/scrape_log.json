@@ -621,5 +621,45 @@
         "slug": "disability-services-ny-a-new-online-resource-launched-connec"
       }
     ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-06-14T04:25:08.045657",
+    "status": "OK",
+    "targets_attempted": 11,
+    "targets_succeeded": 11,
+    "entries_found": 262,
+    "entries_queued": 257,
+    "entries": []
+  },
+  {
+    "scraper": "cms_providers",
+    "timestamp": "2026-06-14T04:25:10.932089",
+    "status": "OK",
+    "targets_attempted": 2,
+    "targets_succeeded": 2,
+    "entries_found": 79,
+    "entries_queued": 79,
+    "entries": []
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-06-14T04:25:16.098185",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_found"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-06-14T04:25:18.074301",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_posts"
+      }
+    ]
   }
 ]

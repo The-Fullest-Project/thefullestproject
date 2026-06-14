@@ -230,17 +230,12 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "developmental",
       "intellectual-disability",
-      "advocacy"
+      "advocacy",
+      "developmental"
     ],
     "source": "https://thearc.org/find-a-chapter/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Cameron's Coffee and Chocolates",
@@ -770,12 +765,7 @@
       "early-intervention"
     ],
     "source": "https://www.fairfaxcounty.gov/office-for-children/early-intervention",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Virginia Department for Aging and Rehabilitative Services (DARS)",
@@ -795,12 +785,7 @@
       "transition"
     ],
     "source": "https://www.dars.virginia.gov/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "ServiceSource",
@@ -845,12 +830,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Virginia Medicaid (DMAS)",
@@ -870,12 +850,7 @@
       "financial"
     ],
     "source": "https://www.dmas.virginia.gov/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "ABLE National Resource Center",
@@ -895,12 +870,7 @@
       "financial"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Healthcare.gov - Appeals & Grievances",
@@ -920,12 +890,7 @@
       "insurance"
     ],
     "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Special Needs Alliance",
@@ -945,12 +910,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "The Arc of NoVA - Pooled Trust",
@@ -970,12 +930,7 @@
       "planning"
     ],
     "source": "https://www.thearcofnova.org/programs/trusts/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "NAMI - National Alliance on Mental Illness",
@@ -995,12 +950,7 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/find-support/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Fairfax-Falls Church Community Services Board",
@@ -1020,12 +970,7 @@
       "mental-health"
     ],
     "source": "https://www.fairfaxcounty.gov/community-services-board/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Fairfax County FASTRAN",
@@ -1045,12 +990,7 @@
       "transportation"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/transportation",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "WMATA MetroAccess",
@@ -1070,12 +1010,7 @@
       "transportation"
     ],
     "source": "https://www.wmata.com/service/accessibility/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Fairfax County Housing & Community Development",
@@ -1095,12 +1030,7 @@
       "housing"
     ],
     "source": "https://www.fairfaxcounty.gov/housing/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "National Alliance to End Homelessness",
@@ -1120,12 +1050,7 @@
       "housing"
     ],
     "source": "https://endhomelessness.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Children's National Hospital",
@@ -1170,12 +1095,7 @@
       "medical"
     ],
     "source": "https://www.inova.org/our-services/pediatrics",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Fairfax County Therapeutic Recreation Camps",
@@ -1195,12 +1115,7 @@
       "camps"
     ],
     "source": "https://www.fairfaxcounty.gov/neighborhood-community-services/therapeutic-recreation/camps",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Camp Baker (The Arc of NoVA)",
@@ -1245,12 +1160,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Assistive Technology Act Programs",
@@ -1270,12 +1180,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Virginia Assistive Technology System (VATS)",
@@ -1320,12 +1225,7 @@
       "sports"
     ],
     "source": "https://www.specialolympicsva.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "BlazeSports America",
@@ -1370,12 +1270,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Rebuilding Together",
@@ -1395,12 +1290,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   },
   {
     "name": "Inova Fairfax Outpatient Pediatric Rehabilitation",
@@ -4313,11 +4203,6 @@
       "medical"
     ],
     "source": "https://www.childrensnational.org/",
-    "lastScraped": "2026-06-07",
-    "dateAdded": "2026-06-07",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-06-14"
   }
 ]

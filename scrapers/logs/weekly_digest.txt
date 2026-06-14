@@ -1,14 +1,21 @@
-Weekly Scrape Digest — 2026-06-07
+Weekly Scrape Digest — 2026-06-14
 ==================================================
+
+AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
+  resource: 415 pending (336 new this run)
+  story: 7 pending (7 new this run)
+
+Scraper: osm_overpass
+  Entries processed: 262
+
+Scraper: cms_providers
+  Entries processed: 79
 
 Scraper: spotlight_scraper
   Entries processed: 1
 
 Scraper: blog_content
-  Entries processed: 3
-  - [created_post] Transportation Services for Older Adults: What Caregivers Should Know - AARP
-  - [created_post] Screen time limits call for nuance, disability advocates say - K-12 Dive
-  - [created_post] Disability Services NY, a New Online Resource Launched; Connects New Yorkers With Disabilities to Services - Business Wire
+  Entries processed: 1
 
 —
 The Fullest Project | thefullestproject.org
