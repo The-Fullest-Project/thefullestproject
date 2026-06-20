@@ -1154,38 +1154,6 @@
     "targetFile": "src/_data/resources/states/VA.json"
   },
   {
-    "id": "res-20260612-a2f3ed33",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:36.676552+00:00"
-    },
-    "payload": {
-      "name": "Portland psychotherapy",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oregon",
-      "area": "Portland",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "3537 North Williams Avenue",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/498664036",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/OR.json"
-  },
-  {
     "id": "res-20260612-f59c42bc",
     "type": "resource",
     "status": "pending",
