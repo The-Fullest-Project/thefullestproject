@@ -1218,38 +1218,6 @@
     "targetFile": "src/_data/resources/states/OR.json"
   },
   {
-    "id": "res-20260612-43c9c684",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:36.676597+00:00"
-    },
-    "payload": {
-      "name": "Psychological Services of Pendleton",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oregon",
-      "area": "",
-      "description": "",
-      "phone": "+1-541-278-2222",
-      "website": "https://www.pendletonpsych.com/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2575943412",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/OR.json"
-  },
-  {
     "id": "res-20260612-a7814218",
     "type": "resource",
     "status": "pending",
