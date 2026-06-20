@@ -994,38 +994,6 @@
     "targetFile": "src/_data/resources/states/VA.json"
   },
   {
-    "id": "res-20260612-e82ea1ea",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:23.072897+00:00"
-    },
-    "payload": {
-      "name": "Urgent Care by Pawprints",
-      "category": [
-        "equipment"
-      ],
-      "location": "Virginia",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "1001 Creekside Lane",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "medical_supply"
-      ],
-      "source": "https://www.openstreetmap.org/node/5230797091",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/VA.json"
-  },
-  {
     "id": "res-20260612-2082fd60",
     "type": "resource",
     "status": "pending",
