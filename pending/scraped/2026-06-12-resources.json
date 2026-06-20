@@ -962,38 +962,6 @@
     "targetFile": "src/_data/resources/states/VA.json"
   },
   {
-    "id": "res-20260612-f65f8bea",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:23.072854+00:00"
-    },
-    "payload": {
-      "name": "Roads to Recovery",
-      "category": [
-        "therapy"
-      ],
-      "location": "Virginia",
-      "area": "",
-      "description": "",
-      "phone": "+1 434 455 0053",
-      "website": "http://www.recoverylynchburg.com",
-      "address": "107",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "rehabilitation"
-      ],
-      "source": "https://www.openstreetmap.org/node/5118113530",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/VA.json"
-  },
-  {
     "id": "res-20260612-4312396d",
     "type": "resource",
     "status": "pending",
