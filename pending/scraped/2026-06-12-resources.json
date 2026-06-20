@@ -962,38 +962,6 @@
     "targetFile": "src/_data/resources/states/VA.json"
   },
   {
-    "id": "res-20260612-24460459",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:23.072843+00:00"
-    },
-    "payload": {
-      "name": "Alcoholics Anonymous",
-      "category": [
-        "therapy"
-      ],
-      "location": "Virginia",
-      "area": "Richmond",
-      "description": "",
-      "phone": "+1 804-644-2095",
-      "website": "https://aarichmond.org/",
-      "address": "210 North Madison Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4255695812",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/VA.json"
-  },
-  {
     "id": "res-20260612-f65f8bea",
     "type": "resource",
     "status": "pending",
