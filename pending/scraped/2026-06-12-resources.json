@@ -962,38 +962,6 @@
     "targetFile": "src/_data/resources/states/VA.json"
   },
   {
-    "id": "res-20260612-4312396d",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:23.072865+00:00"
-    },
-    "payload": {
-      "name": "Lynchburg Area Center for Independent Living",
-      "category": [
-        "therapy"
-      ],
-      "location": "Virginia",
-      "area": "",
-      "description": "Since 1998\n\nJul. 2023, notice on website: \"The office will be closed to the public until further notice. Staff will be teleworking from home in the meantime.  We are here for you during this closure and may be contacted through phone and/or email.\"",
-      "phone": "+1 434 528 4971",
-      "website": "https://lacil-lynchburg.org",
-      "address": "500 Alleghany Avenue",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "rehabilitation"
-      ],
-      "source": "https://www.openstreetmap.org/node/5120158711",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/VA.json"
-  },
-  {
     "id": "res-20260612-a2877358",
     "type": "resource",
     "status": "pending",
