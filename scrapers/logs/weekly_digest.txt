@@ -1,21 +1,28 @@
-Weekly Scrape Digest — 2026-06-14
+Weekly Scrape Digest — 2026-06-21
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  resource: 415 pending (336 new this run)
-  story: 7 pending (7 new this run)
+  blog: 2 pending (2 new this run)
+  resource: 671 pending (262 new this run)
+  spotlight: 2 pending (2 new this run)
+  story: 20 pending (13 new this run)
 
 Scraper: osm_overpass
-  Entries processed: 262
+  Entries processed: 556
 
 Scraper: cms_providers
   Entries processed: 79
 
 Scraper: spotlight_scraper
-  Entries processed: 1
+  Entries processed: 3
+  - [queued] Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive
+  - [queued] Advancing disability-inclusive education
+  - [queued] Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive
 
 Scraper: blog_content
-  Entries processed: 1
+  Entries processed: 2
+  - [queued] Partners in Care: Practical Guidance for Seniors and Caregivers » Council on Aging - Sudbury, MA
+  - [queued] NCPEDP will Launch the First-of-its-kind Assistive Technology Policy Paper - The Tribune
 
 —
 The Fullest Project | thefullestproject.org

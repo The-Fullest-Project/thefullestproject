@@ -661,5 +661,69 @@
         "action": "no_new_posts"
       }
     ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-06-21T04:46:23.629049",
+    "status": "OK",
+    "targets_attempted": 23,
+    "targets_succeeded": 23,
+    "entries_found": 556,
+    "entries_queued": 262,
+    "entries": []
+  },
+  {
+    "scraper": "cms_providers",
+    "timestamp": "2026-06-21T04:46:26.351339",
+    "status": "OK",
+    "targets_attempted": 2,
+    "targets_succeeded": 2,
+    "entries_found": 79,
+    "entries_queued": 0,
+    "entries": []
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-06-21T04:46:31.482432",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPckhGWXJTV1pMSFJxMENCbHEwY2JEUkExY1kycFdncEpkV0JXcFUyS29KR095RUthNTBGYnMwVlBlUnpLZ25Ma1N2MjdRaWxGTVhIOFg1SllYejh5RndnOE82dlJQUkt5cXJmTGY2bmdCLVRrS2ViY2tiblNOR2xQV2N5TW1uZ3g2cll5cUJSV0pMX1NLaWlMd2tkVk5JeVdxVDdrN1h0OXpkRXJuRVduT0lhYkVNQ0ZLT2dEWVhZOGZ6aC1f?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "Advancing disability-inclusive education",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVXkyNmJLTlg2WFRNUXViTDFvQzBJXzBSeDY0ZHpRQWJDMEhMcWUtQ2RqaFZVcTBNdGljWXRZVWZpY0dHNDNLVFBKamZBSGdQbklJUGo0amF1VWhHTlZiR252MUJfSUxwNHJ3d002a0tGdjdIZ0swU3hwZnktWEhnckk4bE1VSl91eGJZaDFKUHJlZ09JU000N0s0YTBvTzFfSTdN?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPckhGWXJTV1pMSFJxMENCbHEwY2JEUkExY1kycFdncEpkV0JXcFUyS29KR095RUthNTBGYnMwVlBlUnpLZ25Ma1N2MjdRaWxGTVhIOFg1SllYejh5RndnOE82dlJQUkt5cXJmTGY2bmdCLVRrS2ViY2tiblNOR2xQV2N5TW1uZ3g2cll5cUJSV0pMX1NLaWlMd2tkVk5JeVdxVDdrN1h0OXpkRXJuRVduT0lhYkVNQ0ZLT2dEWVhZOGZ6aC1f?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-06-21T04:46:33.382524",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "queued",
+        "title": "Partners in Care: Practical Guidance for Seniors and Caregivers » Council on Aging - Sudbury, MA",
+        "source": "Sudbury, MA",
+        "slug": "partners-in-care-practical-guidance-for-seniors-and-caregive"
+      },
+      {
+        "action": "queued",
+        "title": "NCPEDP will Launch the First-of-its-kind Assistive Technology Policy Paper - The Tribune",
+        "source": "The Tribune",
+        "slug": "ncpedp-will-launch-the-first-of-its-kind-assistive-technolog"
+      }
+    ]
   }
 ]
