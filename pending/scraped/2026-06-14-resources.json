@@ -997,38 +997,6 @@
     "targetFile": "src/_data/resources/states/MO.json"
   },
   {
-    "id": "res-20260614-aca49d7f",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-14T04:23:06.087717+00:00"
-    },
-    "payload": {
-      "name": "The Transgender institute",
-      "category": [
-        "therapy"
-      ],
-      "location": "Missouri",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "8080 Ward Parkway",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4440979446",
-      "lastScraped": "2026-06-14"
-    },
-    "targetFile": "src/_data/resources/states/MO.json"
-  },
-  {
     "id": "res-20260614-888fb2e6",
     "type": "resource",
     "status": "pending",
