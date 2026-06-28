@@ -1,28 +1,31 @@
-Weekly Scrape Digest — 2026-06-21
+Weekly Scrape Digest — 2026-06-28
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 2 pending (2 new this run)
-  resource: 671 pending (262 new this run)
-  spotlight: 2 pending (2 new this run)
-  story: 20 pending (13 new this run)
+  blog: 4 pending (2 new this run)
+  resource: 925 pending (255 new this run)
+  spotlight: 4 pending (2 new this run)
+  story: 36 pending (16 new this run)
 
 Scraper: osm_overpass
-  Entries processed: 556
+  Entries processed: 745
+  - [error] OH: HTTP Error 429: Too Many Requests
+  - [error] VT: HTTP Error 429: Too Many Requests
+  - [error] AZ: HTTP Error 429: Too Many Requests
 
 Scraper: cms_providers
   Entries processed: 79
 
 Scraper: spotlight_scraper
   Entries processed: 3
-  - [queued] Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive
-  - [queued] Advancing disability-inclusive education
-  - [queued] Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive
+  - [queued] VA Adaptive Sports Programs
+  - [queued] This Summer, Come Alive Outside Makes Outdoor Recreation Accessible To All
+  - [queued] VA Adaptive Sports Programs
 
 Scraper: blog_content
   Entries processed: 2
-  - [queued] Partners in Care: Practical Guidance for Seniors and Caregivers » Council on Aging - Sudbury, MA
-  - [queued] NCPEDP will Launch the First-of-its-kind Assistive Technology Policy Paper - The Tribune
+  - [queued] Trump administration targets disability integration mandate in DOJ memo - statnews.com
+  - [queued] DfE sets out how it expects schools to run SEND inclusion bases - Tes
 
 —
 The Fullest Project | thefullestproject.org
