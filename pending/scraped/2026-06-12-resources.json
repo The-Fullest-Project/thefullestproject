@@ -353,38 +353,6 @@
     "targetFile": "src/_data/resources/states/VA.json"
   },
   {
-    "id": "res-20260612-37c9b7ea",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-13T02:47:23.072592+00:00"
-    },
-    "payload": {
-      "name": "PT Plus Physical Therapy & Wellness Center",
-      "category": [
-        "therapy"
-      ],
-      "location": "Virginia",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "https://ptplushealth.com/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "physiotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2784209725",
-      "lastScraped": "2026-06-12"
-    },
-    "targetFile": "src/_data/resources/states/VA.json"
-  },
-  {
     "id": "res-20260612-c81fcf4b",
     "type": "resource",
     "status": "pending",
