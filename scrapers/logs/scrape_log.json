@@ -802,5 +802,93 @@
         "slug": "dfe-sets-out-how-it-expects-schools-to-run-send-inclusion-ba"
       }
     ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-07-05T03:57:52.389332",
+    "status": "PARTIAL",
+    "targets_attempted": 46,
+    "targets_succeeded": 38,
+    "entries_found": 920,
+    "entries_queued": 266,
+    "entries": [
+      {
+        "action": "error",
+        "name": "OH: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "PA: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "VT: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "AL: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "DE: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "FL: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "ID: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "KY: HTTP Error 429: Too Many Requests"
+      }
+    ]
+  },
+  {
+    "scraper": "cms_providers",
+    "timestamp": "2026-07-05T03:57:55.835866",
+    "status": "OK",
+    "targets_attempted": 2,
+    "targets_succeeded": 2,
+    "entries_found": 79,
+    "entries_queued": 0,
+    "entries": []
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-07-05T03:58:00.864206",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "Summer adventures for all",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUm8xb05JdkRQaUJsRk9PQ3FUQjQwcHp2UUJlbXhBT0FZNkVNaDduYkZSal8yUXozbGxwdnhsY3pldW5EU3A3YnRhNEI4VHFvcnJOckRtN0ljc2tWUnNqV1psYkFwVTR1djRiSURZZDU4Q3llUkJkZmM1M1hMLVkzeHcxZkI3ZGd5NnZCRzBR?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "Turning loss into purpose",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CLWRFRXd4eGMyanpjQ2NENzRqeE81Um1hdGxRWWN4Ulp5OUFOQjhMYWhiYU5hV3FnWEQ3Snp6OGh0QmdvV1VPajBxODFuNzU5MS16a2lxUlpKYVNZaVFjbk15YTlwa0QwUVJGNENFZkpWNGJXbW9SZjRfWkFTUEk?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "Harvard to Launch Online Hub for Accessible Teaching Resources",
+        "category": "Education",
+        "website": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRzhlMklYWUxKTWRmczZyY3J3SjR1bzg2cGd1dnZ6eVVzUFNzVy1tUnNxeHBVei1EendLOHJ1VFBlM0dCR1FBMVFQUWdJYk15X0xuMnRGc0Z3a3pIYkkwanhNUzFHRTJsTkgwOU1EZnRWdzAyQ253U0RWU1pLSXdlOUVrbw?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-07-05T03:58:02.793289",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_posts"
+      }
+    ]
   }
 ]

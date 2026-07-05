@@ -1,31 +1,35 @@
-Weekly Scrape Digest — 2026-06-28
+Weekly Scrape Digest — 2026-07-05
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 4 pending (2 new this run)
-  resource: 925 pending (255 new this run)
-  spotlight: 4 pending (2 new this run)
-  story: 36 pending (16 new this run)
+  blog: 4 pending
+  resource: 1190 pending (266 new this run)
+  spotlight: 7 pending (3 new this run)
+  story: 51 pending (15 new this run)
+  submission: 1 pending
 
 Scraper: osm_overpass
-  Entries processed: 745
+  Entries processed: 920
   - [error] OH: HTTP Error 429: Too Many Requests
+  - [error] PA: HTTP Error 429: Too Many Requests
   - [error] VT: HTTP Error 429: Too Many Requests
-  - [error] AZ: HTTP Error 429: Too Many Requests
+  - [error] AL: HTTP Error 504: Gateway Timeout
+  - [error] DE: HTTP Error 429: Too Many Requests
+  - [error] FL: HTTP Error 504: Gateway Timeout
+  - [error] ID: HTTP Error 429: Too Many Requests
+  - [error] KY: HTTP Error 429: Too Many Requests
 
 Scraper: cms_providers
   Entries processed: 79
 
 Scraper: spotlight_scraper
   Entries processed: 3
-  - [queued] VA Adaptive Sports Programs
-  - [queued] This Summer, Come Alive Outside Makes Outdoor Recreation Accessible To All
-  - [queued] VA Adaptive Sports Programs
+  - [queued] Summer adventures for all
+  - [queued] Turning loss into purpose
+  - [queued] Harvard to Launch Online Hub for Accessible Teaching Resources
 
 Scraper: blog_content
-  Entries processed: 2
-  - [queued] Trump administration targets disability integration mandate in DOJ memo - statnews.com
-  - [queued] DfE sets out how it expects schools to run SEND inclusion bases - Tes
+  Entries processed: 1
 
 —
 The Fullest Project | thefullestproject.org
