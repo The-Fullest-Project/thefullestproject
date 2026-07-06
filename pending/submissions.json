@@ -56,5 +56,34 @@
       "source": "https://courtneybed.com/",
       "lastScraped": "2026-07-06"
     }
+  },
+  {
+    "id": "sub-20260706-6c86b5b5",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-07-06T01:11:09.540Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "The Simple Seed",
+      "category": [
+        "clothing"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Clothing company with an adaptive tube access clothing line.",
+      "phone": "",
+      "website": "https://www.simpleseedbaby.com/collections/adaptive-tube-access",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.simpleseedbaby.com/collections/adaptive-tube-access",
+      "lastScraped": "2026-07-06"
+    }
   }
 ]
