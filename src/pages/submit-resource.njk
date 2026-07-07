@@ -13,7 +13,7 @@ permalink: /submit-resource/
     </p>
 
     <form id="resource-form" action="https://formspree.io/f/{{ site.formspree.submitResource }}" method="POST"
-      data-worker-url="{{ site.adminWorkerUrl }}/submit" class="space-y-6">
+      data-worker-url="{{ site.adminWorkerUrl }}/submit" data-newsletter-url="{{ site.adminWorkerUrl }}/newsletter" class="space-y-6">
       <input type="hidden" id="resource-origin" name="submissionSource" value="site-form">
       <div>
         <label for="resource-name" class="block text-sm font-semibold mb-2">Resource/Organization Name *</label>
@@ -54,6 +54,12 @@ permalink: /submit-resource/
         <label for="submitter-email" class="block text-sm font-semibold mb-2">Your Email (optional)</label>
         <input type="email" id="submitter-email" name="submitterEmail" class="form-input" placeholder="In case we have questions">
       </div>
+      <div class="rounded-lg p-4" style="background-color: var(--color-warm-light);">
+        <label for="newsletter-optin" class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" id="newsletter-optin" name="newsletterOptIn" class="mt-1 flex-shrink-0" style="width: 18px; height: 18px;">
+          <span class="text-sm" style="color: var(--color-text);">Add me to The Fullest Project email list for occasional updates on new resources and community news. We'll email you a confirmation link first — you can unsubscribe anytime.</span>
+        </label>
+      </div>
       <div>
         <button type="submit" id="resource-submit-btn" class="btn-primary w-full text-center text-lg">Submit Resource</button>
       </div>
@@ -93,7 +99,21 @@ permalink: /submit-resource/
 (function() {
   var form = document.getElementById('resource-form');
   var workerUrl = form ? form.getAttribute('data-worker-url') : '';
+  var newsletterUrl = form ? form.getAttribute('data-newsletter-url') : '';
   if (!form || !workerUrl || workerUrl.indexOf('http') !== 0) return;
+
+  // When someone opts into the email list, require their email so we have
+  // an address to send the confirmation link to.
+  var optin = document.getElementById('newsletter-optin');
+  var emailField = document.getElementById('submitter-email');
+  var emailLabel = document.querySelector('label[for="submitter-email"]');
+  if (optin && emailField) {
+    optin.addEventListener('change', function() {
+      emailField.required = optin.checked;
+      if (emailLabel) emailLabel.textContent = optin.checked ? 'Your Email *' : 'Your Email (optional)';
+      if (optin.checked && !emailField.value) emailField.focus();
+    });
+  }
 
   form.addEventListener('submit', function handler(e) {
     e.preventDefault();
@@ -102,6 +122,10 @@ permalink: /submit-resource/
     btn.disabled = true;
     btn.textContent = 'Submitting...';
     status.className = 'hidden mt-4 p-4 rounded-lg text-center font-semibold';
+
+    // Capture opt-in details before the form resets on success
+    var wantsList = !!(optin && optin.checked);
+    var listEmail = emailField ? emailField.value.trim() : '';
 
     fetch(workerUrl, {
       method: 'POST',
@@ -113,11 +137,21 @@ permalink: /submit-resource/
     })
     .then(function(result) {
       if (result.ok) {
-        status.textContent = result.data.message || 'Thank you! Your resource has been submitted for review.';
+        var msg = result.data.message || 'Thank you! Your resource has been submitted for review.';
+        // Opted in: add the email to the distribution list via the same
+        // Brevo double-opt-in endpoint the newsletter forms use.
+        if (wantsList && listEmail && newsletterUrl && newsletterUrl.indexOf('http') === 0) {
+          var nl = new FormData();
+          nl.append('email', listEmail);
+          fetch(newsletterUrl, { method: 'POST', body: nl }).catch(function() {});
+          msg += ' We’ve also emailed you a link to confirm joining our list — click it to finish signing up.';
+        }
+        status.textContent = msg;
         status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
         status.style.backgroundColor = 'var(--color-warm-light)';
         status.style.color = 'var(--color-primary)';
         form.reset();
+        if (emailLabel) emailLabel.textContent = 'Your Email (optional)';
       } else {
         status.textContent = 'Error: ' + (result.data.error || 'Something went wrong') + '. Please check the form and try again.';
         status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
