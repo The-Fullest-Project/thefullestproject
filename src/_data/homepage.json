@@ -2,12 +2,18 @@
   "hero": {
     "heading": "Living Life to the Fullest",
     "subheading": "Your connection hub for disability resources, programs, education, and community.",
-    "primaryCta": { "label": "Find Resources", "url": "/resources/" },
-    "secondaryCta": { "label": "Learn More", "url": "/about/" }
+    "primaryCta": {
+      "label": "Find Resources",
+      "url": "/resources/"
+    },
+    "secondaryCta": {
+      "label": "Learn More",
+      "url": "/about/"
+    }
   },
   "mission": {
     "heading": "Our Mission",
-    "body": "While there are so many different programs, resources, and communities whose whole purpose is to support the special needs and disability community, there is no centralized place to find them. Finding the right resource often depends on who you know or how well you can search.",
+    "body": "While there are so many different programs, resources, and communities whose whole purpose is to support the disability community, there is no centralized place to find them. Finding the right resource often depends on who you know or how well you can search.",
     "emphasis": "We're changing that."
   },
   "features": {
