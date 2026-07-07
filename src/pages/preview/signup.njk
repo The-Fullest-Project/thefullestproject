@@ -1,0 +1,48 @@
+---
+layout: layouts/base-preview.njk
+title: "Email Signup"
+description: "Get the latest disability resources, caregiver news, and community updates from The Fullest Project delivered to your inbox."
+permalink: /preview/signup/
+eleventyExcludeFromCollections: true
+---
+
+<section class="py-16 section-warm">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl font-bold mb-4" style="color: var(--color-primary);">Get the Latest Resources in Your Inbox</h1>
+    <p class="text-lg" style="color: var(--color-text-light);">
+      Join our community newsletter and be the first to know about new resources, programs, and stories for caregivers and individuals with disabilities.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 text-center">
+      <div class="card p-5">
+        <div class="text-3xl mb-2" aria-hidden="true">🗂️</div>
+        <p class="text-sm font-semibold">New resources as we add them</p>
+      </div>
+      <div class="card p-5">
+        <div class="text-3xl mb-2" aria-hidden="true">📰</div>
+        <p class="text-sm font-semibold">Curated news &amp; community stories</p>
+      </div>
+      <div class="card p-5">
+        <div class="text-3xl mb-2" aria-hidden="true">💛</div>
+        <p class="text-sm font-semibold">No spam — unsubscribe anytime</p>
+      </div>
+    </div>
+
+    <div class="card p-8">
+      <h2 class="text-xl font-bold mb-4 text-center" style="color: var(--color-primary);">Sign up in 10 seconds</h2>
+      <form action="https://formspree.io/f/{{ site.formspree.newsletter }}" method="POST" class="flex flex-col sm:flex-row gap-3"
+        data-newsletter data-worker-url="{{ site.adminWorkerUrl }}/newsletter">
+        <label for="signup-email" class="sr-only">Email address</label>
+        <input type="email" id="signup-email" name="email" placeholder="Enter your email" required class="form-input flex-grow">
+        <button type="submit" class="btn-primary whitespace-nowrap">Subscribe</button>
+      </form>
+      <p class="text-xs mt-4 text-center" style="color: var(--color-text-light);">
+        We'll send a confirmation email first — click the link in it to finish signing up. We never share your address.
+      </p>
+    </div>
+  </div>
+</section>

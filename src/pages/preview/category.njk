@@ -1,0 +1,130 @@
+---
+layout: layouts/base-preview.njk
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/preview/resources/{{ cat.value }}/"
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ cat.label }} — Disability Resources"
+  description: "Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse trusted resources and filter by state or city."
+---
+
+{% set catResources = directory | filterByTopCategory(cat.value) | sort(attribute='name') %}
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <nav class="text-sm mb-6" aria-label="Breadcrumb">
+      <a href="/preview/resources/" class="no-underline hover:underline" style="color: var(--color-accent);">&larr; All Categories</a>
+    </nav>
+
+    <h1 class="text-4xl font-bold mb-3" style="color: var(--color-primary);">{{ cat.label }}</h1>
+    <p class="mb-8 max-w-3xl" style="color: var(--color-text-light);">
+      {{ catResources.length }} {{ cat.label | lower }} resource{{ 's' if catResources.length != 1 }} for individuals with disabilities and their caregivers — national organizations plus local programs. Use the filters to narrow by state or city.
+    </p>
+
+    <!-- Filters -->
+    <div class="card p-4 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <label for="category-search" class="block text-sm font-semibold mb-2">Search</label>
+          <input type="text" id="category-search" placeholder="Search these resources..." class="form-input">
+        </div>
+        <div>
+          <label for="state-filter" class="block text-sm font-semibold mb-2">State</label>
+          <select id="state-filter" class="filter-select">
+            <option value="">All States</option>
+            {% for state in states %}
+            <option value="{{ state.name }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="city-filter" class="block text-sm font-semibold mb-2">City / Region</label>
+          <select id="city-filter" class="filter-select">
+            <option value="">All Cities</option>
+          </select>
+        </div>
+      </div>
+      <p id="results-count" class="text-sm mt-3" style="color: var(--color-text-light);" aria-live="polite"></p>
+    </div>
+
+    <!-- Resource Grid -->
+    <div id="category-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for resource in catResources %}
+      <div class="card p-6 resource-card"
+           data-location="{{ resource.location }}"
+           data-name="{{ resource.name | lower }}"
+           data-description="{{ resource.description | lower }}"
+           data-area="{{ resource.area | default('') | lower }}">
+        <div class="flex items-start justify-between mb-3">
+          <h2 class="text-lg font-bold" style="color: var(--color-primary);">{{ resource.name }}</h2>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag" style="background-color: var(--color-accent); color: white;">{{ resource.location }}</span>
+          {% if resource.area %}
+          <span class="tag" style="background-color: var(--color-warm-light); color: var(--color-text);">{{ resource.area }}</span>
+          {% endif %}
+        </div>
+        {% if resource.description %}
+        <p class="text-sm mb-4" style="color: var(--color-text-light);">{{ resource.description }}</p>
+        {% endif %}
+        {% if resource.address %}
+        <p class="text-xs mb-1" style="color: var(--color-text-light);">{{ resource.address }}</p>
+        {% endif %}
+        {% if resource.phone %}
+        <p class="text-xs mb-1"><a href="tel:{{ resource.phone }}" style="color: var(--color-accent);">{{ resource.phone }}</a></p>
+        {% endif %}
+        {% if resource.website %}
+        <a href="{{ resource.website }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline inline-block mt-2" style="color: var(--color-secondary);">
+          Visit Website &rarr;
+        </a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if catResources.length == 0 %}
+    <div class="card p-8 text-center">
+      <p style="color: var(--color-text-light);">We don't have any {{ cat.label | lower }} resources yet — know one we should add?</p>
+    </div>
+    {% endif %}
+
+    <!-- Submit CTA -->
+    <div class="mt-12 text-center card p-8">
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Know a {{ cat.label | lower }} resource we're missing?</h2>
+      <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about.</p>
+      <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
+    </div>
+  </div>
+</section>
+
+<!-- schema.org CollectionPage + ItemList (first 50 items) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ cat.label | jsonEscape }} — Disability Resources",
+  "description": "{{ description | jsonEscape }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "isPartOf": { "@type": "WebSite", "name": "{{ site.name | jsonEscape }}", "url": "{{ site.url }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ catResources.length }},
+    "itemListElement": [
+      {%- for resource in catResources | limit(50) %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": "{{ resource.name | jsonEscape }}"{% if resource.website %},
+        "url": "{{ resource.website | jsonEscape }}"{% endif %}
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+
+<script src="/js/categoryFilter.js"></script>

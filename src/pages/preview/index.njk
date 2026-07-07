@@ -1,0 +1,42 @@
+---
+layout: layouts/base-preview.njk
+title: "Disability Resources by Category"
+description: "Browse disability resources for caregivers and families by category — therapy, adaptive equipment, respite care, financial help, and more, in every U.S. state."
+permalink: /preview/resources/
+eleventyExcludeFromCollections: true
+---
+
+<section class="py-12 section-warm">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl font-bold mb-4" style="color: var(--color-primary);">Find Resources</h1>
+    <p class="text-lg" style="color: var(--color-text-light);">
+      Pick a category to browse trusted programs, services, and organizations for individuals with disabilities and their caregivers — then filter by your state or city.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for cat in categories %}
+      {% set catCount = (directory | filterByTopCategory(cat.value)).length %}
+      {% if catCount > 0 %}
+      <a href="/preview/resources/{{ cat.value }}/" class="card p-6 no-underline block" style="color: var(--color-text);">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-bold" style="color: var(--color-primary);">{{ cat.label }}</h2>
+          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ catCount }}</span>
+        </div>
+        <p class="text-sm mt-2" style="color: var(--color-text-light);">Browse {{ catCount }} resource{{ 's' if catCount != 1 }} &rarr;</p>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Submit CTA -->
+    <div class="mt-12 text-center card p-8">
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Know a Resource We're Missing?</h2>
+      <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about.</p>
+      <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
+    </div>
+  </div>
+</section>

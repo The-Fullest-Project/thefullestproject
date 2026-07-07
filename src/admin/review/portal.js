@@ -128,6 +128,11 @@
         { email: 'demo1@example.com', dateAdded: '2026-06-01', source: 'newsletter-form', optIn: 'confirmed' },
         { email: 'demo2@example.com', dateAdded: '2026-06-08', source: 'resource-submission', optIn: 'transactional_only' },
         { email: 'demo3@example.com', dateAdded: '2026-06-10', source: 'newsletter-form', optIn: 'pending_doi' }
+      ] },
+      '/newsletter-drafts': { drafts: [
+        { id: 'nld-20260706-demo1', sourceId: 'sub-20260612-aaaa1111', type: 'resource', flaggedAt: '2026-07-06T02:00:00Z',
+          payload: { name: 'Example Respite House', category: ['respite'], location: 'Virginia', website: 'https://example.org' },
+          paragraph: 'Example Respite House offers weekend respite care for families in Northern Virginia. It can be a lifeline when caregivers need a planned break, and its sliding-scale pricing makes it accessible to more families.' }
       ] }
     };
     if (fixtures[path.split('?')[0]]) {
@@ -210,7 +215,7 @@
   }
 
   // ── Tabs ──────────────────────────────────────────────────────────────────
-  var TABS = ['queue', 'history', 'bulk', 'emails'];
+  var TABS = ['queue', 'newsletter', 'history', 'bulk', 'emails'];
   function activateTab(name) {
     TABS.forEach(function(t) {
       var tab = byId('tab-' + t);
@@ -225,7 +230,7 @@
     });
     if (!state.loadedTabs[name]) {
       state.loadedTabs[name] = true;
-      ({ queue: loadQueue, history: loadHistory, bulk: renderBulk, emails: loadEmails })[name]();
+      ({ queue: loadQueue, newsletter: loadNewsletter, history: loadHistory, bulk: renderBulk, emails: loadEmails })[name]();
     }
   }
 
@@ -361,35 +366,73 @@
     var editWrap = el('div');
     card.appendChild(editWrap);
 
-    var actions = el('div', 'mt-4 flex gap-2 flex-wrap');
-    var approveBtn = el('button', 'btn-primary text-sm', 'Approve');
-    var editBtn = el('button', 'btn-secondary text-sm', 'Edit');
+    // Newsletter flag — checked items are copied to the Newsletter tab on approval
+    var newsletterWrap = null;
+    var newsletterCheck = null;
+    if (item.type === 'submission' || item.type === 'resource') {
+      newsletterWrap = el('label', 'mt-3 flex items-center gap-2 text-sm cursor-pointer');
+      newsletterCheck = el('input');
+      newsletterCheck.type = 'checkbox';
+      newsletterCheck.style.width = '18px';
+      newsletterCheck.style.height = '18px';
+      newsletterWrap.appendChild(newsletterCheck);
+      newsletterWrap.appendChild(el('span', 'font-semibold', '➕ Add to next newsletter'));
+      card.appendChild(newsletterWrap);
+    }
+
+    var helper = el('p', 'mt-3 text-xs', 'You can change any field (description, category, labels…) before approving — use Review & Edit.');
+    helper.style.color = 'var(--color-text-light)';
+    card.appendChild(helper);
+
+    var actions = el('div', 'mt-2 flex gap-2 flex-wrap');
+    var editBtn = el('button', 'btn-primary text-sm', '✏️ Review & Edit');
+    var approveBtn = el('button', 'btn-secondary text-sm', 'Approve as-is');
     var rejectBtn = el('button', 'text-sm px-4 py-2 rounded-lg font-semibold border', 'Reject');
     rejectBtn.style.color = 'var(--color-error)';
     rejectBtn.style.borderColor = 'var(--color-error)';
-    [approveBtn, editBtn, rejectBtn].forEach(function(b) {
+    [editBtn, approveBtn, rejectBtn].forEach(function(b) {
       b.type = 'button';
       b.style.minHeight = '44px';
     });
 
     approveBtn.addEventListener('click', function() {
-      actOnItem(card, item, 'approve', collectEdits(editWrap, item));
+      actOnItem(card, item, 'approve', collectEdits(editWrap, item),
+        newsletterCheck ? newsletterCheck.checked : false);
     });
     rejectBtn.addEventListener('click', function() {
       var label = p.name || p.title || item.id;
       if (!confirm('Reject "' + label + '"?' + (item.origin && item.origin.type === 'scraper'
         ? '\n\nScraped items are also blocklisted so they never come back.' : ''))) return;
-      actOnItem(card, item, 'reject', null);
+      actOnItem(card, item, 'reject', null, false);
     });
-    editBtn.addEventListener('click', function() {
-      if (editWrap.firstChild) { clear(editWrap); editBtn.textContent = 'Edit'; }
-      else { editWrap.appendChild(buildEditForm(item)); editBtn.textContent = 'Close edit'; }
-    });
+    function toggleEdit() {
+      if (editWrap.firstChild) { clear(editWrap); editBtn.textContent = '✏️ Review & Edit'; }
+      else {
+        editWrap.appendChild(buildEditForm(item));
+        editBtn.textContent = 'Close edit';
+        approveBtn.textContent = 'Approve with my edits';
+      }
+    }
+    editBtn.addEventListener('click', toggleEdit);
 
-    actions.appendChild(approveBtn);
     actions.appendChild(editBtn);
+    actions.appendChild(approveBtn);
     actions.appendChild(rejectBtn);
     card.appendChild(actions);
+
+    // Scraped items usually arrive with no description — open the edit form
+    // right away and flag the empty field so it's obvious it needs filling.
+    var isResourceish = item.type === 'submission' || item.type === 'resource';
+    if (isResourceish && (!p.description || (item.origin && item.origin.type === 'scraper'))) {
+      toggleEdit();
+      if (!p.description) {
+        var descInput = editWrap.querySelector('[data-key="description"]');
+        if (descInput) {
+          descInput.style.borderColor = 'var(--color-secondary)';
+          descInput.placeholder = 'No description yet — add one so visitors know what this resource offers';
+        }
+      }
+    }
     return card;
   }
 
@@ -487,12 +530,13 @@
     return payload;
   }
 
-  function actOnItem(card, item, action, editedPayload) {
+  function actOnItem(card, item, action, editedPayload, newsletterFlag) {
     card.style.opacity = '0.5';
     card.querySelectorAll('button').forEach(function(b) { b.disabled = true; });
 
     var body = { items: [{ id: item.id, file: item.file }] };
     if (editedPayload) body.items[0].payload = editedPayload;
+    if (newsletterFlag && action === 'approve') body.items[0].newsletterFlag = true;
 
     apiFetch('/' + action, { method: 'POST', body: JSON.stringify(body) }).then(function(data) {
       var failure = (data.failed || []).find(function(f) { return f.id === item.id; });
@@ -501,8 +545,11 @@
       }
       state.queue.items = state.queue.items.filter(function(i) { return i.id !== item.id; });
       renderQueue();
+      state.loadedTabs.newsletter = false; // refresh drafts next time the tab opens
       toast(action === 'approve'
-        ? 'Approved — live on the site in a few minutes.'
+        ? (newsletterFlag
+            ? 'Approved and flagged for the newsletter — see the Newsletter tab.'
+            : 'Approved — live on the site in a few minutes.')
         : 'Rejected' + ((data.blocked || []).length ? ' and blocklisted.' : '.'));
     }).catch(function(err) {
       if (err.message === 'Signed out') return;
@@ -846,6 +893,133 @@
     card.appendChild(submitBtn);
 
     wrap.appendChild(card);
+  }
+
+  // ── Newsletter drafts ─────────────────────────────────────────────────────
+  function loadNewsletter() {
+    var panel = byId('panel-newsletter');
+    clear(panel);
+    panel.appendChild(el('p', 'text-sm', 'Loading newsletter drafts…'));
+
+    apiFetch('/newsletter-drafts').then(function(data) {
+      clear(panel);
+      var drafts = data.drafts || [];
+
+      var intro = el('p', 'text-sm mb-4',
+        'Resources you flagged with "Add to next newsletter". Each has an AI-drafted starter paragraph — edit it, save, then use Compile to copy the whole draft.');
+      intro.style.color = 'var(--color-text-light)';
+      panel.appendChild(intro);
+
+      if (drafts.length === 0) {
+        var empty = el('div', 'card p-8 text-center');
+        empty.appendChild(el('div', 'text-4xl mb-3', '📰'));
+        empty.appendChild(el('p', 'font-semibold', 'Nothing flagged yet.'));
+        empty.appendChild(el('p', 'text-sm mt-2', 'Tick "Add to next newsletter" on a resource in the Review Queue before approving it, and it will appear here.'));
+        panel.appendChild(empty);
+        return;
+      }
+
+      var compileBtn = el('button', 'btn-primary text-sm mb-4', 'Compile draft (' + drafts.length + ' items)');
+      compileBtn.type = 'button';
+      compileBtn.addEventListener('click', function() { showCompiled(panel, drafts); });
+      panel.appendChild(compileBtn);
+
+      drafts.forEach(function(draft) {
+        var card = el('article', 'card p-5 mb-3');
+        var head = el('div', 'flex items-start justify-between gap-3 flex-wrap');
+        var titleWrap = el('div', 'min-w-0');
+        titleWrap.appendChild(el('h3', 'font-bold text-lg break-words', (draft.payload && draft.payload.name) || '(untitled)'));
+        titleWrap.appendChild(el('p', 'text-xs mt-1', 'Flagged ' + fmtDate(draft.flaggedAt) +
+          ((draft.payload && draft.payload.website) ? ' · ' + draft.payload.website : '')));
+        head.appendChild(titleWrap);
+        card.appendChild(head);
+
+        var lab = el('label', 'block text-xs font-semibold mt-3 mb-1', 'Newsletter paragraph (edit freely)');
+        var ta = el('textarea', 'form-input text-sm w-full');
+        ta.rows = 4;
+        ta.value = draft.paragraph || '';
+        lab.htmlFor = ta.id = 'draft-' + draft.id;
+        card.appendChild(lab);
+        card.appendChild(ta);
+
+        var actions = el('div', 'mt-3 flex gap-2 flex-wrap');
+        var saveBtn = el('button', 'btn-primary text-sm', 'Save paragraph');
+        var removeBtn = el('button', 'text-sm px-4 py-2 rounded-lg font-semibold border', 'Remove from newsletter');
+        removeBtn.style.color = 'var(--color-error)';
+        removeBtn.style.borderColor = 'var(--color-error)';
+        [saveBtn, removeBtn].forEach(function(b) { b.type = 'button'; b.style.minHeight = '44px'; });
+
+        saveBtn.addEventListener('click', function() {
+          saveBtn.disabled = true;
+          apiFetch('/newsletter-drafts', {
+            method: 'POST',
+            body: JSON.stringify({ id: draft.id, paragraph: ta.value.trim() })
+          }).then(function() {
+            saveBtn.disabled = false;
+            toast('Paragraph saved.');
+          }).catch(function(err) {
+            if (err.message === 'Signed out') return;
+            saveBtn.disabled = false;
+            toast('Save failed: ' + err.message, true);
+          });
+        });
+        removeBtn.addEventListener('click', function() {
+          if (!confirm('Remove "' + ((draft.payload && draft.payload.name) || draft.id) + '" from the newsletter list? (The resource itself stays live on the site.)')) return;
+          removeBtn.disabled = true;
+          apiFetch('/newsletter-drafts', {
+            method: 'POST',
+            body: JSON.stringify({ id: draft.id, remove: true })
+          }).then(function() {
+            card.remove();
+            toast('Removed from the newsletter list.');
+          }).catch(function(err) {
+            if (err.message === 'Signed out') return;
+            removeBtn.disabled = false;
+            toast('Remove failed: ' + err.message, true);
+          });
+        });
+
+        actions.appendChild(saveBtn);
+        actions.appendChild(removeBtn);
+        card.appendChild(actions);
+        panel.appendChild(card);
+      });
+    }).catch(function(err) {
+      if (err.message === 'Signed out') return;
+      clear(panel);
+      var card = el('div', 'card p-6 text-center');
+      card.appendChild(el('p', 'mb-4', 'Could not load newsletter drafts: ' + err.message));
+      var retry = el('button', 'btn-primary', 'Retry');
+      retry.type = 'button';
+      retry.addEventListener('click', function() { state.loadedTabs.newsletter = false; activateTab('newsletter'); });
+      card.appendChild(retry);
+      panel.appendChild(card);
+    });
+  }
+
+  function showCompiled(panel, drafts) {
+    var existing = byId('compiled-draft');
+    if (existing) existing.remove();
+    var box = el('div', 'card p-5 mb-4');
+    box.id = 'compiled-draft';
+    box.appendChild(el('h3', 'font-bold mb-2', 'Compiled newsletter draft'));
+    var ta = el('textarea', 'form-input text-sm w-full');
+    ta.rows = Math.min(20, drafts.length * 5 + 2);
+    ta.value = drafts.map(function(d) {
+      var name = (d.payload && d.payload.name) || '';
+      var site = (d.payload && d.payload.website) ? '\n' + d.payload.website : '';
+      return '★ ' + name + '\n' + (d.paragraph || '') + site;
+    }).join('\n\n');
+    box.appendChild(ta);
+    var copyBtn = el('button', 'btn-secondary text-sm mt-2', 'Copy to clipboard');
+    copyBtn.type = 'button';
+    copyBtn.addEventListener('click', function() {
+      ta.select();
+      document.execCommand('copy');
+      toast('Copied — paste it into your newsletter.');
+    });
+    box.appendChild(copyBtn);
+    panel.insertBefore(box, panel.children[2] || null);
   }
 
   // ── Emails ────────────────────────────────────────────────────────────────

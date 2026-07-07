@@ -30,6 +30,7 @@
  */
 
 const SUBMISSIONS_PATH = "pending/submissions.json";
+const NEWSLETTER_DRAFTS_PATH = "pending/newsletter-drafts.json";
 const SCRAPED_DIR = "pending/scraped";
 const BLOCKLIST_PATH = "scrapers/blocklist.json";
 const STORIES_PATH = "src/_data/stories.json";
@@ -92,6 +93,12 @@ export default {
       }
       if (request.method === "GET" && path === "/emails") {
         return cors(env, await handleEmails(new URL(request.url), env));
+      }
+      if (request.method === "GET" && path === "/newsletter-drafts") {
+        return cors(env, await handleNewsletterDraftsGet(env));
+      }
+      if (request.method === "POST" && path === "/newsletter-drafts") {
+        return cors(env, await handleNewsletterDraftsPost(await request.json(), env, auth));
       }
 
       return cors(env, json({ error: "Not found" }, 404));
@@ -316,9 +323,10 @@ async function handlePending(env) {
 async function handleApprove(body, env, auth) {
   const selection = await resolveSelection(body, env);
   if (selection.error) return selection.error;
-  const { byFile, overrides } = selection;
+  const { byFile, overrides, newsletterFlags } = selection;
 
   const approved = [], failed = [];
+  const paragraphCache = new Map(); // id -> generated paragraph (survives commit retries)
   const result = await commitWithRetry(env, async () => {
     approved.length = 0; failed.length = 0;
     const changes = new Map(); // repo path -> content string | null (delete)
@@ -356,6 +364,28 @@ async function handleApprove(body, env, auth) {
               live.push({ ...payload, dateAdded: today, origin: stripTimestamps(envl.origin) });
               changes.set(target, pretty(live));
               approved.push(envl.id);
+
+              // Flagged for the newsletter: copy into the drafts store with an
+              // AI-drafted (or template) starter paragraph, same atomic commit.
+              if (newsletterFlags && newsletterFlags.has(envl.id)) {
+                const drafts = await readLive(NEWSLETTER_DRAFTS_PATH, []);
+                if (!drafts.some(d => d.sourceId === envl.id)) {
+                  if (!paragraphCache.has(envl.id)) {
+                    paragraphCache.set(envl.id, await generateParagraph(payload, env));
+                  }
+                  drafts.push({
+                    id: `nld-${today.replace(/-/g, "")}-${envl.id.slice(-8)}`,
+                    sourceId: envl.id,
+                    type: envl.type,
+                    flaggedAt: new Date().toISOString(),
+                    payload: { name: payload.name, category: payload.category,
+                               location: payload.location, website: payload.website || "",
+                               description: payload.description || "" },
+                    paragraph: paragraphCache.get(envl.id)
+                  });
+                  changes.set(NEWSLETTER_DRAFTS_PATH, pretty(drafts));
+                }
+              }
             }
           } else if (envl.type === "story") {
             const stories = await readLive(STORIES_PATH, []);
@@ -585,6 +615,80 @@ async function handleEmails(url, env) {
   return json({ total: data.count || contacts.length, contacts });
 }
 
+// ─── Admin: newsletter drafts ────────────────────────────────────────────────
+
+async function handleNewsletterDraftsGet(env) {
+  const file = await readRepoFile(env, NEWSLETTER_DRAFTS_PATH);
+  return json({ drafts: file ? file.json : [] });
+}
+
+/** POST {id, paragraph} updates a draft's paragraph; {id, remove:true} deletes it. */
+async function handleNewsletterDraftsPost(body, env, auth) {
+  const id = (body.id || "").trim();
+  if (!id) return json({ error: "id is required" }, 400);
+
+  let found = false;
+  const result = await commitWithRetry(env, async () => {
+    const changes = new Map();
+    const file = await readRepoFile(env, NEWSLETTER_DRAFTS_PATH);
+    const drafts = file ? file.json : [];
+    const idx = drafts.findIndex(d => d.id === id);
+    found = idx !== -1;
+    if (!found) return changes; // empty = nothing to commit
+
+    if (body.remove === true) {
+      drafts.splice(idx, 1);
+    } else {
+      drafts[idx].paragraph = String(body.paragraph || "").slice(0, 4000);
+      drafts[idx].editedAt = new Date().toISOString();
+    }
+    changes.set(NEWSLETTER_DRAFTS_PATH, pretty(drafts));
+    return changes;
+  }, () => `${body.remove ? "Remove" : "Edit"} newsletter draft via admin portal (by ${auth.actor})`);
+
+  if (result.error) return result.error;
+  if (!found) return json({ error: "Draft not found" }, 404);
+  return json({ success: true, commitSha: result.sha });
+}
+
+/** Starter paragraph for a newsletter-flagged resource: what it is, when to use
+ *  it, why it's interesting. Claude Haiku when ANTHROPIC_API_KEY is set; a
+ *  serviceable template otherwise. Never throws. */
+async function generateParagraph(payload, env) {
+  const template = () => {
+    const cat = (Array.isArray(payload.category) && payload.category[0]) || "disability services";
+    const where = !payload.location || payload.location === "National" ? "nationwide" : `in ${payload.location}`;
+    const desc = payload.description ? ` ${payload.description}` : "";
+    return `${payload.name} offers ${cat.replace(/-/g, " ")} ${where}.${desc} Learn more at ${payload.website || "their website"}.`;
+  };
+
+  if (!env.ANTHROPIC_API_KEY) return template();
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "x-api-key": env.ANTHROPIC_API_KEY,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        model: "claude-haiku-4-5-20251001",
+        max_tokens: 250,
+        messages: [{
+          role: "user",
+          content: `Write a warm, plain-language 2-3 sentence newsletter blurb for caregivers of individuals with disabilities about this resource. Cover: what it is, when a family might use it, and why it's worth knowing about. No headings, no markdown, no salesy tone.\n\nName: ${payload.name}\nCategory: ${(payload.category || []).join(", ")}\nLocation: ${payload.location || ""}\nDescription: ${payload.description || "(none provided)"}\nWebsite: ${payload.website || "(none)"}`
+        }]
+      })
+    });
+    if (!res.ok) return template();
+    const data = await res.json();
+    const text = data.content && data.content[0] && data.content[0].text;
+    return (text || "").trim() || template();
+  } catch {
+    return template();
+  }
+}
+
 // ─── Brevo helpers ───────────────────────────────────────────────────────────
 
 function brevoConfigured(env) {
@@ -657,11 +761,13 @@ async function brevoDoubleOptIn(email, source, env) {
 
 // ─── Selection (shared by approve/reject) ────────────────────────────────────
 
-/** Normalize {items:[{id, file, payload?}]} or {all:true, type?} into a
- *  Map<pendingFilePath, Set<id>> plus per-id payload overrides. */
+/** Normalize {items:[{id, file, payload?, newsletterFlag?}]} or {all:true, type?}
+ *  into a Map<pendingFilePath, Set<id>> plus per-id payload overrides and the
+ *  set of ids flagged for the newsletter. */
 async function resolveSelection(body, env) {
   const byFile = new Map();
   const overrides = new Map();
+  const newsletterFlags = new Set();
 
   if (body.all === true) {
     const pendingRes = await handlePending(env);
@@ -685,13 +791,16 @@ async function resolveSelection(body, env) {
       if (item.payload && typeof item.payload === "object") {
         overrides.set(item.id, item.payload);
       }
+      if (item.newsletterFlag === true) {
+        newsletterFlags.add(item.id);
+      }
     }
   }
 
   if (byFile.size === 0) {
     return { error: json({ error: "Nothing selected" }, 400) };
   }
-  return { byFile, overrides };
+  return { byFile, overrides, newsletterFlags };
 }
 
 function writePendingChange(changes, pendingPath, remaining) {
@@ -858,6 +967,9 @@ This article from ${article.source} covers topics relevant to the disability com
 
 function resourceTargetFile(location) {
   if (!location || location === "National") return "src/_data/resources/national.json";
+  // Region names route to their state file (regions live in the `area` field)
+  if (location === "Northern Virginia") return "src/_data/resources/states/VA.json";
+  if (location === "Portland" || location === "Portland, OR") return "src/_data/resources/states/OR.json";
   const code = STATE_CODES[location];
   return code ? `src/_data/resources/states/${code}.json` : "src/_data/resources/national.json";
 }

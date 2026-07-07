@@ -59,6 +59,12 @@ module.exports = function(eleventyConfig) {
     return resources.filter(r => r.category && r.category.includes(category));
   });
 
+  // Top-level category match against directory.js's computed topCategories
+  eleventyConfig.addFilter("filterByTopCategory", function(resources, slug) {
+    if (!slug) return resources;
+    return resources.filter(r => r.topCategories && r.topCategories.includes(slug));
+  });
+
   eleventyConfig.addFilter("filterByLocation", function(resources, location) {
     if (!location) return resources;
     return resources.filter(r => r.location === location);
