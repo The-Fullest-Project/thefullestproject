@@ -100,6 +100,9 @@ export default {
       if (request.method === "POST" && path === "/newsletter-drafts") {
         return cors(env, await handleNewsletterDraftsPost(await request.json(), env, auth));
       }
+      if (request.method === "POST" && path === "/draft-description") {
+        return cors(env, await handleDraftDescription(await request.json(), env));
+      }
 
       return cors(env, json({ error: "Not found" }, 404));
     } catch (err) {
@@ -649,6 +652,76 @@ async function handleNewsletterDraftsPost(body, env, auth) {
   if (result.error) return result.error;
   if (!found) return json({ error: "Draft not found" }, 404);
   return json({ success: true, commitSha: result.sha });
+}
+
+/** Draft a directory description for a resource under review. If the resource
+ *  has a website we fetch it and mine its own meta/JSON-LD description for
+ *  factual grounding, then have Claude Haiku write 1-2 plain sentences. The
+ *  prompt forbids inventing specifics not present in the source material. */
+async function handleDraftDescription(body, env) {
+  const name = (body.name || "").trim();
+  if (!name) return json({ error: "name is required" }, 400);
+  const category = Array.isArray(body.category) ? body.category.join(", ") : (body.category || "");
+  const location = (body.location || "").trim();
+  const area = (body.area || "").trim();
+  const website = (body.website || "").trim();
+
+  const siteDescription = await fetchSiteDescription(website);
+
+  if (!env.ANTHROPIC_API_KEY) {
+    return json({ description: "", note: "AI drafting needs the ANTHROPIC_API_KEY worker secret." }, 200);
+  }
+
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "x-api-key": env.ANTHROPIC_API_KEY,
+        "anthropic-version": "2023-06-01",
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        model: "claude-haiku-4-5-20251001",
+        max_tokens: 200,
+        messages: [{
+          role: "user",
+          content: `Write a 1-2 sentence directory description of this resource for caregivers of individuals with disabilities. Plain language, factual, no marketing fluff. CRITICAL: only state things supported by the information below — do not invent services, specialties, or claims. If the information is thin, keep it short and general rather than making things up.\n\nName: ${name}\nCategory: ${category}\nLocation: ${[area, location].filter(Boolean).join(", ")}\nWebsite: ${website || "(none)"}\nThe organization's own description: ${siteDescription ? siteDescription.slice(0, 1000) : "(not available)"}`
+        }]
+      })
+    });
+    if (!res.ok) return json({ error: `AI request failed (${res.status})` }, 502);
+    const data = await res.json();
+    const text = (data.content && data.content[0] && data.content[0].text || "").trim();
+    return json({ description: text, grounded: Boolean(siteDescription) });
+  } catch (err) {
+    return json({ error: "AI request failed: " + err.message }, 502);
+  }
+}
+
+/** Free grounding pass for description drafting: fetch the org's site and
+ *  mine its own og:/meta/JSON-LD description. Returns "" on any failure. */
+async function fetchSiteDescription(website) {
+  if (!/^https?:\/\//.test(website || "")) return "";
+  try {
+    const res = await fetch(website, {
+      headers: { "User-Agent": "TheFullestProjectBot/1.0 (+https://thefullestproject.org/about/)" },
+      signal: AbortSignal.timeout(10000)
+    });
+    const html = (await res.text()).slice(0, 400000);
+    const og = html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)
+      || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i)
+      || html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i);
+    if (og) return og[1];
+    for (const block of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
+      try {
+        const data = JSON.parse(block[1]);
+        const nodes = Array.isArray(data) ? data : (data["@graph"] || [data]);
+        const hit = nodes.find(n => n && n.description);
+        if (hit) return String(hit.description);
+      } catch { /* keep looking */ }
+    }
+  } catch { /* site unreachable/bot-walled — caller drafts from fields alone */ }
+  return "";
 }
 
 /** Starter paragraph for a newsletter-flagged resource: what it is, when to use

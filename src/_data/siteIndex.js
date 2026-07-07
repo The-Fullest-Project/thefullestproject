@@ -34,6 +34,7 @@ module.exports = function() {
     resources: resources.map(r => ({
       name: r.name,
       location: r.location,
+      area: r.area || '',
       category: r.category,
       dateAdded: r.dateAdded || '',
       lastScraped: r.lastScraped || '',

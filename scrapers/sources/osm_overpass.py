@@ -100,6 +100,11 @@ def _build_resource(el, code):
         return None
 
     website = tags.get("website") or tags.get("contact:website") or ""
+    # Admin decision (2026-07): candidates without a website are skipped —
+    # reviewers can't verify them and visitors can't reach them. Set
+    # TFP_OSM_REQUIRE_WEBSITE=0 to queue website-less finds anyway.
+    if not website.strip() and os.environ.get("TFP_OSM_REQUIRE_WEBSITE", "1") != "0":
+        return None
     phone = tags.get("phone") or tags.get("contact:phone") or ""
     osm_type = el.get("type", "node")
     osm_tags = ["osm"]

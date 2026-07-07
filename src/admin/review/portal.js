@@ -129,6 +129,10 @@
         { email: 'demo2@example.com', dateAdded: '2026-06-08', source: 'resource-submission', optIn: 'transactional_only' },
         { email: 'demo3@example.com', dateAdded: '2026-06-10', source: 'newsletter-form', optIn: 'pending_doi' }
       ] },
+      '/draft-description': {
+        description: 'A pediatric therapy clinic offering physical and occupational therapy for children with developmental and neurological conditions.',
+        grounded: true
+      },
       '/newsletter-drafts': { drafts: [
         { id: 'nld-20260706-demo1', sourceId: 'sub-20260612-aaaa1111', type: 'resource', flaggedAt: '2026-07-06T02:00:00Z',
           payload: { name: 'Example Respite House', category: ['respite'], location: 'Virginia', website: 'https://example.org' },
@@ -235,14 +239,23 @@
   }
 
   // ── Site index (taxonomies + history data) ────────────────────────────────
+  function applySiteIndex(index) {
+    state.siteIndex = index;
+    state.taxonomies = index.taxonomies || state.taxonomies;
+    // location -> {area: true} map feeding the Area dropdown in edit forms
+    state.areasByLocation = {};
+    (index.resources || []).forEach(function(r) {
+      if (!r.area) return;
+      var loc = r.location || '';
+      (state.areasByLocation[loc] = state.areasByLocation[loc] || {})[r.area] = true;
+    });
+  }
+
   function loadSiteIndex() {
     fetch('/api/site-index.json').then(function(res) {
       if (!res.ok) throw new Error('no index');
       return res.json();
-    }).then(function(index) {
-      state.siteIndex = index;
-      state.taxonomies = index.taxonomies || state.taxonomies;
-    }).catch(function() { /* selects fall back to free-text inputs */ });
+    }).then(applySiteIndex).catch(function() { /* selects fall back to free-text inputs */ });
   }
 
   // ── Review queue ──────────────────────────────────────────────────────────
@@ -436,10 +449,12 @@
     return card;
   }
 
+  var AGE_RANGE_OPTIONS = ['Pediatric', 'Adolescent', 'Adult', 'All Ages'];
   var EDIT_FIELDS = {
-    resource: [['name', 'Name'], ['website', 'Website'], ['description', 'Description', 'textarea'],
+    resource: [['name', 'Name'], ['website', 'Website', 'website'], ['description', 'Description', 'textarea'],
                ['category', 'Category', 'category'], ['location', 'Location', 'location'],
-               ['area', 'Area'], ['phone', 'Phone'], ['cost', 'Cost'], ['ageRange', 'Age range'], ['tags', 'Tags (comma-separated)', 'tags']],
+               ['area', 'Area', 'area'], ['phone', 'Phone'],
+               ['ageRange', 'Age range', 'select'], ['tags', 'Tags (comma-separated)', 'tags']],
     story: [['title', 'Title'], ['sourceName', 'Source name'], ['sourceUrl', 'Source URL'],
             ['excerpt', 'Excerpt', 'textarea'], ['category', 'Category'], ['date', 'Date (YYYY-MM-DD)']],
     spotlight: [['name', 'Name'], ['description', 'Description', 'textarea'], ['category', 'Category'],
@@ -467,6 +482,66 @@
         input = el('textarea', 'form-input text-sm w-full');
         input.rows = 3;
         input.value = p[key] || '';
+      } else if (kind === 'select') {
+        // Fixed choices (currently: age range). Keeps entries consistent.
+        input = el('select', 'filter-select text-sm w-full');
+        var blank = el('option', '', '— select —');
+        blank.value = '';
+        input.appendChild(blank);
+        AGE_RANGE_OPTIONS.forEach(function(optVal) {
+          var opt = el('option', '', optVal);
+          opt.value = optVal;
+          if (optVal === p[key]) opt.selected = true;
+          input.appendChild(opt);
+        });
+        if (p[key] && AGE_RANGE_OPTIONS.indexOf(p[key]) === -1) {
+          var ageHint = el('p', 'text-xs mt-1', 'Original: ' + p[key]);
+          ageHint.style.color = 'var(--color-text-light)';
+          wrap.appendChild(ageHint);
+        }
+      } else if (kind === 'area') {
+        // Dropdown of areas already used for this state, with an explicit
+        // "add new" escape hatch — keeps area names consistent.
+        input = el('select', 'filter-select text-sm w-full');
+        var areaBlank = el('option', '', '— none —');
+        areaBlank.value = '';
+        input.appendChild(areaBlank);
+        var known = (state.areasByLocation && state.areasByLocation[p.location]) || {};
+        var areaNames = Object.keys(known);
+        if (p[key] && areaNames.indexOf(p[key]) === -1) areaNames.push(p[key]);
+        areaNames.sort().forEach(function(a) {
+          var opt = el('option', '', a);
+          opt.value = a;
+          if (a === p[key]) opt.selected = true;
+          input.appendChild(opt);
+        });
+        var addNew = el('option', '', '➕ Add a new area…');
+        addNew.value = '__new__';
+        input.appendChild(addNew);
+        var newInput = el('input', 'form-input text-sm w-full mt-2');
+        newInput.type = 'text';
+        newInput.placeholder = 'New area name (e.g. Loudoun County)';
+        newInput.hidden = true;
+        input.addEventListener('change', function() {
+          var adding = input.value === '__new__';
+          newInput.hidden = !adding;
+          if (adding) {
+            input.removeAttribute('data-key');
+            newInput.dataset.key = key;
+            newInput.dataset.kind = 'text';
+            newInput.focus();
+          } else {
+            newInput.removeAttribute('data-key');
+            input.dataset.key = key;
+          }
+        });
+        wrap.appendChild(input);
+        wrap.appendChild(newInput);
+        input.id = fieldId;
+        input.dataset.key = key;
+        input.dataset.kind = kind;
+        form.appendChild(wrap);
+        return; // custom wiring done — skip the shared tail below
       } else if (kind === 'category' && state.taxonomies.categories.length) {
         input = el('select', 'filter-select text-sm w-full');
         var current = Array.isArray(p[key]) ? p[key][0] : p[key];
@@ -502,6 +577,62 @@
       input.dataset.key = key;
       input.dataset.kind = kind;
       wrap.appendChild(input);
+
+      if (kind === 'website') {
+        // One-click lookup for scraped resources missing a website
+        var searchLink = el('a', 'text-xs underline inline-block mt-1',
+          'Search Google for this organization ↗');
+        searchLink.style.color = 'var(--color-accent)';
+        searchLink.target = '_blank';
+        searchLink.rel = 'noopener noreferrer';
+        searchLink.href = 'https://www.google.com/search?q=' +
+          encodeURIComponent([p.name, p.area, p.location].filter(Boolean).join(' '));
+        wrap.appendChild(searchLink);
+      }
+
+      if (key === 'description' && (item.type === 'submission' || item.type === 'resource')) {
+        var draftBtn = el('button', 'btn-secondary text-xs mt-2', '✨ Draft with AI');
+        draftBtn.type = 'button';
+        var descInput = input;
+        draftBtn.addEventListener('click', function() {
+          draftBtn.disabled = true;
+          draftBtn.textContent = 'Drafting…';
+          var current = collectEdits(form.parentNode, item) || p;
+          apiFetch('/draft-description', {
+            method: 'POST',
+            body: JSON.stringify({
+              name: current.name || p.name,
+              category: current.category || p.category,
+              location: current.location || p.location,
+              area: current.area || p.area,
+              website: current.website || p.website
+            })
+          }).then(function(data) {
+            if (data.description) {
+              descInput.value = data.description;
+              toast(data.grounded
+                ? 'Drafted from the organization\'s own website — review and tweak as needed.'
+                : 'Drafted from the available details — please verify before approving.');
+            } else {
+              toast(data.note || 'No draft returned.', true);
+            }
+          }).catch(function(err) {
+            if (err.message !== 'Signed out') toast('Draft failed: ' + err.message, true);
+          }).finally(function() {
+            draftBtn.disabled = false;
+            draftBtn.textContent = '✨ Draft with AI';
+          });
+        });
+        wrap.appendChild(draftBtn);
+      }
+
+      if (kind === 'tags') {
+        var tagsHint = el('p', 'text-xs mt-1',
+          'Tags become the type-filter chips on that category\'s page (e.g. "safety-beds" adds a Safety Beds filter).');
+        tagsHint.style.color = 'var(--color-text-light)';
+        wrap.appendChild(tagsHint);
+      }
+
       form.appendChild(wrap);
     });
 
@@ -603,8 +734,7 @@
       if (!res.ok) throw new Error('site index not available');
       return res.json();
     }).then(function(index) {
-      state.siteIndex = index;
-      state.taxonomies = index.taxonomies || state.taxonomies;
+      applySiteIndex(index);
       renderHistory(index);
     }).catch(function(err) {
       clear(panel);

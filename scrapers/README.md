@@ -41,6 +41,7 @@ failed, so an outage looked identical to "nothing new." Discovery scrapers now:
 | `TFP_OSM_MAX_PER_STATE` | none (25 in CI) | cap candidates per state |
 | `TFP_OSM_MAX_TOTAL` | none (250 in CI) | run-wide intake cap |
 | `TFP_OSM_DELAY` | 2 | seconds between state queries (politeness) |
+| `TFP_OSM_REQUIRE_WEBSITE` | 1 (on) | skip OSM candidates without a website (admin decision, July 2026); `0` to queue them anyway |
 | `TFP_CMS_STATES` | `VA,OR` | states for CMS supplement |
 | `TFP_NEWS_LEADS` | off | `1` to enable Google News leads |
 | `TFP_LLM_ENRICH` | off | `1` to enable optional paid Claude-Haiku extraction |
