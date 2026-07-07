@@ -48,17 +48,20 @@ eleventyComputed:
           </select>
         </div>
       </div>
+      <!-- Type filter chips (populated from this category's resources) -->
+      <div id="facet-chips" class="flex flex-wrap gap-2 mt-4" role="group" aria-label="Filter by type" hidden></div>
       <p id="results-count" class="text-sm mt-3" style="color: var(--color-text-light);" aria-live="polite"></p>
     </div>
 
     <!-- Resource Grid -->
-    <div id="category-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="category-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-category="{{ cat.value }}">
       {% for resource in catResources %}
       <div class="card p-6 resource-card"
            data-location="{{ resource.location }}"
            data-name="{{ resource.name | lower }}"
            data-description="{{ resource.description | lower }}"
-           data-area="{{ resource.area | default('') | lower }}">
+           data-area="{{ resource.area | default('') | lower }}"
+           data-facets="{{ resource.facets | join(',') }}">
         <div class="flex items-start justify-between mb-3">
           <h2 class="text-lg font-bold" style="color: var(--color-primary);">{{ resource.name }}</h2>
         </div>
@@ -127,4 +130,5 @@ eleventyComputed:
 }
 </script>
 
+<script id="subcategory-labels" type="application/json">{{ subcategoryLabels | dump | safe }}</script>
 <script src="/js/categoryFilter.js"></script>

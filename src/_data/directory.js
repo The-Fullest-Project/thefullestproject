@@ -41,6 +41,17 @@ const CATEGORY_ALIASES = {
   'vision': 'medical'
 };
 
+// Tags/slugs that are pipeline bookkeeping, not visitor-meaningful facets
+const FACET_NOISE = new Set([
+  'osm', 'curated', 'cms', 'care-provider', 'news-lead', 'legacy-backfill',
+  'needs-review', 'needs-website', 'needs-category', 'abilities-expo',
+  'propublica-seed', 'auto-discovered', 'exhibitor'
+]);
+
+function isNoiseFacet(f) {
+  return FACET_NOISE.has(f) || f.startsWith('ein-');
+}
+
 function loadJsonArray(file) {
   try {
     const data = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -85,8 +96,19 @@ module.exports = function() {
 
   return all
     .filter(r => r && r.name)
-    .map(r => ({
-      ...r,
-      topCategories: [...new Set((r.category || []).map(toTop))]
-    }));
+    .map(r => {
+      // Facets power the per-category "type" filter chips: granular category
+      // slugs (therapy-pt, switch-adapted…) plus curation tags, minus pipeline
+      // noise. Adding a tag to a resource in the review portal automatically
+      // creates/joins a filter chip on its category page.
+      const granular = (r.category || []).filter(c => !topLevel.includes(c));
+      const tags = (r.tags || []).map(t => String(t).toLowerCase().trim());
+      const facets = [...new Set([...granular, ...tags])]
+        .filter(f => f && !isNoiseFacet(f));
+      return {
+        ...r,
+        topCategories: [...new Set((r.category || []).map(toTop))],
+        facets
+      };
+    });
 };

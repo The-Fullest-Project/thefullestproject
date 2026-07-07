@@ -17,16 +17,13 @@ eleventyExcludeFromCollections: true
 
 <section class="py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {% for cat in categories %}
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+      {% for cat in categories | sort(attribute='label') %}
       {% set catCount = (directory | filterByTopCategory(cat.value)).length %}
       {% if catCount > 0 %}
-      <a href="/preview/resources/{{ cat.value }}/" class="card p-6 no-underline block" style="color: var(--color-text);">
-        <div class="flex items-center justify-between">
-          <h2 class="text-lg font-bold" style="color: var(--color-primary);">{{ cat.label }}</h2>
-          <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">{{ catCount }}</span>
-        </div>
-        <p class="text-sm mt-2" style="color: var(--color-text-light);">Browse {{ catCount }} resource{{ 's' if catCount != 1 }} &rarr;</p>
+      <a href="/preview/resources/{{ cat.value }}/" class="card px-4 py-3 no-underline flex items-center justify-between gap-2" style="color: var(--color-text);">
+        <h2 class="text-sm font-bold leading-snug" style="color: var(--color-primary);">{{ cat.label }}</h2>
+        <span class="tag text-xs shrink-0" style="background-color: var(--color-warm); color: var(--color-primary);">{{ catCount }}</span>
       </a>
       {% endif %}
       {% endfor %}

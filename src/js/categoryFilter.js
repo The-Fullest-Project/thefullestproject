@@ -9,7 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
   var stateFilter = document.getElementById('state-filter');
   var cityFilter = document.getElementById('city-filter');
   var resultsCount = document.getElementById('results-count');
+  var facetChips = document.getElementById('facet-chips');
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.resource-card'));
+  var activeFacet = '';
+
+  // Human labels for facet slugs (embedded by the page template)
+  var facetLabels = {};
+  var labelsEl = document.getElementById('subcategory-labels');
+  if (labelsEl) {
+    try { facetLabels = JSON.parse(labelsEl.textContent); } catch (e) { facetLabels = {}; }
+  }
 
   // Region-to-city mapping (same map as resourceFilter.js): selecting a region
   // also matches resources tagged with its sub-cities
@@ -58,6 +67,80 @@ document.addEventListener('DOMContentLoaded', function() {
     return Boolean(cities && cities.indexOf(resourceArea) !== -1);
   }
 
+  // Merge near-synonym tag/slug variants into one chip
+  var facetCanon = {
+    'speech-therapy': 'therapy-speech',
+    'aba-therapy': 'therapy-aba',
+    'occupational-therapy': 'therapy-ot',
+    'physical-therapy': 'therapy-pt',
+    'hippotherapy': 'therapy-equine',
+    'equine-therapy': 'therapy-equine',
+    'music-therapy': 'therapy-music',
+    'aquatic-therapy': 'therapy-aquatic',
+    'feeding-therapy': 'therapy-feeding',
+    'art-therapy': 'therapy-art',
+    'equipment-loaner': 'loaner',
+    'assistive-tech': 'assistive-technology',
+    'mobility-equipment': 'mobility',
+    'in-home': 'home-care'
+  };
+  function cardFacets(card) {
+    return (card.getAttribute('data-facets') || '').split(',')
+      .filter(Boolean)
+      .map(function(f) { return facetCanon[f] || f; });
+  }
+
+  function facetLabel(slug) {
+    if (facetLabels[slug]) return facetLabels[slug];
+    return titleCase(slug.replace(/[-_]/g, ' '));
+  }
+
+  // Build "type" chips from the facets present on this page's cards.
+  // A chip appears when 2+ resources share the facet (and not all of them do);
+  // tagging a resource in the review portal automatically feeds this.
+  function buildFacetChips() {
+    if (!facetChips) return;
+    var counts = {};
+    cards.forEach(function(card) {
+      var seen = {};
+      cardFacets(card).forEach(function(f) {
+        if (!seen[f]) { seen[f] = true; counts[f] = (counts[f] || 0) + 1; }
+      });
+    });
+    var pageCategory = grid.getAttribute('data-category');
+    var facets = Object.keys(counts).filter(function(f) {
+      return f !== pageCategory && counts[f] >= 2 && counts[f] < cards.length;
+    });
+    facets.sort(function(a, b) { return counts[b] - counts[a]; });
+    facets = facets.slice(0, 15).sort(function(a, b) {
+      return facetLabel(a).localeCompare(facetLabel(b));
+    });
+    if (facets.length === 0) return;
+
+    facetChips.hidden = false;
+    facets.forEach(function(f) {
+      var chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'tag cursor-pointer';
+      chip.style.backgroundColor = 'var(--color-warm)';
+      chip.style.color = 'var(--color-primary)';
+      chip.style.border = '1px solid transparent';
+      chip.setAttribute('aria-pressed', 'false');
+      chip.textContent = facetLabel(f) + ' (' + counts[f] + ')';
+      chip.addEventListener('click', function() {
+        activeFacet = activeFacet === f ? '' : f;
+        Array.prototype.forEach.call(facetChips.children, function(c) {
+          var on = c === chip && activeFacet === f;
+          c.setAttribute('aria-pressed', String(on));
+          c.style.backgroundColor = on ? 'var(--color-primary)' : 'var(--color-warm)';
+          c.style.color = on ? 'white' : 'var(--color-primary)';
+        });
+        filterCards();
+      });
+      facetChips.appendChild(chip);
+    });
+  }
+
   function filterCards() {
     var searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
     var selectedState = stateFilter ? stateFilter.value : '';
@@ -81,6 +164,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (selectedCity && !areaMatchesFilter(area, selectedCity)) {
         show = false;
       }
+      if (activeFacet && cardFacets(card).indexOf(activeFacet) === -1) {
+        show = false;
+      }
 
       card.style.display = show ? '' : 'none';
       if (show) visibleCount++;
@@ -94,6 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // URL param support, e.g. ?state=Virginia&city=northern%20virginia
   var params = new URLSearchParams(window.location.search);
   if (params.get('state') && stateFilter) stateFilter.value = params.get('state');
+  buildFacetChips();
   populateCityFilter();
   if (params.get('city') && cityFilter) cityFilter.value = params.get('city').toLowerCase();
 
