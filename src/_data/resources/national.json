@@ -10246,5 +10246,28 @@
       "type": "quick-submit",
       "detail": "bookmarklet"
     }
+  },
+  {
+    "name": "Six Southern Babes",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Infant and child clothing company with a medically adaptable clothing line. Six Southern Babes was built on a simple belief: comfort and purpose belong in the same closet. Every piece we make is designed with both style and function in mind, with a medically adaptable option in every print. Because fashion should be inclusive for every family.",
+    "phone": "",
+    "website": "https://sixsouthernbabes.com/collections/instock-medically-adaptable-1?filter.v.availability=1",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [],
+    "source": "https://sixsouthernbabes.com/collections/instock-medically-adaptable-1?filter.v.availability=1",
+    "lastScraped": "2026-07-06",
+    "dateAdded": "2026-07-07",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
