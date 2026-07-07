@@ -29,35 +29,6 @@
     }
   },
   {
-    "id": "sub-20260706-77e7f23c",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "quick-submit",
-      "detail": "bookmarklet",
-      "submittedAt": "2026-07-06T01:08:52.009Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Courtney Bed",
-      "category": [
-        "equipment"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "High-Sided Medical Bed - Optional Top for Full Enclosure.\r\nOur product offers a solid hardwood frame, a durable high-sided fabric enclosure, and a safety zipper sheath. Understanding individual needs can change, our bed offers convertibility to change the height, width, and features at any time.",
-      "phone": "sales@courtneybed.com",
-      "website": "https://courtneybed.com/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [],
-      "source": "https://courtneybed.com/",
-      "lastScraped": "2026-07-06"
-    }
-  },
-  {
     "id": "sub-20260706-6c86b5b5",
     "type": "submission",
     "status": "pending",
