@@ -8,7 +8,7 @@ permalink: "/preview/resources/{{ cat.value }}/"
 eleventyExcludeFromCollections: true
 eleventyComputed:
   title: "{{ cat.label }} — Disability Resources"
-  description: "Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse trusted resources and filter by state or city."
+  description: "Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse resources and filter by state or city."
 ---
 
 {% set catResources = directory | filterByTopCategory(cat.value) | sort(attribute='name') %}
@@ -27,7 +27,7 @@ eleventyComputed:
 
     <!-- Filters -->
     <div class="card p-4 mb-8">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div>
           <label for="category-search" class="block text-sm font-semibold mb-2">Search</label>
           <input type="text" id="category-search" placeholder="Search these resources..." class="form-input">
@@ -47,9 +47,13 @@ eleventyComputed:
             <option value="">All Cities</option>
           </select>
         </div>
+        <div id="type-filter-wrap" hidden>
+          <label for="type-filter" class="block text-sm font-semibold mb-2">Type</label>
+          <select id="type-filter" class="filter-select">
+            <option value="">All Types</option>
+          </select>
+        </div>
       </div>
-      <!-- Type filter chips (populated from this category's resources) -->
-      <div id="facet-chips" class="flex flex-wrap gap-2 mt-4" role="group" aria-label="Filter by type" hidden></div>
       <p id="results-count" class="text-sm mt-3" style="color: var(--color-text-light);" aria-live="polite"></p>
     </div>
 
@@ -65,12 +69,6 @@ eleventyComputed:
         <div class="flex items-start justify-between mb-3">
           <h2 class="text-lg font-bold" style="color: var(--color-primary);">{{ resource.name }}</h2>
         </div>
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="tag" style="background-color: var(--color-accent); color: white;">{{ resource.location }}</span>
-          {% if resource.area %}
-          <span class="tag" style="background-color: var(--color-warm-light); color: var(--color-text);">{{ resource.area }}</span>
-          {% endif %}
-        </div>
         {% if resource.description %}
         <p class="text-sm mb-4" style="color: var(--color-text-light);">{{ resource.description }}</p>
         {% endif %}
@@ -85,6 +83,9 @@ eleventyComputed:
           Visit Website &rarr;
         </a>
         {% endif %}
+        <p class="text-xs mt-3 opacity-70" style="color: var(--color-text-light);">
+          {{ resource.location }}{% if resource.area %} &middot; {{ resource.area }}{% endif %}
+        </p>
       </div>
       {% endfor %}
     </div>

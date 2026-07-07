@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var stateFilter = document.getElementById('state-filter');
   var cityFilter = document.getElementById('city-filter');
   var resultsCount = document.getElementById('results-count');
-  var facetChips = document.getElementById('facet-chips');
+  var typeFilter = document.getElementById('type-filter');
+  var typeFilterWrap = document.getElementById('type-filter-wrap');
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.resource-card'));
   var activeFacet = '';
 
@@ -95,11 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
     return titleCase(slug.replace(/[-_]/g, ' '));
   }
 
-  // Build "type" chips from the facets present on this page's cards.
-  // A chip appears when 2+ resources share the facet (and not all of them do);
-  // tagging a resource in the review portal automatically feeds this.
-  function buildFacetChips() {
-    if (!facetChips) return;
+  // Populate the "Type" dropdown from the facets present on this page's cards.
+  // An option appears when 2+ resources share the facet (and not all of them
+  // do); tagging a resource in the review portal automatically feeds this.
+  function populateTypeFilter() {
+    if (!typeFilter || !typeFilterWrap) return;
     var counts = {};
     cards.forEach(function(card) {
       var seen = {};
@@ -112,32 +113,21 @@ document.addEventListener('DOMContentLoaded', function() {
       return f !== pageCategory && counts[f] >= 2 && counts[f] < cards.length;
     });
     facets.sort(function(a, b) { return counts[b] - counts[a]; });
-    facets = facets.slice(0, 15).sort(function(a, b) {
+    facets = facets.slice(0, 25).sort(function(a, b) {
       return facetLabel(a).localeCompare(facetLabel(b));
     });
     if (facets.length === 0) return;
 
-    facetChips.hidden = false;
+    typeFilterWrap.hidden = false;
     facets.forEach(function(f) {
-      var chip = document.createElement('button');
-      chip.type = 'button';
-      chip.className = 'tag cursor-pointer';
-      chip.style.backgroundColor = 'var(--color-warm)';
-      chip.style.color = 'var(--color-primary)';
-      chip.style.border = '1px solid transparent';
-      chip.setAttribute('aria-pressed', 'false');
-      chip.textContent = facetLabel(f) + ' (' + counts[f] + ')';
-      chip.addEventListener('click', function() {
-        activeFacet = activeFacet === f ? '' : f;
-        Array.prototype.forEach.call(facetChips.children, function(c) {
-          var on = c === chip && activeFacet === f;
-          c.setAttribute('aria-pressed', String(on));
-          c.style.backgroundColor = on ? 'var(--color-primary)' : 'var(--color-warm)';
-          c.style.color = on ? 'white' : 'var(--color-primary)';
-        });
-        filterCards();
-      });
-      facetChips.appendChild(chip);
+      var opt = document.createElement('option');
+      opt.value = f;
+      opt.textContent = facetLabel(f) + ' (' + counts[f] + ')';
+      typeFilter.appendChild(opt);
+    });
+    typeFilter.addEventListener('change', function() {
+      activeFacet = typeFilter.value;
+      filterCards();
     });
   }
 
@@ -180,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // URL param support, e.g. ?state=Virginia&city=northern%20virginia
   var params = new URLSearchParams(window.location.search);
   if (params.get('state') && stateFilter) stateFilter.value = params.get('state');
-  buildFacetChips();
+  populateTypeFilter();
   populateCityFilter();
   if (params.get('city') && cityFilter) cityFilter.value = params.get('city').toLowerCase();
 
