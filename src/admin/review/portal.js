@@ -442,11 +442,77 @@
         var descInput = editWrap.querySelector('[data-key="description"]');
         if (descInput) {
           descInput.style.borderColor = 'var(--color-secondary)';
-          descInput.placeholder = 'No description yet — add one so visitors know what this resource offers';
+          autoDraft(card, item, descInput, editWrap);
         }
       }
     }
     return card;
+  }
+
+  // Ask the worker for an AI-drafted description and drop it into descInput.
+  // Shared by the manual "Draft with AI" button and the automatic draft-on-open
+  // path. ui: { onStart, onEnd, silent } — silent suppresses per-card toasts.
+  function requestDraft(item, descInput, formParent, ui) {
+    ui = ui || {};
+    var p = item.payload || {};
+    if (ui.onStart) ui.onStart();
+    var current = collectEdits(formParent, item) || p;
+    return apiFetch('/draft-description', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: current.name || p.name,
+        category: current.category || p.category,
+        location: current.location || p.location,
+        area: current.area || p.area,
+        website: current.website || p.website
+      })
+    }).then(function(data) {
+      if (data.description) {
+        descInput.value = data.description;
+        if (!ui.silent) {
+          toast(data.grounded
+            ? 'Drafted from the organization\'s own website — review and tweak as needed.'
+            : 'Drafted from the available details — please verify before approving.');
+        }
+        return true;
+      }
+      if (!ui.silent) toast(data.note || 'No draft returned.', true);
+      return false;
+    }).catch(function(err) {
+      if (err.message !== 'Signed out' && !ui.silent) toast('Draft failed: ' + err.message, true);
+      return false;
+    }).finally(function() {
+      if (ui.onEnd) ui.onEnd();
+    });
+  }
+
+  // Automatically draft a description the first time an empty-description card
+  // scrolls into view — no button click required. Lazy via IntersectionObserver
+  // so a long queue doesn't fire dozens of AI calls at once (only visible cards
+  // draft), and it never clobbers text the reviewer has already typed.
+  function autoDraft(card, item, descInput, formParent) {
+    var started = false;
+    function run() {
+      if (started || descInput.value.trim()) return;
+      started = true;
+      descInput.placeholder = '✨ Drafting a description with AI…';
+      requestDraft(item, descInput, formParent, {
+        silent: true,
+        onEnd: function() {
+          if (!descInput.value.trim()) {
+            descInput.placeholder = 'No description yet — add one so visitors know what this resource offers';
+          }
+        }
+      });
+    }
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) { if (e.isIntersecting) { obs.disconnect(); run(); } });
+      }, { rootMargin: '200px' });
+      obs.observe(card);
+    } else {
+      run();
+    }
   }
 
   var AGE_RANGE_OPTIONS = ['Pediatric', 'Adolescent', 'Adult', 'All Ages'];
@@ -591,36 +657,15 @@
       }
 
       if (key === 'description' && (item.type === 'submission' || item.type === 'resource')) {
-        var draftBtn = el('button', 'btn-secondary text-xs mt-2', '✨ Draft with AI');
+        // Empty-description cards draft automatically on open (see autoDraft);
+        // this button re-drafts on demand after the reviewer edits name/website.
+        var draftBtn = el('button', 'btn-secondary text-xs mt-2', '✨ Re-draft with AI');
         draftBtn.type = 'button';
         var descInput = input;
         draftBtn.addEventListener('click', function() {
-          draftBtn.disabled = true;
-          draftBtn.textContent = 'Drafting…';
-          var current = collectEdits(form.parentNode, item) || p;
-          apiFetch('/draft-description', {
-            method: 'POST',
-            body: JSON.stringify({
-              name: current.name || p.name,
-              category: current.category || p.category,
-              location: current.location || p.location,
-              area: current.area || p.area,
-              website: current.website || p.website
-            })
-          }).then(function(data) {
-            if (data.description) {
-              descInput.value = data.description;
-              toast(data.grounded
-                ? 'Drafted from the organization\'s own website — review and tweak as needed.'
-                : 'Drafted from the available details — please verify before approving.');
-            } else {
-              toast(data.note || 'No draft returned.', true);
-            }
-          }).catch(function(err) {
-            if (err.message !== 'Signed out') toast('Draft failed: ' + err.message, true);
-          }).finally(function() {
-            draftBtn.disabled = false;
-            draftBtn.textContent = '✨ Draft with AI';
+          requestDraft(item, descInput, form.parentNode, {
+            onStart: function() { draftBtn.disabled = true; draftBtn.textContent = 'Drafting…'; },
+            onEnd: function() { draftBtn.disabled = false; draftBtn.textContent = '✨ Re-draft with AI'; }
           });
         });
         wrap.appendChild(draftBtn);

@@ -1,9 +1,8 @@
 ---
-layout: layouts/base-preview.njk
+layout: layouts/base.njk
 title: "Disability Resources by Category"
 description: "Browse disability resources for caregivers and families by category — therapy, adaptive equipment, respite care, financial help, and more, in every U.S. state."
-permalink: /preview/resources/
-eleventyExcludeFromCollections: true
+permalink: /resources/
 ---
 
 <section class="py-12 section-warm">
@@ -21,7 +20,7 @@ eleventyExcludeFromCollections: true
       {% for cat in categories | sort(attribute='label') %}
       {% set catCount = (directory | filterByTopCategory(cat.value)).length %}
       {% if catCount > 0 %}
-      <a href="/preview/resources/{{ cat.value }}/" class="card px-4 py-3 no-underline flex items-center justify-between gap-2" style="color: var(--color-text);">
+      <a href="/resources/{{ cat.value }}/" class="card px-4 py-3 no-underline flex items-center justify-between gap-2" style="color: var(--color-text);">
         <h2 class="text-sm font-bold leading-snug" style="color: var(--color-primary);">{{ cat.label }}</h2>
         <span class="tag text-xs shrink-0" style="background-color: var(--color-warm); color: var(--color-primary);">{{ catCount }}</span>
       </a>

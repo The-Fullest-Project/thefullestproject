@@ -1,11 +1,10 @@
 ---
-layout: layouts/base-preview.njk
+layout: layouts/base.njk
 pagination:
   data: categories
   size: 1
   alias: cat
-permalink: "/preview/resources/{{ cat.value }}/"
-eleventyExcludeFromCollections: true
+permalink: "/resources/{{ cat.value }}/"
 eleventyComputed:
   title: "{{ cat.label }} — Disability Resources"
   description: "Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse resources and filter by state or city."
@@ -17,7 +16,7 @@ eleventyComputed:
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <nav class="text-sm mb-6" aria-label="Breadcrumb">
-      <a href="/preview/resources/" class="no-underline hover:underline" style="color: var(--color-accent);">&larr; All Categories</a>
+      <a href="/resources/" class="no-underline hover:underline" style="color: var(--color-accent);">&larr; All Categories</a>
     </nav>
 
     <h1 class="text-4xl font-bold mb-3" style="color: var(--color-primary);">{{ cat.label }}</h1>

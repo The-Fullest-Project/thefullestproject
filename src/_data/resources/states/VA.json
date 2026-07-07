@@ -88,31 +88,6 @@
     }
   },
   {
-    "name": "ABLE National Resource Center",
-    "category": [
-      "financial"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Information about ABLE accounts â€” tax-advantaged savings accounts for individuals with disabilities that don't affect benefits eligibility.",
-    "phone": "",
-    "website": "https://www.ablenrc.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "financial"
-    ],
-    "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Achieve Beyond Pediatric Therapy & Autism Services",
     "category": [
       "therapy",
@@ -252,31 +227,6 @@
     "source": "https://www.amctheatres.com/programs/sensory-friendly-films",
     "lastScraped": "2026-03-09",
     "dateAdded": "2026-03-09",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Assistive Technology Act Programs",
-    "category": [
-      "assistive-tech"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "National network providing assistive technology information, device demonstrations, and lending programs in every state.",
-    "phone": "",
-    "website": "https://www.at3center.net/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "assistive-tech"
-    ],
-    "source": "https://www.at3center.net/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
@@ -2356,10 +2306,12 @@
     "description": "Design-build firm with a dedicated Accessible Design Division specializing in modifications for families of children with special needs and aging adults. CAPS and Universal Design Certified staff.",
     "phone": "(703) 832-8150",
     "website": "https://www.glickmandesignbuild.com",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
+    "address": "Northern Virginia",
+    "ageRange": "All ages",
+    "disabilityTypes": [
+      "mobility"
+    ],
+    "cost": "Varies",
     "tags": [
       "accessibility",
       "universal-design",
@@ -2949,31 +2901,6 @@
     }
   },
   {
-    "name": "NAMI - National Alliance on Mental Illness",
-    "category": [
-      "mental-health"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Mental health support, education, and advocacy. Includes support groups for caregivers and individuals with disabilities.",
-    "phone": "",
-    "website": "https://www.nami.org/find-support/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "mental-health"
-    ],
-    "source": "https://www.nami.org/find-support/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "NAMI Northern Virginia",
     "category": [
       "nonprofit"
@@ -3490,56 +3417,6 @@
     }
   },
   {
-    "name": "Ready.gov - People with Disabilities",
-    "category": [
-      "emergency"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Federal emergency preparedness resources specifically for individuals with disabilities and their caregivers.",
-    "phone": "",
-    "website": "https://www.ready.gov/disability",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "emergency"
-    ],
-    "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Rebuilding Together",
-    "category": [
-      "home-modifications"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Non-profit providing free home modifications and accessibility improvements for people with disabilities and aging adults.",
-    "phone": "",
-    "website": "https://www.rebuildingtogether.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "home-modifications"
-    ],
-    "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Rebuilding Together Arlington/Fairfax/Falls Church",
     "category": [
       "home-modifications"
@@ -3658,31 +3535,6 @@
     }
   },
   {
-    "name": "Sibling Support Project (Sibshops)",
-    "category": [
-      "sibling-support"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "National program providing peer support and education for brothers and sisters of people with special health, developmental, and mental health concerns.",
-    "phone": "",
-    "website": "https://siblingsupport.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sibling-support"
-    ],
-    "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Skills on the Hill",
     "category": [
       "therapy",
@@ -3769,56 +3621,6 @@
     }
   },
   {
-    "name": "Social Security Disability Benefits (SSI/SSDI)",
-    "category": [
-      "financial"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Federal disability benefits including Supplemental Security Income (SSI) and Social Security Disability Insurance (SSDI).",
-    "phone": "",
-    "website": "https://www.ssa.gov/benefits/disability/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "financial"
-    ],
-    "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Special Needs Alliance",
-    "category": [
-      "planning"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "National network of attorneys specializing in special needs planning, including special needs trusts, guardianship, and estate planning.",
-    "phone": "",
-    "website": "https://www.specialneedsalliance.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "planning"
-    ],
-    "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Special Olympics Virginia",
     "category": [
       "sports"
@@ -3868,35 +3670,6 @@
       "social"
     ],
     "source": "https://www.novasova.org/",
-    "lastScraped": "2026-03-09",
-    "dateAdded": "2026-03-09",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Sweet Julia Grace Foundation",
-    "category": [
-      "nonprofit"
-    ],
-    "location": "Virginia",
-    "area": "manassas",
-    "description": "Blesses, celebrates, and loves children who are seriously ill or have special needs. Provides adaptive equipment, home modifications, dream trips, and family support.",
-    "phone": "",
-    "website": "https://www.sweetjuliagrace.org/",
-    "address": "9000 Mike Garcia Drive #140, Manassas, VA 20109",
-    "ageRange": "Children",
-    "disabilityTypes": [],
-    "cost": "Free",
-    "tags": [
-      "family-support",
-      "adaptive-equipment",
-      "grants",
-      "wish-fulfillment",
-      "home-modifications"
-    ],
-    "source": "https://www.sweetjuliagrace.org/",
     "lastScraped": "2026-03-09",
     "dateAdded": "2026-03-09",
     "origin": {
@@ -5311,39 +5084,6 @@
     }
   },
   {
-    "name": "SOAR365",
-    "category": [
-      "therapy",
-      "therapy-speech",
-      "therapy-pt",
-      "recreation",
-      "respite",
-      "community"
-    ],
-    "location": "Virginia",
-    "area": "Richmond",
-    "description": "Nonprofit serving 2,100+ families annually with disability therapy services (speech, physical), adult day support, after school care, respite, summer camp, and pre-vocational training for individuals with disabilities from newborns to seniors.",
-    "phone": "(804) 358-1874",
-    "website": "https://soar365.org",
-    "address": "3600 Saunders Ave, Richmond, VA 23227",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "Varies",
-    "tags": [
-      "therapy",
-      "respite",
-      "day support",
-      "summer camp"
-    ],
-    "source": "https://soar365.org",
-    "lastScraped": "2026-03-09",
-    "dateAdded": "2026-03-09",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Richmond Behavioral Health Authority (RBHA)",
     "category": [
       "government",
@@ -6630,6 +6370,125 @@
     "origin": {
       "type": "scraper",
       "detail": "osm_overpass"
+    }
+  },
+  {
+    "name": "Driver Rehabilitation Center of Excellence LLC",
+    "category": [
+      "vehicle-mods",
+      "therapy"
+    ],
+    "location": "Virginia",
+    "area": "chantilly",
+    "description": "Personalized driver evaluations, adaptive equipment installation, and rehabilitation services for individuals with disabilities. Also has a Chester, VA location.",
+    "phone": "",
+    "website": "https://www.driverrehabcenter.com/",
+    "address": "Chantilly, VA",
+    "ageRange": "Adults",
+    "disabilityTypes": [
+      "mobility"
+    ],
+    "cost": "Varies",
+    "tags": [
+      "driving",
+      "adaptive-equipment",
+      "rehabilitation",
+      "vehicle-mods"
+    ],
+    "source": "https://www.driverrehabcenter.com/",
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "Key Center School (FCPS)",
+    "category": [
+      "education"
+    ],
+    "location": "Virginia",
+    "area": "springfield",
+    "description": "Fairfax County Public Schools day school serving students ages 5-22 with intellectual disabilities (severe) and/or autism. Provides specialized educational programming and life skills training.",
+    "phone": "",
+    "website": "https://keycenter.fcps.edu/",
+    "address": "Springfield, VA",
+    "ageRange": "5-22",
+    "disabilityTypes": [
+      "intellectual-disability",
+      "autism"
+    ],
+    "cost": "Free (public school)",
+    "tags": [
+      "school",
+      "special-education",
+      "autism",
+      "intellectual-disability",
+      "fcps"
+    ],
+    "source": "https://keycenter.fcps.edu/",
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "Kilmer Center (FCPS)",
+    "category": [
+      "education"
+    ],
+    "location": "Virginia",
+    "area": "fairfax",
+    "description": "Fairfax County Public Schools special education center providing comprehensive programs for students with significant disabilities. Serves ages 5-22 with individualized educational plans.",
+    "phone": "",
+    "website": "https://schoolprofiles.fcps.edu/schlprfl/f?p=108:50:::::P0_CURRENT_SCHOOL_ID:121",
+    "address": "Fairfax, VA",
+    "ageRange": "5-22",
+    "disabilityTypes": [],
+    "cost": "Free (public school)",
+    "tags": [
+      "school",
+      "special-education",
+      "fcps"
+    ],
+    "source": "https://schoolprofiles.fcps.edu/",
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "PlayTime Pediatric Therapies",
+    "category": [
+      "therapy-pt",
+      "therapy-aquatic"
+    ],
+    "location": "Virginia",
+    "area": "Northern Virginia",
+    "description": "Pediatric physical therapy and aquatic therapy services. Specializes in play-based therapy for children with developmental, neurological, and orthopedic conditions.",
+    "phone": "",
+    "website": "https://www.playtime-pt.com/services-7",
+    "address": "",
+    "ageRange": "Pediatric",
+    "disabilityTypes": [],
+    "cost": "Varies",
+    "tags": [
+      "physical-therapy",
+      "aquatic-therapy",
+      "pediatric",
+      "play-based"
+    ],
+    "source": "https://www.playtime-pt.com/",
+    "lastScraped": "2026-04-21",
+    "dateAdded": "2026-04-21",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
     }
   }
 ]
