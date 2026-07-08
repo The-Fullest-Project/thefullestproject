@@ -167,12 +167,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // URL param support, e.g. ?state=Virginia&city=northern%20virginia
+  // URL param support, e.g. ?state=Virginia&city=northern%20virginia&type=mobility
   var params = new URLSearchParams(window.location.search);
   if (params.get('state') && stateFilter) stateFilter.value = params.get('state');
   populateTypeFilter();
   populateCityFilter();
   if (params.get('city') && cityFilter) cityFilter.value = params.get('city').toLowerCase();
+
+  // Deep-link a Type filter (e.g. the Adaptive Equipment icon cards link here
+  // with ?type=mobility). Add the option if the facet didn't make the dropdown.
+  if (params.get('type') && typeFilter) {
+    var typeParam = params.get('type').toLowerCase();
+    var hasOpt = Array.prototype.some.call(typeFilter.options, function(o) { return o.value === typeParam; });
+    if (!hasOpt) {
+      var opt = document.createElement('option');
+      opt.value = typeParam;
+      opt.textContent = facetLabel(typeParam);
+      typeFilter.appendChild(opt);
+    }
+    typeFilter.value = typeParam;
+    activeFacet = typeParam;
+    if (typeFilterWrap) typeFilterWrap.hidden = false;
+  }
 
   if (searchInput) searchInput.addEventListener('input', filterCards);
   if (stateFilter) stateFilter.addEventListener('change', function() {

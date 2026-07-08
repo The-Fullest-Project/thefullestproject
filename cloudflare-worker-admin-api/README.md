@@ -54,10 +54,44 @@ npx wrangler secret put BREVO_API_KEY
 npx wrangler secret put BREVO_LIST_ID
 npx wrangler secret put BREVO_THANKYOU_TEMPLATE_ID
 npx wrangler secret put BREVO_DOI_TEMPLATE_ID
+npx wrangler secret put BREVO_APPROVED_TEMPLATE_ID   # approval thank-you (optional)
 ```
 
 Brevo features no-op gracefully until the `BREVO_*` secrets are set, so the
 worker can ship before the Brevo account exists.
+
+## Approval thank-you email
+
+When an admin approves a **submission** (a resource sent through the site form or
+Quick Submit bookmarklet), the worker emails that submitter a thank-you letting
+them know it's live. Two things activate it (both no-op until set):
+
+1. **`SUBMITTER_EMAILS` KV namespace** — emails never enter the public repo, so
+   the worker stores `pending submission id → email` privately in KV at submit
+   time and looks it up at approval, then deletes it. Create and bind it:
+
+   ```bash
+   npx wrangler kv namespace create SUBMITTER_EMAILS
+   # paste the printed id into wrangler.toml (uncomment the [[kv_namespaces]] block)
+   npx wrangler deploy
+   ```
+
+2. **`BREVO_APPROVED_TEMPLATE_ID`** — a Brevo transactional template. Suggested
+   copy (subject + body), using the `{{ params.RESOURCE_NAME }}` variable the
+   worker passes:
+
+   > **Subject:** Your resource is now on The Fullest Project 💛
+   >
+   > Thank you for submitting **{{ params.RESOURCE_NAME }}**! Our team reviewed
+   > it and it's now live in the directory for other caregivers and families to
+   > find. Sharing what you know helps our whole community — thank you for
+   > building this with us.
+   >
+   > Know another resource? Add it anytime at thefullestproject.org/submit-resource/
+
+Only `submission`-type items trigger this (scraped resources have no submitter).
+Approvals still succeed if the email send fails — it's best-effort and off the
+response path.
 
 ## Local testing
 

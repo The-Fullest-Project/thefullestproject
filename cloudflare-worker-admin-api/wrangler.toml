@@ -5,4 +5,14 @@ compatibility_date = "2026-06-01"
 # Secrets (set via `wrangler secret put <NAME>` or the Cloudflare dashboard):
 #   GITHUB_TOKEN, GITHUB_REPO, ALLOWED_ORIGIN, ADMIN_KEY,
 #   FORMSPREE_SUBMIT_ID, FORMSPREE_NEWSLETTER_ID,
-#   BREVO_API_KEY, BREVO_LIST_ID, BREVO_THANKYOU_TEMPLATE_ID, BREVO_DOI_TEMPLATE_ID
+#   BREVO_API_KEY, BREVO_LIST_ID, BREVO_THANKYOU_TEMPLATE_ID, BREVO_DOI_TEMPLATE_ID,
+#   BREVO_APPROVED_TEMPLATE_ID   (approval thank-you email; no-ops until set)
+
+# Private submitter-email store for the approval thank-you. Emails NEVER enter
+# the public repo — this KV maps a pending submission id to its submitter email
+# so the worker can thank them when the item is approved. To activate:
+#   npx wrangler kv namespace create SUBMITTER_EMAILS
+# then uncomment below with the printed id and redeploy. The code no-ops until then.
+# [[kv_namespaces]]
+# binding = "SUBMITTER_EMAILS"
+# id = "<paste-namespace-id-here>"

@@ -21,10 +21,36 @@ permalink: /
   </div>
 </section>
 
+<!-- Mission Statement -->
+<section class="py-16 section-warm">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-bold mb-6" style="color: var(--color-primary);">{{ homepage.mission.heading }}</h2>
+    <p class="text-lg leading-relaxed" style="color: var(--color-text-light);">
+      {{ homepage.mission.body }} <strong style="color: var(--color-text);">{{ homepage.mission.emphasis }}</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Section Cards -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12" style="color: var(--color-primary);">{{ homepage.features.heading }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for card in homepage.features.cards %}
+      <a href="{{ card.url }}" class="card p-8 no-underline block" style="color: var(--color-text);">
+        <div class="text-4xl mb-4" aria-hidden="true">{{ card.icon }}</div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">{{ card.title }}</h3>
+        <p style="color: var(--color-text-light);">{{ card.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- Contribute: add a resource + browser add-on -->
-<section class="py-10" style="background-color: var(--color-warm);">
+<section class="py-12" style="background-color: var(--color-warm);">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-2xl font-bold text-center mb-2" style="color: var(--color-primary);">Help build the directory</h2>
+    <h2 class="text-3xl font-bold text-center mb-2" style="color: var(--color-primary);">Help build the directory</h2>
     <p class="text-center mb-8 max-w-2xl mx-auto" style="color: var(--color-text-light);">
       Every family knows resources others are still searching for. Share what you know — we review each one before it goes live.
     </p>
@@ -48,32 +74,6 @@ permalink: /
         </p>
         <a href="/quick-submit/" class="btn-secondary no-underline text-center">Get the Browser Button</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Mission Statement -->
-<section class="py-16 section-warm">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-3xl font-bold mb-6" style="color: var(--color-primary);">{{ homepage.mission.heading }}</h2>
-    <p class="text-lg leading-relaxed" style="color: var(--color-text-light);">
-      {{ homepage.mission.body }} <strong style="color: var(--color-text);">{{ homepage.mission.emphasis }}</strong>
-    </p>
-  </div>
-</section>
-
-<!-- Section Cards -->
-<section class="py-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center mb-12" style="color: var(--color-primary);">{{ homepage.features.heading }}</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {% for card in homepage.features.cards %}
-      <a href="{{ card.url }}" class="card p-8 no-underline block" style="color: var(--color-text);">
-        <div class="text-4xl mb-4" aria-hidden="true">{{ card.icon }}</div>
-        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">{{ card.title }}</h3>
-        <p style="color: var(--color-text-light);">{{ card.description }}</p>
-      </a>
-      {% endfor %}
     </div>
   </div>
 </section>

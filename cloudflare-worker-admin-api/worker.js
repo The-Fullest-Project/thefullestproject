@@ -12,6 +12,7 @@
  * Admin routes (GitHub OAuth token with push permission, or X-Admin-Key):
  *   GET  /pending     — every pending envelope across the store
  *   POST /approve     — {items:[{id, file, payload?}]} or {all:true, type?}
+ *                       (+ Brevo approval thank-you to the submitter)
  *   POST /reject      — {items:[{id, file}], block?:true}
  *   POST /bulk-import — {items:[resource fields], detail?, publish?:false}
  *   GET  /emails      — Brevo contacts proxy (read-only)
@@ -27,6 +28,13 @@
  *   BREVO_LIST_ID             — numeric id of the "TFP Community" list
  *   BREVO_THANKYOU_TEMPLATE_ID — transactional template for submitter thank-you
  *   BREVO_DOI_TEMPLATE_ID     — double-opt-in confirmation template
+ *   BREVO_APPROVED_TEMPLATE_ID — transactional template emailed to a submitter
+ *                                when their submission is approved (no-op if unset)
+ *
+ * KV namespaces (wrangler.toml):
+ *   SUBMITTER_EMAILS          — private pendingId → submitter email map so the
+ *                               approval thank-you can reach the submitter; the
+ *                               public repo never stores emails. No-op if unbound.
  */
 
 const SUBMISSIONS_PATH = "pending/submissions.json";
@@ -83,7 +91,7 @@ export default {
         return cors(env, await handlePending(env));
       }
       if (request.method === "POST" && path === "/approve") {
-        return cors(env, await handleApprove(await request.json(), env, auth));
+        return cors(env, await handleApprove(await request.json(), env, auth, ctx));
       }
       if (request.method === "POST" && path === "/reject") {
         return cors(env, await handleReject(await request.json(), env, auth));
@@ -219,6 +227,11 @@ async function handleSubmit(request, env, ctx) {
   const email = (data.submitterEmail || "").trim();
   if (email) {
     ctx.waitUntil(brevoThankSubmitter(email, env).catch(() => {}));
+    // Privately remember who submitted (off-repo, in KV) so an admin approval
+    // can email them a thank-you. The public repo never stores emails.
+    if (env.SUBMITTER_EMAILS) {
+      ctx.waitUntil(env.SUBMITTER_EMAILS.put(envelope.id, email, { expirationTtl: 120 * 86400 }).catch(() => {}));
+    }
   }
 
   return json({
@@ -323,15 +336,16 @@ async function handlePending(env) {
 
 // ─── Admin: approve ──────────────────────────────────────────────────────────
 
-async function handleApprove(body, env, auth) {
+async function handleApprove(body, env, auth, ctx) {
   const selection = await resolveSelection(body, env);
   if (selection.error) return selection.error;
   const { byFile, overrides, newsletterFlags } = selection;
 
   const approved = [], failed = [];
+  const approvedSubmissions = []; // {id, name} of approved user submissions — for the thank-you email
   const paragraphCache = new Map(); // id -> generated paragraph (survives commit retries)
   const result = await commitWithRetry(env, async () => {
-    approved.length = 0; failed.length = 0;
+    approved.length = 0; failed.length = 0; approvedSubmissions.length = 0;
     const changes = new Map(); // repo path -> content string | null (delete)
     const liveCache = new Map();
 
@@ -367,6 +381,7 @@ async function handleApprove(body, env, auth) {
               live.push({ ...payload, dateAdded: today, origin: stripTimestamps(envl.origin) });
               changes.set(target, pretty(live));
               approved.push(envl.id);
+              if (envl.type === "submission") approvedSubmissions.push({ id: envl.id, name: payload.name });
 
               // Flagged for the newsletter: copy into the drafts store with an
               // AI-drafted (or template) starter paragraph, same atomic commit.
@@ -445,6 +460,12 @@ async function handleApprove(body, env, auth) {
   }, () => `Approve ${approved.length} item(s) via admin portal (by ${auth.actor})`);
 
   if (result.error) return result.error;
+
+  // Thank submitters whose items are now live (best-effort, off the response path)
+  if (ctx && env.SUBMITTER_EMAILS && approvedSubmissions.length) {
+    ctx.waitUntil(notifyApprovedSubmitters(approvedSubmissions, env));
+  }
+
   return json({ approved, failed, commitSha: result.sha });
 }
 
@@ -807,6 +828,37 @@ async function brevoThankSubmitter(email, env) {
     body: JSON.stringify({
       to: [{ email }],
       templateId: parseInt(env.BREVO_THANKYOU_TEMPLATE_ID, 10)
+    })
+  });
+}
+
+/** After an admin approves submissions, email each submitter a thank-you letting
+ *  them know their resource is now live. Looks up the address in the private
+ *  SUBMITTER_EMAILS KV map (populated at submit time), sends via a Brevo
+ *  transactional template, then clears the mapping. No-ops if KV, Brevo, or the
+ *  template id is unset. */
+async function notifyApprovedSubmitters(items, env) {
+  for (const it of items) {
+    try {
+      const email = await env.SUBMITTER_EMAILS.get(it.id);
+      if (!email) continue;
+      await brevoApprovalThankYou(email, it.name, env);
+      await env.SUBMITTER_EMAILS.delete(it.id);
+    } catch (err) {
+      console.log("approval email failed for", it.id, err.message);
+    }
+  }
+}
+
+async function brevoApprovalThankYou(email, resourceName, env) {
+  if (!brevoConfigured(env) || !env.BREVO_APPROVED_TEMPLATE_ID) return;
+  await fetch("https://api.brevo.com/v3/smtp/email", {
+    method: "POST",
+    headers: brevoHeaders(env),
+    body: JSON.stringify({
+      to: [{ email }],
+      templateId: parseInt(env.BREVO_APPROVED_TEMPLATE_ID, 10),
+      params: { RESOURCE_NAME: resourceName || "your resource" }
     })
   });
 }

@@ -55,7 +55,8 @@
       "equipment",
       "adaptive",
       "community",
-      "networking"
+      "networking",
+      "technology"
     ],
     "source": "https://www.abilities.com/",
     "lastScraped": "2026-03-08",
@@ -292,7 +293,8 @@
       "medicaid",
       "pediatric",
       "special-needs",
-      "home-delivery"
+      "home-delivery",
+      "daily-living"
     ],
     "source": "https://www.activstyle.com/",
     "lastScraped": "2026-03-08",
@@ -356,7 +358,9 @@
       "switch-adapted",
       "toys",
       "assistive-technology",
-      "switches"
+      "switches",
+      "communication",
+      "technology"
     ],
     "source": "https://adaptabilities.net",
     "lastScraped": "2026-03-09",
@@ -387,7 +391,8 @@
       "medicaid",
       "medicare",
       "pediatric",
-      "home-delivery"
+      "home-delivery",
+      "daily-living"
     ],
     "source": "https://aeroflowurology.com/",
     "lastScraped": "2026-03-08",
@@ -568,7 +573,8 @@
       "water",
       "accessibility",
       "recreation",
-      "adaptive"
+      "adaptive",
+      "mobility"
     ],
     "source": "https://www.aquatrek2.com/",
     "lastScraped": "2026-03-08",
@@ -927,7 +933,8 @@
       "turning-seat",
       "vehicle-modification",
       "transfer",
-      "car-seat"
+      "car-seat",
+      "seating-positioning"
     ],
     "source": "https://www.braunability.com/",
     "lastScraped": "2026-03-08",
@@ -1071,7 +1078,8 @@
       "caregiving-supplies",
       "home-delivery",
       "subscription",
-      "nurse-support"
+      "nurse-support",
+      "daily-living"
     ],
     "source": "https://www.carewell.com/",
     "lastScraped": "2026-03-08",
@@ -1516,7 +1524,8 @@
       "adaptive-utensils",
       "grip",
       "independent-eating",
-      "silverware"
+      "silverware",
+      "daily-living"
     ],
     "source": "https://diningwithdignity.com/",
     "lastScraped": "2026-03-08",
@@ -1686,7 +1695,10 @@
       "toys",
       "AAC",
       "cause-and-effect",
-      "sensory"
+      "sensory",
+      "communication",
+      "daily-living",
+      "technology"
     ],
     "source": "https://enablingdevices.com",
     "lastScraped": "2026-03-08",
@@ -1720,7 +1732,9 @@
       "switch-adapted",
       "toys",
       "assistive-technology",
-      "sensory"
+      "sensory",
+      "communication",
+      "technology"
     ],
     "source": "https://enablingdevices.com",
     "lastScraped": "2026-03-09",
@@ -1816,7 +1830,9 @@
       "adaptive-utensils",
       "dining",
       "independent-eating",
-      "OT-designed"
+      "OT-designed",
+      "daily-living",
+      "sensory"
     ],
     "source": "https://especialneeds.com/",
     "lastScraped": "2026-03-08",
@@ -2088,7 +2104,8 @@
       "wheelchair-accessories",
       "children",
       "mobility",
-      "postural-support"
+      "postural-support",
+      "seating-positioning"
     ],
     "source": "https://www.fireflyfriends.com/",
     "lastScraped": "2026-03-08",
@@ -2212,7 +2229,8 @@
       "all-terrain",
       "adaptive",
       "outdoor",
-      "equipment"
+      "equipment",
+      "mobility"
     ],
     "source": "https://www.gogrit.us/",
     "lastScraped": "2026-03-08",
@@ -2241,7 +2259,8 @@
       "home-delivery",
       "medicaid",
       "free-samples",
-      "major-brands"
+      "major-brands",
+      "daily-living"
     ],
     "source": "https://www.hdis.com/",
     "lastScraped": "2026-03-08",
@@ -2277,7 +2296,8 @@
       "home-delivery",
       "insurance",
       "medicaid",
-      "pediatric"
+      "pediatric",
+      "daily-living"
     ],
     "source": "https://www.hcd.com/",
     "lastScraped": "2026-03-08",
@@ -2432,7 +2452,8 @@
       "outdoor",
       "adaptive",
       "trail-chair",
-      "recreation"
+      "recreation",
+      "mobility"
     ],
     "source": "https://www.huckleberryhiking.com/",
     "lastScraped": "2026-03-08",
@@ -2550,7 +2571,9 @@
       "switch-adapted",
       "assistive-technology",
       "AAC",
-      "cause-and-effect"
+      "cause-and-effect",
+      "communication",
+      "technology"
     ],
     "source": "https://www.inclusivetlc.com",
     "lastScraped": "2026-03-09",
@@ -2913,7 +2936,8 @@
       "switch-adapted",
       "toys",
       "lending-library",
-      "toy-adaptation"
+      "toy-adaptation",
+      "technology"
     ],
     "source": "https://www.lekotek.org",
     "lastScraped": "2026-03-09",
@@ -3106,7 +3130,8 @@
       "wheelchair",
       "custom",
       "affordable",
-      "adaptive"
+      "adaptive",
+      "mobility"
     ],
     "source": "https://www.makegood.design/",
     "lastScraped": "2026-03-08",
@@ -3320,7 +3345,11 @@
       "mount",
       "AAC",
       "motorized",
-      "device-mounting"
+      "device-mounting",
+      "mobility",
+      "communication",
+      "seating-positioning",
+      "technology"
     ],
     "source": "https://www.mountnmover.com",
     "lastScraped": "2026-03-08",
@@ -3727,7 +3756,8 @@
       "special-needs",
       "youth",
       "teen",
-      "free-samples"
+      "free-samples",
+      "daily-living"
     ],
     "source": "https://www.northshorecare.com/",
     "lastScraped": "2026-03-08",
@@ -3759,7 +3789,9 @@
       "complex-rehab",
       "custom",
       "mobility",
-      "insurance"
+      "insurance",
+      "daily-living",
+      "seating-positioning"
     ],
     "source": "https://www.numotion.com/",
     "lastScraped": "2026-03-08",
@@ -3938,7 +3970,8 @@
       "incontinence",
       "IDD",
       "caregiving-supplies",
-      "expert-support"
+      "expert-support",
+      "daily-living"
     ],
     "source": "https://www.parentgiving.com/",
     "lastScraped": "2026-03-08",
@@ -4009,7 +4042,9 @@
       "power-wheelchair",
       "seating",
       "positioning",
-      "mobility"
+      "mobility",
+      "daily-living",
+      "seating-positioning"
     ],
     "source": "https://www.permobil.com/",
     "lastScraped": "2026-03-08",
@@ -4137,7 +4172,10 @@
       "mount",
       "phone",
       "tablet",
-      "hands-free"
+      "hands-free",
+      "mobility",
+      "daily-living",
+      "technology"
     ],
     "source": "https://rammount.com/collections/accessibility-wheelchair-mounts",
     "lastScraped": "2026-03-08",
@@ -4209,7 +4247,9 @@
       "stander",
       "bath",
       "pediatric",
-      "adaptive-equipment"
+      "adaptive-equipment",
+      "mobility",
+      "daily-living"
     ],
     "source": "https://www.rifton.com/",
     "lastScraped": "2026-03-08",
@@ -4305,7 +4345,8 @@
       "pediatric",
       "medicaid",
       "catheters",
-      "special-needs"
+      "special-needs",
+      "daily-living"
     ],
     "source": "https://www.s2medicalsupply.com/kids-corner/",
     "lastScraped": "2026-03-08",
@@ -4750,7 +4791,10 @@
       "quickie",
       "mobility-scooter",
       "pediatric",
-      "seating"
+      "seating",
+      "mobility",
+      "daily-living",
+      "seating-positioning"
     ],
     "source": "https://www.sunrisemedical.com/",
     "lastScraped": "2026-03-08",
@@ -4781,7 +4825,8 @@
       "switch-adapted",
       "toys",
       "diy",
-      "children"
+      "children",
+      "technology"
     ],
     "source": "https://www.switchtoyfamily.com/",
     "lastScraped": "2026-03-09",
@@ -4809,7 +4854,8 @@
     "tags": [
       "adaptive-gear",
       "wheelchair",
-      "backpack"
+      "backpack",
+      "mobility"
     ],
     "source": "https://www.target.com",
     "lastScraped": "2026-03-07",
@@ -5387,7 +5433,8 @@
       "communication",
       "eye-tracking",
       "assistive-technology",
-      "speech"
+      "speech",
+      "technology"
     ],
     "source": "https://www.tobiidynavox.com/",
     "lastScraped": "2026-03-08",
@@ -5724,7 +5771,8 @@
       "youth",
       "age-appropriate",
       "diapers",
-      "adaptive"
+      "adaptive",
+      "daily-living"
     ],
     "source": "https://youthcrews.com/",
     "lastScraped": "2026-03-08",
@@ -6142,7 +6190,9 @@
     "tags": [
       "switch-adapted toys",
       "communication devices",
-      "SLP-owned"
+      "SLP-owned",
+      "communication",
+      "technology"
     ],
     "source": "https://www.adaptivetechsolutions.com",
     "lastScraped": "2026-03-09",
@@ -7167,7 +7217,8 @@
       "weighted blankets",
       "fidgets",
       "visual schedules",
-      "autism"
+      "autism",
+      "sensory"
     ],
     "source": "https://www.autism-products.com/",
     "lastScraped": "2026-03-10",
@@ -7586,7 +7637,9 @@
       "sensory products",
       "therapeutic",
       "weighted",
-      "fine motor"
+      "fine motor",
+      "daily-living",
+      "sensory"
     ],
     "source": "https://funandfunction.com/",
     "lastScraped": "2026-03-10",
@@ -7650,7 +7703,9 @@
       "oral motor",
       "chewable jewelry",
       "feeding therapy",
-      "sensory"
+      "sensory",
+      "communication",
+      "daily-living"
     ],
     "source": "https://www.arktherapeutic.com/",
     "lastScraped": "2026-03-10",
@@ -7713,7 +7768,8 @@
       "sensory integration",
       "therapy equipment",
       "swings",
-      "sensory rooms"
+      "sensory rooms",
+      "sensory"
     ],
     "source": "https://www.southpaw.com/",
     "lastScraped": "2026-03-10",
@@ -7809,7 +7865,9 @@
       "chew necklaces",
       "headphones",
       "fidgets",
-      "weighted"
+      "weighted",
+      "sensory",
+      "technology"
     ],
     "source": "https://specialsupplies.com/",
     "lastScraped": "2026-03-10",
@@ -7842,7 +7900,8 @@
       "time management",
       "autism",
       "ADHD",
-      "classroom"
+      "classroom",
+      "technology"
     ],
     "source": "https://www.timetimer.com/",
     "lastScraped": "2026-03-10",
@@ -8083,7 +8142,8 @@
       "sensory products",
       "fidget tools",
       "therapy equipment",
-      "OT supplies"
+      "OT supplies",
+      "sensory"
     ],
     "source": "https://www.therapyshoppe.com/",
     "lastScraped": "2026-03-10",
@@ -8115,7 +8175,8 @@
       "weighted blankets",
       "sensory products",
       "handcrafted",
-      "customizable"
+      "customizable",
+      "sensory"
     ],
     "source": "https://sensorygoods.com/",
     "lastScraped": "2026-03-10",
@@ -8146,7 +8207,8 @@
       "sensory toys",
       "weighted blankets",
       "social skills",
-      "safety products"
+      "safety products",
+      "sensory"
     ],
     "source": "https://autismcommunitystore.com/",
     "lastScraped": "2026-03-10",
@@ -8175,7 +8237,8 @@
       "sensory room",
       "multisensory toys",
       "therapeutic products",
-      "sensory design"
+      "sensory design",
+      "sensory"
     ],
     "source": "https://specialneedstoys.com/usa/",
     "lastScraped": "2026-03-10",
@@ -8206,7 +8269,9 @@
       "ABA therapy",
       "visual timers",
       "communication aids",
-      "teaching tools"
+      "teaching tools",
+      "communication",
+      "technology"
     ],
     "source": "https://difflearn.com/",
     "lastScraped": "2026-03-10",
@@ -8384,7 +8449,8 @@
       "special needs toys",
       "games",
       "fine motor",
-      "educational"
+      "educational",
+      "sensory"
     ],
     "source": "https://www.fatbraintoys.com/special_needs/",
     "lastScraped": "2026-03-10",
@@ -8415,7 +8481,8 @@
       "daily living aids",
       "low vision",
       "adaptive kitchen",
-      "independence"
+      "independence",
+      "daily-living"
     ],
     "source": "https://independentliving.com/",
     "lastScraped": "2026-03-10",
@@ -9049,7 +9116,8 @@
       "transfer-seat",
       "vehicle-seat",
       "wheelchair",
-      "mobility"
+      "mobility",
+      "seating-positioning"
     ],
     "source": "https://www.braunability.com/",
     "lastScraped": "2026-04-21",
@@ -9381,7 +9449,8 @@
     "cost": "Varies",
     "tags": [
       "adaptive-equipment",
-      "assistive-technology"
+      "assistive-technology",
+      "technology"
     ],
     "source": "https://www.bowheadcorp.com",
     "lastScraped": "2026-04-21",
@@ -9505,7 +9574,8 @@
       "safety-bed",
       "special-needs",
       "seizure",
-      "sleep"
+      "sleep",
+      "mobility"
     ],
     "source": "https://sleepsafebed.com",
     "lastScraped": "2026-04-21",

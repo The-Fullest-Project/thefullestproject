@@ -248,7 +248,8 @@
     "cost": "",
     "tags": [
       "assistive-technology",
-      "loaner"
+      "loaner",
+      "technology"
     ],
     "source": "https://rva.atdevicesforkids.org",
     "lastScraped": "2026-03-06",
@@ -1736,7 +1737,10 @@
       "assistive-technology",
       "free-equipment",
       "walkers",
-      "wheelchairs"
+      "wheelchairs",
+      "mobility",
+      "daily-living",
+      "technology"
     ],
     "source": "https://www.equipforchildren.org/",
     "lastScraped": "2026-03-09",
@@ -5354,7 +5358,8 @@
       "mobility equipment",
       "wheelchair",
       "donated equipment",
-      "low income"
+      "low income",
+      "mobility"
     ],
     "source": "https://www.free-foundation.org",
     "lastScraped": "2026-03-09",
