@@ -10389,5 +10389,30 @@
       "type": "quick-submit",
       "detail": "bookmarklet"
     }
+  },
+  {
+    "name": "Special Needs Bed | Kayser Betten US",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Beds designed for more than sleep.  KayserBetten facilitates your loved one's complex care at home.  At Kayser Betten US, we specialize in medical safety beds designed for children and adults with special needs, disabilities, and complex medical conditions. Our beds are FDA registered and provide a secure sleep environment while meeting all FDA entrapment prevention guidelines for use in home care, residential facilities, and clinical settings.",
+    "phone": "(844) 213-8548",
+    "website": "https://www.kayserbettenus.com/?useYB=1&cam=ppc-g-m249535-c829373-g-&gad_source=1&gad_campaignid=19794738847&gbraid=0AAAAAD_KmBeZT4CewoLN0HbVVsquQy8o-&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWzg_euBd881I8VOOjHNYHpyLbov619UQ1phDvKbT40s2dt1TRQuTPjAaAtyJEALw_wcB",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Safety bed"
+    ],
+    "source": "https://www.kayserbettenus.com/?useYB=1&cam=ppc-g-m249535-c829373-g-&gad_source=1&gad_campaignid=19794738847&gbraid=0AAAAAD_KmBeZT4CewoLN0HbVVsquQy8o-&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWzg_euBd881I8VOOjHNYHpyLbov619UQ1phDvKbT40s2dt1TRQuTPjAaAtyJEALw_wcB",
+    "lastScraped": "2026-07-10",
+    "dateAdded": "2026-07-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
