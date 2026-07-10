@@ -56,34 +56,5 @@
       "source": "https://specialneedsusa.com",
       "lastScraped": "2026-07-07"
     }
-  },
-  {
-    "id": "sub-20260710-c0c0f751",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "quick-submit",
-      "detail": "bookmarklet",
-      "submittedAt": "2026-07-10T02:27:49.965Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Beds by George",
-      "category": [
-        "equipment"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "We are a family owned company that builds beautiful safety beds for special needs children, youth, adults, as well as handicapped, disabled and medically fragile individuals who need extra fall and entrapment protection while in bed.",
-      "phone": "219 Caravan Drive Elkhart, IN  46514",
-      "website": "https://bedsbygeorge.com/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [],
-      "source": "https://bedsbygeorge.com/",
-      "lastScraped": "2026-07-10"
-    }
   }
 ]
