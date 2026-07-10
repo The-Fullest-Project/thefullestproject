@@ -10339,5 +10339,30 @@
       "type": "quick-submit",
       "detail": "bookmarklet"
     }
+  },
+  {
+    "name": "Noah's World — Autism Sleep Bed",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Noah's World makes the patented enclosed safety bed for children with autism and other complex needs. Hand-built solid wood, padded mesh canopy, made to order in 11 fabric colors.",
+    "phone": "matt@noahsworldllc.com",
+    "website": "https://noahsworldllc.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Safety bed"
+    ],
+    "source": "https://noahsworldllc.com/",
+    "lastScraped": "2026-07-10",
+    "dateAdded": "2026-07-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
