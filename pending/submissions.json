@@ -114,5 +114,34 @@
       "source": "https://bedsbygeorge.com/",
       "lastScraped": "2026-07-10"
     }
+  },
+  {
+    "id": "sub-20260710-77e7f23c",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-07-10T02:30:51.889Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Courtney Bed",
+      "category": [
+        "equipment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Our product offers a solid hardwood frame, a durable high-sided fabric enclosure, and a safety zipper sheath. Understanding individual needs can change, our bed offers convertibility to change the height, width, and features at any time. We deliver a product that can be used from early childhood into late adulthood.",
+      "phone": "sales@courtneybed.com",
+      "website": "https://courtneybed.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://courtneybed.com/",
+      "lastScraped": "2026-07-10"
+    }
   }
 ]
