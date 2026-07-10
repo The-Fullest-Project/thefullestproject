@@ -143,5 +143,34 @@
       "source": "https://courtneybed.com/",
       "lastScraped": "2026-07-10"
     }
+  },
+  {
+    "id": "sub-20260710-b24e2db2",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-07-10T02:57:53.313Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Pedicraft",
+      "category": [
+        "equipment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Offers the safety of an enclosed crib bed and a completely padded interior - no exposed metal parts.he Canopy enclosure is constructed of strong polyester mesh and Sure-Chek healthcare vinyl.  The vinyl is bacteria resistant and the cover can be removed for cleaning. The Canopy Bed mattress is constructed of high density, fire-retardant foam covered in Sure-Chek Comfort vinyl. The Height Adjustable model provides convenience for the caregiver when a patient needs frequent medical attention. Raise the bed surface 10 inches by a hydraulic hand crank.",
+      "phone": "904-396-9627",
+      "website": "https://www.pedicraft.com/canopybeds.html",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.pedicraft.com/canopybeds.html",
+      "lastScraped": "2026-07-10"
+    }
   }
 ]
