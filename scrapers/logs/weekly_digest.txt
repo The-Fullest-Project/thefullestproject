@@ -1,35 +1,35 @@
-Weekly Scrape Digest — 2026-07-05
+Weekly Scrape Digest — 2026-07-12
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 4 pending
-  resource: 1190 pending (266 new this run)
-  spotlight: 7 pending (3 new this run)
-  story: 51 pending (15 new this run)
-  submission: 1 pending
+  blog: 6 pending (2 new this run)
+  resource: 1462 pending (272 new this run)
+  spotlight: 8 pending (1 new this run)
+  story: 64 pending (13 new this run)
+  submission: 2 pending
 
 Scraper: osm_overpass
-  Entries processed: 920
-  - [error] OH: HTTP Error 429: Too Many Requests
-  - [error] PA: HTTP Error 429: Too Many Requests
-  - [error] VT: HTTP Error 429: Too Many Requests
-  - [error] AL: HTTP Error 504: Gateway Timeout
-  - [error] DE: HTTP Error 429: Too Many Requests
-  - [error] FL: HTTP Error 504: Gateway Timeout
-  - [error] ID: HTTP Error 429: Too Many Requests
-  - [error] KY: HTTP Error 429: Too Many Requests
+  Entries processed: 546
+  - [error] NY: HTTP Error 429: Too Many Requests
+  - [error] NC: HTTP Error 429: Too Many Requests
+  - [error] OK: HTTP Error 429: Too Many Requests
+  - [error] SC: HTTP Error 429: Too Many Requests
+  - [error] SD: HTTP Error 504: Gateway Timeout
+  - [error] WI: HTTP Error 429: Too Many Requests
+  - [error] CA: HTTP Error 429: Too Many Requests
 
 Scraper: cms_providers
   Entries processed: 79
 
 Scraper: spotlight_scraper
-  Entries processed: 3
-  - [queued] Summer adventures for all
-  - [queued] Turning loss into purpose
-  - [queued] Harvard to Launch Online Hub for Accessible Teaching Resources
+  Entries processed: 2
+  - [queued] Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera
+  - [queued] Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera
 
 Scraper: blog_content
-  Entries processed: 1
+  Entries processed: 2
+  - [queued] Deaf and Blind? How They Can Still Communicate and Participate in Worship - Adventist Review
+  - [queued] NC’s childcare crisis disproportionately affects disabled kids. A lawmaker says it's time for change - NC Newsline
 
 —
 The Fullest Project | thefullestproject.org

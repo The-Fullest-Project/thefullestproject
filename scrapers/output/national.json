@@ -55,7 +55,8 @@
       "equipment",
       "adaptive",
       "community",
-      "networking"
+      "networking",
+      "technology"
     ],
     "source": "https://www.abilities.com/",
     "lastScraped": "2026-03-08",
@@ -110,15 +111,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "financial-planning",
-      "savings",
+      "financial",
       "disability",
       "tax-advantaged",
-      "financial",
+      "savings",
+      "financial-planning",
       "able-act"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "AbleData",
@@ -138,7 +139,7 @@
       "assistive-tech"
     ],
     "source": "https://abledata.acl.gov/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "AbleGamers Charity",
@@ -241,8 +242,8 @@
       "influencers",
       "recreation"
     ],
-    "location": "Northern Virginia",
-    "area": "",
+    "location": "Virginia",
+    "area": "Northern Virginia",
     "description": "Instagram account highlighting accessible playgrounds, parks, and play spaces in Virginia. Reviews and rates play areas for wheelchair accessibility and inclusive design.",
     "phone": "",
     "website": "https://www.instagram.com/accessibleplayva/",
@@ -292,7 +293,8 @@
       "medicaid",
       "pediatric",
       "special-needs",
-      "home-delivery"
+      "home-delivery",
+      "daily-living"
     ],
     "source": "https://www.activstyle.com/",
     "lastScraped": "2026-03-08",
@@ -356,7 +358,9 @@
       "switch-adapted",
       "toys",
       "assistive-technology",
-      "switches"
+      "switches",
+      "communication",
+      "technology"
     ],
     "source": "https://adaptabilities.net",
     "lastScraped": "2026-03-09",
@@ -387,7 +391,8 @@
       "medicaid",
       "medicare",
       "pediatric",
-      "home-delivery"
+      "home-delivery",
+      "daily-living"
     ],
     "source": "https://aeroflowurology.com/",
     "lastScraped": "2026-03-08",
@@ -479,7 +484,7 @@
       "camps"
     ],
     "source": "https://www.acacamps.org/campers-families/find-a-camp",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "AngelSense GPS Tracker",
@@ -568,7 +573,8 @@
       "water",
       "accessibility",
       "recreation",
-      "adaptive"
+      "adaptive",
+      "mobility"
     ],
     "source": "https://www.aquatrek2.com/",
     "lastScraped": "2026-03-08",
@@ -624,7 +630,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "AssistiveWare - Proloquo2Go",
@@ -927,7 +933,8 @@
       "turning-seat",
       "vehicle-modification",
       "transfer",
-      "car-seat"
+      "car-seat",
+      "seating-positioning"
     ],
     "source": "https://www.braunability.com/",
     "lastScraped": "2026-03-08",
@@ -1042,15 +1049,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "anticipatory-grief",
-      "help-desk",
-      "support",
       "caregiver",
+      "grief",
+      "anticipatory-grief",
+      "support",
       "mental-health",
-      "grief"
+      "help-desk"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Carewell",
@@ -1071,7 +1078,8 @@
       "caregiving-supplies",
       "home-delivery",
       "subscription",
-      "nurse-support"
+      "nurse-support",
+      "daily-living"
     ],
     "source": "https://www.carewell.com/",
     "lastScraped": "2026-03-08",
@@ -1310,7 +1318,7 @@
       "assistive-tech"
     ],
     "source": "https://www.closingthegap.com/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Coalition for Responsible Home Education (CRHE)",
@@ -1516,7 +1524,8 @@
       "adaptive-utensils",
       "grip",
       "independent-eating",
-      "silverware"
+      "silverware",
+      "daily-living"
     ],
     "source": "https://diningwithdignity.com/",
     "lastScraped": "2026-03-08",
@@ -1601,7 +1610,7 @@
       "early-intervention"
     ],
     "source": "https://ectacenter.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Easterseals",
@@ -1686,7 +1695,10 @@
       "toys",
       "AAC",
       "cause-and-effect",
-      "sensory"
+      "sensory",
+      "communication",
+      "daily-living",
+      "technology"
     ],
     "source": "https://enablingdevices.com",
     "lastScraped": "2026-03-08",
@@ -1720,7 +1732,9 @@
       "switch-adapted",
       "toys",
       "assistive-technology",
-      "sensory"
+      "sensory",
+      "communication",
+      "technology"
     ],
     "source": "https://enablingdevices.com",
     "lastScraped": "2026-03-09",
@@ -1816,7 +1830,9 @@
       "adaptive-utensils",
       "dining",
       "independent-eating",
-      "OT-designed"
+      "OT-designed",
+      "daily-living",
+      "sensory"
     ],
     "source": "https://especialneeds.com/",
     "lastScraped": "2026-03-08",
@@ -1935,7 +1951,7 @@
       "insurance"
     ],
     "source": "https://familyvoices.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Feeding Matters",
@@ -2064,7 +2080,7 @@
       "medical"
     ],
     "source": "https://palfreyassociates.com/disability-friendly-doctor/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Firefly by Leckey",
@@ -2088,7 +2104,8 @@
       "wheelchair-accessories",
       "children",
       "mobility",
-      "postural-support"
+      "postural-support",
+      "seating-positioning"
     ],
     "source": "https://www.fireflyfriends.com/",
     "lastScraped": "2026-03-08",
@@ -2212,7 +2229,8 @@
       "all-terrain",
       "adaptive",
       "outdoor",
-      "equipment"
+      "equipment",
+      "mobility"
     ],
     "source": "https://www.gogrit.us/",
     "lastScraped": "2026-03-08",
@@ -2241,7 +2259,8 @@
       "home-delivery",
       "medicaid",
       "free-samples",
-      "major-brands"
+      "major-brands",
+      "daily-living"
     ],
     "source": "https://www.hdis.com/",
     "lastScraped": "2026-03-08",
@@ -2277,7 +2296,8 @@
       "home-delivery",
       "insurance",
       "medicaid",
-      "pediatric"
+      "pediatric",
+      "daily-living"
     ],
     "source": "https://www.hcd.com/",
     "lastScraped": "2026-03-08",
@@ -2432,7 +2452,8 @@
       "outdoor",
       "adaptive",
       "trail-chair",
-      "recreation"
+      "recreation",
+      "mobility"
     ],
     "source": "https://www.huckleberryhiking.com/",
     "lastScraped": "2026-03-08",
@@ -2460,7 +2481,7 @@
       "housing"
     ],
     "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "HumanWare - Braille & Low Vision",
@@ -2550,7 +2571,9 @@
       "switch-adapted",
       "assistive-technology",
       "AAC",
-      "cause-and-effect"
+      "cause-and-effect",
+      "communication",
+      "technology"
     ],
     "source": "https://www.inclusivetlc.com",
     "lastScraped": "2026-03-09",
@@ -2913,7 +2936,8 @@
       "switch-adapted",
       "toys",
       "lending-library",
-      "toy-adaptation"
+      "toy-adaptation",
+      "technology"
     ],
     "source": "https://www.lekotek.org",
     "lastScraped": "2026-03-09",
@@ -3106,7 +3130,8 @@
       "wheelchair",
       "custom",
       "affordable",
-      "adaptive"
+      "adaptive",
+      "mobility"
     ],
     "source": "https://www.makegood.design/",
     "lastScraped": "2026-03-08",
@@ -3234,7 +3259,7 @@
       "sports"
     ],
     "source": "https://www.miracleleague.com/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "MobilityWorks",
@@ -3320,7 +3345,11 @@
       "mount",
       "AAC",
       "motorized",
-      "device-mounting"
+      "device-mounting",
+      "mobility",
+      "communication",
+      "seating-positioning",
+      "technology"
     ],
     "source": "https://www.mountnmover.com",
     "lastScraped": "2026-03-08",
@@ -3465,7 +3494,7 @@
       "financial"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "National Down Syndrome Congress",
@@ -3727,7 +3756,8 @@
       "special-needs",
       "youth",
       "teen",
-      "free-samples"
+      "free-samples",
+      "daily-living"
     ],
     "source": "https://www.northshorecare.com/",
     "lastScraped": "2026-03-08",
@@ -3759,7 +3789,9 @@
       "complex-rehab",
       "custom",
       "mobility",
-      "insurance"
+      "insurance",
+      "daily-living",
+      "seating-positioning"
     ],
     "source": "https://www.numotion.com/",
     "lastScraped": "2026-03-08",
@@ -3884,7 +3916,7 @@
       "transition"
     ],
     "source": "https://www.pacer.org/transition/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Parent Center Hub (CPIR)",
@@ -3938,7 +3970,8 @@
       "incontinence",
       "IDD",
       "caregiving-supplies",
-      "expert-support"
+      "expert-support",
+      "daily-living"
     ],
     "source": "https://www.parentgiving.com/",
     "lastScraped": "2026-03-08",
@@ -4009,7 +4042,9 @@
       "power-wheelchair",
       "seating",
       "positioning",
-      "mobility"
+      "mobility",
+      "daily-living",
+      "seating-positioning"
     ],
     "source": "https://www.permobil.com/",
     "lastScraped": "2026-03-08",
@@ -4137,7 +4172,10 @@
       "mount",
       "phone",
       "tablet",
-      "hands-free"
+      "hands-free",
+      "mobility",
+      "daily-living",
+      "technology"
     ],
     "source": "https://rammount.com/collections/accessibility-wheelchair-mounts",
     "lastScraped": "2026-03-08",
@@ -4165,7 +4203,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Rebuilding Together",
@@ -4185,7 +4223,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Rifton Equipment",
@@ -4209,7 +4247,9 @@
       "stander",
       "bath",
       "pediatric",
-      "adaptive-equipment"
+      "adaptive-equipment",
+      "mobility",
+      "daily-living"
     ],
     "source": "https://www.rifton.com/",
     "lastScraped": "2026-03-08",
@@ -4305,7 +4345,8 @@
       "pediatric",
       "medicaid",
       "catheters",
-      "special-needs"
+      "special-needs",
+      "daily-living"
     ],
     "source": "https://www.s2medicalsupply.com/kids-corner/",
     "lastScraped": "2026-03-08",
@@ -4390,15 +4431,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "network",
-      "support",
+      "peer",
       "advocacy",
       "sibling-support",
-      "peer",
+      "support",
+      "network",
       "sibling"
     ],
     "source": "https://www.siblingleadership.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -4418,7 +4459,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Smartbox - Grid AAC",
@@ -4470,7 +4511,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Sonic Alert",
@@ -4614,7 +4655,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Special Olympics",
@@ -4634,7 +4675,7 @@
       "sports"
     ],
     "source": "https://www.specialolympics.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "SPED Homeschool",
@@ -4750,7 +4791,10 @@
       "quickie",
       "mobility-scooter",
       "pediatric",
-      "seating"
+      "seating",
+      "mobility",
+      "daily-living",
+      "seating-positioning"
     ],
     "source": "https://www.sunrisemedical.com/",
     "lastScraped": "2026-03-08",
@@ -4781,7 +4825,8 @@
       "switch-adapted",
       "toys",
       "diy",
-      "children"
+      "children",
+      "technology"
     ],
     "source": "https://www.switchtoyfamily.com/",
     "lastScraped": "2026-03-09",
@@ -4809,7 +4854,8 @@
     "tags": [
       "adaptive-gear",
       "wheelchair",
-      "backpack"
+      "backpack",
+      "mobility"
     ],
     "source": "https://www.target.com",
     "lastScraped": "2026-03-07",
@@ -5265,7 +5311,7 @@
       "transition"
     ],
     "source": "https://thinkcollege.net/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "This Beach Is Loud!",
@@ -5387,7 +5433,8 @@
       "communication",
       "eye-tracking",
       "assistive-technology",
-      "speech"
+      "speech",
+      "technology"
     ],
     "source": "https://www.tobiidynavox.com/",
     "lastScraped": "2026-03-08",
@@ -5724,7 +5771,8 @@
       "youth",
       "age-appropriate",
       "diapers",
-      "adaptive"
+      "adaptive",
+      "daily-living"
     ],
     "source": "https://youthcrews.com/",
     "lastScraped": "2026-03-08",
@@ -6142,7 +6190,9 @@
     "tags": [
       "switch-adapted toys",
       "communication devices",
-      "SLP-owned"
+      "SLP-owned",
+      "communication",
+      "technology"
     ],
     "source": "https://www.adaptivetechsolutions.com",
     "lastScraped": "2026-03-09",
@@ -6258,7 +6308,7 @@
     "description": "Family-started foundation honoring Julia, who passed from I-cell disease. Fills non-medical gaps for children who are seriously ill or have special needs — building ramps, providing adaptive equipment, granting wishes, home modifications, and dream trips for families.",
     "phone": "",
     "website": "https://www.sweetjuliagrace.org/",
-    "address": "",
+    "address": "9000 Mike Garcia Drive #140, Manassas, VA 20109",
     "ageRange": "0-18",
     "disabilityTypes": [
       "I-cell disease",
@@ -7167,7 +7217,8 @@
       "weighted blankets",
       "fidgets",
       "visual schedules",
-      "autism"
+      "autism",
+      "sensory"
     ],
     "source": "https://www.autism-products.com/",
     "lastScraped": "2026-03-10",
@@ -7586,7 +7637,9 @@
       "sensory products",
       "therapeutic",
       "weighted",
-      "fine motor"
+      "fine motor",
+      "daily-living",
+      "sensory"
     ],
     "source": "https://funandfunction.com/",
     "lastScraped": "2026-03-10",
@@ -7650,7 +7703,9 @@
       "oral motor",
       "chewable jewelry",
       "feeding therapy",
-      "sensory"
+      "sensory",
+      "communication",
+      "daily-living"
     ],
     "source": "https://www.arktherapeutic.com/",
     "lastScraped": "2026-03-10",
@@ -7713,7 +7768,8 @@
       "sensory integration",
       "therapy equipment",
       "swings",
-      "sensory rooms"
+      "sensory rooms",
+      "sensory"
     ],
     "source": "https://www.southpaw.com/",
     "lastScraped": "2026-03-10",
@@ -7809,7 +7865,9 @@
       "chew necklaces",
       "headphones",
       "fidgets",
-      "weighted"
+      "weighted",
+      "sensory",
+      "technology"
     ],
     "source": "https://specialsupplies.com/",
     "lastScraped": "2026-03-10",
@@ -7842,7 +7900,8 @@
       "time management",
       "autism",
       "ADHD",
-      "classroom"
+      "classroom",
+      "technology"
     ],
     "source": "https://www.timetimer.com/",
     "lastScraped": "2026-03-10",
@@ -8083,7 +8142,8 @@
       "sensory products",
       "fidget tools",
       "therapy equipment",
-      "OT supplies"
+      "OT supplies",
+      "sensory"
     ],
     "source": "https://www.therapyshoppe.com/",
     "lastScraped": "2026-03-10",
@@ -8115,7 +8175,8 @@
       "weighted blankets",
       "sensory products",
       "handcrafted",
-      "customizable"
+      "customizable",
+      "sensory"
     ],
     "source": "https://sensorygoods.com/",
     "lastScraped": "2026-03-10",
@@ -8146,7 +8207,8 @@
       "sensory toys",
       "weighted blankets",
       "social skills",
-      "safety products"
+      "safety products",
+      "sensory"
     ],
     "source": "https://autismcommunitystore.com/",
     "lastScraped": "2026-03-10",
@@ -8175,7 +8237,8 @@
       "sensory room",
       "multisensory toys",
       "therapeutic products",
-      "sensory design"
+      "sensory design",
+      "sensory"
     ],
     "source": "https://specialneedstoys.com/usa/",
     "lastScraped": "2026-03-10",
@@ -8206,7 +8269,9 @@
       "ABA therapy",
       "visual timers",
       "communication aids",
-      "teaching tools"
+      "teaching tools",
+      "communication",
+      "technology"
     ],
     "source": "https://difflearn.com/",
     "lastScraped": "2026-03-10",
@@ -8384,7 +8449,8 @@
       "special needs toys",
       "games",
       "fine motor",
-      "educational"
+      "educational",
+      "sensory"
     ],
     "source": "https://www.fatbraintoys.com/special_needs/",
     "lastScraped": "2026-03-10",
@@ -8415,7 +8481,8 @@
       "daily living aids",
       "low vision",
       "adaptive kitchen",
-      "independence"
+      "independence",
+      "daily-living"
     ],
     "source": "https://independentliving.com/",
     "lastScraped": "2026-03-10",
@@ -9049,7 +9116,8 @@
       "transfer-seat",
       "vehicle-seat",
       "wheelchair",
-      "mobility"
+      "mobility",
+      "seating-positioning"
     ],
     "source": "https://www.braunability.com/",
     "lastScraped": "2026-04-21",
@@ -9381,7 +9449,8 @@
     "cost": "Varies",
     "tags": [
       "adaptive-equipment",
-      "assistive-technology"
+      "assistive-technology",
+      "technology"
     ],
     "source": "https://www.bowheadcorp.com",
     "lastScraped": "2026-04-21",
@@ -9505,7 +9574,8 @@
       "safety-bed",
       "special-needs",
       "seizure",
-      "sleep"
+      "sleep",
+      "mobility"
     ],
     "source": "https://sleepsafebed.com",
     "lastScraped": "2026-04-21",
@@ -9864,9 +9934,9 @@
     "location": "National",
     "area": "",
     "description": "Nonprofit empowering individuals with disabilities through employment services, day support, creative arts, and community integration programs.",
-    "phone": "",
+    "phone": "(804) 358-1874",
     "website": "https://soar365.org",
-    "address": "",
+    "address": "3600 Saunders Ave, Richmond, VA 23227",
     "ageRange": "All ages",
     "disabilityTypes": [],
     "cost": "Varies",
@@ -10172,7 +10242,7 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/",
-    "lastScraped": "2026-07-05"
+    "lastScraped": "2026-07-12"
   },
   {
     "name": "Medically Complex Caregiver",
@@ -10199,6 +10269,175 @@
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "Courtney Bed",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "High-Sided Medical Bed - Optional Top for Full Enclosure.\r\nOur product offers a solid hardwood frame, a durable high-sided fabric enclosure, and a safety zipper sheath. Understanding individual needs can change, our bed offers convertibility to change the height, width, and features at any time.",
+    "phone": "sales@courtneybed.com",
+    "website": "https://courtneybed.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [],
+    "source": "https://courtneybed.com/",
+    "lastScraped": "2026-07-06",
+    "dateAdded": "2026-07-07",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "The Simple Seed",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Clothing company with an adaptive tube access clothing line.",
+    "phone": "",
+    "website": "https://www.simpleseedbaby.com/collections/adaptive-tube-access",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [],
+    "source": "https://www.simpleseedbaby.com/collections/adaptive-tube-access",
+    "lastScraped": "2026-07-06",
+    "dateAdded": "2026-07-07",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Six Southern Babes",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Infant and child clothing company with a medically adaptable clothing line. Six Southern Babes was built on a simple belief: comfort and purpose belong in the same closet. Every piece we make is designed with both style and function in mind, with a medically adaptable option in every print. Because fashion should be inclusive for every family.",
+    "phone": "",
+    "website": "https://sixsouthernbabes.com/collections/instock-medically-adaptable-1?filter.v.availability=1",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [],
+    "source": "https://sixsouthernbabes.com/collections/instock-medically-adaptable-1?filter.v.availability=1",
+    "lastScraped": "2026-07-06",
+    "dateAdded": "2026-07-07",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Noah's World — Autism Sleep Bed",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Noah's World makes the patented enclosed safety bed for children with autism and other complex needs. Hand-built solid wood, padded mesh canopy, made to order in 11 fabric colors.",
+    "phone": "matt@noahsworldllc.com",
+    "website": "https://noahsworldllc.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Safety bed"
+    ],
+    "source": "https://noahsworldllc.com/",
+    "lastScraped": "2026-07-10",
+    "dateAdded": "2026-07-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Pedicraft",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Offers the safety of an enclosed crib bed and a completely padded interior - no exposed metal parts.he Canopy enclosure is constructed of strong polyester mesh and Sure-Chek healthcare vinyl.  The vinyl is bacteria resistant and the cover can be removed for cleaning. The Canopy Bed mattress is constructed of high density, fire-retardant foam covered in Sure-Chek Comfort vinyl. The Height Adjustable model provides convenience for the caregiver when a patient needs frequent medical attention. Raise the bed surface 10 inches by a hydraulic hand crank.",
+    "phone": "904-396-9627",
+    "website": "https://www.pedicraft.com/canopybeds.html",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "safety bed"
+    ],
+    "source": "https://www.pedicraft.com/canopybeds.html",
+    "lastScraped": "2026-07-10",
+    "dateAdded": "2026-07-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Special Needs Bed | Kayser Betten US",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Beds designed for more than sleep.  KayserBetten facilitates your loved one's complex care at home.  At Kayser Betten US, we specialize in medical safety beds designed for children and adults with special needs, disabilities, and complex medical conditions. Our beds are FDA registered and provide a secure sleep environment while meeting all FDA entrapment prevention guidelines for use in home care, residential facilities, and clinical settings.",
+    "phone": "(844) 213-8548",
+    "website": "https://www.kayserbettenus.com/?useYB=1&cam=ppc-g-m249535-c829373-g-&gad_source=1&gad_campaignid=19794738847&gbraid=0AAAAAD_KmBeZT4CewoLN0HbVVsquQy8o-&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWzg_euBd881I8VOOjHNYHpyLbov619UQ1phDvKbT40s2dt1TRQuTPjAaAtyJEALw_wcB",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Safety bed"
+    ],
+    "source": "https://www.kayserbettenus.com/?useYB=1&cam=ppc-g-m249535-c829373-g-&gad_source=1&gad_campaignid=19794738847&gbraid=0AAAAAD_KmBeZT4CewoLN0HbVVsquQy8o-&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWzg_euBd881I8VOOjHNYHpyLbov619UQ1phDvKbT40s2dt1TRQuTPjAaAtyJEALw_wcB",
+    "lastScraped": "2026-07-10",
+    "dateAdded": "2026-07-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Beds by George",
+    "category": [
+      "equipment"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "We are a family owned company that builds beautiful safety beds for special needs children, youth, adults, as well as handicapped, disabled and medically fragile individuals who need extra fall and entrapment protection while in bed.",
+    "phone": "219 Caravan Drive Elkhart, IN  46514",
+    "website": "https://bedsbygeorge.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Safety bed"
+    ],
+    "source": "https://bedsbygeorge.com/",
+    "lastScraped": "2026-07-10",
+    "dateAdded": "2026-07-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
     }
   }
 ]

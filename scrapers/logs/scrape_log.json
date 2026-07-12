@@ -890,5 +890,92 @@
         "action": "no_new_posts"
       }
     ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-07-12T03:28:03.708135",
+    "status": "PARTIAL",
+    "targets_attempted": 33,
+    "targets_succeeded": 26,
+    "entries_found": 546,
+    "entries_queued": 272,
+    "entries": [
+      {
+        "action": "error",
+        "name": "NY: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "NC: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "OK: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "SC: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "SD: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "WI: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "CA: HTTP Error 429: Too Many Requests"
+      }
+    ]
+  },
+  {
+    "scraper": "cms_providers",
+    "timestamp": "2026-07-12T03:28:06.858811",
+    "status": "OK",
+    "targets_attempted": 2,
+    "targets_succeeded": 2,
+    "entries_found": 79,
+    "entries_queued": 0,
+    "entries": []
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-07-12T03:28:12.484747",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUjFueEZFcTlQTjY5UDZXTWZaTzlqOGpjd185MUM0X0xXVVVHMTJOaDA2cnlxWTBoQ3NaNkVqLWQ1MjczMHhIanpsNjhFSkRaNHQ3a0FzdHoyLXdQM0FybjdPaGYyVkVXcW5BbFNwdW93dVNNNlhaaER6NldwbTVJVkk4WnN6Qi1aU1VIZFhhYVR4UzFlRUx1VFd1eHZJZ2JyOGNPM2xINU5oQXdUSmhBdHdR?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUjFueEZFcTlQTjY5UDZXTWZaTzlqOGpjd185MUM0X0xXVVVHMTJOaDA2cnlxWTBoQ3NaNkVqLWQ1MjczMHhIanpsNjhFSkRaNHQ3a0FzdHoyLXdQM0FybjdPaGYyVkVXcW5BbFNwdW93dVNNNlhaaER6NldwbTVJVkk4WnN6Qi1aU1VIZFhhYVR4UzFlRUx1VFd1eHZJZ2JyOGNPM2xINU5oQXdUSmhBdHdR?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-07-12T03:28:14.460211",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "queued",
+        "title": "Deaf and Blind? How They Can Still Communicate and Participate in Worship - Adventist Review",
+        "source": "Adventist Review",
+        "slug": "deaf-and-blind-how-they-can-still-communicate-and-participat"
+      },
+      {
+        "action": "queued",
+        "title": "NC’s childcare crisis disproportionately affects disabled kids. A lawmaker says it's time for change - NC Newsline",
+        "source": "NC Newsline",
+        "slug": "ncs-childcare-crisis-disproportionately-affects-disabled-kid"
+      }
+    ]
   }
 ]
