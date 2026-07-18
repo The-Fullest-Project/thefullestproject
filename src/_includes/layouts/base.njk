@@ -35,10 +35,23 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family={{ theme.headingFont | replace(' ', '+') }}:wght@400;600;700;800&family={{ theme.bodyFont | replace(' ', '+') }}:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/css/output.css">
+
+  <!-- Brand overrides — editable in the Content Manager (Design & Branding) -->
+  <style>
+    :root {
+      --color-primary: {{ theme.colors.primary }};
+      --color-secondary: {{ theme.colors.secondary }};
+      --color-accent: {{ theme.colors.accent }};
+      --color-highlight: {{ theme.colors.highlight }};
+      --color-warm: {{ theme.colors.warm }};
+      --font-heading: '{{ theme.headingFont }}', sans-serif;
+      --font-body: '{{ theme.bodyFont }}', sans-serif;
+    }
+  </style>
 
   {% if site.googleAnalytics %}
   <!-- Google Analytics -->

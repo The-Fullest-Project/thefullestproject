@@ -101,8 +101,11 @@ module.exports = function() {
       // slugs (therapy-pt, switch-adapted…) plus curation tags, minus pipeline
       // noise. Adding a tag to a resource in the review portal automatically
       // creates/joins a filter chip on its category page.
-      const granular = (r.category || []).filter(c => !topLevel.includes(c));
-      const tags = (r.tags || []).map(t => String(t).toLowerCase().trim());
+      // Slugify (lowercase, spaces -> hyphens) so tag variants like
+      // "safety bed" and "safety-bed" collapse to one facet/filter option.
+      const slug = s => String(s).toLowerCase().trim().replace(/\s+/g, '-');
+      const granular = (r.category || []).filter(c => !topLevel.includes(c)).map(slug);
+      const tags = (r.tags || []).map(slug);
       const facets = [...new Set([...granular, ...tags])]
         .filter(f => f && !isNoiseFacet(f));
       return {

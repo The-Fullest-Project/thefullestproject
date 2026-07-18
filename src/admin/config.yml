@@ -213,3 +213,25 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
+
+      - label: "Design & Branding"
+        name: "theme"
+        file: "src/_data/theme.json"
+        fields:
+          - label: "Brand Colors"
+            name: "colors"
+            widget: "object"
+            fields:
+              - { label: "Primary — headings, primary buttons, links", name: "primary", widget: "color" }
+              - { label: "Secondary — warm accent text & links", name: "secondary", widget: "color" }
+              - { label: "Accent — tags, focus outline", name: "accent", widget: "color" }
+              - { label: "Highlight — call-to-action buttons", name: "highlight", widget: "color" }
+              - { label: "Warm — section backgrounds", name: "warm", widget: "color" }
+          - label: "Heading Font"
+            name: "headingFont"
+            widget: "select"
+            options: ["Nunito", "Poppins", "Montserrat", "Lato", "Quicksand", "Baloo 2"]
+          - label: "Body Font"
+            name: "bodyFont"
+            widget: "select"
+            options: ["Open Sans", "Lato", "Nunito Sans", "Source Sans 3", "Roboto", "Inter"]

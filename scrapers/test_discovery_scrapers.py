@@ -34,10 +34,25 @@ class CategoryMapTests(unittest.TestCase):
         self.assertEqual(cm.osm_category({"office": "therapist"}), "therapy")
         self.assertEqual(cm.osm_category({"healthcare": "rehabilitation"}), "therapy")
         self.assertEqual(cm.osm_category({"social_facility:for": "disabled"}), "community")
-        self.assertEqual(cm.osm_category({"social_facility:for": "mental_health"}), "mental-health")
+        # mental-health is out of scope for scraping — no longer mapped
+        self.assertIsNone(cm.osm_category({"social_facility:for": "mental_health"}))
+        self.assertIsNone(cm.osm_category({"healthcare": "psychotherapist"}))
         self.assertEqual(cm.osm_category({"shop": "mobility"}), "equipment")
         self.assertEqual(cm.osm_category({"social_facility": "group_home"}), "housing")
         self.assertIsNone(cm.osm_category({"amenity": "cafe"}))
+
+    def test_excluded_categories(self):
+        # mental-health / chiropractic / behavioral-health are dropped
+        self.assertTrue(cm.is_excluded("Riverbend Community Mental Health"))
+        self.assertTrue(cm.is_excluded("Prince William Family Counseling"))
+        self.assertTrue(cm.is_excluded("Short Pump Chiropractic Center"))
+        self.assertTrue(cm.is_excluded("Inova Behavioral Health Services"))
+        self.assertTrue(cm.is_excluded("Anyone", {"healthcare": "psychotherapist"}))
+        self.assertTrue(cm.is_excluded("Anyone", {"social_facility:for": "mental_health"}))
+        # genuine disability resources are NOT excluded
+        self.assertFalse(cm.is_excluded("Pediatric Speech Therapy Clinic"))
+        self.assertFalse(cm.is_excluded("Adaptive Equipment Loan Closet"))
+        self.assertFalse(cm.is_excluded("Genetic Counseling & Rare Disease Center"))
 
     def test_safe_category(self):
         self.assertEqual(cm.safe_category("therapy"), "therapy")

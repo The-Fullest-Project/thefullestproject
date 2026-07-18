@@ -10285,7 +10285,11 @@
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
-    "tags": [],
+    "tags": [
+      "safety-bed",
+      "enclosed-bed",
+      "sleep"
+    ],
     "source": "https://courtneybed.com/",
     "lastScraped": "2026-07-06",
     "dateAdded": "2026-07-07",
@@ -10355,7 +10359,7 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "Safety bed"
+      "safety-bed"
     ],
     "source": "https://noahsworldllc.com/",
     "lastScraped": "2026-07-10",
@@ -10380,7 +10384,7 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "safety bed"
+      "safety-bed"
     ],
     "source": "https://www.pedicraft.com/canopybeds.html",
     "lastScraped": "2026-07-10",
@@ -10399,15 +10403,15 @@
     "area": "",
     "description": "Beds designed for more than sleep.  KayserBetten facilitates your loved one's complex care at home.  At Kayser Betten US, we specialize in medical safety beds designed for children and adults with special needs, disabilities, and complex medical conditions. Our beds are FDA registered and provide a secure sleep environment while meeting all FDA entrapment prevention guidelines for use in home care, residential facilities, and clinical settings.",
     "phone": "(844) 213-8548",
-    "website": "https://www.kayserbettenus.com/?useYB=1&cam=ppc-g-m249535-c829373-g-&gad_source=1&gad_campaignid=19794738847&gbraid=0AAAAAD_KmBeZT4CewoLN0HbVVsquQy8o-&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWzg_euBd881I8VOOjHNYHpyLbov619UQ1phDvKbT40s2dt1TRQuTPjAaAtyJEALw_wcB",
+    "website": "https://www.kayserbettenus.com/",
     "address": "",
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "Safety bed"
+      "safety-bed"
     ],
-    "source": "https://www.kayserbettenus.com/?useYB=1&cam=ppc-g-m249535-c829373-g-&gad_source=1&gad_campaignid=19794738847&gbraid=0AAAAAD_KmBeZT4CewoLN0HbVVsquQy8o-&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWzg_euBd881I8VOOjHNYHpyLbov619UQ1phDvKbT40s2dt1TRQuTPjAaAtyJEALw_wcB",
+    "source": "https://www.kayserbettenus.com/",
     "lastScraped": "2026-07-10",
     "dateAdded": "2026-07-10",
     "origin": {
@@ -10423,14 +10427,14 @@
     "location": "National",
     "area": "",
     "description": "We are a family owned company that builds beautiful safety beds for special needs children, youth, adults, as well as handicapped, disabled and medically fragile individuals who need extra fall and entrapment protection while in bed.",
-    "phone": "219 Caravan Drive Elkhart, IN  46514",
+    "phone": "",
     "website": "https://bedsbygeorge.com/",
-    "address": "",
+    "address": "219 Caravan Drive Elkhart, IN  46514",
     "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "Safety bed"
+      "safety-bed"
     ],
     "source": "https://bedsbygeorge.com/",
     "lastScraped": "2026-07-10",

@@ -83,10 +83,19 @@ document.addEventListener('DOMContentLoaded', function() {
     'equipment-loaner': 'loaner',
     'assistive-tech': 'assistive-technology',
     'mobility-equipment': 'mobility',
+    'sensory-products': 'sensory',
+    'adaptive-gear': 'adaptive',
     'in-home': 'home-care'
   };
+  // Normalize a raw facet (lowercase, spaces -> hyphens) so variants like
+  // "sensory products" and "sensory-products" collapse to one before the
+  // synonym map runs — otherwise the Type dropdown shows the same label twice.
+  function normFacet(f) {
+    return f.trim().toLowerCase().replace(/\s+/g, '-');
+  }
   function cardFacets(card) {
     return (card.getAttribute('data-facets') || '').split(',')
+      .map(normFacet)
       .filter(Boolean)
       .map(function(f) { return facetCanon[f] || f; });
   }

@@ -15,14 +15,17 @@ permalink: /submit-resource/
     <form id="resource-form" action="https://formspree.io/f/{{ site.formspree.submitResource }}" method="POST"
       data-worker-url="{{ site.adminWorkerUrl }}/submit" data-newsletter-url="{{ site.adminWorkerUrl }}/newsletter" class="space-y-6">
       <input type="hidden" id="resource-origin" name="submissionSource" value="site-form">
+
       <div>
         <label for="resource-name" class="block text-sm font-semibold mb-2">Resource/Organization Name *</label>
         <input type="text" id="resource-name" name="resourceName" required class="form-input" placeholder="Name of the resource or organization">
       </div>
+
       <div>
         <label for="resource-website" class="block text-sm font-semibold mb-2">Website</label>
         <input type="url" id="resource-website" name="website" class="form-input" placeholder="https://...">
       </div>
+
       <div>
         <label for="resource-location" class="block text-sm font-semibold mb-2">Location *</label>
         <select id="resource-location" name="location" required class="form-input">
@@ -33,6 +36,12 @@ permalink: /submit-resource/
           {% endfor %}
         </select>
       </div>
+
+      <div>
+        <label for="resource-area" class="block text-sm font-semibold mb-2">Area</label>
+        <input type="text" id="resource-area" name="area" class="form-input" placeholder="City or region, e.g. Fairfax or Portland">
+      </div>
+
       <div>
         <label for="resource-category" class="block text-sm font-semibold mb-2">Category *</label>
         <select id="resource-category" name="category" required class="form-input">
@@ -42,24 +51,62 @@ permalink: /submit-resource/
           {% endfor %}
         </select>
       </div>
+
       <div>
         <label for="resource-description" class="block text-sm font-semibold mb-2">Description *</label>
         <textarea id="resource-description" name="description" rows="4" required class="form-input" placeholder="What does this resource offer? Who does it serve?"></textarea>
       </div>
+
+      <!-- Tags: pick from current tags or add your own -->
       <div>
-        <label for="resource-contact" class="block text-sm font-semibold mb-2">Contact Information</label>
-        <input type="text" id="resource-contact" name="contactInfo" class="form-input" placeholder="Phone, email, or address">
+        <label for="tag-input" class="block text-sm font-semibold mb-2">Tags</label>
+        <p class="text-xs mb-2" style="color: var(--color-text-light);">Add tags that describe this resource — pick from the list or type your own, then press Add.</p>
+        <div class="flex gap-2">
+          <input type="text" id="tag-input" list="tag-suggestions" class="form-input flex-grow" placeholder="e.g. wheelchair, sensory, safety-bed">
+          <button type="button" id="tag-add" class="btn-secondary whitespace-nowrap">Add</button>
+        </div>
+        <datalist id="tag-suggestions">
+          {% for t in allTags %}<option value="{{ t }}"></option>{% endfor %}
+        </datalist>
+        <div id="tag-chips" class="flex flex-wrap gap-2 mt-3"></div>
+        <input type="hidden" id="tags-value" name="tags">
       </div>
-      <div>
-        <label for="submitter-email" class="block text-sm font-semibold mb-2">Your Email (optional)</label>
-        <input type="email" id="submitter-email" name="submitterEmail" class="form-input" placeholder="In case we have questions">
-      </div>
-      <div class="rounded-lg p-4" style="background-color: var(--color-warm-light);">
+
+      <!-- Resource contact info: all optional, three boxes -->
+      <fieldset class="border rounded-lg p-4" style="border-color: #E2E8F0;">
+        <legend class="text-sm font-semibold px-2">Resource/Organization Contact Information</legend>
+        <div class="space-y-4">
+          <div>
+            <label for="resource-phone" class="block text-sm font-semibold mb-2">Phone (optional)</label>
+            <input type="tel" id="resource-phone" name="resourcePhone" class="form-input" placeholder="(555) 123-4567">
+          </div>
+          <div>
+            <label for="resource-email" class="block text-sm font-semibold mb-2">Email (optional)</label>
+            <input type="email" id="resource-email" name="resourceEmail" class="form-input" placeholder="contact@organization.org">
+          </div>
+          <div>
+            <label for="resource-address" class="block text-sm font-semibold mb-2">Address (optional)</label>
+            <input type="text" id="resource-address" name="resourceAddress" class="form-input" placeholder="Street, city, state">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- About you + newsletter opt-in -->
+      <div class="rounded-lg p-4 space-y-4" style="background-color: var(--color-warm-light);">
+        <div>
+          <label for="submitter-name" class="block text-sm font-semibold mb-2">Your Name</label>
+          <input type="text" id="submitter-name" name="submitterName" class="form-input" placeholder="First name is fine" style="background-color: white;">
+        </div>
+        <div>
+          <label for="submitter-email" class="block text-sm font-semibold mb-2">Your Email</label>
+          <input type="email" id="submitter-email" name="submitterEmail" class="form-input" placeholder="In case we have questions" style="background-color: white;">
+        </div>
         <label for="newsletter-optin" class="flex items-start gap-3 cursor-pointer">
           <input type="checkbox" id="newsletter-optin" name="newsletterOptIn" class="mt-1 flex-shrink-0" style="width: 18px; height: 18px;">
           <span class="text-sm" style="color: var(--color-text);">Add me to The Fullest Project email list for occasional updates on new resources and community news. We'll email you a confirmation link first — you can unsubscribe anytime.</span>
         </label>
       </div>
+
       <div>
         <button type="submit" id="resource-submit-btn" class="btn-primary w-full text-center text-lg">Submit Resource</button>
       </div>
@@ -88,29 +135,74 @@ permalink: /submit-resource/
       var el = document.getElementById(id);
       if (el && fields[id]) el.value = decodeURIComponent(fields[id]);
     });
-    // Mark this submission as coming from the Quick Submit bookmarklet
     var origin = document.getElementById('resource-origin');
     if (origin) origin.value = 'quick-submit';
   }
 })();
 
+// Tags widget: add chips from the input (or a suggestion), store as a
+// comma-separated hidden field for submission.
+(function() {
+  var input = document.getElementById('tag-input');
+  var addBtn = document.getElementById('tag-add');
+  var chips = document.getElementById('tag-chips');
+  var hidden = document.getElementById('tags-value');
+  if (!input || !addBtn || !chips || !hidden) return;
+  var tags = [];
+
+  function sync() { hidden.value = tags.join(', '); }
+  function render() {
+    chips.textContent = '';
+    tags.forEach(function(tag, i) {
+      var chip = document.createElement('span');
+      chip.className = 'tag inline-flex items-center gap-1';
+      chip.style.backgroundColor = 'var(--color-warm)';
+      chip.style.color = 'var(--color-primary)';
+      chip.style.textTransform = 'none';
+      chip.textContent = tag;
+      var x = document.createElement('button');
+      x.type = 'button';
+      x.setAttribute('aria-label', 'Remove ' + tag);
+      x.textContent = '×';
+      x.style.cssText = 'margin-left:4px;font-weight:700;line-height:1;cursor:pointer;background:none;border:none;color:inherit;';
+      x.addEventListener('click', function() { tags.splice(i, 1); render(); sync(); });
+      chip.appendChild(x);
+      chips.appendChild(chip);
+    });
+  }
+  function addTag() {
+    var val = input.value.trim().replace(/,+$/, '').trim();
+    if (!val) return;
+    var key = val.toLowerCase();
+    if (!tags.some(function(t) { return t.toLowerCase() === key; })) {
+      tags.push(val);
+      render(); sync();
+    }
+    input.value = '';
+    input.focus();
+  }
+  addBtn.addEventListener('click', addTag);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ',') { e.preventDefault(); addTag(); }
+  });
+})();
+
 // Submit to the admin worker (review queue) if configured; fall back to
-// Formspree natively when the worker is unreachable
+// Formspree natively when the worker is unreachable.
 (function() {
   var form = document.getElementById('resource-form');
   var workerUrl = form ? form.getAttribute('data-worker-url') : '';
   var newsletterUrl = form ? form.getAttribute('data-newsletter-url') : '';
   if (!form || !workerUrl || workerUrl.indexOf('http') !== 0) return;
 
-  // When someone opts into the email list, require their email so we have
-  // an address to send the confirmation link to.
+  // Opting into the list requires an email so we have somewhere to confirm.
   var optin = document.getElementById('newsletter-optin');
   var emailField = document.getElementById('submitter-email');
   var emailLabel = document.querySelector('label[for="submitter-email"]');
   if (optin && emailField) {
     optin.addEventListener('change', function() {
       emailField.required = optin.checked;
-      if (emailLabel) emailLabel.textContent = optin.checked ? 'Your Email *' : 'Your Email (optional)';
+      if (emailLabel) emailLabel.textContent = optin.checked ? 'Your Email *' : 'Your Email';
       if (optin.checked && !emailField.value) emailField.focus();
     });
   }
@@ -123,14 +215,10 @@ permalink: /submit-resource/
     btn.textContent = 'Submitting...';
     status.className = 'hidden mt-4 p-4 rounded-lg text-center font-semibold';
 
-    // Capture opt-in details before the form resets on success
     var wantsList = !!(optin && optin.checked);
     var listEmail = emailField ? emailField.value.trim() : '';
 
-    fetch(workerUrl, {
-      method: 'POST',
-      body: new FormData(form)
-    })
+    fetch(workerUrl, { method: 'POST', body: new FormData(form) })
     .then(function(res) {
       if (res.status >= 500) { throw { fallback: true }; }
       return res.json().then(function(data) { return { ok: res.ok, data: data }; });
@@ -138,8 +226,6 @@ permalink: /submit-resource/
     .then(function(result) {
       if (result.ok) {
         var msg = result.data.message || 'Thank you! Your resource has been submitted for review.';
-        // Opted in: add the email to the distribution list via the same
-        // Brevo double-opt-in endpoint the newsletter forms use.
         if (wantsList && listEmail && newsletterUrl && newsletterUrl.indexOf('http') === 0) {
           var nl = new FormData();
           nl.append('email', listEmail);
@@ -151,7 +237,9 @@ permalink: /submit-resource/
         status.style.backgroundColor = 'var(--color-warm-light)';
         status.style.color = 'var(--color-primary)';
         form.reset();
-        if (emailLabel) emailLabel.textContent = 'Your Email (optional)';
+        document.getElementById('tag-chips').textContent = '';
+        document.getElementById('tags-value').value = '';
+        if (emailLabel) emailLabel.textContent = 'Your Email';
       } else {
         status.textContent = 'Error: ' + (result.data.error || 'Something went wrong') + '. Please check the form and try again.';
         status.className = 'mt-4 p-4 rounded-lg text-center font-semibold';
@@ -160,7 +248,6 @@ permalink: /submit-resource/
       }
     })
     .catch(function() {
-      // Worker unreachable or erroring — submit natively to Formspree instead
       form.removeEventListener('submit', handler);
       form.submit();
     })

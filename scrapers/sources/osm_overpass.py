@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from base_scraper import make_resource, queue_new_resources, all_live_resource_keys
 import pending_store
 from _category_map import (STATE_NAME, ALL_STATE_CODES, osm_category,
-                           is_disability_relevant, is_noise, safe_category)
+                           is_disability_relevant, is_noise, is_excluded, safe_category)
 from _source_health import SourceRun, int_env, float_env
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
@@ -41,8 +41,8 @@ USER_AGENT = ("TheFullestProjectBot/1.0 (+https://thefullestproject.org/about/; 
 QUERY_TEMPLATE = """[out:json][timeout:90];
 area["ISO3166-2"="US-{code}"][admin_level=4]->.a;
 (
-  nwr["social_facility:for"~"disabled|mental_health|autism",i](area.a);
-  nwr["healthcare"~"^(rehabilitation|physiotherapist|occupational_therapist|speech_therapist|psychotherapist)$"](area.a);
+  nwr["social_facility:for"~"disabled|autism",i](area.a);
+  nwr["healthcare"~"^(rehabilitation|physiotherapist|occupational_therapist|speech_therapist)$"](area.a);
   nwr["office"="therapist"](area.a);
   nwr["shop"~"^(mobility|medical_supply)$"](area.a);
 );
@@ -97,6 +97,9 @@ def _build_resource(el, code):
 
     blob = f"{name} {tags.get('description', '')} {tags.get('operator', '')}"
     if not is_disability_relevant(blob, tags) or is_noise(blob):
+        return None
+    # Mental-health / chiropractic / behavioral-health services are out of scope.
+    if is_excluded(blob, tags):
         return None
 
     website = tags.get("website") or tags.get("contact:website") or ""

@@ -47,7 +47,7 @@ RELEVANCE_KEYWORDS = (
     "speech therap", "speech-language", "sensory", "deaf", "hard of hearing",
     "blind", "low vision", "visually impair", "hearing impair", "prosthetic",
     "orthotic", "respite", "caregiver", "special education", "early intervention",
-    "mental health", "behavioral health", "neurodivergent", "spina bifida",
+    "neurodivergent", "spina bifida",
     "muscular dystrophy", "traumatic brain", "tbi", "paraly", "mobility",
 )
 
@@ -58,6 +58,34 @@ NOISE_KEYWORDS = (
     "funeral", "cemetery", "real estate", "auto repair", "car wash",
 )
 
+# Services intentionally OUT of scope for the directory. Candidates that look
+# like mental-health counseling, psychiatry, chiropractic, or behavioral-health
+# services are dropped before they ever reach the review queue (admin decision
+# 2026-07). Note: "mental-health" stays a valid site category for curated/manual
+# entries — this only stops the scrapers from queuing NEW ones.
+EXCLUDE_KEYWORDS = (
+    "chiropract", "psychotherap", "psychiatr", "counseling", "counselling",
+    "counselor", "counsellor", "behavioral health", "behavioural health",
+    "mental health", "mental-health",
+)
+EXCLUDE_HEALTHCARE = {"psychotherapist", "counselling", "psychiatry", "psychiatrist"}
+EXCLUDE_SOCIAL_FOR = {"mental_health"}
+
+
+def is_excluded(text, tags=None):
+    """True if a candidate is an out-of-scope mental-health / chiropractic /
+    behavioral-health service that should NOT be scraped into the queue."""
+    blob = (text or "").lower()
+    tags = tags or {}
+    if tags.get("healthcare", "") in EXCLUDE_HEALTHCARE:
+        return True
+    sf_for = tags.get("social_facility:for", "").lower()
+    if any(v in sf_for for v in EXCLUDE_SOCIAL_FOR):
+        return True
+    if "genetic counsel" in blob:  # genetic counseling is a wanted medical service
+        return False
+    return any(kw in blob for kw in EXCLUDE_KEYWORDS)
+
 # OSM tag -> site category slug. Checked in order; first match wins.
 _OSM_RULES = [
     ("office", "therapist", "therapy"),
@@ -66,8 +94,6 @@ _OSM_RULES = [
     ("healthcare", "occupational_therapist", "therapy"),
     ("healthcare", "speech_therapist", "therapy"),
     ("healthcare", "therapist", "therapy"),
-    ("healthcare", "psychotherapist", "mental-health"),
-    ("healthcare", "counselling", "mental-health"),
     ("shop", "mobility", "equipment"),
     ("shop", "medical_supply", "equipment"),
     ("healthcare", "hospital", "medical"),
@@ -81,7 +107,7 @@ _OSM_RULES = [
 # social_facility:for value -> slug (disability-relevant subset)
 _SOCIAL_FOR = {
     "disabled": "community",
-    "mental_health": "mental-health",
+    "mental_health": None,   # mental-health is out of scope for scraping
     "autism": "community",
     "senior": None,   # not disability-relevant on its own
     "child": None,
@@ -122,11 +148,11 @@ def is_disability_relevant(text, tags=None):
     tags = tags or {}
     # A disability-specific structured tag is sufficient on its own.
     sf_for = tags.get("social_facility:for", "").lower()
-    if any(v in sf_for for v in ("disabled", "mental_health", "autism")):
+    if any(v in sf_for for v in ("disabled", "autism")):
         return True
     healthcare = tags.get("healthcare", "")
     if healthcare in ("rehabilitation", "physiotherapist", "occupational_therapist",
-                      "speech_therapist", "psychotherapist"):
+                      "speech_therapist"):
         return True
     if tags.get("office") == "therapist" or tags.get("shop") in ("mobility", "medical_supply"):
         return True

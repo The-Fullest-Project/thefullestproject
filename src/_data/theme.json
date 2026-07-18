@@ -1,0 +1,11 @@
+{
+  "colors": {
+    "primary": "#3A668C",
+    "secondary": "#D77E5E",
+    "accent": "#6A9346",
+    "highlight": "#FDB92E",
+    "warm": "#F6EFDC"
+  },
+  "headingFont": "Nunito",
+  "bodyFont": "Open Sans"
+}

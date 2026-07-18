@@ -162,38 +162,6 @@
     "targetFile": "src/_data/resources/states/OH.json"
   },
   {
-    "id": "res-20260621-f988ee44",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:25.855397+00:00"
-    },
-    "payload": {
-      "name": "Valley View Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "Ohio",
-      "area": "Germantown",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "3 West Market Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/3426140805",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OH.json"
-  },
-  {
     "id": "res-20260621-58842c67",
     "type": "resource",
     "status": "pending",
@@ -709,39 +677,6 @@
     "targetFile": "src/_data/resources/states/OH.json"
   },
   {
-    "id": "res-20260621-f0db4307",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:25.855517+00:00"
-    },
-    "payload": {
-      "name": "Kennedy Consulting & Training, LLC",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Ohio",
-      "area": "Wilmington",
-      "description": "",
-      "phone": "+1-937-383-3565",
-      "website": "https://www.kcandt.com/",
-      "address": "1550 West Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist",
-        "wheelchair-accessible"
-      ],
-      "source": "https://www.openstreetmap.org/node/5320926173",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OH.json"
-  },
-  {
     "id": "res-20260621-2163d5f9",
     "type": "resource",
     "status": "pending",
@@ -774,38 +709,6 @@
     "targetFile": "src/_data/resources/states/OH.json"
   },
   {
-    "id": "res-20260621-ed99d1a2",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478622+00:00"
-    },
-    "payload": {
-      "name": "Central Oklahoma Community Mental Health Center",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "Norman",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "909 East Alameda Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "mental_health"
-      ],
-      "source": "https://www.openstreetmap.org/node/3746338531",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
     "id": "res-20260621-30128537",
     "type": "resource",
     "status": "pending",
@@ -833,38 +736,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/3940292134",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
-    "id": "res-20260621-d17d9754",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478649+00:00"
-    },
-    "payload": {
-      "name": "Thunderbird Clubhouse",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "Norman",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "1251 Triad Village Drive",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "mental_health"
-      ],
-      "source": "https://www.openstreetmap.org/node/4139736772",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/OK.json"
@@ -934,38 +805,6 @@
     "targetFile": "src/_data/resources/states/OK.json"
   },
   {
-    "id": "res-20260621-4a9ea102",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478672+00:00"
-    },
-    "payload": {
-      "name": "Tri-City Counseling Center",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "Newcastle",
-      "description": "",
-      "phone": "+1-405-387-2555",
-      "website": "",
-      "address": "701 North Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5937114304",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
     "id": "res-20260621-f2cb1145",
     "type": "resource",
     "status": "pending",
@@ -993,38 +832,6 @@
         "rehabilitation"
       ],
       "source": "https://www.openstreetmap.org/node/9276890597",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
-    "id": "res-20260621-87f7f37f",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478687+00:00"
-    },
-    "payload": {
-      "name": "Zen Gee Counseling - Psychological Services",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/9701047647",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/OK.json"
@@ -1094,38 +901,6 @@
     "targetFile": "src/_data/resources/states/OK.json"
   },
   {
-    "id": "res-20260621-b3cbed51",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478707+00:00"
-    },
-    "payload": {
-      "name": "Supportive Care ABA OK",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "Stillwater",
-      "description": "Supportive Care ABA is a dedicated home based agency that helps children achieve enjoyable therapeutic activities in a warm and comfortable environment.",
-      "phone": "+1-317-936-1240",
-      "website": "https://supportivecareaba.com/",
-      "address": "901 South Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/10885894337",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
     "id": "res-20260621-e8f50177",
     "type": "resource",
     "status": "pending",
@@ -1158,38 +933,6 @@
     "targetFile": "src/_data/resources/states/OK.json"
   },
   {
-    "id": "res-20260621-09c44e1d",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478721+00:00"
-    },
-    "payload": {
-      "name": "Summit Health and Wellness Center",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "Norman",
-      "description": "",
-      "phone": "+1-405-310-3735",
-      "website": "https://www.summithealthandwellnesscenter.com/",
-      "address": "2911 Adams Road",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/11281634495",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
     "id": "res-20260621-2f45c51b",
     "type": "resource",
     "status": "pending",
@@ -1217,38 +960,6 @@
         "physiotherapist"
       ],
       "source": "https://www.openstreetmap.org/node/11372216018",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
-    "id": "res-20260621-bfe6e6b5",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:37.478735+00:00"
-    },
-    "payload": {
-      "name": "Improving Lives",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oklahoma",
-      "area": "",
-      "description": "",
-      "phone": "+1 918 960 7852",
-      "website": "",
-      "address": "30259 East State Highway 51",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/11453028773",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/OK.json"
@@ -1574,70 +1285,6 @@
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
-    "id": "res-20260621-a2f3ed33",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:52.258262+00:00"
-    },
-    "payload": {
-      "name": "Portland psychotherapy",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oregon",
-      "area": "Portland",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "3537 North Williams Avenue",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/498664036",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OR.json"
-  },
-  {
-    "id": "res-20260621-43c9c684",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:43:52.258280+00:00"
-    },
-    "payload": {
-      "name": "Psychological Services of Pendleton",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Oregon",
-      "area": "",
-      "description": "",
-      "phone": "+1-541-278-2222",
-      "website": "https://www.pendletonpsych.com/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2575943412",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/OR.json"
   },
   {
     "id": "res-20260621-f9826d37",
@@ -2281,38 +1928,6 @@
     "targetFile": "src/_data/resources/states/PA.json"
   },
   {
-    "id": "res-20260621-ff528e12",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:06.962196+00:00"
-    },
-    "payload": {
-      "name": "Dr. C. Johnson, Clinical Psychologist",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Pennsylvania",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2238464966",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/PA.json"
-  },
-  {
     "id": "res-20260621-4a788902",
     "type": "resource",
     "status": "pending",
@@ -2379,38 +1994,6 @@
     "targetFile": "src/_data/resources/states/PA.json"
   },
   {
-    "id": "res-20260621-82e623a9",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:06.962218+00:00"
-    },
-    "payload": {
-      "name": "WellSpan Phillhaven",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Pennsylvania",
-      "area": "York",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "1600 South George Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/3028052223",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/PA.json"
-  },
-  {
     "id": "res-20260621-e612b4bb",
     "type": "resource",
     "status": "pending",
@@ -2438,38 +2021,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/5020828073",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/RI.json"
-  },
-  {
-    "id": "res-20260621-fcc72de4",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:12.875333+00:00"
-    },
-    "payload": {
-      "name": "Anchor Counseling Center",
-      "category": [
-        "therapy"
-      ],
-      "location": "Rhode Island",
-      "area": "East Greenwich",
-      "description": "",
-      "phone": "+1-401-475-9979",
-      "website": "https://anchorcounselingcenter.com/",
-      "address": "5805 Post Road",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5020828075",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/RI.json"
@@ -2539,38 +2090,6 @@
     "targetFile": "src/_data/resources/states/RI.json"
   },
   {
-    "id": "res-20260621-e6d8a1ee",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:12.875358+00:00"
-    },
-    "payload": {
-      "name": "Providence Behavioral Health",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Rhode Island",
-      "area": "East Greenwich",
-      "description": "",
-      "phone": "+1-401-369-9224",
-      "website": "https://www.providencebehavioral.org/",
-      "address": "63 Cedar Avenue",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5066734169",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/RI.json"
-  },
-  {
     "id": "res-20260621-ea30615b",
     "type": "resource",
     "status": "pending",
@@ -2631,70 +2150,6 @@
         "medical_supply"
       ],
       "source": "https://www.openstreetmap.org/node/5272959383",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/RI.json"
-  },
-  {
-    "id": "res-20260621-fbdd544c",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:12.875381+00:00"
-    },
-    "payload": {
-      "name": "Jessica Kaplan",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Rhode Island",
-      "area": "East Greenwich",
-      "description": "",
-      "phone": "+1-401-203-4861",
-      "website": "http://www.jessicakaplanlicsw.com",
-      "address": "267 Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5307661038",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/RI.json"
-  },
-  {
-    "id": "res-20260621-91296cbe",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:12.875388+00:00"
-    },
-    "payload": {
-      "name": "Thrive on Main",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Rhode Island",
-      "area": "East Greenwich",
-      "description": "",
-      "phone": "+1-401-398-0300",
-      "website": "http://www.thrive-on-main.com",
-      "address": "267 Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5307661040",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/RI.json"
@@ -2796,38 +2251,6 @@
     "targetFile": "src/_data/resources/states/RI.json"
   },
   {
-    "id": "res-20260621-65f64d8b",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:12.875418+00:00"
-    },
-    "payload": {
-      "name": "YANA of Middletown",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Rhode Island",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/9747412906",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/RI.json"
-  },
-  {
     "id": "res-20260621-bf4a2388",
     "type": "resource",
     "status": "pending",
@@ -2924,38 +2347,6 @@
     "targetFile": "src/_data/resources/states/RI.json"
   },
   {
-    "id": "res-20260621-f61a58ae",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:12.875445+00:00"
-    },
-    "payload": {
-      "name": "Professional Counseling Associates, Inc.",
-      "category": [
-        "therapy"
-      ],
-      "location": "Rhode Island",
-      "area": "East Greenwich",
-      "description": "",
-      "phone": "+1-401-398-7933",
-      "website": "https://www.pca-ri.com/",
-      "address": "5840 Post Road",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/way/511094847",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/RI.json"
-  },
-  {
     "id": "res-20260621-e4be5051",
     "type": "resource",
     "status": "pending",
@@ -3021,38 +2412,6 @@
     "targetFile": "src/_data/resources/states/SC.json"
   },
   {
-    "id": "res-20260621-2dd1662d",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:27.304625+00:00"
-    },
-    "payload": {
-      "name": "Martin Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "South Carolina",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2724485361",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SC.json"
-  },
-  {
     "id": "res-20260621-5159ec20",
     "type": "resource",
     "status": "pending",
@@ -3080,38 +2439,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/2724566960",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SC.json"
-  },
-  {
-    "id": "res-20260621-1fc8a971",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:27.304642+00:00"
-    },
-    "payload": {
-      "name": "Eder Chiropractic Center",
-      "category": [
-        "therapy"
-      ],
-      "location": "South Carolina",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "975 Bells Highway",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2964547672",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/SC.json"
@@ -3181,38 +2508,6 @@
     "targetFile": "src/_data/resources/states/SC.json"
   },
   {
-    "id": "res-20260621-41d31016",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:27.304666+00:00"
-    },
-    "payload": {
-      "name": "Manning Neck & Back Chiropractors",
-      "category": [
-        "therapy"
-      ],
-      "location": "South Carolina",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/3081235553",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SC.json"
-  },
-  {
     "id": "res-20260621-0950a3e7",
     "type": "resource",
     "status": "pending",
@@ -3240,38 +2535,6 @@
         "medical_supply"
       ],
       "source": "https://www.openstreetmap.org/node/3138569720",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SC.json"
-  },
-  {
-    "id": "res-20260621-562c159d",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:27.304681+00:00"
-    },
-    "payload": {
-      "name": "Whispering Wind Counseling, LLC",
-      "category": [
-        "mental-health"
-      ],
-      "location": "South Carolina",
-      "area": "Boiling Springs",
-      "description": "",
-      "phone": "+1-864-585-4848",
-      "website": "http://whisperingwindcounselingllc.com",
-      "address": "101 Hilldale Drive",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4658661816",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/SC.json"
@@ -3336,38 +2599,6 @@
         "physiotherapist"
       ],
       "source": "https://www.openstreetmap.org/node/5236189089",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SC.json"
-  },
-  {
-    "id": "res-20260621-bc7cd30e",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:27.304704+00:00"
-    },
-    "payload": {
-      "name": "The Joint Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "South Carolina",
-      "area": "Taylors",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "6015 Wade Hampton Boulevard",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "physiotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5276390636",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/SC.json"
@@ -4077,38 +3308,6 @@
     "targetFile": "src/_data/resources/states/SD.json"
   },
   {
-    "id": "res-20260621-8f1d5a71",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:32.710900+00:00"
-    },
-    "payload": {
-      "name": "Rebecca J. Watson-Miller, Ph.D.",
-      "category": [
-        "mental-health"
-      ],
-      "location": "South Dakota",
-      "area": "Sioux Falls",
-      "description": "",
-      "phone": "+1 605-335-5888",
-      "website": "http://watsonmillerphd.com",
-      "address": "2500 West 49th Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4678171244",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SD.json"
-  },
-  {
     "id": "res-20260621-57591dc1",
     "type": "resource",
     "status": "pending",
@@ -4169,104 +3368,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/4943379025",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SD.json"
-  },
-  {
-    "id": "res-20260621-ed99f725",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:32.710926+00:00"
-    },
-    "payload": {
-      "name": "USD Counseling Center",
-      "category": [
-        "mental-health"
-      ],
-      "location": "South Dakota",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "outreach",
-        "mental_health"
-      ],
-      "source": "https://www.openstreetmap.org/node/5138759937",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SD.json"
-  },
-  {
-    "id": "res-20260621-60554477",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:32.710933+00:00"
-    },
-    "payload": {
-      "name": "USD Psychological Services",
-      "category": [
-        "mental-health"
-      ],
-      "location": "South Dakota",
-      "area": "Vermillion",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "414 East Clark Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "outreach",
-        "mental_health"
-      ],
-      "source": "https://www.openstreetmap.org/node/5138759938",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SD.json"
-  },
-  {
-    "id": "res-20260621-51a6a935",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:32.710940+00:00"
-    },
-    "payload": {
-      "name": "Lewis and Clark Behavioral Health Services",
-      "category": [
-        "mental-health"
-      ],
-      "location": "South Dakota",
-      "area": "Yankton",
-      "description": "",
-      "phone": "+1-605-624-9148",
-      "website": "https://www.lcbhs.net/",
-      "address": "1028 Walnut Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5365049058",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/SD.json"
@@ -4528,38 +3629,6 @@
     "targetFile": "src/_data/resources/states/SD.json"
   },
   {
-    "id": "res-20260621-e43e035b",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:32.711003+00:00"
-    },
-    "payload": {
-      "name": "Strong Hold Counseling Services Inc",
-      "category": [
-        "mental-health"
-      ],
-      "location": "South Dakota",
-      "area": "Sioux Falls",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "625 South Minnesota Avenue",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/12586152291",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/SD.json"
-  },
-  {
     "id": "res-20260621-4713bc60",
     "type": "resource",
     "status": "pending",
@@ -4784,39 +3853,6 @@
     "targetFile": "src/_data/resources/states/TN.json"
   },
   {
-    "id": "res-20260621-8aecc901",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:48.141112+00:00"
-    },
-    "payload": {
-      "name": "Stanlick Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "Tennessee",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "physiotherapist",
-        "wheelchair-accessible"
-      ],
-      "source": "https://www.openstreetmap.org/node/8632653170",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/TN.json"
-  },
-  {
     "id": "res-20260621-5c05c971",
     "type": "resource",
     "status": "pending",
@@ -4913,38 +3949,6 @@
     "targetFile": "src/_data/resources/states/TN.json"
   },
   {
-    "id": "res-20260621-51e03ae7",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:48.141141+00:00"
-    },
-    "payload": {
-      "name": "Total Care ABA Therapy",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Tennessee",
-      "area": "Memphis",
-      "description": "Total Care ABA Therapy is a leading national provider of Applied Behavior Analysis (ABA) therapy for children diagnosed on the autism spectrum and their families.",
-      "phone": "+1 404-400-5004",
-      "website": "https://www.totalcareaba.com/",
-      "address": "6000 Poplar Ave",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/10881139331",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/TN.json"
-  },
-  {
     "id": "res-20260621-e75708af",
     "type": "resource",
     "status": "pending",
@@ -5036,38 +4040,6 @@
         "physiotherapist"
       ],
       "source": "https://www.openstreetmap.org/node/10925529021",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/TN.json"
-  },
-  {
-    "id": "res-20260621-db855527",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:44:48.141169+00:00"
-    },
-    "payload": {
-      "name": "Dr. Katherine Barteck",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Tennessee",
-      "area": "Johnson City",
-      "description": "",
-      "phone": "+1 423 449 9146",
-      "website": "https://drbarteck.com/",
-      "address": "508 East Unaka Avenue",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/11107566122",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/TN.json"
@@ -5686,38 +4658,6 @@
     "targetFile": "src/_data/resources/states/TX.json"
   },
   {
-    "id": "res-20260621-665cd693",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:03.241353+00:00"
-    },
-    "payload": {
-      "name": "June Ellen Shepherd, Ph.D.",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Texas",
-      "area": "Jacksonville",
-      "description": "",
-      "phone": "+1-903-284-6244",
-      "website": "https://juneshepherd.com/",
-      "address": "514 East Commerce Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/5779003682",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/TX.json"
-  },
-  {
     "id": "res-20260621-08afef29",
     "type": "resource",
     "status": "pending",
@@ -5937,38 +4877,6 @@
         "medical_supply"
       ],
       "source": "https://www.openstreetmap.org/node/6189111535",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/TX.json"
-  },
-  {
-    "id": "res-20260621-a062f0d8",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:03.241410+00:00"
-    },
-    "payload": {
-      "name": "Brown Mary Ann",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Texas",
-      "area": "Weatherford",
-      "description": "",
-      "phone": "+1-817-599-8040",
-      "website": "https://www.maryannbrowntx.com/",
-      "address": "115 North Weiland Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/6292840167",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/TX.json"
@@ -6456,38 +5364,6 @@
     "targetFile": "src/_data/resources/states/UT.json"
   },
   {
-    "id": "res-20260621-af1bcf28",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:16.609554+00:00"
-    },
-    "payload": {
-      "name": "1st Alliance Behavioral Health",
-      "category": [
-        "therapy"
-      ],
-      "location": "Utah",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "rehabilitation"
-      ],
-      "source": "https://www.openstreetmap.org/node/6591671002",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/UT.json"
-  },
-  {
     "id": "res-20260621-f913f218",
     "type": "resource",
     "status": "pending",
@@ -6648,38 +5524,6 @@
     "targetFile": "src/_data/resources/states/UT.json"
   },
   {
-    "id": "res-20260621-912366d3",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:16.609597+00:00"
-    },
-    "payload": {
-      "name": "Live Well Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "Utah",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "physiotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/8086504164",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/UT.json"
-  },
-  {
     "id": "res-20260621-e7bd05d0",
     "type": "resource",
     "status": "pending",
@@ -6808,38 +5652,6 @@
     "targetFile": "src/_data/resources/states/UT.json"
   },
   {
-    "id": "res-20260621-e95dec1e",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:16.609633+00:00"
-    },
-    "payload": {
-      "name": "Silverado Counseling",
-      "category": [
-        "therapy"
-      ],
-      "location": "Utah",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/9181368593",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/UT.json"
-  },
-  {
     "id": "res-20260621-00aa26f4",
     "type": "resource",
     "status": "pending",
@@ -6872,38 +5684,6 @@
     "targetFile": "src/_data/resources/states/VT.json"
   },
   {
-    "id": "res-20260621-0eb36ef8",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.707954+00:00"
-    },
-    "payload": {
-      "name": "Washington County Mental Health",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "Montpelier",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "9 Heaton Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "physiotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2844635026",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
     "id": "res-20260621-db99d8a8",
     "type": "resource",
     "status": "pending",
@@ -6931,71 +5711,6 @@
         "physiotherapist"
       ],
       "source": "https://www.openstreetmap.org/node/3645701891",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
-    "id": "res-20260621-70031ce1",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.707971+00:00"
-    },
-    "payload": {
-      "name": "Networks, Inc.",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Vermont",
-      "area": "Burlington",
-      "description": "",
-      "phone": "+1 802-863-2495",
-      "website": "https://www.networksvt.org/",
-      "address": "149 Cherry Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/3656215626",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
-    "id": "res-20260621-5765602a",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.707979+00:00"
-    },
-    "payload": {
-      "name": "Otter Creek Associates",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "Essex Junction",
-      "description": "",
-      "phone": "",
-      "website": "https://www.ottercreekassociates.com/",
-      "address": "15 Pinecrest Drive",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4953681595",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/VT.json"
@@ -7095,39 +5810,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/4953697133",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
-    "id": "res-20260621-41c9487d",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.708008+00:00"
-    },
-    "payload": {
-      "name": "Performance Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "Essex Junction",
-      "description": "",
-      "phone": "",
-      "website": "http://www.returntoplay.com/",
-      "address": "131 Pearl Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "alternative",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4953697134",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/VT.json"
@@ -7298,72 +5980,6 @@
     "targetFile": "src/_data/resources/states/VT.json"
   },
   {
-    "id": "res-20260621-d1eef5e8",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.708050+00:00"
-    },
-    "payload": {
-      "name": "Community Chiropractic",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "Essex",
-      "description": "",
-      "phone": "",
-      "website": "https://spineandsportvt.com/",
-      "address": "8 Essex Way",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "alternative",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4955191149",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
-    "id": "res-20260621-7d110084",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.708056+00:00"
-    },
-    "payload": {
-      "name": "Azimuth Counseling & Therapeutic Services",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "Essex",
-      "description": "",
-      "phone": "",
-      "website": "https://www.azimuthcounseling.org/",
-      "address": "8 Essex Way",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4955191150",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
     "id": "res-20260621-448d7a1a",
     "type": "resource",
     "status": "pending",
@@ -7425,39 +6041,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/4955191152",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
-    "id": "res-20260621-4f6b9ce3",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.708077+00:00"
-    },
-    "payload": {
-      "name": "Summit Chiropractic Center",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "",
-      "description": "",
-      "phone": "",
-      "website": "https://www.summitchiropracticvt.com/",
-      "address": "69 Center Road",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "alternative",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4955211357",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/VT.json"
@@ -7529,39 +6112,6 @@
     "targetFile": "src/_data/resources/states/VT.json"
   },
   {
-    "id": "res-20260621-9f50fec1",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:45:22.708097+00:00"
-    },
-    "payload": {
-      "name": "Crossroads",
-      "category": [
-        "therapy"
-      ],
-      "location": "Vermont",
-      "area": "Essex Junction",
-      "description": "",
-      "phone": "",
-      "website": "https://crossroadsvt.com/",
-      "address": "15 Pinecrest Drive",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/4957564238",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
     "id": "res-20260621-3b720b39",
     "type": "resource",
     "status": "pending",
@@ -7625,38 +6175,6 @@
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/VT.json"
-  },
-  {
-    "id": "res-20260621-f2230612",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:46:21.619687+00:00"
-    },
-    "payload": {
-      "name": "Greater Lakes Mental Healthcare",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Washington",
-      "area": "Tacoma",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "1415 East 72nd Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/504727150",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/WA.json"
   },
   {
     "id": "res-20260621-b54da930",
@@ -7979,70 +6497,6 @@
     "targetFile": "src/_data/resources/states/WA.json"
   },
   {
-    "id": "res-20260621-b1e7a903",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:46:21.619807+00:00"
-    },
-    "payload": {
-      "name": "Bothell Christian Counseling",
-      "category": [
-        "therapy"
-      ],
-      "location": "Washington",
-      "area": "Bothell",
-      "description": "",
-      "phone": "",
-      "website": "https://bothellcounseling.com/",
-      "address": "10116 Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2367883592",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/WA.json"
-  },
-  {
-    "id": "res-20260621-decc85d8",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:46:21.619814+00:00"
-    },
-    "payload": {
-      "name": "Emmaus Counseling",
-      "category": [
-        "therapy"
-      ],
-      "location": "Washington",
-      "area": "Bothell",
-      "description": "",
-      "phone": "",
-      "website": "",
-      "address": "10116 Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2367883598",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/WA.json"
-  },
-  {
     "id": "res-20260621-6e558506",
     "type": "resource",
     "status": "pending",
@@ -8204,38 +6658,6 @@
     "targetFile": "src/_data/resources/states/WA.json"
   },
   {
-    "id": "res-20260621-804cb352",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:46:21.619858+00:00"
-    },
-    "payload": {
-      "name": "Tender Rock Counseling",
-      "category": [
-        "therapy"
-      ],
-      "location": "Washington",
-      "area": "BELLEVUE",
-      "description": "",
-      "phone": "+1-425-449-8851",
-      "website": "https://tenderrockcounseling.org/",
-      "address": "#100",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "therapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2439701761",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/WA.json"
-  },
-  {
     "id": "res-20260621-6e7d97d3",
     "type": "resource",
     "status": "pending",
@@ -8263,38 +6685,6 @@
         "therapist"
       ],
       "source": "https://www.openstreetmap.org/node/2459689658",
-      "lastScraped": "2026-06-21"
-    },
-    "targetFile": "src/_data/resources/states/WA.json"
-  },
-  {
-    "id": "res-20260621-25059576",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-06-21T04:46:21.619872+00:00"
-    },
-    "payload": {
-      "name": "Alsept Psychiatric",
-      "category": [
-        "mental-health"
-      ],
-      "location": "Washington",
-      "area": "Seattle",
-      "description": "",
-      "phone": "",
-      "website": "https://www.alseptpsychiatric.com",
-      "address": "3436 Northeast 45th Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "psychotherapist"
-      ],
-      "source": "https://www.openstreetmap.org/node/2461869466",
       "lastScraped": "2026-06-21"
     },
     "targetFile": "src/_data/resources/states/WA.json"

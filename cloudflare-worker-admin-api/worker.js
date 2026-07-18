@@ -179,20 +179,23 @@ async function handleSubmit(request, env, ctx) {
 
   const today = new Date().toISOString().split("T")[0];
   const isBookmarklet = data.submissionSource === "quick-submit";
-  // PII rule: submitterEmail never enters the envelope — the repo is public.
+  // Tags arrive comma-separated from the form's tag widget.
+  const tags = (data.tags || "").split(",").map(t => t.trim()).filter(Boolean).slice(0, 20);
+  // PII rule: submitterEmail / submitterName never enter the envelope (public repo).
   const payload = {
     name: data.resourceName.trim().slice(0, 200),
     category: [data.category.trim()],
     location: data.location.trim(),
-    area: "",
+    area: (data.area || "").trim(),
     description: data.description.trim(),
-    phone: (data.contactInfo || "").trim(),
+    phone: (data.resourcePhone || data.contactInfo || "").trim(),
+    email: (data.resourceEmail || "").trim(),
     website: (data.website || "").trim(),
-    address: "",
+    address: (data.resourceAddress || "").trim(),
     ageRange: "",
     disabilityTypes: [],
     cost: "",
-    tags: [],
+    tags: tags,
     source: (data.website || "").trim() || "website-submission",
     lastScraped: today
   };
