@@ -1,35 +1,33 @@
-Weekly Scrape Digest — 2026-07-12
+Weekly Scrape Digest — 2026-07-19
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 6 pending (2 new this run)
-  resource: 1462 pending (272 new this run)
-  spotlight: 8 pending (1 new this run)
-  story: 64 pending (13 new this run)
-  submission: 2 pending
-
-Scraper: osm_overpass
-  Entries processed: 546
-  - [error] NY: HTTP Error 429: Too Many Requests
-  - [error] NC: HTTP Error 429: Too Many Requests
-  - [error] OK: HTTP Error 429: Too Many Requests
-  - [error] SC: HTTP Error 429: Too Many Requests
-  - [error] SD: HTTP Error 504: Gateway Timeout
-  - [error] WI: HTTP Error 429: Too Many Requests
-  - [error] CA: HTTP Error 429: Too Many Requests
+  blog: 6 pending
+  resource: 1442 pending (267 new this run)
+  spotlight: 8 pending
+  story: 57 pending
+  submission: 3 pending
 
 Scraper: cms_providers
   Entries processed: 79
 
+Scraper: osm_overpass
+  Entries processed: 766
+  - [error] OK: HTTP Error 504: Gateway Timeout
+  - [error] OR: HTTP Error 504: Gateway Timeout
+  - [error] SD: HTTP Error 504: Gateway Timeout
+  - [error] UT: HTTP Error 504: Gateway Timeout
+  - [error] WA: HTTP Error 429: Too Many Requests
+  - [error] AL: HTTP Error 429: Too Many Requests
+  - [error] FL: HTTP Error 429: Too Many Requests
+  - [error] ID: HTTP Error 504: Gateway Timeout
+  - [error] KY: HTTP Error 504: Gateway Timeout
+
 Scraper: spotlight_scraper
-  Entries processed: 2
-  - [queued] Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera
-  - [queued] Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera
+  Entries processed: 1
 
 Scraper: blog_content
-  Entries processed: 2
-  - [queued] Deaf and Blind? How They Can Still Communicate and Participate in Worship - Adventist Review
-  - [queued] NC’s childcare crisis disproportionately affects disabled kids. A lawmaker says it's time for change - NC Newsline
+  Entries processed: 1
 
 —
 The Fullest Project | thefullestproject.org
