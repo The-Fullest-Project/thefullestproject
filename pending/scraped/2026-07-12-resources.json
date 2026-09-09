@@ -1,37 +1,5 @@
 [
   {
-    "id": "res-20260712-9255e0d4",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-07-12T03:16:37.349473+00:00"
-    },
-    "payload": {
-      "name": "Silver State Relief - Sparks",
-      "category": [
-        "equipment"
-      ],
-      "location": "Nevada",
-      "area": "",
-      "description": "",
-      "phone": "+17754407777",
-      "website": "https://silverstaterelief.com/",
-      "address": "175 East Greg Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "medical_supply"
-      ],
-      "source": "https://www.openstreetmap.org/node/12861303501",
-      "lastScraped": "2026-07-12"
-    },
-    "targetFile": "src/_data/resources/states/NV.json"
-  },
-  {
     "id": "res-20260712-279eac78",
     "type": "resource",
     "status": "pending",
