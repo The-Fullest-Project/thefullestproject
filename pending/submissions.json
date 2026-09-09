@@ -31,5 +31,38 @@
       "source": "https://kaneandkashadapt.co/",
       "lastScraped": "2026-08-19"
     }
+  },
+  {
+    "id": "sub-20260909-f7dd5960",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-09-09T02:35:01.663Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "WoodleCo AFO Socks — Soft, Brace-Friendly Knee-Highs & Crew – Woodle & Company",
+      "category": [
+        "clothing"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Why Woodle socks?  Our socks aren’t just cute — they’re designed to do the job.  We use premium long-fiber cotton in a dense, breathable weave that’s thin enough for orthotics to work properly, yet tough enough to handle daily wear.\r\n\r\n-Seamless toes for sensory comfort\r\n-Extra length to stay up and cover AFOs\r\n-Just-right stretch so they don’t sag or pinch\r\n\r\nWhether your child wears braces or just loves cozy socks that stay put, Woodle socks are made to move with them — from the playground to the big wide world.",
+      "phone": "",
+      "email": "",
+      "website": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "AFO socks",
+        "Sensory friendly socks"
+      ],
+      "source": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
+      "lastScraped": "2026-09-09"
+    }
   }
 ]
