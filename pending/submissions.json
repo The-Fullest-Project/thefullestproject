@@ -64,5 +64,37 @@
       "source": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
       "lastScraped": "2026-09-09"
     }
+  },
+  {
+    "id": "sub-20260909-c464afd5",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-09-09T02:37:34.554Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "SmartKnit Socks",
+      "category": [
+        "clothing"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "AFO and KAFO socks",
+      "phone": "",
+      "email": "",
+      "website": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "AFO socks"
+      ],
+      "source": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+      "lastScraped": "2026-09-09"
+    }
   }
 ]
