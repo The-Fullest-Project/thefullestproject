@@ -1,32 +1,31 @@
-Weekly Scrape Digest — 2026-09-06
+Weekly Scrape Digest — 2026-09-13
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 6 pending (2 new this run)
-  resource: 907 pending (41 new this run)
-  spotlight: 9 pending (3 new this run)
+  blog: 7 pending (2 new this run)
+  resource: 853 pending (61 new this run)
+  spotlight: 8 pending
   story: 64 pending (13 new this run)
-  submission: 1 pending
+  submission: 3 pending
 
 Scraper: cms_providers
   Entries processed: 78
 
 Scraper: osm_overpass
-  Entries processed: 838
-  - [error] RI: HTTP Error 429: Too Many Requests
-  - [error] CA: HTTP Error 429: Too Many Requests
-  - [error] MD: HTTP Error 429: Too Many Requests
+  Entries processed: 814
+  - [error] SD: HTTP Error 429: Too Many Requests
+  - [error] VA: HTTP Error 429: Too Many Requests
+  - [error] AL: HTTP Error 429: Too Many Requests
+  - [error] DE: HTTP Error 429: Too Many Requests
+  - [error] NE: HTTP Error 429: Too Many Requests
 
 Scraper: spotlight_scraper
-  Entries processed: 3
-  - [queued] Adaptive Adventures is Making Trails More Accessible
-  - [queued] Penn State Health, Penn State College of Medicine recognized as best places to w
-  - [queued] Berkeley’s trailblazing adaptive sports nonprofit BORP turns 50
+  Entries processed: 1
 
 Scraper: blog_content
   Entries processed: 2
-  - [queued] CaregiverCompanion.ai Announces Permanent No-Cost Access to CARA for Caregivers - EIN News
-  - [queued] Market shaping via digital public infrastructure for assistive technology in low- and middle-income countries - Frontiers
+  - [queued] All Home Care Matters Brings National Attention to Family Caregiving Through Lance A. Slatton's "Caregiving in America" - TMX Newsfile
+  - [queued] Parents, professionals highlight errors in Nebraska assessment for developmentally disabled - nebraskaexaminer.com
 
 —
 The Fullest Project | thefullestproject.org

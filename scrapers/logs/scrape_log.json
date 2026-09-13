@@ -1,46 +1,6 @@
 [
   {
     "scraper": "spotlight_scraper",
-    "timestamp": "2026-06-14T04:25:16.098185",
-    "entries_found": 1,
-    "entries": [
-      {
-        "action": "no_new_found"
-      }
-    ]
-  },
-  {
-    "scraper": "blog_content",
-    "timestamp": "2026-06-14T04:25:18.074301",
-    "entries_found": 1,
-    "entries": [
-      {
-        "action": "no_new_posts"
-      }
-    ]
-  },
-  {
-    "scraper": "osm_overpass",
-    "timestamp": "2026-06-21T04:46:23.629049",
-    "status": "OK",
-    "targets_attempted": 23,
-    "targets_succeeded": 23,
-    "entries_found": 556,
-    "entries_queued": 262,
-    "entries": []
-  },
-  {
-    "scraper": "cms_providers",
-    "timestamp": "2026-06-21T04:46:26.351339",
-    "status": "OK",
-    "targets_attempted": 2,
-    "targets_succeeded": 2,
-    "entries_found": 79,
-    "entries_queued": 0,
-    "entries": []
-  },
-  {
-    "scraper": "spotlight_scraper",
     "timestamp": "2026-06-21T04:46:31.482432",
     "entries_found": 3,
     "entries": [
@@ -944,6 +904,76 @@
         "title": "Market shaping via digital public infrastructure for assistive technology in low- and middle-income countries - Frontiers",
         "source": "Frontiers",
         "slug": "market-shaping-via-digital-public-infrastructure-for-assisti"
+      }
+    ]
+  },
+  {
+    "scraper": "cms_providers",
+    "timestamp": "2026-09-13T03:53:42.952747",
+    "status": "OK",
+    "targets_attempted": 2,
+    "targets_succeeded": 2,
+    "entries_found": 78,
+    "entries_queued": 0,
+    "entries": []
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-09-13T04:58:24.782291",
+    "status": "PARTIAL",
+    "targets_attempted": 51,
+    "targets_succeeded": 46,
+    "entries_found": 814,
+    "entries_queued": 61,
+    "entries": [
+      {
+        "action": "error",
+        "name": "SD: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "VA: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "AL: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "DE: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "NE: HTTP Error 429: Too Many Requests"
+      }
+    ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-09-13T04:58:30.975142",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_found"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-09-13T04:58:33.423153",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "queued",
+        "title": "All Home Care Matters Brings National Attention to Family Caregiving Through Lance A. Slatton's \"Caregiving in America\" - TMX Newsfile",
+        "source": "TMX Newsfile",
+        "slug": "all-home-care-matters-brings-national-attention-to-family-ca"
+      },
+      {
+        "action": "queued",
+        "title": "Parents, professionals highlight errors in Nebraska assessment for developmentally disabled - nebraskaexaminer.com",
+        "source": "nebraskaexaminer.com",
+        "slug": "parents-professionals-highlight-errors-in-nebraska-assessmen"
       }
     ]
   }

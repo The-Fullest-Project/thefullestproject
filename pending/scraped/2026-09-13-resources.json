@@ -1,0 +1,1966 @@
+[
+  {
+    "id": "res-20260913-abc24780",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:02:34.852347+00:00"
+    },
+    "payload": {
+      "name": "Pomarri",
+      "category": [
+        "therapy"
+      ],
+      "location": "Utah",
+      "area": "Salt Lake City",
+      "description": "",
+      "phone": "+1-801-607-2968",
+      "website": "https://pomarri.com/drug-alcohol-rehab-in-salt-lake-city-utah/",
+      "address": "1255 East Brickyard Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/14173274503",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/UT.json"
+  },
+  {
+    "id": "res-20260913-9aa5cbc9",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:02:34.852371+00:00"
+    },
+    "payload": {
+      "name": "Brighton Recovery Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Utah",
+      "area": "South Ogden",
+      "description": "",
+      "phone": "+1-801-479-7035",
+      "website": "https://www.brightonrecoverycenter.com/locations/recovery-center-south-ogden-utah/",
+      "address": "6000 South 1075 East",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/way/40187947",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/UT.json"
+  },
+  {
+    "id": "res-20260913-41d56299",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:11:30.116516+00:00"
+    },
+    "payload": {
+      "name": "Life Transformation Recovery",
+      "category": [
+        "therapy"
+      ],
+      "location": "Arizona",
+      "area": "Prescott Valley",
+      "description": "",
+      "phone": "+1-928-515-0044",
+      "website": "https://www.lifetransformationrecovery.com",
+      "address": "8521 East Florentine Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/5711428699",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/AZ.json"
+  },
+  {
+    "id": "res-20260913-dd2e2cbb",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:11:30.116535+00:00"
+    },
+    "payload": {
+      "name": "BrightView Glenndale Addiction Treatment Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Arizona",
+      "area": "",
+      "description": "",
+      "phone": "+1-602-492-9595",
+      "website": "https://www.brightviewhealth.com/locations/glendale-addiction-treatment-center/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/6044970377",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/AZ.json"
+  },
+  {
+    "id": "res-20260913-7298cb07",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:11:30.116545+00:00"
+    },
+    "payload": {
+      "name": "Fountain Hills Recovery",
+      "category": [
+        "therapy"
+      ],
+      "location": "Arizona",
+      "area": "Fountain Hills",
+      "description": "",
+      "phone": "+1-800-715-2004",
+      "website": "https://www.fountainhillsrecovery.com",
+      "address": "16872 East Avenue of the Fountains",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/6399711939",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/AZ.json"
+  },
+  {
+    "id": "res-20260913-212d93ae",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:11:30.116553+00:00"
+    },
+    "payload": {
+      "name": "Corebella Addiction Treatment & Suboxone Clinic",
+      "category": [
+        "therapy"
+      ],
+      "location": "Arizona",
+      "area": "Scottsdale",
+      "description": "",
+      "phone": "+1-602-649-0677",
+      "website": "https://www.corebellawellness.com/scottsdale/",
+      "address": "6565 East Greenway Parkway",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/8001127269",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/AZ.json"
+  },
+  {
+    "id": "res-20260913-a5b7175b",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:14:39.633071+00:00"
+    },
+    "payload": {
+      "name": "Valley West Care Center",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "Williams",
+      "description": "",
+      "phone": "+1 530 473 5321",
+      "website": "https://www.valleywestpostacute.com/",
+      "address": "1224 E Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "nursing_home",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/358822638",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20260913-4252cfcf",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:14:39.633088+00:00"
+    },
+    "payload": {
+      "name": "Sharp Mcdonald Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "California",
+      "area": "San Diego",
+      "description": "",
+      "phone": "+1 858 576 1200",
+      "website": "https://www.sharp.com/hospitals/mcdonald",
+      "address": "7989 Linda Vista Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/596106188",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20260913-ee36a17b",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:14:39.633098+00:00"
+    },
+    "payload": {
+      "name": "Wylde Horses Therapeutic Riding Facility",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "Valley Center",
+      "description": "",
+      "phone": "",
+      "website": "https://wyldehorses.com/",
+      "address": "12292 Mirar de Valle Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "equine_assisted_centre",
+        "child;disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/597031386",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20260913-8ecaba9f",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:14:39.633106+00:00"
+    },
+    "payload": {
+      "name": "Via Rehabilitation Services",
+      "category": [
+        "therapy"
+      ],
+      "location": "California",
+      "area": "Santa Clara",
+      "description": "",
+      "phone": "",
+      "website": "https://viaservices.org/",
+      "address": "2851 Park Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation",
+        "ngo"
+      ],
+      "source": "https://www.openstreetmap.org/node/936101804",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20260913-612b14a0",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:14:39.633113+00:00"
+    },
+    "payload": {
+      "name": "Music Connects",
+      "category": [
+        "therapy"
+      ],
+      "location": "California",
+      "area": "Berkeley",
+      "description": "",
+      "phone": "",
+      "website": "http://www.musicconnects.net/",
+      "address": "1415 Martin Luther King Jr Way",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/2622567616",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20260913-8ee8fe1e",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:09.203109+00:00"
+    },
+    "payload": {
+      "name": "Bainbridge Probation Substance Abuse Treatment Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Georgia",
+      "area": "Bainbridge",
+      "description": "",
+      "phone": "+1 229 248 2416",
+      "website": "https://gdc.georgia.gov/locations/bainbridge-substance-abuse-center",
+      "address": "235 State Hospital Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/358679828",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/GA.json"
+  },
+  {
+    "id": "res-20260913-9552b7ea",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:09.203129+00:00"
+    },
+    "payload": {
+      "name": "Willingway",
+      "category": [
+        "therapy"
+      ],
+      "location": "Georgia",
+      "area": "Statesboro",
+      "description": "",
+      "phone": "+1 888 979 2140",
+      "website": "https://willingway.com/",
+      "address": "311 Jones Mill Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/358760832",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/GA.json"
+  },
+  {
+    "id": "res-20260913-a7ef8869",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:09.203139+00:00"
+    },
+    "payload": {
+      "name": "Uniforms Plus Embroidery and More",
+      "category": [
+        "equipment"
+      ],
+      "location": "Georgia",
+      "area": "Newnan",
+      "description": "",
+      "phone": "+1 770-502-0398",
+      "website": "https://uniformsplusembroidery.com/",
+      "address": "2730 GA-34",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/3975577480",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/GA.json"
+  },
+  {
+    "id": "res-20260913-db3bfefd",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:09.203146+00:00"
+    },
+    "payload": {
+      "name": "East Georgia Respicare",
+      "category": [
+        "equipment"
+      ],
+      "location": "Georgia",
+      "area": "Fitzgerald",
+      "description": "",
+      "phone": "+1-229-424-0018",
+      "website": "http://eastgeorgiarespicare.com",
+      "address": "611 S Grant St",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/4451795250",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/GA.json"
+  },
+  {
+    "id": "res-20260913-f437c78d",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:09.203154+00:00"
+    },
+    "payload": {
+      "name": "OrthoAtlanta",
+      "category": [
+        "therapy"
+      ],
+      "location": "Georgia",
+      "area": "",
+      "description": "",
+      "phone": "+1 404 418 9090",
+      "website": "https://www.orthoatlanta.com/locations/the-battery-atlanta",
+      "address": "455 Legends Place",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/7246405760",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/GA.json"
+  },
+  {
+    "id": "res-20260913-23218329",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:14.734434+00:00"
+    },
+    "payload": {
+      "name": "Ace Medical Inc",
+      "category": [
+        "equipment"
+      ],
+      "location": "Hawaii",
+      "area": "Waipahu",
+      "description": "",
+      "phone": "",
+      "website": "https://www.acemedicalinc.com/",
+      "address": "94-910 Moloalo Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/7731738358",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/HI.json"
+  },
+  {
+    "id": "res-20260913-9e6f48b3",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:14.734453+00:00"
+    },
+    "payload": {
+      "name": "Keiki Therapy",
+      "category": [
+        "therapy"
+      ],
+      "location": "Hawaii",
+      "area": "",
+      "description": "",
+      "phone": "+1 808-209-7934",
+      "website": "https://www.keikitherapy.com",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/9976155319",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/HI.json"
+  },
+  {
+    "id": "res-20260913-ee1ed338",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:14.734463+00:00"
+    },
+    "payload": {
+      "name": "National Seating & Mobility Inc",
+      "category": [
+        "equipment"
+      ],
+      "location": "Hawaii",
+      "area": "Pearl City",
+      "description": "",
+      "phone": "+1 808-842-3889",
+      "website": "https://locations.nsm-seating.com/hi/pearl-city/96-1173-waihona-street",
+      "address": "96-1173 Waihona Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/12648502875",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/HI.json"
+  },
+  {
+    "id": "res-20260913-4400a2b1",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:14.734471+00:00"
+    },
+    "payload": {
+      "name": "Big Island Substance Abuse Council",
+      "category": [
+        "therapy"
+      ],
+      "location": "Hawaii",
+      "area": "",
+      "description": "",
+      "phone": "+1 808-969-9994",
+      "website": "https://bisac.org/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/way/718078720",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/HI.json"
+  },
+  {
+    "id": "res-20260913-43a18da6",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:25:14.734479+00:00"
+    },
+    "payload": {
+      "name": "Bobby Benson Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Hawaii",
+      "area": "Kahuku",
+      "description": "",
+      "phone": "+1 877-393-7555",
+      "website": "https://www.bobbybenson.org/",
+      "address": "56-660 Kamehameha Highway",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/way/1441552665",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/HI.json"
+  },
+  {
+    "id": "res-20260913-ea4e312a",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:28:10.796101+00:00"
+    },
+    "payload": {
+      "name": "NorthShore Rehab",
+      "category": [
+        "therapy"
+      ],
+      "location": "Illinois",
+      "area": "Evanston",
+      "description": "",
+      "phone": "+1 847 570 7170",
+      "website": "https://www.northshore.org/physical-medicine-rehabilitation/our-services/physical-therapy/",
+      "address": "1729 Benson Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/2295263437",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IL.json"
+  },
+  {
+    "id": "res-20260913-1085f1d3",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:28:10.796119+00:00"
+    },
+    "payload": {
+      "name": "The Blossom Method",
+      "category": [
+        "therapy"
+      ],
+      "location": "Illinois",
+      "area": "Chicago",
+      "description": "",
+      "phone": "+1-312-854-0061",
+      "website": "https://blossommethod.com/",
+      "address": "233 East Erie Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/2998023306",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IL.json"
+  },
+  {
+    "id": "res-20260913-e385bd96",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:28:10.796129+00:00"
+    },
+    "payload": {
+      "name": "Sparc",
+      "category": [
+        "community"
+      ],
+      "location": "Illinois",
+      "area": "Springfield",
+      "description": "",
+      "phone": "+1-217-529-8678",
+      "website": "https://www.spfldsparc.org/",
+      "address": "1819 East Stevenson Drive",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "assisted_living",
+        "disabled",
+        "wheelchair-accessible"
+      ],
+      "source": "https://www.openstreetmap.org/node/4075477282",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IL.json"
+  },
+  {
+    "id": "res-20260913-6b1ba24d",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:28:10.796137+00:00"
+    },
+    "payload": {
+      "name": "MedServ Equipment Corp",
+      "category": [
+        "equipment"
+      ],
+      "location": "Illinois",
+      "area": "Urbana",
+      "description": "",
+      "phone": "+1-217-355-7971",
+      "website": "https://www.medservdme.com/medserv-cu",
+      "address": "300 South Broadway Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/5836972907",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IL.json"
+  },
+  {
+    "id": "res-20260913-27284b18",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:35.630051+00:00"
+    },
+    "payload": {
+      "name": "Fairbanks Addiction Treatment Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Indiana",
+      "area": "Indianapolis",
+      "description": "",
+      "phone": "+1-317-849-8222",
+      "website": "https://www.fairbankscd.org/",
+      "address": "8102 Clearvista Drive",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/358684528",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IN.json"
+  },
+  {
+    "id": "res-20260913-ef0ddb5c",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:35.630074+00:00"
+    },
+    "payload": {
+      "name": "Avenues Recovery Center at Fort Wayne",
+      "category": [
+        "therapy"
+      ],
+      "location": "Indiana",
+      "area": "Fort Wayne",
+      "description": "",
+      "phone": "+1 260 399 2900",
+      "website": "https://www.avenuesrecovery.com/locations/fort-wayne-drug-rehab-center",
+      "address": "2626 Fairfield Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/5587080208",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IN.json"
+  },
+  {
+    "id": "res-20260913-3b962992",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:35.630084+00:00"
+    },
+    "payload": {
+      "name": "Ivy Rehab for Kids",
+      "category": [
+        "therapy"
+      ],
+      "location": "Indiana",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "https://www.ivyrehab.com/location/kokomo-in-kids/",
+      "address": "2108 East Boulevard Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist",
+        "wheelchair-accessible"
+      ],
+      "source": "https://www.openstreetmap.org/node/8099277286",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IN.json"
+  },
+  {
+    "id": "res-20260913-1b7528f4",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:35.630091+00:00"
+    },
+    "payload": {
+      "name": "Life Care Center",
+      "category": [
+        "housing"
+      ],
+      "location": "Indiana",
+      "area": "Valparaiso",
+      "description": "",
+      "phone": "+1 219 462 1023",
+      "website": "https://lcca.com/locations/in/valparaiso/",
+      "address": "3405 North Campbell Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "nursing_home",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/8777522833",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IN.json"
+  },
+  {
+    "id": "res-20260913-e5900c95",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906857+00:00"
+    },
+    "payload": {
+      "name": "Sunnycrest Manor",
+      "category": [
+        "community"
+      ],
+      "location": "Iowa",
+      "area": "Dubuque",
+      "description": "",
+      "phone": "+1-563-583-1781",
+      "website": "https://dubuquecounty.org/sunnycrest-manor/",
+      "address": "2375 Roosevelt Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "group_home",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/354321166",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-20ec9bc5",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906877+00:00"
+    },
+    "payload": {
+      "name": "Prism Home Medical Supply Specialists",
+      "category": [
+        "equipment"
+      ],
+      "location": "Iowa",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "https://www.prism-medical.com/",
+      "address": "3190 100th Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/1943570635",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-3656b1ca",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906886+00:00"
+    },
+    "payload": {
+      "name": "Cedar Valley Mobility",
+      "category": [
+        "equipment"
+      ],
+      "location": "Iowa",
+      "area": "Clive",
+      "description": "",
+      "phone": "",
+      "website": "http://www.mobilitystore.com/",
+      "address": "8832 Swanson Boulevard",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/3648075005",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-6f24e383",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906894+00:00"
+    },
+    "payload": {
+      "name": "Cross Therapy Center, PLLC",
+      "category": [
+        "therapy"
+      ],
+      "location": "Iowa",
+      "area": "Council Bluffs",
+      "description": "",
+      "phone": "+1-712-256-9000",
+      "website": "http://crosstherapycenter.com",
+      "address": "20 Frank Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/4599317560",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-b92e97b9",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906901+00:00"
+    },
+    "payload": {
+      "name": "Quality Health",
+      "category": [
+        "therapy"
+      ],
+      "location": "Iowa",
+      "area": "Forest City",
+      "description": "Health consultant",
+      "phone": "+1-641-590-4515",
+      "website": "https://qualityhealthasap.com",
+      "address": "3375 Hill Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/6169347656",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-e71ba759",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906909+00:00"
+    },
+    "payload": {
+      "name": "Medix",
+      "category": [
+        "therapy"
+      ],
+      "location": "Iowa",
+      "area": "Cedar Rapids",
+      "description": "",
+      "phone": "",
+      "website": "https://gotomedix.com",
+      "address": "1520 Midland Court Northeast",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "occupational_therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/7010442518",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-5fd4a6bd",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906932+00:00"
+    },
+    "payload": {
+      "name": "APPS Para Medical Services",
+      "category": [
+        "equipment"
+      ],
+      "location": "Iowa",
+      "area": "Marion",
+      "description": "",
+      "phone": "+1-319-373-1465",
+      "website": "https://appslive.com/index.aspx",
+      "address": "147 Marion Boulevard",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/7057086682",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-5aeabf83",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:30:52.906940+00:00"
+    },
+    "payload": {
+      "name": "Medical Lending Closet",
+      "category": [
+        "equipment"
+      ],
+      "location": "Iowa",
+      "area": "",
+      "description": "",
+      "phone": "+1-319-362-1929",
+      "website": "https://www.crgraceepiscopal.org/medical-lending-closet",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/9428371160",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/IA.json"
+  },
+  {
+    "id": "res-20260913-3224a287",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:33:18.406156+00:00"
+    },
+    "payload": {
+      "name": "Funk Medical and Mobility",
+      "category": [
+        "equipment"
+      ],
+      "location": "Kansas",
+      "area": "",
+      "description": "",
+      "phone": "+1-785-243-2100",
+      "website": "https://www.facebook.com/SearsHTSConcordiaKS",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/2697931948",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/KS.json"
+  },
+  {
+    "id": "res-20260913-fe27082d",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:33:18.406175+00:00"
+    },
+    "payload": {
+      "name": "The Clayworks",
+      "category": [
+        "community"
+      ],
+      "location": "Kansas",
+      "area": "Hutchinson",
+      "description": "",
+      "phone": "",
+      "website": "https://theclayworks.org/",
+      "address": "1125 North Main Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "outreach",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/9280873901",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/KS.json"
+  },
+  {
+    "id": "res-20260913-b1aabcc6",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:33:18.406184+00:00"
+    },
+    "payload": {
+      "name": "Apollo Medical Services",
+      "category": [
+        "equipment"
+      ],
+      "location": "Kansas",
+      "area": "Lawrence",
+      "description": "",
+      "phone": "+1-620-404-4206",
+      "website": "https://www.apollodme.com/",
+      "address": "1410 Kasold Drive",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/9758116136",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/KS.json"
+  },
+  {
+    "id": "res-20260913-d87d9e0d",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:33:18.406192+00:00"
+    },
+    "payload": {
+      "name": "A Clear Direction",
+      "category": [
+        "therapy"
+      ],
+      "location": "Kansas",
+      "area": "Wichita",
+      "description": "",
+      "phone": "+1-316-260-9101",
+      "website": "https://acleardirectionks.com",
+      "address": "345 South Hydraulic Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/9824746553",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/KS.json"
+  },
+  {
+    "id": "res-20260913-9b8ef57f",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:33:18.406199+00:00"
+    },
+    "payload": {
+      "name": "Great Plains Medical",
+      "category": [
+        "equipment"
+      ],
+      "location": "Kansas",
+      "area": "Olathe",
+      "description": "",
+      "phone": "+1-913-764-3800",
+      "website": "https://greatplainsmedical.com",
+      "address": "1849 South Ridgeview Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/9911110697",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/KS.json"
+  },
+  {
+    "id": "res-20260913-d1c0938e",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595346+00:00"
+    },
+    "payload": {
+      "name": "Specialty Rehabilitation Hospital",
+      "category": [
+        "therapy"
+      ],
+      "location": "Louisiana",
+      "area": "Coushatta",
+      "description": "",
+      "phone": "",
+      "website": "https://www.specialtyrehabhospital.com",
+      "address": "1110 Ringgold Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/3968970634",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-410ead72",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595365+00:00"
+    },
+    "payload": {
+      "name": "United Cerebral Palsy",
+      "category": [
+        "community"
+      ],
+      "location": "Louisiana",
+      "area": "",
+      "description": "",
+      "phone": "+1-504-461-4266",
+      "website": "https://ucpgno.org/",
+      "address": "2200 Veterans Memorial Boulevard",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/6250462505",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-bd0c721f",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595376+00:00"
+    },
+    "payload": {
+      "name": "Accord Rehabilitation Hospital",
+      "category": [
+        "therapy"
+      ],
+      "location": "Louisiana",
+      "area": "Plaquemine",
+      "description": "",
+      "phone": "+1 225-687-8100",
+      "website": "https://www.accordrehabilitationhospital.com/",
+      "address": "59213 River West Dr",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "occupational_therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/6395466148",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-2002b3a8",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595384+00:00"
+    },
+    "payload": {
+      "name": "Access Sleep & Wellness Center",
+      "category": [
+        "equipment"
+      ],
+      "location": "Louisiana",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "https://www.accessrespiratory.com",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/6816572469",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-301e7838",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595392+00:00"
+    },
+    "payload": {
+      "name": "Ochsner Rehabilitation Hospital",
+      "category": [
+        "therapy"
+      ],
+      "location": "Louisiana",
+      "area": "Jefferson",
+      "description": "",
+      "phone": "+1 504 291 5100",
+      "website": "https://www.ochsner-rehab.com",
+      "address": "2614 Jefferson Highway",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/9778209831",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-c304ac30",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595399+00:00"
+    },
+    "payload": {
+      "name": "Tri Parish Rehabilitation Hospital",
+      "category": [
+        "therapy"
+      ],
+      "location": "Louisiana",
+      "area": "Leesville",
+      "description": "",
+      "phone": "+1 337 462 8880",
+      "website": "https://clearskyhealth.com/rosepine",
+      "address": "8088 Hawks Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/10888325390",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-39b14641",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:35:51.595407+00:00"
+    },
+    "payload": {
+      "name": "Iberia Rehabilitation Hospital",
+      "category": [
+        "therapy"
+      ],
+      "location": "Louisiana",
+      "area": "New Iberia",
+      "description": "",
+      "phone": "+1 337 364 6923",
+      "website": "https://iberiarehab.net",
+      "address": "532 Jefferson Terrace",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/10892094813",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/LA.json"
+  },
+  {
+    "id": "res-20260913-06a9c991",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:08.952666+00:00"
+    },
+    "payload": {
+      "name": "Massabesic Health Resources",
+      "category": [
+        "therapy"
+      ],
+      "location": "Maine",
+      "area": "Springvale",
+      "description": "",
+      "phone": "+1-207-490-4920",
+      "website": "https://www.mhrpt.com/springvale/",
+      "address": "481 Main Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/6927386232",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/ME.json"
+  },
+  {
+    "id": "res-20260913-ff9c0f34",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:08.952685+00:00"
+    },
+    "payload": {
+      "name": "Milestone Foundation - Extended Care",
+      "category": [
+        "therapy"
+      ],
+      "location": "Maine",
+      "area": "Old Orchard Beach",
+      "description": "",
+      "phone": "+1 207 934 5231",
+      "website": "https://www.milestonefoundation.org",
+      "address": "28 Portland Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation"
+      ],
+      "source": "https://www.openstreetmap.org/node/7175557495",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/ME.json"
+  },
+  {
+    "id": "res-20260913-360c9810",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:08.952694+00:00"
+    },
+    "payload": {
+      "name": "Gallant Therapy Services",
+      "category": [
+        "therapy"
+      ],
+      "location": "Maine",
+      "area": "Augusta",
+      "description": "",
+      "phone": "+1 207-623-3900",
+      "website": "https://www.facebook.com/GallantTherapyServices/",
+      "address": "12 Shuman Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "occupational_therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/8127110493",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/ME.json"
+  },
+  {
+    "id": "res-20260913-348c367c",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:08.952702+00:00"
+    },
+    "payload": {
+      "name": "Galant Therapy Services (Wabon St Office)",
+      "category": [
+        "therapy"
+      ],
+      "location": "Maine",
+      "area": "Augusta",
+      "description": "",
+      "phone": "+1 207-623-3900",
+      "website": "www.facebook.com/GallantTherapyServices/",
+      "address": "4 Wabon Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/9042090383",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/ME.json"
+  },
+  {
+    "id": "res-20260913-9809befc",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:08.952710+00:00"
+    },
+    "payload": {
+      "name": "Morrison Center",
+      "category": [
+        "community"
+      ],
+      "location": "Maine",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "https://morrison-maine.org/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "school",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/9862998299",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/ME.json"
+  },
+  {
+    "id": "res-20260913-9cca0f80",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:26.189027+00:00"
+    },
+    "payload": {
+      "name": "Holly Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Maryland",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "http://www.hollycenter.org/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "occupational_therapist"
+      ],
+      "source": "https://www.openstreetmap.org/node/358246200",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/MD.json"
+  },
+  {
+    "id": "res-20260913-262d396c",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:26.189047+00:00"
+    },
+    "payload": {
+      "name": "Towson Medical Equipment",
+      "category": [
+        "equipment"
+      ],
+      "location": "Maryland",
+      "area": "Parkville",
+      "description": "",
+      "phone": "+1 410 882 4005",
+      "website": "https://towsonmedicalequipment.com/",
+      "address": "1844 East Joppa Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/3025584976",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/MD.json"
+  },
+  {
+    "id": "res-20260913-bd6d94fa",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:38:26.189056+00:00"
+    },
+    "payload": {
+      "name": "Lincare",
+      "category": [
+        "equipment"
+      ],
+      "location": "Maryland",
+      "area": "Baltimore",
+      "description": "",
+      "phone": "+1-410-254-0202",
+      "website": "https://www.lincare.com/",
+      "address": "5522 Harford Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/3495823229",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/MD.json"
+  },
+  {
+    "id": "res-20260913-cbcfb7ee",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:40:45.407156+00:00"
+    },
+    "payload": {
+      "name": "Regional Home Care",
+      "category": [
+        "equipment"
+      ],
+      "location": "Massachusetts",
+      "area": "",
+      "description": "",
+      "phone": "+1-781-963-1426",
+      "website": "https://regionalhc.com/",
+      "address": "1395 North Main Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/6678171220",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/MA.json"
+  },
+  {
+    "id": "res-20260913-6fd83429",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:40:45.407176+00:00"
+    },
+    "payload": {
+      "name": "Cambridge Eating Disorder Center",
+      "category": [
+        "therapy"
+      ],
+      "location": "Massachusetts",
+      "area": "Cambridge",
+      "description": "",
+      "phone": "+1-888-900-2332",
+      "website": "https://www.eatingdisordercenter.org/massachusetts-treatment-center/",
+      "address": "3 Bow Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "rehabilitation",
+        "wheelchair-accessible"
+      ],
+      "source": "https://www.openstreetmap.org/node/7041800574",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/MA.json"
+  },
+  {
+    "id": "res-20260913-e9ae7771",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:45:21.950856+00:00"
+    },
+    "payload": {
+      "name": "Liberty Oxygen and Medical Equipment",
+      "category": [
+        "equipment"
+      ],
+      "location": "Minnesota",
+      "area": "coon rapids",
+      "description": "",
+      "phone": "+1 763-231-2077",
+      "website": "https://www.libertyoxygen.com/locations/coon-rapids",
+      "address": "11650 Round Lake Boulevard Northwest",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/6972153953",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/MN.json"
+  },
+  {
+    "id": "res-20260913-9255e0d4",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-09-13T04:52:59.259390+00:00"
+    },
+    "payload": {
+      "name": "Silver State Relief - Sparks",
+      "category": [
+        "equipment"
+      ],
+      "location": "Nevada",
+      "area": "",
+      "description": "",
+      "phone": "+17754407777",
+      "website": "https://silverstaterelief.com/",
+      "address": "175 East Greg Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "medical_supply"
+      ],
+      "source": "https://www.openstreetmap.org/node/12861303501",
+      "lastScraped": "2026-09-13"
+    },
+    "targetFile": "src/_data/resources/states/NV.json"
+  }
+]
