@@ -1,0 +1,20 @@
+[
+  {
+    "id": "blg-20260920-9efe9e78",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-09-20T04:21:35.612279+00:00"
+    },
+    "payload": {
+      "title": "Planning for Your Autistic Child's Future When You're No Longer Here - Autism Speaks",
+      "source": "Autism Speaks",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlpidE5tZVM2cEZBVnY1VnZfVXlnQUZ0b29hdGw3UjhVeGZ0OUtSMnUtaXo5SmJJXzhvdmkxbmVvTEVrTmNROUEyYm0zWGRDSFJ2MGNxcm1xdjNxRFV2bVE1NnNEWEVLS0R6WUsySUpJRURIaDRHVTdZb055cTdMZHlobzVCUXVCUmoxcmNHWXBmZ0Q5RWduQzd0b2o?oc=5",
+      "date": "2026-09-13",
+      "category": "Resources",
+      "slug": "planning-for-your-autistic-childs-future-when-youre-no-longe"
+    }
+  }
+]

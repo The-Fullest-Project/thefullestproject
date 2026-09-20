@@ -1,31 +1,34 @@
-Weekly Scrape Digest — 2026-09-13
+Weekly Scrape Digest — 2026-09-20
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 7 pending (2 new this run)
-  resource: 853 pending (61 new this run)
-  spotlight: 8 pending
-  story: 64 pending (13 new this run)
+  blog: 7 pending (1 new this run)
+  resource: 790 pending (96 new this run)
+  spotlight: 8 pending (1 new this run)
+  story: 64 pending (15 new this run)
   submission: 3 pending
 
 Scraper: cms_providers
   Entries processed: 78
 
 Scraper: osm_overpass
-  Entries processed: 814
-  - [error] SD: HTTP Error 429: Too Many Requests
+  Entries processed: 750
+  - [error] SC: HTTP Error 504: Gateway Timeout
+  - [error] TN: HTTP Error 504: Gateway Timeout
   - [error] VA: HTTP Error 429: Too Many Requests
-  - [error] AL: HTTP Error 429: Too Many Requests
-  - [error] DE: HTTP Error 429: Too Many Requests
-  - [error] NE: HTTP Error 429: Too Many Requests
+  - [error] ID: HTTP Error 429: Too Many Requests
+  - [error] MI: HTTP Error 429: Too Many Requests
+  - [error] MO: HTTP Error 429: Too Many Requests
+  - [error] NM: HTTP Error 429: Too Many Requests
+  - [error] OH: HTTP Error 504: Gateway Timeout
 
 Scraper: spotlight_scraper
   Entries processed: 1
+  - [queued] Colorado nonprofit helps kids with disabilities find their sport through adaptiv
 
 Scraper: blog_content
-  Entries processed: 2
-  - [queued] All Home Care Matters Brings National Attention to Family Caregiving Through Lance A. Slatton's "Caregiving in America" - TMX Newsfile
-  - [queued] Parents, professionals highlight errors in Nebraska assessment for developmentally disabled - nebraskaexaminer.com
+  Entries processed: 1
+  - [queued] Planning for Your Autistic Child's Future When You're No Longer Here - Autism Speaks
 
 —
 The Fullest Project | thefullestproject.org

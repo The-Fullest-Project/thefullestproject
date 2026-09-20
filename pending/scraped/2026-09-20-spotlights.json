@@ -1,0 +1,30 @@
+[
+  {
+    "id": "spt-20260920-f232b9de",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-09-20T04:21:33.572557+00:00"
+    },
+    "payload": {
+      "name": "Colorado nonprofit helps kids with disabilities find their sport through adaptiv",
+      "description": "Colorado nonprofit helps kids with disabilities find their sport through adaptive programs - Denver7",
+      "category": "Sports",
+      "website": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbkxPckhTU1JXZllIOGxuei04VXdtaU45RGpiaFh1Z1h6WW1YYUlnV045bTR3SjhZQWt2Z2dVUEtOSTVTYUl0dTd1M2dJdVd5SE1lZFg5WmhQRzQ1b3lEaDI4YjhRWnJZcTZWSWpwS1hfQmVTa2xGOXBNZEI0YjlxejlabXMwNGJMeFpLTDh5RlBpcWxhTl9JeEs5UTNKUXNLLTVTbVh5QnZYSHBxUTVOMTU2TmpuMkpIdU52MTNMaDNzVjFaVTZ6elNn?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/sports.svg",
+      "location": "National",
+      "tags": [
+        "sports",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-09-20"
+    }
+  }
+]

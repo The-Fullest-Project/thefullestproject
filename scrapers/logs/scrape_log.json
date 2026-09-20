@@ -1,83 +1,6 @@
 [
   {
     "scraper": "spotlight_scraper",
-    "timestamp": "2026-06-21T04:46:31.482432",
-    "entries_found": 3,
-    "entries": [
-      {
-        "action": "queued",
-        "name": "Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive",
-        "category": "Adventures",
-        "website": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPckhGWXJTV1pMSFJxMENCbHEwY2JEUkExY1kycFdncEpkV0JXcFUyS29KR095RUthNTBGYnMwVlBlUnpLZ25Ma1N2MjdRaWxGTVhIOFg1SllYejh5RndnOE82dlJQUkt5cXJmTGY2bmdCLVRrS2ViY2tiblNOR2xQV2N5TW1uZ3g2cll5cUJSV0pMX1NLaWlMd2tkVk5JeVdxVDdrN1h0OXpkRXJuRVduT0lhYkVNQ0ZLT2dEWVhZOGZ6aC1f?oc=5"
-      },
-      {
-        "action": "queued",
-        "name": "Advancing disability-inclusive education",
-        "category": "Community",
-        "website": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVXkyNmJLTlg2WFRNUXViTDFvQzBJXzBSeDY0ZHpRQWJDMEhMcWUtQ2RqaFZVcTBNdGljWXRZVWZpY0dHNDNLVFBKamZBSGdQbklJUGo0amF1VWhHTlZiR252MUJfSUxwNHJ3d002a0tGdjdIZ0swU3hwZnktWEhnckk4bE1VSl91eGJZaDFKUHJlZ09JU000N0s0YTBvTzFfSTdN?oc=5"
-      },
-      {
-        "action": "queued",
-        "name": "Disability Pride Programs Scheduled for July 16 and July 20 to Feature Adaptive",
-        "category": "Sports",
-        "website": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPckhGWXJTV1pMSFJxMENCbHEwY2JEUkExY1kycFdncEpkV0JXcFUyS29KR095RUthNTBGYnMwVlBlUnpLZ25Ma1N2MjdRaWxGTVhIOFg1SllYejh5RndnOE82dlJQUkt5cXJmTGY2bmdCLVRrS2ViY2tiblNOR2xQV2N5TW1uZ3g2cll5cUJSV0pMX1NLaWlMd2tkVk5JeVdxVDdrN1h0OXpkRXJuRVduT0lhYkVNQ0ZLT2dEWVhZOGZ6aC1f?oc=5"
-      }
-    ]
-  },
-  {
-    "scraper": "blog_content",
-    "timestamp": "2026-06-21T04:46:33.382524",
-    "entries_found": 2,
-    "entries": [
-      {
-        "action": "queued",
-        "title": "Partners in Care: Practical Guidance for Seniors and Caregivers » Council on Aging - Sudbury, MA",
-        "source": "Sudbury, MA",
-        "slug": "partners-in-care-practical-guidance-for-seniors-and-caregive"
-      },
-      {
-        "action": "queued",
-        "title": "NCPEDP will Launch the First-of-its-kind Assistive Technology Policy Paper - The Tribune",
-        "source": "The Tribune",
-        "slug": "ncpedp-will-launch-the-first-of-its-kind-assistive-technolog"
-      }
-    ]
-  },
-  {
-    "scraper": "osm_overpass",
-    "timestamp": "2026-06-28T04:18:03.008800",
-    "status": "PARTIAL",
-    "targets_attempted": 34,
-    "targets_succeeded": 31,
-    "entries_found": 745,
-    "entries_queued": 255,
-    "entries": [
-      {
-        "action": "error",
-        "name": "OH: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "VT: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "AZ: HTTP Error 429: Too Many Requests"
-      }
-    ]
-  },
-  {
-    "scraper": "cms_providers",
-    "timestamp": "2026-06-28T04:18:05.806296",
-    "status": "OK",
-    "targets_attempted": 2,
-    "targets_succeeded": 2,
-    "entries_found": 79,
-    "entries_queued": 0,
-    "entries": []
-  },
-  {
-    "scraper": "spotlight_scraper",
     "timestamp": "2026-06-28T04:18:10.770413",
     "entries_found": 3,
     "entries": [
@@ -974,6 +897,85 @@
         "title": "Parents, professionals highlight errors in Nebraska assessment for developmentally disabled - nebraskaexaminer.com",
         "source": "nebraskaexaminer.com",
         "slug": "parents-professionals-highlight-errors-in-nebraska-assessmen"
+      }
+    ]
+  },
+  {
+    "scraper": "cms_providers",
+    "timestamp": "2026-09-20T04:02:56.831809",
+    "status": "OK",
+    "targets_attempted": 2,
+    "targets_succeeded": 2,
+    "entries_found": 78,
+    "entries_queued": 0,
+    "entries": []
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-09-20T04:21:28.482999",
+    "status": "PARTIAL",
+    "targets_attempted": 51,
+    "targets_succeeded": 43,
+    "entries_found": 750,
+    "entries_queued": 96,
+    "entries": [
+      {
+        "action": "error",
+        "name": "SC: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "TN: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "VA: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "ID: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "MI: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "MO: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "NM: HTTP Error 429: Too Many Requests"
+      },
+      {
+        "action": "error",
+        "name": "OH: HTTP Error 504: Gateway Timeout"
+      }
+    ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-09-20T04:21:33.573225",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "Colorado nonprofit helps kids with disabilities find their sport through adaptiv",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbkxPckhTU1JXZllIOGxuei04VXdtaU45RGpiaFh1Z1h6WW1YYUlnV045bTR3SjhZQWt2Z2dVUEtOSTVTYUl0dTd1M2dJdVd5SE1lZFg5WmhQRzQ1b3lEaDI4YjhRWnJZcTZWSWpwS1hfQmVTa2xGOXBNZEI0YjlxejlabXMwNGJMeFpLTDh5RlBpcWxhTl9JeEs5UTNKUXNLLTVTbVh5QnZYSHBxUTVOMTU2TmpuMkpIdU52MTNMaDNzVjFaVTZ6elNn?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-09-20T04:21:35.612871",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "queued",
+        "title": "Planning for Your Autistic Child's Future When You're No Longer Here - Autism Speaks",
+        "source": "Autism Speaks",
+        "slug": "planning-for-your-autistic-childs-future-when-youre-no-longe"
       }
     ]
   }
