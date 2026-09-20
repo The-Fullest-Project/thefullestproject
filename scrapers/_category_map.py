@@ -141,25 +141,144 @@ def osm_category(tags):
     return None
 
 
-def is_disability_relevant(text, tags=None):
-    """True if the text (name + description) or tags indicate a disability/
-    caregiver resource. tags is an optional dict of OSM/source tags."""
-    blob = (text or "").lower()
+# ---------------------------------------------------------------------------
+# Strict disability-specificity gate (admin decision, September 2026)
+# ---------------------------------------------------------------------------
+# The directory lists organisations that SPECIFICALLY serve people with
+# disabilities. Clinical therapy providers (physical, occupational, speech),
+# general rehabilitation hospitals, drug & alcohol rehab, skilled nursing /
+# home-health agencies and wellness businesses are NOT discovered by scrapers —
+# those go in only when a real family refers them.
+#
+# The old rule treated a structural OSM tag (healthcare=rehabilitation,
+# office=therapist, shop=medical_supply) as proof of relevance, which is what
+# buried the review queue in massage parlours, marriage counsellors, dialysis
+# centres and diabetic-supply shops. The rule is now DEFAULT-DENY: a candidate
+# must carry an explicit disability signal to survive.
+
+# social_facility:for values that are, on their own, proof of disability focus.
+DISABILITY_SOCIAL_FOR = ("disabled", "autism")
+
+# Explicit disability signals in a name / description / operator string.
+DISABILITY_SIGNAL_KEYWORDS = (
+    "disabilit", "disabled", "special needs", "special-needs",
+    "autism", "autistic", "asperger", "neurodivergent", "neurodiversity",
+    "down syndrome", "cerebral palsy", "spina bifida", "muscular dystrophy",
+    "traumatic brain", "brain injury", "epilep", "rett syndrome",
+    "fragile x", "prader-willi", "angelman",
+    "deaf", "hard of hearing", "hearing impair", "hearing loss",
+    "blind", "low vision", "visually impair", "vision impair",
+    "wheelchair", "adaptive", "assistive", "augmentative",
+    "accessib", "barrier-free", "universal design",
+    "the arc ", "arc of", "easterseals", "easter seals",
+    "independent living", " habilitation", "self-advocacy", "self advocacy",
+    "developmental disab", "intellectual disab", " idd ",
+    "special education", "early intervention", "iep",
+    "respite", "caregiver", "sibling support",
+    "therapeutic riding", "equine assisted", "equine-assisted", "hippotherapy",
+    "adaptive sports", "adaptive recreation", "paralympic", "amputee",
+    "prosthetic", "orthotic", "seating & mobility", "seating and mobility",
+    "mobility equipment", "mobility scooter", "wheelchair van",
+    "group home", "day habilitation", "supported employment",
+    "sheltered workshop", "vocational rehabilitation",
+    "department of rehabilitation", "dept of rehabilitation",
+    "division of rehabilitation", "rehabilitation services administration",
+)
+
+# Tier 1 — always disqualifying, even with an explicit disability tag.
+# Addiction treatment and wellness/beauty businesses are out of scope entirely.
+HARD_EXCLUDE_KEYWORDS = (
+    "drug rehab", "alcohol", "addiction", "addicted", "detox", "sober",
+    "substance abuse", "substance use", "methadone", "opioid", "narcotic",
+    "recovery center", "recovery centre", "treatment center for addiction",
+    "massage", "med spa", "medspa", " spa", "wellness", "holistic",
+    "acupunctur", "chiropract", "naturopath", "reiki", "yoga", "pilates",
+    "weight loss", "aesthetic", "psychedelic", "ketamine", "cbd",
+    "healing touch", "life coach",
+    "physical therap", "physiotherap", "occupational therap", "speech therap",
+    "speech-language", "sports medicine", "sports rehab", "orthopedic",
+    "orthopaedic", "spinal decompression", "pain management", "pain clinic",
+    "rehabilitation hospital", "rehab hospital", "outpatient rehab",
+    "family therap", "marriage", "psycholog", "nursing service",
+    "home health", "home care", "home nursing", "personal care services",
+    "eating disorder", "psyd", "post acute", "post-acute",
+    "skilled nursing", "nursing home", "nursing facility", "nursing center",
+    "assisted living", "retirement", "hospice", "senior living",
+)
+
+# Tier 2 — generic clinical / eldercare services. Disqualifying UNLESS the
+# candidate carries a structured disability tag (a voc-rehab centre tagged
+# social_facility:for=disabled is a real resource despite the word "rehab").
+SOFT_EXCLUDE_KEYWORDS = (
+    "spine", "rehabilitation center",
+    "rehabilitation centre", "rehab center", "rehab centre", "rehab services",
+    "dialysis", "urgent care", "walk-in clinic",
+    "dental", "dentist", "pharmacy", "podiatr", "dermatolog",
+    "medical supply", "medical supplies", "diabetic", "oxygen",
+)
+
+
+def _norm(text):
+    """Lowercase, space-pad, and flatten OSM punctuation so tag values like
+    "medical_supply" / "child;disabled" match the plain-English keyword lists."""
+    return " " + (text or "").lower().replace("_", " ").replace(";", " ") + " "
+
+
+def _structured_disability_tag(tags):
+    """True if source tags themselves declare a disability focus."""
     tags = tags or {}
-    # A disability-specific structured tag is sufficient on its own.
-    sf_for = tags.get("social_facility:for", "").lower()
-    if any(v in sf_for for v in ("disabled", "autism")):
+    sf_for = str(tags.get("social_facility:for", "")).lower()
+    if any(v in sf_for for v in DISABILITY_SOCIAL_FOR):
         return True
-    healthcare = tags.get("healthcare", "")
-    if healthcare in ("rehabilitation", "physiotherapist", "occupational_therapist",
-                      "speech_therapist"):
-        return True
-    if tags.get("office") == "therapist" or tags.get("shop") in ("mobility", "medical_supply"):
-        return True
-    # Otherwise require a keyword and no overriding noise signal.
-    if any(kw in blob for kw in RELEVANCE_KEYWORDS):
-        return True
+    for key in ("for", "healthcare:for", "target"):
+        if any(v in str(tags.get(key, "")).lower() for v in DISABILITY_SOCIAL_FOR):
+            return True
     return False
+
+
+def is_disability_specific(name, tags=None, description="", extra=""):
+    """Default-deny gate. True only when a candidate explicitly serves people
+    with disabilities and is not a clinical-therapy, addiction, wellness or
+    eldercare business. Replaces the permissive structural test retired in
+    September 2026.
+
+    name        organisation name — the strongest evidence, and the only text
+                the always-disqualifying tier is judged on, so that an Arc
+                chapter whose blurb happens to mention therapy isn't dropped.
+    tags        source tag dict (OSM). A social_facility:for=disabled|autism
+                tag is proof of focus on its own.
+    description free text; contributes signals but cannot trigger a hard drop.
+    extra       joined tag values, source category strings, etc.
+    """
+    name_blob = _norm(name)
+    hard_blob = _norm(f"{name} {extra}")
+    full_blob = _norm(f"{name} {description} {extra}")
+
+    # Tier 1 — never in scope, whatever the tags say.
+    if any(kw in hard_blob for kw in HARD_EXCLUDE_KEYWORDS):
+        return False
+
+    structured = _structured_disability_tag(tags)
+
+    # An explicit signal in the NAME is the organisation describing itself as
+    # disability-serving ("Adaptive Mobility", "Autism Society") — that beats
+    # the generic-clinical tier below.
+    if any(kw in name_blob for kw in DISABILITY_SIGNAL_KEYWORDS):
+        return True
+
+    # Tier 2 — generic clinical / eldercare. A structured disability tag
+    # rescues these (a voc-rehab centre tagged for=disabled is a real resource).
+    if not structured and any(kw in full_blob for kw in SOFT_EXCLUDE_KEYWORDS):
+        return False
+    if structured:
+        return True
+
+    return any(kw in full_blob for kw in DISABILITY_SIGNAL_KEYWORDS)
+
+
+def is_disability_relevant(text, tags=None):
+    """Back-compat alias for call sites that only have one text blob."""
+    return is_disability_specific(text, tags)
 
 
 def is_noise(text):

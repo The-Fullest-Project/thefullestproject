@@ -469,31 +469,6 @@
     }
   },
   {
-    "name": "BlazeSports America",
-    "category": [
-      "sports"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Adaptive sports and recreation programs for youth and adults with physical disabilities.",
-    "phone": "",
-    "website": "https://bfreinc.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sports"
-    ],
-    "source": "https://bfreinc.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Burke Community Church - Special Needs",
     "category": [
       "faith"
@@ -2419,31 +2394,6 @@
     }
   },
   {
-    "name": "Healthcare.gov - Appeals & Grievances",
-    "category": [
-      "insurance"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Federal resource for understanding your rights when insurance denies coverage, including how to file appeals for therapies and equipment.",
-    "phone": "",
-    "website": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "insurance"
-    ],
-    "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "HEAV - Home Educators Association of Virginia (Special Needs)",
     "category": [
       "homeschool"
@@ -2959,31 +2909,6 @@
     "source": "https://airandspace.si.edu/visit/udvar-hazy-center/accessibility",
     "lastScraped": "2026-03-09",
     "dateAdded": "2026-03-09",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "National Alliance to End Homelessness",
-    "category": [
-      "housing"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Resources and advocacy for housing solutions including accessible housing for individuals with disabilities.",
-    "phone": "",
-    "website": "https://endhomelessness.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "housing"
-    ],
-    "source": "https://endhomelessness.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
@@ -3508,31 +3433,6 @@
     "source": "https://www.sentara.com/medicalservices/rehabilitation-and-therapy/specialty-therapy-services/pediatric-therapy",
     "lastScraped": "2026-03-09",
     "dateAdded": "2026-03-09",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "ServiceSource",
-    "category": [
-      "transition"
-    ],
-    "location": "Virginia",
-    "area": "Statewide",
-    "description": "Non-profit helping people with disabilities achieve employment, independence, and integration through vocational training and job placement.",
-    "phone": "",
-    "website": "https://www.servicesfource.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "transition"
-    ],
-    "source": "https://www.servicesfource.org/",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"

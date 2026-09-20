@@ -1,17 +1,15 @@
-"""CMS provider-directory supplement (caregiver-relevant licensed facilities).
+"""RETIRED: CMS home-health-agency supplement.
 
-Live-verified: the CMS Open Data API returns clean, per-state, key-less JSON of
-enrolled providers (public domain). These are healthcare facilities, NOT
-disability nonprofits, so this is a narrow SUPPLEMENT — we ingest only the most
-caregiver-relevant type (home health agencies) and route them to the review
-queue. Defaults to the pilot states to keep relevance and volume sane; widen via
-env when desired.
+This module queued Medicare-enrolled home health agencies (81 of them reached
+the review queue). None of them state that they serve people with disabilities
+— they are general home-nursing staffing agencies — so under the September 2026
+admin decision they are all out of scope: home-health and personal-care
+providers now enter the directory only through family referrals.
 
-Data courtesy of the Centers for Medicare & Medicaid Services (public domain).
-
-Config (env):
-  TFP_CMS_STATES   comma-separated state codes (default "VA,OR")
-  TFP_CMS_MAX      cap per state (default 50)
+``scrape()`` is intentionally a no-op rather than deleted, so run_all.py still
+finds a ``scrape()`` and the CMS integration can be revived (git history has the
+working fetch/build code) if a genuinely disability-specific CMS dataset is
+chosen later — e.g. Medicaid HCBS waiver providers rather than home health.
 """
 
 import json
@@ -90,31 +88,9 @@ def _candidates_for_state(code, size):
 
 
 def scrape():
-    """Queue caregiver-relevant CMS providers for review; never writes live data."""
-    print("Discovering care providers via CMS Open Data...")
-    run = SourceRun("cms_providers")
-    states = _states()
-    size = int_env("TFP_CMS_MAX", 50)
-    seen = all_live_resource_keys() | pending_store.load_pending_keys("resource")
-
-    for i, code in enumerate(states):
-        run.attempt()
-        try:
-            candidates = _candidates_for_state(code, size)
-        except Exception as e:  # per-state failure: logged, surfaced by finish()
-            run.fail_target(f"{code}: {e}")
-            continue
-
-        run.succeed(seen=len(candidates))
-        queued, seen = queue_new_resources(
-            candidates, "cms_providers",
-            target_file=f"src/_data/resources/states/{code}.json", seen=seen)
-        run.queued(queued)
-
-        if i < len(states) - 1:
-            time.sleep(1)
-
-    run.finish()
+    """No-op: CMS home health agencies are out of scope (see module docstring)."""
+    print("cms_providers: retired — home health agencies are not "
+          "disability-specific resources. Nothing queued.")
 
 
 if __name__ == "__main__":

@@ -58,16 +58,47 @@ class CategoryMapTests(unittest.TestCase):
         self.assertEqual(cm.safe_category("therapy"), "therapy")
         self.assertEqual(cm.safe_category("made-up-slug"), "other")
 
-    def test_relevance_by_keyword(self):
-        self.assertTrue(cm.is_disability_relevant("Autism Support Center of Richmond"))
-        self.assertTrue(cm.is_disability_relevant("Pediatric Occupational Therapy Clinic"))
-        self.assertFalse(cm.is_disability_relevant("Joe's Pizzeria and Grill"))
+    def test_keeps_explicit_disability_organisations(self):
+        keep = cm.is_disability_specific
+        self.assertTrue(keep("Autism Support Center of Richmond"))
+        self.assertTrue(keep("The Arc Eastern Connecticut"))
+        self.assertTrue(keep("Lynchburg Area Center for Independent Living"))
+        self.assertTrue(keep("Down Syndrome Association of Minnesota"))
+        self.assertTrue(keep("NC Therapeutic Riding Center"))
+        self.assertTrue(keep("Lanakila Center For The Blind"))
+        # Name declares a disability focus, so a generic shop tag can't veto it
+        self.assertTrue(keep("National Seating & Mobility", {}, "", "osm medical_supply"))
 
-    def test_relevance_by_structured_tag(self):
-        # A disability-specific tag alone is sufficient, even with a plain name
-        self.assertTrue(cm.is_disability_relevant("Maple House", {"social_facility:for": "disabled"}))
-        self.assertTrue(cm.is_disability_relevant("Downtown Clinic", {"healthcare": "rehabilitation"}))
-        self.assertFalse(cm.is_disability_relevant("Maple House", {"social_facility:for": "senior"}))
+    def test_drops_clinical_therapy_and_wellness(self):
+        """September 2026 admin decision: therapy/rehab/wellness providers are
+        added by family referral, never scraped."""
+        drop = lambda *a: self.assertFalse(cm.is_disability_specific(*a))
+        drop("Pediatric Occupational Therapy Clinic")
+        drop("Mosaic Pediatric Therapy", {}, "", "osm therapist")
+        drop("Spine and Orthopedic Rehab", {}, "", "osm rehabilitation")
+        drop("Asian Massage", {}, "", "osm therapist")
+        drop("Bacon Street Marriage & Family Therapist")
+        drop("Virtue Recovery Center Las Vegas")
+        drop("Continuing Care Well Spirit Holistic Health")
+        drop("DaVita Home Dialysis", {}, "", "osm medical_supply")
+        drop("Discount Diabetic Supplies", {}, "", "osm medical_supply")
+        drop("CAREGIVERS HOME HEALTH SERVICES INC", {}, "", "cms home-health")
+        drop("Joe's Pizzeria and Grill")
+
+    def test_structured_tag_rescues_generic_names_only(self):
+        keep = cm.is_disability_specific
+        # OSM says the facility serves disabled people -> in scope
+        self.assertTrue(keep("Maple House", {"social_facility:for": "disabled"}))
+        self.assertTrue(keep("West Central Alabama Rehabilitation Center",
+                             {"social_facility:for": "disabled"}))
+        # ...but it cannot rescue an always-out-of-scope service type
+        self.assertFalse(keep("Harmony Manor Skilled Nursing Facility",
+                              {"social_facility:for": "disabled"}))
+        self.assertFalse(keep("Reno Triangle Club",
+                              {"social_facility:for": "drug_addicted"}))
+        self.assertFalse(keep("Maple House", {"social_facility:for": "senior"}))
+        # A structural clinical tag is no longer sufficient on its own
+        self.assertFalse(keep("Downtown Clinic", {"healthcare": "rehabilitation"}))
 
     def test_noise_filter(self):
         self.assertTrue(cm.is_noise("Sunset Senior Center retirement living"))

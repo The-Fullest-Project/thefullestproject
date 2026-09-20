@@ -31,27 +31,30 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from base_scraper import make_resource, queue_new_resources, all_live_resource_keys
 import pending_store
 from _category_map import (STATE_NAME, ALL_STATE_CODES, osm_category,
-                           is_disability_relevant, is_noise, is_excluded, safe_category)
+                           is_disability_specific, is_noise, is_excluded, safe_category)
 from _source_health import SourceRun, int_env, float_env
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 USER_AGENT = ("TheFullestProjectBot/1.0 (+https://thefullestproject.org/about/; "
              "disability resource directory)")
 
-# NOTE: `physiotherapist` is deliberately absent from the healthcare regex below.
-# It returned general sports and orthopaedic PT clinics by the hundred — every
-# town has several — which buried the review queue without adding
-# disability-specific resources. Blocklisting them downstream never kept up,
-# because each week's sweep finds different ones. OT and speech therapists are
-# still queried: caregivers of children with disabilities actively look for those.
+# Clinical-therapy tags were removed from this query in September 2026 (admin
+# decision). `healthcare=rehabilitation|occupational_therapist|speech_therapist`,
+# `office=therapist` and `shop=medical_supply` matched every PT/OT clinic,
+# marriage counsellor, massage parlour, dialysis centre and diabetic-supply shop
+# in the country — 809 of 926 queued items, none disability-specific. Therapy
+# providers now enter the directory only through family referrals.
+#
+# What remains is disability-specific by construction: facilities OSM tags as
+# serving disabled/autistic people, mobility-equipment shops, and organisations
+# whose own name declares a disability focus.
 # Braces in this string are .format() placeholders — do not add literal braces.
 QUERY_TEMPLATE = """[out:json][timeout:90];
 area["ISO3166-2"="US-{code}"][admin_level=4]->.a;
 (
   nwr["social_facility:for"~"disabled|autism",i](area.a);
-  nwr["healthcare"~"^(rehabilitation|occupational_therapist|speech_therapist)$"](area.a);
-  nwr["office"="therapist"](area.a);
-  nwr["shop"~"^(mobility|medical_supply)$"](area.a);
+  nwr["shop"="mobility"](area.a);
+  nwr["name"~"disabilit|disabled|autism|arc of |easterseals|easter seals|cerebral palsy|down syndrome|independent living|therapeutic riding|equine.assisted|deaf|blind|special needs|adaptive sports",i](area.a);
 );
 out center tags;
 """
@@ -102,11 +105,18 @@ def _build_resource(el, code):
     if not name:
         return None
 
-    blob = f"{name} {tags.get('description', '')} {tags.get('operator', '')}"
-    if not is_disability_relevant(blob, tags) or is_noise(blob):
+    description = tags.get("description", "")
+    extra = " ".join(str(tags.get(k, "")) for k in
+                     ("operator", "social_facility", "social_facility:for",
+                      "healthcare", "office", "shop"))
+    # Default-deny: only organisations that explicitly serve people with
+    # disabilities get queued (see _category_map.is_disability_specific).
+    if not is_disability_specific(name, tags, description, extra):
+        return None
+    if is_noise(f"{name} {description}"):
         return None
     # Mental-health / chiropractic / behavioral-health services are out of scope.
-    if is_excluded(blob, tags):
+    if is_excluded(f"{name} {description}", tags):
         return None
 
     website = tags.get("website") or tags.get("contact:website") or ""

@@ -73,8 +73,7 @@ permalink: /adaptive-equipment/
     <h2 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">Adaptive Clothing</h2>
     <p class="mb-6" style="color: var(--color-text-light);">Clothing designed for individuals with disabilities, including easy-on/off features, tube access, and adaptive footwear:</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-      {% for resource in resources.national %}
-        {% if "clothing" in resource.category %}
+      {% for resource in directory | filterByCategory("clothing") %}
         <div class="card p-6">
           <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary);">{{ resource.name }}</h3>
           <p class="text-sm mb-3" style="color: var(--color-text-light);">{{ resource.description }}</p>
@@ -82,7 +81,6 @@ permalink: /adaptive-equipment/
           <a href="{{ resource.website }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline" style="color: var(--color-secondary);">Shop Now &rarr;</a>
           {% endif %}
         </div>
-        {% endif %}
       {% endfor %}
     </div>
 

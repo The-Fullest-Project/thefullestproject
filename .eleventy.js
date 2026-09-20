@@ -51,6 +51,12 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // "now" (or any date) -> four-digit year. The site rebuilds on every push and
+  // on the weekly scrape, so the footer copyright stays current on its own.
+  eleventyConfig.addFilter("year", function(date) {
+    return new Date(!date || date === "now" ? Date.now() : date).getFullYear();
+  });
+
   eleventyConfig.addFilter("dateISO", function(date) {
     return new Date(date).toISOString().split('T')[0];
   });

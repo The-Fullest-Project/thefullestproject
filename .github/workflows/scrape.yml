@@ -26,7 +26,10 @@ jobs:
           python-version: '3.12'
 
       - name: Install Python dependencies
-        run: pip install -r scrapers/requirements.txt
+        run: |
+          pip install -r scrapers/requirements.txt
+          # Needed only by the LLM field-fill below; harmless otherwise.
+          pip install "anthropic>=0.40"
 
       - name: Run scrapers
         env:
@@ -38,7 +41,18 @@ jobs:
           # TFP_NEWS_LEADS=1.
           TFP_OSM_MAX_PER_STATE: "25"
           TFP_OSM_MAX_TOTAL: "250"
+          # Claude Haiku fills description/phone/category that free structured
+          # markup could not (admin decision, September 2026; ~<$1/week). Degrades
+          # to free-only extraction if ANTHROPIC_API_KEY is unset.
+          TFP_LLM_ENRICH: "1"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scrapers/run_all.py
+
+      - name: Fill missing fields on queued resources
+        env:
+          TFP_LLM_ENRICH: "1"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/enrich_pending.py --apply
 
       - name: Fetch positive stories
         run: python scrapers/sources/positive_stories.py

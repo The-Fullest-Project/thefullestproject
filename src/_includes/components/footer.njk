@@ -71,7 +71,7 @@
 
     <!-- Bottom bar -->
     <div class="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm opacity-60">
-      <p>&copy; {{ "" | dateFormat | truncate(4, "") }}{% set year = "now" %}2026 The Fullest Project. All rights reserved.</p>
+      <p>&copy; {{ "now" | year }} The Fullest Project. All rights reserved.</p>
       <div class="flex gap-4">
         <a href="/privacy/" class="hover:opacity-100 no-underline" style="color: white;">Privacy Policy</a>
         <a href="/terms/" class="hover:opacity-100 no-underline" style="color: white;">Terms of Use</a>

@@ -376,31 +376,6 @@
     }
   },
   {
-    "name": "BlazeSports America",
-    "category": [
-      "sports"
-    ],
-    "location": "Georgia",
-    "area": "Atlanta",
-    "description": "Adaptive sports organization born from the 1996 Atlanta Paralympic Games, providing year-round sports programs for youth and adults with physical disabilities.",
-    "phone": "404-270-2000",
-    "website": "https://www.blazesports.org",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "sports"
-    ],
-    "source": "https://www.blazesports.org",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "The Arc of Southwest Georgia",
     "category": [
       "nonprofit",
