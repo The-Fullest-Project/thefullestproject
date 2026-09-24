@@ -257,38 +257,6 @@
     "targetFile": "src/_data/resources/states/OK.json"
   },
   {
-    "id": "res-20260726-f5ff9d65",
-    "type": "resource",
-    "status": "pending",
-    "origin": {
-      "type": "scraper",
-      "detail": "osm_overpass",
-      "submittedAt": "2026-07-26T03:19:13.681552+00:00"
-    },
-    "payload": {
-      "name": "Muscogee Healing and Recovery Center",
-      "category": [
-        "therapy"
-      ],
-      "location": "Oklahoma",
-      "area": "Muskogee",
-      "description": "",
-      "phone": "+1-918-300-1320",
-      "website": "https://www.creekhealth.org/clinics/muscogee-healing-and-recovery-center/",
-      "address": "2900 North Main Street",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "osm",
-        "rehabilitation"
-      ],
-      "source": "https://www.openstreetmap.org/way/1424806139",
-      "lastScraped": "2026-07-26"
-    },
-    "targetFile": "src/_data/resources/states/OK.json"
-  },
-  {
     "id": "res-20260726-784901e1",
     "type": "resource",
     "status": "pending",
