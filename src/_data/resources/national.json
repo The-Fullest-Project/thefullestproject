@@ -10737,5 +10737,31 @@
       "type": "quick-submit",
       "detail": "bookmarklet"
     }
+  },
+  {
+    "name": "SmartKnit Socks",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "AFO and KAFO socks",
+    "phone": "",
+    "email": "",
+    "website": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "AFO socks"
+    ],
+    "source": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+    "lastScraped": "2026-09-09",
+    "dateAdded": "2026-09-27",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
