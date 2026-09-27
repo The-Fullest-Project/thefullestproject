@@ -31,38 +31,5 @@
       "source": "https://kaneandkashadapt.co/",
       "lastScraped": "2026-08-19"
     }
-  },
-  {
-    "id": "sub-20260927-6cad1097",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "quick-submit",
-      "detail": "bookmarklet",
-      "submittedAt": "2026-09-27T01:49:12.328Z"
-    },
-    "targetFile": "src/_data/resources/states/OR.json",
-    "payload": {
-      "name": "Magic Wheelchair",
-      "category": [
-        "equipment"
-      ],
-      "location": "Oregon",
-      "area": "Portland",
-      "description": "Magic Wheelchair is a nonprofit organization that builds epic wheelchair costumes — at no cost to families.",
-      "phone": "",
-      "email": "",
-      "website": "https://www.magicwheelchair.org/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "Wheelchair",
-        "costumes"
-      ],
-      "source": "https://www.magicwheelchair.org/",
-      "lastScraped": "2026-09-27"
-    }
   }
 ]
