@@ -1,34 +1,37 @@
-Weekly Scrape Digest — 2026-09-20
+Weekly Scrape Digest — 2026-09-27
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 7 pending (1 new this run)
-  resource: 790 pending (96 new this run)
-  spotlight: 8 pending (1 new this run)
-  story: 64 pending (15 new this run)
-  submission: 3 pending
+  blog: 8 pending (2 new this run)
+  resource: 852 pending (143 new this run)
+  spotlight: 7 pending (1 new this run)
+  story: 64 pending (12 new this run)
+  submission: 3 pending (2 new this run)
 
 Scraper: cms_providers
   Entries processed: 78
 
 Scraper: osm_overpass
-  Entries processed: 750
-  - [error] SC: HTTP Error 504: Gateway Timeout
-  - [error] TN: HTTP Error 504: Gateway Timeout
-  - [error] VA: HTTP Error 429: Too Many Requests
-  - [error] ID: HTTP Error 429: Too Many Requests
-  - [error] MI: HTTP Error 429: Too Many Requests
-  - [error] MO: HTTP Error 429: Too Many Requests
-  - [error] NM: HTTP Error 429: Too Many Requests
-  - [error] OH: HTTP Error 504: Gateway Timeout
+  Entries processed: 681
+  - [error] TX: HTTP Error 504: Gateway Timeout
+  - [error] WY: HTTP Error 504: Gateway Timeout
+  - [error] AR: HTTP Error 504: Gateway Timeout
+  - [error] DE: HTTP Error 504: Gateway Timeout
+  - [error] FL: HTTP Error 504: Gateway Timeout
+  - [error] ID: HTTP Error 504: Gateway Timeout
+  - [error] IL: HTTP Error 504: Gateway Timeout
+  - [error] MN: HTTP Error 504: Gateway Timeout
+  - [error] MO: HTTP Error 504: Gateway Timeout
+  - [error] NE: HTTP Error 504: Gateway Timeout
 
 Scraper: spotlight_scraper
   Entries processed: 1
-  - [queued] Colorado nonprofit helps kids with disabilities find their sport through adaptiv
+  - [queued] Students Turn Support Into Success Through the Disability Resource Center | News
 
 Scraper: blog_content
-  Entries processed: 1
-  - [queued] Planning for Your Autistic Child's Future When You're No Longer Here - Autism Speaks
+  Entries processed: 2
+  - [queued] Mind Matters: Caring for the Caregivers - 90.5 WESA
+  - [queued] Indiana seeks new short-term residential facility for disabled adults - Indiana Capital Chronicle
 
 —
 The Fullest Project | thefullestproject.org

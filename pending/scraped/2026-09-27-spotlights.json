@@ -1,0 +1,30 @@
+[
+  {
+    "id": "spt-20260927-c2bcfc6a",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-09-27T04:42:01.914835+00:00"
+    },
+    "payload": {
+      "name": "Students Turn Support Into Success Through the Disability Resource Center | News",
+      "description": "Students Turn Support Into Success Through the Disability Resource Center | News Center | UNLV - University of Nevada, Las Vegas | UNLV",
+      "category": "Education",
+      "website": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXZSUE5nZjgwaWprZWpBQWUtR2dLS2czVWRHbGd5VXRyM2JJYnZUeHg5Z2paSWp1d3RlOGlHSDFMTUlHNjV3a0VsQmVpbjI0SVNwNG55TFlvaFlPLVNYUXBYMGh2LTNPcGFYU0Y3MTVaS08tdGVvZ05FNl84ZUVZS2pzTEJ0WGh4TVY1V0RzbTZyYzV0LXZ0YkJNcGZ1MlU?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/education.svg",
+      "location": "National",
+      "tags": [
+        "education",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-09-27"
+    }
+  }
+]
