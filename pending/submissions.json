@@ -33,68 +33,98 @@
     }
   },
   {
-    "id": "sub-20260909-f7dd5960",
+    "id": "sub-20260927-a2737b95",
     "type": "submission",
     "status": "pending",
     "origin": {
       "type": "quick-submit",
       "detail": "bookmarklet",
-      "submittedAt": "2026-09-09T02:35:01.663Z"
+      "submittedAt": "2026-09-27T02:14:00.603Z"
     },
     "targetFile": "src/_data/resources/national.json",
     "payload": {
-      "name": "WoodleCo AFO Socks — Soft, Brace-Friendly Knee-Highs & Crew – Woodle & Company",
+      "name": "Family Play Access Program | FairPlay",
       "category": [
-        "clothing"
+        "other"
       ],
       "location": "National",
       "area": "",
-      "description": "Why Woodle socks?  Our socks aren’t just cute — they’re designed to do the job.  We use premium long-fiber cotton in a dense, breathable weave that’s thin enough for orthotics to work properly, yet tough enough to handle daily wear.\r\n\r\n-Seamless toes for sensory comfort\r\n-Extra length to stay up and cover AFOs\r\n-Just-right stretch so they don’t sag or pinch\r\n\r\nWhether your child wears braces or just loves cozy socks that stay put, Woodle socks are made to move with them — from the playground to the big wide world.",
+      "description": "FairPlay’s Family Play Access Program provides adaptive toys directly to children with disabilities so they can experience meaningful, inclusive play at home. Through a simple application process, families receive age-appropriate adapted toys—and switches when needed—removing cost and access barriers to play.",
       "phone": "",
       "email": "",
-      "website": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
+      "website": "https://www.fairplaylibraries.org/family-play-access-program",
       "address": "",
       "ageRange": "",
       "disabilityTypes": [],
       "cost": "",
       "tags": [
-        "AFO socks",
-        "Sensory friendly socks"
+        "switch-adapted-toys"
       ],
-      "source": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
-      "lastScraped": "2026-09-09"
+      "source": "https://www.fairplaylibraries.org/family-play-access-program",
+      "lastScraped": "2026-09-27"
     }
   },
   {
-    "id": "sub-20260909-c464afd5",
+    "id": "sub-20260927-980f6a28",
     "type": "submission",
     "status": "pending",
     "origin": {
       "type": "quick-submit",
       "detail": "bookmarklet",
-      "submittedAt": "2026-09-09T02:37:34.554Z"
+      "submittedAt": "2026-09-27T02:15:35.341Z"
     },
     "targetFile": "src/_data/resources/national.json",
     "payload": {
-      "name": "SmartKnit Socks",
+      "name": "Adaptive Toy Workshops| FairPlay",
       "category": [
-        "clothing"
+        "other"
       ],
       "location": "National",
       "area": "",
-      "description": "AFO and KAFO socks",
+      "description": "Our in-person and virtual adaptive toy workshops offer an opportunity for teachers, parents, and clinicians to gain the skills they need to make toys switch-accessible for children with disabilities. As a participant, you'll receive an introduction to adapting and learn step-by-step how to adapt a specific toy.",
       "phone": "",
       "email": "",
-      "website": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+      "website": "https://www.fairplaylibraries.org/workshops",
       "address": "",
       "ageRange": "",
       "disabilityTypes": [],
       "cost": "",
       "tags": [
-        "AFO socks"
+        "switch-adapted-toys",
+        "toy workshop"
       ],
-      "source": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
-      "lastScraped": "2026-09-09"
+      "source": "https://www.fairplaylibraries.org/workshops",
+      "lastScraped": "2026-09-27"
+    }
+  },
+  {
+    "id": "sub-20260928-976e35fe",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-09-28T09:46:28.531Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "HVAC School Guide",
+      "category": [
+        "employment"
+      ],
+      "location": "National",
+      "area": "National",
+      "description": "Free public training-cost vs pay report from an independent education publisher for people comparing skilled-trade training options; may support career planning and employment-resource discovery. Not a direct service provider.",
+      "phone": "",
+      "email": "",
+      "website": "https://hvacschoolguide.com/reports/hvac-training-cost-vs-pay",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://hvacschoolguide.com/reports/hvac-training-cost-vs-pay",
+      "lastScraped": "2026-09-28"
     }
   }
 ]

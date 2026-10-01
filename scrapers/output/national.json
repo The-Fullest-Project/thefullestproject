@@ -112,14 +112,14 @@
     "cost": "",
     "tags": [
       "able-act",
-      "tax-advantaged",
-      "disability",
       "financial",
       "savings",
-      "financial-planning"
+      "tax-advantaged",
+      "financial-planning",
+      "disability"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "AbleData",
@@ -139,7 +139,7 @@
       "assistive-tech"
     ],
     "source": "https://abledata.acl.gov/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "AbleGamers Charity",
@@ -484,7 +484,7 @@
       "camps"
     ],
     "source": "https://www.acacamps.org/campers-families/find-a-camp",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "AngelSense GPS Tracker",
@@ -630,7 +630,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "AssistiveWare - Proloquo2Go",
@@ -1050,14 +1050,14 @@
     "cost": "",
     "tags": [
       "grief",
-      "anticipatory-grief",
       "mental-health",
-      "support",
+      "caregiver",
       "help-desk",
-      "caregiver"
+      "anticipatory-grief",
+      "support"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Carewell",
@@ -1318,7 +1318,7 @@
       "assistive-tech"
     ],
     "source": "https://www.closingthegap.com/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Coalition for Responsible Home Education (CRHE)",
@@ -1610,7 +1610,7 @@
       "early-intervention"
     ],
     "source": "https://ectacenter.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Easterseals",
@@ -1951,7 +1951,7 @@
       "insurance"
     ],
     "source": "https://familyvoices.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Feeding Matters",
@@ -2080,7 +2080,7 @@
       "medical"
     ],
     "source": "https://palfreyassociates.com/disability-friendly-doctor/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Firefly by Leckey",
@@ -2481,7 +2481,7 @@
       "housing"
     ],
     "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "HumanWare - Braille & Low Vision",
@@ -3259,7 +3259,7 @@
       "sports"
     ],
     "source": "https://www.miracleleague.com/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "MobilityWorks",
@@ -3494,7 +3494,7 @@
       "financial"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "National Down Syndrome Congress",
@@ -3916,7 +3916,7 @@
       "transition"
     ],
     "source": "https://www.pacer.org/transition/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Parent Center Hub (CPIR)",
@@ -4203,7 +4203,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Rebuilding Together",
@@ -4223,7 +4223,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Rifton Equipment",
@@ -4431,15 +4431,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "sibling",
-      "network",
       "sibling-support",
       "advocacy",
-      "support",
-      "peer"
+      "peer",
+      "sibling",
+      "network",
+      "support"
     ],
     "source": "https://www.siblingleadership.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -4459,7 +4459,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Smartbox - Grid AAC",
@@ -4511,7 +4511,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Sonic Alert",
@@ -4655,7 +4655,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Special Olympics",
@@ -4675,7 +4675,7 @@
       "sports"
     ],
     "source": "https://www.specialolympics.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "SPED Homeschool",
@@ -5311,7 +5311,7 @@
       "transition"
     ],
     "source": "https://thinkcollege.net/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "This Beach Is Loud!",
@@ -10242,7 +10242,7 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/",
-    "lastScraped": "2026-09-20"
+    "lastScraped": "2026-09-27"
   },
   {
     "name": "Medically Complex Caregiver",
@@ -10709,6 +10709,59 @@
     "origin": {
       "type": "submission",
       "detail": "submit-resource-form"
+    }
+  },
+  {
+    "name": "WoodleCo AFO Socks — Soft, Brace-Friendly Knee-Highs & Crew – Woodle & Company",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Why Woodle socks?  Our socks aren’t just cute — they’re designed to do the job.  We use premium long-fiber cotton in a dense, breathable weave that’s thin enough for orthotics to work properly, yet tough enough to handle daily wear.\n\n-Seamless toes for sensory comfort\n-Extra length to stay up and cover AFOs\n-Just-right stretch so they don’t sag or pinch\n\nWhether your child wears braces or just loves cozy socks that stay put, Woodle socks are made to move with them — from the playground to the big wide world.",
+    "phone": "",
+    "email": "",
+    "website": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "AFO socks",
+      "Sensory friendly socks"
+    ],
+    "source": "https://woodleco.com/?gad_source=1&gad_campaignid=21188075436&gbraid=0AAAAACW0NSwm5WR6NibMgzsRjBako_fZ6&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1Obuc4ayLw12p3eBqMYyPShxscVWWsQ7_1_9XPO7TqT7_QD-_iE2RUaApepEALw_wcB",
+    "lastScraped": "2026-09-09",
+    "dateAdded": "2026-09-27",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "SmartKnit Socks",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "AFO and KAFO socks",
+    "phone": "",
+    "email": "",
+    "website": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "AFO socks"
+    ],
+    "source": "https://www.amazon.com/stores/SmartKnit/page/DACFDCEF-A49A-44DD-B928-BE5F188636EF",
+    "lastScraped": "2026-09-09",
+    "dateAdded": "2026-09-27",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
     }
   }
 ]

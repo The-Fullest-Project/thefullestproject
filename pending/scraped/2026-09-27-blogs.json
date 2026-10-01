@@ -1,0 +1,38 @@
+[
+  {
+    "id": "blg-20260927-df30c104",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-09-27T04:42:04.044238+00:00"
+    },
+    "payload": {
+      "title": "Mind Matters: Caring for the Caregivers - 90.5 WESA",
+      "source": "90.5 WESA",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZmwtU0taWU1TMHU3ZF9ZaXlsOXZIMmJ0YXBLaUowYzdSTXhUZEdsQ0h2T3pUdDRjSmlmRGIzcENKVnY2RldTNUZxeEtsODA3Q1pEV0RKMFQzVGo5Y241bGU5ajVRVTRZNW1Sa1RqU0ZJcW1OSXlpd25lNkxvdmk1bUkwbnBOU0JmSFpLV1BnOA?oc=5",
+      "date": "2026-09-21",
+      "category": "Caregiver Tips",
+      "slug": "mind-matters-caring-for-the-caregivers-905-wesa"
+    }
+  },
+  {
+    "id": "blg-20260927-6520e182",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-09-27T04:42:04.044259+00:00"
+    },
+    "payload": {
+      "title": "Indiana seeks new short-term residential facility for disabled adults - Indiana Capital Chronicle",
+      "source": "Indiana Capital Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQWZpOEViM0VzaTJMWUFUVEFaRVhEWlpfNzRPejVmeGZNeUs2NnB6alpmNHBvNGZUdFZMMGN5TWhIR1lubkVOTzBzNF9xUGxCUlkzNWI0Y1R4bHAwVVAtQWRXYkNsMjRfV0Jjb2Z5RDlSV0FHc2VYaVUyOExrVGtlcHJDdmtkODIwOWJfSVVBWTNDcG5aSXlpa2lvb1lwanFkNWdkeTBGcDRGdTgzWHc0WjR2QWY3YjMz?oc=5",
+      "date": "2026-09-24",
+      "category": "Resources",
+      "slug": "indiana-seeks-new-short-term-residential-facility-for-disabl"
+    }
+  }
+]

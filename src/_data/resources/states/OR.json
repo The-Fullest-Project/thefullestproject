@@ -1381,5 +1381,32 @@
       "type": "scraper",
       "detail": "legacy-backfill"
     }
+  },
+  {
+    "name": "Magic Wheelchair",
+    "category": [
+      "equipment"
+    ],
+    "location": "Oregon",
+    "area": "Portland",
+    "description": "Magic Wheelchair is a nonprofit organization that builds epic wheelchair costumes — at no cost to families.",
+    "phone": "",
+    "email": "",
+    "website": "https://www.magicwheelchair.org/",
+    "address": "",
+    "ageRange": "All Ages",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Wheelchair",
+      "costumes"
+    ],
+    "source": "https://www.magicwheelchair.org/",
+    "lastScraped": "2026-09-27",
+    "dateAdded": "2026-09-27",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
