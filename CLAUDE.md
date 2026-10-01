@@ -144,6 +144,13 @@ All NEW content is gated behind admin approval; only updates to already-live ent
 | Category Filter | `src/js/categoryFilter.js` | Client-side search, state, city/region, and type-facet filtering with URL param support |
 | App Filter | `src/js/appFilter.js` | Function, platform, and price filtering for `/resources/apps/` |
 
+## Product Decisions
+
+Standing decisions and their reasoning live in `DECISIONS.md` at the repo root — read it before changing
+anything it covers. It records the September 2026 directory-scope decision (therapy and wellness providers
+are never scraped, only referred) and the 30 September 2026 decisions on accounts, ratings and community.
+Note `docs/` is gitignored on purpose: the repo is public and those are internal working documents.
+
 ## Development Guidelines
 
 ### File Naming
