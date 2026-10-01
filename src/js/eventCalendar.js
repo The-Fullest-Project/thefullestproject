@@ -65,12 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
     return null;
   }
 
+  // The search/type/location filters hide list cards with display:none. The
+  // calendar reads that same state so one set of filters drives both views.
+  function passesFilters(ev) {
+    return !ev.element || ev.element.style.display !== 'none';
+  }
+
   // Compute events for a given month
   function getEventsForMonth(year, month) {
     var monthEvents = [];
     var recurringOnly = [];
 
-    events.forEach(function(ev) {
+    events.filter(passesFilters).forEach(function(ev) {
       var rule = parseRecurrence(ev.frequency);
       if (rule) {
         var eventDate = getNthDayOfMonth(year, month, rule.dayOfWeek, rule.ordinal);
@@ -233,11 +239,6 @@ document.addEventListener('DOMContentLoaded', function() {
       listViewBtn.style.color = 'white';
       calendarViewBtn.style.backgroundColor = 'white';
       calendarViewBtn.style.color = 'var(--color-primary)';
-      // Show filter bar
-      var filterBar = document.querySelector('.card.p-6.mb-8');
-      if (filterBar) filterBar.classList.remove('hidden');
-      var resultsCount = document.getElementById('event-results-count');
-      if (resultsCount) resultsCount.classList.remove('hidden');
     });
 
     calendarViewBtn.addEventListener('click', function() {
@@ -247,12 +248,21 @@ document.addEventListener('DOMContentLoaded', function() {
       calendarViewBtn.style.color = 'white';
       listViewBtn.style.backgroundColor = 'white';
       listViewBtn.style.color = 'var(--color-primary)';
-      // Hide list filters (calendar has its own nav)
-      var filterBar = document.querySelector('.card.p-6.mb-8');
-      if (filterBar) filterBar.classList.add('hidden');
-      var resultsCount = document.getElementById('event-results-count');
-      if (resultsCount) resultsCount.classList.add('hidden');
       renderCalendar();
     });
   }
+
+  // Re-draw the calendar when the filters change. The list filter lives in an
+  // inline script that runs after this file, so its handler updates card
+  // visibility only after ours would have read it — defer a tick to read the
+  // settled state rather than the previous one.
+  ['event-search', 'event-type-filter', 'event-location-filter'].forEach(function(id) {
+    var control = document.getElementById(id);
+    if (!control) return;
+    var event = control.tagName === 'SELECT' ? 'change' : 'input';
+    control.addEventListener(event, function() {
+      if (calendarContainer.classList.contains('hidden')) return;
+      setTimeout(renderCalendar, 0);
+    });
+  });
 });

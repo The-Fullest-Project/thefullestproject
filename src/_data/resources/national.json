@@ -10763,5 +10763,105 @@
       "type": "quick-submit",
       "detail": "bookmarklet"
     }
+  },
+  {
+    "name": "BlazeSports America",
+    "category": [
+      "sports"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Adaptive sports organization born from the 1996 Atlanta Paralympic Games, providing year-round sports programs for youth and adults with physical disabilities.",
+    "phone": "404-270-2000",
+    "website": "https://www.blazesports.org",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "sports"
+    ],
+    "source": "https://www.blazesports.org",
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "Healthcare.gov - Appeals & Grievances",
+    "category": [
+      "insurance"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Federal resource for understanding your rights when insurance denies coverage, including how to file appeals for therapies and equipment.",
+    "phone": "",
+    "website": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "insurance"
+    ],
+    "source": "https://www.cms.gov/cciio/resources/consumer-assistance-grants",
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "National Alliance to End Homelessness",
+    "category": [
+      "housing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Resources and advocacy for housing solutions including accessible housing for individuals with disabilities.",
+    "phone": "",
+    "website": "https://endhomelessness.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "housing"
+    ],
+    "source": "https://endhomelessness.org/",
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "ServiceSource",
+    "category": [
+      "transition"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Non-profit helping people with disabilities achieve employment, independence, and integration through vocational training and job placement.",
+    "phone": "",
+    "website": "https://www.servicesfource.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "transition"
+    ],
+    "source": "https://www.servicesfource.org/",
+    "lastScraped": "2026-03-06",
+    "dateAdded": "2026-03-06",
+    "origin": {
+      "type": "scraper",
+      "detail": "legacy-backfill"
+    }
   }
 ]

@@ -13,10 +13,7 @@
   </div>
   {% endif %}
   <div class="p-6">
-    <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">
-      {{ spotlight.category or "Spotlight" }}
-    </span>
-    <h3 class="text-lg font-bold mt-3 mb-2" style="color: var(--color-text);">
+    <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">
       {{ spotlight.name }}
     </h3>
     <p class="text-sm mb-4" style="color: var(--color-text-light);">
@@ -34,6 +31,12 @@
         <svg class="inline w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>Instagram
       </a>
       {% endif %}
+    </div>
+    {# Category sits below the post so the title leads — matches the Events page. #}
+    <div class="mt-4 pt-4 border-t" style="border-color: var(--color-warm);">
+      <span class="tag" style="background-color: var(--color-warm); color: var(--color-primary);">
+        {{ spotlight.category or "Spotlight" }}
+      </span>
     </div>
   </div>
 </article>
