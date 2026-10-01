@@ -126,5 +126,35 @@
       "source": "https://hvacschoolguide.com/reports/hvac-training-cost-vs-pay",
       "lastScraped": "2026-09-28"
     }
+  },
+  {
+    "id": "sub-20261001-ca0d967b",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-01T04:58:27.054Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "CareClinic",
+      "category": [
+        "apps"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "CareClinic is a personal health tracker for people managing ongoing or changing health needs. It helps users log symptoms, medications, mood, sleep, and other daily health details, set reminders, review patterns, and share health records for care conversations. Family-care features help caregivers organize health information with the person they support.",
+      "phone": "",
+      "email": "",
+      "website": "https://careclinic.io/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://careclinic.io/",
+      "lastScraped": "2026-10-01"
+    }
   }
 ]
