@@ -156,5 +156,40 @@
       "source": "https://careclinic.io/",
       "lastScraped": "2026-10-01"
     }
+  },
+  {
+    "id": "sub-20261001-6a459e9b",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-01T14:54:55.437Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "CareClinic Health Tracker",
+      "category": [
+        "apps"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "CareClinic is a free personal health journal for recording symptoms, medications, mood, sleep, routines, and appointments in one place. It helps people and caregivers keep an organized record over time and prepare shareable summaries for conversations with clinicians. It is a self-management and organization tool and does not diagnose conditions or replace professional care.",
+      "phone": "",
+      "email": "",
+      "website": "https://careclinic.io/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "health-tracking",
+        "medication-tracking",
+        "symptom-tracking",
+        "caregiver-app"
+      ],
+      "source": "https://careclinic.io/",
+      "lastScraped": "2026-10-01"
+    }
   }
 ]
