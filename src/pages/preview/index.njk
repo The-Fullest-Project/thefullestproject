@@ -9,7 +9,7 @@ permalink: /resources/
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-4xl font-bold mb-4" style="color: var(--color-primary);">Find Resources</h1>
     <p class="text-lg" style="color: var(--color-text-light);">
-      Pick a category to browse programs, services, and organizations for individuals with disabilities and their caregivers — then filter by your state or city.
+      Search by name or area, or pick a category to browse programs, services, and organizations for individuals with disabilities and their caregivers.
     </p>
     <div class="mt-6 flex flex-wrap gap-3 justify-center">
       <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
@@ -18,25 +18,69 @@ permalink: /resources/
   </div>
 </section>
 
-<section class="py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-      {% for cat in categories | sort(attribute='label') %}
-      {% set catCount = (directory | filterByTopCategory(cat.value)).length %}
-      {% if catCount > 0 %}
-      <a href="/resources/{{ cat.value }}/" class="card px-4 py-3 no-underline flex items-center justify-between gap-2" style="color: var(--color-text);">
-        <h2 class="text-sm font-bold leading-snug" style="color: var(--color-primary);">{{ cat.label }}</h2>
-        <span class="tag text-xs shrink-0" style="background-color: var(--color-warm); color: var(--color-primary);">{{ catCount }}</span>
-      </a>
-      {% endif %}
-      {% endfor %}
+<section class="py-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="card p-6">
+      <label for="directory-search" class="block text-sm font-semibold mb-2" style="color: var(--color-text);">
+        Search every resource
+      </label>
+      <input type="search" id="directory-search" class="form-input"
+             placeholder="Try an organization name, or a city or county…"
+             autocomplete="off" aria-describedby="directory-search-help"
+             aria-controls="directory-search-results">
+      <p id="directory-search-help" class="text-xs mt-2" style="color: var(--color-text-light);">
+        Searches all {{ directory.length }} listings by name and area.
+      </p>
     </div>
 
-    <!-- Submit CTA -->
-    <div class="mt-12 text-center card p-8">
-      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Know a Resource We're Missing?</h2>
+    <div id="directory-search-results" class="mt-6" role="region" aria-live="polite" hidden>
+      <p id="directory-search-count" class="text-sm mb-3" style="color: var(--color-text-light);"></p>
+      <ul id="directory-search-list" class="flex flex-col gap-2 list-none p-0 m-0"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="py-8" id="directory-categories">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
+    {% for group in categoryGroups %}
+      {# Only render a group if at least one of its categories has resources. #}
+      {% set groupCats = [] %}
+      {% for slug in group.slugs %}
+        {% set cat = (categories | selectattr("value", "equalto", slug) | first) %}
+        {% if cat %}
+          {% set catCount = (directory | filterByTopCategory(slug)).length %}
+          {% if catCount > 0 %}
+            {% set groupCats = (groupCats.push({ value: cat.value, label: cat.label, count: catCount }), groupCats) %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if groupCats.length %}
+      <div>
+        <h2 class="text-2xl font-bold mb-1" style="color: var(--color-primary);">{{ group.name }}</h2>
+        <p class="text-sm mb-5" style="color: var(--color-text-light);">{{ group.blurb }}</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {% for cat in groupCats | sort(attribute='label') %}
+          <a href="/resources/{{ cat.value }}/" class="card px-4 py-3 no-underline flex items-center justify-between gap-2" style="color: var(--color-text);">
+            <h3 class="text-sm font-bold leading-snug" style="color: var(--color-primary);">{{ cat.label }}</h3>
+            <span class="tag text-xs shrink-0" style="background-color: var(--color-warm); color: var(--color-primary);">{{ cat.count }}</span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="card p-8 text-center">
+      <h2 class="text-2xl font-bold mb-3" style="color: var(--color-primary);">Know a Resource We're Missing?</h2>
       <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about.</p>
       <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
     </div>
   </div>
 </section>
+
+<script src="/js/directorySearch.js" defer></script>

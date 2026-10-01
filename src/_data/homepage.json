@@ -6,28 +6,7 @@
       "visible": true,
       "padding": "large",
       "heading": "Living Life to the Fullest",
-      "subheading": "Your connection hub for disability resources, programs, education, and community.",
-      "primaryCta": {
-        "label": "Find Resources",
-        "url": "/resources/"
-      },
-      "secondaryCta": {
-        "label": "Learn More",
-        "url": "/about/"
-      }
-    },
-    {
-      "type": "text",
-      "id": "mission",
-      "visible": true,
-      "background": "warm",
-      "padding": "normal",
-      "align": "center",
-      "heading": "Our Mission",
-      "paragraphs": [
-        "While there are so many different programs, resources, and communities whose whole purpose is to support the disability community, there is no centralized place to find them. Finding the right resource often depends on who you know or how well you can search."
-      ],
-      "emphasis": "We're changing that."
+      "subheading": "Your connection hub for disability resources, programs, education, and community."
     },
     {
       "type": "cardGrid",
@@ -74,7 +53,8 @@
           "description": "Listen to conversations with families, professionals, and advocates making a difference.",
           "url": "/podcast/"
         }
-      ]
+      ],
+      "intro": "One place for the programs, services and organizations that support individuals with disabilities and their caregivers — searchable by category, state and city, and reviewed by a real person before anything goes live."
     },
     {
       "type": "contribute",
@@ -83,7 +63,7 @@
       "background": "cream",
       "padding": "small",
       "heading": "Help build the directory",
-      "intro": "Every family knows resources others are still searching for. Share what you know — we review each one before it goes live.",
+      "intro": "There are hundreds of programs and communities built to support the disability community, but no central place to find them — so finding the right one still depends on who you know. We're changing that, and every family knows resources others are still searching for. Share what you know; we review each one before it goes live.",
       "primary": {
         "heading": "Know a resource we're missing?",
         "body": "Add a program, service, or organization that supports individuals with disabilities and their caregivers. It takes about a minute.",

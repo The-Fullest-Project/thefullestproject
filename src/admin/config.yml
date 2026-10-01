@@ -43,18 +43,24 @@ block_types: &block_types
       - { label: "Show this section", name: "visible", widget: "boolean", default: true }
       - { label: "Heading", name: "heading", widget: "string" }
       - { label: "Subheading", name: "subheading", widget: "text" }
+      # Optional: a hero sitting directly above the section it would link to does
+      # not need buttons. Leave both empty to hide them.
       - label: "Main button"
         name: "primaryCta"
         widget: "object"
+        required: false
+        collapsed: true
         fields:
-          - { label: "Button text", name: "label", widget: "string" }
-          - { label: "Links to", name: "url", widget: "string" }
+          - { label: "Button text", name: "label", widget: "string", required: false }
+          - { label: "Links to", name: "url", widget: "string", required: false }
       - label: "Second button"
         name: "secondaryCta"
         widget: "object"
+        required: false
+        collapsed: true
         fields:
-          - { label: "Button text", name: "label", widget: "string" }
-          - { label: "Links to", name: "url", widget: "string" }
+          - { label: "Button text", name: "label", widget: "string", required: false }
+          - { label: "Links to", name: "url", widget: "string", required: false }
       - label: "Section height"
         name: "padding"
         widget: "select"
@@ -177,6 +183,7 @@ block_types: &block_types
     fields:
       - { label: "Show this section", name: "visible", widget: "boolean", default: true }
       - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Intro paragraph (optional)", name: "intro", widget: "text", required: false }
       - label: "How many across"
         name: "columns"
         widget: "select"
@@ -335,18 +342,24 @@ block_types: &block_types
       - { label: "Show this section", name: "visible", widget: "boolean", default: true }
       - { label: "Heading", name: "heading", widget: "string" }
       - { label: "Text", name: "body", widget: "text" }
+      # Optional: a hero sitting directly above the section it would link to does
+      # not need buttons. Leave both empty to hide them.
       - label: "Main button"
         name: "primaryCta"
         widget: "object"
+        required: false
+        collapsed: true
         fields:
-          - { label: "Button text", name: "label", widget: "string" }
-          - { label: "Links to", name: "url", widget: "string" }
+          - { label: "Button text", name: "label", widget: "string", required: false }
+          - { label: "Links to", name: "url", widget: "string", required: false }
       - label: "Second button"
         name: "secondaryCta"
         widget: "object"
+        required: false
+        collapsed: true
         fields:
-          - { label: "Button text", name: "label", widget: "string" }
-          - { label: "Links to", name: "url", widget: "string" }
+          - { label: "Button text", name: "label", widget: "string", required: false }
+          - { label: "Links to", name: "url", widget: "string", required: false }
       - { label: "Background", name: "background", widget: "select", default: "primary", options: *background_options }
       - { label: "Section height", name: "padding", widget: "select", default: "normal", options: *padding_options }
       - { label: "Section ID (advanced)", name: "id", widget: "string", required: false }

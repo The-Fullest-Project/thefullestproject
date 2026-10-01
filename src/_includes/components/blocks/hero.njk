@@ -9,9 +9,17 @@
     <p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90" data-block-field="subheading">
       {{ block.subheading }}
     </p>
+    {# Buttons are optional: a hero sitting directly above the section it would
+       link to doesn't need them (Jason Collier's interface review, July 2026). #}
+    {% if block.primaryCta or block.secondaryCta %}
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      {% if block.primaryCta %}
       <a href="{{ block.primaryCta.url }}" class="btn-secondary text-lg px-8 py-4 no-underline" data-block-field="primaryCta.label">{{ block.primaryCta.label }}</a>
+      {% endif %}
+      {% if block.secondaryCta %}
       <a href="{{ block.secondaryCta.url }}" class="bg-white/20 hover:bg-white/30 text-white px-8 py-4 font-semibold text-lg transition-colors no-underline" style="border-radius: var(--radius-button);" data-block-field="secondaryCta.label">{{ block.secondaryCta.label }}</a>
+      {% endif %}
     </div>
+    {% endif %}
   </div>
 </section>

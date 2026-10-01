@@ -14,6 +14,31 @@ document.addEventListener('DOMContentLoaded', function() {
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.resource-card'));
   var activeFacet = '';
 
+  // When a state is chosen, in-state listings come first and national ones follow
+  // under this divider. National organizations serve everyone but often have no
+  // local presence, so they shouldn't be mistaken for something down the road.
+  // Ordering is done with CSS `order` rather than moving nodes around.
+  var nationalDivider = document.createElement('div');
+  nationalDivider.className = 'col-span-full pt-6 mt-2 border-t';
+  nationalDivider.style.borderColor = 'var(--color-warm)';
+  nationalDivider.style.order = '2';
+  nationalDivider.hidden = true;
+
+  var dividerHeading = document.createElement('h2');
+  dividerHeading.className = 'text-lg font-bold';
+  dividerHeading.style.color = 'var(--color-primary)';
+  dividerHeading.textContent = 'National resources';
+  nationalDivider.appendChild(dividerHeading);
+
+  var dividerNote = document.createElement('p');
+  dividerNote.className = 'text-sm mt-1';
+  dividerNote.style.color = 'var(--color-text-light)';
+  dividerNote.textContent =
+    'These serve families nationwide, so they may not have an office or staff near you.';
+  nationalDivider.appendChild(dividerNote);
+
+  grid.appendChild(nationalDivider);
+
   // Human labels for facet slugs (embedded by the page template)
   var facetLabels = {};
   var labelsEl = document.getElementById('subcategory-labels');
@@ -140,11 +165,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  /**
+   * Sets a card's position relative to the national divider.
+   * Returns true when the card belongs in the national group below it.
+   */
+  function placeCard(card, location, selectedState) {
+    if (!selectedState) {
+      card.style.order = '';
+      return false;
+    }
+    var isNational = location === 'National' && selectedState !== 'National';
+    card.style.order = isNational ? '3' : '1';
+    return isNational;
+  }
+
   function filterCards() {
     var searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
     var selectedState = stateFilter ? stateFilter.value : '';
     var selectedCity = cityFilter ? cityFilter.value : '';
     var visibleCount = 0;
+    var localCount = 0;
+    var nationalCount = 0;
 
     cards.forEach(function(card) {
       var name = card.getAttribute('data-name') || '';
@@ -168,11 +209,25 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       card.style.display = show ? '' : 'none';
-      if (show) visibleCount++;
+
+      if (show) {
+        visibleCount++;
+        if (placeCard(card, location, selectedState)) nationalCount++;
+        else if (selectedState) localCount++;
+      }
     });
 
+    // Only worth a divider when a state is chosen and both sides have entries.
+    nationalDivider.hidden = !(selectedState && nationalCount > 0 && localCount > 0);
+
     if (resultsCount) {
-      resultsCount.textContent = visibleCount + ' resource' + (visibleCount !== 1 ? 's' : '') + ' shown';
+      if (!nationalDivider.hidden) {
+        resultsCount.textContent =
+          localCount + ' in ' + selectedState + ', plus ' + nationalCount + ' national';
+      } else {
+        resultsCount.textContent =
+          visibleCount + ' resource' + (visibleCount !== 1 ? 's' : '') + ' shown';
+      }
     }
   }
 

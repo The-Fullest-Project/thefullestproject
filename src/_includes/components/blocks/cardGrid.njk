@@ -8,7 +8,10 @@
 {% set columnClass = COLUMN_CLASSES[block.columns | string] | default(COLUMN_CLASSES["3"]) %}
 <section class="{{ [padClass, bgClass] | join(' ') | trim }}" data-block-id="{{ blockId }}" data-block-type="cardGrid" data-block-index="{{ blockIndex }}">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center mb-12" style="color: var(--color-primary);" data-block-field="heading">{{ block.heading }}</h2>
+    <h2 class="text-3xl font-bold text-center{% if block.intro %} mb-4{% else %} mb-12{% endif %}" style="color: var(--color-primary);" data-block-field="heading">{{ block.heading }}</h2>
+    {% if block.intro %}
+    <p class="text-lg text-center max-w-3xl mx-auto mb-12" style="color: var(--color-text-light);" data-block-field="intro">{{ block.intro }}</p>
+    {% endif %}
     <div class="grid {{ columnClass }} gap-8">
       {% for card in block.cards %}
       <a href="{{ card.url }}" class="card p-8 no-underline block" style="color: var(--color-text);">

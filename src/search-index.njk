@@ -1,0 +1,22 @@
+---
+permalink: /search-index.json
+eleventyExcludeFromCollections: true
+---
+{#
+  Lightweight search index for the Resources page. Only the fields the
+  client-side search actually reads — the full directory is ~2 MB, this is a
+  fraction of it, and it is fetched on first interaction rather than on load.
+#}
+{%- set rows = [] -%}
+{%- for r in directory -%}
+  {%- set top = (r.topCategories | first) or "other" -%}
+  {%- set rows = (rows.push({
+        n: r.name,
+        a: r.area or "",
+        l: r.location or "",
+        c: top,
+        u: "/resources/" + top + "/",
+        w: r.website or ""
+      }), rows) -%}
+{%- endfor -%}
+{{ rows | dump | safe }}
