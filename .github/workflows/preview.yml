@@ -1,0 +1,45 @@
+name: Build and Deploy Preview
+
+# The preview site: a full copy of the site at preview.thefullestproject.org,
+# built from the `preview` branch instead of main. Nicole tries changes here
+# before they reach the real site.
+#
+# Deliberately separate from deploy.yml rather than a branch condition inside
+# it: the preview must never be able to publish to the live site by accident.
+on:
+  push:
+    branches: [preview]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # Keep the preview out of Google. Without this it competes with the real
+      # site in search results and splits its ranking.
+      - name: Block search engines
+        run: |
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          find _site -name '*.html' -print0 | xargs -0 sed -i \
+            's|<head>|<head><meta name="robots" content="noindex, nofollow">|'
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=tfp-preview --branch=preview
