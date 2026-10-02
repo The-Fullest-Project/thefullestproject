@@ -1659,33 +1659,41 @@ function duplicateSignals(a, b) {
  *   pairs    — records that look like the same organisation listed twice.
  *              Merge one into the other.
  *   clusters — three or more records sharing one website. Usually a practice
- *              with its staff listed individually, which may be fine; reported
- *              as ONE row per website rather than every pair, so a 17-clinician
- *              practice doesn't produce 136 lines of noise.
+ *              or a county listing programmes individually, which may be fine;
+ *              reported as ONE row per website rather than every pair, so a
+ *              17-listing council site isn't 136 lines of noise.
  *
- * Comparison is within a file (one state, or national): chapters of national
- * charities legitimately share a name across states.
+ * Reads the build-time index at /api/duplicate-index.json rather than the 52
+ * resource files: Cloudflare caps a Worker invocation at 50 subrequests, and
+ * reading every state file exceeded it as soon as the check went national.
+ *
+ * Comparison stays within a file (one state, or national) — chapters of
+ * national charities legitimately share a name across states.
  */
 async function handleDuplicates(url, env) {
+  const site = (env.SITE_URL || "https://thefullestproject.org").replace(/\/$/, "");
+  const res = await fetch(`${site}/api/duplicate-index.json`, {
+    headers: { "User-Agent": "tfp-admin-api" }
+  });
+  if (!res.ok) {
+    return json({ error: "Could not read the resource index", detail: `HTTP ${res.status}` }, 502);
+  }
+  const all = await res.json();
+
   const only = url.searchParams.get("file");
-  let files;
-  if (only) {
-    if (!isResourceFile(only)) return json({ error: "Unknown resource file" }, 400);
-    files = [only];
-  } else {
-    const states = await listRepoDir(env, "src/_data/resources/states");
-    files = ["src/_data/resources/national.json",
-             ...states.filter(f => /^[A-Z]{2}\.json$/.test(f.name)).map(f => f.path)];
+  if (only && !isResourceFile(only)) return json({ error: "Unknown resource file" }, 400);
+
+  const byFile = new Map();
+  for (const r of all) {
+    if (only && r.file !== only) continue;
+    if (!byFile.has(r.file)) byFile.set(r.file, []);
+    byFile.get(r.file).push(r);
   }
 
   const pairs = [];
   const clusters = [];
 
-  for (const file of files) {
-    const repoFile = await readRepoFile(env, file);
-    if (!repoFile) continue;
-    const rows = repoFile.json;
-
+  for (const [file, rows] of byFile) {
     for (let i = 0; i < rows.length; i++) {
       for (let j = i + 1; j < rows.length; j++) {
         const signals = duplicateSignals(rows[i], rows[j]);
@@ -1712,7 +1720,7 @@ async function handleDuplicates(url, env) {
   pairs.sort((x, y) => y.signals.length - x.signals.length);
   clusters.sort((x, y) => y.count - x.count);
   return json({
-    checked: files.length,
+    checked: byFile.size,
     pairCount: pairs.length,
     clusterCount: clusters.length,
     pairs,
@@ -1724,6 +1732,7 @@ function slimResource(r) {
   return {
     name: r.name, location: r.location, area: r.area || "",
     website: r.website || "", phone: r.phone || "",
-    address: r.address || "", category: r.category || []
+    address: r.address || "", category: r.category || [],
+    file: r.file || ""
   };
 }
