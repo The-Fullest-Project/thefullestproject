@@ -40,36 +40,34 @@ permalink: /resources/
   </div>
 </section>
 
+{#
+  Groups are resolved in src/_data/categoryGroups.js — labels, counts, ordering
+  and the "every category in exactly one group" check all live there, so this
+  template only lays them out. One card per GROUP rather than per category:
+  31 separate tiles pushed the lower groups below the fold.
+#}
 <section class="py-8" id="directory-categories">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
-    {% for group in categoryGroups %}
-      {# Only render a group if at least one of its categories has resources. #}
-      {% set groupCats = [] %}
-      {% for slug in group.slugs %}
-        {% set cat = (categories | selectattr("value", "equalto", slug) | first) %}
-        {% if cat %}
-          {% set catCount = (directory | filterByTopCategory(slug)).length %}
-          {% if catCount > 0 %}
-            {% set groupCats = (groupCats.push({ value: cat.value, label: cat.label, count: catCount }), groupCats) %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% if groupCats.length %}
-      <div>
-        <h2 class="text-2xl font-bold mb-1" style="color: var(--color-primary);">{{ group.name }}</h2>
-        <p class="text-sm mb-5" style="color: var(--color-text-light);">{{ group.blurb }}</p>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {% for cat in groupCats | sort(attribute='label') %}
-          <a href="/resources/{{ cat.value }}/" class="card px-4 py-3 no-underline flex items-center justify-between gap-2" style="color: var(--color-text);">
-            <h3 class="text-sm font-bold leading-snug" style="color: var(--color-primary);">{{ cat.label }}</h3>
-            <span class="tag text-xs shrink-0" style="background-color: var(--color-warm); color: var(--color-primary);">{{ cat.count }}</span>
-          </a>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-start">
+      {% for group in categoryGroups %}
+      <div class="card p-5">
+        <h2 class="text-base font-bold" style="color: var(--color-primary);">{{ group.name }}</h2>
+        <p class="text-xs mt-1 mb-3 leading-snug" style="color: var(--color-text-light);">{{ group.blurb }}</p>
+        <ul class="list-none p-0 m-0 flex flex-col">
+          {% for cat in group.categories %}
+          <li>
+            <a href="/resources/{{ cat.value }}/"
+               class="no-underline flex items-baseline justify-between gap-3 py-1.5 border-t"
+               style="color: var(--color-text); border-color: var(--color-warm);">
+              <span class="text-sm leading-snug">{{ cat.label }}</span>
+              <span class="text-xs tabular-nums shrink-0" style="color: var(--color-text-light);">{{ cat.count }}</span>
+            </a>
+          </li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 
