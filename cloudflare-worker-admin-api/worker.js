@@ -1549,7 +1549,7 @@ async function handleLiveResourceSave(body, env, auth) {
     found = true;
     changes.set(file, pretty(rows));
     return changes;
-  }, `Edit ${originalName} via admin portal (by ${auth.login})`);
+  }, `Edit ${originalName} via admin portal (by ${auth.actor})`);
 
   if (result.error) return result.error;
   if (!found) return json({ error: "Resource not found — it may have been renamed or removed" }, 404);
