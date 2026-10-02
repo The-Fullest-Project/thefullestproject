@@ -1,0 +1,16 @@
+---
+permalink: /sw.js
+eleventyExcludeFromCollections: true
+---
+/**
+ * Minimal service worker.
+ *
+ * It exists so the site is installable: Chrome only offers "Add to Home screen"
+ * — and only then registers the share target — when a manifest AND a service
+ * worker with a fetch handler are present. Nothing is cached on purpose; the
+ * site is a small static build and stale pages would be worse than a network
+ * round trip.
+ */
+self.addEventListener('install', function () { self.skipWaiting(); });
+self.addEventListener('activate', function (event) { event.waitUntil(self.clients.claim()); });
+self.addEventListener('fetch', function (event) { event.respondWith(fetch(event.request)); });

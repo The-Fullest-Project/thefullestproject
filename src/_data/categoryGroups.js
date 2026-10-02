@@ -15,45 +15,12 @@ const fs = require('node:fs');
 const path = require('node:path');
 const directory = require('./directory.js');
 
-const GROUPS = [
-  {
-    name: 'Health & Therapy',
-    blurb: 'Medical care, therapy services, mental health and early intervention.',
-    slugs: ['therapy', 'medical', 'mental-health', 'early-intervention', 'sensory']
-  },
-  {
-    name: 'Daily Living & Accessibility',
-    blurb: 'Equipment, adaptive gear, clothing, toys, home changes and getting around.',
-    slugs: ['equipment', 'assistive-tech', 'clothing', 'adaptive-toys',
-            'home-modifications', 'transportation', 'apps']
-  },
-  {
-    name: 'Education, Transition & Employment',
-    blurb: 'School, IEPs, moving into adulthood, and finding work.',
-    slugs: ['education', 'transition', 'employment']
-  },
-  {
-    name: 'Family Support & Community Life',
-    blurb: 'Respite, childcare, sibling support, faith communities and groups near you.',
-    slugs: ['respite', 'childcare', 'community', 'sibling-support', 'faith',
-            'nonprofit', 'housing']
-  },
-  {
-    name: 'Legal, Financial & Advocacy',
-    blurb: 'Benefits, insurance, planning for the future, legal help and government services.',
-    slugs: ['financial', 'insurance', 'planning', 'legal', 'government']
-  },
-  {
-    name: 'Recreation & Leisure',
-    blurb: 'Sports, camps, activities and things to do.',
-    slugs: ['sports', 'recreation', 'camps']
-  },
-  {
-    name: 'Other',
-    blurb: "Emergency preparedness and everything that doesn't sit neatly elsewhere.",
-    slugs: ['emergency', 'other']
-  }
-];
+// Group definitions live in categoryGroupDefs.json, not here, so the admin
+// portal can add a category to a group when one is created from the review
+// queue. Resolution and the invariants below stay in code.
+const GROUPS = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'categoryGroupDefs.json'), 'utf8')
+);
 
 module.exports = function () {
   const categories = JSON.parse(

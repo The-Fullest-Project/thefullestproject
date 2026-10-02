@@ -161,6 +161,18 @@ export default {
       if (request.method === "GET" && path === "/duplicates") {
         return cors(env, await handleDuplicates(new URL(request.url), env));
       }
+      if (request.method === "GET" && path === "/category-groups") {
+        return cors(env, await handleCategoryGroups(env));
+      }
+      if (request.method === "POST" && path === "/category") {
+        return cors(env, await handleCreateCategory(await request.json(), env, auth));
+      }
+      if (request.method === "GET" && path === "/change-requests") {
+        return cors(env, await handleChangeRequestsGet(env));
+      }
+      if (request.method === "POST" && path === "/change-requests") {
+        return cors(env, await handleChangeRequestPost(await request.json(), env, auth));
+      }
 
       return cors(env, json({ error: "Not found" }, 404));
     } catch (err) {
@@ -1735,4 +1747,153 @@ function slimResource(r) {
     address: r.address || "", category: r.category || [],
     file: r.file || ""
   };
+}
+
+// ─── Creating a category from the review queue (C2) ──────────────────────────
+
+const CATEGORIES_PATH = "src/_data/categories.json";
+const CATEGORY_GROUPS_PATH = "src/_data/categoryGroupDefs.json";
+
+/** "Adaptive Toys" -> "adaptive-toys". */
+function slugify(label) {
+  return String(label || "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 40);
+}
+
+/**
+ * POST /category  { label, group }
+ *
+ * Writes categories.json AND categoryGroupDefs.json in ONE commit. They cannot
+ * be allowed to drift: src/_data/categoryGroups.js throws at build time if a
+ * category belongs to no group, so adding a category without placing it in one
+ * would take the whole site build down on the next deploy.
+ */
+async function handleCreateCategory(body, env, auth) {
+  const label = String((body && body.label) || "").trim();
+  const group = String((body && body.group) || "").trim();
+  if (!label) return json({ error: "A category needs a name" }, 400);
+  if (!group) return json({ error: "Pick which group it belongs in" }, 400);
+
+  const value = slugify(label);
+  if (!value) return json({ error: "That name has no letters or numbers in it" }, 400);
+
+  let conflict = null;
+  let unknownGroup = false;
+
+  const result = await commitWithRetry(env, async (headSha) => {
+    const changes = new Map();
+    const catsFile = await readRepoFile(env, CATEGORIES_PATH, headSha);
+    const groupsFile = await readRepoFile(env, CATEGORY_GROUPS_PATH, headSha);
+    if (!catsFile || !groupsFile) return changes;
+
+    const categories = catsFile.json;
+    const groups = groupsFile.json;
+
+    if (categories.some(c => c.value === value)) {
+      conflict = categories.find(c => c.value === value).label;
+      return changes;
+    }
+    const target = groups.find(g => g.name === group);
+    if (!target) { unknownGroup = true; return changes; }
+
+    categories.push({ value, label });
+    categories.sort((a, b) => a.label.localeCompare(b.label));
+    target.slugs.push(value);
+
+    changes.set(CATEGORIES_PATH, pretty(categories));
+    changes.set(CATEGORY_GROUPS_PATH, pretty(groups));
+    return changes;
+  }, `Add category "${label}" via admin portal (by ${auth.actor})`);
+
+  if (result.error) return result.error;
+  if (conflict) return json({ error: `That category already exists as "${conflict}"` }, 409);
+  if (unknownGroup) return json({ error: `No such group: ${group}` }, 400);
+  return json({ ok: true, value, label, group });
+}
+
+/** GET /category-groups — the group names, for the "which group?" picker. */
+async function handleCategoryGroups(env) {
+  const file = await readRepoFile(env, CATEGORY_GROUPS_PATH);
+  if (!file) return json({ error: "Group definitions not found" }, 404);
+  return json({ groups: file.json.map(g => ({ name: g.name, blurb: g.blurb })) });
+}
+
+// ─── Change-request log (C5) ─────────────────────────────────────────────────
+
+/**
+ * Nicole's requirement: visible only to people in the review portal, never to
+ * the community or the public. That rules out the repo — it is public on
+ * GitHub — so these live in a private Cloudflare KV namespace instead. The
+ * endpoints no-op gracefully if the binding is missing, the same way the Brevo
+ * calls do, so an un-provisioned worker still runs.
+ */
+const CR_STATUSES = ["filed", "planned", "building", "done", "declined"];
+
+async function handleChangeRequestsGet(env) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ requests: [], unavailable: "The change log store is not set up yet." });
+  }
+  const list = await env.CHANGE_REQUESTS.list({ prefix: "cr-", limit: 1000 });
+  const requests = [];
+  for (const key of list.keys) {
+    const raw = await env.CHANGE_REQUESTS.get(key.name);
+    if (raw) {
+      try { requests.push(JSON.parse(raw)); } catch { /* skip a corrupt row */ }
+    }
+  }
+  // Newest first; done and declined sink below everything still open.
+  const openFirst = r => (r.status === "done" || r.status === "declined") ? 1 : 0;
+  requests.sort((a, b) =>
+    openFirst(a) - openFirst(b) || String(b.createdAt).localeCompare(String(a.createdAt))
+  );
+  return json({ requests });
+}
+
+async function handleChangeRequestPost(body, env, auth) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ error: "The change log store is not set up yet." }, 503);
+  }
+  const { id, title, detail, page, status, note } = body || {};
+
+  if (id) {
+    const raw = await env.CHANGE_REQUESTS.get(id);
+    if (!raw) return json({ error: "No such request" }, 404);
+    const existing = JSON.parse(raw);
+    if (status && !CR_STATUSES.includes(status)) {
+      return json({ error: `Status must be one of: ${CR_STATUSES.join(", ")}` }, 400);
+    }
+    const updated = {
+      ...existing,
+      status: status || existing.status,
+      note: note !== undefined ? String(note).slice(0, 2000) : existing.note,
+      updatedAt: new Date().toISOString(),
+      updatedBy: auth.actor
+    };
+    await env.CHANGE_REQUESTS.put(id, JSON.stringify(updated));
+    return json({ ok: true, request: updated });
+  }
+
+  const cleanTitle = String(title || "").trim();
+  if (!cleanTitle) return json({ error: "A request needs a short title" }, 400);
+
+  const now = new Date();
+  const newId = `cr-${now.toISOString().slice(0, 10)}-${crypto.randomUUID().slice(0, 8)}`;
+  const request = {
+    id: newId,
+    title: cleanTitle.slice(0, 200),
+    detail: String(detail || "").slice(0, 4000),
+    page: String(page || "").slice(0, 300),
+    status: "filed",
+    note: "",
+    createdAt: now.toISOString(),
+    createdBy: auth.actor,
+    updatedAt: now.toISOString(),
+    updatedBy: auth.actor
+  };
+  await env.CHANGE_REQUESTS.put(newId, JSON.stringify(request));
+  return json({ ok: true, request });
 }

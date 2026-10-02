@@ -50,6 +50,8 @@
         <div role="tablist" aria-label="Admin sections" class="flex gap-1 pb-2">
           <button role="tab" id="tab-queue" aria-controls="panel-queue" aria-selected="true"
             class="px-4 py-2 rounded-t-lg text-sm font-semibold whitespace-nowrap bg-white" style="color: var(--color-primary);">Review Queue <span id="queue-count-badge" class="tag" hidden></span></button>
+          <button role="tab" id="tab-requests" aria-controls="panel-requests" aria-selected="false"
+            class="px-4 py-2 rounded-t-lg text-sm font-semibold whitespace-nowrap text-white/80 hover:text-white">Requests</button>
           <button role="tab" id="tab-newsletter" aria-controls="panel-newsletter" aria-selected="false"
             class="px-4 py-2 rounded-t-lg text-sm font-semibold whitespace-nowrap text-white/80 hover:text-white">Newsletter</button>
           <button role="tab" id="tab-history" aria-controls="panel-history" aria-selected="false"
@@ -68,6 +70,7 @@
 
     <main id="portal-main" class="max-w-6xl mx-auto px-4 py-8">
       <section role="tabpanel" id="panel-queue" aria-labelledby="tab-queue"></section>
+      <section role="tabpanel" id="panel-requests" aria-labelledby="tab-requests" hidden></section>
       <section role="tabpanel" id="panel-newsletter" aria-labelledby="tab-newsletter" hidden></section>
       <section role="tabpanel" id="panel-history" aria-labelledby="tab-history" hidden></section>
       <section role="tabpanel" id="panel-bulk" aria-labelledby="tab-bulk" hidden></section>

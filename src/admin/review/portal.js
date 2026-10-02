@@ -230,7 +230,7 @@
   }
 
   // ── Tabs ──────────────────────────────────────────────────────────────────
-  var TABS = ['queue', 'newsletter', 'history', 'bulk', 'live', 'duplicates', 'emails'];
+  var TABS = ['queue', 'requests', 'newsletter', 'history', 'bulk', 'live', 'duplicates', 'emails'];
   function activateTab(name) {
     TABS.forEach(function(t) {
       var tab = byId('tab-' + t);
@@ -245,8 +245,9 @@
     });
     if (!state.loadedTabs[name]) {
       state.loadedTabs[name] = true;
-      ({ queue: loadQueue, newsletter: loadNewsletter, history: loadHistory, bulk: renderBulk,
-         live: renderLiveEditor, duplicates: loadDuplicates, emails: loadEmails })[name]();
+      ({ queue: loadQueue, requests: loadRequests, newsletter: loadNewsletter,
+         history: loadHistory, bulk: renderBulk, live: renderLiveEditor,
+         duplicates: loadDuplicates, emails: loadEmails })[name]();
     }
   }
 
@@ -634,6 +635,12 @@
           hint.style.color = 'var(--color-text-light)';
           wrap.appendChild(hint);
         }
+        // Create a category without leaving the queue (C2). Selecting this
+        // opens a small form; the select snaps back if it's cancelled.
+        var newOpt = el('option', '', '➕ New category…');
+        newOpt.value = NEW_CATEGORY_VALUE;
+        input.appendChild(newOpt);
+        attachNewCategoryFlow(input, wrap, current);
       } else if (kind === 'location' && state.taxonomies.locations.length) {
         input = el('select', 'filter-select text-sm w-full');
         state.taxonomies.locations.forEach(function(loc) {
@@ -1547,6 +1554,296 @@
     names.style.color = 'var(--color-text-light)';
     names.textContent = cluster.resources.map(function (r) { return r.name; }).join(' / ');
     card.appendChild(names);
+    return card;
+  }
+
+
+  // ── Create a category from the queue (C2) ─────────────────────────────────
+
+  var NEW_CATEGORY_VALUE = '__new_category__';
+  var categoryGroupsCache = null;
+
+  function loadCategoryGroups() {
+    if (categoryGroupsCache) return Promise.resolve(categoryGroupsCache);
+    return apiFetch('/category-groups').then(function (data) {
+      categoryGroupsCache = data.groups || [];
+      return categoryGroupsCache;
+    });
+  }
+
+  /**
+   * Turns the "New category..." option into an inline create form.
+   * A category must be placed in a group: the site build fails if one belongs
+   * to no group, so the two are always written together.
+   */
+  function attachNewCategoryFlow(select, wrap, previousValue) {
+    select.addEventListener('change', function () {
+      if (select.value !== NEW_CATEGORY_VALUE) return;
+      select.value = previousValue || (select.options[0] && select.options[0].value) || '';
+
+      if (wrap.querySelector('[data-new-category]')) return;
+
+      var box = el('div', 'mt-2 p-3 rounded-lg');
+      box.dataset.newCategory = '1';
+      box.style.backgroundColor = 'var(--color-warm)';
+
+      var nameLabel = el('label', 'block text-xs font-semibold mb-1', 'New category name');
+      var nameInput = el('input', 'form-input text-sm w-full');
+      nameInput.id = 'new-cat-name-' + Math.random().toString(36).slice(2, 7);
+      nameLabel.htmlFor = nameInput.id;
+      nameInput.placeholder = 'e.g. Adaptive Toys';
+      box.appendChild(nameLabel);
+      box.appendChild(nameInput);
+
+      var groupLabel = el('label', 'block text-xs font-semibold mt-2 mb-1', 'Which group does it belong in?');
+      var groupSelect = el('select', 'filter-select text-sm w-full');
+      groupSelect.id = 'new-cat-group-' + Math.random().toString(36).slice(2, 7);
+      groupLabel.htmlFor = groupSelect.id;
+      box.appendChild(groupLabel);
+      box.appendChild(groupSelect);
+
+      var hint = el('p', 'text-xs mt-2', 'This is the heading it will appear under on the Resources page.');
+      hint.style.color = 'var(--color-text-light)';
+      box.appendChild(hint);
+
+      var actions = el('div', 'flex gap-2 mt-3');
+      var create = el('button', 'btn-primary text-xs', 'Create');
+      var cancel = el('button', 'btn-secondary text-xs', 'Cancel');
+      actions.appendChild(create);
+      actions.appendChild(cancel);
+      box.appendChild(actions);
+      wrap.appendChild(box);
+
+      loadCategoryGroups().then(function (groups) {
+        groups.forEach(function (g) {
+          var opt = el('option', '', g.name);
+          opt.value = g.name;
+          groupSelect.appendChild(opt);
+        });
+      }).catch(function () {
+        toast('Could not load the category groups', true);
+      });
+
+      cancel.addEventListener('click', function () { box.remove(); });
+
+      create.addEventListener('click', function () {
+        var label = nameInput.value.trim();
+        if (!label) { toast('Give the category a name', true); return; }
+        create.disabled = true;
+        create.textContent = 'Creating...';
+        apiFetch('/category', {
+          method: 'POST',
+          body: JSON.stringify({ label: label, group: groupSelect.value })
+        }).then(function (data) {
+          // Add it to the live dropdown and select it, so the reviewer can
+          // carry straight on with the item they were working on.
+          state.taxonomies.categories.push({ value: data.value, label: data.label });
+          state.taxonomies.categories.sort(function (a, b) { return a.label.localeCompare(b.label); });
+          var opt = el('option', '', data.label);
+          opt.value = data.value;
+          select.insertBefore(opt, select.querySelector('option[value="' + NEW_CATEGORY_VALUE + '"]'));
+          select.value = data.value;
+          box.remove();
+          toast('Created "' + data.label + '" - live on the site in a minute or two');
+        }).catch(function (err) {
+          create.disabled = false;
+          create.textContent = 'Create';
+          toast(err.message || 'Could not create that category', true);
+        });
+      });
+
+      nameInput.focus();
+    });
+  }
+
+  // ── Change-request log (C5) ───────────────────────────────────────────────
+  // Private to the portal: these live in Cloudflare KV, not the repo, because
+  // the repo is public on GitHub and Nicole asked for this to stay internal.
+
+  var CR_STATUS_LABELS = {
+    filed: 'Filed',
+    planned: 'Planned',
+    building: 'Being built',
+    done: 'Done',
+    declined: 'Not doing'
+  };
+  var CR_STATUS_COLORS = {
+    filed: 'var(--color-highlight)',
+    planned: 'var(--color-primary)',
+    building: 'var(--color-secondary)',
+    done: 'var(--color-accent)',
+    declined: 'var(--color-text-light)'
+  };
+
+  function loadRequests() {
+    var panel = byId('panel-requests');
+    clear(panel);
+    panel.appendChild(buildRequestForm());
+
+    var listWrap = el('div', 'mt-8');
+    listWrap.id = 'requests-list';
+    var loading = el('p', 'text-sm', 'Loading requests...');
+    loading.style.color = 'var(--color-text-light)';
+    listWrap.appendChild(loading);
+    panel.appendChild(listWrap);
+
+    refreshRequests();
+  }
+
+  function refreshRequests() {
+    var listWrap = byId('requests-list');
+    if (!listWrap) return;
+    apiFetch('/change-requests').then(function (data) {
+      clear(listWrap);
+      if (data.unavailable) {
+        var warn = el('div', 'card p-4');
+        var w = el('p', 'text-sm', data.unavailable + ' Patrick needs to finish setting up the store before requests can be saved.');
+        w.style.color = 'var(--color-secondary)';
+        warn.appendChild(w);
+        listWrap.appendChild(warn);
+        return;
+      }
+      var requests = data.requests || [];
+      if (!requests.length) {
+        var none = el('p', 'text-sm', 'No requests yet. Add the first one above.');
+        none.style.color = 'var(--color-text-light)';
+        listWrap.appendChild(none);
+        return;
+      }
+      var head = el('h2', 'text-lg font-bold mb-3', requests.length + ' request' + (requests.length === 1 ? '' : 's'));
+      listWrap.appendChild(head);
+      var list = el('div', 'flex flex-col gap-2');
+      requests.forEach(function (r) { list.appendChild(requestCard(r)); });
+      listWrap.appendChild(list);
+    }).catch(function (err) {
+      clear(listWrap);
+      var e = el('p', 'text-sm', err.message || 'Could not load the requests.');
+      e.style.color = 'var(--color-secondary)';
+      listWrap.appendChild(e);
+    });
+  }
+
+  function buildRequestForm() {
+    var card = el('div', 'card p-5');
+    card.appendChild(el('h2', 'text-lg font-bold mb-1', 'Ask for a change'));
+    var intro = el('p', 'text-sm mb-4', 'Anything you want changed on the site. This list is private to the three of us.');
+    intro.style.color = 'var(--color-text-light)';
+    card.appendChild(intro);
+
+    var titleLabel = el('label', 'block text-xs font-semibold mb-1', 'What needs to change?');
+    var title = el('input', 'form-input text-sm w-full');
+    title.id = 'cr-title';
+    titleLabel.htmlFor = title.id;
+    title.placeholder = 'e.g. The Respite page needs a clearer heading';
+    card.appendChild(titleLabel);
+    card.appendChild(title);
+
+    var detailLabel = el('label', 'block text-xs font-semibold mt-3 mb-1', 'Any detail (optional)');
+    var detail = el('textarea', 'form-input text-sm w-full');
+    detail.id = 'cr-detail';
+    detail.rows = 3;
+    detailLabel.htmlFor = detail.id;
+    card.appendChild(detailLabel);
+    card.appendChild(detail);
+
+    var pageLabel = el('label', 'block text-xs font-semibold mt-3 mb-1', 'Which page? (optional)');
+    var page = el('input', 'form-input text-sm w-full');
+    page.id = 'cr-page';
+    pageLabel.htmlFor = page.id;
+    page.placeholder = '/resources/respite/';
+    card.appendChild(pageLabel);
+    card.appendChild(page);
+
+    var submit = el('button', 'btn-primary text-sm mt-4', 'Add request');
+    card.appendChild(submit);
+
+    submit.addEventListener('click', function () {
+      var t = title.value.trim();
+      if (!t) { toast('Give it a short title', true); return; }
+      submit.disabled = true;
+      submit.textContent = 'Adding...';
+      apiFetch('/change-requests', {
+        method: 'POST',
+        body: JSON.stringify({ title: t, detail: detail.value.trim(), page: page.value.trim() })
+      }).then(function () {
+        title.value = ''; detail.value = ''; page.value = '';
+        submit.disabled = false;
+        submit.textContent = 'Add request';
+        toast('Added');
+        refreshRequests();
+      }).catch(function (err) {
+        submit.disabled = false;
+        submit.textContent = 'Add request';
+        toast(err.message || 'Could not add that', true);
+      });
+    });
+
+    return card;
+  }
+
+  function requestCard(r) {
+    var card = el('div', 'card p-4');
+
+    var head = el('div', 'flex flex-wrap items-start justify-between gap-2');
+    var left = el('div');
+    left.appendChild(el('p', 'font-semibold text-sm', r.title));
+    var meta = el('p', 'text-xs mt-1',
+      'Asked by ' + (r.createdBy || 'someone') + ' on ' + fmtDate(r.createdAt));
+    meta.style.color = 'var(--color-text-light)';
+    left.appendChild(meta);
+    head.appendChild(left);
+
+    var badge = el('span', 'tag text-xs', CR_STATUS_LABELS[r.status] || r.status);
+    badge.style.backgroundColor = CR_STATUS_COLORS[r.status] || 'var(--color-warm)';
+    badge.style.color = 'white';
+    head.appendChild(badge);
+    card.appendChild(head);
+
+    if (r.detail) {
+      var d = el('p', 'text-sm mt-2', r.detail);
+      d.style.color = 'var(--color-text-light)';
+      card.appendChild(d);
+    }
+    if (r.page) {
+      var pg = el('p', 'text-xs mt-1', r.page);
+      pg.style.color = 'var(--color-text-light)';
+      card.appendChild(pg);
+    }
+    if (r.note) {
+      var n = el('p', 'text-xs mt-2 italic', r.note);
+      n.style.color = 'var(--color-primary)';
+      card.appendChild(n);
+    }
+
+    var controls = el('div', 'flex flex-wrap items-center gap-2 mt-3');
+    var statusLabel = el('label', 'text-xs font-semibold', 'Status');
+    var statusSelect = el('select', 'filter-select text-xs');
+    statusSelect.id = 'cr-status-' + r.id;
+    statusLabel.htmlFor = statusSelect.id;
+    Object.keys(CR_STATUS_LABELS).forEach(function (k) {
+      var opt = el('option', '', CR_STATUS_LABELS[k]);
+      opt.value = k;
+      if (k === r.status) opt.selected = true;
+      statusSelect.appendChild(opt);
+    });
+    controls.appendChild(statusLabel);
+    controls.appendChild(statusSelect);
+
+    statusSelect.addEventListener('change', function () {
+      statusSelect.disabled = true;
+      apiFetch('/change-requests', {
+        method: 'POST',
+        body: JSON.stringify({ id: r.id, status: statusSelect.value })
+      }).then(function () {
+        toast('Updated');
+        refreshRequests();
+      }).catch(function (err) {
+        statusSelect.disabled = false;
+        toast(err.message || 'Could not update', true);
+      });
+    });
+
+    card.appendChild(controls);
     return card;
   }
 
