@@ -230,7 +230,7 @@
   }
 
   // ── Tabs ──────────────────────────────────────────────────────────────────
-  var TABS = ['queue', 'newsletter', 'history', 'bulk', 'emails'];
+  var TABS = ['queue', 'newsletter', 'history', 'bulk', 'live', 'duplicates', 'emails'];
   function activateTab(name) {
     TABS.forEach(function(t) {
       var tab = byId('tab-' + t);
@@ -245,7 +245,8 @@
     });
     if (!state.loadedTabs[name]) {
       state.loadedTabs[name] = true;
-      ({ queue: loadQueue, newsletter: loadNewsletter, history: loadHistory, bulk: renderBulk, emails: loadEmails })[name]();
+      ({ queue: loadQueue, newsletter: loadNewsletter, history: loadHistory, bulk: renderBulk,
+         live: renderLiveEditor, duplicates: loadDuplicates, emails: loadEmails })[name]();
     }
   }
 
@@ -1296,4 +1297,257 @@
       acceptToken(state.token);
     }
   });
+
+  // ── Edit Live (C1) ────────────────────────────────────────────────────────
+  // The review queue only ever handled items on their way IN. Fixing a typo in
+  // one of ~1,400 published resources meant editing JSON by hand. Candidates
+  // come from the site's own /search-index.json (cheap, cached); only the one
+  // file holding the chosen resource is read from the GitHub API.
+
+  var liveIndex = null;
+
+  function liveTargetFile(location) {
+    if (!location || location === 'National') return 'src/_data/resources/national.json';
+    if (location === 'Northern Virginia') return 'src/_data/resources/states/VA.json';
+    if (location === 'Portland' || location === 'Portland, OR') return 'src/_data/resources/states/OR.json';
+    var map = state.taxonomies && state.taxonomies.stateCodes;
+    var code = map && map[location];
+    return code ? 'src/_data/resources/states/' + code + '.json'
+                : 'src/_data/resources/national.json';
+  }
+
+  function renderLiveEditor() {
+    var panel = byId('panel-live');
+    clear(panel);
+
+    var intro = el('p', 'text-sm mb-4');
+    intro.style.color = 'var(--color-text-light)';
+    intro.textContent = 'Search everything already published, then edit it in place. Changes go live within a couple of minutes.';
+    panel.appendChild(intro);
+
+    var input = el('input', 'form-input text-sm w-full mb-4');
+    input.type = 'search';
+    input.id = 'live-search';
+    input.placeholder = 'Search published resources by name...';
+    input.setAttribute('aria-label', 'Search published resources');
+    panel.appendChild(input);
+
+    var results = el('div', 'flex flex-col gap-2');
+    results.id = 'live-results';
+    panel.appendChild(results);
+
+    var status = el('p', 'text-sm mt-3');
+    status.id = 'live-status';
+    status.style.color = 'var(--color-text-light)';
+    panel.appendChild(status);
+
+    function ensureIndex() {
+      if (liveIndex) return Promise.resolve(liveIndex);
+      status.textContent = 'Loading the directory...';
+      return fetch('/search-index.json')
+        .then(function (r) { return r.json(); })
+        .then(function (d) { liveIndex = d; status.textContent = ''; return d; })
+        .catch(function () {
+          status.textContent = 'Could not load the directory index.';
+          return [];
+        });
+    }
+
+    var debounce;
+    input.addEventListener('input', function () {
+      clearTimeout(debounce);
+      debounce = setTimeout(function () {
+        var term = input.value.trim().toLowerCase();
+        clear(results);
+        if (term.length < 2) { status.textContent = ''; return; }
+        ensureIndex().then(function (index) {
+          var hits = index.filter(function (r) {
+            return (r.n || '').toLowerCase().indexOf(term) !== -1;
+          }).slice(0, 25);
+          status.textContent = hits.length
+            ? hits.length + ' match' + (hits.length === 1 ? '' : 'es')
+            : 'No published resource matches that.';
+          hits.forEach(function (hit) { results.appendChild(liveResultRow(hit)); });
+        });
+      }, 150);
+    });
+    input.focus();
+  }
+
+  function liveResultRow(hit) {
+    var card = el('div', 'card p-4');
+    var head = el('div', 'flex flex-wrap items-center justify-between gap-2');
+
+    var left = el('div');
+    left.appendChild(el('p', 'font-semibold text-sm', hit.n));
+    var place = [hit.a, hit.l].filter(Boolean).join(', ');
+    if (place) {
+      var sub = el('p', 'text-xs', place);
+      sub.style.color = 'var(--color-text-light)';
+      left.appendChild(sub);
+    }
+    head.appendChild(left);
+
+    var btn = el('button', 'btn-primary text-xs', 'Edit');
+    head.appendChild(btn);
+    card.appendChild(head);
+
+    var body = el('div');
+    card.appendChild(body);
+
+    btn.addEventListener('click', function () {
+      if (body.firstChild) { clear(body); btn.textContent = 'Edit'; return; }
+      btn.disabled = true;
+      btn.textContent = 'Loading...';
+      var file = liveTargetFile(hit.l);
+      apiFetch('/live-resource?file=' + encodeURIComponent(file) + '&name=' + encodeURIComponent(hit.n))
+        .then(function (data) {
+          btn.disabled = false;
+          btn.textContent = 'Close';
+          renderLiveEditForm(body, data.file, data.resource);
+        })
+        .catch(function (err) {
+          btn.disabled = false;
+          btn.textContent = 'Edit';
+          toast(err.message || 'Could not load that resource', true);
+        });
+    });
+
+    return card;
+  }
+
+  function renderLiveEditForm(container, file, resource) {
+    clear(container);
+    var item = {
+      id: 'live-' + Math.random().toString(36).slice(2, 8),
+      type: 'resource',
+      payload: resource
+    };
+    var wrap = el('div');
+    wrap.appendChild(buildEditForm(item));
+
+    var actions = el('div', 'flex flex-wrap gap-2 mt-3');
+    var save = el('button', 'btn-primary text-xs', 'Save changes');
+    var note = el('span', 'text-xs self-center');
+    note.style.color = 'var(--color-text-light)';
+    note.textContent = 'Live 1-2 minutes after saving.';
+    actions.appendChild(save);
+    actions.appendChild(note);
+    wrap.appendChild(actions);
+    container.appendChild(wrap);
+
+    save.addEventListener('click', function () {
+      var edited = collectEdits(wrap, item);
+      if (!edited || !edited.name) { toast('A resource needs a name', true); return; }
+      save.disabled = true;
+      save.textContent = 'Saving...';
+      apiFetch('/live-resource', {
+        method: 'POST',
+        body: JSON.stringify({ file: file, originalName: resource.name, resource: edited })
+      }).then(function () {
+        save.textContent = 'Saved';
+        toast('Saved - live in a minute or two');
+        liveIndex = null; // the cached index is now stale
+      }).catch(function (err) {
+        save.disabled = false;
+        save.textContent = 'Save changes';
+        toast(err.message || 'Could not save', true);
+      });
+    });
+  }
+
+  // ── Duplicates (C3, C4) ───────────────────────────────────────────────────
+
+  function loadDuplicates() {
+    var panel = byId('panel-duplicates');
+    clear(panel);
+    var status = el('p', 'text-sm mb-4');
+    status.style.color = 'var(--color-text-light)';
+    status.textContent = 'Checking every state file for duplicates - this takes a few seconds...';
+    panel.appendChild(status);
+
+    apiFetch('/duplicates').then(function (data) {
+      clear(panel);
+
+      var head = el('p', 'text-sm mb-4');
+      head.style.color = 'var(--color-text-light)';
+      head.textContent = data.pairCount + ' suspected duplicate pair' +
+        (data.pairCount === 1 ? '' : 's') + ', and ' + data.clusterCount +
+        ' website' + (data.clusterCount === 1 ? '' : 's') + ' shared by three or more listings.';
+      panel.appendChild(head);
+
+      if (data.pairs.length) {
+        panel.appendChild(el('h2', 'text-lg font-bold mb-2', 'Likely the same organization twice'));
+        var list = el('div', 'flex flex-col gap-2 mb-8');
+        data.pairs.forEach(function (pair) { list.appendChild(duplicatePairCard(pair)); });
+        panel.appendChild(list);
+      }
+
+      if (data.clusters.length) {
+        panel.appendChild(el('h2', 'text-lg font-bold mb-1', 'Websites shared by several listings'));
+        var note = el('p', 'text-sm mb-3');
+        note.style.color = 'var(--color-text-light)';
+        note.textContent = 'Often fine - a county or a practice listing its programs separately. Worth a glance for anything that should be one entry.';
+        panel.appendChild(note);
+        var clist = el('div', 'flex flex-col gap-2');
+        data.clusters.forEach(function (c) { clist.appendChild(duplicateClusterCard(c)); });
+        panel.appendChild(clist);
+      }
+
+      if (!data.pairs.length && !data.clusters.length) {
+        panel.appendChild(el('p', 'text-sm', 'No duplicates found.'));
+      }
+    }).catch(function (err) {
+      clear(panel);
+      var e = el('p', 'text-sm', err.message || 'Could not run the duplicate check.');
+      e.style.color = 'var(--color-secondary)';
+      panel.appendChild(e);
+    });
+  }
+
+  function duplicatePairCard(pair) {
+    var card = el('div', 'card p-4');
+    var why = el('p', 'text-xs font-semibold mb-2', pair.signals.join(' - '));
+    why.style.color = 'var(--color-secondary)';
+    card.appendChild(why);
+
+    var grid = el('div', 'grid grid-cols-1 sm:grid-cols-2 gap-3');
+    [pair.a, pair.b].forEach(function (r) {
+      var side = el('div');
+      side.appendChild(el('p', 'font-semibold text-sm', r.name));
+      var meta = [r.area, r.location].filter(Boolean).join(', ');
+      if (meta) {
+        var m = el('p', 'text-xs', meta);
+        m.style.color = 'var(--color-text-light)';
+        side.appendChild(m);
+      }
+      if (r.website) {
+        var a = el('a', 'text-xs no-underline break-all', r.website);
+        a.href = r.website;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.style.color = 'var(--color-primary)';
+        side.appendChild(a);
+      }
+      grid.appendChild(side);
+    });
+    card.appendChild(grid);
+
+    var hint = el('p', 'text-xs mt-3');
+    hint.style.color = 'var(--color-text-light)';
+    hint.textContent = 'To merge: open Edit Live, move anything worth keeping into the entry you are keeping, then ask Patrick to remove the other.';
+    card.appendChild(hint);
+    return card;
+  }
+
+  function duplicateClusterCard(cluster) {
+    var card = el('div', 'card p-4');
+    card.appendChild(el('p', 'font-semibold text-sm', cluster.domain + ' - ' + cluster.count + ' listings'));
+    var names = el('p', 'text-xs mt-1');
+    names.style.color = 'var(--color-text-light)';
+    names.textContent = cluster.resources.map(function (r) { return r.name; }).join(' / ');
+    card.appendChild(names);
+    return card;
+  }
+
 })();

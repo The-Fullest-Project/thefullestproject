@@ -152,6 +152,15 @@ export default {
       if (request.method === "POST" && path === "/draft-description") {
         return cors(env, await handleDraftDescription(await request.json(), env));
       }
+      if (request.method === "GET" && path === "/live-resource") {
+        return cors(env, await handleLiveResourceGet(new URL(request.url), env));
+      }
+      if (request.method === "POST" && path === "/live-resource") {
+        return cors(env, await handleLiveResourceSave(await request.json(), env, auth));
+      }
+      if (request.method === "GET" && path === "/duplicates") {
+        return cors(env, await handleDuplicates(new URL(request.url), env));
+      }
 
       return cors(env, json({ error: "Not found" }, 404));
     } catch (err) {
@@ -1472,4 +1481,249 @@ function cors(env, response, request) {
   headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Admin-Key, X-Edit-Session");
   return new Response(response.body, { status: response.status, headers });
+}
+
+// ─── Editing live resources (C1) ─────────────────────────────────────────────
+
+/**
+ * Read one already-published resource so it can be edited.
+ *
+ * The portal finds candidates through the site's own /search-index.json, which
+ * is cheap and cached; only the single file holding the chosen resource is read
+ * from GitHub here. Reading all 52 state files to run a search would burn the
+ * API rate limit for no benefit.
+ *
+ * GET /live-resource?file=src/_data/resources/states/VA.json&name=Arc%20of%20NoVA
+ */
+async function handleLiveResourceGet(url, env) {
+  const file = url.searchParams.get("file") || "";
+  const name = url.searchParams.get("name") || "";
+  if (!isResourceFile(file)) return json({ error: "Unknown resource file" }, 400);
+  if (!name) return json({ error: "Missing name" }, 400);
+
+  const repoFile = await readRepoFile(env, file);
+  if (!repoFile) return json({ error: "File not found" }, 404);
+
+  const index = repoFile.json.findIndex(r => r.name === name);
+  if (index === -1) return json({ error: "Resource not found in that file" }, 404);
+
+  return json({ file, index, resource: repoFile.json[index] });
+}
+
+/**
+ * Save an edit to a live resource.
+ *
+ * `originalName` identifies the record, so a rename still finds it. The whole
+ * record is replaced with the submitted payload, except dateAdded and origin,
+ * which are provenance and are never editable from the portal.
+ */
+async function handleLiveResourceSave(body, env, auth) {
+  const { file, originalName, resource } = body || {};
+  if (!isResourceFile(file)) return json({ error: "Unknown resource file" }, 400);
+  if (!originalName || !resource || !resource.name) {
+    return json({ error: "Missing originalName or resource" }, 400);
+  }
+  if (!Array.isArray(resource.category) || resource.category.length === 0) {
+    return json({ error: "A resource needs at least one category" }, 400);
+  }
+
+  let found = false;
+  const result = await commitWithRetry(env, async (headSha) => {
+    const changes = new Map();
+    const repoFile = await readRepoFile(env, file, headSha);
+    if (!repoFile) return changes;
+
+    const rows = repoFile.json;
+    const index = rows.findIndex(r => r.name === originalName);
+    if (index === -1) return changes;
+
+    const previous = rows[index];
+    // Provenance is not editable — a reviewer correcting a phone number must
+    // not be able to rewrite where the entry came from or when it was added.
+    rows[index] = {
+      ...resource,
+      dateAdded: previous.dateAdded,
+      origin: previous.origin
+    };
+    delete rows[index].submitterEmail; // the repo is public
+    found = true;
+    changes.set(file, pretty(rows));
+    return changes;
+  }, `Edit ${originalName} via admin portal (by ${auth.login})`);
+
+  if (result.error) return result.error;
+  if (!found) return json({ error: "Resource not found — it may have been renamed or removed" }, 404);
+  return json({ ok: true, name: resource.name });
+}
+
+function isResourceFile(file) {
+  return typeof file === "string" &&
+    /^src\/_data\/resources\/(national\.json|states\/[A-Z]{2}\.json)$/.test(file);
+}
+
+// ─── Duplicate detection (C3, C4) ────────────────────────────────────────────
+
+/** Bare domain, so http/https, www and trailing paths all collapse together. */
+function domainOf(website) {
+  if (!website) return "";
+  return String(website)
+    .toLowerCase()
+    .replace(/^https?:\/\//, "")
+    .replace(/^www\./, "")
+    .split(/[/?#]/)[0]
+    .trim();
+}
+
+/** Digits only, last 10 — strips +1, spaces, brackets and dashes. */
+function phoneKey(phone) {
+  const digits = String(phone || "").replace(/\D/g, "");
+  return digits.length >= 10 ? digits.slice(-10) : "";
+}
+
+/** Lowercased, punctuation and leading "the" removed, so "The Arc" == "Arc". */
+function nameKey(name) {
+  return String(name || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^the /, "");
+}
+
+/** Meaningful words in an organisation name, for similarity comparison. */
+const NAME_STOPWORDS = new Set([
+  "the", "of", "and", "for", "a", "an", "at", "in", "on", "inc", "llc", "ltd",
+  "corp", "co", "dr", "doctor", "mr", "mrs", "ms", "pllc", "pc", "pa", "md"
+]);
+
+function nameTokens(name) {
+  return new Set(
+    nameKey(name).split(" ").filter(w => w && !NAME_STOPWORDS.has(w))
+  );
+}
+
+/**
+ * How much of the shorter name is contained in the longer one, 0–1.
+ *
+ * Containment rather than overlap, because the common real duplicate is one
+ * record being the other plus a suffix: "Special Olympics Rhode Island" and
+ * "Special Olympics Rhode Island - Unified & Adaptive Sports".
+ */
+function nameContainment(a, b) {
+  const ta = nameTokens(a), tb = nameTokens(b);
+  if (ta.size === 0 || tb.size === 0) return 0;
+  let shared = 0;
+  for (const w of ta) if (tb.has(w)) shared++;
+  return shared / Math.min(ta.size, tb.size);
+}
+
+// Below this, two names that merely share a clinic's contact details are
+// different organisations. Tuned against the live directory: at 0.5 every pair
+// of doctors at one practice matched, which was 700+ false pairs.
+const NAME_MATCH_THRESHOLD = 0.75;
+
+/**
+ * Why two records look like the same organisation, strongest signal first.
+ * Returns [] when they don't.
+ *
+ * A shared website, phone or address is never sufficient on its own — a
+ * practice lists each of its clinicians with the same three. The names have to
+ * agree too.
+ */
+function duplicateSignals(a, b) {
+  const nameA = nameKey(a.name), nameB = nameKey(b.name);
+  const containment = nameContainment(a.name, b.name);
+  const namesAgree = (nameA && nameA === nameB) || containment >= NAME_MATCH_THRESHOLD;
+  if (!namesAgree) return [];
+
+  const signals = [];
+  if (nameA === nameB) signals.push("identical name");
+  else signals.push("near-identical name");
+
+  const domainA = domainOf(a.website), domainB = domainOf(b.website);
+  if (domainA && domainA === domainB) signals.push("same website");
+
+  const phoneA = phoneKey(a.phone), phoneB = phoneKey(b.phone);
+  if (phoneA && phoneA === phoneB) signals.push("same phone");
+
+  const addrA = nameKey(a.address), addrB = nameKey(b.address);
+  if (addrA && addrA === addrB) signals.push("same address");
+
+  return signals;
+}
+
+/**
+ * GET /duplicates — suspected duplicates across the live directory.
+ *
+ * Two findings, because they need different handling:
+ *   pairs    — records that look like the same organisation listed twice.
+ *              Merge one into the other.
+ *   clusters — three or more records sharing one website. Usually a practice
+ *              with its staff listed individually, which may be fine; reported
+ *              as ONE row per website rather than every pair, so a 17-clinician
+ *              practice doesn't produce 136 lines of noise.
+ *
+ * Comparison is within a file (one state, or national): chapters of national
+ * charities legitimately share a name across states.
+ */
+async function handleDuplicates(url, env) {
+  const only = url.searchParams.get("file");
+  let files;
+  if (only) {
+    if (!isResourceFile(only)) return json({ error: "Unknown resource file" }, 400);
+    files = [only];
+  } else {
+    const states = await listRepoDir(env, "src/_data/resources/states");
+    files = ["src/_data/resources/national.json",
+             ...states.filter(f => /^[A-Z]{2}\.json$/.test(f.name)).map(f => f.path)];
+  }
+
+  const pairs = [];
+  const clusters = [];
+
+  for (const file of files) {
+    const repoFile = await readRepoFile(env, file);
+    if (!repoFile) continue;
+    const rows = repoFile.json;
+
+    for (let i = 0; i < rows.length; i++) {
+      for (let j = i + 1; j < rows.length; j++) {
+        const signals = duplicateSignals(rows[i], rows[j]);
+        if (signals.length) {
+          pairs.push({ file, signals, a: slimResource(rows[i]), b: slimResource(rows[j]) });
+        }
+      }
+    }
+
+    const byDomain = new Map();
+    for (const r of rows) {
+      const d = domainOf(r.website);
+      if (!d) continue;
+      if (!byDomain.has(d)) byDomain.set(d, []);
+      byDomain.get(d).push(r);
+    }
+    for (const [domain, group] of byDomain) {
+      if (group.length >= 3) {
+        clusters.push({ file, domain, count: group.length, resources: group.map(slimResource) });
+      }
+    }
+  }
+
+  pairs.sort((x, y) => y.signals.length - x.signals.length);
+  clusters.sort((x, y) => y.count - x.count);
+  return json({
+    checked: files.length,
+    pairCount: pairs.length,
+    clusterCount: clusters.length,
+    pairs,
+    clusters
+  });
+}
+
+function slimResource(r) {
+  return {
+    name: r.name, location: r.location, area: r.area || "",
+    website: r.website || "", phone: r.phone || "",
+    address: r.address || "", category: r.category || []
+  };
 }

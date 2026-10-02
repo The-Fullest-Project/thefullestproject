@@ -3,6 +3,20 @@
 Standing product decisions, with the reasoning. Newest first. If a decision
 here conflicts with something in the code, the code is wrong.
 
+## 2 October 2026 — Nicole's answers to the open questions
+
+| Question | Decided |
+|---|---|
+| Three "Stay Connected" asks on the home page | **Resolved, no action.** One in the body and one in the footer is fine. |
+| Move the featured resource into Spotlights (Jason) | **Discarded.** No action. |
+| Merge Spotlights with Events & Activities (Jason) | **Leave as is** for now. No action. |
+| Preview site address | **preview.thefullestproject.org** — not the free Cloudflare address. |
+| Providers replying to reviews | **Deferred as recommended.** Reviews carry "Contact us about this review" wording instead, so providers have a route that isn't a public argument. |
+| Forum categories at launch | **Five:** Adaptive Equipment · Therapy · Resources · IEP & School Advocacy · General Discussion — Caregiving Life |
+| Duplicate detection | **Both approved:** a warning in the review queue at approval time, and a monthly duplicate report. |
+| Phone submitting | **Build it.** Android share-menu target plus an iPhone Shortcut, with install instructions on the site. |
+| Change-request log visibility | **Review-portal only.** Never public, never community-visible. |
+
 ## 30 September 2026 — accounts, ratings and community
 
 Agreed by Nicole; recommendations accepted as written.
@@ -30,13 +44,11 @@ Agreed by Nicole; recommendations accepted as written.
   **"Health Care & Therapy" needs renaming** — it reads oddly against the
   September decision to stop listing therapy providers.
 
-### Still open
+### Resolved since
 
-- Whether to merge Spotlights with Events & Activities (Jason's observation
-  that the distinction is unclear). Leaning: keep separate, make the
-  difference obvious in the wording.
-- Which featured homepage resource Jason meant by "move it to Spotlights".
-- New "How We Can Help" wording — needs copy from Nicole.
+All three open points were answered on 2 October: Spotlights and Events stay
+separate, the featured-resource move is discarded, and the "How We Can Help"
+wording shipped as a draft Nicole can edit in Site Pages.
 
 ## September 2026 — directory scope
 

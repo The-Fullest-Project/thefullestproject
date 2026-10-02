@@ -54,7 +54,10 @@ module.exports = function() {
     })),
     taxonomies: {
       categories,
-      locations: ['National'].concat(states.map(s => s.name))
+      locations: ['National'].concat(states.map(s => s.name)),
+      // state name -> two-letter code, so the admin portal can work out which
+      // file holds a given resource without hardcoding a second copy of the map
+      stateCodes: Object.fromEntries(states.map(s => [s.name, s.code]))
     }
   };
 };
