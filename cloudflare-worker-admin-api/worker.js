@@ -173,6 +173,9 @@ export default {
       if (request.method === "POST" && path === "/change-requests") {
         return cors(env, await handleChangeRequestPost(await request.json(), env, auth));
       }
+      if (request.method === "DELETE" && path === "/change-requests") {
+        return cors(env, await handleChangeRequestDelete(new URL(request.url), env));
+      }
 
       return cors(env, json({ error: "Not found" }, 404));
     } catch (err) {
@@ -1490,7 +1493,7 @@ function cors(env, response, request) {
   const headers = new Headers(response.headers);
   headers.set("Access-Control-Allow-Origin", origin);
   headers.set("Vary", "Origin");
-  headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  headers.set("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS");
   headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Admin-Key, X-Edit-Session");
   return new Response(response.body, { status: response.status, headers });
 }
@@ -1903,4 +1906,17 @@ async function handleChangeRequestPost(body, env, auth) {
   };
   await env.CHANGE_REQUESTS.put(newId, JSON.stringify(request));
   return json({ ok: true, request });
+}
+
+/** DELETE /change-requests?id=... — for a request filed by mistake. */
+async function handleChangeRequestDelete(url, env) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ error: "The change log store is not set up yet." }, 503);
+  }
+  const id = url.searchParams.get("id");
+  if (!id) return json({ error: "Missing id" }, 400);
+  const raw = await env.CHANGE_REQUESTS.get(id);
+  if (!raw) return json({ error: "No such request" }, 404);
+  await env.CHANGE_REQUESTS.delete(id);
+  return json({ ok: true, id });
 }

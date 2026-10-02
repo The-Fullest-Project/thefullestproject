@@ -16,3 +16,9 @@ compatibility_date = "2026-06-01"
 # [[kv_namespaces]]
 # binding = "SUBMITTER_EMAILS"
 # id = "<paste-namespace-id-here>"
+
+# Change-request log (C5). Private on purpose: the repo is public on GitHub and
+# Nicole asked for this list to stay inside the review portal.
+[[kv_namespaces]]
+binding = "CHANGE_REQUESTS"
+id = "2e30da354e274d4488e7a24b60d8e178"

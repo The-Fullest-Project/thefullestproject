@@ -1843,6 +1843,16 @@
       });
     });
 
+    var del = el('button', 'btn-secondary text-xs', 'Delete');
+    del.addEventListener('click', function () {
+      if (!window.confirm('Delete "' + r.title + '"? This cannot be undone.')) return;
+      del.disabled = true;
+      apiFetch('/change-requests?id=' + encodeURIComponent(r.id), { method: 'DELETE' })
+        .then(function () { toast('Deleted'); refreshRequests(); })
+        .catch(function (err) { del.disabled = false; toast(err.message || 'Could not delete', true); });
+    });
+    controls.appendChild(del);
+
     card.appendChild(controls);
     return card;
   }
