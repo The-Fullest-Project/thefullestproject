@@ -17,6 +17,25 @@ here conflicts with something in the code, the code is wrong.
 | Phone submitting | **Build it.** Android share-menu target plus an iPhone Shortcut, with install instructions on the site. |
 | Change-request log visibility | **Review-portal only.** Never public, never community-visible. |
 
+### Review wording, agreed 2 October — build this with the ratings system
+
+Providers cannot reply to reviews in version one. Instead, every resource page
+carries a quiet line under its reviews, and a short page behind it:
+
+> **Are you from this organization?** If something in a review isn't right,
+> [contact us about this listing](/contact/?subject=listing) and a person will
+> look at it.
+
+Rules this encodes, which the ratings build must honour:
+
+- The link is low-key, not a button. It is a route for providers, not an
+  invitation to argue in public.
+- It goes to the existing contact form with the subject prefilled, so these
+  land somewhere a person actually reads.
+- Nothing a provider sends appears on the page. A disputed review is hidden or
+  kept by a human, never answered publicly — that is the whole point of
+  deferring provider replies.
+
 ## 30 September 2026 — accounts, ratings and community
 
 Agreed by Nicole; recommendations accepted as written.
