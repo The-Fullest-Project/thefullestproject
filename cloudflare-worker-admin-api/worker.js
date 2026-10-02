@@ -1793,8 +1793,15 @@ async function handleCreateCategory(body, env, auth) {
     const categories = catsFile.json;
     const groups = groupsFile.json;
 
-    if (categories.some(c => c.value === value)) {
-      conflict = categories.find(c => c.value === value).label;
+    // Guard the LABEL as well as the slug: "Therapy Providers" slugifies to
+    // therapy-providers, which does not clash with the existing `therapy`, so a
+    // slug-only check happily created a second category with an identical name.
+    const sameSlug = categories.find(c => c.value === value);
+    const sameLabel = categories.find(
+      c => c.label.trim().toLowerCase() === label.toLowerCase()
+    );
+    if (sameSlug || sameLabel) {
+      conflict = (sameSlug || sameLabel).label;
       return changes;
     }
     const target = groups.find(g => g.name === group);
