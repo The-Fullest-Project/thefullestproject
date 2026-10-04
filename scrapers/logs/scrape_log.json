@@ -1,79 +1,5 @@
 [
   {
-    "scraper": "spotlight_scraper",
-    "timestamp": "2026-07-05T03:58:00.864206",
-    "entries_found": 3,
-    "entries": [
-      {
-        "action": "queued",
-        "name": "Summer adventures for all",
-        "category": "Adventures",
-        "website": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUm8xb05JdkRQaUJsRk9PQ3FUQjQwcHp2UUJlbXhBT0FZNkVNaDduYkZSal8yUXozbGxwdnhsY3pldW5EU3A3YnRhNEI4VHFvcnJOckRtN0ljc2tWUnNqV1psYkFwVTR1djRiSURZZDU4Q3llUkJkZmM1M1hMLVkzeHcxZkI3ZGd5NnZCRzBR?oc=5"
-      },
-      {
-        "action": "queued",
-        "name": "Turning loss into purpose",
-        "category": "Sports",
-        "website": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CLWRFRXd4eGMyanpjQ2NENzRqeE81Um1hdGxRWWN4Ulp5OUFOQjhMYWhiYU5hV3FnWEQ3Snp6OGh0QmdvV1VPajBxODFuNzU5MS16a2lxUlpKYVNZaVFjbk15YTlwa0QwUVJGNENFZkpWNGJXbW9SZjRfWkFTUEk?oc=5"
-      },
-      {
-        "action": "queued",
-        "name": "Harvard to Launch Online Hub for Accessible Teaching Resources",
-        "category": "Education",
-        "website": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRzhlMklYWUxKTWRmczZyY3J3SjR1bzg2cGd1dnZ6eVVzUFNzVy1tUnNxeHBVei1EendLOHJ1VFBlM0dCR1FBMVFQUWdJYk15X0xuMnRGc0Z3a3pIYkkwanhNUzFHRTJsTkgwOU1EZnRWdzAyQ253U0RWU1pLSXdlOUVrbw?oc=5"
-      }
-    ]
-  },
-  {
-    "scraper": "blog_content",
-    "timestamp": "2026-07-05T03:58:02.793289",
-    "entries_found": 1,
-    "entries": [
-      {
-        "action": "no_new_posts"
-      }
-    ]
-  },
-  {
-    "scraper": "osm_overpass",
-    "timestamp": "2026-07-12T03:28:03.708135",
-    "status": "PARTIAL",
-    "targets_attempted": 33,
-    "targets_succeeded": 26,
-    "entries_found": 546,
-    "entries_queued": 272,
-    "entries": [
-      {
-        "action": "error",
-        "name": "NY: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "NC: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "OK: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "SC: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "SD: HTTP Error 504: Gateway Timeout"
-      },
-      {
-        "action": "error",
-        "name": "WI: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "CA: HTTP Error 429: Too Many Requests"
-      }
-    ]
-  },
-  {
     "scraper": "cms_providers",
     "timestamp": "2026-07-12T03:28:06.858811",
     "status": "OK",
@@ -972,6 +898,86 @@
         "title": "Indiana seeks new short-term residential facility for disabled adults - Indiana Capital Chronicle",
         "source": "Indiana Capital Chronicle",
         "slug": "indiana-seeks-new-short-term-residential-facility-for-disabl"
+      }
+    ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-10-04T09:24:06.675298",
+    "status": "PARTIAL",
+    "targets_attempted": 51,
+    "targets_succeeded": 20,
+    "entries_found": 34,
+    "entries_queued": 28,
+    "entries": [
+      {
+        "action": "error",
+        "name": "TN: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "UT: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "WI: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "AZ: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "CO: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "IN: <urlopen error [Errno 101] Network is unreachable>"
+      },
+      {
+        "action": "error",
+        "name": "IA: <urlopen error [Errno 101] Network is unreachable>"
+      },
+      {
+        "action": "error",
+        "name": "KS: <urlopen error [Errno 101] Network is unreachable>"
+      },
+      {
+        "action": "error",
+        "name": "KY: <urlopen error [Errno 101] Network is unreachable>"
+      },
+      {
+        "action": "error",
+        "name": "LA: <urlopen error [Errno 101] Network is unreachable>"
+      }
+    ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-10-04T09:33:13.765236",
+    "entries_found": 2,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "Project HOPE Awarded InterAction’s 2026 Disability Inclusion Award",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZ281V0FvZERfSmhPY2w1N0QyVDNlallmZW1SOGxZRWpRdXEyVnc0OUNzckZOSE5wbE5qLVFsMkRRMEZYNnptWDhvWkVDOFhxdW1MdEJhUVBMaU52UzlNWU9aU3BpMmUyYmR1enVWRTVtVk5tMGZQVkdvcy1UNzJVUnpDb3ZZNTRZQ3BUTGVLbklya24yX1NSazc1VXVfaTdtd3hNUC1zTi0wbXlPYW1XQm9YRVFlczJTc29kdA?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "ESPN honor spotlights FGCU student’s mission to expand adaptive sports",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTmdsNGU1SzdCUDBlT0F0azJGZERhZXBQN04xQlRZQ3BFWFM3NE92X1Axdno0aGVibWFTNnlDczZuXzFKZGNkZUoyUnRDdkNjVzJkWUMzUTRHblV4ejhpdzJIbWhHY3NCWnFpR0VNSDBYVC1WUVRmSE5sVGtJMkcyMFlzRkltZWFDNmlJRjZmQkdqanhPSU1PTEloMGF5VDZQQUcw?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-10-04T09:33:15.695177",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "no_new_posts"
       }
     ]
   }

@@ -1,0 +1,898 @@
+[
+  {
+    "id": "res-20261004-67f245a5",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:00:13.468648+00:00"
+    },
+    "payload": {
+      "name": "HorsePower",
+      "category": [
+        "community"
+      ],
+      "location": "South Dakota",
+      "area": "Baltic",
+      "description": "HorsePower provides therapeutic riding &amp; equine-assisted programs in Sioux Falls, helping individuals build confidence, strength, &amp; independence.",
+      "phone": "6052511685",
+      "website": "https://horsepowersf.com/",
+      "address": "46875 252nd Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "equine_assisted_centre",
+        "disabled;veteran"
+      ],
+      "source": "https://www.openstreetmap.org/node/13384674259",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/SD.json"
+  },
+  {
+    "id": "res-20261004-d430f7db",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:00:13.468670+00:00"
+    },
+    "payload": {
+      "name": "SPURS Therapeutic Riding Center",
+      "category": [
+        "community"
+      ],
+      "location": "South Dakota",
+      "area": "Aberdeen",
+      "description": "SPURS in Aberdeen, South Dakota provides opportunities for growth through horseback riding for children and adults with special needs.",
+      "phone": "605-226-1099",
+      "website": "https://spursaberdeen.org/",
+      "address": "1006 130th Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "equine_assisted_centre",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/13717596144",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/SD.json"
+  },
+  {
+    "id": "res-20261004-b2c16908",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:00:13.468678+00:00"
+    },
+    "payload": {
+      "name": "South Dakota School for the Blind and Visually Impaired",
+      "category": [
+        "other"
+      ],
+      "location": "South Dakota",
+      "area": "Aberdeen",
+      "description": "",
+      "phone": "",
+      "website": "https://sdsbvi.org/",
+      "address": "605 14th Avenue Southeast",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/way/978520638",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/SD.json"
+  },
+  {
+    "id": "res-20261004-042f126c",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494210+00:00"
+    },
+    "payload": {
+      "name": "Blind Lady Ale House",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "San Diego",
+      "description": "",
+      "phone": "619-255-2491",
+      "website": "https://blindladyalehouse.com/",
+      "address": "3416 Adams Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/1791247876",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-4d9d663f",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494225+00:00"
+    },
+    "payload": {
+      "name": "JMR Blinds, INC.",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "Norco",
+      "description": "JMR Blinds, Inc. is a premier window covering company serving the Inland Empire and Orange County. We offer an extensive selection of blinds, shades, and shutters, including motorized options.",
+      "phone": "+18887777260",
+      "website": "https://jmrblindsinc.com/",
+      "address": "3424 Shawnee Drive",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "window_blind"
+      ],
+      "source": "https://www.openstreetmap.org/node/2984094293",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-88df4b69",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494232+00:00"
+    },
+    "payload": {
+      "name": "The Blind Donkey",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "Pasadena",
+      "description": "Blind Donkey | pasadena",
+      "phone": "+1 626-486-2379",
+      "website": "http://www.theblinddonkey.com/pasadena",
+      "address": "53 East Union Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/3364596647",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-26e29087",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494238+00:00"
+    },
+    "payload": {
+      "name": "Blind Tiger",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "",
+      "description": "Raih kemenangan slot online dengan RTP Live CIOBET88! Info lengkap RTP tertinggi, jam gacor, pola maxwin, dan winrate dari provider ternama.",
+      "phone": "",
+      "website": "https://www.blindtigeroakland.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/4320491281",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-5c6b894b",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494244+00:00"
+    },
+    "payload": {
+      "name": "Desert Blinds",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "Desert Hot Springs",
+      "description": "",
+      "phone": "+1 760 3299398",
+      "website": "http://desertblinds.net",
+      "address": "65118 San Jacinto Lane",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "shutters"
+      ],
+      "source": "https://www.openstreetmap.org/node/4322779014",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-777e3eb6",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494250+00:00"
+    },
+    "payload": {
+      "name": "The Blind Pig",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "",
+      "description": "Built on a couple beers and a dream, this independent restaurant began in 2013 with owner Tony Monaco and Chef Karl Pfleider. Our American Restaurant in Rancho Santa Margarita grew into a ne...",
+      "phone": "+1-949-888-0072",
+      "website": "http://theblindpigoc.com",
+      "address": "31431 Santa Margarita Parkway",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/4737624925",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-2bc28025",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494255+00:00"
+    },
+    "payload": {
+      "name": "Blind Dragon Bar",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "West Hollywood",
+      "description": "Selamat datang di situs HarapanQQ, yang merupakan situs poker online terpercaya yang menggunakan server pkv games dimana tersedia permainan qq online seru seperti dominoqq dan bandarqq.",
+      "phone": "+1-310-595-1091",
+      "website": "https://blinddragon.com/",
+      "address": "9201 Sunset Hills Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/5113578770",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-7202934a",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494260+00:00"
+    },
+    "payload": {
+      "name": "Social Vocational Services",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "Lakewood",
+      "description": "Community Inclusion Adult Day Services",
+      "phone": "+1-562-677-2093",
+      "website": "https://www.socialvocationalservices.org/",
+      "address": "5720 Bellflower Boulevard",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "day_care",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/5850070973",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-5c94ac37",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494266+00:00"
+    },
+    "payload": {
+      "name": "Lighthouse For the Blind",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "",
+      "description": "Empowering blind and low vision individuals through training, technology, community, and support to live independently and with confidence.",
+      "phone": "",
+      "website": "https://lighthouse-sf.org/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "association"
+      ],
+      "source": "https://www.openstreetmap.org/node/5878275970",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-8107ca81",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494272+00:00"
+    },
+    "payload": {
+      "name": "Community Center for the Blind and Visually Impaired",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "Stockton",
+      "description": "",
+      "phone": "+1-209-466-3836",
+      "website": "https://www.communitycenterfortheblind.org/",
+      "address": "2453 Grand Canal Boulevard",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "educational_institution",
+        "wheelchair-accessible"
+      ],
+      "source": "https://www.openstreetmap.org/node/6358836613",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-4a78f5cc",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494277+00:00"
+    },
+    "payload": {
+      "name": "Blind Butcher",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "San Francisco",
+      "description": "",
+      "phone": "+1-415-529-2478",
+      "website": "https://blindbutchersf.com/",
+      "address": "4058 18th Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/7671115300",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-b37ca73f",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494282+00:00"
+    },
+    "payload": {
+      "name": "Mission Bay Works",
+      "category": [
+        "medical"
+      ],
+      "location": "California",
+      "area": "San Jose",
+      "description": "",
+      "phone": "",
+      "website": "http://www.missionbayinc.com/",
+      "address": "980 Rincon Circle",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "ambulatory_care",
+        "learning_disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/8568377828",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-84f94876",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494287+00:00"
+    },
+    "payload": {
+      "name": "3 Blind Mice Window Coverings",
+      "category": [
+        "other"
+      ],
+      "location": "California",
+      "area": "Laguna Niguel",
+      "description": "We have the custom window coverings and treatments you need, from plantation shutters and Roman shades to custom curtains and blinds. Call for Free Consult!",
+      "phone": "+1-949-431-2677",
+      "website": "https://3blindmiceusa.com/",
+      "address": "30262 Crown Valley Parkway",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "window_blind"
+      ],
+      "source": "https://www.openstreetmap.org/node/8612394667",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-abf22523",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494293+00:00"
+    },
+    "payload": {
+      "name": "Silicon Valley Independent Living Center",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "San Jose",
+      "description": "",
+      "phone": "",
+      "website": "https://svilc.org/",
+      "address": "25 North 14th Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "outreach",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/8657899918",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-16dc0ed3",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494298+00:00"
+    },
+    "payload": {
+      "name": "Beyond Potential Learning Center",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "Milpitas",
+      "description": "Adult Day Program with Behavior Management and Community Integration",
+      "phone": "",
+      "website": "http://www.beyondpotentiallearning.com/",
+      "address": "1753 South Main Street",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "day_care",
+        "learning_disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/8667089873",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-b62fcd17",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494304+00:00"
+    },
+    "payload": {
+      "name": "ConnectEd Developmental Therapies",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "San Jose",
+      "description": "",
+      "phone": "",
+      "website": "https://connected.us.com/",
+      "address": "1361 South Winchester Boulevard",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "day_care",
+        "learning_disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/8675532303",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-71c68db5",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494309+00:00"
+    },
+    "payload": {
+      "name": "San Andreas Regional Center",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "San Jose",
+      "description": "",
+      "phone": "",
+      "website": "https://www.sanandreasregional.org/",
+      "address": "6203 San Ignacio Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "healthcare",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/9103876949",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-7384fc25",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494315+00:00"
+    },
+    "payload": {
+      "name": "Housing Choices Coalition",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "San Jose",
+      "description": "We enhance the lives of people with developmental and other disabilities and their families by creating and supporting quality, affordable housing opportunities. We work to ensure that all people enjoy rewarding lives in accessible and affordable homes of their choosing. Our inclusive services for t",
+      "phone": "",
+      "website": "https://www.housingchoices.org/",
+      "address": "6203 San Ignacio Avenue",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "outreach",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/9117590828",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-ad1e0f20",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:28:24.494320+00:00"
+    },
+    "payload": {
+      "name": "Social Vocational Services, Inc.",
+      "category": [
+        "community"
+      ],
+      "location": "California",
+      "area": "San Jose",
+      "description": "Community Inclusion Adult Day Services",
+      "phone": "",
+      "website": "https://socialvocationalservices.org/",
+      "address": "124 Blossom Hill Road",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "outreach",
+        "disabled"
+      ],
+      "source": "https://www.openstreetmap.org/node/9123099210",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/CA.json"
+  },
+  {
+    "id": "res-20261004-05363417",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:40:58.760513+00:00"
+    },
+    "payload": {
+      "name": "Easterseals Child Development Center",
+      "category": [
+        "other"
+      ],
+      "location": "District of Columbia",
+      "area": "Washington",
+      "description": "Building on 80 years of children\u2019s services, Easterseals\u2019 nationally accredited CDCs provide highly affordable early education with exceptional outcomes. With multiple forms of tuition aid, our safe, nurturing settings prepare every child for success in kindergarten and beyond.",
+      "phone": "",
+      "website": "https://dcmdva.easterseals.com/get-support/areas-of-support/childrens-services/child-development-centers",
+      "address": "2800 13th Street Northwest",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/367143438",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/DC.json"
+  },
+  {
+    "id": "res-20261004-1e181c62",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:40:58.760529+00:00"
+    },
+    "payload": {
+      "name": "lexander Graham Bell Association for the Deaf and Hard of Hearing",
+      "category": [
+        "other"
+      ],
+      "location": "District of Columbia",
+      "area": "Washington",
+      "description": "",
+      "phone": "+12023375220",
+      "website": "https://agbell.org/",
+      "address": "3417 Volta Place Northwest",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "association"
+      ],
+      "source": "https://www.openstreetmap.org/node/804073150",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/DC.json"
+  },
+  {
+    "id": "res-20261004-f5b2d0a5",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:40:58.760536+00:00"
+    },
+    "payload": {
+      "name": "Health Services for Children with Special Needs, Inc",
+      "category": [
+        "medical"
+      ],
+      "location": "District of Columbia",
+      "area": "Washington",
+      "description": "",
+      "phone": "",
+      "website": "https://www.hschealth.org/",
+      "address": "2124 Martin Luther King Junior Avenue Southeast",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm",
+        "clinic"
+      ],
+      "source": "https://www.openstreetmap.org/node/4640281775",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/DC.json"
+  },
+  {
+    "id": "res-20261004-0527f0a7",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:40:58.760542+00:00"
+    },
+    "payload": {
+      "name": "National Deaf Life Museum at Gallaudet University",
+      "category": [
+        "other"
+      ],
+      "location": "District of Columbia",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "http://museum.gallaudet.edu",
+      "address": "Florida Ave NE",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/6796471847",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/DC.json"
+  },
+  {
+    "id": "res-20261004-0b1eaa26",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:40:58.760548+00:00"
+    },
+    "payload": {
+      "name": "Model Secondary School for the Deaf",
+      "category": [
+        "other"
+      ],
+      "location": "District of Columbia",
+      "area": "",
+      "description": "",
+      "phone": "",
+      "website": "https://www.gallaudet.edu/transportation/shuttle-bus-services.html",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/node/13753178561",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/DC.json"
+  },
+  {
+    "id": "res-20261004-ab279f68",
+    "type": "resource",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "osm_overpass",
+      "submittedAt": "2026-10-04T05:40:58.760554+00:00"
+    },
+    "payload": {
+      "name": "American Veterans Disabled for Life Memorial",
+      "category": [
+        "other"
+      ],
+      "location": "District of Columbia",
+      "area": "",
+      "description": "American Veterans Disabled for Life",
+      "phone": "",
+      "website": "https://www.nps.gov/nama/planyourvisit/american-veterans-disabled-for-life.htm",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "osm"
+      ],
+      "source": "https://www.openstreetmap.org/way/385163018",
+      "lastScraped": "2026-10-04"
+    },
+    "targetFile": "src/_data/resources/states/DC.json"
+  }
+]

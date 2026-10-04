@@ -1,37 +1,33 @@
-Weekly Scrape Digest — 2026-09-27
+Weekly Scrape Digest — 2026-10-04
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 8 pending (2 new this run)
-  resource: 852 pending (143 new this run)
-  spotlight: 7 pending (1 new this run)
-  story: 64 pending (12 new this run)
-  submission: 3 pending (2 new this run)
-
-Scraper: cms_providers
-  Entries processed: 78
+  blog: 7 pending
+  resource: 277 pending (28 new this run)
+  spotlight: 7 pending (2 new this run)
+  story: 66 pending (13 new this run)
+  submission: 8 pending
 
 Scraper: osm_overpass
-  Entries processed: 681
-  - [error] TX: HTTP Error 504: Gateway Timeout
-  - [error] WY: HTTP Error 504: Gateway Timeout
-  - [error] AR: HTTP Error 504: Gateway Timeout
-  - [error] DE: HTTP Error 504: Gateway Timeout
-  - [error] FL: HTTP Error 504: Gateway Timeout
-  - [error] ID: HTTP Error 504: Gateway Timeout
-  - [error] IL: HTTP Error 504: Gateway Timeout
-  - [error] MN: HTTP Error 504: Gateway Timeout
-  - [error] MO: HTTP Error 504: Gateway Timeout
-  - [error] NE: HTTP Error 504: Gateway Timeout
+  Entries processed: 34
+  - [error] TN: The read operation timed out
+  - [error] UT: HTTP Error 504: Gateway Timeout
+  - [error] WI: HTTP Error 504: Gateway Timeout
+  - [error] AZ: The read operation timed out
+  - [error] CO: The read operation timed out
+  - [error] IN: <urlopen error [Errno 101] Network is unreachable>
+  - [error] IA: <urlopen error [Errno 101] Network is unreachable>
+  - [error] KS: <urlopen error [Errno 101] Network is unreachable>
+  - [error] KY: <urlopen error [Errno 101] Network is unreachable>
+  - [error] LA: <urlopen error [Errno 101] Network is unreachable>
 
 Scraper: spotlight_scraper
-  Entries processed: 1
-  - [queued] Students Turn Support Into Success Through the Disability Resource Center | News
+  Entries processed: 2
+  - [queued] Project HOPE Awarded InterAction’s 2026 Disability Inclusion Award
+  - [queued] ESPN honor spotlights FGCU student’s mission to expand adaptive sports
 
 Scraper: blog_content
-  Entries processed: 2
-  - [queued] Mind Matters: Caring for the Caregivers - 90.5 WESA
-  - [queued] Indiana seeks new short-term residential facility for disabled adults - Indiana Capital Chronicle
+  Entries processed: 1
 
 —
 The Fullest Project | thefullestproject.org

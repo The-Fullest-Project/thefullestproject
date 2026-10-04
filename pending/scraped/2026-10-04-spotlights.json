@@ -1,0 +1,58 @@
+[
+  {
+    "id": "spt-20261004-09427589",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-10-04T09:33:13.764591+00:00"
+    },
+    "payload": {
+      "name": "Project HOPE Awarded InterAction’s 2026 Disability Inclusion Award",
+      "description": "Project HOPE Awarded InterAction’s 2026 Disability Inclusion Award - projecthope.org",
+      "category": "Community",
+      "website": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZ281V0FvZERfSmhPY2w1N0QyVDNlallmZW1SOGxZRWpRdXEyVnc0OUNzckZOSE5wbE5qLVFsMkRRMEZYNnptWDhvWkVDOFhxdW1MdEJhUVBMaU52UzlNWU9aU3BpMmUyYmR1enVWRTVtVk5tMGZQVkdvcy1UNzJVUnpDb3ZZNTRZQ3BUTGVLbklya24yX1NSazc1VXVfaTdtd3hNUC1zTi0wbXlPYW1XQm9YRVFlczJTc29kdA?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/community.svg",
+      "location": "National",
+      "tags": [
+        "community",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-10-04"
+    }
+  },
+  {
+    "id": "spt-20261004-01f33c49",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-10-04T09:33:13.764640+00:00"
+    },
+    "payload": {
+      "name": "ESPN honor spotlights FGCU student’s mission to expand adaptive sports",
+      "description": "ESPN honor spotlights FGCU student’s mission to expand adaptive sports - FGCU 360",
+      "category": "Sports",
+      "website": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTmdsNGU1SzdCUDBlT0F0azJGZERhZXBQN04xQlRZQ3BFWFM3NE92X1Axdno0aGVibWFTNnlDczZuXzFKZGNkZUoyUnRDdkNjVzJkWUMzUTRHblV4ejhpdzJIbWhHY3NCWnFpR0VNSDBYVC1WUVRmSE5sVGtJMkcyMFlzRkltZWFDNmlJRjZmQkdqanhPSU1PTEloMGF5VDZQQUcw?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/sports.svg",
+      "location": "National",
+      "tags": [
+        "sports",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-10-04"
+    }
+  }
+]
