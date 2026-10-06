@@ -264,5 +264,35 @@
       "source": "https://abaathome.app",
       "lastScraped": "2026-10-03"
     }
+  },
+  {
+    "id": "sub-20261006-ed4259e9",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-06T01:12:10.779Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Special Needs Jobs",
+      "category": [
+        "employment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Hi there,\r\n\r\nI'm Kyle, and I run Special Needs Jobs over at specialneedsjobs.org. It's a free job board for ABA therapy roles across the US: BCBAs, RBTs, and behavior technicians, with pay, location, and work setting on each listing, plus free job alerts by email.\r\n\r\nI was looking through your resources page and thought we could be a helpful addition for your readers. Would you consider adding us?\r\n\r\nThanks for the work you do,\r\nKyle",
+      "phone": "416-414-5879",
+      "email": "",
+      "website": "https://specialneedsjobs.org",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://specialneedsjobs.org",
+      "lastScraped": "2026-10-06"
+    }
   }
 ]
