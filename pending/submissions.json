@@ -356,5 +356,35 @@
       "source": "https://lairos.com/",
       "lastScraped": "2026-10-07"
     }
+  },
+  {
+    "id": "sub-20261008-8822a172",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-08T03:00:40.736Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "tta1",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "tta1 is a text-to-speech reading aid. It helps students, people with dyslexia or low vision, and anyone who prefers listening by reading articles, PDFs and documents aloud in a natural voice, with translation into 25 languages. Freemium: free to try with 1,000 words a month; Plus from $6/mo.",
+      "phone": "",
+      "email": "",
+      "website": "https://www.tta1.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.tta1.com/",
+      "lastScraped": "2026-10-08"
+    }
   }
 ]
