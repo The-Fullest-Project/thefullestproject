@@ -386,5 +386,35 @@
       "source": "https://www.tta1.com/",
       "lastScraped": "2026-10-08"
     }
+  },
+  {
+    "id": "sub-20261008-e26e74fa",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-08T08:25:06.538Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "MedicaidWorkCheck.com",
+      "category": [
+        "financial"
+      ],
+      "location": "National",
+      "area": "United States (all 50 states)",
+      "description": "MedicaidWorkCheck.com is an independent, plain-English information site about the new federal Medicaid work requirement. Free tools include an 8-question exemption checker that becomes a private 80-hour monthly work tracker (no sign-up; all data stays in the visitor's browser), plain-English guides to every exemption category, 51 state-by-state guides, a living lawsuit tracker, and a full Spanish-language section.",
+      "phone": "",
+      "email": "joplinbusinessjournal@gmail.com",
+      "website": "https://medicaidworkcheck.com",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://medicaidworkcheck.com",
+      "lastScraped": "2026-10-08"
+    }
   }
 ]
