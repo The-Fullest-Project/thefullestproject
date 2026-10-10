@@ -11053,5 +11053,31 @@
       "type": "submission",
       "detail": "submit-resource-form"
     }
+  },
+  {
+    "name": "Premium AFO Socks | Coolest Knee-High Socks – LAIROS",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "We don’t just make socks - we fix what regular socks get wrong. Lairos socks are designed to fit braces perfectly, stay comfortable all day, and look like something kids actually want to wear.",
+    "phone": "",
+    "email": "support@lairos.com",
+    "website": "https://lairos.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "AFO socks"
+    ],
+    "source": "https://lairos.com/",
+    "lastScraped": "2026-10-07",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
