@@ -32,39 +32,6 @@
     }
   },
   {
-    "id": "sub-20260927-980f6a28",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "quick-submit",
-      "detail": "bookmarklet",
-      "submittedAt": "2026-09-27T02:15:35.341Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Adaptive Toy Workshops| FairPlay",
-      "category": [
-        "other"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "Our in-person and virtual adaptive toy workshops offer an opportunity for teachers, parents, and clinicians to gain the skills they need to make toys switch-accessible for children with disabilities. As a participant, you'll receive an introduction to adapting and learn step-by-step how to adapt a specific toy.",
-      "phone": "",
-      "email": "",
-      "website": "https://www.fairplaylibraries.org/workshops",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "switch-adapted-toys",
-        "toy workshop"
-      ],
-      "source": "https://www.fairplaylibraries.org/workshops",
-      "lastScraped": "2026-09-27"
-    }
-  },
-  {
     "id": "sub-20260928-976e35fe",
     "type": "submission",
     "status": "pending",
