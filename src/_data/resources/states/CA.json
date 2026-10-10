@@ -444,5 +444,29 @@
       "type": "scraper",
       "detail": "legacy-backfill"
     }
+  },
+  {
+    "name": "For The Win Project",
+    "category": [
+      "nonprofit"
+    ],
+    "location": "California",
+    "area": "",
+    "description": "To provide escapism and empower seriously ill, disabled, and disadvantaged children by transforming them into their favorite heroes and worlds through authentic personalized movie posters, trailers, and VR experiences created by Hollywood professionals.",
+    "phone": "",
+    "email": "info@forthewinproject.org",
+    "website": "https://www.forthewinproject.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [],
+    "source": "https://www.forthewinproject.org/",
+    "lastScraped": "2026-10-06",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
