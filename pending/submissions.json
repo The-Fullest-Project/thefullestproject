@@ -1,35 +1,5 @@
 [
   {
-    "id": "sub-20260928-976e35fe",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-09-28T09:46:28.531Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "HVAC School Guide",
-      "category": [
-        "employment"
-      ],
-      "location": "National",
-      "area": "National",
-      "description": "Free public training-cost vs pay report from an independent education publisher for people comparing skilled-trade training options; may support career planning and employment-resource discovery. Not a direct service provider.",
-      "phone": "",
-      "email": "",
-      "website": "https://hvacschoolguide.com/reports/hvac-training-cost-vs-pay",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [],
-      "source": "https://hvacschoolguide.com/reports/hvac-training-cost-vs-pay",
-      "lastScraped": "2026-09-28"
-    }
-  },
-  {
     "id": "sub-20261001-6a459e9b",
     "type": "submission",
     "status": "pending",
