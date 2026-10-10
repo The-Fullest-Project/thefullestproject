@@ -10917,5 +10917,31 @@
       "type": "quick-submit",
       "detail": "bookmarklet"
     }
+  },
+  {
+    "name": "Family Play Access Program | FairPlay",
+    "category": [
+      "adaptive-toys"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "FairPlay’s Family Play Access Program provides adaptive toys directly to children with disabilities so they can experience meaningful, inclusive play at home. Through a simple application process, families receive age-appropriate adapted toys—and switches when needed—removing cost and access barriers to play.",
+    "phone": "",
+    "email": "",
+    "website": "https://www.fairplaylibraries.org/family-play-access-program",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "switch-adapted-toys"
+    ],
+    "source": "https://www.fairplaylibraries.org/family-play-access-program",
+    "lastScraped": "2026-09-27",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
