@@ -5,61 +5,59 @@ description: "Browse disability resources for caregivers and families by categor
 permalink: /resources/
 ---
 
-<section class="py-12 section-warm">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 class="text-4xl font-bold mb-4" style="color: var(--color-primary);">Find Resources</h1>
-    <p class="text-lg" style="color: var(--color-text-light);">
-      Search by name or area, or pick a category to browse programs, services, and organizations for individuals with disabilities and their caregivers.
-    </p>
-    <div class="mt-6 flex flex-wrap gap-3 justify-center">
-      <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
-      <a href="/quick-submit/" class="btn-secondary no-underline">Get the Browser Button</a>
-    </div>
-  </div>
-</section>
-
-<section class="py-8">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="card p-6">
-      <label for="directory-search" class="block text-sm font-semibold mb-2" style="color: var(--color-text);">
-        Search every resource
-      </label>
-      <input type="search" id="directory-search" class="form-input"
-             placeholder="Try an organization name, or a city or county…"
-             autocomplete="off" aria-describedby="directory-search-help"
-             aria-controls="directory-search-results">
-      <p id="directory-search-help" class="text-xs mt-2" style="color: var(--color-text-light);">
-        Searches all {{ directory.length }} listings by name and area.
-      </p>
-    </div>
-
-    <div id="directory-search-results" class="mt-6" role="region" aria-live="polite" hidden>
-      <p id="directory-search-count" class="text-sm mb-3" style="color: var(--color-text-light);"></p>
-      <ul id="directory-search-list" class="flex flex-col gap-2 list-none p-0 m-0"></ul>
-    </div>
-  </div>
-</section>
-
 {#
-  Groups are resolved in src/_data/categoryGroups.js — labels, counts, ordering
-  and the "every category in exactly one group" check all live there, so this
-  template only lays them out. One card per GROUP rather than per category:
-  31 separate tiles pushed the lower groups below the fold.
+  Deliberately compact. Nicole's note: the heading and search filled the screen
+  and every category sat below the fold. Title, search and categories all share
+  one short header so the grid starts as high up the page as possible — hence
+  no banner section, no card around the search, and small text links rather
+  than buttons.
 #}
-<section class="py-8" id="directory-categories">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-start">
+<section class="pt-6 pb-4 section-warm">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-2xl sm:text-3xl font-bold mb-1" style="color: var(--color-primary);">Find Resources</h1>
+    <p class="text-sm mb-3" style="color: var(--color-text-light);">
+      Search by name, city or state — or pick a category below.
+    </p>
+
+    <label for="directory-search" class="sr-only">Search every resource</label>
+    <input type="search" id="directory-search" class="form-input max-w-xl mx-auto"
+           placeholder="Try an organization name, or a city or county…"
+           autocomplete="off" aria-describedby="directory-search-help"
+           aria-controls="directory-search-results">
+
+    <p id="directory-search-help" class="text-xs mt-2" style="color: var(--color-text-light);">
+      {{ directory.length }} listings &middot;
+      <a href="/submit-resource/" style="color: var(--color-secondary);">Submit a resource</a> &middot;
+      <a href="/quick-submit/" style="color: var(--color-secondary);">Browser button</a> &middot;
+      <a href="/add-to-phone/" style="color: var(--color-secondary);">On your phone</a>
+    </p>
+  </div>
+</section>
+
+<section class="py-4">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="directory-search-results" role="region" aria-live="polite" hidden>
+      <p id="directory-search-count" class="text-sm mb-3" style="color: var(--color-text-light);"></p>
+      <ul id="directory-search-list" class="flex flex-col gap-3 list-none p-0 m-0"></ul>
+    </div>
+
+    {#
+      Groups are resolved in src/_data/categoryGroups.js — labels, counts,
+      ordering and the "every category in exactly one group" check all live
+      there, so this template only lays them out. Four columns on a wide screen
+      puts all seven groups in two rows from 1024px up.
+    #}
+    <div id="directory-categories" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-start">
       {% for group in categoryGroups %}
-      <div class="card p-5">
-        <h2 class="text-base font-bold" style="color: var(--color-primary);">{{ group.name }}</h2>
-        <p class="text-xs mt-1 mb-3 leading-snug" style="color: var(--color-text-light);">{{ group.blurb }}</p>
+      <div class="card p-4">
+        <h2 class="text-sm font-bold mb-2 leading-snug" style="color: var(--color-primary);">{{ group.name }}</h2>
         <ul class="list-none p-0 m-0 flex flex-col">
           {% for cat in group.categories %}
           <li>
             <a href="/resources/{{ cat.value }}/"
-               class="no-underline flex items-baseline justify-between gap-3 py-1.5 border-t"
+               class="no-underline flex items-baseline justify-between gap-2 py-1 border-t"
                style="color: var(--color-text); border-color: var(--color-warm);">
-              <span class="text-sm leading-snug">{{ cat.label }}</span>
+              <span class="text-xs leading-snug">{{ cat.label }}</span>
               <span class="text-xs tabular-nums shrink-0" style="color: var(--color-text-light);">{{ cat.count }}</span>
             </a>
           </li>
@@ -71,11 +69,11 @@ permalink: /resources/
   </div>
 </section>
 
-<section class="py-12">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="card p-8 text-center">
-      <h2 class="text-2xl font-bold mb-3" style="color: var(--color-primary);">Know a Resource We're Missing?</h2>
-      <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about.</p>
+<section class="py-8">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="card p-6 text-center">
+      <h2 class="text-xl font-bold mb-2" style="color: var(--color-primary);">Know a Resource We're Missing?</h2>
+      <p class="text-sm mb-4" style="color: var(--color-text-light);">Help us grow the directory by submitting resources you know about.</p>
       <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
     </div>
   </div>

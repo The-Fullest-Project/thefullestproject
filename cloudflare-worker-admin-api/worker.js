@@ -158,6 +158,12 @@ export default {
       if (request.method === "POST" && path === "/live-resource") {
         return cors(env, await handleLiveResourceSave(await request.json(), env, auth));
       }
+      if (request.method === "DELETE" && path === "/live-resource") {
+        return cors(env, await handleLiveResourceDelete(new URL(request.url), env, auth));
+      }
+      if (request.method === "POST" && path === "/merge-resources") {
+        return cors(env, await handleMergeResources(await request.json(), env, auth));
+      }
       if (request.method === "GET" && path === "/duplicates") {
         return cors(env, await handleDuplicates(new URL(request.url), env));
       }
@@ -1919,4 +1925,119 @@ async function handleChangeRequestDelete(url, env) {
   if (!raw) return json({ error: "No such request" }, 404);
   await env.CHANGE_REQUESTS.delete(id);
   return json({ ok: true, id });
+}
+
+// ─── Removing and merging live resources ─────────────────────────────────────
+
+/**
+ * DELETE /live-resource?file=...&name=...
+ *
+ * Takes a published resource off the site. Reviewers could already edit a live
+ * record but had no way to remove one — a closed organisation or a duplicate
+ * meant messaging Patrick.
+ */
+async function handleLiveResourceDelete(url, env, auth) {
+  const file = url.searchParams.get("file") || "";
+  const name = url.searchParams.get("name") || "";
+  if (!isResourceFile(file)) return json({ error: "Unknown resource file" }, 400);
+  if (!name) return json({ error: "Missing name" }, 400);
+
+  let found = false;
+  const result = await commitWithRetry(env, async (headSha) => {
+    const changes = new Map();
+    const repoFile = await readRepoFile(env, file, headSha);
+    if (!repoFile) return changes;
+
+    const rows = repoFile.json;
+    const kept = rows.filter(r => r.name !== name);
+    if (kept.length === rows.length) return changes;
+
+    found = true;
+    changes.set(file, pretty(kept));
+    return changes;
+  }, `Remove ${name} via admin portal (by ${auth.actor})`);
+
+  if (result.error) return result.error;
+  if (!found) return json({ error: "Resource not found — it may already have been removed" }, 404);
+  return json({ ok: true, removed: name });
+}
+
+/**
+ * POST /merge-resources  { file, keepName, removeName, resource? }
+ *
+ * Collapses a duplicate pair into one record, in a SINGLE commit — two separate
+ * calls could leave the directory with neither entry if the second one failed.
+ *
+ * Fields the kept record leaves blank are filled from the one being removed, so
+ * merging "FACT Oregon" into "FACT Oregon (Family and Community Together)" does
+ * not throw away a phone number that only the loser had. Anything already set
+ * on the kept record wins. Pass `resource` to override the result outright when
+ * the reviewer has edited it by hand.
+ *
+ * dateAdded keeps the EARLIER of the two: the organisation has been in the
+ * directory since the first of them was added, and provenance should say so.
+ */
+const MERGEABLE_FIELDS = [
+  "description", "phone", "website", "address", "area",
+  "ageRange", "cost", "source", "lastScraped"
+];
+
+async function handleMergeResources(body, env, auth) {
+  const { file, keepName, removeName, resource } = body || {};
+  if (!isResourceFile(file)) return json({ error: "Unknown resource file" }, 400);
+  if (!keepName || !removeName) return json({ error: "Missing keepName or removeName" }, 400);
+  if (keepName === removeName) return json({ error: "Those are the same record" }, 400);
+
+  let missing = null;
+  let merged = null;
+
+  const result = await commitWithRetry(env, async (headSha) => {
+    const changes = new Map();
+    const repoFile = await readRepoFile(env, file, headSha);
+    if (!repoFile) return changes;
+
+    const rows = repoFile.json;
+    const keepIndex = rows.findIndex(r => r.name === keepName);
+    const loser = rows.find(r => r.name === removeName);
+    if (keepIndex === -1) { missing = keepName; return changes; }
+    if (!loser) { missing = removeName; return changes; }
+
+    const keeper = rows[keepIndex];
+    const combined = { ...keeper };
+
+    for (const field of MERGEABLE_FIELDS) {
+      if (!String(combined[field] || "").trim() && String(loser[field] || "").trim()) {
+        combined[field] = loser[field];
+      }
+    }
+    // Union the list fields so a category or tag only on the loser survives.
+    for (const field of ["category", "tags", "disabilityTypes"]) {
+      const a = Array.isArray(keeper[field]) ? keeper[field] : [];
+      const b = Array.isArray(loser[field]) ? loser[field] : [];
+      const union = [...new Set([...a, ...b])];
+      if (union.length) combined[field] = union;
+    }
+    if (loser.dateAdded && (!combined.dateAdded || loser.dateAdded < combined.dateAdded)) {
+      combined.dateAdded = loser.dateAdded;
+    }
+
+    // A hand-edited override still cannot rewrite provenance.
+    const final = resource
+      ? { ...resource, dateAdded: combined.dateAdded, origin: keeper.origin }
+      : combined;
+    delete final.submitterEmail; // the repo is public
+
+    const next = rows
+      .filter(r => r.name !== removeName)
+      .map(r => (r.name === keepName ? final : r));
+
+    merged = final;
+    changes.set(file, pretty(next));
+    return changes;
+  }, `Merge ${removeName} into ${keepName} via admin portal (by ${auth.actor})`);
+
+  if (result.error) return result.error;
+  if (missing) return json({ error: `Could not find "${missing}" — it may already have been merged` }, 404);
+  if (!merged) return json({ error: "Nothing was merged" }, 500);
+  return json({ ok: true, kept: merged.name, removed: removeName, resource: merged });
 }

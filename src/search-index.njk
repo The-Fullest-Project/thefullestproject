@@ -6,15 +6,24 @@ eleventyExcludeFromCollections: true
   Lightweight search index for the Resources page. Only the fields the
   client-side search actually reads — the full directory is ~2 MB, this is a
   fraction of it, and it is fetched on first interaction rather than on load.
+
+  Stays a flat ARRAY: the admin portal's Edit Live search reads this same file
+  and iterates it directly.
+
+  n name · a area · l location · c category slug · cl category label
+  g group heading · u category page url · w website
 #}
 {%- set rows = [] -%}
 {%- for r in directory -%}
   {%- set top = (r.topCategories | first) or "other" -%}
+  {%- set meta = categoryLookup[top] -%}
   {%- set rows = (rows.push({
         n: r.name,
         a: r.area or "",
         l: r.location or "",
         c: top,
+        cl: (meta.label if meta else top),
+        g: (meta.group if meta else "Other"),
         u: "/resources/" + top + "/",
         w: r.website or ""
       }), rows) -%}

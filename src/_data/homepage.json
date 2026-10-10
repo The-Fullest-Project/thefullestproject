@@ -4,7 +4,7 @@
       "type": "hero",
       "id": "hero",
       "visible": true,
-      "padding": "large",
+      "padding": "normal",
       "heading": "Living Life to the Fullest",
       "subheading": "Your connection hub for disability resources, programs, education, and community."
     },
@@ -18,43 +18,43 @@
       "heading": "How We Can Help",
       "cards": [
         {
-          "icon": "📍",
+          "icon": "\ud83d\udccd",
           "title": "Resource Directory",
-          "description": "Find local and national programs, foundations, services, and support organizations — all in one place.",
+          "description": "Find local and national programs, foundations, services, and support organizations \u2014 all in one place.",
           "url": "/resources/"
         },
         {
-          "icon": "🧠",
+          "icon": "\ud83e\udde0",
           "title": "Therapy Guide",
           "description": "Learn about different therapy types, when each is most beneficial, and how to find the right provider.",
           "url": "/therapy-guide/"
         },
         {
-          "icon": "♿",
+          "icon": "\u267f",
           "title": "Adaptive Equipment",
           "description": "Explore adaptive equipment options, curated product lists, and equipment loaner programs.",
           "url": "/adaptive-equipment/"
         },
         {
-          "icon": "🎓",
+          "icon": "\ud83c\udf93",
           "title": "School & IEP Navigation",
           "description": "Understand IEPs, 504 plans, your rights, and how to effectively advocate for your child's education.",
           "url": "/school-iep/"
         },
         {
-          "icon": "📝",
+          "icon": "\ud83d\udcdd",
           "title": "Blog",
           "description": "Stories, insights, and practical advice from experts and caregivers in the disability community.",
           "url": "/blog/"
         },
         {
-          "icon": "🎧",
+          "icon": "\ud83c\udfa7",
           "title": "Podcast",
           "description": "Listen to conversations with families, professionals, and advocates making a difference.",
           "url": "/podcast/"
         }
       ],
-      "intro": "One place for the programs, services and organizations that support individuals with disabilities and their caregivers — searchable by category, state and city, and reviewed by a real person before anything goes live."
+      "intro": "One place for the programs, services and organizations that support individuals with disabilities and their caregivers \u2014 searchable by category, state and city, and reviewed by a real person before anything goes live."
     },
     {
       "type": "contribute",
@@ -63,7 +63,7 @@
       "background": "cream",
       "padding": "small",
       "heading": "Help build the directory",
-      "intro": "There are hundreds of programs and communities built to support the disability community, but no central place to find them — so finding the right one still depends on who you know. We're changing that, and every family knows resources others are still searching for. Share what you know; we review each one before it goes live.",
+      "intro": "There are hundreds of programs and communities built to support the disability community, but no central place to find them \u2014 so finding the right one still depends on who you know. We're changing that, and every family knows resources others are still searching for. Share what you know; we review each one before it goes live.",
       "primary": {
         "heading": "Know a resource we're missing?",
         "body": "Add a program, service, or organization that supports individuals with disabilities and their caregivers. It takes about a minute.",
@@ -71,9 +71,9 @@
         "ctaUrl": "/submit-resource/"
       },
       "secondary": {
-        "icon": "📌",
+        "icon": "\ud83d\udccc",
         "heading": "Add resources as you browse",
-        "body": "Get our one-click browser button. Come across a great resource anywhere on the web? Click it to send it to us — no copying, no pasting.",
+        "body": "Get our one-click browser button. Come across a great resource anywhere on the web? Click it to send it to us \u2014 no copying, no pasting.",
         "ctaLabel": "Get the Browser Button",
         "ctaUrl": "/quick-submit/"
       }
@@ -85,7 +85,7 @@
       "background": "warm",
       "padding": "normal",
       "heading": "Stories & News",
-      "subheading": "Positive stories from families and the disability community — updated weekly",
+      "subheading": "Positive stories from families and the disability community \u2014 updated weekly",
       "emptyMessage": "Stories coming soon! We're collecting inspiring stories from families in the disability community.",
       "emptyCtaLabel": "Share Your Story",
       "browseAllLabel": "Browse All Stories & News"

@@ -64,6 +64,65 @@ document.addEventListener('DOMContentLoaded', function () {
     return row.a || row.l || '';
   }
 
+  /**
+   * Group headings in the order they appear on the page, so search results sit
+   * under the same headings in the same order as the category grid. Read from
+   * the DOM rather than a second copy of the list: it cannot drift.
+   */
+  function groupOrder() {
+    var headings = document.querySelectorAll('#directory-categories h2');
+    return Array.prototype.map.call(headings, function (h) { return h.textContent.trim(); });
+  }
+
+  function resultRow(row) {
+    var li = document.createElement('li');
+    li.className = 'px-3 py-2 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-t';
+    li.style.borderColor = 'var(--color-warm)';
+
+    var left = document.createElement('div');
+    left.className = 'min-w-0';
+
+    var name = document.createElement('p');
+    name.className = 'font-semibold text-sm';
+    name.style.color = 'var(--color-text)';
+    name.textContent = row.n;
+    left.appendChild(name);
+
+    var bits = [placeLabel(row), row.cl].filter(Boolean).join(' · ');
+    if (bits) {
+      var sub = document.createElement('p');
+      sub.className = 'text-xs';
+      sub.style.color = 'var(--color-text-light)';
+      sub.textContent = bits;
+      left.appendChild(sub);
+    }
+    li.appendChild(left);
+
+    var actions = document.createElement('div');
+    actions.className = 'flex items-center gap-3 shrink-0';
+
+    if (row.w) {
+      var site = document.createElement('a');
+      site.href = row.w;
+      site.target = '_blank';
+      site.rel = 'noopener noreferrer';
+      site.className = 'text-xs font-semibold no-underline';
+      site.style.color = 'var(--color-secondary)';
+      site.textContent = 'Website';
+      actions.appendChild(site);
+    }
+
+    var browse = document.createElement('a');
+    browse.href = row.u;
+    browse.className = 'text-xs font-semibold no-underline';
+    browse.style.color = 'var(--color-primary)';
+    browse.textContent = 'Browse';
+    actions.appendChild(browse);
+
+    li.appendChild(actions);
+    return li;
+  }
+
   function render(term) {
     if (!index) {
       pending = term;
@@ -90,50 +149,44 @@ document.addEventListener('DOMContentLoaded', function () {
       ? '1 resource found'
       : hits.length + ' resources found' + (hits.length > MAX_RESULTS ? ' — showing the first ' + MAX_RESULTS : '');
 
+    // Bucket by group, then emit in the page's own group order.
+    var buckets = {};
     shown.forEach(function (row) {
-      var li = document.createElement('li');
-      li.className = 'card px-4 py-3 flex flex-wrap items-center justify-between gap-2';
+      var g = row.g || 'Other';
+      if (!buckets[g]) buckets[g] = [];
+      buckets[g].push(row);
+    });
 
-      var left = document.createElement('div');
-      var name = document.createElement('p');
-      name.className = 'font-semibold text-sm';
-      name.style.color = 'var(--color-text)';
-      name.textContent = row.n;
-      left.appendChild(name);
+    var order = groupOrder();
+    Object.keys(buckets).forEach(function (g) {
+      if (order.indexOf(g) === -1) order.push(g);
+    });
 
-      var place = placeLabel(row);
-      if (place) {
-        var sub = document.createElement('p');
-        sub.className = 'text-xs';
-        sub.style.color = 'var(--color-text-light)';
-        sub.textContent = place;
-        left.appendChild(sub);
-      }
-      li.appendChild(left);
+    order.forEach(function (groupName) {
+      var rows = buckets[groupName];
+      if (!rows || !rows.length) return;
 
-      var actions = document.createElement('div');
-      actions.className = 'flex items-center gap-3 shrink-0';
+      var section = document.createElement('li');
+      section.className = 'card p-4';
 
-      if (row.w) {
-        var site = document.createElement('a');
-        site.href = row.w;
-        site.target = '_blank';
-        site.rel = 'noopener noreferrer';
-        site.className = 'text-xs font-semibold no-underline';
-        site.style.color = 'var(--color-secondary)';
-        site.textContent = 'Website';
-        actions.appendChild(site);
-      }
+      var head = document.createElement('h2');
+      head.className = 'text-base font-bold mb-1';
+      head.style.color = 'var(--color-primary)';
+      head.textContent = groupName;
+      section.appendChild(head);
 
-      var browse = document.createElement('a');
-      browse.href = row.u;
-      browse.className = 'text-xs font-semibold no-underline';
-      browse.style.color = 'var(--color-primary)';
-      browse.textContent = 'Browse category';
-      actions.appendChild(browse);
+      var countLine = document.createElement('p');
+      countLine.className = 'text-xs mb-2';
+      countLine.style.color = 'var(--color-text-light)';
+      countLine.textContent = rows.length + (rows.length === 1 ? ' match' : ' matches');
+      section.appendChild(countLine);
 
-      li.appendChild(actions);
-      list.appendChild(li);
+      var inner = document.createElement('ul');
+      inner.className = 'list-none p-0 m-0 flex flex-col';
+      rows.forEach(function (row) { inner.appendChild(resultRow(row)); });
+      section.appendChild(inner);
+
+      list.appendChild(section);
     });
 
     results.hidden = false;

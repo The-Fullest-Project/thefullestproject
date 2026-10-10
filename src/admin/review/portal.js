@@ -1435,13 +1435,26 @@
 
     var actions = el('div', 'flex flex-wrap gap-2 mt-3');
     var save = el('button', 'btn-primary text-xs', 'Save changes');
+    var remove = el('button', 'btn-secondary text-xs', 'Delete resource');
+    remove.style.borderColor = 'var(--color-secondary)';
+    remove.style.color = 'var(--color-secondary)';
     var note = el('span', 'text-xs self-center');
     note.style.color = 'var(--color-text-light)';
     note.textContent = 'Live 1-2 minutes after saving.';
     actions.appendChild(save);
+    actions.appendChild(remove);
     actions.appendChild(note);
     wrap.appendChild(actions);
     container.appendChild(wrap);
+
+    remove.addEventListener('click', function () {
+      deleteLiveResource(file, resource.name, remove, function () {
+        clear(container);
+        var gone = el('p', 'text-sm mt-2', 'Removed from the site.');
+        gone.style.color = 'var(--color-text-light)';
+        container.appendChild(gone);
+      });
+    });
 
     save.addEventListener('click', function () {
       var edited = collectEdits(wrap, item);
@@ -1461,6 +1474,29 @@
         toast(err.message || 'Could not save', true);
       });
     });
+  }
+
+  /**
+   * Take a published resource off the site. Shared by the Edit Live form and
+   * the Duplicates page so there is one confirm wording and one call site.
+   */
+  function deleteLiveResource(file, name, button, onDone) {
+    if (!window.confirm('Remove "' + name + '" from the site? This cannot be undone.')) return;
+    var original = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Removing...';
+    apiFetch('/live-resource?file=' + encodeURIComponent(file) + '&name=' + encodeURIComponent(name),
+             { method: 'DELETE' })
+      .then(function () {
+        liveIndex = null; // the cached directory index is now stale
+        toast('Removed - off the site in a minute or two');
+        if (onDone) onDone();
+      })
+      .catch(function (err) {
+        button.disabled = false;
+        button.textContent = original;
+        toast(err.message || 'Could not remove that', true);
+      });
   }
 
   // ── Duplicates (C3, C4) ───────────────────────────────────────────────────
@@ -1512,39 +1548,130 @@
     });
   }
 
+  /**
+   * A suspected duplicate pair, actionable in place.
+   *
+   * Nicole's note: merging previously meant copying fields across in Edit Live
+   * and then asking Patrick to delete the loser. Both sides can now be merged,
+   * edited or removed from this card.
+   */
   function duplicatePairCard(pair) {
     var card = el('div', 'card p-4');
-    var why = el('p', 'text-xs font-semibold mb-2', pair.signals.join(' - '));
+
+    var why = el('p', 'text-xs font-semibold mb-3', pair.signals.join(' - '));
     why.style.color = 'var(--color-secondary)';
     card.appendChild(why);
 
+    var file = pair.file || (pair.a && pair.a.file) || '';
+    var editArea = el('div');
+
     var grid = el('div', 'grid grid-cols-1 sm:grid-cols-2 gap-3');
-    [pair.a, pair.b].forEach(function (r) {
-      var side = el('div');
-      side.appendChild(el('p', 'font-semibold text-sm', r.name));
-      var meta = [r.area, r.location].filter(Boolean).join(', ');
-      if (meta) {
-        var m = el('p', 'text-xs', meta);
-        m.style.color = 'var(--color-text-light)';
-        side.appendChild(m);
-      }
-      if (r.website) {
-        var a = el('a', 'text-xs no-underline break-all', r.website);
-        a.href = r.website;
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.style.color = 'var(--color-primary)';
-        side.appendChild(a);
-      }
-      grid.appendChild(side);
+    [pair.a, pair.b].forEach(function (r, i) {
+      var other = i === 0 ? pair.b : pair.a;
+      grid.appendChild(duplicateSide(r, other, file, card, editArea));
     });
     card.appendChild(grid);
+    card.appendChild(editArea);
 
     var hint = el('p', 'text-xs mt-3');
     hint.style.color = 'var(--color-text-light)';
-    hint.textContent = 'To merge: open Edit Live, move anything worth keeping into the entry you are keeping, then ask Patrick to remove the other.';
+    hint.textContent = 'Keeping one merges the other into it: any field the kept entry leaves blank is filled from the other, then the other is removed.';
     card.appendChild(hint);
+
     return card;
+  }
+
+  function duplicateSide(r, other, file, card, editArea) {
+    var side = el('div', 'p-3 rounded-lg');
+    side.style.backgroundColor = 'var(--color-warm-light)';
+
+    side.appendChild(el('p', 'font-semibold text-sm', r.name));
+
+    var meta = [r.area, r.location].filter(Boolean).join(', ');
+    if (meta) {
+      var m = el('p', 'text-xs', meta);
+      m.style.color = 'var(--color-text-light)';
+      side.appendChild(m);
+    }
+    if (r.phone) {
+      var ph = el('p', 'text-xs', r.phone);
+      ph.style.color = 'var(--color-text-light)';
+      side.appendChild(ph);
+    }
+    if (r.website) {
+      var a = el('a', 'text-xs no-underline break-all block', r.website);
+      a.href = r.website;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.style.color = 'var(--color-primary)';
+      side.appendChild(a);
+    }
+
+    var actions = el('div', 'flex flex-wrap gap-2 mt-3');
+
+    var keep = el('button', 'btn-primary text-xs', 'Keep this one');
+    keep.addEventListener('click', function () {
+      if (!window.confirm('Keep "' + r.name + '" and merge "' + other.name + '" into it?\\n\\n' +
+                          'Any blank field on the one you keep is filled from the other, then the other is removed.')) return;
+      keep.disabled = true;
+      keep.textContent = 'Merging...';
+      apiFetch('/merge-resources', {
+        method: 'POST',
+        body: JSON.stringify({ file: file, keepName: r.name, removeName: other.name })
+      }).then(function () {
+        liveIndex = null;
+        toast('Merged into "' + r.name + '"');
+        resolvePairCard(card, 'Merged into ' + r.name + '.');
+      }).catch(function (err) {
+        keep.disabled = false;
+        keep.textContent = 'Keep this one';
+        toast(err.message || 'Could not merge', true);
+      });
+    });
+    actions.appendChild(keep);
+
+    var edit = el('button', 'btn-secondary text-xs', 'Edit');
+    edit.addEventListener('click', function () {
+      if (editArea.firstChild) { clear(editArea); return; }
+      edit.disabled = true;
+      apiFetch('/live-resource?file=' + encodeURIComponent(file) + '&name=' + encodeURIComponent(r.name))
+        .then(function (data) {
+          edit.disabled = false;
+          clear(editArea);
+          var box = el('div', 'mt-3 pt-3 border-t');
+          box.style.borderColor = 'var(--color-warm)';
+          box.appendChild(el('p', 'text-xs font-semibold mb-2', 'Editing ' + r.name));
+          editArea.appendChild(box);
+          renderLiveEditForm(box, data.file, data.resource);
+        })
+        .catch(function (err) {
+          edit.disabled = false;
+          toast(err.message || 'Could not open that resource', true);
+        });
+    });
+    actions.appendChild(edit);
+
+    var del = el('button', 'btn-secondary text-xs', 'Delete');
+    del.style.borderColor = 'var(--color-secondary)';
+    del.style.color = 'var(--color-secondary)';
+    del.addEventListener('click', function () {
+      deleteLiveResource(file, r.name, del, function () {
+        resolvePairCard(card, 'Removed ' + r.name + '.');
+      });
+    });
+    actions.appendChild(del);
+
+    side.appendChild(actions);
+    return side;
+  }
+
+  /** Replace a pair card's contents once it has been dealt with. */
+  function resolvePairCard(card, message) {
+    clear(card);
+    var done = el('p', 'text-sm', message + ' Live on the site in a minute or two.');
+    done.style.color = 'var(--color-accent)';
+    card.appendChild(done);
+    card.style.opacity = '0.75';
   }
 
   function duplicateClusterCard(cluster) {
