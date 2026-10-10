@@ -35,39 +35,6 @@
     }
   },
   {
-    "id": "sub-20261002-6768f26d",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-02T09:23:24.650Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "TypeOut",
-      "category": [
-        "assistive-tech"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "TypeOut is a typing-based AAC app for iPhone. Type, and your phone speaks in the voice you choose; when someone replies, their words appear in large text. Make it your own with 12 interface styles, your own photos as backgrounds, colored phrase buttons, eight AI voices, plus your own custom voice. For teens and adults. Free to download; the built-in iPhone voice is free forever, and cloud-based AI voices require a subscription.",
-      "phone": "",
-      "email": "",
-      "website": "https://trytypeout.com/en/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "aac",
-        "text to speech"
-      ],
-      "source": "https://trytypeout.com/en/",
-      "lastScraped": "2026-10-02"
-    }
-  },
-  {
     "id": "sub-20261006-ed4259e9",
     "type": "submission",
     "status": "pending",
