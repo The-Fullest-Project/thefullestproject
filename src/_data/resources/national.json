@@ -11027,5 +11027,31 @@
       "type": "submission",
       "detail": "submit-resource-form"
     }
+  },
+  {
+    "name": "Xi's",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "Online; Singapore-run",
+    "description": "Xi's is a free, independent adaptive-clothing discovery website. People describe their dressing needs, including mobility, dexterity, comfort, access or style, and explore clothing options. No account is needed. It is not a retailer or a clinical assessment. Product availability, sizing, shipping and medical-device compatibility should be checked with the official retailer before buying.\nhttps://wearablexi.app/",
+    "phone": "",
+    "email": "",
+    "website": "https://wearablexi.app/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Adaptive clothing recommendations"
+    ],
+    "source": "https://wearablexi.app/",
+    "lastScraped": "2026-10-09",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form"
+    }
   }
 ]
