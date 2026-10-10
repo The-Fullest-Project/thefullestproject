@@ -98,46 +98,6 @@
     }
   },
   {
-    "id": "sub-20261003-783b259d",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-03T18:01:04.941Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "ABA at Home",
-      "category": [
-        "apps"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "ABA at Home is a family-support app created for parents and caregivers of autistic children. It provides practical tools families can use during everyday life at home, including communication supports, visual routines, Daily Lessons, Help Now, Safety Hub, toilet training support, printable activities, caregiver resources, and support for challenging moments. Families can also use Multi-Caregiver Sync, Care Team Chat, and Saved Lessons to help parents, caregivers, and invited members of their care team stay connected. ABA at Home is available nationwide on iOS and Android. Core features are available free, with an optional Pro subscription for additional features.",
-      "phone": "",
-      "email": "support@abaathome.app",
-      "website": "https://abaathome.app",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "autism",
-        "caregiver support",
-        "parent resources",
-        "communication",
-        "visual routines",
-        "safety",
-        "toilet training",
-        "daily living",
-        "mobile app"
-      ],
-      "source": "https://abaathome.app",
-      "lastScraped": "2026-10-03"
-    }
-  },
-  {
     "id": "sub-20261006-ed4259e9",
     "type": "submission",
     "status": "pending",
