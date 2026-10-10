@@ -11125,32 +11125,9 @@
     },
     "name": "ZZ Test Alpha",
     "description": "Temporary record for verifying merge and delete. Safe to remove.",
-    "phone": "",
-    "website": "https://example.invalid/zz-alpha",
-    "address": "1 Test Way",
-    "dateAdded": "2026-10-09"
-  },
-  {
-    "category": [
-      "other"
-    ],
-    "location": "National",
-    "area": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [],
-    "source": "",
-    "lastScraped": "2026-10-09",
-    "origin": {
-      "type": "curated",
-      "detail": "merge-delete-test"
-    },
-    "name": "ZZ Test Alpha (Duplicate)",
-    "description": "",
     "phone": "555-0100",
     "website": "https://example.invalid/zz-alpha",
-    "address": "",
+    "address": "1 Test Way",
     "dateAdded": "2026-01-01"
   }
 ]
