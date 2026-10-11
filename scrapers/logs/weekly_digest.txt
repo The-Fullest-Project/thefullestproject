@@ -1,33 +1,33 @@
-Weekly Scrape Digest — 2026-10-04
+Weekly Scrape Digest — 2026-10-11
 ==================================================
 
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 7 pending
-  resource: 277 pending (28 new this run)
-  spotlight: 7 pending (2 new this run)
-  story: 66 pending (13 new this run)
-  submission: 8 pending
+  blog: 6 pending (1 new this run)
+  resource: 276 pending
+  spotlight: 5 pending (1 new this run)
+  story: 67 pending (14 new this run)
+  submission: 3 pending
 
 Scraper: osm_overpass
-  Entries processed: 34
+  Entries processed: 6
+  - [error] SD: The read operation timed out
   - [error] TN: The read operation timed out
-  - [error] UT: HTTP Error 504: Gateway Timeout
-  - [error] WI: HTTP Error 504: Gateway Timeout
-  - [error] AZ: The read operation timed out
-  - [error] CO: The read operation timed out
-  - [error] IN: <urlopen error [Errno 101] Network is unreachable>
-  - [error] IA: <urlopen error [Errno 101] Network is unreachable>
-  - [error] KS: <urlopen error [Errno 101] Network is unreachable>
-  - [error] KY: <urlopen error [Errno 101] Network is unreachable>
-  - [error] LA: <urlopen error [Errno 101] Network is unreachable>
+  - [error] TX: HTTP Error 504: Gateway Timeout
+  - [error] UT: The read operation timed out
+  - [error] VT: HTTP Error 504: Gateway Timeout
+  - [error] VA: HTTP Error 504: Gateway Timeout
+  - [error] WA: The read operation timed out
+  - [error] WV: The read operation timed out
+  - [error] WI: The read operation timed out
+  - [error] WY: HTTP Error 504: Gateway Timeout
 
 Scraper: spotlight_scraper
-  Entries processed: 2
-  - [queued] Project HOPE Awarded InterAction’s 2026 Disability Inclusion Award
-  - [queued] ESPN honor spotlights FGCU student’s mission to expand adaptive sports
+  Entries processed: 1
+  - [queued] VA awards $16 million in grants for adaptive sports programs
 
 Scraper: blog_content
   Entries processed: 1
+  - [queued] It's not just a SEND project: Getting started with inclusion reforms - Headteacher Update
 
 —
 The Fullest Project | thefullestproject.org

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "blg-20261011-8ad2d2dc",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-10-11T08:18:15.093424+00:00"
+    },
+    "payload": {
+      "title": "It's not just a SEND project: Getting started with inclusion reforms - Headteacher Update",
+      "source": "Headteacher Update",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTkxaM1JpZ0NJcWs0bnJjVjVicWlRdmpFQ1U5ZUJXZ3hXbjVDbGE0SzhkS0k0Ymo0cUdKeFg3Tk12RFJ1Y28tcEl2bzlQaGlqU3VPcDNUQktyMmJuRWhXdW5UbnJMZzhRdmNDSGFhSzQ5azJJemV4RTVXRGYzOERnZUlERXIwMi03VkJqUHM2b3Y0RWtiNlJRUnRFM3ZSaUtjOXNoQzUwbGxOWUE?oc=5",
+      "date": "2026-10-06",
+      "category": "Education",
+      "slug": "its-not-just-a-send-project-getting-started-with-inclusion-r"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "spt-20261011-0207b828",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-10-11T08:18:13.129986+00:00"
+    },
+    "payload": {
+      "name": "VA awards $16 million in grants for adaptive sports programs",
+      "description": "VA awards $16 million in grants for adaptive sports programs - The American Legion",
+      "category": "Sports",
+      "website": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVlVHY2pjbmpFNDc0eDhEcGRYRkFJNFR2QkU5YjlIbEpnRE9wcE04Y051aUVXQVR5NXg5bmIxM1RqYnZCakw5U0tncXFoeE1JVTBwclVmRFA0ejNNZnVURGtmZS0xNklnbGNHbnZkSHlNNndia0pGYllBOGxxSXJ1NXV5LVM0c0FKVzFlTVVXRlJ4SS0xVU5HV1VUa0tfR25QWDUzMHExV1U0RjJ1TmY3Y1Q2MWpseVRTTGpscGFQejNteUxTSVR0eEZJdkF4dHpJTVhiS2xn?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/sports.svg",
+      "location": "National",
+      "tags": [
+        "sports",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-10-11"
+    }
+  }
+]

@@ -1,54 +1,6 @@
 [
   {
     "scraper": "cms_providers",
-    "timestamp": "2026-07-12T03:28:06.858811",
-    "status": "OK",
-    "targets_attempted": 2,
-    "targets_succeeded": 2,
-    "entries_found": 79,
-    "entries_queued": 0,
-    "entries": []
-  },
-  {
-    "scraper": "spotlight_scraper",
-    "timestamp": "2026-07-12T03:28:12.484747",
-    "entries_found": 2,
-    "entries": [
-      {
-        "action": "queued",
-        "name": "Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera",
-        "category": "Adventures",
-        "website": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUjFueEZFcTlQTjY5UDZXTWZaTzlqOGpjd185MUM0X0xXVVVHMTJOaDA2cnlxWTBoQ3NaNkVqLWQ1MjczMHhIanpsNjhFSkRaNHQ3a0FzdHoyLXdQM0FybjdPaGYyVkVXcW5BbFNwdW93dVNNNlhaaER6NldwbTVJVkk4WnN6Qi1aU1VIZFhhYVR4UzFlRUx1VFd1eHZJZ2JyOGNPM2xINU5oQXdUSmhBdHdR?oc=5"
-      },
-      {
-        "action": "queued",
-        "name": "Oregon Adaptive Sports to host three-day gravel cycling camp for disabled vetera",
-        "category": "Sports",
-        "website": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUjFueEZFcTlQTjY5UDZXTWZaTzlqOGpjd185MUM0X0xXVVVHMTJOaDA2cnlxWTBoQ3NaNkVqLWQ1MjczMHhIanpsNjhFSkRaNHQ3a0FzdHoyLXdQM0FybjdPaGYyVkVXcW5BbFNwdW93dVNNNlhaaER6NldwbTVJVkk4WnN6Qi1aU1VIZFhhYVR4UzFlRUx1VFd1eHZJZ2JyOGNPM2xINU5oQXdUSmhBdHdR?oc=5"
-      }
-    ]
-  },
-  {
-    "scraper": "blog_content",
-    "timestamp": "2026-07-12T03:28:14.460211",
-    "entries_found": 2,
-    "entries": [
-      {
-        "action": "queued",
-        "title": "Deaf and Blind? How They Can Still Communicate and Participate in Worship - Adventist Review",
-        "source": "Adventist Review",
-        "slug": "deaf-and-blind-how-they-can-still-communicate-and-participat"
-      },
-      {
-        "action": "queued",
-        "title": "NC’s childcare crisis disproportionately affects disabled kids. A lawmaker says it's time for change - NC Newsline",
-        "source": "NC Newsline",
-        "slug": "ncs-childcare-crisis-disproportionately-affects-disabled-kid"
-      }
-    ]
-  },
-  {
-    "scraper": "cms_providers",
     "timestamp": "2026-07-19T02:57:11.103518",
     "status": "OK",
     "targets_attempted": 2,
@@ -978,6 +930,83 @@
     "entries": [
       {
         "action": "no_new_posts"
+      }
+    ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-10-11T08:12:25.078663",
+    "status": "PARTIAL",
+    "targets_attempted": 51,
+    "targets_succeeded": 4,
+    "entries_found": 6,
+    "entries_queued": 0,
+    "entries": [
+      {
+        "action": "error",
+        "name": "SD: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "TN: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "TX: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "UT: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "VT: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "VA: HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "action": "error",
+        "name": "WA: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "WV: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "WI: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "WY: HTTP Error 504: Gateway Timeout"
+      }
+    ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-10-11T08:18:13.130630",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "VA awards $16 million in grants for adaptive sports programs",
+        "category": "Sports",
+        "website": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVlVHY2pjbmpFNDc0eDhEcGRYRkFJNFR2QkU5YjlIbEpnRE9wcE04Y051aUVXQVR5NXg5bmIxM1RqYnZCakw5U0tncXFoeE1JVTBwclVmRFA0ejNNZnVURGtmZS0xNklnbGNHbnZkSHlNNndia0pGYllBOGxxSXJ1NXV5LVM0c0FKVzFlTVVXRlJ4SS0xVU5HV1VUa0tfR25QWDUzMHExV1U0RjJ1TmY3Y1Q2MWpseVRTTGpscGFQejNteUxTSVR0eEZJdkF4dHpJTVhiS2xn?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-10-11T08:18:15.094183",
+    "entries_found": 1,
+    "entries": [
+      {
+        "action": "queued",
+        "title": "It's not just a SEND project: Getting started with inclusion reforms - Headteacher Update",
+        "source": "Headteacher Update",
+        "slug": "its-not-just-a-send-project-getting-started-with-inclusion-r"
       }
     ]
   }

@@ -111,15 +111,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "tax-advantaged",
-      "financial",
       "savings",
+      "able-act",
+      "tax-advantaged",
       "disability",
       "financial-planning",
-      "able-act"
+      "financial"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "AbleData",
@@ -139,7 +139,7 @@
       "assistive-tech"
     ],
     "source": "https://abledata.acl.gov/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "AbleGamers Charity",
@@ -484,7 +484,7 @@
       "camps"
     ],
     "source": "https://www.acacamps.org/campers-families/find-a-camp",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "AngelSense GPS Tracker",
@@ -630,7 +630,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "AssistiveWare - Proloquo2Go",
@@ -1049,15 +1049,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "help-desk",
-      "mental-health",
-      "caregiver",
-      "support",
       "anticipatory-grief",
-      "grief"
+      "support",
+      "caregiver",
+      "grief",
+      "help-desk",
+      "mental-health"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Carewell",
@@ -1318,7 +1318,7 @@
       "assistive-tech"
     ],
     "source": "https://www.closingthegap.com/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Coalition for Responsible Home Education (CRHE)",
@@ -1610,7 +1610,7 @@
       "early-intervention"
     ],
     "source": "https://ectacenter.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Easterseals",
@@ -1951,7 +1951,7 @@
       "insurance"
     ],
     "source": "https://familyvoices.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Feeding Matters",
@@ -2080,7 +2080,7 @@
       "medical"
     ],
     "source": "https://palfreyassociates.com/disability-friendly-doctor/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Firefly by Leckey",
@@ -2481,7 +2481,7 @@
       "housing"
     ],
     "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "HumanWare - Braille & Low Vision",
@@ -3259,7 +3259,7 @@
       "sports"
     ],
     "source": "https://www.miracleleague.com/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "MobilityWorks",
@@ -3494,7 +3494,7 @@
       "financial"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "National Down Syndrome Congress",
@@ -3916,7 +3916,7 @@
       "transition"
     ],
     "source": "https://www.pacer.org/transition/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Parent Center Hub (CPIR)",
@@ -4203,7 +4203,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Rebuilding Together",
@@ -4223,7 +4223,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Rifton Equipment",
@@ -4431,15 +4431,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "network",
-      "sibling",
       "support",
+      "sibling",
       "advocacy",
       "peer",
+      "network",
       "sibling-support"
     ],
     "source": "https://www.siblingleadership.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -4459,7 +4459,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Smartbox - Grid AAC",
@@ -4511,7 +4511,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Sonic Alert",
@@ -4655,7 +4655,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Special Olympics",
@@ -4675,7 +4675,7 @@
       "sports"
     ],
     "source": "https://www.specialolympics.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "SPED Homeschool",
@@ -5311,7 +5311,7 @@
       "transition"
     ],
     "source": "https://thinkcollege.net/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "This Beach Is Loud!",
@@ -10242,7 +10242,7 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/",
-    "lastScraped": "2026-10-04"
+    "lastScraped": "2026-10-11"
   },
   {
     "name": "Medically Complex Caregiver",
@@ -10862,6 +10862,249 @@
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
+    }
+  },
+  {
+    "name": "Kane and Kash Adapt",
+    "category": [
+      "adaptive-toys"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Kane and Kash Adapt modifies popular, culturally relevant toys so children with physical disabilities and special needs can enjoy the same play experiences as their peers — not different toys, but the sameones, made accessible.\n\nEvery toy we adapt is switch-modified with care, tested for safety, and made available at prices families can actually afford. Because accessibility shouldn't come with a luxury price tag.",
+    "phone": "",
+    "email": "",
+    "website": "https://kaneandkashadapt.co/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "adapted toys",
+      "Switch adapted toys"
+    ],
+    "source": "https://kaneandkashadapt.co/",
+    "lastScraped": "2026-08-19",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Adaptive Toy Workshops| FairPlay",
+    "category": [
+      "adaptive-toys"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Our in-person and virtual adaptive toy workshops offer an opportunity for teachers, parents, and clinicians to gain the skills they need to make toys switch-accessible for children with disabilities. As a participant, you'll receive an introduction to adapting and learn step-by-step how to adapt a specific toy.",
+    "phone": "",
+    "email": "",
+    "website": "https://www.fairplaylibraries.org/workshops",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "switch-adapted-toys",
+      "toy workshop"
+    ],
+    "source": "https://www.fairplaylibraries.org/workshops",
+    "lastScraped": "2026-09-27",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "Family Play Access Program | FairPlay",
+    "category": [
+      "adaptive-toys"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "FairPlay’s Family Play Access Program provides adaptive toys directly to children with disabilities so they can experience meaningful, inclusive play at home. Through a simple application process, families receive age-appropriate adapted toys—and switches when needed—removing cost and access barriers to play.",
+    "phone": "",
+    "email": "",
+    "website": "https://www.fairplaylibraries.org/family-play-access-program",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "switch-adapted-toys"
+    ],
+    "source": "https://www.fairplaylibraries.org/family-play-access-program",
+    "lastScraped": "2026-09-27",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "CareClinic",
+    "category": [
+      "apps"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "CareClinic is a personal health tracker for people managing ongoing or changing health needs. It helps users log symptoms, medications, mood, sleep, and other daily health details, set reminders, review patterns, and share health records for care conversations. Family-care features help caregivers organize health information with the person they support.",
+    "phone": "",
+    "email": "",
+    "website": "https://careclinic.io/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [],
+    "source": "https://careclinic.io/",
+    "lastScraped": "2026-10-01",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form"
+    }
+  },
+  {
+    "name": "ABA at Home",
+    "category": [
+      "apps"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "ABA at Home is a family-support app created for parents and caregivers of autistic children. It provides practical tools families can use during everyday life at home, including communication supports, visual routines, Daily Lessons, Help Now, Safety Hub, toilet training support, printable activities, caregiver resources, and support for challenging moments. Families can also use Multi-Caregiver Sync, Care Team Chat, and Saved Lessons to help parents, caregivers, and invited members of their care team stay connected. ABA at Home is available nationwide on iOS and Android. Core features are available free, with an optional Pro subscription for additional features.",
+    "phone": "",
+    "email": "support@abaathome.app",
+    "website": "https://abaathome.app",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "autism",
+      "caregiver support",
+      "parent resources",
+      "communication",
+      "visual routines",
+      "safety",
+      "toilet training",
+      "daily living",
+      "mobile app"
+    ],
+    "source": "https://abaathome.app",
+    "lastScraped": "2026-10-03",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form"
+    }
+  },
+  {
+    "name": "tta1",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "tta1 is a text-to-speech reading aid. It helps students, people with dyslexia or low vision, and anyone who prefers listening by reading articles, PDFs and documents aloud in a natural voice, with translation into 25 languages. Freemium: free to try with 1,000 words a month; Plus from $6/mo.",
+    "phone": "",
+    "email": "",
+    "website": "https://www.tta1.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "text to speech aid"
+    ],
+    "source": "https://www.tta1.com/",
+    "lastScraped": "2026-10-08",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form"
+    }
+  },
+  {
+    "name": "Xi's",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "Online; Singapore-run",
+    "description": "Xi's is a free, independent adaptive-clothing discovery website. People describe their dressing needs, including mobility, dexterity, comfort, access or style, and explore clothing options. No account is needed. It is not a retailer or a clinical assessment. Product availability, sizing, shipping and medical-device compatibility should be checked with the official retailer before buying.\nhttps://wearablexi.app/",
+    "phone": "",
+    "email": "",
+    "website": "https://wearablexi.app/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "Adaptive clothing recommendations"
+    ],
+    "source": "https://wearablexi.app/",
+    "lastScraped": "2026-10-09",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form"
+    }
+  },
+  {
+    "name": "Premium AFO Socks | Coolest Knee-High Socks – LAIROS",
+    "category": [
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "We don’t just make socks - we fix what regular socks get wrong. Lairos socks are designed to fit braces perfectly, stay comfortable all day, and look like something kids actually want to wear.",
+    "phone": "",
+    "email": "support@lairos.com",
+    "website": "https://lairos.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "AFO socks"
+    ],
+    "source": "https://lairos.com/",
+    "lastScraped": "2026-10-07",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "TypeOut",
+    "category": [
+      "assistive-tech"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "TypeOut is a typing-based AAC app for iPhone. Type, and your phone speaks in the voice you choose; when someone replies, their words appear in large text. Make it your own with 12 interface styles, your own photos as backgrounds, colored phrase buttons, eight AI voices, plus your own custom voice. For teens and adults. Free to download; the built-in iPhone voice is free forever, and cloud-based AI voices require a subscription.",
+    "phone": "",
+    "email": "",
+    "website": "https://trytypeout.com/en/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "aac",
+      "text to speech"
+    ],
+    "source": "https://trytypeout.com/en/",
+    "lastScraped": "2026-10-02",
+    "dateAdded": "2026-10-10",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form"
     }
   }
 ]
