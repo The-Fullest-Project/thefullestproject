@@ -93,5 +93,35 @@
       "source": "https://medicaidworkcheck.com",
       "lastScraped": "2026-10-08"
     }
+  },
+  {
+    "id": "sub-20261012-799bb659",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-12T14:23:34.056Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "WatchToText",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "WatchToText turns a public YouTube, TikTok or Instagram video link into a readable transcript. Paste the link, read the text in the browser, copy it, or download it as a TXT file. Useful for note-taking, captions review, and making video content accessible to people who prefer reading. Free to use, no sign-up.",
+      "phone": "",
+      "email": "contact@watchtotext.com",
+      "website": "https://watchtotext.com",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://watchtotext.com",
+      "lastScraped": "2026-10-12"
+    }
   }
 ]
