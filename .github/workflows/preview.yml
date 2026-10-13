@@ -37,6 +37,20 @@ jobs:
           find _site -name '*.html' -print0 | xargs -0 sed -i \
             's|<head>|<head><meta name="robots" content="noindex, nofollow">|'
 
+      # The admin portal is NOT shipped to preview. portal.js points at the
+      # production worker, so approving, editing or deleting from a preview
+      # portal would change the real site — the opposite of what a preview is
+      # for. The portal stays production-only until it has its own worker.
+      - name: Remove the admin portal
+        run: rm -rf _site/admin
+
+      # Distinguish the installed app from the real one, so a phone home screen
+      # doesn't end up with two identical icons.
+      - name: Label the preview app
+        run: |
+          sed -i 's|"name": "The Fullest Project"|"name": "The Fullest Project (Preview)"|' _site/manifest.webmanifest
+          sed -i 's|"short_name": "Fullest Project"|"short_name": "TFP Preview"|' _site/manifest.webmanifest
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
