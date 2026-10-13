@@ -1,0 +1,107 @@
+name: Move changes between preview and live
+
+# Two one-way trips between the `preview` branch and `main`, run from the
+# Actions tab rather than a terminal.
+#
+#   refresh  main -> preview   bring the live site's latest resources into the
+#                              preview, so Nicole reviews against current data
+#   publish  preview -> main   send reviewed changes to the real site
+#
+# Why this is safe to run repeatedly: the two branches touch different files.
+# `main` constantly receives DATA commits — the weekly scrape, and every
+# approve / reject / edit / merge from the review portal. `preview` only ever
+# receives CODE, because the portal is deliberately not deployed there, so
+# nothing on the preview side can write a resource file. A merge in either
+# direction is therefore almost always a fast-forward or a clean three-way.
+#
+# When it is NOT clean the job fails rather than guessing, and the fix is a
+# local merge where a person can see both sides.
+
+on:
+  workflow_dispatch:
+    inputs:
+      direction:
+        description: "Which way?"
+        required: true
+        type: choice
+        default: publish
+        options:
+          - publish   # preview -> main (go live)
+          - refresh   # main -> preview (pull live data into preview)
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # merges need real history, not a shallow clone
+
+      - name: Identify the commit author
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Work out source and target
+        id: plan
+        run: |
+          if [ "${{ inputs.direction }}" = "publish" ]; then
+            echo "from=preview" >> "$GITHUB_OUTPUT"
+            echo "to=main"      >> "$GITHUB_OUTPUT"
+          else
+            echo "from=main"    >> "$GITHUB_OUTPUT"
+            echo "to=preview"   >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Show what will move
+        run: |
+          FROM="${{ steps.plan.outputs.from }}"
+          TO="${{ steps.plan.outputs.to }}"
+          echo "## Moving \`$FROM\` into \`$TO\`" >> "$GITHUB_STEP_SUMMARY"
+          COUNT=$(git rev-list --count "origin/$TO..origin/$FROM")
+          if [ "$COUNT" = "0" ]; then
+            echo "Nothing to move — \`$TO\` already has everything on \`$FROM\`." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "$COUNT commit(s):" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            git log --oneline "origin/$TO..origin/$FROM" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Merge and push
+        run: |
+          FROM="${{ steps.plan.outputs.from }}"
+          TO="${{ steps.plan.outputs.to }}"
+
+          git checkout "$TO"
+          git pull --ff-only origin "$TO"
+
+          if git merge --no-edit "origin/$FROM"; then
+            git push origin "$TO"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "Merged and pushed to \`$TO\`." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git merge --abort || true
+            {
+              echo ""
+              echo "### Stopped: the merge conflicts"
+              echo ""
+              echo "Nothing was pushed. Both branches changed the same file, which"
+              echo "usually means a resource file was edited on \`preview\` — the"
+              echo "portal should be the only thing writing those, and only on \`main\`."
+              echo ""
+              echo "Resolve it locally, where you can see both versions:"
+              echo ""
+              echo '```bash'
+              echo "git checkout $TO && git pull"
+              echo "git merge origin/$FROM"
+              echo "# fix the conflicts, then"
+              echo "git commit && git push origin $TO"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi

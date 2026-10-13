@@ -70,12 +70,43 @@ Until then, deploy by hand with the commands above.
 
 Certificates take up to ~30 minutes. Everything works without this.
 
-## Day to day
+## Moving changes between preview and live
+
+Run from the repo's **Actions** tab → *Move changes between preview and live* →
+**Run workflow**, then pick a direction. No terminal needed.
+
+| Direction | What it does | When |
+|---|---|---|
+| `refresh` | `main` → `preview` | Before Nicole reviews, so the preview shows the current resources |
+| `publish` | `preview` → `main` | After she approves — this is what makes it live |
+
+`publish` pushes to `main`, which triggers the normal deploy, so the change is
+on thefullestproject.org a minute or two later.
+
+### Why this stays clean
+
+The two branches touch different files:
+
+- **`main`** receives all the DATA commits — the weekly scrape, and every
+  approve, reject, edit, merge and delete from the review portal.
+- **`preview`** only ever receives CODE, because the portal is not deployed
+  there. Nothing on the preview side can write a resource file.
+
+So a merge either way is almost always a fast-forward or a clean three-way. If
+it ever does conflict, the workflow **stops without pushing** and the run
+summary prints the commands to resolve it locally, where both versions are
+visible. It does not guess.
+
+**The one rule that keeps it true:** never commit resource data on `preview`.
+If a resource needs changing, do it in the portal on the live site, then
+`refresh` to bring it into preview.
+
+### By hand, if you prefer
 
 ```bash
-git checkout preview && git merge main    # start from what is live
-# ...build the change, deploy, Nicole reviews...
-git checkout main && git merge preview    # when she is happy
+git checkout preview && git merge main     # refresh
+git checkout main && git merge preview     # publish
+git push
 ```
 
 ## When accounts and ratings arrive
