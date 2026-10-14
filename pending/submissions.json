@@ -153,5 +153,40 @@
       "source": "https://www.healstroke.com/",
       "lastScraped": "2026-10-14"
     }
+  },
+  {
+    "id": "sub-20261014-bf2eb04f",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-14T13:54:07.849Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "ToText",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "ToText is an iPhone app by LovelaceLoom that turns spoken content, such as lectures, conversations, calls and voice notes, into written text with a summary and task list. People who prefer reading to listening, or who find typing hard, can review recordings as text, and the built-in dictation keyboard lets them write by voice in any app. Freemium.",
+      "phone": "",
+      "email": "",
+      "website": "https://totext.si",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "speech to text",
+        "transcription",
+        "dictation",
+        "learning support"
+      ],
+      "source": "https://totext.si",
+      "lastScraped": "2026-10-14"
+    }
   }
 ]
