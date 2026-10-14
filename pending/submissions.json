@@ -123,5 +123,35 @@
       "source": "https://watchtotext.com",
       "lastScraped": "2026-10-12"
     }
+  },
+  {
+    "id": "sub-20261014-f9612333",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-14T03:05:40.069Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "HealStroke: Stroke Recovery",
+      "category": [
+        "apps"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "HealStroke: Stroke Recovery is an iPhone, iPad and Android app from Stroke Technology, Inc. for adults organizing daily life after stroke and the family members or caregivers supporting them.\r\n\r\nPublisher-described tools include a daily plan, guided speech and movement practice, medication reminders, progress and vital-sign logs, and plain-language educational resources. The app is a free download with in-app purchases; check the stores for current pricing. It provides education and self-management support alongside professional care and does not replace assessment, treatment or emergency care.\r\n\r\nPlease consider it for the Caregiver Apps directory, with its adult stroke-survivor focus clearly identified. This submission does not claim independently established clinical effectiveness or accessibility certification.\r\n\r\nApp Store: https://apps.apple.com/us/app/healstroke-stroke-recovery/id6795639108\r\nGoogle Play: https://play.google.com/store/apps/details?id=com.stroketech.healstroke",
+      "phone": "",
+      "email": "support@stroke.technology",
+      "website": "https://www.healstroke.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.healstroke.com/",
+      "lastScraped": "2026-10-14"
+    }
   }
 ]
