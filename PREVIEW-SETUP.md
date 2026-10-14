@@ -1,7 +1,8 @@
 # Preview site
 
 A full, private copy of the site for trying changes before they reach the real
-one. **Live now at https://tfp-preview.pages.dev** behind a shared password.
+one. **Live at https://preview.thefullestproject.org** behind a shared password.
+(`tfp-preview.pages.dev` also works — same site.)
 
 ## How it is protected
 
@@ -44,31 +45,6 @@ npx wrangler pages deploy _site --project-name=tfp-preview --branch=preview
 
 `.github/workflows/preview.yml` does exactly this on every push to the
 `preview` branch — once the two secrets below exist.
-
-## Two optional improvements
-
-### 1. Deploy automatically on push
-
-Needs a Cloudflare API token so the Action can deploy:
-
-- Cloudflare dashboard → My Profile → API Tokens → Create Token →
-  **Edit Cloudflare Workers** (or a custom token with *Account → Cloudflare Pages → Edit*)
-
-```bash
-gh secret set CLOUDFLARE_API_TOKEN  --repo The-Fullest-Project/thefullestproject
-gh secret set CLOUDFLARE_ACCOUNT_ID --repo The-Fullest-Project/thefullestproject   # a3735a4b810e5abcabd6dcdd298c9513
-```
-
-Until then, deploy by hand with the commands above.
-
-### 2. A friendlier address
-
-`preview.thefullestproject.org` instead of `tfp-preview.pages.dev`:
-
-- Cloudflare Pages → tfp-preview → Custom domains → Set up a custom domain
-- GoDaddy DNS → add `CNAME` · name `preview` · value `tfp-preview.pages.dev`
-
-Certificates take up to ~30 minutes. Everything works without this.
 
 ## Moving changes between preview and live
 
@@ -114,3 +90,44 @@ git push
 Preview will need its **own database and its own worker**, so test accounts and
 junk reviews never touch real records — and so the admin portal can be included
 here safely. Do that as part of the accounts work, not before.
+
+## DNS: two domains, one of them a trap
+
+The project owns **thefullestproject.org** (the real site) and
+**thefullestproject.com** (unused). GoDaddy opens whichever you last looked at,
+and several changes have gone into `.com` by mistake — including, for months,
+the Brevo email records, which is why mail kept sending from a `brevosend.com`
+address instead of the project's own domain.
+
+Before editing DNS, check you are on the right one:
+
+- the URL should read `dcc.godaddy.com/control/portfolio/thefullestproject.org/...`
+- the MX row should read `thefullestproject-**org**.mail.protection.outlook.com`
+- the Microsoft verification TXT is `NETORGFT20469436` on `.org`
+  (`.com` is `NETORGFT11820090`)
+
+### What `.org` should look like
+
+| Record | Value |
+|---|---|
+| `@` A | GitHub Pages (185.199.108–111.153) |
+| `www` CNAME | `pmberrigan.github.io` |
+| `preview` CNAME | `tfp-preview.pages.dev` |
+| `@` MX | `thefullestproject-org.mail.protection.outlook.com` |
+| `@` TXT (SPF) | `v=spf1 include:spf.protection.outlook.com include:spf.brevo.com -all` |
+| `@` TXT | `brevo-code:...` |
+| `brevo1/2._domainkey` CNAME | `b1/b2.thefullestproject-**org**.dkim.brevo.com` |
+| `_dmarc` TXT | `v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com` |
+
+**Exactly one SPF record.** A second one silently invalidates both. The current
+one costs 2 of the 10 permitted DNS lookups, so there is room to add a sender
+later if needed.
+
+Verify from the command line rather than trusting the dashboard:
+
+```bash
+nslookup -type=TXT thefullestproject.org ns67.domaincontrol.com
+```
+
+That asks GoDaddy's own nameserver and skips every cache — which is how the
+`.com` mix-up was found.
