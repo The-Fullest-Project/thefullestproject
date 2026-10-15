@@ -223,5 +223,40 @@
       "source": "https://specialneedsusa.com/",
       "lastScraped": "2026-10-15"
     }
+  },
+  {
+    "id": "sub-20261015-ed4259e9",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-15T17:29:34.431Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Special Needs Jobs",
+      "category": [
+        "employment"
+      ],
+      "location": "National",
+      "area": "Nationwide (U.S.)",
+      "description": "Special Needs Jobs is a free U.S. job board for ABA therapy careers, listing current openings for BCBAs, RBTs, BCaBAs and behavior technicians from ABA providers. Jobs can be filtered by credential, employer, location, work arrangement, employment type and disclosed pay, and candidates apply directly on the employer site. It also publishes career resources such as an ABA salary guide and a job offer checklist. Not affiliated with the BACB.",
+      "phone": "",
+      "email": "kylestar@mail.grokbot.com",
+      "website": "https://specialneedsjobs.org/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "ABA jobs",
+        "BCBA",
+        "RBT",
+        "careers"
+      ],
+      "source": "https://specialneedsjobs.org/",
+      "lastScraped": "2026-10-15"
+    }
   }
 ]
