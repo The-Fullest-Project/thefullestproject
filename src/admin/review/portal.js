@@ -215,7 +215,9 @@
       byId('user-login').textContent = state.user.login || '';
     }
     loadSiteIndex();
-    activateTab('queue');
+    // Notification emails link straight to a tab, e.g. /admin/review/#requests
+    var hashTab = (window.location.hash || '').slice(1);
+    activateTab(TABS.indexOf(hashTab) !== -1 ? hashTab : 'queue');
     revealEditStudio();
   }
 
@@ -1789,6 +1791,7 @@
 
   var CR_STATUS_LABELS = {
     filed: 'Filed',
+    question: 'Needs your input',
     planned: 'Planned',
     building: 'Being built',
     done: 'Done',
@@ -1796,11 +1799,44 @@
   };
   var CR_STATUS_COLORS = {
     filed: 'var(--color-highlight)',
+    question: 'var(--color-secondary)',
     planned: 'var(--color-primary)',
-    building: 'var(--color-secondary)',
+    building: 'var(--color-primary)',
     done: 'var(--color-accent)',
     declined: 'var(--color-text-light)'
   };
+  // Fallback until the worker answers; the worker's list is authoritative.
+  var crPeople = ['Nicole', 'Erin', 'Shelley', 'Patrick'];
+  var crFilter = { person: '', status: 'open' };
+  var crRequests = [];
+
+  // Everyone signs in through the shared GitHub account, so "who" is picked
+  // in the form. Remember the last pick per device so it is one choice, once.
+  function crMe() {
+    try { return localStorage.getItem('tfp-cr-me') || ''; } catch (e) { return ''; }
+  }
+  function crSetMe(name) {
+    try { localStorage.setItem('tfp-cr-me', name); } catch (e) { /* private mode */ }
+  }
+  function crAskedBy(r) {
+    return r.askedBy || (r.createdBy === 'PMBerrigan' ? 'Patrick' : '');
+  }
+  function crIsOpen(r) { return r.status !== 'done' && r.status !== 'declined'; }
+
+  function personSelect(id, value, blankLabel) {
+    var sel = el('select', 'filter-select text-sm');
+    sel.id = id;
+    var blank = el('option', '', blankLabel);
+    blank.value = '';
+    sel.appendChild(blank);
+    crPeople.forEach(function (p) {
+      var opt = el('option', '', p);
+      opt.value = p;
+      if (p === value) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    return sel;
+  }
 
   function loadRequests() {
     var panel = byId('panel-requests');
@@ -1821,8 +1857,9 @@
     var listWrap = byId('requests-list');
     if (!listWrap) return;
     apiFetch('/change-requests').then(function (data) {
-      clear(listWrap);
+      if (data.people && data.people.length) crPeople = data.people;
       if (data.unavailable) {
+        clear(listWrap);
         var warn = el('div', 'card p-4');
         var w = el('p', 'text-sm', data.unavailable + ' Patrick needs to finish setting up the store before requests can be saved.');
         w.style.color = 'var(--color-secondary)';
@@ -1830,18 +1867,8 @@
         listWrap.appendChild(warn);
         return;
       }
-      var requests = data.requests || [];
-      if (!requests.length) {
-        var none = el('p', 'text-sm', 'No requests yet. Add the first one above.');
-        none.style.color = 'var(--color-text-light)';
-        listWrap.appendChild(none);
-        return;
-      }
-      var head = el('h2', 'text-lg font-bold mb-3', requests.length + ' request' + (requests.length === 1 ? '' : 's'));
-      listWrap.appendChild(head);
-      var list = el('div', 'flex flex-col gap-2');
-      requests.forEach(function (r) { list.appendChild(requestCard(r)); });
-      listWrap.appendChild(list);
+      crRequests = data.requests || [];
+      renderRequestList();
     }).catch(function (err) {
       clear(listWrap);
       var e = el('p', 'text-sm', err.message || 'Could not load the requests.');
@@ -1850,14 +1877,88 @@
     });
   }
 
+  function renderRequestList() {
+    var listWrap = byId('requests-list');
+    if (!listWrap) return;
+    clear(listWrap);
+    if (!crRequests.length) {
+      var none = el('p', 'text-sm', 'No requests yet. Add the first one above.');
+      none.style.color = 'var(--color-text-light)';
+      listWrap.appendChild(none);
+      return;
+    }
+
+    // Counts across everything, so the dropdown doubles as a summary.
+    var counts = {};
+    crRequests.forEach(function (r) { counts[r.status] = (counts[r.status] || 0) + 1; });
+    var openCount = crRequests.filter(crIsOpen).length;
+
+    var bar = el('div', 'card p-4 flex flex-wrap items-end gap-4 mb-4');
+    var personWrap = el('div');
+    var personLabel = el('label', 'block text-xs font-semibold mb-1', 'Asked by');
+    var personFilter = personSelect('cr-filter-person', crFilter.person, 'Everyone');
+    personLabel.htmlFor = personFilter.id;
+    personWrap.appendChild(personLabel);
+    personWrap.appendChild(personFilter);
+    bar.appendChild(personWrap);
+
+    var statusWrap = el('div');
+    var statusLabel = el('label', 'block text-xs font-semibold mb-1', 'Status');
+    var statusFilter = el('select', 'filter-select text-sm');
+    statusFilter.id = 'cr-filter-status';
+    statusLabel.htmlFor = statusFilter.id;
+    [['open', 'Still open (' + openCount + ')'], ['', 'All (' + crRequests.length + ')']]
+      .concat(Object.keys(CR_STATUS_LABELS).map(function (k) {
+        return [k, CR_STATUS_LABELS[k] + ' (' + (counts[k] || 0) + ')'];
+      }))
+      .forEach(function (pair) {
+        var opt = el('option', '', pair[1]);
+        opt.value = pair[0];
+        if (pair[0] === crFilter.status) opt.selected = true;
+        statusFilter.appendChild(opt);
+      });
+    statusWrap.appendChild(statusLabel);
+    statusWrap.appendChild(statusFilter);
+    bar.appendChild(statusWrap);
+    listWrap.appendChild(bar);
+
+    personFilter.addEventListener('change', function () { crFilter.person = personFilter.value; renderRequestList(); });
+    statusFilter.addEventListener('change', function () { crFilter.status = statusFilter.value; renderRequestList(); });
+
+    var shown = crRequests.filter(function (r) {
+      if (crFilter.person && crAskedBy(r) !== crFilter.person) return false;
+      if (crFilter.status === 'open') return crIsOpen(r);
+      if (crFilter.status) return r.status === crFilter.status;
+      return true;
+    });
+
+    var head = el('h2', 'text-lg font-bold mb-3', shown.length + ' request' + (shown.length === 1 ? '' : 's'));
+    listWrap.appendChild(head);
+    if (!shown.length) {
+      var empty = el('p', 'text-sm', 'Nothing matches those filters.');
+      empty.style.color = 'var(--color-text-light)';
+      listWrap.appendChild(empty);
+      return;
+    }
+    var list = el('div', 'flex flex-col gap-2');
+    shown.forEach(function (r) { list.appendChild(requestCard(r)); });
+    listWrap.appendChild(list);
+  }
+
   function buildRequestForm() {
     var card = el('div', 'card p-5');
     card.appendChild(el('h2', 'text-lg font-bold mb-1', 'Ask for a change'));
-    var intro = el('p', 'text-sm mb-4', 'Anything you want changed on the site. This list is private to the three of us.');
+    var intro = el('p', 'text-sm mb-4', 'Anything you want changed on the site. Patrick gets an email when you add one, and replies here with next steps. This list is private to the team.');
     intro.style.color = 'var(--color-text-light)';
     card.appendChild(intro);
 
-    var titleLabel = el('label', 'block text-xs font-semibold mb-1', 'What needs to change?');
+    var whoLabel = el('label', 'block text-xs font-semibold mb-1', 'Who is asking?');
+    var who = personSelect('cr-asked-by', crMe(), 'Choose your name');
+    whoLabel.htmlFor = who.id;
+    card.appendChild(whoLabel);
+    card.appendChild(who);
+
+    var titleLabel = el('label', 'block text-xs font-semibold mt-3 mb-1', 'What needs to change?');
     var title = el('input', 'form-input text-sm w-full');
     title.id = 'cr-title';
     titleLabel.htmlFor = title.id;
@@ -1886,12 +1987,14 @@
 
     submit.addEventListener('click', function () {
       var t = title.value.trim();
+      if (!who.value) { toast('Choose who is asking', true); who.focus(); return; }
       if (!t) { toast('Give it a short title', true); return; }
+      crSetMe(who.value);
       submit.disabled = true;
       submit.textContent = 'Adding...';
       apiFetch('/change-requests', {
         method: 'POST',
-        body: JSON.stringify({ title: t, detail: detail.value.trim(), page: page.value.trim() })
+        body: JSON.stringify({ title: t, detail: detail.value.trim(), page: page.value.trim(), askedBy: who.value })
       }).then(function () {
         title.value = ''; detail.value = ''; page.value = '';
         submit.disabled = false;
@@ -1908,14 +2011,30 @@
     return card;
   }
 
+  function saveRequest(r, changes, control) {
+    control.disabled = true;
+    changes.id = r.id;
+    return apiFetch('/change-requests', {
+      method: 'POST',
+      body: JSON.stringify(changes)
+    }).then(function () {
+      toast('Updated');
+      refreshRequests();
+    }).catch(function (err) {
+      control.disabled = false;
+      toast(err.message || 'Could not update', true);
+    });
+  }
+
   function requestCard(r) {
     var card = el('div', 'card p-4');
 
     var head = el('div', 'flex flex-wrap items-start justify-between gap-2');
     var left = el('div');
     left.appendChild(el('p', 'font-semibold text-sm', r.title));
+    var asker = crAskedBy(r);
     var meta = el('p', 'text-xs mt-1',
-      'Asked by ' + (r.createdBy || 'someone') + ' on ' + fmtDate(r.createdAt));
+      (asker ? 'Asked by ' + asker : 'Asker not recorded') + ' on ' + fmtDate(r.createdAt));
     meta.style.color = 'var(--color-text-light)';
     left.appendChild(meta);
     head.appendChild(left);
@@ -1929,6 +2048,7 @@
     if (r.detail) {
       var d = el('p', 'text-sm mt-2', r.detail);
       d.style.color = 'var(--color-text-light)';
+      d.style.whiteSpace = 'pre-wrap';
       card.appendChild(d);
     }
     if (r.page) {
@@ -1936,11 +2056,58 @@
       pg.style.color = 'var(--color-text-light)';
       card.appendChild(pg);
     }
+
+    // The reply: what happens next, or the question that needs answering.
+    var reply = el('div', 'mt-3 p-3 rounded-lg');
+    reply.style.backgroundColor = 'var(--color-warm)';
+    var replyHead = el('p', 'text-xs font-semibold mb-1',
+      r.note ? 'Next steps' + (r.noteBy ? ' from ' + r.noteBy : '') + (r.noteAt ? ' · ' + fmtDate(r.noteAt) : '')
+             : 'No reply yet');
+    replyHead.style.color = 'var(--color-primary)';
+    reply.appendChild(replyHead);
     if (r.note) {
-      var n = el('p', 'text-xs mt-2 italic', r.note);
-      n.style.color = 'var(--color-primary)';
-      card.appendChild(n);
+      var n = el('p', 'text-sm', r.note);
+      n.style.whiteSpace = 'pre-wrap';
+      reply.appendChild(n);
     }
+    var editBtn = el('button', 'text-xs font-semibold underline mt-1', r.note ? 'Edit reply' : 'Write a reply');
+    editBtn.style.color = 'var(--color-primary)';
+    reply.appendChild(editBtn);
+    card.appendChild(reply);
+
+    editBtn.addEventListener('click', function () {
+      editBtn.hidden = true;
+      var form = el('div', 'mt-2');
+      var noteLabel = el('label', 'block text-xs font-semibold mb-1', 'Reply or next steps');
+      var noteInput = el('textarea', 'form-input text-sm w-full');
+      noteInput.id = 'cr-note-' + r.id;
+      noteInput.rows = 3;
+      noteInput.value = r.note || '';
+      noteLabel.htmlFor = noteInput.id;
+      form.appendChild(noteLabel);
+      form.appendChild(noteInput);
+
+      var row = el('div', 'flex flex-wrap items-center gap-2 mt-2');
+      var byLabel = el('label', 'text-xs font-semibold', 'From');
+      var bySelect = personSelect('cr-note-by-' + r.id, r.noteBy || crMe(), 'Choose');
+      byLabel.htmlFor = bySelect.id;
+      var save = el('button', 'btn-primary text-xs', 'Save reply');
+      var cancel = el('button', 'btn-secondary text-xs', 'Cancel');
+      row.appendChild(byLabel);
+      row.appendChild(bySelect);
+      row.appendChild(save);
+      row.appendChild(cancel);
+      form.appendChild(row);
+      reply.appendChild(form);
+      noteInput.focus();
+
+      cancel.addEventListener('click', function () { form.remove(); editBtn.hidden = false; });
+      save.addEventListener('click', function () {
+        if (!bySelect.value) { toast('Choose who is replying', true); return; }
+        crSetMe(bySelect.value);
+        saveRequest(r, { note: noteInput.value.trim(), repliedBy: bySelect.value }, save);
+      });
+    });
 
     var controls = el('div', 'flex flex-wrap items-center gap-2 mt-3');
     var statusLabel = el('label', 'text-xs font-semibold', 'Status');
@@ -1955,20 +2122,21 @@
     });
     controls.appendChild(statusLabel);
     controls.appendChild(statusSelect);
-
     statusSelect.addEventListener('change', function () {
-      statusSelect.disabled = true;
-      apiFetch('/change-requests', {
-        method: 'POST',
-        body: JSON.stringify({ id: r.id, status: statusSelect.value })
-      }).then(function () {
-        toast('Updated');
-        refreshRequests();
-      }).catch(function (err) {
-        statusSelect.disabled = false;
-        toast(err.message || 'Could not update', true);
-      });
+      saveRequest(r, { status: statusSelect.value }, statusSelect);
     });
+
+    // Requests filed before "Who is asking?" existed can be attributed here.
+    if (!crAskedBy(r)) {
+      var askLabel = el('label', 'text-xs font-semibold ml-2', 'Asked by');
+      var askSelect = personSelect('cr-ask-' + r.id, '', 'Not recorded');
+      askLabel.htmlFor = askSelect.id;
+      controls.appendChild(askLabel);
+      controls.appendChild(askSelect);
+      askSelect.addEventListener('change', function () {
+        if (askSelect.value) saveRequest(r, { askedBy: askSelect.value }, askSelect);
+      });
+    }
 
     var del = el('button', 'btn-secondary text-xs', 'Delete');
     del.addEventListener('click', function () {

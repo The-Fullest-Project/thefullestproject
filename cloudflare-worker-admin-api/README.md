@@ -55,10 +55,29 @@ npx wrangler secret put BREVO_LIST_ID
 npx wrangler secret put BREVO_THANKYOU_TEMPLATE_ID
 npx wrangler secret put BREVO_DOI_TEMPLATE_ID
 npx wrangler secret put BREVO_APPROVED_TEMPLATE_ID   # approval thank-you (optional)
+npx wrangler secret put CR_NOTIFY_EMAILS   # change-request alerts, comma-separated (optional)
 ```
 
 Brevo features no-op gracefully until the `BREVO_*` secrets are set, so the
 worker can ship before the Brevo account exists.
+
+## Change-request log (Requests tab)
+
+`GET/POST/DELETE /change-requests`, stored in the private `CHANGE_REQUESTS` KV
+namespace — never the repo, which is public.
+
+- **Who asked** is a field (`askedBy`), not the login: the team shares one
+  GitHub account, so `createdBy` is always the same. Names are a fixed list
+  (`CR_PEOPLE` in `worker.js`, mirrored as a fallback in `portal.js`) — add a
+  person there.
+- **The reply** is `note`, with `noteBy` and `noteAt` stamped when it changes.
+  Statuses: `filed` → `question` (needs the asker's input) → `planned` →
+  `building` → `done`, or `declined`.
+- **Email**: filing a request, changing its reply, or moving its status sends
+  one plain Brevo transactional email (no template) to every address in
+  `CR_NOTIFY_EMAILS`, from `hello@thefullestproject.org` (override with
+  `CR_SENDER_EMAIL`). Unset, it does nothing. The email links to
+  `/admin/review/#requests`, which opens that tab directly.
 
 ## Edit Studio (inline page editing) — activation
 

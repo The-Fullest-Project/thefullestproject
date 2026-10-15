@@ -124,7 +124,7 @@ All NEW content is gated behind admin approval; only updates to already-live ent
 
 - **Pending store** (repo-root `pending/`, deliberately outside `src/_data` so Eleventy never builds it): `pending/submissions.json` (written only by the worker) + `pending/scraped/<date>-<type>s.json` (created only by the weekly Action). Disjoint writers — no git conflicts. Envelope schema documented in `pending/README.md`.
 - **Scraper gating** lives in `base_scraper.save_resources()` and `scrapers/pending_store.py` — the six resource source modules are untouched. `positive_stories.py`, `spotlight_scraper.py`, and `blog_content.py` queue instead of writing live; the blog `.md` is generated at approval time by the worker (`renderBlogMarkdown()` — keep in sync with `blog_content.create_blog_post()`).
-- **Review portal** at `/admin/review/` (`src/admin/review/`, vanilla JS, no build step): GitHub OAuth via the decap-oauth worker popup (PAT paste fallback; `?mock=1` fixtures for localhost — the popup only completes on production). Tabs: Review Queue, Recently Added (weekly history + origin analytics from `/api/site-index.json`), Bulk Import (CSV via vendored PapaParse), Emails (Brevo contacts, read-only).
+- **Review portal** at `/admin/review/` (`src/admin/review/`, vanilla JS, no build step): GitHub OAuth via the decap-oauth worker popup (PAT paste fallback; `?mock=1` fixtures for localhost — the popup only completes on production). Tabs: Review Queue, Requests (private change-request log — see the worker README), Newsletter, Recently Added (weekly history + origin analytics from `/api/site-index.json`), Bulk Import (CSV via vendored PapaParse), Edit Live, Duplicates, Emails (Brevo contacts, read-only). `#<tab>` in the URL opens that tab. **The whole team signs in through the one shared `The-Fullest-Project` GitHub account**, so the login never identifies a person — anything that needs to know who did something must ask (see `askedBy` on change requests).
 - **Worker** `cloudflare-worker-admin-api/` (deployed as `tfp-admin-api`): public `/submit` + `/newsletter` intake, admin `/pending` `/approve` `/reject` `/bulk-import` `/emails`. Admin auth = GitHub token with push permission on the repo. Approvals are ONE atomic git-tree commit with conflict re-apply retry; rejects blocklist scraper items in `scrapers/blocklist.json`. Worker commits to main auto-deploy via Pages.
 - **Provenance**: every live resource carries `dateAdded` + `origin {type: scraper|submission|quick-submit|bulk-import, detail}` (legacy entries backfilled as `legacy-backfill` by `scripts/backfill-date-added.js`).
 - **Email**: emails NEVER enter the public repo. Brevo holds the distribution list ("TFP Community", attributes SOURCE/DATE_ADDED/OPT_IN_STATUS). New submitter emails get a transactional thank-you; list membership only via Brevo double-opt-in (redirects to `/subscribed/`). Brevo calls no-op gracefully when secrets are unset.
@@ -150,6 +150,26 @@ Standing decisions and their reasoning live in `DECISIONS.md` at the repo root �
 anything it covers. It records the September 2026 directory-scope decision (therapy and wellness providers
 are never scraped, only referred) and the 30 September 2026 decisions on accounts, ratings and community.
 Note `docs/` is gitignored on purpose: the repo is public and those are internal working documents.
+
+**Preview site**: `preview.thefullestproject.org`, password-gated, built from the `preview` branch, no admin
+portal. Structural work (accounts, ratings, favourites, donations) is tested there before `main`. See
+`PREVIEW-SETUP.md`.
+
+## Definition of Done
+
+Status pages and plans written for Nicole are read as promises. Before anything is marked **Built** or
+**Done** in a plan, a status page, the roadmap, or a change request:
+
+1. **Every sentence that describes behaviour is traced to code.** "Each request carries who asked",
+   "Patrick reviews and replies", "you'll get an email" — each must point at a line that does it. A
+   sentence describing a human habit ("Patrick reviews it") still needs the tooling that makes the habit
+   possible (a way to reply, an alert that something arrived). If it isn't built, the page says so.
+2. **The workflow is walked end to end as the real user, with their real login** — which is the shared
+   account (see above), not `PMBerrigan`. Not just "the endpoint returns 200".
+3. **The loop closes.** For anything with a hand-off between people, check each person learns their turn
+   has come without having to remember to look.
+
+"Built" means the code exists. "Done" means a person has used it for its purpose. Use the two words that way.
 
 ## Development Guidelines
 

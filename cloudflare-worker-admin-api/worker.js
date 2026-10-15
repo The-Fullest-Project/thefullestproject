@@ -38,6 +38,10 @@ import {
  *   BREVO_APPROVED_TEMPLATE_ID — transactional template emailed to a submitter
  *                                when their submission is approved (no-op if unset)
  *
+ *   CR_NOTIFY_EMAILS          — comma-separated addresses emailed when a change
+ *                                request is filed, answered or moves status
+ *                                (no-op if unset or Brevo is unconfigured)
+ *
  * KV namespaces (wrangler.toml):
  *   SUBMITTER_EMAILS          — private pendingId → submitter email map so the
  *                               approval thank-you can reach the submitter; the
@@ -177,7 +181,7 @@ export default {
         return cors(env, await handleChangeRequestsGet(env));
       }
       if (request.method === "POST" && path === "/change-requests") {
-        return cors(env, await handleChangeRequestPost(await request.json(), env, auth));
+        return cors(env, await handleChangeRequestPost(await request.json(), env, auth, ctx));
       }
       if (request.method === "DELETE" && path === "/change-requests") {
         return cors(env, await handleChangeRequestDelete(new URL(request.url), env));
@@ -1847,11 +1851,18 @@ async function handleCategoryGroups(env) {
  * endpoints no-op gracefully if the binding is missing, the same way the Brevo
  * calls do, so an un-provisioned worker still runs.
  */
-const CR_STATUSES = ["filed", "planned", "building", "done", "declined"];
+const CR_STATUSES = ["filed", "question", "planned", "building", "done", "declined"];
+const CR_STATUS_LABELS = {
+  filed: "Filed", question: "Needs your input", planned: "Planned",
+  building: "Being built", done: "Done", declined: "Not doing"
+};
+// Everyone on the team signs in to the portal through the one shared GitHub
+// account, so the login cannot say who asked. The form asks instead.
+const CR_PEOPLE = ["Nicole", "Erin", "Shelley", "Patrick"];
 
 async function handleChangeRequestsGet(env) {
   if (!env.CHANGE_REQUESTS) {
-    return json({ requests: [], unavailable: "The change log store is not set up yet." });
+    return json({ requests: [], people: CR_PEOPLE, unavailable: "The change log store is not set up yet." });
   }
   const list = await env.CHANGE_REQUESTS.list({ prefix: "cr-", limit: 1000 });
   const requests = [];
@@ -1866,14 +1877,19 @@ async function handleChangeRequestsGet(env) {
   requests.sort((a, b) =>
     openFirst(a) - openFirst(b) || String(b.createdAt).localeCompare(String(a.createdAt))
   );
-  return json({ requests });
+  return json({ requests, people: CR_PEOPLE });
 }
 
-async function handleChangeRequestPost(body, env, auth) {
+function cleanPerson(name) {
+  const n = String(name || "").trim();
+  return CR_PEOPLE.includes(n) ? n : "";
+}
+
+async function handleChangeRequestPost(body, env, auth, ctx) {
   if (!env.CHANGE_REQUESTS) {
     return json({ error: "The change log store is not set up yet." }, 503);
   }
-  const { id, title, detail, page, status, note } = body || {};
+  const { id, title, detail, page, status, note, askedBy, repliedBy } = body || {};
 
   if (id) {
     const raw = await env.CHANGE_REQUESTS.get(id);
@@ -1882,14 +1898,25 @@ async function handleChangeRequestPost(body, env, auth) {
     if (status && !CR_STATUSES.includes(status)) {
       return json({ error: `Status must be one of: ${CR_STATUSES.join(", ")}` }, 400);
     }
+    const now = new Date().toISOString();
+    const noteChanged = note !== undefined && String(note).slice(0, 2000) !== (existing.note || "");
     const updated = {
       ...existing,
       status: status || existing.status,
+      askedBy: cleanPerson(askedBy) || existing.askedBy || "",
       note: note !== undefined ? String(note).slice(0, 2000) : existing.note,
-      updatedAt: new Date().toISOString(),
+      updatedAt: now,
       updatedBy: auth.actor
     };
+    if (noteChanged) {
+      updated.noteBy = cleanPerson(repliedBy) || existing.noteBy || "";
+      updated.noteAt = now;
+    }
     await env.CHANGE_REQUESTS.put(id, JSON.stringify(updated));
+    if (noteChanged || updated.status !== existing.status) {
+      ctx.waitUntil(notifyChangeRequest("updated", updated, existing, env).catch(err =>
+        console.log("change-request email failed:", err.message)));
+    }
     return json({ ok: true, request: updated });
   }
 
@@ -1903,6 +1930,7 @@ async function handleChangeRequestPost(body, env, auth) {
     title: cleanTitle.slice(0, 200),
     detail: String(detail || "").slice(0, 4000),
     page: String(page || "").slice(0, 300),
+    askedBy: cleanPerson(askedBy),
     status: "filed",
     note: "",
     createdAt: now.toISOString(),
@@ -1911,7 +1939,66 @@ async function handleChangeRequestPost(body, env, auth) {
     updatedBy: auth.actor
   };
   await env.CHANGE_REQUESTS.put(newId, JSON.stringify(request));
+  ctx.waitUntil(notifyChangeRequest("filed", request, null, env).catch(err =>
+    console.log("change-request email failed:", err.message)));
   return json({ ok: true, request });
+}
+
+function escapeHtml(s) {
+  return String(s || "").replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+/**
+ * Emails the team when a request is filed, answered, or changes status, so
+ * nobody has to keep checking the tab. Plain Brevo transactional mail with
+ * inline HTML — no template to maintain. The request text goes only to the
+ * addresses in CR_NOTIFY_EMAILS, never anywhere public.
+ */
+async function notifyChangeRequest(kind, r, before, env) {
+  if (!env.BREVO_API_KEY || !env.CR_NOTIFY_EMAILS) return;
+  const to = String(env.CR_NOTIFY_EMAILS).split(",").map(e => e.trim()).filter(Boolean)
+    .map(email => ({ email }));
+  if (!to.length) return;
+
+  const who = r.askedBy || "Someone";
+  const status = CR_STATUS_LABELS[r.status] || r.status;
+  let subject, lead;
+  if (kind === "filed") {
+    subject = `New request: ${r.title}`;
+    lead = `${who} filed a new request.`;
+  } else if (before && r.status !== before.status) {
+    subject = `${status}: ${r.title}`;
+    lead = `Moved from <b>${escapeHtml(CR_STATUS_LABELS[before.status] || before.status)}</b> to <b>${escapeHtml(status)}</b>.`;
+  } else {
+    subject = `Reply on: ${r.title}`;
+    lead = `${escapeHtml(r.noteBy || "The team")} replied.`;
+  }
+
+  const rows = [
+    `<p style="margin:0 0 12px">${kind === "filed" ? escapeHtml(lead) : lead}</p>`,
+    `<p style="margin:0 0 4px;font-size:18px"><b>${escapeHtml(r.title)}</b></p>`,
+    `<p style="margin:0 0 12px;color:#666">Asked by ${escapeHtml(who)} &middot; status: ${escapeHtml(status)}</p>`
+  ];
+  if (r.detail) rows.push(`<p style="margin:0 0 12px;white-space:pre-wrap">${escapeHtml(r.detail)}</p>`);
+  if (r.note) {
+    rows.push(`<div style="border-left:4px solid #3A668C;padding:8px 12px;margin:0 0 12px;background:#F2F6FA">` +
+      `<p style="margin:0 0 4px;font-size:12px;color:#3A668C"><b>Next steps${r.noteBy ? " from " + escapeHtml(r.noteBy) : ""}</b></p>` +
+      `<p style="margin:0;white-space:pre-wrap">${escapeHtml(r.note)}</p></div>`);
+  }
+  rows.push(`<p style="margin:16px 0 0"><a href="https://thefullestproject.org/admin/review/#requests">Open the Requests tab</a></p>`);
+
+  const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+    method: "POST",
+    headers: brevoHeaders(env),
+    body: JSON.stringify({
+      sender: { name: "The Fullest Project", email: env.CR_SENDER_EMAIL || "hello@thefullestproject.org" },
+      to,
+      subject: subject.slice(0, 150),
+      htmlContent: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222">${rows.join("")}</div>`
+    })
+  });
+  if (!res.ok) throw new Error(`Brevo ${res.status}: ${await res.text()}`);
 }
 
 /** DELETE /change-requests?id=... — for a request filed by mistake. */
