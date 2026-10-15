@@ -188,5 +188,40 @@
       "source": "https://totext.si",
       "lastScraped": "2026-10-14"
     }
+  },
+  {
+    "id": "sub-20261015-c8d577e1",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-15T17:29:27.216Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Special Needs Care Network",
+      "category": [
+        "therapy"
+      ],
+      "location": "National",
+      "area": "All 50 states",
+      "description": "Special Needs Care Network is a free matching service and directory that helps families find ABA therapy providers, special education schools, speech therapy and therapeutic programs in all 50 states. Families share what their child needs, their age and location, and get matched with specialized schools, ABA providers and therapy centers. Over 9,000 listings with real parent reviews; free for families.",
+      "phone": "",
+      "email": "kylestar@mail.grokbot.com",
+      "website": "https://specialneedsusa.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "ABA therapy",
+        "special education",
+        "speech therapy",
+        "autism"
+      ],
+      "source": "https://specialneedsusa.com/",
+      "lastScraped": "2026-10-15"
+    }
   }
 ]
