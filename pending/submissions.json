@@ -258,5 +258,40 @@
       "source": "https://specialneedsjobs.org/",
       "lastScraped": "2026-10-15"
     }
+  },
+  {
+    "id": "sub-20261016-d79ab4aa",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-16T21:33:07.316Z"
+    },
+    "targetFile": "src/_data/resources/states/UT.json",
+    "payload": {
+      "name": "Local Senior Advisor",
+      "category": [
+        "housing"
+      ],
+      "location": "Utah",
+      "area": "Murray, UT",
+      "description": "Local Senior Advisor is a better way to find assisted living, memory care, and independent living. The online directory lists every community with the most current, accurate information. It also pairs you with a local senior advisor who has personally visited each community and can answer your questions about its services, costs, and availability. Local Senior Advisor is a free service to families.",
+      "phone": "(385) 200-2175",
+      "email": "info@localsenioradvisor.com",
+      "website": "https://localsenioradvisor.com/",
+      "address": "491 W 5300 S, Suite 113, Murray, UT 84123",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "senior living",
+        "assisted living",
+        "memory care",
+        "caregivers"
+      ],
+      "source": "https://localsenioradvisor.com/",
+      "lastScraped": "2026-10-16"
+    }
   }
 ]
