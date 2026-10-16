@@ -66,9 +66,10 @@
     "phone": "(401) 349-4900",
     "website": "https://specialolympicsri.org/",
     "address": "370 George Washington Highway, Smithfield, RI 02917",
-    "ageRange": "",
+    "ageRange": "All ages",
     "disabilityTypes": [
-      "intellectual-disabilities"
+      "intellectual-disabilities",
+      "all-disabilities"
     ],
     "cost": "Free",
     "tags": [
@@ -239,34 +240,6 @@
       "medical"
     ],
     "source": "https://www.brownhealth.org/centers-services/childrens-neurodevelopment-center",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Special Olympics Rhode Island - Unified & Adaptive Sports",
-    "category": [
-      "sports"
-    ],
-    "location": "Rhode Island",
-    "area": "",
-    "description": "Beyond competitive Special Olympics sports, SORI offers school-based inclusion programs, community-based programs, child development programs, Healthy Athletes health screenings, and volunteer opportunities for individuals with and without intellectual disabilities.",
-    "phone": "(401) 349-4900",
-    "website": "https://specialolympicsri.org/",
-    "address": "370 George Washington Highway, Smithfield, RI 02917",
-    "ageRange": "All ages",
-    "disabilityTypes": [
-      "intellectual-disabilities",
-      "all-disabilities"
-    ],
-    "cost": "Free",
-    "tags": [
-      "sports"
-    ],
-    "source": "https://specialolympicsri.org/",
     "lastScraped": "2026-03-06",
     "dateAdded": "2026-03-06",
     "origin": {
