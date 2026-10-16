@@ -6541,7 +6541,9 @@
     "ageRange": "All ages",
     "disabilityTypes": [
       "Fragile X syndrome",
-      "rare genetic"
+      "rare genetic",
+      "genetic",
+      "intellectual"
     ],
     "cost": "Free",
     "tags": [
@@ -6550,7 +6552,10 @@
       "genetic",
       "research",
       "family-support",
-      "conferences"
+      "conferences",
+      "Fragile X",
+      "intellectual disability",
+      "autism"
     ],
     "source": "https://fragilex.org/",
     "lastScraped": "2026-03-10",
@@ -7484,37 +7489,6 @@
       "enrichment"
     ],
     "source": "https://williams-syndrome.org/",
-    "lastScraped": "2026-03-10",
-    "dateAdded": "2026-03-10",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "National Fragile X Foundation",
-    "category": [
-      "nonprofit"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Provides support, education, and research funding for Fragile X syndrome, the most common inherited cause of intellectual disability and autism. Offers family support programs and regional events.",
-    "phone": "(800) 688-8765",
-    "website": "https://fragilex.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [
-      "genetic",
-      "intellectual"
-    ],
-    "cost": "Free",
-    "tags": [
-      "Fragile X",
-      "genetic",
-      "intellectual disability",
-      "autism"
-    ],
-    "source": "https://fragilex.org/",
     "lastScraped": "2026-03-10",
     "dateAdded": "2026-03-10",
     "origin": {
