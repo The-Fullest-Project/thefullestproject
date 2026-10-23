@@ -293,5 +293,35 @@
       "source": "https://localsenioradvisor.com/",
       "lastScraped": "2026-10-16"
     }
+  },
+  {
+    "id": "sub-20261023-709ca7a9",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-23T16:15:10.328Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Autism Dating",
+      "category": [
+        "community"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Autism Dating helps adults on the autism spectrum meet people who value clear talk and kind company, for companionship or something serious. ADHD and AuDHD members are welcome.",
+      "phone": "",
+      "email": "",
+      "website": "https://datingautism.com",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://datingautism.com",
+      "lastScraped": "2026-10-23"
+    }
   }
 ]
