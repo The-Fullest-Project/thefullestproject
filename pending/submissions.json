@@ -323,5 +323,35 @@
       "source": "https://datingautism.com",
       "lastScraped": "2026-10-23"
     }
+  },
+  {
+    "id": "sub-20261023-b3a86b61",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-23T16:15:11.507Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Disabled Contacts",
+      "category": [
+        "community"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Disabled Contacts is a UK dating site for disabled singles and the people who want to meet them, across England, Scotland, Wales and Northern Ireland. Members share what they choose about their disability, when they choose.",
+      "phone": "",
+      "email": "",
+      "website": "https://disabledcontacts.co.uk",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://disabledcontacts.co.uk",
+      "lastScraped": "2026-10-23"
+    }
   }
 ]
