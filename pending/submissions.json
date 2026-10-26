@@ -388,5 +388,38 @@
       "source": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
       "lastScraped": "2026-10-26"
     }
+  },
+  {
+    "id": "sub-20261026-520c7120",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-10-26T13:03:54.324Z"
+    },
+    "targetFile": "src/_data/resources/states/VA.json",
+    "payload": {
+      "name": "MU Go Baby Go - Marymount University",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Virginia",
+      "area": "Northern Virginia",
+      "description": "Go baby Go! transforms the lives of children with mobility challenges by providing adapted battery powered cars and4-wheelers to help these kids move in their environment … just like other kids do.",
+      "phone": "703-284-5980",
+      "email": "gobabygo@marymount.edu",
+      "website": "https://marymount.edu/academics/health-sciences/doctor-of-physical-therapy/go-baby-go/#gsc.tab=0",
+      "address": "2807 North Glebe Road Arlington, VA 22207",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "adapted cars",
+        "mobility aid"
+      ],
+      "source": "https://marymount.edu/academics/health-sciences/doctor-of-physical-therapy/go-baby-go/#gsc.tab=0",
+      "lastScraped": "2026-10-26"
+    }
   }
 ]
