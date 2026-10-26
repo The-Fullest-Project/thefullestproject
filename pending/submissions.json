@@ -353,5 +353,40 @@
       "source": "https://disabledcontacts.co.uk",
       "lastScraped": "2026-10-23"
     }
+  },
+  {
+    "id": "sub-20261026-770ab800",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-10-26T12:56:05.407Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Ari - Your Health Companion",
+      "category": [
+        "apps"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "The Citizen Health app is a free, AI-powered health platform and mobile application designed specifically for rare disease patients and caregivers.  it has an AI Advocate, appointment recording & summaries, medical record centralization, research contribution, and is SOC2 certified and HIPPA compliant.",
+      "phone": "",
+      "email": "",
+      "website": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "appointment management",
+        "medical records centralization",
+        "IEP support",
+        "medical management app"
+      ],
+      "source": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
+      "lastScraped": "2026-10-26"
+    }
   }
 ]
