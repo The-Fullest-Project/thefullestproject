@@ -421,5 +421,45 @@
       "source": "https://marymount.edu/academics/health-sciences/doctor-of-physical-therapy/go-baby-go/#gsc.tab=0",
       "lastScraped": "2026-10-26"
     }
+  },
+  {
+    "id": "sub-20261027-bed6b3b8",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-10-27T17:51:59.637Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "AccessAble: free compression sock printable and Easier Mornings email",
+      "category": [
+        "clothing"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Free one-page printable, \"Putting compression socks on,\" with plain steps for one working hand or a helping hand: set up, position the foot section, make each pull smaller, smooth and check, plus a short box for caregivers. Also a free email, Easier Mornings, with one practical dressing and compression sock idea every other Tuesday. Free to print, share and read. No purchase needed. Printable (PDF): https://accessablecompression.com/resources/compression-socks/compression-socks.pdf",
+      "phone": "",
+      "email": "support@accessablecompression.com",
+      "website": "https://accessablecompression.com/newsletter",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "caregiver-assisted-dressing",
+        "easy-dressing",
+        "daily-living",
+        "free",
+        "newsletter",
+        "caregiver-resource",
+        "stroke",
+        "spinal-cord",
+        "compression-socks"
+      ],
+      "source": "https://accessablecompression.com/newsletter",
+      "lastScraped": "2026-10-27"
+    }
   }
 ]
