@@ -79,3 +79,17 @@ directory only through a referral from a real family.
 
 The gate is `scrapers/_category_map.is_disability_specific()`. See
 `scrapers/README.md` for how it decides.
+
+## July 2026 — visual editing
+
+Page design is edited by extending the existing stack: Decap CMS, Eleventy,
+typed page blocks and the review worker. Do **not** migrate to Wix or Webflow,
+which would give up the resource directory, scrapers, gig board and review
+portal, and do not adopt TinaCMS.
+
+## July 2026 — mental health and chiropractic
+
+Scrapers do not queue mental-health counselling, psychiatry, chiropractic or
+behavioural-health services. Genetic counselling is the one exception.
+`mental-health` stays a valid category for curated and manual entries; this only
+stops automated scraping.

@@ -149,7 +149,23 @@ All NEW content is gated behind admin approval; only updates to already-live ent
 Standing decisions and their reasoning live in `DECISIONS.md` at the repo root — read it before changing
 anything it covers. It records the September 2026 directory-scope decision (therapy and wellness providers
 are never scraped, only referred) and the 30 September 2026 decisions on accounts, ratings and community.
-Note `docs/` is gitignored on purpose: the repo is public and those are internal working documents.
+
+## Shared Context
+
+`docs/` is gitignored on purpose: this repo is public and those are internal working documents. The folder
+is its own private repo, `The-Fullest-Project/tfp-internal`, cloned into `docs/` on each computer:
+
+```bash
+git clone https://github.com/The-Fullest-Project/tfp-internal.git docs
+```
+
+Patrick (PC) and Nicole (Mac) both work on this project, so:
+
+- At the start of a session, run `git -C docs pull` and read `docs/context/README.md`, `current-state.md` and
+  `open-items.md`. Search tools skip `docs/` because it is gitignored, so read or search that path directly.
+- Save lasting project context to `docs/context/`, not to Claude's automatic memory, which stays on one
+  computer. Commit and push it from inside `docs/` before ending the session.
+- Never put passwords, keys, tokens, or subscriber or submitter emails in `docs/`.
 
 **Preview site**: `preview.thefullestproject.org`, password-gated, built from the `preview` branch, no admin
 portal. Structural work (accounts, ratings, favourites, donations) is tested there before `main`. See
