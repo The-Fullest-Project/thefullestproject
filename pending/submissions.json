@@ -461,5 +461,38 @@
       "source": "https://accessablecompression.com/newsletter",
       "lastScraped": "2026-10-27"
     }
+  },
+  {
+    "id": "sub-20261030-4f2835f1",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-10-30T21:14:54.322Z"
+    },
+    "targetFile": "src/_data/resources/states/NJ.json",
+    "payload": {
+      "name": "Camp Chatterbox",
+      "category": [
+        "respite"
+      ],
+      "location": "New Jersey",
+      "area": "Oakhurst, NJ",
+      "description": "Camp Chatterbox is a one week overnight camp for children and young adults, ages 5-21, who use synthesized Augmentative and Alternative Communication (AAC) devices. All campers participate in a range of social, recreational, and educational activities to promote use of their communication systems and interact with other children. Therapy activities are led by licensed and ASHA Certified Speech-Language Pathologists, special education teachers, recreational therapists, and other qualified professionals.  Activities facilitate AAC device use throughout the day, and help build expressive language and critical thinking skills in a fun and functional environment. In addition, recreational activities include swimming, nature exploration, art, and sports. Each evening, campers, siblings, parents, and staff gather for activities such as campfires, dances, and a camp talent show.",
+      "phone": "",
+      "email": "",
+      "website": "https://csh.recdesk.com/Community/Page?pageId=13678",
+      "address": "Rising Treetops at Oakhurst in Oakhurst, NJ",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "Overnight camp",
+        "AAC resources"
+      ],
+      "source": "https://csh.recdesk.com/Community/Page?pageId=13678",
+      "lastScraped": "2026-10-30"
+    }
   }
 ]
