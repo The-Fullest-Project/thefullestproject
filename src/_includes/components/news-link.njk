@@ -1,0 +1,3 @@
+{# One article title and date. Expects `item` from collections.newsSections. #}
+<a href="{{ item.url }}" class="font-semibold no-underline" style="color: var(--color-text);"{% if item.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}{% if item.external %}<span class="sr-only"> (opens in a new tab)</span>{% endif %}</a>
+<time class="block text-xs mt-1" datetime="{{ item.date | dateFormat }}" style="color: var(--color-text-light);">{{ item.date | dateFormat }}</time>

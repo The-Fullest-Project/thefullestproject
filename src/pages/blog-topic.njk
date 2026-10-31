@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.newsSections
+  size: 1
+  alias: section
+permalink: "/blog/topic/{{ section.slug }}/"
+eleventyComputed:
+  title: "{{ section.name }} | Stories & News"
+  description: "All {{ section.name }} articles from The Fullest Project's Stories & News."
+---
+
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="/blog/" class="text-sm font-semibold" style="color: var(--color-primary);">Back to Stories &amp; News</a>
+    <div class="card overflow-hidden mt-4 mb-8">
+      {% set slug = section.slug %}
+      {% include "components/news-art.njk" %}
+    </div>
+    <h1 class="text-4xl font-bold mb-8" style="color: var(--color-primary);">{{ section.name }}</h1>
+    <ul class="flex flex-col gap-5">
+      {% for item in section.items %}
+      <li>
+        {% include "components/news-link.njk" %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

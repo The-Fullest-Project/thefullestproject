@@ -1,5 +1,8 @@
 const { HtmlBasePlugin } = require("@11ty/eleventy");
+const fs = require("fs");
 const siteData = require("./src/_data/site.json");
+
+const NEWS_SECTIONS = ["Adaptive Technology", "Caregiver Tips", "Resources", "Expert Insights", "Education"];
 
 module.exports = function(eleventyConfig) {
   // Rewrite all URLs to include pathPrefix (for GitHub Pages subpath hosting)
@@ -30,6 +33,34 @@ module.exports = function(eleventyConfig) {
       if (aPinned !== bPinned) return bPinned - aPinned;
       return b.date - a.date;
     });
+  });
+
+  // Stories & News page: curated articles and news stories mixed into topic
+  // sections, newest first. A category outside the list falls back to Resources
+  // so a new article can never go missing; Announcement posts stay off the page.
+  eleventyConfig.addCollection("newsSections", function(collectionApi) {
+    const posts = collectionApi.getFilteredByGlob("src/blog/*.md")
+      .filter(post => post.data.category !== "Announcement")
+      .map(post => ({
+        title: post.data.title,
+        url: post.url,
+        date: post.date,
+        topic: post.data.category,
+        external: false
+      }));
+    const stories = JSON.parse(fs.readFileSync("src/_data/stories.json", "utf8")).map(story => ({
+      title: story.title,
+      url: story.sourceUrl,
+      date: new Date(story.date),
+      topic: story.topic,
+      external: true
+    }));
+    const items = [...posts, ...stories].sort((a, b) => b.date - a.date);
+    return NEWS_SECTIONS.map(name => ({
+      name,
+      slug: name.toLowerCase().replace(/\s+/g, "-"),
+      items: items.filter(item => (NEWS_SECTIONS.includes(item.topic) ? item.topic : "Resources") === name)
+    }));
   });
 
   eleventyConfig.addCollection("podcastEpisodes", function(collectionApi) {
