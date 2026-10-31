@@ -11080,5 +11080,34 @@
       "type": "submission",
       "detail": "submit-resource-form"
     }
+  },
+  {
+    "name": "Ari - Your Health Companion",
+    "category": [
+      "apps"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The Citizen Health app is a free, AI-powered health platform and mobile application designed specifically for rare disease patients and caregivers.  it has an AI Advocate, appointment recording & summaries, medical record centralization, research contribution, and is SOC2 certified and HIPPA compliant.",
+    "phone": "",
+    "email": "",
+    "website": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "appointment management",
+      "medical records centralization",
+      "IEP support",
+      "medical management app"
+    ],
+    "source": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
+    "lastScraped": "2026-10-26",
+    "dateAdded": "2026-10-31",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
   }
 ]
