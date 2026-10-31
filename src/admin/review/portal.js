@@ -2195,8 +2195,7 @@
   }
 
   function attachmentButton(attachment) {
-    var btn = el('button', 'text-xs font-semibold underline mt-1', 'Download ' + attachment.name);
-    btn.style.color = 'var(--color-primary)';
+    var btn = el('button', 'btn-secondary text-xs mt-2', 'Download PDF: ' + attachment.name);
     btn.addEventListener('click', function () {
       btn.disabled = true;
       apiFetch('/change-requests/file?key=' + encodeURIComponent(attachment.key)).then(function (file) {
@@ -2220,9 +2219,12 @@
   // the Next Steps box above is a separate record.
   function requestThread(r) {
     var thread = el('div', 'mt-3');
-    (r.replies || []).forEach(function (x) {
-      var item = el('div', 'mt-2 pl-3');
+    (r.replies || []).forEach(function (x, i) {
+      var item = el('div', 'mt-2');
+      item.style.padding = '8px 10px';
       item.style.borderLeft = '3px solid var(--color-secondary)';
+      // Every other response is tinted so neighbouring ones are easy to tell apart.
+      if (i % 2 === 1) item.style.backgroundColor = 'var(--color-warm)';
       var who = el('p', 'text-xs font-semibold', x.by + ' · ' + fmtDate(x.at));
       who.style.color = 'var(--color-primary)';
       item.appendChild(who);
