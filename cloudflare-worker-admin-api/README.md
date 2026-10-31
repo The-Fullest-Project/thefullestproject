@@ -70,10 +70,16 @@ namespace — never the repo, which is public.
   GitHub account, so `createdBy` is always the same. Names are a fixed list
   (`CR_PEOPLE` in `worker.js`, mirrored as a fallback in `portal.js`) — add a
   person there.
-- **The reply** is `note`, with `noteBy` and `noteAt` stamped when it changes.
-  Statuses: `filed` → `question` (needs the asker's input) → `planned` →
-  `building` → `done`, or `declined`.
-- **Email**: filing a request, changing its reply, or moving its status sends
+- **Next steps** is `note`, with `noteBy` and `noteAt` stamped when it changes.
+  It is edited in place. Statuses: `filed` → `question` (needs the asker's
+  input) → `planned` → `building` → `done`, or `declined`.
+- **Responses** are the back-and-forth thread: `POST /change-requests/reply`
+  with `{ id, text, by }`. Each is its own KV key,
+  `reply-<requestId>-<timestamp>-<rand>`, because KV reads can be a minute stale
+  and appending to an array on the request could lose a reply. `GET` returns
+  them as `replies` on each request, oldest first. They cannot be edited, and
+  are removed only when their request is deleted.
+- **Email**: filing a request, adding a response, changing next steps, or moving its status sends
   one plain Brevo transactional email (no template) to every address in
   `CR_NOTIFY_EMAILS`, from `hello@thefullestproject.org` (override with
   `CR_SENDER_EMAIL`). Unset, it does nothing. The email links to

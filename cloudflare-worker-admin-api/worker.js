@@ -183,6 +183,9 @@ export default {
       if (request.method === "POST" && path === "/change-requests") {
         return cors(env, await handleChangeRequestPost(await request.json(), env, auth, ctx));
       }
+      if (request.method === "POST" && path === "/change-requests/reply") {
+        return cors(env, await handleChangeRequestReply(await request.json(), env, ctx));
+      }
       if (request.method === "DELETE" && path === "/change-requests") {
         return cors(env, await handleChangeRequestDelete(new URL(request.url), env));
       }
@@ -1859,6 +1862,21 @@ const CR_STATUS_LABELS = {
 // Everyone on the team signs in to the portal through the one shared GitHub
 // account, so the login cannot say who asked. The form asks instead.
 const CR_PEOPLE = ["Nicole", "Erin", "Shelley", "Patrick"];
+// Responses get a KV key each rather than an array on the request. KV reads can
+// be up to a minute stale between locations, so read-append-write on one record
+// could silently drop a reply; separate keys cannot collide.
+const CR_REPLY_PREFIX = "reply-";
+
+async function listCrReplyKeys(env, prefix) {
+  const names = [];
+  let cursor;
+  do {
+    const page = await env.CHANGE_REQUESTS.list({ prefix, cursor, limit: 1000 });
+    page.keys.forEach(k => names.push(k.name));
+    cursor = page.list_complete ? undefined : page.cursor;
+  } while (cursor);
+  return names;
+}
 
 async function handleChangeRequestsGet(env) {
   if (!env.CHANGE_REQUESTS) {
@@ -1869,9 +1887,20 @@ async function handleChangeRequestsGet(env) {
   for (const key of list.keys) {
     const raw = await env.CHANGE_REQUESTS.get(key.name);
     if (raw) {
-      try { requests.push(JSON.parse(raw)); } catch { /* skip a corrupt row */ }
+      try { requests.push({ ...JSON.parse(raw), replies: [] }); } catch { /* skip a corrupt row */ }
     }
   }
+  const byId = new Map(requests.map(r => [r.id, r]));
+  for (const name of await listCrReplyKeys(env, CR_REPLY_PREFIX)) {
+    const raw = await env.CHANGE_REQUESTS.get(name);
+    if (!raw) continue;
+    try {
+      const reply = JSON.parse(raw);
+      const parent = byId.get(reply.requestId);
+      if (parent) parent.replies.push(reply);
+    } catch { /* skip a corrupt row */ }
+  }
+  requests.forEach(r => r.replies.sort((a, b) => String(a.at).localeCompare(String(b.at))));
   // Newest first; done and declined sink below everything still open.
   const openFirst = r => (r.status === "done" || r.status === "declined") ? 1 : 0;
   requests.sort((a, b) =>
@@ -1944,6 +1973,33 @@ async function handleChangeRequestPost(body, env, auth, ctx) {
   return json({ ok: true, request });
 }
 
+/**
+ * POST /change-requests/reply — adds one response to a request's thread. Never
+ * writes the request record, so the Next Steps note cannot be disturbed.
+ */
+async function handleChangeRequestReply(body, env, ctx) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ error: "The change log store is not set up yet." }, 503);
+  }
+  const { id, text, by } = body || {};
+  const cleanText = String(text || "").trim().slice(0, 2000);
+  const person = cleanPerson(by);
+  if (!id) return json({ error: "Missing id" }, 400);
+  if (!cleanText) return json({ error: "A response needs some text" }, 400);
+  if (!person) return json({ error: "Choose who is responding" }, 400);
+
+  const raw = await env.CHANGE_REQUESTS.get(id);
+  if (!raw) return json({ error: "No such request" }, 404);
+
+  const at = new Date().toISOString();
+  const key = `${CR_REPLY_PREFIX}${id}-${at}-${crypto.randomUUID().slice(0, 8)}`;
+  const reply = { id: key, requestId: id, by: person, text: cleanText, at };
+  await env.CHANGE_REQUESTS.put(key, JSON.stringify(reply));
+  ctx.waitUntil(notifyChangeRequest("reply", JSON.parse(raw), null, env, reply).catch(err =>
+    console.log("change-request email failed:", err.message)));
+  return json({ ok: true, reply });
+}
+
 function escapeHtml(s) {
   return String(s || "").replace(/[&<>"']/g, c =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -1955,7 +2011,7 @@ function escapeHtml(s) {
  * inline HTML — no template to maintain. The request text goes only to the
  * addresses in CR_NOTIFY_EMAILS, never anywhere public.
  */
-async function notifyChangeRequest(kind, r, before, env) {
+async function notifyChangeRequest(kind, r, before, env, reply) {
   if (!env.BREVO_API_KEY || !env.CR_NOTIFY_EMAILS) return;
   const to = String(env.CR_NOTIFY_EMAILS).split(",").map(e => e.trim()).filter(Boolean)
     .map(email => ({ email }));
@@ -1967,12 +2023,15 @@ async function notifyChangeRequest(kind, r, before, env) {
   if (kind === "filed") {
     subject = `New request: ${r.title}`;
     lead = `${who} filed a new request.`;
+  } else if (kind === "reply") {
+    subject = `Response on: ${r.title}`;
+    lead = `${escapeHtml(reply.by)} responded.`;
   } else if (before && r.status !== before.status) {
     subject = `${status}: ${r.title}`;
     lead = `Moved from <b>${escapeHtml(CR_STATUS_LABELS[before.status] || before.status)}</b> to <b>${escapeHtml(status)}</b>.`;
   } else {
-    subject = `Reply on: ${r.title}`;
-    lead = `${escapeHtml(r.noteBy || "The team")} replied.`;
+    subject = `Next steps on: ${r.title}`;
+    lead = `${escapeHtml(r.noteBy || "The team")} updated the next steps.`;
   }
 
   const rows = [
@@ -1981,6 +2040,11 @@ async function notifyChangeRequest(kind, r, before, env) {
     `<p style="margin:0 0 12px;color:#666">Asked by ${escapeHtml(who)} &middot; status: ${escapeHtml(status)}</p>`
   ];
   if (r.detail) rows.push(`<p style="margin:0 0 12px;white-space:pre-wrap">${escapeHtml(r.detail)}</p>`);
+  if (reply) {
+    rows.push(`<div style="border-left:4px solid #D77E5E;padding:8px 12px;margin:0 0 12px;background:#FBF3EF">` +
+      `<p style="margin:0 0 4px;font-size:12px;color:#B5603F"><b>Response from ${escapeHtml(reply.by)}</b></p>` +
+      `<p style="margin:0;white-space:pre-wrap">${escapeHtml(reply.text)}</p></div>`);
+  }
   if (r.note) {
     rows.push(`<div style="border-left:4px solid #3A668C;padding:8px 12px;margin:0 0 12px;background:#F2F6FA">` +
       `<p style="margin:0 0 4px;font-size:12px;color:#3A668C"><b>Next steps${r.noteBy ? " from " + escapeHtml(r.noteBy) : ""}</b></p>` +
@@ -2010,6 +2074,9 @@ async function handleChangeRequestDelete(url, env) {
   if (!id) return json({ error: "Missing id" }, 400);
   const raw = await env.CHANGE_REQUESTS.get(id);
   if (!raw) return json({ error: "No such request" }, 404);
+  for (const name of await listCrReplyKeys(env, `${CR_REPLY_PREFIX}${id}-`)) {
+    await env.CHANGE_REQUESTS.delete(name);
+  }
   await env.CHANGE_REQUESTS.delete(id);
   return json({ ok: true, id });
 }

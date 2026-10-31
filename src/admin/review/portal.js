@@ -106,8 +106,23 @@
   }
 
   // ── Mock fixtures (for local dev: /admin/review/?mock=1) ─────────────────
-  function mockFetch(path) {
+  var mockRequests = [
+    { id: 'cr-2026-10-14-demo0001', title: 'Awareness Month Sample List', askedBy: 'Nicole', status: 'planned',
+      detail: 'Can you put together a suggested list of awareness months?', page: '',
+      note: 'Planned. You will get a month-by-month list.', noteBy: 'Patrick', noteAt: '2026-10-15T20:00:00Z',
+      createdAt: '2026-10-14T20:00:00Z',
+      replies: [{ id: 'reply-demo-1', requestId: 'cr-2026-10-14-demo0001', by: 'Nicole', text: 'Could it start with November?', at: '2026-10-16T14:00:00Z' }] }
+  ];
+
+  function mockFetch(path, opts) {
+    if (path === '/change-requests/reply') {
+      var posted = JSON.parse(opts.body);
+      var reply = { id: 'reply-mock-' + Date.now(), requestId: posted.id, by: posted.by, text: posted.text, at: new Date().toISOString() };
+      mockRequests.forEach(function (r) { if (r.id === posted.id) r.replies.push(reply); });
+      return Promise.resolve({ ok: true, reply: reply });
+    }
     var fixtures = {
+      '/change-requests': { requests: mockRequests, people: ['Nicole', 'Erin', 'Shelley', 'Patrick'] },
       '/pending': { items: [
         { id: 'sub-20260612-aaaa1111', type: 'submission', status: 'pending', file: 'pending/submissions.json',
           origin: { type: 'quick-submit', detail: 'bookmarklet', submittedAt: '2026-06-11T10:00:00Z' },
@@ -1809,6 +1824,9 @@
   var crPeople = ['Nicole', 'Erin', 'Shelley', 'Patrick'];
   var crFilter = { person: '', status: 'open' };
   var crRequests = [];
+  // Responses saved this session. KV listings can lag a new key by up to a
+  // minute, so a refresh must not make a just-sent response seem to vanish.
+  var crSentReplies = [];
 
   // Everyone signs in through the shared GitHub account, so "who" is picked
   // in the form. Remember the last pick per device so it is one choice, once.
@@ -1868,6 +1886,13 @@
         return;
       }
       crRequests = data.requests || [];
+      crSentReplies.forEach(function (sent) {
+        crRequests.forEach(function (r) {
+          r.replies = r.replies || [];
+          if (r.id !== sent.requestId) return;
+          if (!r.replies.some(function (x) { return x.id === sent.id; })) r.replies.push(sent);
+        });
+      });
       renderRequestList();
     }).catch(function (err) {
       clear(listWrap);
@@ -1948,7 +1973,7 @@
   function buildRequestForm() {
     var card = el('div', 'card p-5');
     card.appendChild(el('h2', 'text-lg font-bold mb-1', 'Ask for a change'));
-    var intro = el('p', 'text-sm mb-4', 'Anything you want changed on the site. Patrick gets an email when you add one, and replies here with next steps. This list is private to the team.');
+    var intro = el('p', 'text-sm mb-4', 'Anything you want changed on the site. Patrick gets an email when you add one, and replies here with next steps. Anyone can add a response under a request to keep the conversation going. This list is private to the team.');
     intro.style.color = 'var(--color-text-light)';
     card.appendChild(intro);
 
@@ -2057,12 +2082,12 @@
       card.appendChild(pg);
     }
 
-    // The reply: what happens next, or the question that needs answering.
+    // Next steps: what happens next, or the question that needs answering.
     var reply = el('div', 'mt-3 p-3 rounded-lg');
     reply.style.backgroundColor = 'var(--color-warm)';
     var replyHead = el('p', 'text-xs font-semibold mb-1',
       r.note ? 'Next steps' + (r.noteBy ? ' from ' + r.noteBy : '') + (r.noteAt ? ' · ' + fmtDate(r.noteAt) : '')
-             : 'No reply yet');
+             : 'No next steps yet');
     replyHead.style.color = 'var(--color-primary)';
     reply.appendChild(replyHead);
     if (r.note) {
@@ -2070,7 +2095,7 @@
       n.style.whiteSpace = 'pre-wrap';
       reply.appendChild(n);
     }
-    var editBtn = el('button', 'text-xs font-semibold underline mt-1', r.note ? 'Edit reply' : 'Write a reply');
+    var editBtn = el('button', 'text-xs font-semibold underline mt-1', r.note ? 'Edit next steps' : 'Add next steps');
     editBtn.style.color = 'var(--color-primary)';
     reply.appendChild(editBtn);
     card.appendChild(reply);
@@ -2078,7 +2103,7 @@
     editBtn.addEventListener('click', function () {
       editBtn.hidden = true;
       var form = el('div', 'mt-2');
-      var noteLabel = el('label', 'block text-xs font-semibold mb-1', 'Reply or next steps');
+      var noteLabel = el('label', 'block text-xs font-semibold mb-1', 'Next steps');
       var noteInput = el('textarea', 'form-input text-sm w-full');
       noteInput.id = 'cr-note-' + r.id;
       noteInput.rows = 3;
@@ -2091,7 +2116,7 @@
       var byLabel = el('label', 'text-xs font-semibold', 'From');
       var bySelect = personSelect('cr-note-by-' + r.id, r.noteBy || crMe(), 'Choose');
       byLabel.htmlFor = bySelect.id;
-      var save = el('button', 'btn-primary text-xs', 'Save reply');
+      var save = el('button', 'btn-primary text-xs', 'Save next steps');
       var cancel = el('button', 'btn-secondary text-xs', 'Cancel');
       row.appendChild(byLabel);
       row.appendChild(bySelect);
@@ -2108,6 +2133,8 @@
         saveRequest(r, { note: noteInput.value.trim(), repliedBy: bySelect.value }, save);
       });
     });
+
+    card.appendChild(requestThread(r));
 
     var controls = el('div', 'flex flex-wrap items-center gap-2 mt-3');
     var statusLabel = el('label', 'text-xs font-semibold', 'Status');
@@ -2150,6 +2177,76 @@
 
     card.appendChild(controls);
     return card;
+  }
+
+  // The back-and-forth, oldest first. Responses only ever add to the thread;
+  // the Next Steps box above is a separate record.
+  function requestThread(r) {
+    var thread = el('div', 'mt-3');
+    (r.replies || []).forEach(function (x) {
+      var item = el('div', 'mt-2 pl-3');
+      item.style.borderLeft = '3px solid var(--color-secondary)';
+      var who = el('p', 'text-xs font-semibold', x.by + ' · ' + fmtDate(x.at));
+      who.style.color = 'var(--color-primary)';
+      item.appendChild(who);
+      var text = el('p', 'text-sm', x.text);
+      text.style.whiteSpace = 'pre-wrap';
+      item.appendChild(text);
+      thread.appendChild(item);
+    });
+
+    var addBtn = el('button', 'text-xs font-semibold underline mt-2', 'Add a response');
+    addBtn.style.color = 'var(--color-primary)';
+    thread.appendChild(addBtn);
+
+    addBtn.addEventListener('click', function () {
+      addBtn.hidden = true;
+      var form = el('div', 'mt-2');
+      var label = el('label', 'block text-xs font-semibold mb-1', 'Your response');
+      var input = el('textarea', 'form-input text-sm w-full');
+      input.id = 'cr-reply-' + r.id;
+      input.rows = 3;
+      input.maxLength = 2000;
+      label.htmlFor = input.id;
+      form.appendChild(label);
+      form.appendChild(input);
+
+      var row = el('div', 'flex flex-wrap items-center gap-2 mt-2');
+      var byLabel = el('label', 'text-xs font-semibold', 'From');
+      var bySelect = personSelect('cr-reply-by-' + r.id, crMe(), 'Choose');
+      byLabel.htmlFor = bySelect.id;
+      var send = el('button', 'btn-primary text-xs', 'Add response');
+      var cancel = el('button', 'btn-secondary text-xs', 'Cancel');
+      row.appendChild(byLabel);
+      row.appendChild(bySelect);
+      row.appendChild(send);
+      row.appendChild(cancel);
+      form.appendChild(row);
+      thread.appendChild(form);
+      input.focus();
+
+      cancel.addEventListener('click', function () { form.remove(); addBtn.hidden = false; });
+      send.addEventListener('click', function () {
+        var text = input.value.trim();
+        if (!text) { toast('Write a response first', true); return; }
+        if (!bySelect.value) { toast('Choose who is responding', true); return; }
+        crSetMe(bySelect.value);
+        send.disabled = true;
+        apiFetch('/change-requests/reply', {
+          method: 'POST',
+          body: JSON.stringify({ id: r.id, text: text, by: bySelect.value })
+        }).then(function (data) {
+          crSentReplies.push(data.reply);
+          toast('Response added');
+          refreshRequests();
+        }).catch(function (err) {
+          send.disabled = false;
+          toast(err.message || 'Could not add that', true);
+        });
+      });
+    });
+
+    return thread;
   }
 
 })();
