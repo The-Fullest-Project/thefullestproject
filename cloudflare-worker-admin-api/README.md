@@ -74,7 +74,13 @@ namespace — never the repo, which is public.
   It is edited in place. Statuses: `filed` → `question` (needs the asker's
   input) → `planned` → `building` → `done`, or `declined`.
 - **Responses** are the back-and-forth thread: `POST /change-requests/reply`
-  with `{ id, text, by }`. Each is its own KV key,
+  with `{ id, text, by }`, up to 20,000 characters through the API (the portal
+  box stops at 2,000). An optional `emailTo`, which must be a
+  `@thefullestproject.org` address, also sends that response to that mailbox and
+  returns `emailed: true/false`. An optional `attachment` of `{ name, data }`
+  (base64 PDF, 5 MB at most) is stored privately under a `crfile-` key, sent
+  with the alert email, and fetched with `GET /change-requests/file?key=`. It is
+  removed with its request. Each response is its own KV key,
   `reply-<requestId>-<timestamp>-<rand>`, because KV reads can be a minute stale
   and appending to an array on the request could lose a reply. `GET` returns
   them as `replies` on each request, oldest first. They cannot be edited, and

@@ -91,6 +91,39 @@ emails.length = 0;
 await call("POST", "/change-requests/reply", { id, text: "<b>hi</b>", by: "Erin" });
 assert.ok(!emails[0].htmlContent.includes("<b>hi</b>"));
 
+// A named team mailbox is added to the alert list, once, and reported back.
+emails.length = 0;
+const direct = await call("POST", "/change-requests/reply",
+  { id, text: "x".repeat(15000), by: "Patrick", emailTo: "Nicole@thefullestproject.org" });
+assert.equal(direct.data.emailed, true);
+assert.equal(direct.data.reply.text.length, 15000);
+assert.deepEqual(emails[0].to.map(t => t.email), ["team@example.com", "nicole@thefullestproject.org"]);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", emailTo: "someone@gmail.com" })).status, 400);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", emailTo: "a@thefullestproject.org.evil.com" })).status, 400);
+
+// A PDF stays out of the listing, downloads intact, and reaches the email.
+const pdf = Buffer.from("%PDF-1.7 test").toString("base64");
+emails.length = 0;
+const attached = await call("POST", "/change-requests/reply",
+  { id, text: "See attached", by: "Patrick", attachment: { name: "List.pdf", data: pdf } });
+const meta = attached.data.reply.attachment;
+assert.equal(meta.name, "List.pdf");
+assert.equal(emails[0].attachment[0].content, pdf);
+const listed = (await list())[0].replies.find(x => x.attachment);
+assert.ok(!JSON.stringify(listed).includes(pdf));
+const fetched = await call("GET", `/change-requests/file?key=${encodeURIComponent(meta.key)}`);
+assert.equal(fetched.data.data, pdf);
+assert.equal((await call("GET", `/change-requests/file?key=${encodeURIComponent(id)}`)).status, 400);
+assert.equal((await call("GET", `/change-requests/file?key=${encodeURIComponent(meta.key)}`, undefined, {})).status, 401);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", attachment: { name: "a.pdf", data: "aGVsbG8=" } })).status, 400);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", attachment: { name: "a.exe", data: pdf } })).status, 400);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", attachment: { name: "a.pdf", data: "JVBERi0" + "A".repeat(7000000) } })).status, 400);
+
 // Bad input.
 assert.equal((await call("POST", "/change-requests/reply", { id, text: "  ", by: "Nicole" })).status, 400);
 assert.equal((await call("POST", "/change-requests/reply", { id, text: "x", by: "Stranger" })).status, 400);

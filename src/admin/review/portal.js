@@ -118,6 +118,7 @@
     if (path === '/change-requests/reply') {
       var posted = JSON.parse(opts.body);
       var reply = { id: 'reply-mock-' + Date.now(), requestId: posted.id, by: posted.by, text: posted.text, at: new Date().toISOString() };
+      if (posted.attachment) reply.attachment = { key: 'crfile-mock', name: posted.attachment.name, size: 1024 };
       mockRequests.forEach(function (r) { if (r.id === posted.id) r.replies.push(reply); });
       return Promise.resolve({ ok: true, reply: reply });
     }
@@ -2179,6 +2180,42 @@
     return card;
   }
 
+  var CR_FILE_MAX_BYTES = 5 * 1024 * 1024;
+
+  function readPdf(file) {
+    if (!file) return Promise.resolve(null);
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        resolve({ name: file.name, data: String(reader.result).split(',')[1] });
+      };
+      reader.onerror = function () { reject(new Error('Could not read that file')); };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function attachmentButton(attachment) {
+    var btn = el('button', 'text-xs font-semibold underline mt-1', 'Download ' + attachment.name);
+    btn.style.color = 'var(--color-primary)';
+    btn.addEventListener('click', function () {
+      btn.disabled = true;
+      apiFetch('/change-requests/file?key=' + encodeURIComponent(attachment.key)).then(function (file) {
+        var bytes = Uint8Array.from(atob(file.data), function (c) { return c.charCodeAt(0); });
+        var url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = file.name;
+        link.click();
+        URL.revokeObjectURL(url);
+        btn.disabled = false;
+      }).catch(function (err) {
+        btn.disabled = false;
+        toast(err.message || 'Could not download that', true);
+      });
+    });
+    return btn;
+  }
+
   // The back-and-forth, oldest first. Responses only ever add to the thread;
   // the Next Steps box above is a separate record.
   function requestThread(r) {
@@ -2192,6 +2229,7 @@
       var text = el('p', 'text-sm', x.text);
       text.style.whiteSpace = 'pre-wrap';
       item.appendChild(text);
+      if (x.attachment) item.appendChild(attachmentButton(x.attachment));
       thread.appendChild(item);
     });
 
@@ -2210,6 +2248,15 @@
       label.htmlFor = input.id;
       form.appendChild(label);
       form.appendChild(input);
+
+      var fileLabel = el('label', 'block text-xs font-semibold mt-2 mb-1', 'Attach a PDF (optional, up to 5 MB)');
+      var fileInput = el('input', 'text-xs');
+      fileInput.type = 'file';
+      fileInput.accept = 'application/pdf,.pdf';
+      fileInput.id = 'cr-reply-file-' + r.id;
+      fileLabel.htmlFor = fileInput.id;
+      form.appendChild(fileLabel);
+      form.appendChild(fileInput);
 
       var row = el('div', 'flex flex-wrap items-center gap-2 mt-2');
       var byLabel = el('label', 'text-xs font-semibold', 'From');
@@ -2230,11 +2277,14 @@
         var text = input.value.trim();
         if (!text) { toast('Write a response first', true); return; }
         if (!bySelect.value) { toast('Choose who is responding', true); return; }
+        var file = fileInput.files[0];
+        if (file && file.size > CR_FILE_MAX_BYTES) { toast('That PDF is over the 5 MB limit', true); return; }
         crSetMe(bySelect.value);
         send.disabled = true;
-        apiFetch('/change-requests/reply', {
-          method: 'POST',
-          body: JSON.stringify({ id: r.id, text: text, by: bySelect.value })
+        readPdf(file).then(function (attachment) {
+          var payload = { id: r.id, text: text, by: bySelect.value };
+          if (attachment) payload.attachment = attachment;
+          return apiFetch('/change-requests/reply', { method: 'POST', body: JSON.stringify(payload) });
         }).then(function (data) {
           crSentReplies.push(data.reply);
           toast('Response added');

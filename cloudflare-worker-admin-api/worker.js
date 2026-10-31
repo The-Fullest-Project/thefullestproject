@@ -186,6 +186,9 @@ export default {
       if (request.method === "POST" && path === "/change-requests/reply") {
         return cors(env, await handleChangeRequestReply(await request.json(), env, ctx));
       }
+      if (request.method === "GET" && path === "/change-requests/file") {
+        return cors(env, await handleChangeRequestFile(new URL(request.url), env));
+      }
       if (request.method === "DELETE" && path === "/change-requests") {
         return cors(env, await handleChangeRequestDelete(new URL(request.url), env));
       }
@@ -1866,6 +1869,26 @@ const CR_PEOPLE = ["Nicole", "Erin", "Shelley", "Patrick"];
 // be up to a minute stale between locations, so read-append-write on one record
 // could silently drop a reply; separate keys cannot collide.
 const CR_REPLY_PREFIX = "reply-";
+// Long enough for a finished piece of work posted into the thread.
+const CR_REPLY_MAX = 20000;
+// A response can also go to one team mailbox outside CR_NOTIFY_EMAILS.
+const CR_EMAIL_DOMAIN = "@thefullestproject.org";
+// PDFs attached to a response, kept in KV as base64 so they stay private.
+const CR_FILE_PREFIX = "crfile-";
+const CR_FILE_MAX_BYTES = 5 * 1024 * 1024;
+const PDF_BASE64_MAGIC = "JVBERi0"; // "%PDF-"
+
+/** Returns { name, data, size } for a valid PDF, or { error }. */
+function cleanCrAttachment(attachment) {
+  const name = String(attachment.name || "").replace(/[^\w .()-]/g, "_").slice(0, 120);
+  const data = String(attachment.data || "");
+  if (!/\.pdf$/i.test(name) || !data.startsWith(PDF_BASE64_MAGIC)) {
+    return { error: "Only PDF files can be attached" };
+  }
+  const size = Math.floor(data.length * 3 / 4);
+  if (size > CR_FILE_MAX_BYTES) return { error: "That PDF is over the 5 MB limit" };
+  return { name, data, size };
+}
 
 async function listCrReplyKeys(env, prefix) {
   const names = [];
@@ -1981,12 +2004,18 @@ async function handleChangeRequestReply(body, env, ctx) {
   if (!env.CHANGE_REQUESTS) {
     return json({ error: "The change log store is not set up yet." }, 503);
   }
-  const { id, text, by } = body || {};
-  const cleanText = String(text || "").trim().slice(0, 2000);
+  const { id, text, by, emailTo, attachment } = body || {};
+  const cleanText = String(text || "").trim().slice(0, CR_REPLY_MAX);
   const person = cleanPerson(by);
+  const extraTo = String(emailTo || "").trim().toLowerCase();
   if (!id) return json({ error: "Missing id" }, 400);
   if (!cleanText) return json({ error: "A response needs some text" }, 400);
   if (!person) return json({ error: "Choose who is responding" }, 400);
+  if (extraTo && !(/^[^\s@]+@/.test(extraTo) && extraTo.endsWith(CR_EMAIL_DOMAIN))) {
+    return json({ error: `emailTo must be a ${CR_EMAIL_DOMAIN} address` }, 400);
+  }
+  const file = attachment ? cleanCrAttachment(attachment) : null;
+  if (file && file.error) return json({ error: file.error }, 400);
 
   const raw = await env.CHANGE_REQUESTS.get(id);
   if (!raw) return json({ error: "No such request" }, 404);
@@ -1994,10 +2023,36 @@ async function handleChangeRequestReply(body, env, ctx) {
   const at = new Date().toISOString();
   const key = `${CR_REPLY_PREFIX}${id}-${at}-${crypto.randomUUID().slice(0, 8)}`;
   const reply = { id: key, requestId: id, by: person, text: cleanText, at };
+  if (file) {
+    const fileKey = `${CR_FILE_PREFIX}${id}-${crypto.randomUUID().slice(0, 8)}`;
+    await env.CHANGE_REQUESTS.put(fileKey, JSON.stringify({ name: file.name, data: file.data }));
+    reply.attachment = { key: fileKey, name: file.name, size: file.size };
+  }
   await env.CHANGE_REQUESTS.put(key, JSON.stringify(reply));
-  ctx.waitUntil(notifyChangeRequest("reply", JSON.parse(raw), null, env, reply).catch(err =>
+  const sending = notifyChangeRequest("reply", JSON.parse(raw), null, env, reply, extraTo, file);
+  if (extraTo) {
+    // The caller named a recipient, so it needs to know whether this went.
+    const emailed = await sending.catch(err => {
+      console.log("change-request email failed:", err.message);
+      return false;
+    });
+    return json({ ok: true, reply, emailed: emailed === true });
+  }
+  ctx.waitUntil(sending.catch(err =>
     console.log("change-request email failed:", err.message)));
   return json({ ok: true, reply });
+}
+
+/** GET /change-requests/file?key=... — one attached PDF, as base64. */
+async function handleChangeRequestFile(url, env) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ error: "The change log store is not set up yet." }, 503);
+  }
+  const key = url.searchParams.get("key") || "";
+  if (!key.startsWith(CR_FILE_PREFIX)) return json({ error: "Unknown file" }, 400);
+  const raw = await env.CHANGE_REQUESTS.get(key);
+  if (!raw) return json({ error: "That file is no longer available" }, 404);
+  return json(JSON.parse(raw));
 }
 
 function escapeHtml(s) {
@@ -2011,10 +2066,11 @@ function escapeHtml(s) {
  * inline HTML — no template to maintain. The request text goes only to the
  * addresses in CR_NOTIFY_EMAILS, never anywhere public.
  */
-async function notifyChangeRequest(kind, r, before, env, reply) {
+async function notifyChangeRequest(kind, r, before, env, reply, extraTo, file) {
   if (!env.BREVO_API_KEY || !env.CR_NOTIFY_EMAILS) return;
-  const to = String(env.CR_NOTIFY_EMAILS).split(",").map(e => e.trim()).filter(Boolean)
-    .map(email => ({ email }));
+  const addresses = String(env.CR_NOTIFY_EMAILS).split(",").map(e => e.trim()).filter(Boolean);
+  if (extraTo && !addresses.some(a => a.toLowerCase() === extraTo)) addresses.push(extraTo);
+  const to = addresses.map(email => ({ email }));
   if (!to.length) return;
 
   const who = r.askedBy || "Someone";
@@ -2059,10 +2115,12 @@ async function notifyChangeRequest(kind, r, before, env, reply) {
       sender: { name: "The Fullest Project", email: env.CR_SENDER_EMAIL || "hello@thefullestproject.org" },
       to,
       subject: subject.slice(0, 150),
-      htmlContent: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222">${rows.join("")}</div>`
+      htmlContent: `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222">${rows.join("")}</div>`,
+      ...(file ? { attachment: [{ name: file.name, content: file.data }] } : {})
     })
   });
   if (!res.ok) throw new Error(`Brevo ${res.status}: ${await res.text()}`);
+  return true;
 }
 
 /** DELETE /change-requests?id=... — for a request filed by mistake. */
@@ -2074,7 +2132,11 @@ async function handleChangeRequestDelete(url, env) {
   if (!id) return json({ error: "Missing id" }, 400);
   const raw = await env.CHANGE_REQUESTS.get(id);
   if (!raw) return json({ error: "No such request" }, 404);
-  for (const name of await listCrReplyKeys(env, `${CR_REPLY_PREFIX}${id}-`)) {
+  const threadKeys = [
+    ...await listCrReplyKeys(env, `${CR_REPLY_PREFIX}${id}-`),
+    ...await listCrReplyKeys(env, `${CR_FILE_PREFIX}${id}-`)
+  ];
+  for (const name of threadKeys) {
     await env.CHANGE_REQUESTS.delete(name);
   }
   await env.CHANGE_REQUESTS.delete(id);
