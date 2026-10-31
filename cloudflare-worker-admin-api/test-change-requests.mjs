@@ -124,6 +124,13 @@ assert.equal((await call("POST", "/change-requests/reply",
 assert.equal((await call("POST", "/change-requests/reply",
   { id, text: "x", by: "Patrick", attachment: { name: "a.pdf", data: "JVBERi0" + "A".repeat(7000000) } })).status, 400);
 
+// Word files attach too, but a renamed file does not pass as one.
+const docx = Buffer.from("PK\x03\x04 test").toString("base64");
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "Editable copy", by: "Patrick", attachment: { name: "Drafts.docx", data: docx } })).status, 200);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", attachment: { name: "a.docx", data: pdf } })).status, 400);
+
 // Bad input.
 assert.equal((await call("POST", "/change-requests/reply", { id, text: "  ", by: "Nicole" })).status, 400);
 assert.equal((await call("POST", "/change-requests/reply", { id, text: "x", by: "Stranger" })).status, 400);
@@ -139,5 +146,33 @@ await call("POST", "/change-requests/reply", { id: other.request.id, text: "Keep
 await call("DELETE", `/change-requests?id=${encodeURIComponent(id)}`);
 assert.deepEqual([...env.CHANGE_REQUESTS.store.keys()].filter(k => k.includes(id)), []);
 assert.equal((await list())[0].replies[0].text, "Keep me");
+
+// Keep both: the pair stops being flagged, in either name order, and only it.
+const file = "src/_data/resources/states/VA.json";
+const index = ["Alpha House", "Alpha House Inc", "Beta Care", "Beta Care LLC"].map(name =>
+  ({ name, file, location: "Virginia", website: `https://${name.split(" ")[0].toLowerCase()}.example.org` }));
+const brevoFetch = globalThis.fetch;
+globalThis.fetch = async (url, opts) => String(url).includes("duplicate-index.json")
+  ? new Response(JSON.stringify(index), { status: 200 })
+  : brevoFetch(url, opts);
+const flagged = async () => (await call("GET", "/duplicates")).data.pairs.map(p => p.a.name);
+assert.deepEqual((await flagged()).sort(), ["Alpha House", "Beta Care"]);
+assert.equal((await call("POST", "/duplicates/keep-both",
+  { file, nameA: "Alpha House Inc", nameB: "Alpha House" })).status, 200);
+assert.deepEqual(await flagged(), ["Beta Care"]);
+assert.equal((await call("GET", "/duplicates")).data.pairCount, 1);
+assert.equal((await call("POST", "/duplicates/keep-both", { file: "../etc", nameA: "a", nameB: "b" })).status, 400);
+assert.equal((await call("POST", "/duplicates/keep-both", { file, nameA: "a", nameB: "b" }, {})).status, 401);
+assert.equal((await list()).length, 1);
+
+// Undo: the kept pair is listed, and removing it flags the pair again.
+const kept = (await call("GET", "/duplicates")).data.kept;
+assert.deepEqual(kept.map(k => k.nameA), ["Alpha House Inc"]);
+const crKey = encodeURIComponent(id);
+assert.equal((await call("DELETE", `/duplicates/keep-both?key=${crKey}`)).status, 400);
+assert.equal((await call("DELETE", `/duplicates/keep-both?key=${encodeURIComponent(kept[0].key)}`, undefined, {})).status, 401);
+assert.equal((await call("DELETE", `/duplicates/keep-both?key=${encodeURIComponent(kept[0].key)}`)).status, 200);
+assert.deepEqual((await flagged()).sort(), ["Alpha House", "Beta Care"]);
+assert.deepEqual((await call("GET", "/duplicates")).data.kept, []);
 
 console.log("change-request thread tests passed");

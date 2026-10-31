@@ -128,7 +128,10 @@
         category: ['respite'], location: 'Virginia', description: 'Weekend respite care.', website: 'https://example.org' } });
     }
     var fixtures = {
-      '/duplicates': { pairCount: 1, clusterCount: 0, clusters: [], pairs: [{ signals: ['Same website'],
+      '/duplicates/keep-both': { ok: true, key: 'dupkept-mock' },
+      '/duplicates': { pairCount: 1, clusterCount: 0, clusters: [],
+        kept: [{ key: 'dupkept-demo', nameA: 'Example Camp North', nameB: 'Example Camp South' }],
+        pairs: [{ signals: ['Same website'],
         file: 'src/_data/resources/states/VA.json',
         a: { name: 'Example Respite House', location: 'Virginia', website: 'https://example.org' },
         b: { name: 'Example Respite House Inc', location: 'Virginia', website: 'https://example.org' } }] },
@@ -1567,6 +1570,17 @@
       if (!data.pairs.length && !data.clusters.length) {
         panel.appendChild(el('p', 'text-sm', 'No duplicates found.'));
       }
+
+      if (data.kept && data.kept.length) {
+        panel.appendChild(el('h2', 'text-lg font-bold mt-8 mb-1', 'Kept as separate listings'));
+        var keptNote = el('p', 'text-sm mb-3');
+        keptNote.style.color = 'var(--color-text-light)';
+        keptNote.textContent = 'These pairs are no longer flagged. Undo one to send it back to the list above.';
+        panel.appendChild(keptNote);
+        var keptList = el('div', 'flex flex-col gap-2');
+        data.kept.forEach(function (k) { keptList.appendChild(keptPairRow(k)); });
+        panel.appendChild(keptList);
+      }
     }).catch(function (err) {
       clear(panel);
       var e = el('p', 'text-sm', err.message || 'Could not run the duplicate check.');
@@ -1602,6 +1616,29 @@
     var editBoth = el('button', 'btn-secondary text-xs mt-3', 'Edit both side by side');
     editBoth.addEventListener('click', function () { toggleEditBoth(pair, file, editArea, editBoth); });
     card.appendChild(editBoth);
+
+    var keepBoth = el('button', 'btn-secondary text-xs mt-3 ml-2', 'Keep both, not duplicates');
+    keepBoth.addEventListener('click', function () {
+      if (!window.confirm('Keep both listings as they are and stop flagging this pair?')) return;
+      keepBoth.disabled = true;
+      apiFetch('/duplicates/keep-both', {
+        method: 'POST',
+        body: JSON.stringify({ file: file, nameA: pair.a.name, nameB: pair.b.name })
+      }).then(function (data) {
+        toast('Both kept');
+        clear(card);
+        var done = el('p', 'text-sm', 'Kept both listings. This pair will not be flagged again unless one is renamed.');
+        done.style.color = 'var(--color-accent)';
+        card.appendChild(done);
+        var undo = undoKeepBothButton(data.key);
+        undo.classList.add('mt-2');
+        card.appendChild(undo);
+      }).catch(function (err) {
+        keepBoth.disabled = false;
+        toast(err.message || 'Could not save that', true);
+      });
+    });
+    card.appendChild(keepBoth);
     card.appendChild(editArea);
 
     var hint = el('p', 'text-xs mt-3');
@@ -1610,6 +1647,31 @@
     card.appendChild(hint);
 
     return card;
+  }
+
+  function undoKeepBothButton(key) {
+    var undo = el('button', 'btn-secondary text-xs', 'Undo');
+    undo.addEventListener('click', function () {
+      undo.disabled = true;
+      apiFetch('/duplicates/keep-both?key=' + encodeURIComponent(key), { method: 'DELETE' }).then(function () {
+        toast('Undone - the pair returns to this list within a minute');
+        loadDuplicates();
+      }).catch(function (err) {
+        undo.disabled = false;
+        toast(err.message || 'Could not undo that', true);
+      });
+    });
+    return undo;
+  }
+
+  function keptPairRow(kept) {
+    var row = el('div', 'card p-4 flex flex-wrap items-center justify-between gap-2');
+    var names = el('p', 'text-sm');
+    names.style.minWidth = '0';
+    names.textContent = kept.nameA + ' / ' + kept.nameB;
+    row.appendChild(names);
+    row.appendChild(undoKeepBothButton(kept.key));
+    return row;
   }
 
   /** Opens both listings' full edit forms in two columns, each saved on its own. */
@@ -2218,12 +2280,12 @@
   }
 
   function attachmentButton(attachment) {
-    var btn = el('button', 'btn-secondary text-xs mt-2', 'Download PDF: ' + attachment.name);
+    var btn = el('button', 'btn-secondary text-xs mt-2', 'Download file: ' + attachment.name);
     btn.addEventListener('click', function () {
       btn.disabled = true;
       apiFetch('/change-requests/file?key=' + encodeURIComponent(attachment.key)).then(function (file) {
         var bytes = Uint8Array.from(atob(file.data), function (c) { return c.charCodeAt(0); });
-        var url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
+        var url = URL.createObjectURL(new Blob([bytes]));
         var link = document.createElement('a');
         link.href = url;
         link.download = file.name;
@@ -2274,10 +2336,10 @@
       form.appendChild(label);
       form.appendChild(input);
 
-      var fileLabel = el('label', 'block text-xs font-semibold mt-2 mb-1', 'Attach a PDF (optional, up to 5 MB)');
+      var fileLabel = el('label', 'block text-xs font-semibold mt-2 mb-1', 'Attach a PDF or Word file (optional, up to 5 MB)');
       var fileInput = el('input', 'text-xs');
       fileInput.type = 'file';
-      fileInput.accept = 'application/pdf,.pdf';
+      fileInput.accept = '.pdf,.docx';
       fileInput.id = 'cr-reply-file-' + r.id;
       fileLabel.htmlFor = fileInput.id;
       form.appendChild(fileLabel);
@@ -2303,7 +2365,7 @@
         if (!text) { toast('Write a response first', true); return; }
         if (!bySelect.value) { toast('Choose who is responding', true); return; }
         var file = fileInput.files[0];
-        if (file && file.size > CR_FILE_MAX_BYTES) { toast('That PDF is over the 5 MB limit', true); return; }
+        if (file && file.size > CR_FILE_MAX_BYTES) { toast('That file is over the 5 MB limit', true); return; }
         crSetMe(bySelect.value);
         send.disabled = true;
         readPdf(file).then(function (attachment) {

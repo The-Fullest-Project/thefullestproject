@@ -171,6 +171,12 @@ export default {
       if (request.method === "GET" && path === "/duplicates") {
         return cors(env, await handleDuplicates(new URL(request.url), env));
       }
+      if (request.method === "POST" && path === "/duplicates/keep-both") {
+        return cors(env, await handleDuplicateKeepBoth(await request.json(), env, auth));
+      }
+      if (request.method === "DELETE" && path === "/duplicates/keep-both") {
+        return cors(env, await handleDuplicateKeepBothUndo(new URL(request.url), env));
+      }
       if (request.method === "GET" && path === "/category-groups") {
         return cors(env, await handleCategoryGroups(env));
       }
@@ -1748,15 +1754,68 @@ async function handleDuplicates(url, env) {
     }
   }
 
-  pairs.sort((x, y) => y.signals.length - x.signals.length);
+  const keptKeys = env.CHANGE_REQUESTS ? await listCrReplyKeys(env, DUP_KEPT_PREFIX) : [];
+  const keptBoth = new Set(keptKeys);
+  const kept = [];
+  for (const key of keptKeys) {
+    const raw = await env.CHANGE_REQUESTS.get(key);
+    if (raw) kept.push({ key, ...JSON.parse(raw) });
+  }
+  kept.sort((x, y) => String(y.keptAt).localeCompare(String(x.keptAt)));
+
+  const flagged = [];
+  for (const pair of pairs) {
+    if (!keptBoth.has(await duplicatePairKey(pair.file, pair.a.name, pair.b.name))) flagged.push(pair);
+  }
+
+  flagged.sort((x, y) => y.signals.length - x.signals.length);
   clusters.sort((x, y) => y.count - x.count);
   return json({
     checked: byFile.size,
-    pairCount: pairs.length,
+    pairCount: flagged.length,
     clusterCount: clusters.length,
-    pairs,
-    clusters
+    pairs: flagged,
+    clusters,
+    kept
   });
+}
+
+// A pair reviewers said are genuinely two listings. Keyed on both names in
+// either order, so renaming a listing lets the check flag it afresh.
+const DUP_KEPT_PREFIX = "dupkept-";
+
+async function duplicatePairKey(file, nameA, nameB) {
+  const names = [nameA, nameB].map(n => String(n).trim().toLowerCase()).sort();
+  const bytes = new TextEncoder().encode(JSON.stringify([file, ...names]));
+  const hash = await crypto.subtle.digest("SHA-256", bytes);
+  const hex = [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2, "0")).join("");
+  return `${DUP_KEPT_PREFIX}${hex.slice(0, 40)}`;
+}
+
+/** POST /duplicates/keep-both — stops flagging a pair. Changes neither listing. */
+async function handleDuplicateKeepBoth(body, env, auth) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ error: "The change log store is not set up yet." }, 503);
+  }
+  const { file, nameA, nameB } = body || {};
+  if (!isResourceFile(file)) return json({ error: "Unknown resource file" }, 400);
+  if (!nameA || !nameB) return json({ error: "Both listing names are needed" }, 400);
+  const key = await duplicatePairKey(file, nameA, nameB);
+  await env.CHANGE_REQUESTS.put(key, JSON.stringify({
+    file, nameA, nameB, keptBy: auth.actor, keptAt: new Date().toISOString()
+  }));
+  return json({ ok: true, key });
+}
+
+/** DELETE /duplicates/keep-both?key=... — the pair can be flagged again. */
+async function handleDuplicateKeepBothUndo(url, env) {
+  if (!env.CHANGE_REQUESTS) {
+    return json({ error: "The change log store is not set up yet." }, 503);
+  }
+  const key = url.searchParams.get("key") || "";
+  if (!key.startsWith(DUP_KEPT_PREFIX)) return json({ error: "Unknown pair" }, 400);
+  await env.CHANGE_REQUESTS.delete(key);
+  return json({ ok: true });
 }
 
 function slimResource(r) {
@@ -1873,20 +1932,22 @@ const CR_REPLY_PREFIX = "reply-";
 const CR_REPLY_MAX = 20000;
 // A response can also go to one team mailbox outside CR_NOTIFY_EMAILS.
 const CR_EMAIL_DOMAIN = "@thefullestproject.org";
-// PDFs attached to a response, kept in KV as base64 so they stay private.
+// Files attached to a response, kept in KV as base64 so they stay private.
 const CR_FILE_PREFIX = "crfile-";
 const CR_FILE_MAX_BYTES = 5 * 1024 * 1024;
-const PDF_BASE64_MAGIC = "JVBERi0"; // "%PDF-"
+// How each allowed type's base64 begins: "%PDF-", and the "PK" of a zip.
+const CR_FILE_MAGIC = { pdf: "JVBERi0", docx: "UEsDB" };
 
-/** Returns { name, data, size } for a valid PDF, or { error }. */
+/** Returns { name, data, size } for a valid PDF or Word file, or { error }. */
 function cleanCrAttachment(attachment) {
   const name = String(attachment.name || "").replace(/[^\w .()-]/g, "_").slice(0, 120);
   const data = String(attachment.data || "");
-  if (!/\.pdf$/i.test(name) || !data.startsWith(PDF_BASE64_MAGIC)) {
-    return { error: "Only PDF files can be attached" };
+  const magic = CR_FILE_MAGIC[name.split(".").pop().toLowerCase()];
+  if (!magic || !data.startsWith(magic)) {
+    return { error: "Only PDF or Word (.docx) files can be attached" };
   }
   const size = Math.floor(data.length * 3 / 4);
-  if (size > CR_FILE_MAX_BYTES) return { error: "That PDF is over the 5 MB limit" };
+  if (size > CR_FILE_MAX_BYTES) return { error: "That file is over the 5 MB limit" };
   return { name, data, size };
 }
 
