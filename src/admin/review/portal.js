@@ -122,7 +122,16 @@
       mockRequests.forEach(function (r) { if (r.id === posted.id) r.replies.push(reply); });
       return Promise.resolve({ ok: true, reply: reply });
     }
+    if (path.indexOf('/live-resource?') === 0 && !(opts && opts.method)) {
+      var mockName = new URLSearchParams(path.split('?')[1]).get('name');
+      return Promise.resolve({ file: 'src/_data/resources/states/VA.json', resource: { name: mockName,
+        category: ['respite'], location: 'Virginia', description: 'Weekend respite care.', website: 'https://example.org' } });
+    }
     var fixtures = {
+      '/duplicates': { pairCount: 1, clusterCount: 0, clusters: [], pairs: [{ signals: ['Same website'],
+        file: 'src/_data/resources/states/VA.json',
+        a: { name: 'Example Respite House', location: 'Virginia', website: 'https://example.org' },
+        b: { name: 'Example Respite House Inc', location: 'Virginia', website: 'https://example.org' } }] },
       '/change-requests': { requests: mockRequests, people: ['Nicole', 'Erin', 'Shelley', 'Patrick'] },
       '/pending': { items: [
         { id: 'sub-20260612-aaaa1111', type: 'submission', status: 'pending', file: 'pending/submissions.json',
@@ -1586,9 +1595,13 @@
     var grid = el('div', 'grid grid-cols-1 sm:grid-cols-2 gap-3');
     [pair.a, pair.b].forEach(function (r, i) {
       var other = i === 0 ? pair.b : pair.a;
-      grid.appendChild(duplicateSide(r, other, file, card, editArea));
+      grid.appendChild(duplicateSide(r, other, card, file));
     });
     card.appendChild(grid);
+
+    var editBoth = el('button', 'btn-secondary text-xs mt-3', 'Edit both side by side');
+    editBoth.addEventListener('click', function () { toggleEditBoth(pair, file, editArea, editBoth); });
+    card.appendChild(editBoth);
     card.appendChild(editArea);
 
     var hint = el('p', 'text-xs mt-3');
@@ -1599,7 +1612,38 @@
     return card;
   }
 
-  function duplicateSide(r, other, file, card, editArea) {
+  /** Opens both listings' full edit forms in two columns, each saved on its own. */
+  function toggleEditBoth(pair, file, editArea, button) {
+    if (editArea.firstChild) {
+      clear(editArea);
+      button.textContent = 'Edit both side by side';
+      return;
+    }
+    button.disabled = true;
+    Promise.all([pair.a, pair.b].map(function (r) {
+      return apiFetch('/live-resource?file=' + encodeURIComponent(file) + '&name=' + encodeURIComponent(r.name));
+    })).then(function (both) {
+      button.disabled = false;
+      button.textContent = 'Close editing';
+      var columns = el('div', 'grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3 pt-3 border-t');
+      columns.style.borderColor = 'var(--color-warm)';
+      both.forEach(function (data) {
+        var column = el('div');
+        column.style.minWidth = '0';
+        column.appendChild(el('p', 'text-xs font-semibold mb-2', 'Editing ' + data.resource.name));
+        var form = el('div');
+        column.appendChild(form);
+        columns.appendChild(column);
+        renderLiveEditForm(form, data.file, data.resource);
+      });
+      editArea.appendChild(columns);
+    }).catch(function (err) {
+      button.disabled = false;
+      toast(err.message || 'Could not open those resources', true);
+    });
+  }
+
+  function duplicateSide(r, other, card, file) {
     var side = el('div', 'p-3 rounded-lg');
     side.style.backgroundColor = 'var(--color-warm-light)';
 
@@ -1647,27 +1691,6 @@
       });
     });
     actions.appendChild(keep);
-
-    var edit = el('button', 'btn-secondary text-xs', 'Edit');
-    edit.addEventListener('click', function () {
-      if (editArea.firstChild) { clear(editArea); return; }
-      edit.disabled = true;
-      apiFetch('/live-resource?file=' + encodeURIComponent(file) + '&name=' + encodeURIComponent(r.name))
-        .then(function (data) {
-          edit.disabled = false;
-          clear(editArea);
-          var box = el('div', 'mt-3 pt-3 border-t');
-          box.style.borderColor = 'var(--color-warm)';
-          box.appendChild(el('p', 'text-xs font-semibold mb-2', 'Editing ' + r.name));
-          editArea.appendChild(box);
-          renderLiveEditForm(box, data.file, data.resource);
-        })
-        .catch(function (err) {
-          edit.disabled = false;
-          toast(err.message || 'Could not open that resource', true);
-        });
-    });
-    actions.appendChild(edit);
 
     var del = el('button', 'btn-secondary text-xs', 'Delete');
     del.style.borderColor = 'var(--color-secondary)';
