@@ -489,5 +489,35 @@
       "source": "https://lawasked.com/",
       "lastScraped": "2026-11-03"
     }
+  },
+  {
+    "id": "sub-20261103-ea15cd58",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-03T10:23:28.159Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "anysign",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "Online",
+      "description": "anysign is a sign language learning app for American Sign Language (ASL), German Sign Language (DGS) and Ukrainian Sign Language (USL). Short video lessons are recorded by deaf and native signers, with quizzes and a searchable video dictionary, so parents, siblings, caregivers and teachers of deaf children can start communicating in sign language. All ages. Cost: Freemium — free video dictionary and first lessons; subscription for full library. Available online on iOS, Android and the web. anysign does not provide interpreting services.",
+      "phone": "+4915233759371",
+      "email": "listings@anysign.app",
+      "website": "https://www.anysign.app",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.anysign.app",
+      "lastScraped": "2026-11-03"
+    }
   }
 ]
