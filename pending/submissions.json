@@ -459,5 +459,35 @@
       "source": "https://csh.recdesk.com/Community/Page?pageId=13678",
       "lastScraped": "2026-10-30"
     }
+  },
+  {
+    "id": "sub-20261103-98feee82",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-03T01:52:04.091Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "LawAsked",
+      "category": [
+        "legal"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "LawAsked answers real legal questions in plain language for 12 countries, and every answer cites and links the official statute sections it relies on. Topics include workplace rights, tenancy and consumer questions. Free; an information service, not a law firm.",
+      "phone": "",
+      "email": "legal@lawasked.com",
+      "website": "https://lawasked.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://lawasked.com/",
+      "lastScraped": "2026-11-03"
+    }
   }
 ]
