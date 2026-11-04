@@ -519,5 +519,39 @@
       "source": "https://www.anysign.app",
       "lastScraped": "2026-11-03"
     }
+  },
+  {
+    "id": "sub-20261104-9036740e",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-04T16:23:12.527Z"
+    },
+    "targetFile": "src/_data/resources/states/NY.json",
+    "payload": {
+      "name": "Adapted Accessibility",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "New York",
+      "area": "Rochester",
+      "description": "Adapted Accessibility offers innovative accessibility products designed to help individuals with disabilities interact with technology, entertainment, and compatible devices more independently.\r\nIts primary product is the impact switch, a modular-mounted 3D- printed accessibility switch that provides an alternative way to control compatible devices. Adapted Accessibility primarily serves individuals with physical disabilities or limited mobility who may have difficulty using traditional buttons, keyboards, controllers, or other standard technology inputs. As a division of Lifetime Assistance, the organization also provides meaningful employment and supportive training opportunities for individuals with disabilities. Its products are built with input from people who have firsthand experience with accessibility needs, helping ensure that the products are practical and meaningful.\r\nimpact switches are intended to support:\r\n- Individuals with Disabilities: People who need alternative ways to interact with technology and electronic devices.\r\n- Students and Schools: Students who benefit from assistive technology and accessible learning tools.\r\n- Therapists and Healthcare Professionals: Professionals who incorporate adaptive equipment into therapy and assistive technology programs.\r\n- Caregivers and Families: Those looking for practical accessibility solutions to support independence at home.\r\n- Organizations and Educational Programs: Schools, rehabilitation centers, and other organizations seeking inclusive technology solutions.",
+      "phone": "585-756-2233",
+      "email": "adaptedaccessibility@lifetimeassistance.org",
+      "website": "https://adaptedaccessibility.com/",
+      "address": "425 Paul Rd. Rochester NY 14624",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "#AssistiveTechnology #AdaptiveTechnology #AccessibilityProducts #InclusiveTechnology",
+        "#AssistiveDevices",
+        "#AdaptiveEquipment"
+      ],
+      "source": "https://adaptedaccessibility.com/",
+      "lastScraped": "2026-11-04"
+    }
   }
 ]
