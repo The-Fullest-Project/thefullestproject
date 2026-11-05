@@ -553,5 +553,38 @@
       "source": "https://adaptedaccessibility.com/",
       "lastScraped": "2026-11-04"
     }
+  },
+  {
+    "id": "sub-20261105-d2f37aa2",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-11-05T22:30:52.788Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Resource Donation Program - Oley Foundation",
+      "category": [
+        "other"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "The Oley Foundation is a non-profit home nutrition therapy community and advocacy group.  The Oley Foundation understands that within the nutrition support community, some people may need help with obtaining enteral nutrition (tube feeding) formula and/or supplies, while others may have extra items to give.",
+      "phone": "518-262-5079",
+      "email": "info@oley.org",
+      "website": "https://oley.org/page/Enteral_Donations",
+      "address": "Albany Medical Center, MC-28 43 New Scotland Ave.  Albany, NY 12208",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "nutrition",
+        "enteral donations"
+      ],
+      "source": "https://oley.org/page/Enteral_Donations",
+      "lastScraped": "2026-11-05"
+    }
   }
 ]
