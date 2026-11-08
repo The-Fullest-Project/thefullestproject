@@ -1,19 +1,24 @@
 {# A heading plus one or more paragraphs. The optional bold closing line is
    appended to the final paragraph, matching how the mission and problem
-   sections have always read. An optional photo sits beside the text (it stacks
-   above it on phones) or above it. #}
-{%- set photoBeside = block.image and block.imagePosition != 'above' -%}
+   sections have always read. An optional photo sits beside the text in its own
+   column, above it, or inside it with the paragraphs wrapping around. On
+   phones, a side or wrapped photo stacks above the text. #}
+{%- set photoWrap = block.image and block.imagePosition in ['wrap-right', 'wrap-left'] -%}
+{%- set photoBeside = block.image and not photoWrap and block.imagePosition != 'above' -%}
 <section class="{{ [padClass, bgClass] | join(' ') | trim }}" data-block-id="{{ blockId }}" data-block-type="text" data-block-index="{{ blockIndex }}">
   <div class="{{ 'max-w-6xl' if photoBeside else 'max-w-4xl' }} mx-auto px-4 sm:px-6 lg:px-8">
-    {%- if block.image and not photoBeside %}
+    {%- if block.image and block.imagePosition == 'above' %}
     <img src="{{ block.image }}" alt="{{ block.imageAlt or '' }}" loading="lazy" class="w-full rounded-xl object-cover mb-8" style="aspect-ratio: 16 / 9;">
     {%- endif %}
     <div class="{% if photoBeside %}grid grid-cols-1 md:grid-cols-2 gap-10 items-center{% endif %}">
       {%- if photoBeside %}
       <img src="{{ block.image }}" alt="{{ block.imageAlt or '' }}" loading="lazy" class="w-full rounded-xl object-cover{% if block.imagePosition != 'left' %} md:order-2{% endif %}" style="aspect-ratio: 4 / 3;">
       {%- endif %}
-      <div class="{% if block.align != 'left' %}text-center{% endif %}" style="min-width: 0;">
+      <div class="{% if block.align != 'left' %}text-center{% endif %}{% if photoWrap %} flow-root{% endif %}" style="min-width: 0;">
         <h2 class="text-3xl font-bold mb-6" style="color: var(--color-primary);" data-block-field="heading">{{ block.heading }}</h2>
+        {%- if photoWrap %}
+        <img src="{{ block.image }}" alt="{{ block.imageAlt or '' }}" loading="lazy" class="w-full rounded-xl object-cover mb-6 md:w-2/5 md:mb-4 {{ 'md:float-left md:mr-8' if block.imagePosition == 'wrap-left' else 'md:float-right md:ml-8' }}" style="aspect-ratio: 4 / 3;">
+        {%- endif %}
         {%- for paragraph in block.paragraphs %}
         <p class="text-lg leading-relaxed{% if not loop.last %} mb-6{% endif %}" style="color: var(--color-text-light);" data-block-field="paragraphs.{{ loop.index0 }}">
           {{ paragraph }}{% if loop.last and block.emphasis %} <strong style="color: var(--color-text);" data-block-field="emphasis">{{ block.emphasis }}</strong>{% endif %}

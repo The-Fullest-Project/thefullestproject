@@ -112,9 +112,16 @@
         }
         var textPhoto = assetUrl(getAsset, val(block, "image", ""));
         var photoPosition = val(block, "imagePosition", "right");
-        var textEl = h("div", { key: "t", style: { minWidth: 0 } }, inner);
+        var wrapSide = { "wrap-right": "right", "wrap-left": "left" }[photoPosition];
+        if (textPhoto && wrapSide) {
+          // Float the photo just under the heading so the paragraphs flow round it.
+          inner.splice(1, 0, h("img", { key: "w", src: textPhoto, alt: "", style: {
+            float: wrapSide, width: "40%", aspectRatio: "4 / 3", objectFit: "cover", borderRadius: "12px",
+            margin: wrapSide === "right" ? "0 0 12px 24px" : "0 24px 12px 0" } }));
+        }
+        var textEl = h("div", { key: "t", style: { minWidth: 0, display: "flow-root" } }, inner);
         var body = textEl;
-        if (textPhoto) {
+        if (textPhoto && !wrapSide) {
           var img = h("img", { key: "p", src: textPhoto, alt: "", style: {
             width: "100%", borderRadius: "12px", objectFit: "cover",
             aspectRatio: photoPosition === "above" ? "16 / 9" : "4 / 3" } });
@@ -236,11 +243,13 @@
         if (people && people.forEach) {
           people.forEach(function (p, i) {
             var personPhoto = assetUrl(getAsset, val(p, "photo", ""));
+            var personWrap = val(p, "photoLayout", "above") === "wrap";
             peopleEls.push(
               card([
                 personPhoto ? h("img", { key: "p", src: personPhoto, alt: "", style: {
                   width: "96px", height: "96px", borderRadius: "50%", objectFit: "cover",
-                  border: "4px solid var(--color-warm)", marginBottom: "12px" } }) : null,
+                  border: "4px solid var(--color-warm)", marginBottom: "12px",
+                  float: personWrap ? "left" : "none", marginRight: personWrap ? "16px" : 0 } }) : null,
                 h("h3", { key: "n", style: headingStyle }, val(p, "name", "")),
                 h("p", { key: "l", style: { fontSize: "13px", fontWeight: 600, color: "var(--color-secondary)" } }, val(p, "location", "")),
                 h("p", { key: "b", style: Object.assign({ fontSize: "14px" }, bodyStyle) }, val(p, "paragraph1", "")),

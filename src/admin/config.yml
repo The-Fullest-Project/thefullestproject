@@ -177,6 +177,8 @@ block_types: &block_types
           - { label: "Beside the text, on the right", value: "right" }
           - { label: "Beside the text, on the left", value: "left" }
           - { label: "Above the text", value: "above" }
+          - { label: "Text wraps around it, photo on the right", value: "wrap-right" }
+          - { label: "Text wraps around it, photo on the left", value: "wrap-left" }
       - label: "Text alignment"
         name: "align"
         widget: "select"
@@ -339,6 +341,14 @@ block_types: &block_types
         fields:
           - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Shown as a circle at the top of the card. A square photo with the face in the middle works best." }
           - { label: "Photo description", name: "photoAlt", widget: "string", required: false, hint: "Read aloud to people using screen readers. Leave blank to use 'Photo of' and the name." }
+          - label: "Photo layout"
+            name: "photoLayout"
+            widget: "select"
+            default: "above"
+            required: false
+            options:
+              - { label: "Above the name", value: "above" }
+              - { label: "On the left, with the text wrapping around it", value: "wrap" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
