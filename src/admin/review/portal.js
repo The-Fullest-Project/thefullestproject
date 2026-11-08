@@ -134,12 +134,16 @@
     }
     var fixtures = {
       '/duplicates/keep-both': { ok: true, key: 'dupkept-mock' },
-      '/duplicates': { pairCount: 1, clusterCount: 0, clusters: [],
+      '/duplicates': { pairCount: 2, clusterCount: 0, clusters: [],
         kept: [{ key: 'dupkept-demo', nameA: 'Example Camp North', nameB: 'Example Camp South' }],
-        pairs: [{ signals: ['Same website'],
+        pairs: [{ signals: ['identical name', 'same web page'], confidence: 'likely',
         file: 'src/_data/resources/states/VA.json',
         a: { name: 'Example Respite House', location: 'Virginia', website: 'https://example.org' },
-        b: { name: 'Example Respite House Inc', location: 'Virginia', website: 'https://example.org' } }] },
+        b: { name: 'Example Respite House Inc', location: 'Virginia', website: 'https://example.org' } },
+        { signals: ['near-identical name', 'same web page'], confidence: 'possible',
+        file: 'src/_data/resources/national.json',
+        a: { name: 'The Arc', location: 'National', website: 'https://thearc.org' },
+        b: { name: 'The Arc of the United States', location: 'National', website: 'https://thearc.org/' } }] },
       '/change-requests': { requests: mockRequests, people: ['Nicole', 'Erin', 'Shelley', 'Patrick'] },
       '/pending': { items: [
         { id: 'sub-20260612-aaaa1111', type: 'submission', status: 'pending', file: 'pending/submissions.json',
@@ -1554,12 +1558,22 @@
         ' website' + (data.clusterCount === 1 ? '' : 's') + ' shared by three or more listings.';
       panel.appendChild(head);
 
-      if (data.pairs.length) {
-        panel.appendChild(el('h2', 'text-lg font-bold mb-2', 'Likely the same organization twice'));
+      [
+        ['likely', 'Likely the same organization twice',
+          'Similar names plus the same web page, phone or address.'],
+        ['possible', 'Possibly the same - worth a quick look',
+          'A one-word name such as "The Arc" also matches that organization\'s own programs, or the names match but nothing else does.']
+      ].forEach(function (tier) {
+        var tierPairs = data.pairs.filter(function (p) { return (p.confidence || 'likely') === tier[0]; });
+        if (!tierPairs.length) return;
+        panel.appendChild(el('h2', 'text-lg font-bold mb-1', tier[1] + ' (' + tierPairs.length + ')'));
+        var why = el('p', 'text-sm mb-3', tier[2]);
+        why.style.color = 'var(--color-text-light)';
+        panel.appendChild(why);
         var list = el('div', 'flex flex-col gap-2 mb-8');
-        data.pairs.forEach(function (pair) { list.appendChild(duplicatePairCard(pair)); });
+        tierPairs.forEach(function (pair) { list.appendChild(duplicatePairCard(pair)); });
         panel.appendChild(list);
-      }
+      });
 
       if (data.clusters.length) {
         panel.appendChild(el('h2', 'text-lg font-bold mb-1', 'Websites shared by several listings'));

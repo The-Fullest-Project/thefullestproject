@@ -1659,34 +1659,78 @@ function nameContainment(a, b) {
 // of doctors at one practice matched, which was 700+ false pairs.
 const NAME_MATCH_THRESHOLD = 0.75;
 
+/** A web address without protocol, www, query, anchor or trailing slash. */
+function pageKey(website) {
+  if (!website) return "";
+  return String(website)
+    .toLowerCase()
+    .replace(/^https?:\/\//, "")
+    .replace(/^www\./, "")
+    .split(/[?#]/)[0]
+    .replace(/\/+$/, "")
+    .trim();
+}
+
 /**
- * Why two records look like the same organisation, strongest signal first.
- * Returns [] when they don't.
+ * Whether two records look like the same organisation, and how sure we are.
+ * Returns null when they don't, else { signals, confidence } with confidence
+ * "likely" or "possible".
  *
  * A shared website, phone or address is never sufficient on its own — a
  * practice lists each of its clinicians with the same three. The names have to
- * agree too.
+ * agree too, and a similar name is not enough on its own either.
+ *
+ * Nicole found the first version flagging pairs such as "Children's National
+ * Hospital" / "National Children's Museum" and two Alamo Drafthouse branches.
+ * Two rules came from that:
+ *   - A near match on the name alone is never reported.
+ *   - When each name has words the other lacks ("One Loudoun" / "Woodbridge"),
+ *     the records are sibling branches or programmes, not the same entry,
+ *     unless they point at exactly the same page.
  */
 function duplicateSignals(a, b) {
   const nameA = nameKey(a.name), nameB = nameKey(b.name);
-  const containment = nameContainment(a.name, b.name);
-  const namesAgree = (nameA && nameA === nameB) || containment >= NAME_MATCH_THRESHOLD;
-  if (!namesAgree) return [];
+  const identical = Boolean(nameA) && nameA === nameB;
+  if (!identical && nameContainment(a.name, b.name) < NAME_MATCH_THRESHOLD) return null;
 
-  const signals = [];
-  if (nameA === nameB) signals.push("identical name");
-  else signals.push("near-identical name");
+  const tokensA = nameTokens(a.name), tokensB = nameTokens(b.name);
+  const [shorter, longer] = tokensA.size <= tokensB.size ? [tokensA, tokensB] : [tokensB, tokensA];
+  const contained = [...shorter].every(w => longer.has(w));
 
   const domainA = domainOf(a.website), domainB = domainOf(b.website);
-  if (domainA && domainA === domainB) signals.push("same website");
-
+  const pageA = pageKey(a.website), pageB = pageKey(b.website);
+  const samePage = Boolean(pageA) && pageA === pageB;
+  const sameSite = Boolean(domainA) && domainA === domainB;
   const phoneA = phoneKey(a.phone), phoneB = phoneKey(b.phone);
-  if (phoneA && phoneA === phoneB) signals.push("same phone");
-
+  const samePhone = Boolean(phoneA) && phoneA === phoneB;
   const addrA = nameKey(a.address), addrB = nameKey(b.address);
-  if (addrA && addrA === addrB) signals.push("same address");
+  const sameAddress = Boolean(addrA) && addrA === addrB;
 
-  return signals;
+  const signals = [identical ? "identical name" : "near-identical name"];
+  if (samePage) signals.push("same web page");
+  else if (sameSite) signals.push("same website");
+  if (samePhone) signals.push("same phone");
+  if (sameAddress) signals.push("same address");
+
+  const strong = samePage || samePhone || sameAddress;
+  if (identical) return { signals, confidence: strong || sameSite ? "likely" : "possible" };
+  // Names that differ only by something in brackets, such as an acronym or
+  // "(formerly DSUSA)": the same organisation, so any shared detail counts.
+  if (sameApartFromBrackets(a.name, b.name)) {
+    return strong || sameSite ? { signals, confidence: "likely" } : null;
+  }
+  // Otherwise the same site alone is not enough: a parent organisation and
+  // its own programme pages share one ("Autism Speaks" and its dental toolkit).
+  if (!strong || !contained) return null;
+  // One name is the other plus extra words. With a one-word name ("The Arc")
+  // that also fits every programme of that organisation, so it stays a maybe.
+  return { signals, confidence: shorter.size >= 2 ? "likely" : "possible" };
+}
+
+function sameApartFromBrackets(a, b) {
+  const core = name => nameKey(String(name || "").replace(/\([^)]*\)/g, " "));
+  const coreA = core(a);
+  return Boolean(coreA) && coreA === core(b);
 }
 
 /**
@@ -1733,9 +1777,10 @@ async function handleDuplicates(url, env) {
   for (const [file, rows] of byFile) {
     for (let i = 0; i < rows.length; i++) {
       for (let j = i + 1; j < rows.length; j++) {
-        const signals = duplicateSignals(rows[i], rows[j]);
-        if (signals.length) {
-          pairs.push({ file, signals, a: slimResource(rows[i]), b: slimResource(rows[j]) });
+        const match = duplicateSignals(rows[i], rows[j]);
+        if (match) {
+          pairs.push({ file, signals: match.signals, confidence: match.confidence,
+            a: slimResource(rows[i]), b: slimResource(rows[j]) });
         }
       }
     }
@@ -1768,7 +1813,8 @@ async function handleDuplicates(url, env) {
     if (!keptBoth.has(await duplicatePairKey(pair.file, pair.a.name, pair.b.name))) flagged.push(pair);
   }
 
-  flagged.sort((x, y) => y.signals.length - x.signals.length);
+  const rank = p => (p.confidence === "likely" ? 0 : 1);
+  flagged.sort((x, y) => rank(x) - rank(y) || y.signals.length - x.signals.length);
   clusters.sort((x, y) => y.count - x.count);
   return json({
     checked: byFile.size,

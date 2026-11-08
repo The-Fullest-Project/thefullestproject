@@ -165,6 +165,38 @@ assert.equal((await call("POST", "/duplicates/keep-both", { file: "../etc", name
 assert.equal((await call("POST", "/duplicates/keep-both", { file, nameA: "a", nameB: "b" }, {})).status, 401);
 assert.equal((await list()).length, 1);
 
+// The false matches Nicole reported stay out; real ones come in with a tier.
+const live = (name, website, extra = {}) => ({ name, file, location: "Virginia", website, ...extra });
+index.length = 0;
+index.push(
+  live("Children's National Hospital", "https://childrensnational.org/"),
+  live("National Children's Museum - Accessibility", "https://nationalchildrensmuseum.org/visit/"),
+  live("Alamo Drafthouse One Loudoun - Sensory-Friendly Screenings", "https://drafthouse.com/program/alamo-for-all"),
+  live("Alamo Drafthouse Woodbridge - Sensory-Friendly Screenings", "https://drafthouse.com/program/alamo-for-all"),
+  live("Autism Speaks", "https://www.autismspeaks.org/"),
+  live("Autism Speaks - Dental Tool Kit", "https://www.autismspeaks.org/tool-kit/dental"),
+  live("Norfolk Community Services Board", "https://norfolk.gov/csb"),
+  live("New River Valley Community Services Board", "https://nrvcs.org/"),
+  live("Move United (formerly DSUSA)", "https://moveunitedsport.org/"),
+  live("Move United", "https://www.moveunitedsport.org"),
+  live("Parent Center Hub (CPIR)", "https://parentcenterhub.org"),
+  live("Parent Center Hub", "https://parentcenterhub.org/find-your-center/"),
+  live("The Arc", "https://thearc.org"),
+  live("The Arc of the United States", "https://thearc.org/"),
+  live("TSC Alliance (Tuberous Sclerosis)", "https://tscalliance.org/", { phone: "800-225-6872" }),
+  live("Tuberous Sclerosis Alliance", "https://tsalliance.org/", { phone: "(800) 225-6872" })
+);
+const tiers = Object.fromEntries((await call("GET", "/duplicates")).data.pairs.map(p => [p.a.name, p.confidence]));
+assert.deepEqual(tiers, {
+  "Move United (formerly DSUSA)": "likely",
+  "Parent Center Hub (CPIR)": "likely",
+  "The Arc": "possible",
+  "TSC Alliance (Tuberous Sclerosis)": "likely"
+});
+index.length = 0;
+index.push(...["Alpha House", "Alpha House Inc", "Beta Care", "Beta Care LLC"].map(name =>
+  ({ name, file, location: "Virginia", website: `https://${name.split(" ")[0].toLowerCase()}.example.org` })));
+
 // Undo: the kept pair is listed, and removing it flags the pair again.
 const kept = (await call("GET", "/duplicates")).data.kept;
 assert.deepEqual(kept.map(k => k.nameA), ["Alpha House Inc"]);
