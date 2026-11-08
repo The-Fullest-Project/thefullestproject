@@ -65,7 +65,7 @@
     "description": "Provides year-round sports training and athletic competition in 20 Olympic-type sports for children and adults with intellectual disabilities. Programs include Unified Sports, Young Athletes, and health screenings, all provided free of charge.",
     "phone": "(302) 831-4653",
     "website": "https://sode.org/",
-    "address": "",
+    "address": "619 South College Avenue, Newark, DE 19716",
     "ageRange": "All ages",
     "disabilityTypes": [
       "intellectual-disabilities"
@@ -241,33 +241,6 @@
       "medical"
     ],
     "source": "https://www.nemours.org/services/developmental-behavioral-pediatrics.html",
-    "lastScraped": "2026-03-06",
-    "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Special Olympics Delaware - Unified Sports & Recreation",
-    "category": [
-      "sports"
-    ],
-    "location": "Delaware",
-    "area": "",
-    "description": "Beyond competitive sports, Special Olympics Delaware offers inclusive Unified Sports programs that bring together athletes with and without intellectual disabilities, plus Young Athletes programs for children ages 2-7. Year-round activities across 20 sports at no cost.",
-    "phone": "(302) 831-4653",
-    "website": "https://sode.org/",
-    "address": "619 South College Avenue, Newark, DE 19716",
-    "ageRange": "2+",
-    "disabilityTypes": [
-      "intellectual-disabilities"
-    ],
-    "cost": "Free",
-    "tags": [
-      "sports"
-    ],
-    "source": "https://sode.org/",
     "lastScraped": "2026-03-06",
     "dateAdded": "2026-03-06",
     "origin": {
