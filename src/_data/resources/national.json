@@ -1641,19 +1641,21 @@
     "name": "Enabling Devices",
     "category": [
       "assistive-tech",
-      "equipment"
+      "equipment",
+      "switch-adapted"
     ],
     "location": "National",
     "area": "",
     "description": "Over 40 years designing switch-adapted toys, AAC devices, adaptive switches, and daily living products. Extensive catalog of cause-and-effect toys for early learning and sensory development for children and adults with disabilities.",
-    "phone": "",
+    "phone": "800-832-8697",
     "website": "https://enablingdevices.com",
     "address": "",
     "ageRange": "All ages",
     "disabilityTypes": [
       "physical",
       "developmental",
-      "cognitive"
+      "cognitive",
+      "sensory"
     ],
     "cost": "$20-$500+",
     "tags": [
@@ -1664,47 +1666,12 @@
       "sensory",
       "communication",
       "daily-living",
-      "technology"
+      "technology",
+      "assistive-technology"
     ],
     "source": "https://enablingdevices.com",
     "lastScraped": "2026-03-08",
     "dateAdded": "2026-03-08",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Enabling Devices (formerly Toys for Special Children)",
-    "category": [
-      "switch-adapted",
-      "equipment",
-      "assistive-tech"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Designs and manufactures affordable assistive technology and switch-adapted products including toys, communication devices, sensory items, and environmental controls for people with disabilities.",
-    "phone": "800-832-8697",
-    "website": "https://enablingdevices.com",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": [
-      "physical",
-      "cognitive",
-      "sensory"
-    ],
-    "cost": "",
-    "tags": [
-      "switch-adapted",
-      "toys",
-      "assistive-technology",
-      "sensory",
-      "communication",
-      "technology"
-    ],
-    "source": "https://enablingdevices.com",
-    "lastScraped": "2026-03-09",
-    "dateAdded": "2026-03-09",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
