@@ -633,40 +633,6 @@
     "lastScraped": "2026-11-01"
   },
   {
-    "name": "AssistiveWare - Proloquo2Go",
-    "category": [
-      "assistive-tech"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Award-winning symbol-based AAC app for iPad/iPhone enabling nonspeaking children and adults to communicate. Fully customizable vocabulary that grows with the user.",
-    "phone": "",
-    "website": "https://www.assistiveware.com/products/proloquo2go",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": [
-      "autism",
-      "down-syndrome",
-      "cerebral-palsy",
-      "apraxia"
-    ],
-    "cost": "~$250 one-time",
-    "tags": [
-      "AAC",
-      "communication",
-      "app",
-      "iPad",
-      "nonspeaking"
-    ],
-    "source": "https://www.assistiveware.com/products/proloquo2go",
-    "lastScraped": "2026-03-08",
-    "dateAdded": "2026-03-08",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "Autism Speaks",
     "category": [
       "nonprofit"
@@ -7796,22 +7762,28 @@
     "phone": "",
     "website": "https://www.assistiveware.com/products/proloquo2go",
     "address": "",
-    "ageRange": "",
+    "ageRange": "All ages",
     "disabilityTypes": [
       "speech",
       "autism",
-      "cerebral palsy"
+      "cerebral palsy",
+      "down-syndrome",
+      "cerebral-palsy",
+      "apraxia"
     ],
     "cost": "$249.99 (one-time purchase)",
     "tags": [
       "AAC",
       "iPad app",
       "communication",
-      "symbols"
+      "symbols",
+      "app",
+      "iPad",
+      "nonspeaking"
     ],
     "source": "https://www.assistiveware.com/",
     "lastScraped": "2026-03-10",
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-03-08",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
