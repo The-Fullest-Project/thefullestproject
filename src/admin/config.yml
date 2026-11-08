@@ -166,6 +166,17 @@ block_types: &block_types
         field: { label: "Paragraph", name: "paragraph", widget: "text" }
         hint: "Add as many paragraphs as you need. Drag to reorder them."
       - { label: "Bold closing line", name: "emphasis", widget: "string", required: false, hint: "Appears in bold at the end of the last paragraph." }
+      - { label: "Photo", name: "image", widget: "image", required: false, hint: "Optional. A landscape photo works best." }
+      - { label: "Photo description", name: "imageAlt", widget: "string", required: false, hint: "Describe the photo for people using screen readers, e.g. 'A mother reading with her son, who uses a wheelchair'." }
+      - label: "Photo position"
+        name: "imagePosition"
+        widget: "select"
+        default: "right"
+        required: false
+        options:
+          - { label: "Beside the text, on the right", value: "right" }
+          - { label: "Beside the text, on the left", value: "left" }
+          - { label: "Above the text", value: "above" }
       - label: "Text alignment"
         name: "align"
         widget: "select"
@@ -326,6 +337,8 @@ block_types: &block_types
         collapsed: true
         summary: "{{fields.name}}"
         fields:
+          - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Shown as a circle at the top of the card. A square photo with the face in the middle works best." }
+          - { label: "Photo description", name: "photoAlt", widget: "string", required: false, hint: "Read aloud to people using screen readers. Leave blank to use 'Photo of' and the name." }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
