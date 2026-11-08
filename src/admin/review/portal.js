@@ -111,7 +111,12 @@
       detail: 'Can you put together a suggested list of awareness months?', page: '',
       note: 'Planned. You will get a month-by-month list.', noteBy: 'Patrick', noteAt: '2026-10-15T20:00:00Z',
       createdAt: '2026-10-14T20:00:00Z',
-      replies: [{ id: 'reply-demo-1', requestId: 'cr-2026-10-14-demo0001', by: 'Nicole', text: 'Could it start with November?', at: '2026-10-16T14:00:00Z' }] }
+      replies: [{ id: 'reply-demo-1', requestId: 'cr-2026-10-14-demo0001', by: 'Nicole', text: 'Could it start with November?', at: '2026-10-16T14:00:00Z' }] },
+    { id: 'cr-2026-10-16-demo0002', title: 'Clearer heading on the Respite page', askedBy: 'Erin', status: 'question',
+      detail: '', page: '/resources/respite/', note: 'Which wording would you like?', noteBy: 'Patrick',
+      noteAt: '2026-10-17T10:00:00Z', createdAt: '2026-10-16T09:00:00Z', replies: [] },
+    { id: 'cr-2026-10-12-demo0003', title: 'Add Shelley to the team page', askedBy: 'Nicole', status: 'filed',
+      detail: '', page: '', note: '', createdAt: '2026-10-12T09:00:00Z', replies: [] }
   ];
 
   function mockFetch(path, opts) {
@@ -1913,6 +1918,9 @@
   // Responses saved this session. KV listings can lag a new key by up to a
   // minute, so a refresh must not make a just-sent response seem to vanish.
   var crSentReplies = [];
+  // Which request threads are open, by request id. Threads start collapsed and
+  // keep their state across the re-render that follows every save.
+  var crExpanded = {};
 
   // Everyone signs in through the shared GitHub account, so "who" is picked
   // in the form. Remember the last pick per device so it is one choice, once.
@@ -2051,8 +2059,26 @@
       listWrap.appendChild(empty);
       return;
     }
-    var list = el('div', 'flex flex-col gap-2');
-    shown.forEach(function (r) { list.appendChild(requestCard(r)); });
+    var withReplies = shown.filter(function (r) { return (r.replies || []).length; });
+    if (withReplies.length) {
+      var anyOpen = withReplies.some(function (r) { return crExpanded[r.id]; });
+      var all = el('button', 'btn-secondary text-xs mb-3', anyOpen ? 'Collapse all responses' : 'Expand all responses');
+      all.addEventListener('click', function () {
+        withReplies.forEach(function (r) { crExpanded[r.id] = !anyOpen; });
+        renderRequestList();
+      });
+      listWrap.appendChild(all);
+    }
+
+    // Numbers follow filing order across every request, so a request keeps
+    // its number whatever the filters show.
+    var numbers = {};
+    crRequests.slice()
+      .sort(function (a, b) { return String(a.createdAt).localeCompare(String(b.createdAt)); })
+      .forEach(function (r, i) { numbers[r.id] = i + 1; });
+
+    var list = el('div', 'flex flex-col gap-4');
+    shown.forEach(function (r, i) { list.appendChild(requestCard(r, numbers[r.id], i)); });
     listWrap.appendChild(list);
   }
 
@@ -2137,12 +2163,21 @@
     });
   }
 
-  function requestCard(r) {
+  function requestCard(r, number, index) {
     var card = el('div', 'card p-4');
+    // A coloured stripe that alternates from card to card, so it is clear where
+    // one request ends and the next begins. A tint would vanish against the
+    // page's own cream background.
+    card.style.borderLeft = '6px solid ' + (index % 2 === 1 ? 'var(--color-secondary)' : 'var(--color-primary)');
 
     var head = el('div', 'flex flex-wrap items-start justify-between gap-2');
     var left = el('div');
-    left.appendChild(el('p', 'font-semibold text-sm', r.title));
+    var title = el('p', 'font-semibold text-sm');
+    var num = el('span', 'font-bold text-base mr-2', '#' + number);
+    num.style.color = 'var(--color-primary)';
+    title.appendChild(num);
+    title.appendChild(document.createTextNode(r.title));
+    left.appendChild(title);
     var asker = crAskedBy(r);
     var meta = el('p', 'text-xs mt-1',
       (asker ? 'Asked by ' + asker : 'Asker not recorded') + ' on ' + fmtDate(r.createdAt));
@@ -2304,7 +2339,31 @@
   // the Next Steps box above is a separate record.
   function requestThread(r) {
     var thread = el('div', 'mt-3');
-    (r.replies || []).forEach(function (x, i) {
+    var replies = r.replies || [];
+    var items = el('div');
+    items.id = 'cr-thread-' + r.id;
+
+    if (replies.length) {
+      var last = replies[replies.length - 1];
+      var count = replies.length + ' response' + (replies.length === 1 ? '' : 's');
+      var toggle = el('button', 'text-xs font-semibold');
+      toggle.style.color = 'var(--color-primary)';
+      toggle.setAttribute('aria-controls', items.id);
+      var setOpen = function (open) {
+        crExpanded[r.id] = open;
+        items.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = open
+          ? '▾ Hide ' + count
+          : '▸ Show ' + count + ' · latest from ' + last.by + ', ' + fmtDate(last.at);
+      };
+      toggle.addEventListener('click', function () { setOpen(items.hidden); });
+      thread.appendChild(toggle);
+      setOpen(!!crExpanded[r.id]);
+    }
+    thread.appendChild(items);
+
+    replies.forEach(function (x, i) {
       var item = el('div', 'mt-2');
       item.style.padding = '8px 10px';
       item.style.borderLeft = '3px solid var(--color-secondary)';
@@ -2317,7 +2376,7 @@
       text.style.whiteSpace = 'pre-wrap';
       item.appendChild(text);
       if (x.attachment) item.appendChild(attachmentButton(x.attachment));
-      thread.appendChild(item);
+      items.appendChild(item);
     });
 
     var addBtn = el('button', 'text-xs font-semibold underline mt-2', 'Add a response');
@@ -2374,6 +2433,7 @@
           return apiFetch('/change-requests/reply', { method: 'POST', body: JSON.stringify(payload) });
         }).then(function (data) {
           crSentReplies.push(data.reply);
+          crExpanded[r.id] = true;
           toast('Response added');
           refreshRequests();
         }).catch(function (err) {
