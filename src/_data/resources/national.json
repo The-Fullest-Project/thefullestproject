@@ -4923,37 +4923,6 @@
     }
   },
   {
-    "name": "The Able Fables",
-    "category": [
-      "influencers",
-      "books"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Dr. Nicole Julia, occupational therapist and inclusive children's book author. Shares disability inclusion content and promotes the Able Fables book series. 20% of profits donated to build inclusive playgrounds â€” over $60K donated.",
-    "phone": "",
-    "website": "https://www.theablefables.com/",
-    "instagram": "https://www.instagram.com/theablefables/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "inclusion",
-      "children-books",
-      "occupational-therapy",
-      "playground",
-      "influencer"
-    ],
-    "source": "https://www.theablefables.com/",
-    "lastScraped": "2026-03-08",
-    "dateAdded": "2026-03-08",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "The Accessible Home: Designing for All Ages and Abilities",
     "category": [
       "books"
