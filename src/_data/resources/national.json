@@ -7136,34 +7136,6 @@
     }
   },
   {
-    "name": "Move United",
-    "category": [
-      "sports",
-      "nonprofit"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "The nation's leading community-based adaptive sports organization with 249 member organizations in 45 states, serving over 125,000 youth and adults annually across dozens of sports.",
-    "phone": "",
-    "website": "https://moveunitedsport.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "Varies",
-    "tags": [
-      "adaptive sports",
-      "umbrella organization",
-      "nationwide"
-    ],
-    "source": "https://moveunitedsport.org/",
-    "lastScraped": "2026-03-10",
-    "dateAdded": "2026-03-10",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "National Wheelchair Basketball Association (NWBA)",
     "category": [
       "sports"
