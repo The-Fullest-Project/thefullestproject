@@ -586,5 +586,41 @@
       "source": "https://oley.org/page/Enteral_Donations",
       "lastScraped": "2026-11-05"
     }
+  },
+  {
+    "id": "sub-20261110-418ba90a",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-11-10T01:59:22.712Z"
+    },
+    "targetFile": "src/_data/resources/states/VA.json",
+    "payload": {
+      "name": "Without Limits Collective",
+      "category": [
+        "education"
+      ],
+      "location": "Virginia",
+      "area": "Northern Virginia",
+      "description": "From Surviving to Thriving: IEPs, 504s and Beyond.  At Without Limits Collective, our mission is to empower families by providing inclusive, trauma-informed, and individualized support that honors every child’s unique strengths. We exist to help parents feel seen, supported, and equipped—because when families thrive, children do too.\r\nOur focus is tutoring, advocacy, and school management.",
+      "phone": "",
+      "email": "llatham@withoutlimitscollective.com",
+      "website": "https://www.withoutlimitscollective.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "IEP",
+        "504s",
+        "Tutoring",
+        "advocacy",
+        "school management"
+      ],
+      "source": "https://www.withoutlimitscollective.com/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
