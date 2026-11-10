@@ -1050,5 +1050,36 @@
       "source": "https://news.cornell.edu/stories/2024/04/student-group-adapts-toys-devices-kids-disabilities",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-1410d7e8",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/NY.json",
+    "payload": {
+      "name": "Heritage Play Library",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "New York",
+      "area": "Kenmore (Western New York)",
+      "description": "A Western New York toy lending library that began as a Lekotek center and still follows its play-based approach for families of children with special needs. It lends toys, books and adaptive toys to eligible children and their siblings, with day, evening and weekend appointments. Confirm current hours and eligibility by phone.",
+      "phone": "716-876-3901",
+      "website": "https://publichealth.buffalo.edu/cat/about-cat/education/traid/lending-libraries.html",
+      "address": "1 Delaware Road, Kenmore, NY 14217",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Contact the library",
+      "tags": [
+        "toy-lending-library"
+      ],
+      "source": "https://publichealth.buffalo.edu/cat/about-cat/education/traid/lending-libraries.html",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
