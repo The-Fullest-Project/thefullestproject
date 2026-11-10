@@ -688,5 +688,38 @@
       "source": "https://www.switchedtoys.org/",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-614b414a",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Santa's Little Hackers",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A holiday toy drive whose volunteers make simple electronic changes to toys so children with disabilities can play with them, then give the toys away. Its website also keeps a list of toy-adapting organizations across the country, which is a good place to look for a group near you.",
+      "phone": "",
+      "website": "https://www.santaslittlehackers.com/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "toy-drive",
+        "holiday"
+      ],
+      "source": "https://www.santaslittlehackers.com/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
