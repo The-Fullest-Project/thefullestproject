@@ -1,10 +1,10 @@
 ---
 title: Why we started the Fullest Project  
 date: 2026-11-09T23:34:00.000-05:00
-author: Nicole with The Fullest Project
+author: Nicole Berrigan
 authorRole: Co-Founder
 category: Caregiver Life
-excerpt: Two high school best friends, now who are both caregivers of
+excerpt: Two high school best friends, who are now both caregivers of
   neurodivergent children, share how one question on the way to a moms’ weekend
   became The Fullest Project. It’s the story of why we’re building one place to
   find the resources too many families only hear about by chance.
