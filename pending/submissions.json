@@ -590,5 +590,39 @@
       "source": "https://www.switchituptoys.com/?gad_source=1&gad_campaignid=24308959104&gbraid=0AAAAA_mATwJc9746_Gw2pvttAbJZFakq9&gclid=Cj0KCQiA-8XXBhDaARIsADnEOrA14Vog_aGjsNb0eyrz5VrVJVqqznD8V6cdFuS3n1MvBtjzZGE3cFgaAnQCEALw_wcB",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-a3effe82",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "GoBabyGo (University of Delaware)",
+      "category": [
+        "adaptive-toys",
+        "equipment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Modifies ride-on toy cars so young children with disabilities can move around on their own. Started at the University of Delaware, the program has trained volunteers in more than 40 communities and shares its car modification designs publicly. Many local universities and hospitals run their own GoBabyGo builds, so check for one near you.",
+      "phone": "",
+      "website": "https://sites.udel.edu/gobabygo",
+      "address": "",
+      "ageRange": "Young children",
+      "disabilityTypes": [],
+      "cost": "Varies by local program; often free to families",
+      "tags": [
+        "ride-on-cars",
+        "mobility",
+        "volunteer-built"
+      ],
+      "source": "https://sites.udel.edu/gobabygo",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
