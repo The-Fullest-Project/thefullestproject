@@ -787,5 +787,38 @@
       "source": "https://www.lego.com/aboutus/news/2023/august/lego-braille-bricks-play-with-braille-",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-bb3d7755",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Rehabmart - Switch Adapted Toys",
+      "category": [
+        "adaptive-toys",
+        "equipment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "An online retailer that sells switch-adapted toys from several makers in one place, including Enabling Devices, TFH and AbleNet.",
+      "phone": "",
+      "website": "https://rehabmart.com/category/switch_adapted.htm",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Paid",
+      "tags": [
+        "switch-adapted",
+        "retailer"
+      ],
+      "source": "https://rehabmart.com/category/switch_adapted.htm",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
