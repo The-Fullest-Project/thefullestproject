@@ -17,7 +17,11 @@ We are both originally from the Northwest and have now landed in Portland, OR an
 
 
 
-I sat back in my chair to really reflect on that.  There are MANY challenges that caregivers of disabled children have to deal with - from navigating benefit programs, to advocating for school supports, to understanding government programs and waivers, to living the real impacts of state and federal legislation.  But all of those problems have better educated and equipped organizations to provide support than we could. Then it hit me - as caregivers ourselves, we know firsthand how isolating and overwhelming it can feel to navigate the world of disability resources. You hear about a great program from another parent at therapy. You stumble across a foundation through a random Google search at 2 AM. You find out about equipment loaner programs only because someone in your support group mentioned them.  We happened to have built (or in my case found through a chance encounter in a doctor's waiting room) a great community that has helped us in our journeys - but what about those who don't have that?  Why should their kids not have the same opportunities just because their caregiver didn't know what they didn't know, and didn't have anyone that could tell them otherwise?  
+I sat back in my chair to really reflect on that.  There are MANY challenges that caregivers of disabled children have to deal with - from navigating benefit programs, to advocating for school supports, to understanding government programs and waivers, to living the real impacts of state and federal legislation.  But all of those problems have better educated and equipped organizations to provide support than we could. 
+
+
+
+Then it hit me - as caregivers ourselves, we know firsthand how isolating and overwhelming it can feel to navigate the world of disability resources. You hear about a great program from another parent at therapy. You stumble across a foundation through a random Google search at 2 AM. You find out about equipment loaner programs only because someone in your support group mentioned them.  We happened to have built (or in my case found through a chance encounter in a doctor's waiting room) a great community that has helped us in our journeys - but what about those who don't have that?  Why should their kids not have the same opportunities just because their caregiver didn't know what they didn't know, and didn't have anyone that could tell them otherwise?  
 
 
 
