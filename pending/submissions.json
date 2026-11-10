@@ -853,5 +853,38 @@
       "source": "https://nisonger.osu.edu/",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-e31d7bcb",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/KY.json",
+    "payload": {
+      "name": "enTech Toy Library (Spalding University)",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Kentucky",
+      "area": "Louisville",
+      "description": "enTech is one of Kentucky's five state assistive technology resource centers, run by Spalding University's school of occupational therapy. Its toy library lets eligible families borrow up to four adaptive toys, switches or learning toys for four weeks at a time. Confirm current loan terms with enTech.",
+      "phone": "800-896-8941",
+      "website": "https://spalding.edu/?p=22866",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Contact enTech",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted"
+      ],
+      "source": "https://spalding.edu/?p=22866",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
