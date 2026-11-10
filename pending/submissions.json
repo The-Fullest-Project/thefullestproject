@@ -624,5 +624,37 @@
       "source": "https://sites.udel.edu/gobabygo",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-7f16f0e4",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Adapt to Play",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Gives adaptive toys to children with disabilities at no cost. A physical, occupational or speech therapist must submit the request on the child's behalf, and switches are requested separately. Check their site for current eligibility and the areas they serve.",
+      "phone": "",
+      "website": "https://adaptoplay.org/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free (request through a therapist)",
+      "tags": [
+        "switch-adapted",
+        "free-toys"
+      ],
+      "source": "https://adaptoplay.org/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
