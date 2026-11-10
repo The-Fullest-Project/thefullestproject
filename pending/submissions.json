@@ -752,5 +752,40 @@
       "source": "https://www.usatla.org/toy-library-locations",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-ef7aaca1",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "LEGO Braille Bricks - Play with Braille",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A LEGO set with bricks that carry braille letters and numbers, designed so blind, partially sighted and sighted children can learn braille through play together. Once available only to schools, it has been on sale to families at LEGO.com since 2023.",
+      "phone": "",
+      "website": "https://www.lego.com/aboutus/news/2023/august/lego-braille-bricks-play-with-braille-",
+      "address": "",
+      "ageRange": "6 and up",
+      "disabilityTypes": [
+        "Visual impairment"
+      ],
+      "cost": "Paid; check current price at LEGO.com",
+      "tags": [
+        "braille",
+        "blind-low-vision"
+      ],
+      "source": "https://www.lego.com/aboutus/news/2023/august/lego-braille-bricks-play-with-braille-",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
