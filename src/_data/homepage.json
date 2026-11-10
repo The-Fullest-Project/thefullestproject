@@ -91,17 +91,7 @@
       "browseAllLabel": "Browse All Stories & News"
     },
     {
-      "type": "spotlight",
-      "id": "spotlight",
-      "visible": true,
-      "background": "white",
-      "padding": "normal",
-      "heading": "Organization Spotlight",
-      "subheading": "Highlighting organizations providing accessible services and adventures",
-      "viewAllLabel": "View All Spotlights"
-    },
-    {
-      "body": "Get updates on new resources, blog posts, podcast episodes, and community news delivered to your inbox.",
+      "body": "Get updates on new resources, highlighted programs or organizations, and community news delivered to your inbox.",
       "heading": "Stay Connected",
       "buttonLabel": "Subscribe",
       "background": "primary",
