@@ -952,5 +952,38 @@
       "source": "https://www.unmc.edu/newsroom/2023/03/14/mmi-ucp-of-nebraska-offer-tech-tools-library-2/",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-447f7f23",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/WA.json",
+    "payload": {
+      "name": "PNW Adapted Toy Library (PROVAIL and University of Washington)",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Washington",
+      "area": "Seattle",
+      "description": "A free lending library of adapted toys, switches and gaming equipment that families can borrow and try at home. Run by the nonprofit PROVAIL with the University of Washington's Taskar Center and the HuskyADAPT student group, it was the first U.S. adapted toy library registered with the American Toy Library Association. Enroll through the library's website.",
+      "phone": "",
+      "website": "https://pnwadaptivelibrary.cs.washington.edu",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted"
+      ],
+      "source": "https://pnwadaptivelibrary.cs.washington.edu",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
