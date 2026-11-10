@@ -985,5 +985,37 @@
       "source": "https://pnwadaptivelibrary.cs.washington.edu",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-ce64ff08",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/WA.json",
+    "payload": {
+      "name": "HuskyADAPT Toy Adaptation Requests (University of Washington)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Washington",
+      "area": "Seattle",
+      "description": "A University of Washington student group that adapts toys for children with disabilities. Families, clinics and schools can request a toy through the group's form, then pick up the adapted toy at UW. The group also runs holiday toy-adapting events.",
+      "phone": "",
+      "website": "https://www.huskyadapt.me.uw.edu/about-us",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "volunteer-built"
+      ],
+      "source": "https://www.huskyadapt.me.uw.edu/about-us",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
