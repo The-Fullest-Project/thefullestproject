@@ -1017,5 +1017,38 @@
       "source": "https://www.huskyadapt.me.uw.edu/about-us",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-733ab4c2",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/NY.json",
+    "payload": {
+      "name": "Big Red Adaptive Play and Design Initiative (Cornell University)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "New York",
+      "area": "Ithaca",
+      "description": "A Cornell student group that rewires battery-operated toys so children with motor disabilities can play using a switch. It runs a lending library of adapted toys for local schools and organizations, and works with school therapists on other assistive devices. Families can ask their child's school or therapist about access.",
+      "phone": "",
+      "website": "https://news.cornell.edu/stories/2024/04/student-group-adapts-toys-devices-kids-disabilities",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "toy-lending-library",
+        "volunteer-built"
+      ],
+      "source": "https://news.cornell.edu/stories/2024/04/student-group-adapts-toys-devices-kids-disabilities",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
