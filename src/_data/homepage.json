@@ -38,14 +38,14 @@
         {
           "icon": "📝",
           "title": "Blog",
-          "description": "Stories, insights, and practical advice from experts and caregivers in the disability community.",
-          "url": "/blog/"
+          "description": "Stories, practical guides and advice from our team and guest experts.",
+          "url": "/our-blog/"
         },
         {
           "icon": "🎧",
-          "title": "Podcast",
-          "description": "Listen to conversations with families, professionals, and advocates making a difference.",
-          "url": "/podcast/"
+          "title": "Podcasts",
+          "description": "More than 60 podcasts for caregivers and families, sorted by topic.",
+          "url": "/resources/podcasts/"
         }
       ],
       "intro": "The Fullest Project is your connection hub for disability resources, programs, education, and community.  It is a centralized place for caregivers of individuals with disabilities to go to find programs, services, and organizations that can fill needs, close gaps, and provide information -all with the goal of helping each disabled person live life to their fullest. ",

@@ -7,10 +7,12 @@ pagination:
 permalink: "/resources/{{ cat.value }}/"
 eleventyComputed:
   title: "{{ cat.label }} — Disability Resources"
-  description: "Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse resources and filter by state or city."
+  description: "{% if cat.value == 'podcasts' %}Podcasts for caregivers and families of people with disabilities, sorted by topic.{% else %}Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse resources and filter by state or city.{% endif %}"
 ---
 
 {% set catResources = directory | filterByTopCategory(cat.value) | sort(attribute='name') %}
+{# Podcasts are listened to anywhere, so state and city mean nothing there. #}
+{% set isPodcasts = cat.value == 'podcasts' %}
 
 <section class="py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,7 +23,11 @@ eleventyComputed:
 
     <h1 class="text-4xl font-bold mb-3" style="color: var(--color-primary);">{{ cat.label }}</h1>
     <p class="mb-8 max-w-3xl" style="color: var(--color-text-light);">
+      {% if isPodcasts %}
+      {{ catResources.length }} podcasts made for caregivers and families of people with disabilities, all free to listen to. Use Type to find a topic.
+      {% else %}
       {{ catResources.length }} {{ cat.label | lower }} resource{{ 's' if catResources.length != 1 }} for individuals with disabilities and their caregivers — national organizations plus local programs. Use the filters to narrow by state or city.
+      {% endif %}
     </p>
 
     <!-- Filters -->
@@ -31,6 +37,7 @@ eleventyComputed:
           <label for="category-search" class="block text-sm font-semibold mb-2">Search</label>
           <input type="text" id="category-search" placeholder="Search these resources..." class="form-input">
         </div>
+        {% if not isPodcasts %}
         <div>
           <label for="state-filter" class="block text-sm font-semibold mb-2">State</label>
           <select id="state-filter" class="filter-select">
@@ -46,6 +53,7 @@ eleventyComputed:
             <option value="">All Cities</option>
           </select>
         </div>
+        {% endif %}
         <div id="type-filter-wrap" hidden>
           <label for="type-filter" class="block text-sm font-semibold mb-2">Type</label>
           <select id="type-filter" class="filter-select">
@@ -83,12 +91,14 @@ eleventyComputed:
         {% endif %}
         {% if resource.website %}
         <a href="{{ resource.website }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline inline-block mt-2" style="color: var(--color-secondary);">
-          Visit Website &rarr;
+          {{ 'Listen' if isPodcasts else 'Visit Website' }} &rarr;
         </a>
         {% endif %}
+        {% if not isPodcasts %}
         <p class="text-xs mt-3 opacity-70" style="color: var(--color-text-light);">
           {{ resource.location }}{% if resource.area %} &middot; {{ resource.area }}{% endif %}
         </p>
+        {% endif %}
       </div>
       {% endfor %}
     </div>

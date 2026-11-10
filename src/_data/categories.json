@@ -92,6 +92,10 @@
     "label": "Non-Profits & Foundations"
   },
   {
+    "value": "podcasts",
+    "label": "Podcasts"
+  },
+  {
     "value": "other",
     "label": "Other"
   },

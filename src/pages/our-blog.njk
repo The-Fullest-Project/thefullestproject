@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: "Stories, practical guides and advice from The Fullest Project team and guest experts."
+permalink: /our-blog/
+---
+
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: var(--color-primary);">{{ pages.ourBlog.heading }}</h1>
+    <p class="text-center mb-10 max-w-2xl mx-auto" style="color: var(--color-text-light);">
+      {{ pages.ourBlog.intro }}
+    </p>
+
+    {% if collections.ourBlogPosts.length %}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {% for post in collections.ourBlogPosts %}
+      <article class="card overflow-hidden flex flex-col">
+        {% if post.data.image %}
+        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt or '' }}" loading="lazy" class="w-full object-cover" style="aspect-ratio: 16 / 9;">
+        {% endif %}
+        <div class="p-6 flex flex-col flex-grow">
+          {% if post.data.category %}
+          <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: var(--color-secondary);">{{ post.data.category }}</p>
+          {% endif %}
+          <h2 class="text-2xl font-bold mb-3">
+            <a href="{{ post.url }}" class="no-underline" style="color: var(--color-primary);">{{ post.data.title }}</a>
+          </h2>
+          {% if post.data.excerpt %}
+          <p class="mb-4 flex-grow" style="color: var(--color-text-light);">{{ post.data.excerpt }}</p>
+          {% endif %}
+          <p class="text-sm" style="color: var(--color-text-light);">
+            <time datetime="{{ post.date | dateFormat }}">{{ post.date | dateFormat }}</time>
+            {% if post.data.author %} · {{ post.data.author }}{% if post.data.authorRole %}, {{ post.data.authorRole }}{% endif %}{% endif %}
+          </p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="card p-8 text-center max-w-2xl mx-auto">
+      <p class="text-lg mb-2" style="color: var(--color-text);">Our first posts are on their way.</p>
+      <p style="color: var(--color-text-light);">Sign up for the newsletter and we'll let you know when they're here. In the meantime, <a href="/blog/" style="color: var(--color-primary);">Stories &amp; News</a> has the latest from around the disability community.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
