@@ -820,5 +820,38 @@
       "source": "https://rehabmart.com/category/switch_adapted.htm",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-93d2d24c",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/OH.json",
+    "payload": {
+      "name": "Nisonger Center Toy and Technology Library (Ohio State University)",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Ohio",
+      "area": "Columbus",
+      "description": "A free lending library at Ohio State's Nisonger Center with more than 1,500 adaptive toys, switches and low-tech communication devices that families can borrow for 30 days at a time. Many of its toys come from Ohio State engineering students' Toy Adaptation Program. Confirm current hours and how to borrow with the Nisonger Center.",
+      "phone": "",
+      "website": "https://nisonger.osu.edu/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted"
+      ],
+      "source": "https://nisonger.osu.edu/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
