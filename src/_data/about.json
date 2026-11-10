@@ -10,17 +10,17 @@
       "body": "We believe every individual with a disability deserves the opportunity to live life to the fullest, and every caregiver deserves the support to make that possible."
     },
     {
-      "type": "text",
-      "id": "problem",
-      "visible": true,
-      "background": "white",
-      "padding": "normal",
-      "align": "left",
       "heading": "The Problem We're Solving",
       "paragraphs": [
         "While there are so many different programs, resources, and communities out there whose whole purpose is to support the special needs and disability community, there is no centralized place to find these resources. Finding the specific resource or information needed is often dependent on who you know or how well you can Google search.",
         "Too many pivotal moments of growth and progress for children with disabilities are directly related to tools, resources, or information that caregivers were told about through someone who knew something, someone, or where to go. Without that established community, the trajectory would be significantly different."
       ],
+      "align": "left",
+      "background": "white",
+      "padding": "normal",
+      "visible": true,
+      "type": "text",
+      "id": "problem",
       "emphasis": "What about those who don't have those connections?"
     },
     {
@@ -32,16 +32,16 @@
       "heading": "Our Three-Phase Approach",
       "items": [
         {
-          "title": "Phase 1: Consolidate Resources",
+          "title": "Phase 1: Consolidate Resources (Where we are at right now)",
           "body": "Conduct research and develop a comprehensive directory for national resources and two pilot locations: Northern Virginia and Portland, OR. Resources are also crowdsourced by users, so new information is constantly being added."
         },
         {
-          "title": "Phase 2: Build Knowledge Through Community",
-          "body": "Continue to share information and build knowledge through community engagement via our blog, podcast, social media, and partnerships with established organizations."
+          "title": "Phase 2: Build Knowledge Through Community (It's launch time!)",
+          "body": "Continue to share information and build knowledge through community engagement.  The more robust the Fullest Community becomes, the more extensive the collective knowledge.  Also, invest in and build our community via our blog, social media, and partnerships with established organizations."
         },
         {
-          "title": "Phase 3: Empower & Support Caregivers",
-          "body": "Develop a gig-economy platform connecting caregivers who need help with individuals who have the skills to support them. Establish life coaching for caregivers and business coaching for disability-focused non-profits."
+          "title": "Phase 3: Empower & Support Caregivers (Leveling it up in 2028!)",
+          "body": "This will include creating an Amazon Storefront full of resources and products that could help support individuals with disabilities and their caretakers.  Also, we are looking to starting a podcast and launch The Fullest Post, an old fashioned mailer that will share information, resources, and hopefully bring a little bit of joy to this community. "
         }
       ]
     },
@@ -65,22 +65,23 @@
           "location": "Northern Virginia",
           "paragraph1": "Nicole has a bachelor's in Business Administration, a Masters in Organizational Leadership, has worked in Human Resources for over 15 years, is a trained executive coach, and is a mom to a beautiful child who is disabled.",
           "paragraph2": "Through her experience supporting and advocating for her child's needs, she realized that so many pivotal points of significant growth or progress were directly related to tools, resources, or information she learned about through someone in her community. Without those connections, the trajectory would have been significantly different.",
-          "highlight": "Nicole brings business management skills, coaching expertise, and firsthand experience as a caregiver navigating the disability landscape."
+          "highlight": "Nicole brings business management skills, research background, and firsthand experience as a caregiver navigating the disability landscape.",
+          "photo": "/images/blog/portrait-2025-berrigan43.jpg"
         }
       ]
     },
     {
-      "type": "ctaBanner",
-      "id": "cta",
-      "visible": true,
-      "background": "primary",
-      "padding": "normal",
-      "heading": "Join Our Community",
       "body": "We may not be able to fight every battle, but we can make knowing what is out there to support your child easier to find and use.",
+      "heading": "Join Our Community",
       "primaryCta": {
         "label": "Find Resources",
         "url": "/resources/"
       },
+      "background": "primary",
+      "padding": "normal",
+      "visible": true,
+      "type": "ctaBanner",
+      "id": "cta",
       "secondaryCta": {
         "label": "Get in Touch",
         "url": "/contact/"
