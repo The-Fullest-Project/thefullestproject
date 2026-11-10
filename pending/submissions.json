@@ -656,5 +656,37 @@
       "source": "https://adaptoplay.org/",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-eb40daf8",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Switched Adapted Toys",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A nonprofit that publishes free how-to guides for families and therapists who want to adapt toys themselves, and also sells toys that are already switch-adapted.",
+      "phone": "",
+      "website": "https://www.switchedtoys.org/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Guides free; adapted toys for sale",
+      "tags": [
+        "switch-adapted",
+        "diy-adapting"
+      ],
+      "source": "https://www.switchedtoys.org/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
