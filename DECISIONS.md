@@ -3,6 +3,25 @@
 Standing product decisions, with the reasoning. Newest first. If a decision
 here conflicts with something in the code, the code is wrong.
 
+## 9 November 2026 — AI-assisted resource search
+
+A visitor describes their situation in their own words; one AI call turns it
+into directory filters (categories, state, age range) chosen only from the real
+category list, and the page shows real listings. Not a chat assistant. Built on
+the existing `tfp-admin-api` Cloudflare worker; tested on the preview site
+before it goes live.
+
+| Question | Decided |
+|---|---|
+| Monthly spending ceiling | **$50.** Enforced as a hard daily budget in the worker (about $1.60 a day), with a monthly limit on the API key as a backstop. When the day's budget is spent, the box falls back to normal keyword search. |
+| Who can use it | **Everyone, with a daily limit per visitor** and a free Cloudflare Turnstile bot check before any AI call. **When accounts go live, move it to signed-in users** (or give signed-in users the larger allowance) — build so that switch is a setting, not a rebuild. |
+| What is stored | **Never what people type.** Only daily counts: searches, searches that found results, and which categories the results fell in. |
+| Where it appears | **Top of the Resources page**, and **at the bottom of the homepage "How We Can Help" section.** |
+| Wording under the box | **"This helps you find resources. It isn't medical advice. In an emergency, call 911."** Crisis wording in a search also shows 911 and 988 prominently. |
+
+Not yet settled: who owns the Anthropic Console account (it controls the bill),
+and the starting per-visitor limit (proposed: 10 searches a day).
+
 ## 2 October 2026 — Nicole's answers to the open questions
 
 | Question | Decided |
