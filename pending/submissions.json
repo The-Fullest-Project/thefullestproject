@@ -886,5 +886,37 @@
       "source": "https://spalding.edu/?p=22866",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-7c5f3793",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/KY.json",
+    "payload": {
+      "name": "Toys with a Purpose (University of Kentucky)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Kentucky",
+      "area": "Eastern Kentucky (Hazard)",
+      "description": "A free online lending library of adapted toys, devices and learning materials for families in Appalachian eastern Kentucky. Run by the University of Kentucky with the Kentucky Appalachian Rural Rehabilitation Network from its Hazard site, with local students and volunteers helping adapt the toys.",
+      "phone": "",
+      "website": "https://chs.uky.edu/karrn/toys-with-a-purpose",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "rural"
+      ],
+      "source": "https://chs.uky.edu/karrn/toys-with-a-purpose",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
