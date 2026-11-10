@@ -1113,5 +1113,38 @@
       "source": "https://penfieldchildren.org/adaptive-toys/",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-ac30018d",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/CO.json",
+    "payload": {
+      "name": "Adapt to Impact (University of Colorado Denver)",
+      "category": [
+        "adaptive-toys",
+        "childcare"
+      ],
+      "location": "Colorado",
+      "area": "Denver area",
+      "description": "A lending library of more than 200 adapted toys and items for childcare providers, from the University of Colorado Denver's Center for Innovative Design and Engineering. It lends to childcare settings, not directly to families, so it's useful to share with your child's daycare or preschool.",
+      "phone": "",
+      "website": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
+      "address": "",
+      "ageRange": "Young children",
+      "disabilityTypes": [],
+      "cost": "Free to childcare providers",
+      "tags": [
+        "toy-lending-library",
+        "childcare-providers"
+      ],
+      "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
