@@ -1081,5 +1081,37 @@
       "source": "https://publichealth.buffalo.edu/cat/about-cat/education/traid/lending-libraries.html",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-d4519275",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/WI.json",
+    "payload": {
+      "name": "Inclusive Play: Toys for All (Penfield Children's Center and Marquette University)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Wisconsin",
+      "area": "Milwaukee County",
+      "description": "An adaptive toy project of Penfield Children's Center and Marquette University. Engineering, occupational therapy and high school students adapt hundreds of toys each year for children with differing abilities in Milwaukee County, at no charge to families and therapists.",
+      "phone": "",
+      "website": "https://penfieldchildren.org/adaptive-toys/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "volunteer-built"
+      ],
+      "source": "https://penfieldchildren.org/adaptive-toys/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
