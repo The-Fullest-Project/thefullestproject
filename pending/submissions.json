@@ -918,5 +918,39 @@
       "source": "https://chs.uky.edu/karrn/toys-with-a-purpose",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-366604b0",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/NE.json",
+    "payload": {
+      "name": "Tech Tools Lending Libraries - United Cerebral Palsy of Nebraska",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Nebraska",
+      "area": "Statewide (Omaha library at the Munroe-Meyer Institute)",
+      "description": "United Cerebral Palsy of Nebraska runs lending libraries across the state with modified toys, sensory aids and adaptive switches that people of all ages can borrow at no cost. The Omaha library is at UNMC's Munroe-Meyer Institute, 6902 Pine St. Call to check hours and how to borrow.",
+      "phone": "402-559-6580",
+      "website": "https://www.unmc.edu/newsroom/2023/03/14/mmi-ucp-of-nebraska-offer-tech-tools-library-2/",
+      "address": "6902 Pine St, Omaha, NE",
+      "ageRange": "All ages",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted",
+        "sensory"
+      ],
+      "source": "https://www.unmc.edu/newsroom/2023/03/14/mmi-ucp-of-nebraska-offer-tech-tools-library-2/",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
