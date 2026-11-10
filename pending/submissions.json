@@ -622,5 +622,39 @@
       "source": "https://www.withoutlimitscollective.com/",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261110-14b5d3da",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-11-10T04:41:17.994Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Switch! It Up Switch Adaptive Toys and Adapted Play Products",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Made for Real Kids.  Adapted with Purpose.\r\n\r\nBorn from our own family’s journey, Switch! It Up understands how important trust, safety, and meaningful play truly are.\r\n\r\nOur toys are thoughtfully adapted by hand and carefully tested to ensure reliable, responsive play — supporting independence, confidence, and joy, because play should be accessible to everyone.",
+      "phone": "+13175481495",
+      "email": "cheyenne@switchituptoys.com",
+      "website": "https://www.switchituptoys.com/?gad_source=1&gad_campaignid=24308959104&gbraid=0AAAAA_mATwJc9746_Gw2pvttAbJZFakq9&gclid=Cj0KCQiA-8XXBhDaARIsADnEOrA14Vog_aGjsNb0eyrz5VrVJVqqznD8V6cdFuS3n1MvBtjzZGE3cFgaAnQCEALw_wcB",
+      "address": "18132 Knobstone Way Westfield, IN 46074 United States",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "adapted toys",
+        "assistive play",
+        "switch adapted toys"
+      ],
+      "source": "https://www.switchituptoys.com/?gad_source=1&gad_campaignid=24308959104&gbraid=0AAAAA_mATwJc9746_Gw2pvttAbJZFakq9&gclid=Cj0KCQiA-8XXBhDaARIsADnEOrA14Vog_aGjsNb0eyrz5VrVJVqqznD8V6cdFuS3n1MvBtjzZGE3cFgaAnQCEALw_wcB",
+      "lastScraped": "2026-11-10"
+    }
   }
 ]
