@@ -13,7 +13,7 @@ A connection hub for caregivers of individuals with disabilities to find nationa
 | Scraping | Python (scrapling, httpx) | 3.12 | Automated resource data collection |
 | Forms | Formspree | — | Contact, resource submission, and newsletter forms (notification + fallback path) |
 | Serverless | Cloudflare Workers | — | `gig-publisher` (gig auto-publish), `tfp-admin-api` (review portal backend + intake), `decap-oauth` (GitHub OAuth) |
-| CMS | Decap CMS | 3.8.x | `/admin/` editing for blog, podcast, and Site Pages (home/about/blog copy via JSON file collections) |
+| CMS | Decap CMS | 3.8.x | `/admin/` editing for Blog Posts, Stories & News articles, and Site Pages (home/about/page-header copy via JSON file collections) |
 | Email | Brevo | — | Email distribution database, double-opt-in newsletter, transactional submitter thank-yous |
 | Deployment | GitHub Pages | — | Static site hosting via GitHub Actions deploy |
 | CI/CD | GitHub Actions | — | Auto-deploy on push to main; weekly scrape job |
@@ -71,12 +71,13 @@ the-fullest-project/
 │   │   │   ├── post.njk        # Post a gig form
 │   │   │   └── respond.njk     # Respond to a gig form
 │   │   ├── blog.njk            # Blog listing
-│   │   ├── podcast.njk         # Podcast listing
+│   │   ├── our-blog.njk        # /our-blog/ — the Blog (TFP and guest posts)
+│   │   ├── podcast-moved.njk   # /podcast/ forwards to /resources/podcasts/
 │   │   ├── about.njk           # Founder bios and mission
 │   │   ├── contact.njk         # Contact form
 │   │   └── submit-resource.njk # Community resource submission form
 │   ├── blog/                   # Blog posts (Markdown with front matter)
-│   ├── podcast/                # Podcast episodes (Markdown with front matter)
+│   ├── posts/                  # Blog posts for /our-blog/ (Markdown; written in the CMS "Blog Posts")
 │   ├── css/
 │   │   └── styles.css          # Tailwind input with custom theme and components
 │   ├── js/
@@ -134,7 +135,7 @@ All NEW content is gated behind admin approval; only updates to already-live ent
 
 | Module | Location | Purpose |
 |--------|----------|---------|
-| Eleventy Config | `.eleventy.js` | Collections (blogPosts, podcastEpisodes), filters (dateFormat, limit, filterByCategory, filterByLocation), passthrough copies |
+| Eleventy Config | `.eleventy.js` | Collections (blogPosts, ourBlogPosts, spotlightPosts), filters (dateFormat, limit, filterByCategory, filterByLocation), passthrough copies |
 | Site Data | `src/_data/site.json` | Global metadata: site name, URL, email, locations array, Formspree form IDs |
 | Resource Data | `src/_data/resources/*.json` | Resource entries keyed by location (nova, portland, national) |
 | Base Scraper | `scrapers/base_scraper.py` | `make_resource()` factory, `save_resources()`, `load_existing()`, `merge_resources()` deduplication |
@@ -208,7 +209,7 @@ Status pages and plans written for Nicole are read as promises. Before anything 
 - All pages use YAML front matter: `layout`, `title`, `description`, `permalink`
 - Layouts chain: content → `page.njk` or `post.njk` → `base.njk`
 - Blog posts go in `src/blog/*.md` with the `post` layout
-- Podcast episodes go in `src/podcast/*.md` with the `post` layout
+- Blog posts go in `src/posts/*.md` (permalink `/our-blog/<slug>/` from `src/posts/posts.json`); `src/blog/*.md` feeds the curated Stories & News page at `/blog/`. Recommended podcasts are directory resources (`category: ["podcasts", "podcasts-<topic>"]` in `national.json`)
 - Components are Nunjucks partials included via `{% include "components/nav.njk" %}`
 - Resource data is accessed as `resources.nova`, `resources.portland`, `resources.national` (Eleventy auto-loads `_data/resources/*.json`)
 
@@ -364,7 +365,7 @@ Runs every Sunday at midnight UTC (or manual trigger). Installs Python 3.12, run
 |-------------|----------|--------|
 | Resource data | `src/_data/resources/*.json` | JSON arrays |
 | Blog posts | `src/blog/*.md` | Markdown with YAML front matter |
-| Podcast episodes | `src/podcast/*.md` | Markdown with YAML front matter |
+| Blog posts | `src/posts/*.md` | Markdown with YAML front matter |
 | Static pages | `src/pages/*.njk` | Nunjucks templates |
 | Site metadata | `src/_data/site.json` | JSON object |
 
@@ -375,7 +376,7 @@ Runs every Sunday at midnight UTC (or manual trigger). Installs Python 3.12, run
 | Formspree | Form notifications + no-JS fallback (contact, resource submission, newsletter) | Form IDs in `src/_data/site.json` under `formspree`. Resource + newsletter forms POST to the `tfp-admin-api` worker first and fall back to Formspree when it is unreachable. |
 | Brevo | Email distribution database, newsletter double-opt-in, transactional thank-yous, campaigns | API key + list/template ids are `tfp-admin-api` worker secrets (`BREVO_*`). List "TFP Community"; contact attributes SOURCE, DATE_ADDED, OPT_IN_STATUS. |
 | Cloudflare Workers | `gig-publisher` (`cloudflare-worker/`), `tfp-admin-api` (`cloudflare-worker-admin-api/`), `decap-oauth` (external repo) | Deployed via `npx wrangler deploy`; secrets in the Cloudflare dashboard (see each worker's README). |
-| Decap CMS | Content editing at `/admin/` (blog, podcast, Site Pages) + entry to the review portal at `/admin/review/` | `src/admin/config.yml`; GitHub backend with OAuth via the decap-oauth worker. |
+| Decap CMS | Content editing at `/admin/` (Blog Posts, Stories & News articles, Site Pages) + entry to the review portal at `/admin/review/` | `src/admin/config.yml`; GitHub backend with OAuth via the decap-oauth worker. |
 | Google Fonts | Nunito + Open Sans typefaces | Loaded in `base.njk` `<head>` |
 | GitHub Pages | Static site hosting | Auto-deploys via `deploy.yml` workflow on push to main |
 | GitHub Actions | CI/CD for build, deploy, and weekly scraping | `.github/workflows/` |
@@ -396,7 +397,7 @@ When working on tasks involving these technologies, invoke the corresponding ski
 | json | Structures resource data, site metadata, and scraper output in JSON format |
 | ftp | Legacy — deployment now handled by GitHub Pages |
 | github-actions | Configures CI/CD workflows for automated build, deploy, and weekly scraping jobs |
-| markdown | Authors blog posts and podcast episodes with YAML front matter and markdown content |
+| markdown | Authors blog posts and Stories & News articles with YAML front matter and markdown content |
 | mapping-user-journeys | Maps in-app journeys and identifies friction points in code |
 | scoping-feature-work | Breaks features into MVP slices and acceptance criteria |
 | instrumenting-product-metrics | Defines product events, funnels, and activation metrics |

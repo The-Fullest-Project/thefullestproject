@@ -67,9 +67,10 @@
   },
   {
     "name": "Other",
-    "blurb": "Emergency preparedness and everything that doesn't sit neatly elsewhere.",
+    "blurb": "Emergency preparedness, podcasts for caregivers, and everything that doesn't sit neatly elsewhere.",
     "slugs": [
       "emergency",
+      "podcasts",
       "other"
     ]
   }

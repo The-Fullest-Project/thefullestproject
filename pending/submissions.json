@@ -355,74 +355,6 @@
     }
   },
   {
-    "id": "sub-20261026-770ab800",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "quick-submit",
-      "detail": "bookmarklet",
-      "submittedAt": "2026-10-26T12:56:05.407Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Ari - Your Health Companion",
-      "category": [
-        "apps"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "The Citizen Health app is a free, AI-powered health platform and mobile application designed specifically for rare disease patients and caregivers.  it has an AI Advocate, appointment recording & summaries, medical record centralization, research contribution, and is SOC2 certified and HIPPA compliant.",
-      "phone": "",
-      "email": "",
-      "website": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "appointment management",
-        "medical records centralization",
-        "IEP support",
-        "medical management app"
-      ],
-      "source": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
-      "lastScraped": "2026-10-26"
-    }
-  },
-  {
-    "id": "sub-20261026-520c7120",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "quick-submit",
-      "detail": "bookmarklet",
-      "submittedAt": "2026-10-26T13:03:54.324Z"
-    },
-    "targetFile": "src/_data/resources/states/VA.json",
-    "payload": {
-      "name": "MU Go Baby Go - Marymount University",
-      "category": [
-        "adaptive-toys"
-      ],
-      "location": "Virginia",
-      "area": "Northern Virginia",
-      "description": "Go baby Go! transforms the lives of children with mobility challenges by providing adapted battery powered cars and4-wheelers to help these kids move in their environment … just like other kids do.",
-      "phone": "703-284-5980",
-      "email": "gobabygo@marymount.edu",
-      "website": "https://marymount.edu/academics/health-sciences/doctor-of-physical-therapy/go-baby-go/#gsc.tab=0",
-      "address": "2807 North Glebe Road Arlington, VA 22207",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "adapted cars",
-        "mobility aid"
-      ],
-      "source": "https://marymount.edu/academics/health-sciences/doctor-of-physical-therapy/go-baby-go/#gsc.tab=0",
-      "lastScraped": "2026-10-26"
-    }
-  },
-  {
     "id": "sub-20261027-bed6b3b8",
     "type": "submission",
     "status": "pending",
@@ -463,36 +395,756 @@
     }
   },
   {
-    "id": "sub-20261030-4f2835f1",
+    "id": "sub-20261103-98feee82",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-03T01:52:04.091Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "LawAsked",
+      "category": [
+        "legal"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "LawAsked answers real legal questions in plain language for 12 countries, and every answer cites and links the official statute sections it relies on. Topics include workplace rights, tenancy and consumer questions. Free; an information service, not a law firm.",
+      "phone": "",
+      "email": "legal@lawasked.com",
+      "website": "https://lawasked.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://lawasked.com/",
+      "lastScraped": "2026-11-03"
+    }
+  },
+  {
+    "id": "sub-20261103-ea15cd58",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-03T10:23:28.159Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "anysign",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "Online",
+      "description": "anysign is a sign language learning app for American Sign Language (ASL), German Sign Language (DGS) and Ukrainian Sign Language (USL). Short video lessons are recorded by deaf and native signers, with quizzes and a searchable video dictionary, so parents, siblings, caregivers and teachers of deaf children can start communicating in sign language. All ages. Cost: Freemium — free video dictionary and first lessons; subscription for full library. Available online on iOS, Android and the web. anysign does not provide interpreting services.",
+      "phone": "+4915233759371",
+      "email": "listings@anysign.app",
+      "website": "https://www.anysign.app",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.anysign.app",
+      "lastScraped": "2026-11-03"
+    }
+  },
+  {
+    "id": "sub-20261104-9036740e",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-04T16:23:12.527Z"
+    },
+    "targetFile": "src/_data/resources/states/NY.json",
+    "payload": {
+      "name": "Adapted Accessibility",
+      "category": [
+        "assistive-tech"
+      ],
+      "location": "New York",
+      "area": "Rochester",
+      "description": "Adapted Accessibility offers innovative accessibility products designed to help individuals with disabilities interact with technology, entertainment, and compatible devices more independently.\r\nIts primary product is the impact switch, a modular-mounted 3D- printed accessibility switch that provides an alternative way to control compatible devices. Adapted Accessibility primarily serves individuals with physical disabilities or limited mobility who may have difficulty using traditional buttons, keyboards, controllers, or other standard technology inputs. As a division of Lifetime Assistance, the organization also provides meaningful employment and supportive training opportunities for individuals with disabilities. Its products are built with input from people who have firsthand experience with accessibility needs, helping ensure that the products are practical and meaningful.\r\nimpact switches are intended to support:\r\n- Individuals with Disabilities: People who need alternative ways to interact with technology and electronic devices.\r\n- Students and Schools: Students who benefit from assistive technology and accessible learning tools.\r\n- Therapists and Healthcare Professionals: Professionals who incorporate adaptive equipment into therapy and assistive technology programs.\r\n- Caregivers and Families: Those looking for practical accessibility solutions to support independence at home.\r\n- Organizations and Educational Programs: Schools, rehabilitation centers, and other organizations seeking inclusive technology solutions.",
+      "phone": "585-756-2233",
+      "email": "adaptedaccessibility@lifetimeassistance.org",
+      "website": "https://adaptedaccessibility.com/",
+      "address": "425 Paul Rd. Rochester NY 14624",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "#AssistiveTechnology #AdaptiveTechnology #AccessibilityProducts #InclusiveTechnology",
+        "#AssistiveDevices",
+        "#AdaptiveEquipment"
+      ],
+      "source": "https://adaptedaccessibility.com/",
+      "lastScraped": "2026-11-04"
+    }
+  },
+  {
+    "id": "sub-20261105-d2f37aa2",
     "type": "submission",
     "status": "pending",
     "origin": {
       "type": "quick-submit",
       "detail": "bookmarklet",
-      "submittedAt": "2026-10-30T21:14:54.322Z"
+      "submittedAt": "2026-11-05T22:30:52.788Z"
     },
-    "targetFile": "src/_data/resources/states/NJ.json",
+    "targetFile": "src/_data/resources/national.json",
     "payload": {
-      "name": "Camp Chatterbox",
+      "name": "Resource Donation Program - Oley Foundation",
       "category": [
-        "respite"
+        "other"
       ],
-      "location": "New Jersey",
-      "area": "Oakhurst, NJ",
-      "description": "Camp Chatterbox is a one week overnight camp for children and young adults, ages 5-21, who use synthesized Augmentative and Alternative Communication (AAC) devices. All campers participate in a range of social, recreational, and educational activities to promote use of their communication systems and interact with other children. Therapy activities are led by licensed and ASHA Certified Speech-Language Pathologists, special education teachers, recreational therapists, and other qualified professionals.  Activities facilitate AAC device use throughout the day, and help build expressive language and critical thinking skills in a fun and functional environment. In addition, recreational activities include swimming, nature exploration, art, and sports. Each evening, campers, siblings, parents, and staff gather for activities such as campfires, dances, and a camp talent show.",
-      "phone": "",
-      "email": "",
-      "website": "https://csh.recdesk.com/Community/Page?pageId=13678",
-      "address": "Rising Treetops at Oakhurst in Oakhurst, NJ",
+      "location": "National",
+      "area": "",
+      "description": "The Oley Foundation is a non-profit home nutrition therapy community and advocacy group.  The Oley Foundation understands that within the nutrition support community, some people may need help with obtaining enteral nutrition (tube feeding) formula and/or supplies, while others may have extra items to give.",
+      "phone": "518-262-5079",
+      "email": "info@oley.org",
+      "website": "https://oley.org/page/Enteral_Donations",
+      "address": "Albany Medical Center, MC-28 43 New Scotland Ave.  Albany, NY 12208",
       "ageRange": "",
       "disabilityTypes": [],
       "cost": "",
       "tags": [
-        "Overnight camp",
-        "AAC resources"
+        "nutrition",
+        "enteral donations"
       ],
-      "source": "https://csh.recdesk.com/Community/Page?pageId=13678",
-      "lastScraped": "2026-10-30"
+      "source": "https://oley.org/page/Enteral_Donations",
+      "lastScraped": "2026-11-05"
+    }
+  },
+  {
+    "id": "sub-20261110-418ba90a",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-11-10T01:59:22.712Z"
+    },
+    "targetFile": "src/_data/resources/states/VA.json",
+    "payload": {
+      "name": "Without Limits Collective",
+      "category": [
+        "education"
+      ],
+      "location": "Virginia",
+      "area": "Northern Virginia",
+      "description": "From Surviving to Thriving: IEPs, 504s and Beyond.  At Without Limits Collective, our mission is to empower families by providing inclusive, trauma-informed, and individualized support that honors every child’s unique strengths. We exist to help parents feel seen, supported, and equipped—because when families thrive, children do too.\r\nOur focus is tutoring, advocacy, and school management.",
+      "phone": "",
+      "email": "llatham@withoutlimitscollective.com",
+      "website": "https://www.withoutlimitscollective.com/",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "IEP",
+        "504s",
+        "Tutoring",
+        "advocacy",
+        "school management"
+      ],
+      "source": "https://www.withoutlimitscollective.com/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-14b5d3da",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-11-10T04:41:17.994Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Switch! It Up Switch Adaptive Toys and Adapted Play Products",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Made for Real Kids.  Adapted with Purpose.\r\n\r\nBorn from our own family’s journey, Switch! It Up understands how important trust, safety, and meaningful play truly are.\r\n\r\nOur toys are thoughtfully adapted by hand and carefully tested to ensure reliable, responsive play — supporting independence, confidence, and joy, because play should be accessible to everyone.",
+      "phone": "+13175481495",
+      "email": "cheyenne@switchituptoys.com",
+      "website": "https://www.switchituptoys.com/?gad_source=1&gad_campaignid=24308959104&gbraid=0AAAAA_mATwJc9746_Gw2pvttAbJZFakq9&gclid=Cj0KCQiA-8XXBhDaARIsADnEOrA14Vog_aGjsNb0eyrz5VrVJVqqznD8V6cdFuS3n1MvBtjzZGE3cFgaAnQCEALw_wcB",
+      "address": "18132 Knobstone Way Westfield, IN 46074 United States",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "adapted toys",
+        "assistive play",
+        "switch adapted toys"
+      ],
+      "source": "https://www.switchituptoys.com/?gad_source=1&gad_campaignid=24308959104&gbraid=0AAAAA_mATwJc9746_Gw2pvttAbJZFakq9&gclid=Cj0KCQiA-8XXBhDaARIsADnEOrA14Vog_aGjsNb0eyrz5VrVJVqqznD8V6cdFuS3n1MvBtjzZGE3cFgaAnQCEALw_wcB",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-a3effe82",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "GoBabyGo (University of Delaware)",
+      "category": [
+        "adaptive-toys",
+        "equipment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Modifies ride-on toy cars so young children with disabilities can move around on their own. Started at the University of Delaware, the program has trained volunteers in more than 40 communities and shares its car modification designs publicly. Many local universities and hospitals run their own GoBabyGo builds, so check for one near you.",
+      "phone": "",
+      "website": "https://sites.udel.edu/gobabygo",
+      "address": "",
+      "ageRange": "Young children",
+      "disabilityTypes": [],
+      "cost": "Varies by local program; often free to families",
+      "tags": [
+        "ride-on-cars",
+        "mobility",
+        "volunteer-built"
+      ],
+      "source": "https://sites.udel.edu/gobabygo",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-7f16f0e4",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Adapt to Play",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "Gives adaptive toys to children with disabilities at no cost. A physical, occupational or speech therapist must submit the request on the child's behalf, and switches are requested separately. Check their site for current eligibility and the areas they serve.",
+      "phone": "",
+      "website": "https://adaptoplay.org/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free (request through a therapist)",
+      "tags": [
+        "switch-adapted",
+        "free-toys"
+      ],
+      "source": "https://adaptoplay.org/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-eb40daf8",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Switched Adapted Toys",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A nonprofit that publishes free how-to guides for families and therapists who want to adapt toys themselves, and also sells toys that are already switch-adapted.",
+      "phone": "",
+      "website": "https://www.switchedtoys.org/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Guides free; adapted toys for sale",
+      "tags": [
+        "switch-adapted",
+        "diy-adapting"
+      ],
+      "source": "https://www.switchedtoys.org/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-614b414a",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Santa's Little Hackers",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A holiday toy drive whose volunteers make simple electronic changes to toys so children with disabilities can play with them, then give the toys away. Its website also keeps a list of toy-adapting organizations across the country, which is a good place to look for a group near you.",
+      "phone": "",
+      "website": "https://www.santaslittlehackers.com/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "toy-drive",
+        "holiday"
+      ],
+      "source": "https://www.santaslittlehackers.com/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-d652d06c",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "USA Toy Library Association - Find a Toy Library",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A national directory of toy lending libraries. Listings show each library's address, who it serves (including children with special needs) and what it lends. Roughly a quarter of U.S. toy libraries offer adaptive toys, so this is a good way to find one near you before buying.",
+      "phone": "",
+      "website": "https://www.usatla.org/toy-library-locations",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Directory free; some libraries charge a membership fee",
+      "tags": [
+        "toy-lending-library"
+      ],
+      "source": "https://www.usatla.org/toy-library-locations",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-ef7aaca1",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "LEGO Braille Bricks - Play with Braille",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "A LEGO set with bricks that carry braille letters and numbers, designed so blind, partially sighted and sighted children can learn braille through play together. Once available only to schools, it has been on sale to families at LEGO.com since 2023.",
+      "phone": "",
+      "website": "https://www.lego.com/aboutus/news/2023/august/lego-braille-bricks-play-with-braille-",
+      "address": "",
+      "ageRange": "6 and up",
+      "disabilityTypes": [
+        "Visual impairment"
+      ],
+      "cost": "Paid; check current price at LEGO.com",
+      "tags": [
+        "braille",
+        "blind-low-vision"
+      ],
+      "source": "https://www.lego.com/aboutus/news/2023/august/lego-braille-bricks-play-with-braille-",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-bb3d7755",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "Rehabmart - Switch Adapted Toys",
+      "category": [
+        "adaptive-toys",
+        "equipment"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "An online retailer that sells switch-adapted toys from several makers in one place, including Enabling Devices, TFH and AbleNet.",
+      "phone": "",
+      "website": "https://rehabmart.com/category/switch_adapted.htm",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Paid",
+      "tags": [
+        "switch-adapted",
+        "retailer"
+      ],
+      "source": "https://rehabmart.com/category/switch_adapted.htm",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-93d2d24c",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/OH.json",
+    "payload": {
+      "name": "Nisonger Center Toy and Technology Library (Ohio State University)",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Ohio",
+      "area": "Columbus",
+      "description": "A free lending library at Ohio State's Nisonger Center with more than 1,500 adaptive toys, switches and low-tech communication devices that families can borrow for 30 days at a time. Many of its toys come from Ohio State engineering students' Toy Adaptation Program. Confirm current hours and how to borrow with the Nisonger Center.",
+      "phone": "",
+      "website": "https://nisonger.osu.edu/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted"
+      ],
+      "source": "https://nisonger.osu.edu/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-e31d7bcb",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/KY.json",
+    "payload": {
+      "name": "enTech Toy Library (Spalding University)",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Kentucky",
+      "area": "Louisville",
+      "description": "enTech is one of Kentucky's five state assistive technology resource centers, run by Spalding University's school of occupational therapy. Its toy library lets eligible families borrow up to four adaptive toys, switches or learning toys for four weeks at a time. Confirm current loan terms with enTech.",
+      "phone": "800-896-8941",
+      "website": "https://spalding.edu/?p=22866",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Contact enTech",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted"
+      ],
+      "source": "https://spalding.edu/?p=22866",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-7c5f3793",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/KY.json",
+    "payload": {
+      "name": "Toys with a Purpose (University of Kentucky)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Kentucky",
+      "area": "Eastern Kentucky (Hazard)",
+      "description": "A free online lending library of adapted toys, devices and learning materials for families in Appalachian eastern Kentucky. Run by the University of Kentucky with the Kentucky Appalachian Rural Rehabilitation Network from its Hazard site, with local students and volunteers helping adapt the toys.",
+      "phone": "",
+      "website": "https://chs.uky.edu/karrn/toys-with-a-purpose",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "rural"
+      ],
+      "source": "https://chs.uky.edu/karrn/toys-with-a-purpose",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-366604b0",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/NE.json",
+    "payload": {
+      "name": "Tech Tools Lending Libraries - United Cerebral Palsy of Nebraska",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Nebraska",
+      "area": "Statewide (Omaha library at the Munroe-Meyer Institute)",
+      "description": "United Cerebral Palsy of Nebraska runs lending libraries across the state with modified toys, sensory aids and adaptive switches that people of all ages can borrow at no cost. The Omaha library is at UNMC's Munroe-Meyer Institute, 6902 Pine St. Call to check hours and how to borrow.",
+      "phone": "402-559-6580",
+      "website": "https://www.unmc.edu/newsroom/2023/03/14/mmi-ucp-of-nebraska-offer-tech-tools-library-2/",
+      "address": "6902 Pine St, Omaha, NE",
+      "ageRange": "All ages",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted",
+        "sensory"
+      ],
+      "source": "https://www.unmc.edu/newsroom/2023/03/14/mmi-ucp-of-nebraska-offer-tech-tools-library-2/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-447f7f23",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/WA.json",
+    "payload": {
+      "name": "PNW Adapted Toy Library (PROVAIL and University of Washington)",
+      "category": [
+        "adaptive-toys",
+        "assistive-tech"
+      ],
+      "location": "Washington",
+      "area": "Seattle",
+      "description": "A free lending library of adapted toys, switches and gaming equipment that families can borrow and try at home. Run by the nonprofit PROVAIL with the University of Washington's Taskar Center and the HuskyADAPT student group, it was the first U.S. adapted toy library registered with the American Toy Library Association. Enroll through the library's website.",
+      "phone": "",
+      "website": "https://pnwadaptivelibrary.cs.washington.edu",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "toy-lending-library",
+        "switch-adapted"
+      ],
+      "source": "https://pnwadaptivelibrary.cs.washington.edu",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-ce64ff08",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/WA.json",
+    "payload": {
+      "name": "HuskyADAPT Toy Adaptation Requests (University of Washington)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Washington",
+      "area": "Seattle",
+      "description": "A University of Washington student group that adapts toys for children with disabilities. Families, clinics and schools can request a toy through the group's form, then pick up the adapted toy at UW. The group also runs holiday toy-adapting events.",
+      "phone": "",
+      "website": "https://www.huskyadapt.me.uw.edu/about-us",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "volunteer-built"
+      ],
+      "source": "https://www.huskyadapt.me.uw.edu/about-us",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-733ab4c2",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/NY.json",
+    "payload": {
+      "name": "Big Red Adaptive Play and Design Initiative (Cornell University)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "New York",
+      "area": "Ithaca",
+      "description": "A Cornell student group that rewires battery-operated toys so children with motor disabilities can play using a switch. It runs a lending library of adapted toys for local schools and organizations, and works with school therapists on other assistive devices. Families can ask their child's school or therapist about access.",
+      "phone": "",
+      "website": "https://news.cornell.edu/stories/2024/04/student-group-adapts-toys-devices-kids-disabilities",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "toy-lending-library",
+        "volunteer-built"
+      ],
+      "source": "https://news.cornell.edu/stories/2024/04/student-group-adapts-toys-devices-kids-disabilities",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-1410d7e8",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/NY.json",
+    "payload": {
+      "name": "Heritage Play Library",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "New York",
+      "area": "Kenmore (Western New York)",
+      "description": "A Western New York toy lending library that began as a Lekotek center and still follows its play-based approach for families of children with special needs. It lends toys, books and adaptive toys to eligible children and their siblings, with day, evening and weekend appointments. Confirm current hours and eligibility by phone.",
+      "phone": "716-876-3901",
+      "website": "https://publichealth.buffalo.edu/cat/about-cat/education/traid/lending-libraries.html",
+      "address": "1 Delaware Road, Kenmore, NY 14217",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Contact the library",
+      "tags": [
+        "toy-lending-library"
+      ],
+      "source": "https://publichealth.buffalo.edu/cat/about-cat/education/traid/lending-libraries.html",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-d4519275",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/WI.json",
+    "payload": {
+      "name": "Inclusive Play: Toys for All (Penfield Children's Center and Marquette University)",
+      "category": [
+        "adaptive-toys"
+      ],
+      "location": "Wisconsin",
+      "area": "Milwaukee County",
+      "description": "An adaptive toy project of Penfield Children's Center and Marquette University. Engineering, occupational therapy and high school students adapt hundreds of toys each year for children with differing abilities in Milwaukee County, at no charge to families and therapists.",
+      "phone": "",
+      "website": "https://penfieldchildren.org/adaptive-toys/",
+      "address": "",
+      "ageRange": "Children",
+      "disabilityTypes": [],
+      "cost": "Free",
+      "tags": [
+        "switch-adapted",
+        "volunteer-built"
+      ],
+      "source": "https://penfieldchildren.org/adaptive-toys/",
+      "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261110-ac30018d",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "bulk-import",
+      "detail": "adaptive-toy-research-2026-11",
+      "submittedAt": "2026-11-10T04:50:47.682Z"
+    },
+    "targetFile": "src/_data/resources/states/CO.json",
+    "payload": {
+      "name": "Adapt to Impact (University of Colorado Denver)",
+      "category": [
+        "adaptive-toys",
+        "childcare"
+      ],
+      "location": "Colorado",
+      "area": "Denver area",
+      "description": "A lending library of more than 200 adapted toys and items for childcare providers, from the University of Colorado Denver's Center for Innovative Design and Engineering. It lends to childcare settings, not directly to families, so it's useful to share with your child's daycare or preschool.",
+      "phone": "",
+      "website": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
+      "address": "",
+      "ageRange": "Young children",
+      "disabilityTypes": [],
+      "cost": "Free to childcare providers",
+      "tags": [
+        "toy-lending-library",
+        "childcare-providers"
+      ],
+      "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
+      "lastScraped": "2026-11-10"
     }
   }
 ]

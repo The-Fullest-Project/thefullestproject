@@ -1,72 +1,5 @@
 [
   {
-    "scraper": "cms_providers",
-    "timestamp": "2026-07-19T02:57:11.103518",
-    "status": "OK",
-    "targets_attempted": 2,
-    "targets_succeeded": 2,
-    "entries_found": 79,
-    "entries_queued": 0,
-    "entries": []
-  },
-  {
-    "scraper": "osm_overpass",
-    "timestamp": "2026-07-19T03:15:12.729929",
-    "status": "PARTIAL",
-    "targets_attempted": 46,
-    "targets_succeeded": 37,
-    "entries_found": 766,
-    "entries_queued": 267,
-    "entries": [
-      {
-        "action": "error",
-        "name": "OK: HTTP Error 504: Gateway Timeout"
-      },
-      {
-        "action": "error",
-        "name": "OR: HTTP Error 504: Gateway Timeout"
-      },
-      {
-        "action": "error",
-        "name": "SD: HTTP Error 504: Gateway Timeout"
-      },
-      {
-        "action": "error",
-        "name": "UT: HTTP Error 504: Gateway Timeout"
-      },
-      {
-        "action": "error",
-        "name": "WA: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "AL: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "FL: HTTP Error 429: Too Many Requests"
-      },
-      {
-        "action": "error",
-        "name": "ID: HTTP Error 504: Gateway Timeout"
-      },
-      {
-        "action": "error",
-        "name": "KY: HTTP Error 504: Gateway Timeout"
-      }
-    ]
-  },
-  {
-    "scraper": "spotlight_scraper",
-    "timestamp": "2026-07-19T03:16:43.409773",
-    "entries_found": 1,
-    "entries": [
-      {
-        "action": "no_new_found"
-      }
-    ]
-  },
-  {
     "scraper": "blog_content",
     "timestamp": "2026-07-19T03:17:17.167908",
     "entries_found": 1,
@@ -1007,6 +940,107 @@
         "title": "It's not just a SEND project: Getting started with inclusion reforms - Headteacher Update",
         "source": "Headteacher Update",
         "slug": "its-not-just-a-send-project-getting-started-with-inclusion-r"
+      }
+    ]
+  },
+  {
+    "scraper": "osm_overpass",
+    "timestamp": "2026-11-01T10:45:36.765725",
+    "status": "FAILED",
+    "targets_attempted": 51,
+    "targets_succeeded": 0,
+    "entries_found": 0,
+    "entries_queued": 0,
+    "entries": [
+      {
+        "action": "error",
+        "name": "UT: HTTP Error 502: Bad Gateway"
+      },
+      {
+        "action": "error",
+        "name": "VT: HTTP Error 502: Bad Gateway"
+      },
+      {
+        "action": "error",
+        "name": "VA: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "WA: HTTP Error 502: Bad Gateway"
+      },
+      {
+        "action": "error",
+        "name": "WV: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "WI: HTTP Error 502: Bad Gateway"
+      },
+      {
+        "action": "error",
+        "name": "WY: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "AL: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "AK: The read operation timed out"
+      },
+      {
+        "action": "error",
+        "name": "AZ: The read operation timed out"
+      }
+    ]
+  },
+  {
+    "scraper": "spotlight_scraper",
+    "timestamp": "2026-11-01T10:51:13.232118",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "queued",
+        "name": "VA awards $352,800 to two Michigan organizations for adaptive sports",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbkx3NVpiQ0ZGeDJlblhvazk0bEhMN2JNaTIzM0ZoQzJQbUxfY0w1QWRzSk9FUmZDbDNVdV9sYzRaSGN6RU5mbTNoQThvUkwxb1M3cFUyVE1JZnV5eUZuTWlpM0xMVWJVSWRLMU1sRkRFdmtoYVJFWnh3OXJXUE1XMi1XZVREODh5cWF2dElmUkJqRXJtbmRr0gGrAUFVX3lxTE9mOGR5QVNPSW1XazJrcEFVaXV3ZzBJeDl5SmtSS2MzaXdYUXBnaVZ0MnVMYTFReFBMNjN0MzJDcFp4QU9QQlpjME5QaTB5cE1mQ0ZfUnV3V1RvQTRtclMyV1lBOHkwVWxJNFRXaEQxTWIwM0tPX3BONlVNYzNveE9paHIzeUpmYTF6LTI3cGp3WWhMMkJkNEwtVG1Ubl9kTjFqWW0wMTVqUm1Vcw?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "Construction begins on accessible hand-launch dock in Fairhaven",
+        "category": "Adventures",
+        "website": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeThIcGpOdVV6SXhsc0pvTElmMFQ0by1Hc01FYWVocE80aWZmVmItQmtoSmJOaDF0bExjaXJtSndWTUdVZlFDZUl3WXZoVFg3ZUpsTG0zdTd4UzV0Umk1UDVEQkZ2WVJ3ektlTUNBSVVKbFYwNWJnSURCYk9JMHhXSzlFak9oYnBIMkVBNVd3clZGcmFyck9rWWN0TlNGRHFmX1VKT3ZaOA?oc=5"
+      },
+      {
+        "action": "queued",
+        "name": "How a Service Dog in Training Can Advance Disability Inclusion in Belize",
+        "category": "Community",
+        "website": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTThITEJ2SExMN2lLWXRDTll2alNYUUNkQS1xUzZUeVYzcUVEejlWSnpDMDNaNEtiWmRqa1FsVWJ6a1VSZTN3bFRRcjRuMmp3UGJsNkh1NTMtNU1QQnlMYWZXY2swb0xWU0F0bW96Mndab1JJM0E3eFlWRlIyMkU0M3ZTMWZyN0NkMXdvc1BaaDI1ZVVGLV9xbE0tRHp0S3JKeFd5Z0hn?oc=5"
+      }
+    ]
+  },
+  {
+    "scraper": "blog_content",
+    "timestamp": "2026-11-01T10:51:14.941018",
+    "entries_found": 3,
+    "entries": [
+      {
+        "action": "queued",
+        "title": "America’s caregiver crisis is also a mental health crisis - WSB-TV",
+        "source": "WSB-TV",
+        "slug": "americas-caregiver-crisis-is-also-a-mental-health-crisis-wsb"
+      },
+      {
+        "action": "queued",
+        "title": "IEP Teams Must Consider Assistive Technology, Which May Include Artificial Intelligence - Special Education Action",
+        "source": "Special Education Action",
+        "slug": "iep-teams-must-consider-assistive-technology-which-may-inclu"
+      },
+      {
+        "action": "queued",
+        "title": "Commentary: A New Approach to Closing the Disability Wealth Gap - Tennessee Lookout",
+        "source": "Tennessee Lookout",
+        "slug": "commentary-a-new-approach-to-closing-the-disability-wealth-g"
       }
     ]
   }

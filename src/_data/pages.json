@@ -2,5 +2,9 @@
   "blog": {
     "heading": "Stories & News",
     "intro": "Stories, insights, and practical advice from experts and caregivers in the disability community."
+  },
+  "ourBlog": {
+    "heading": "Blog",
+    "intro": "Stories, practical guides and advice from our team and guest experts, written for caregivers of people with disabilities."
   }
 }

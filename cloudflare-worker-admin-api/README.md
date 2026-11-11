@@ -78,7 +78,7 @@ namespace — never the repo, which is public.
   box stops at 2,000). An optional `emailTo`, which must be a
   `@thefullestproject.org` address, also sends that response to that mailbox and
   returns `emailed: true/false`. An optional `attachment` of `{ name, data }`
-  (base64 PDF, 5 MB at most) is stored privately under a `crfile-` key, sent
+  (base64 PDF or .docx, 5 MB at most) is stored privately under a `crfile-` key, sent
   with the alert email, and fetched with `GET /change-requests/file?key=`. It is
   removed with its request. Each response is its own KV key,
   `reply-<requestId>-<timestamp>-<rand>`, because KV reads can be a minute stale

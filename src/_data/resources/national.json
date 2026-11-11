@@ -69,7 +69,7 @@
   {
     "name": "Able Fables",
     "category": [
-      "books"
+      ""
     ],
     "location": "National",
     "area": "",
@@ -78,7 +78,7 @@
     "website": "https://www.ablefables.org/",
     "instagram": "",
     "address": "",
-    "ageRange": "Children",
+    "ageRange": "",
     "disabilityTypes": [],
     "cost": "",
     "tags": [
@@ -111,15 +111,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
+      "disability",
+      "tax-advantaged",
       "savings",
       "able-act",
-      "tax-advantaged",
-      "disability",
       "financial-planning",
       "financial"
     ],
     "source": "https://www.ablenrc.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "AbleData",
@@ -139,7 +139,7 @@
       "assistive-tech"
     ],
     "source": "https://abledata.acl.gov/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "AbleGamers Charity",
@@ -484,7 +484,7 @@
       "camps"
     ],
     "source": "https://www.acacamps.org/campers-families/find-a-camp",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "AngelSense GPS Tracker",
@@ -630,41 +630,7 @@
       "assistive-tech"
     ],
     "source": "https://www.at3center.net/",
-    "lastScraped": "2026-10-11"
-  },
-  {
-    "name": "AssistiveWare - Proloquo2Go",
-    "category": [
-      "assistive-tech"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Award-winning symbol-based AAC app for iPad/iPhone enabling nonspeaking children and adults to communicate. Fully customizable vocabulary that grows with the user.",
-    "phone": "",
-    "website": "https://www.assistiveware.com/products/proloquo2go",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": [
-      "autism",
-      "down-syndrome",
-      "cerebral-palsy",
-      "apraxia"
-    ],
-    "cost": "~$250 one-time",
-    "tags": [
-      "AAC",
-      "communication",
-      "app",
-      "iPad",
-      "nonspeaking"
-    ],
-    "source": "https://www.assistiveware.com/products/proloquo2go",
-    "lastScraped": "2026-03-08",
-    "dateAdded": "2026-03-08",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Autism Speaks",
@@ -1049,15 +1015,15 @@
     "disabilityTypes": [],
     "cost": "",
     "tags": [
-      "anticipatory-grief",
       "support",
+      "anticipatory-grief",
+      "mental-health",
       "caregiver",
-      "grief",
       "help-desk",
-      "mental-health"
+      "grief"
     ],
     "source": "https://www.caregiveraction.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Carewell",
@@ -1318,7 +1284,7 @@
       "assistive-tech"
     ],
     "source": "https://www.closingthegap.com/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Coalition for Responsible Home Education (CRHE)",
@@ -1610,7 +1576,7 @@
       "early-intervention"
     ],
     "source": "https://ectacenter.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Easterseals",
@@ -1675,19 +1641,21 @@
     "name": "Enabling Devices",
     "category": [
       "assistive-tech",
-      "equipment"
+      "equipment",
+      "switch-adapted"
     ],
     "location": "National",
     "area": "",
     "description": "Over 40 years designing switch-adapted toys, AAC devices, adaptive switches, and daily living products. Extensive catalog of cause-and-effect toys for early learning and sensory development for children and adults with disabilities.",
-    "phone": "",
+    "phone": "800-832-8697",
     "website": "https://enablingdevices.com",
     "address": "",
     "ageRange": "All ages",
     "disabilityTypes": [
       "physical",
       "developmental",
-      "cognitive"
+      "cognitive",
+      "sensory"
     ],
     "cost": "$20-$500+",
     "tags": [
@@ -1698,47 +1666,12 @@
       "sensory",
       "communication",
       "daily-living",
-      "technology"
+      "technology",
+      "assistive-technology"
     ],
     "source": "https://enablingdevices.com",
     "lastScraped": "2026-03-08",
     "dateAdded": "2026-03-08",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "Enabling Devices (formerly Toys for Special Children)",
-    "category": [
-      "switch-adapted",
-      "equipment",
-      "assistive-tech"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Designs and manufactures affordable assistive technology and switch-adapted products including toys, communication devices, sensory items, and environmental controls for people with disabilities.",
-    "phone": "800-832-8697",
-    "website": "https://enablingdevices.com",
-    "address": "",
-    "ageRange": "All ages",
-    "disabilityTypes": [
-      "physical",
-      "cognitive",
-      "sensory"
-    ],
-    "cost": "",
-    "tags": [
-      "switch-adapted",
-      "toys",
-      "assistive-technology",
-      "sensory",
-      "communication",
-      "technology"
-    ],
-    "source": "https://enablingdevices.com",
-    "lastScraped": "2026-03-09",
-    "dateAdded": "2026-03-09",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
@@ -1951,7 +1884,7 @@
       "insurance"
     ],
     "source": "https://familyvoices.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Feeding Matters",
@@ -2080,7 +2013,7 @@
       "medical"
     ],
     "source": "https://palfreyassociates.com/disability-friendly-doctor/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Firefly by Leckey",
@@ -2481,7 +2414,7 @@
       "housing"
     ],
     "source": "https://www.hud.gov/program_offices/fair_housing_equal_opp/disability_overview",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "HumanWare - Braille & Low Vision",
@@ -3259,7 +3192,7 @@
       "sports"
     ],
     "source": "https://www.miracleleague.com/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "MobilityWorks",
@@ -3494,7 +3427,7 @@
       "financial"
     ],
     "source": "https://www.ndrn.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "National Down Syndrome Congress",
@@ -3916,7 +3849,7 @@
       "transition"
     ],
     "source": "https://www.pacer.org/transition/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Parent Center Hub (CPIR)",
@@ -4203,7 +4136,7 @@
       "emergency"
     ],
     "source": "https://www.ready.gov/disability",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Rebuilding Together",
@@ -4223,7 +4156,7 @@
       "home-modifications"
     ],
     "source": "https://www.rebuildingtogether.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Rifton Equipment",
@@ -4432,14 +4365,14 @@
     "cost": "",
     "tags": [
       "support",
-      "sibling",
+      "sibling-support",
       "advocacy",
       "peer",
-      "network",
-      "sibling-support"
+      "sibling",
+      "network"
     ],
     "source": "https://www.siblingleadership.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Sibling Support Project (Sibshops)",
@@ -4459,7 +4392,7 @@
       "sibling-support"
     ],
     "source": "https://siblingsupport.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Smartbox - Grid AAC",
@@ -4511,7 +4444,7 @@
       "financial"
     ],
     "source": "https://www.ssa.gov/benefits/disability/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Sonic Alert",
@@ -4655,7 +4588,7 @@
       "planning"
     ],
     "source": "https://www.specialneedsalliance.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Special Olympics",
@@ -4675,7 +4608,7 @@
       "sports"
     ],
     "source": "https://www.specialolympics.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "SPED Homeschool",
@@ -4951,37 +4884,6 @@
     "source": "https://www.ted.com/talks?sort=relevance&q=disability",
     "lastScraped": "2026-03-06",
     "dateAdded": "2026-03-06",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
-    "name": "The Able Fables",
-    "category": [
-      "influencers",
-      "books"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "Dr. Nicole Julia, occupational therapist and inclusive children's book author. Shares disability inclusion content and promotes the Able Fables book series. 20% of profits donated to build inclusive playgrounds â€” over $60K donated.",
-    "phone": "",
-    "website": "https://www.theablefables.com/",
-    "instagram": "https://www.instagram.com/theablefables/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "",
-    "tags": [
-      "inclusion",
-      "children-books",
-      "occupational-therapy",
-      "playground",
-      "influencer"
-    ],
-    "source": "https://www.theablefables.com/",
-    "lastScraped": "2026-03-08",
-    "dateAdded": "2026-03-08",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
@@ -5311,7 +5213,7 @@
       "transition"
     ],
     "source": "https://thinkcollege.net/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "This Beach Is Loud!",
@@ -7234,34 +7136,6 @@
     }
   },
   {
-    "name": "Move United",
-    "category": [
-      "sports",
-      "nonprofit"
-    ],
-    "location": "National",
-    "area": "",
-    "description": "The nation's leading community-based adaptive sports organization with 249 member organizations in 45 states, serving over 125,000 youth and adults annually across dozens of sports.",
-    "phone": "",
-    "website": "https://moveunitedsport.org/",
-    "address": "",
-    "ageRange": "",
-    "disabilityTypes": [],
-    "cost": "Varies",
-    "tags": [
-      "adaptive sports",
-      "umbrella organization",
-      "nationwide"
-    ],
-    "source": "https://moveunitedsport.org/",
-    "lastScraped": "2026-03-10",
-    "dateAdded": "2026-03-10",
-    "origin": {
-      "type": "scraper",
-      "detail": "legacy-backfill"
-    }
-  },
-  {
     "name": "National Wheelchair Basketball Association (NWBA)",
     "category": [
       "sports"
@@ -7796,22 +7670,28 @@
     "phone": "",
     "website": "https://www.assistiveware.com/products/proloquo2go",
     "address": "",
-    "ageRange": "",
+    "ageRange": "All ages",
     "disabilityTypes": [
       "speech",
       "autism",
-      "cerebral palsy"
+      "cerebral palsy",
+      "down-syndrome",
+      "cerebral-palsy",
+      "apraxia"
     ],
     "cost": "$249.99 (one-time purchase)",
     "tags": [
       "AAC",
       "iPad app",
       "communication",
-      "symbols"
+      "symbols",
+      "app",
+      "iPad",
+      "nonspeaking"
     ],
     "source": "https://www.assistiveware.com/",
     "lastScraped": "2026-03-10",
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-03-08",
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
@@ -10216,7 +10096,7 @@
       "mental-health"
     ],
     "source": "https://www.nami.org/",
-    "lastScraped": "2026-10-11"
+    "lastScraped": "2026-11-01"
   },
   {
     "name": "Medically Complex Caregiver",
@@ -11079,6 +10959,1647 @@
     "origin": {
       "type": "submission",
       "detail": "submit-resource-form"
+    }
+  },
+  {
+    "name": "Ari - Your Health Companion",
+    "category": [
+      "apps"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "The Citizen Health app is a free, AI-powered health platform and mobile application designed specifically for rare disease patients and caregivers.  it has an AI Advocate, appointment recording & summaries, medical record centralization, research contribution, and is SOC2 certified and HIPPA compliant.",
+    "phone": "",
+    "email": "",
+    "website": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "tags": [
+      "appointment management",
+      "medical records centralization",
+      "IEP support",
+      "medical management app"
+    ],
+    "source": "https://ari.citizenhealth.com/?utm_channel=paid_ads&utm_source=google_ads&utm_campaign=Citizen_Brand&utm_content=citizen_health&utm_keyword=citizen health app&gad_source=1&gad_campaignid=24350792094&gbraid=0AAAAA_gUURcGJpfACVQshFAKu2pbtteHp&gclid=CjwKCAjw9PvWBhAxEiwAddzYybdrR8kfWlZTPlLEmZiWwf5OJ1c4SnWL-osm26YAnz4wtqXAP0wjWRoCj_cQAvD_BwE",
+    "lastScraped": "2026-10-26",
+    "dateAdded": "2026-10-31",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet"
+    }
+  },
+  {
+    "name": "The Accessible Stall",
+    "category": [
+      "podcasts",
+      "podcasts-disability-culture"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Kyle Khachadurian & Emily Ladau. Two disabled friends discuss disability topics, share stories, and interview guests. Funny, honest, and thought-provoking conversations about living with a disability.",
+    "phone": "",
+    "website": "https://www.theaccessiblestall.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://www.theaccessiblestall.com",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Disability After Dark",
+    "category": [
+      "podcasts",
+      "podcasts-disability-culture"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Andrew Gurza. Shining a bright light on what it's like to live with a disability, covering everything from relationships and parenting to travel and advocacy.",
+    "phone": "",
+    "website": "https://www.disabilityafterdark.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://www.disabilityafterdark.com",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Parenting Special Needs Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Chantai Snellgrove. Practical tips, life lessons, challenges, and joys of parenting children with special needs — from the creators of Parenting Special Needs Magazine.",
+    "phone": "",
+    "website": "https://www.parentingspecialneeds.org/advice/podcast/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/parenting-special-needs-podcast/id1361869302",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Parenting Impossible: The Special Needs Survival Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Annette Dygert-Gearheart & Jason Gearheart. Honest, real conversations about the chaos and beauty of raising kids with disabilities — covering therapies, IEPs, marriage, self-care, and everything in between.",
+    "phone": "",
+    "website": "https://parentingimpossiblepodcast.com",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/parenting-impossible-the-special-needs-survival-podcast/id1480043957",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Once Upon a Gene",
+    "category": [
+      "podcasts",
+      "podcasts-rare-disease"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Effie Parks. Conversations with rare disease parents, disabled adults, caregivers, and professionals — honest stories about parenting, identity, and advocacy in the rare disease world.",
+    "phone": "",
+    "website": "https://effieparks.com/podcast",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://effieparks.com/podcast",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "2 Pancakes of Wisdom",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Maureen O'Neill. Welcome to the wild, ridiculous, and completely out of control adventure that is called special needs parenting. The kind of “all your child will eat are frozen pancakes from Trader Joe’s, and they are out, so you are crying to the friendly crew member in the…",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/2-pancakes-of-wisdom/id1568653345?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/2-pancakes-of-wisdom/id1568653345?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "A Tour of Holland",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by April Hammon. This podcast serves as a platform for parents of children with special needs in order to gain insight, educate, and build community.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/a-tour-of-holland/id1547298349?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/a-tour-of-holland/id1547298349?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Autism Parenting Secrets",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Cass & Len Arcuri. Are you a parent of a child with Autism? Are you ready to rise above the diagnosis? Each week on Autism Parenting Secrets, we are going to share how you can rise up and become the parent you need to be. Get personalized support at: elevatehowyounavigate.com",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/autism-parenting-secrets/id1515341022?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/autism-parenting-secrets/id1515341022?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "aVERY BRIGHT LIFE",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lisa Fraser Thornbury & Avery Thornbury. aVERY BRIGHT LIFE isn't your typical parenting podcast. Mom, Lisa, shares honestly and humourously what she's learning about raising a child with disabilities. What makes this show unique is Avery herself, who is beautifully atypical.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/avery-bright-life/id1537430065?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/avery-bright-life/id1537430065?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Brave Together Podcast: Support and Community for Caregiving Parents",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Jessica Patay. This is Brave Together Podcast. On Brave Together Podcast, co-hosts Jessica Patay, Susanna Peace Lovell and Dr. Zoe Shaw, will share interviews, celebrate stories, explore challenges, and rally hope for the motherhood journey.",
+    "phone": "",
+    "website": "https://wearebravetogether.org/podcast/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/brave-together-podcast-support-and-community-for/id1511571105?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Changing The Chances",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Alisha & Jesse Chance. Follow our hosts Alisha and Jesse Chance talk about their story growing and learning to be special needs parents. New episodes every Monday unless something explodes.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/changing-the-chances/id1588957296?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/changing-the-chances/id1588957296?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Changing Your Dreams: Parenting a Child with Special Needs",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lara Kitts. This podcast is about the unique grief we carry, changing our dreams, and how to care for ourselves when parenting a child with special needs.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/changing-your-dreams-parenting-a-child-with-special-needs/id1539836350?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/changing-your-dreams-parenting-a-child-with-special-needs/id1539836350?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Community Conversations",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Nicole Alexander. This podcast is a product of Be Love Company, and in it we take what's being taught from the pulpit and bring the topics to you here in the form of a conversation. To learn more about the church, visit beloveco.org.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/community-conversations/id1560999857?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/community-conversations/id1560999857?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Conversations with a SEND Mum",
+    "category": [
+      "podcasts",
+      "podcasts-uk-send"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Nicole Bateman. Welcome to 'Conversations with a SEND Mum' a podcast hosted by Nicole Bateman who is a SEND Mum herself and Co-Founder of The Super Sensory Squad.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/conversations-with-a-send-mum/id1743282363?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/conversations-with-a-send-mum/id1743282363?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Created For More",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lenora Turner - Certified Coach, International Speaker. What if the biggest thing holding you back isn't your circumstances—but what you've come to believe? Do you feel stuck, even though you're trying to do all the right things? Are you longing for more peace, confidence, joy, purpose and intimacy?",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/created-for-more/id1517249287?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/created-for-more/id1517249287?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Dad to Dad Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-dads"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by David Hirsch. Fathers mentoring fathers of kids with special needs - presented by the Special Fathers Network. Host David Hirsch interviews some amazing fathers of kids with special needs.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/dad-to-dad-podcast/id1373738974?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/dad-to-dad-podcast/id1373738974?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Disorderly Blondes Autism PODCAST",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Brenda Popritkin & Kristi Vannatta. South Florida moms, Brenda and Kristi, candidly discuss MOTHERHOOD and AUTISM while balancing heels, cocktails, and meltdowns. They share the challenges and triumphs that define the parenting journey of their own special needs sons (autism spectrum disorder + CHRNA7 genetic duplication).",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/disorderly-blondes-autism-podcast/id1446101949?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/disorderly-blondes-autism-podcast/id1446101949?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Embracing Autism",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lia & Matt McCabe. Your child is autistic, now what? Parenting a child is often rewarding, but for parents of autistic children, it can be a struggle when communication, finances, or behavior is a barrier.",
+    "phone": "",
+    "website": "https://autismwish.org/podcast/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/embracing-autism/id1567815239?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Full Spectrum Parent: Christian Autism Support | Special Needs Parenting | Faith & Autism Resources",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Greg & Jessica Hurlbut. The Full Spectrum Parent Podcast is the only faith-based autism parenting podcast on the web. As pastors and special needs parents, each episode we offer parents a dose of help, a dose of humor, and a dose of hope. Full Spectrum Parent is a part of the Christian Parenting Podcast Network.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/full-spectrum-parent-christian-autism-support-special/id1589016732?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/full-spectrum-parent-christian-autism-support-special/id1589016732?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Full-Tilt Parenting: Strategies, Insights, and Connection for Parents Raising Neurodivergent Children",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Debbie Reber. Feeling overwhelmed by the complexities of raising a neurodivergent child? Full-Tilt Parenting is here to help. Hosted by parenting activist and author Debbie Reber, this podcast is your go-to resource for navigating life with ADHD, autism, learning…",
+    "phone": "",
+    "website": "https://tiltparenting.com/podcast/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/full-tilt-parenting-strategies-insights-and/id1102055778?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Having a Moment With Moni",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Monique Duell. From unfiltered conversations about motherhood, purpose, and resilience to powerful stories of navigating special needs, relationships, and self-growth, I bring transparency, humor, and heart to every episode. Nothing is off-limits, and every moment matters.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/having-a-moment-with-moni/id1458357521?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/having-a-moment-with-moni/id1458357521?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Hi Pod! I'm Dad.",
+    "category": [
+      "podcasts",
+      "podcasts-dads"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by James Guttman. Hi Pod! I’m Dad is where I talk through fatherhood while raising a son with autism who does not speak. I’m James Guttman, the dad behind Hi Blog! I’m Dad. This podcast isn’t about tips or solutions.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/hi-pod-im-dad/id1483702595?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/hi-pod-im-dad/id1483702595?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Holy Ground Parenting",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Marie Kennedy. Christian parenting in the special needs world. A faith-based, real life look at the highs and lows of special needs parenting from a mom living it.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/holy-ground-parenting/id1876016613?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/holy-ground-parenting/id1876016613?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Just Needs: parenting children with disabilities",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Christina Kozik. Some people think of disabilities as \"special needs.\" But as parents of children with disabilities, we know our kids just have needs... like everyone else.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/just-needs-parenting-children-with-disabilities/id1600734073?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/just-needs-parenting-children-with-disabilities/id1600734073?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Let’s Plant Houses",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Wendy Ernzen. Let&#8217;s Plant Houses shares heartfelt stories from families living with autism, Down syndrome, cerebral palsy and other intellectual and developmental disabilities (IDD).",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/lets-plant-houses/id1724641933?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/lets-plant-houses/id1724641933?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "LOMAH Disability Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Kim. The LOMAH Podcast is an award winning show that runs topical series deep diving into an issue for 10-12 episodes with interviews from expert guests, including self advocates. Your host, Kim, has a teenage daughter with level 3 non speaking autism who will require 24/7 support the rest of her life.",
+    "phone": "",
+    "website": "https://lomah.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/lomah-disability-podcast/id1238352496?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Mama Marias, a Podcast for Caregivers",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Maria. Mama Marias is a podcast for parents and caregivers of children with special needs of any kind. It is called Mama Marias because the two hosts are both named Maria and each has a daughter with special needs.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/mama-marias-a-podcast-for-caregivers/id1577462706?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/mama-marias-a-podcast-for-caregivers/id1577462706?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Meltdowns and Moscato",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Jaci & Joey Wheeler. Jaci and Joey delve into their lives as Special Needs Parents. They provide an insight into raising children with autism by sharing relatable stories. They share tips and tricks that they used and things they wish they would have known years earlier.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/meltdowns-and-moscato/id1523175769?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/meltdowns-and-moscato/id1523175769?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Moments of Joy",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Camille Joy. This podcast is dedicated to the parent raising a child with special needs, the parent caregiver, the strongest group of parents in the world! This community welcomes you!",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/moments-of-joy/id1429001233?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/moments-of-joy/id1429001233?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Moms Talk Autism Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Shannon Korza, Brittney Crabtree, Jean Mayer, Natasha Hayes-Dillmon. The Moms Talk Autism Podcast is for parents raising children with special needs. We are four moms, all with autistic children and other neurodivergence. Teaching a special needs child to navigate the world around them comes with challenges and struggles.",
+    "phone": "",
+    "website": "https://momstalkautismpodcast.libsyn.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/moms-talk-autism-podcast/id1586414115?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Mother's Guide Through Autism",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Brigitte Shipman. This podcast is to inspire, support, and build community for mothers raising children with autism. Brigitte Shipman is the host and creator of this podcast and it has been inspired by her son Joseph who has been living with autism for the last 32 years.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/mothers-guide-through-autism/id1481912812?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/mothers-guide-through-autism/id1481912812?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Neurolicious - by Mummel Road",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Emily Baitch. Parenting is a tough gig—but parenting a child with additional needs brings unique challenges, emotions, and incredible moments of growth.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/neurolicious-by-mummel-road/id1601569750?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/neurolicious-by-mummel-road/id1601569750?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Not Your Average Autism Mom",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Shannon Urquiola. This podcast was started for parents and caregivers raising autistic children, but has evolved, and we have listeners across the world who are relatives of someone with autism, special education teachers, and other professionals.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/not-your-average-autism-mom/id1506074650?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/not-your-average-autism-mom/id1506074650?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Overcome the Overwhelm for Special Needs Moms",
+    "category": [
+      "podcasts",
+      "podcasts-caregiver-wellbeing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lauren Lowery. Overcome the Overwhelm for Special Needs Moms is your go-to podcast for breaking through the emotional struggles of raising a child with a disability.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/overcome-the-overwhelm-for-special-needs-moms/id1585428099?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/overcome-the-overwhelm-for-special-needs-moms/id1585428099?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Parenting Autism",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Chris & Sandy Colter. Your hosts are Chris and Sandy Colter, the parents of Bryce, who share their autism journey with stories about their nine year old son who was diagnosed with Autism Spectrum Disorder at age two.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/parenting-autism/id1443210934?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/parenting-autism/id1443210934?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Parenting Pivot",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by with Patrick Weir. Helping parents of neurodivergent and special needs kids feel less alone. Real stories. Expert advice. Actionable support. Whether you're navigating a new diagnosis or just trying to make it through the week, you're not alone.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/parenting-pivot/id1811158141?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/parenting-pivot/id1811158141?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Parenting Severe Autism",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Shannon Chamberlin. Parenting Severe Autism is a raw, unfiltered podcast for parents and caregivers raising children with Severe Autism. Hosted by Shannon Chamberlin - a parent, not a professional - this show is your emotional lifeline, real-talk resource, and reminder that you're not alone.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/parenting-severe-autism/id1629997638?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/parenting-severe-autism/id1629997638?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Permission to Breathe for Special Needs Parents",
+    "category": [
+      "podcasts",
+      "podcasts-caregiver-wellbeing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Michael Pearce. This is Permission to Breathe, the mini-cast show dedicated to parents of children with special needs. We’re igniting Dual-Dream Advocacy, where your own hopes, well-being, and future matter just as much as your child’s.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/permission-to-breathe-for-special-needs-parents/id1815156104?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/permission-to-breathe-for-special-needs-parents/id1815156104?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Pieces For My Puzzle",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Nikki Shipp. <p>Welcome to the Pieces For My Puzzle Podcast, where I, Nikki Shipp, invite you to join me on a journey through the intricacies of life as a wife to a dedicated police officer and a mother to an incredible autistic son.</p><p>As a parent navigating the…",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/pieces-for-my-puzzle/id1809446825?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/pieces-for-my-puzzle/id1809446825?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Raising Kellan",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Marsh Naidoo. An information hub for parents of children with disabilities.",
+    "phone": "",
+    "website": "https://raisingkellan.org/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/raising-kellan/id1631638276?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Rare Mamas Rising: A Rare Disease Mom Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-rare-disease"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Nikki McIntosh. Rare Mamas Rising is a podcast for mothers of children with rare diseases to find strategies, strength, support, and sisterhood! Hosted by Nikki McIntosh, founder of Rare Mamas, author of the book Rare Mamas: Empowering Strategies for Navigating Your Child's…",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/rare-mamas-rising-a-rare-disease-mom-podcast/id1564034724?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/rare-mamas-rising-a-rare-disease-mom-podcast/id1564034724?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Safe Harbor: A Podcast for Parents of Children with Disabilities",
+    "category": [
+      "podcasts",
+      "podcasts-medical-complexity"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Theresa Bartolotta. The Safe Harbor Podcast is for parents of children with disabilities. This show enables parents to come together as a community to share, learn and support each other on this complex path.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/safe-harbor-a-podcast-for-parents-of/id1602301134?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/safe-harbor-a-podcast-for-parents-of/id1602301134?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Special Needs Parenting SOS",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Nadya Tahri. Help, hope, encouragement and support for parents who have a child with special needs. Caring for a child with special needs has several challenges and I don’t want you to feel like you are all alone.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/special-needs-parenting-sos/id1560771347?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/special-needs-parenting-sos/id1560771347?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Specialness Pod",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Kim & Jeff Kribs. Welcome to Specialness, the YouTube channel where love, resilience, and the extraordinary journey of parenting a special needs child take center stage.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/specialness-pod/id1790472992?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/specialness-pod/id1790472992?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Take Heart",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Amy J Brown, Carrie M. Holt, Sara Clime. The mind of Christian teenagers trying to love Jesus and his people in a world that doesn’t always love it. I hope you enjoy our laughter and stories as we seek to take heart in who Jesus has called us to be!",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/take-heart/id1677889429?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/take-heart/id1677889429?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Autism Dad",
+    "category": [
+      "podcasts",
+      "podcasts-dads"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Rob Gorski. The Autism Dad podcast delivers autism parenting support, special needs advice, and real stories for families raising neurodivergent kids.",
+    "phone": "",
+    "website": "https://www.theautismdad.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-autism-dad/id1450723980?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Autism Mom Coach",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lisa Candera. Do you sometimes feel like your life has been hijacked by Autism? If so, this is the podcast for you. The Autism Mom Coach is a podcast for moms who feel overwhelmed, afraid, and sometimes powerless as they raise their child with Autism.",
+    "phone": "",
+    "website": "https://www.theautismmomcoach.com/podcasts",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-autism-mom-coach/id1588315543?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Odyssey: Parenting. Caregiving. Disability.",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Erin Croyle. The Odyssey podcast explores the unique journey we're sent on when a loved one has a disability. We dig deep into the joys and hardships. We celebrate how amazing the odyssey of parenting, caregiving, and disability are. But we don't shy away from the tough stuff either.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-odyssey-parenting-caregiving-disability/id1670728008?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-odyssey-parenting-caregiving-disability/id1670728008?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Parenting Cipher",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Lateefa Dawkins. The Parenting Cipher is the podcast for innovative Black parents raising neurodiverse and special needs children who want clear answers, fresh strategies, and a supportive community.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-parenting-cipher/id1525101433?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-parenting-cipher/id1525101433?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Polaris Connection Autism Parenting, Expert Insights & Proven Resources",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Kevin Humphrey. The Polaris Connection is the ultimate autism parenting podcast for families, caregivers, and professionals navigating the world of autism and special needs.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-polaris-connection-autism-parenting-expert/id1827407102?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-polaris-connection-autism-parenting-expert/id1827407102?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Rare Life",
+    "category": [
+      "podcasts",
+      "podcasts-rare-disease"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Madeline Cheney. This is the real, raw, and all the feels of loving a child with disabilities. Episodes feature parent-guests, professionals, and solo episodes with host Madeline Cheney. Their authentic conversations don’t shy away from the strong and mixed emotions that often accompany medically-complex parenting.",
+    "phone": "",
+    "website": "https://www.therarelifepodcast.com/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-rare-life/id1511352065?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The SEND Mum Club",
+    "category": [
+      "podcasts",
+      "podcasts-uk-send"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by The SEND Mum Club. The SEND Mum Club is the parenting podcast with a difference. Made specifically for parents of children with all kinds of additional needs and disabilities.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-send-mum-club/id1801494000?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-send-mum-club/id1801494000?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The SEND Parents Survival Guide",
+    "category": [
+      "podcasts",
+      "podcasts-uk-send"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Esther Freeman. Welcome to The SEND Parenting Survival Guide podcast, guiding you through the SEND parenting maze. My name is Esther Freeman, and I teach people the techniques and principals that helped my daughter go from five or six violent meltdowns a day to zero.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-send-parents-survival-guide/id1743147671?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-send-parents-survival-guide/id1743147671?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Skies We’re Under",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Rachel Wright. Nurse, author and Director of Born at the Right Time, Rachel Wright talks to fellow parents of people with disabilities and others in their community.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-skies-were-under/id1608217096?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-skies-were-under/id1608217096?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Special Needs Mom Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-autism"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Kara Ryska. Think of this podcast as your very own special needs mom support group--except it's helpful and fun! You will leave with the hope that you can have a super happy life even when your life includes parenting a medically complex child or a child with something like autism and ADHD.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-special-needs-mom-podcast/id1523926612?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-special-needs-mom-podcast/id1523926612?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "The Special Needs Parent Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-caregiver-wellbeing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Dr. Marcia Nathai-Balkissoon. Our efforts for our children can be overwhelming (decimating and fulfilling, heart-warming and heart-breaking, thrilling and scary). Despite all the love and joy we feel with our precious children and family, the journey can also drain us.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/the-special-needs-parent-podcast/id1597241780?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/the-special-needs-parent-podcast/id1597241780?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "This Unexpected Life",
+    "category": [
+      "podcasts",
+      "podcasts-faith"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Carrie M. Holt. Welcome to This Unexpected Life , a podcast designed to equip and encourage parents and caregivers of children with disabilities so they can embrace their journey with hope, faith, and resilience.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/this-unexpected-life/id1796931177?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/this-unexpected-life/id1796931177?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Thriving in the Midst of Chaos: Parenting With Special Needs Kids",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Jessica Temple. Welcome to Thriving in the Midst of Chaos! This show is about surviving parenthood while having a child with special needs, while attempting to keep your self and your sanity intact. We share our experiences and discuss how we survived, what worked for us, and what didn't work for us.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/thriving-in-the-midst-of-chaos-parenting-with/id1483871195?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/thriving-in-the-midst-of-chaos-parenting-with/id1483871195?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Together Through the Storms",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Niina. My name is Niina. I’m a mum to two Deaf daughters and a special education teacher, learning alongside you as we navigate the ups and downs of parenting children with additional needs.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/together-through-the-storms/id1766720752?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/together-through-the-storms/id1766720752?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Unexceptional Moms",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Ellen Stumbo. Welcome to the Unexceptional Moms Podcast, where we offer hope and encouragement for parents of disabled kids. Join us in this journey as we navigate the joys and challenges of raising children with disabilities. We want you to know you're not alone.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/unexceptional-moms/id1153475023?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/unexceptional-moms/id1153475023?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "Water Prairie Chronicles Podcast",
+    "category": [
+      "podcasts",
+      "podcasts-parenting"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Tonya Wollum. The Water Prairie Chronicles podcast is a valuable resource for parents of children with disabilities and special needs. Hosted by Tonya Wollum, the podcast features interviews with a variety of guests, including adults who have grown up with disabilities,…",
+    "phone": "",
+    "website": "https://waterprairie.com/listen/",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/water-prairie-chronicles-podcast/id1606642962?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
+    }
+  },
+  {
+    "name": "When Autumn Comes: Seasons of Hope for Medical + Disability Moms",
+    "category": [
+      "podcasts",
+      "podcasts-caregiver-wellbeing"
+    ],
+    "location": "National",
+    "area": "",
+    "description": "Hosted by Susan Geoghegan. We call ourselves the 4am Mom Club because more nights than not, our kids are awake at 4am. We both have very medical, complicated, rare, beautiful children. This is a podcast for medical and disability mamas (and the people who love them) who are facing a life they never expected.",
+    "phone": "",
+    "website": "https://podcasts.apple.com/us/podcast/when-autumn-comes-seasons-of-hope-for-medical/id1544148395?uo=4",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "Free",
+    "tags": [
+      "podcast"
+    ],
+    "source": "https://podcasts.apple.com/us/podcast/when-autumn-comes-seasons-of-hope-for-medical/id1544148395?uo=4",
+    "lastScraped": "2026-11-09",
+    "dateAdded": "2026-11-09",
+    "origin": {
+      "type": "curated",
+      "detail": "podcast-recommendations"
     }
   }
 ]

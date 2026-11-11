@@ -1,5 +1,7 @@
 name = "tfp-admin-api"
 main = "worker.js"
+# The Fullest Project's own Cloudflare account (info@thefullestproject.org), since November 2026.
+account_id = "5e7a6fe8095e27a82ccac06681573b49"
 compatibility_date = "2026-06-01"
 
 # Secrets (set via `wrangler secret put <NAME>` or the Cloudflare dashboard):
@@ -21,4 +23,4 @@ compatibility_date = "2026-06-01"
 # Nicole asked for this list to stay inside the review portal.
 [[kv_namespaces]]
 binding = "CHANGE_REQUESTS"
-id = "2e30da354e274d4488e7a24b60d8e178"
+id = "0203b33700e44cae9b0f28cee9f74a5a"

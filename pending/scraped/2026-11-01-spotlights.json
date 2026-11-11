@@ -1,0 +1,86 @@
+[
+  {
+    "id": "spt-20261101-23add692",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-11-01T10:51:13.231347+00:00"
+    },
+    "payload": {
+      "name": "VA awards $352,800 to two Michigan organizations for adaptive sports",
+      "description": "VA awards $352,800 to two Michigan organizations for adaptive sports - WNEM",
+      "category": "Adventures",
+      "website": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbkx3NVpiQ0ZGeDJlblhvazk0bEhMN2JNaTIzM0ZoQzJQbUxfY0w1QWRzSk9FUmZDbDNVdV9sYzRaSGN6RU5mbTNoQThvUkwxb1M3cFUyVE1JZnV5eUZuTWlpM0xMVWJVSWRLMU1sRkRFdmtoYVJFWnh3OXJXUE1XMi1XZVREODh5cWF2dElmUkJqRXJtbmRr0gGrAUFVX3lxTE9mOGR5QVNPSW1XazJrcEFVaXV3ZzBJeDl5SmtSS2MzaXdYUXBnaVZ0MnVMYTFReFBMNjN0MzJDcFp4QU9QQlpjME5QaTB5cE1mQ0ZfUnV3V1RvQTRtclMyV1lBOHkwVWxJNFRXaEQxTWIwM0tPX3BONlVNYzNveE9paHIzeUpmYTF6LTI3cGp3WWhMMkJkNEwtVG1Ubl9kTjFqWW0wMTVqUm1Vcw?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/adventures.svg",
+      "location": "National",
+      "tags": [
+        "adventures",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-11-01"
+    }
+  },
+  {
+    "id": "spt-20261101-ded18fa7",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-11-01T10:51:13.231372+00:00"
+    },
+    "payload": {
+      "name": "Construction begins on accessible hand-launch dock in Fairhaven",
+      "description": "Construction begins on accessible hand-launch dock in Fairhaven - My Bellingham Now",
+      "category": "Adventures",
+      "website": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeThIcGpOdVV6SXhsc0pvTElmMFQ0by1Hc01FYWVocE80aWZmVmItQmtoSmJOaDF0bExjaXJtSndWTUdVZlFDZUl3WXZoVFg3ZUpsTG0zdTd4UzV0Umk1UDVEQkZ2WVJ3ektlTUNBSVVKbFYwNWJnSURCYk9JMHhXSzlFak9oYnBIMkVBNVd3clZGcmFyck9rWWN0TlNGRHFmX1VKT3ZaOA?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/adventures.svg",
+      "location": "National",
+      "tags": [
+        "adventures",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-11-01"
+    }
+  },
+  {
+    "id": "spt-20261101-7863558e",
+    "type": "spotlight",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "spotlight_scraper",
+      "submittedAt": "2026-11-01T10:51:13.231383+00:00"
+    },
+    "payload": {
+      "name": "How a Service Dog in Training Can Advance Disability Inclusion in Belize",
+      "description": "How a Service Dog in Training Can Advance Disability Inclusion in Belize - Inter-American Development Bank",
+      "category": "Community",
+      "website": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTThITEJ2SExMN2lLWXRDTll2alNYUUNkQS1xUzZUeVYzcUVEejlWSnpDMDNaNEtiWmRqa1FsVWJ6a1VSZTN3bFRRcjRuMmp3UGJsNkh1NTMtNU1QQnlMYWZXY2swb0xWU0F0bW96Mndab1JJM0E3eFlWRlIyMkU0M3ZTMWZyN0NkMXdvc1BaaDI1ZVVGLV9xbE0tRHp0S3JKeFd5Z0hn?oc=5",
+      "socialLinks": {
+        "instagram": "",
+        "facebook": ""
+      },
+      "thumbnail": "/images/spotlights/community.svg",
+      "location": "National",
+      "tags": [
+        "community",
+        "auto-discovered"
+      ],
+      "featured": false,
+      "date": "2026-11-01"
+    }
+  }
+]

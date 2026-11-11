@@ -1,33 +1,40 @@
-Weekly Scrape Digest — 2026-10-11
+Weekly Scrape Digest — 2026-11-01
 ==================================================
 
+!! SOURCE HEALTH ALERTS — a scraper may be broken:
+  - osm_overpass: FAILED (0/51 targets ok, 0 parsed)
+
 AWAITING REVIEW — approve or reject at https://thefullestproject.org/admin/review/
-  blog: 6 pending (1 new this run)
-  resource: 276 pending
-  spotlight: 5 pending (1 new this run)
-  story: 67 pending (14 new this run)
-  submission: 3 pending
+  blog: 4 pending (3 new this run)
+  resource: 206 pending
+  spotlight: 6 pending (3 new this run)
+  story: 42 pending (15 new this run)
+  submission: 14 pending
 
 Scraper: osm_overpass
-  Entries processed: 6
-  - [error] SD: The read operation timed out
-  - [error] TN: The read operation timed out
-  - [error] TX: HTTP Error 504: Gateway Timeout
-  - [error] UT: The read operation timed out
-  - [error] VT: HTTP Error 504: Gateway Timeout
-  - [error] VA: HTTP Error 504: Gateway Timeout
-  - [error] WA: The read operation timed out
+  Entries processed: 0
+  - [error] UT: HTTP Error 502: Bad Gateway
+  - [error] VT: HTTP Error 502: Bad Gateway
+  - [error] VA: The read operation timed out
+  - [error] WA: HTTP Error 502: Bad Gateway
   - [error] WV: The read operation timed out
-  - [error] WI: The read operation timed out
-  - [error] WY: HTTP Error 504: Gateway Timeout
+  - [error] WI: HTTP Error 502: Bad Gateway
+  - [error] WY: The read operation timed out
+  - [error] AL: The read operation timed out
+  - [error] AK: The read operation timed out
+  - [error] AZ: The read operation timed out
 
 Scraper: spotlight_scraper
-  Entries processed: 1
-  - [queued] VA awards $16 million in grants for adaptive sports programs
+  Entries processed: 3
+  - [queued] VA awards $352,800 to two Michigan organizations for adaptive sports
+  - [queued] Construction begins on accessible hand-launch dock in Fairhaven
+  - [queued] How a Service Dog in Training Can Advance Disability Inclusion in Belize
 
 Scraper: blog_content
-  Entries processed: 1
-  - [queued] It's not just a SEND project: Getting started with inclusion reforms - Headteacher Update
+  Entries processed: 3
+  - [queued] America’s caregiver crisis is also a mental health crisis - WSB-TV
+  - [queued] IEP Teams Must Consider Assistive Technology, Which May Include Artificial Intelligence - Special Education Action
+  - [queued] Commentary: A New Approach to Closing the Disability Wealth Gap - Tennessee Lookout
 
 —
 The Fullest Project | thefullestproject.org

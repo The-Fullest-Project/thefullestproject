@@ -1,0 +1,56 @@
+[
+  {
+    "id": "blg-20261101-db04e34c",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-11-01T10:51:14.940301+00:00"
+    },
+    "payload": {
+      "title": "America’s caregiver crisis is also a mental health crisis - WSB-TV",
+      "source": "WSB-TV",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5FSktNYzcxMzZlRWhJWXNBamNEZUJIMkxxc0dNQzAtWDRTWTloNkxfX2QzbEVDOHZXdllMV3BHZGR2bzB5cmlPLV95UUdKZWFodmJGeFc3azhPelkwZFk2ZE41VnRoWnBOSFZfdm9TVzN4c3BPOF85S3V3R3hIZ9IBkgFBVV95cUxNckxoRUNlQ2wwNHRWNndWVG4wOGZPUVRhODZMSkFZRjNnaVkxOXNhd21QLVBGS2MtTk10NnV2bFA1N2RuRkVuVUF6TnVDUGZDOTdWRXdvMkZ0dUJucGItcUxTR25tc3RjT2NYQi1RRDlrdmlVc0ZyZ3gxVll1NExSek5IaWk5MXZjVlF1SW51bHhMUQ?oc=5",
+      "date": "2026-10-29",
+      "category": "Caregiver Tips",
+      "slug": "americas-caregiver-crisis-is-also-a-mental-health-crisis-wsb"
+    }
+  },
+  {
+    "id": "blg-20261101-3f25f8df",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-11-01T10:51:14.940329+00:00"
+    },
+    "payload": {
+      "title": "IEP Teams Must Consider Assistive Technology, Which May Include Artificial Intelligence - Special Education Action",
+      "source": "Special Education Action",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOclJZd2QwZEg0ejltZ0EtcTcxNFZTMTExTzhGLWVxTTJXdlhYb3pPUDRsOGhXejVzNWZjR3lYcE5IdmFaLS1LZzhaNnE0bnhRRzkwNHk0cTFlODl6UUxlMDZuUHhlY2hFY084VkFEek1YQTVkSkoyOVR6MXUwSHRfVjBNWjl2VEhmUnRHcVZhc3htTVdxMUk4eDExLXNhR0owcE03U1ZCMTY3QQ?oc=5",
+      "date": "2026-10-29",
+      "category": "Adaptive Technology",
+      "slug": "iep-teams-must-consider-assistive-technology-which-may-inclu"
+    }
+  },
+  {
+    "id": "blg-20261101-2016c20c",
+    "type": "blog",
+    "status": "pending",
+    "origin": {
+      "type": "scraper",
+      "detail": "blog_content",
+      "submittedAt": "2026-11-01T10:51:14.940340+00:00"
+    },
+    "payload": {
+      "title": "Commentary: A New Approach to Closing the Disability Wealth Gap - Tennessee Lookout",
+      "source": "Tennessee Lookout",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYTZSRFZaY0dmYnZuUnNYdi1vSF9PYUs1WDYzN1V2aFpGblExSGZhY1B0VERyTHBoVFpwdlhUWnNIeXhLLVREM3Z6eEk0eDV4TDZKdlhCY0t1RkpJMWIzTFZ5ZXdxR0NEZE5pYzRSaVZ5VW90LWVaZDQzRFRCX2JzNGxJZWFrdEVmZDZIZ09nVHhtVDZ5ZHEw?oc=5",
+      "date": "2026-10-31",
+      "category": "Resources",
+      "slug": "commentary-a-new-approach-to-closing-the-disability-wealth-g"
+    }
+  }
+]

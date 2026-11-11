@@ -124,6 +124,13 @@ assert.equal((await call("POST", "/change-requests/reply",
 assert.equal((await call("POST", "/change-requests/reply",
   { id, text: "x", by: "Patrick", attachment: { name: "a.pdf", data: "JVBERi0" + "A".repeat(7000000) } })).status, 400);
 
+// Word files attach too, but a renamed file does not pass as one.
+const docx = Buffer.from("PK\x03\x04 test").toString("base64");
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "Editable copy", by: "Patrick", attachment: { name: "Drafts.docx", data: docx } })).status, 200);
+assert.equal((await call("POST", "/change-requests/reply",
+  { id, text: "x", by: "Patrick", attachment: { name: "a.docx", data: pdf } })).status, 400);
+
 // Bad input.
 assert.equal((await call("POST", "/change-requests/reply", { id, text: "  ", by: "Nicole" })).status, 400);
 assert.equal((await call("POST", "/change-requests/reply", { id, text: "x", by: "Stranger" })).status, 400);
@@ -139,5 +146,65 @@ await call("POST", "/change-requests/reply", { id: other.request.id, text: "Keep
 await call("DELETE", `/change-requests?id=${encodeURIComponent(id)}`);
 assert.deepEqual([...env.CHANGE_REQUESTS.store.keys()].filter(k => k.includes(id)), []);
 assert.equal((await list())[0].replies[0].text, "Keep me");
+
+// Keep both: the pair stops being flagged, in either name order, and only it.
+const file = "src/_data/resources/states/VA.json";
+const index = ["Alpha House", "Alpha House Inc", "Beta Care", "Beta Care LLC"].map(name =>
+  ({ name, file, location: "Virginia", website: `https://${name.split(" ")[0].toLowerCase()}.example.org` }));
+const brevoFetch = globalThis.fetch;
+globalThis.fetch = async (url, opts) => String(url).includes("duplicate-index.json")
+  ? new Response(JSON.stringify(index), { status: 200 })
+  : brevoFetch(url, opts);
+const flagged = async () => (await call("GET", "/duplicates")).data.pairs.map(p => p.a.name);
+assert.deepEqual((await flagged()).sort(), ["Alpha House", "Beta Care"]);
+assert.equal((await call("POST", "/duplicates/keep-both",
+  { file, nameA: "Alpha House Inc", nameB: "Alpha House" })).status, 200);
+assert.deepEqual(await flagged(), ["Beta Care"]);
+assert.equal((await call("GET", "/duplicates")).data.pairCount, 1);
+assert.equal((await call("POST", "/duplicates/keep-both", { file: "../etc", nameA: "a", nameB: "b" })).status, 400);
+assert.equal((await call("POST", "/duplicates/keep-both", { file, nameA: "a", nameB: "b" }, {})).status, 401);
+assert.equal((await list()).length, 1);
+
+// The false matches Nicole reported stay out; real ones come in with a tier.
+const live = (name, website, extra = {}) => ({ name, file, location: "Virginia", website, ...extra });
+index.length = 0;
+index.push(
+  live("Children's National Hospital", "https://childrensnational.org/"),
+  live("National Children's Museum - Accessibility", "https://nationalchildrensmuseum.org/visit/"),
+  live("Alamo Drafthouse One Loudoun - Sensory-Friendly Screenings", "https://drafthouse.com/program/alamo-for-all"),
+  live("Alamo Drafthouse Woodbridge - Sensory-Friendly Screenings", "https://drafthouse.com/program/alamo-for-all"),
+  live("Autism Speaks", "https://www.autismspeaks.org/"),
+  live("Autism Speaks - Dental Tool Kit", "https://www.autismspeaks.org/tool-kit/dental"),
+  live("Norfolk Community Services Board", "https://norfolk.gov/csb"),
+  live("New River Valley Community Services Board", "https://nrvcs.org/"),
+  live("Move United (formerly DSUSA)", "https://moveunitedsport.org/"),
+  live("Move United", "https://www.moveunitedsport.org"),
+  live("Parent Center Hub (CPIR)", "https://parentcenterhub.org"),
+  live("Parent Center Hub", "https://parentcenterhub.org/find-your-center/"),
+  live("The Arc", "https://thearc.org"),
+  live("The Arc of the United States", "https://thearc.org/"),
+  live("TSC Alliance (Tuberous Sclerosis)", "https://tscalliance.org/", { phone: "800-225-6872" }),
+  live("Tuberous Sclerosis Alliance", "https://tsalliance.org/", { phone: "(800) 225-6872" })
+);
+const tiers = Object.fromEntries((await call("GET", "/duplicates")).data.pairs.map(p => [p.a.name, p.confidence]));
+assert.deepEqual(tiers, {
+  "Move United (formerly DSUSA)": "likely",
+  "Parent Center Hub (CPIR)": "likely",
+  "The Arc": "possible",
+  "TSC Alliance (Tuberous Sclerosis)": "likely"
+});
+index.length = 0;
+index.push(...["Alpha House", "Alpha House Inc", "Beta Care", "Beta Care LLC"].map(name =>
+  ({ name, file, location: "Virginia", website: `https://${name.split(" ")[0].toLowerCase()}.example.org` })));
+
+// Undo: the kept pair is listed, and removing it flags the pair again.
+const kept = (await call("GET", "/duplicates")).data.kept;
+assert.deepEqual(kept.map(k => k.nameA), ["Alpha House Inc"]);
+const crKey = encodeURIComponent(id);
+assert.equal((await call("DELETE", `/duplicates/keep-both?key=${crKey}`)).status, 400);
+assert.equal((await call("DELETE", `/duplicates/keep-both?key=${encodeURIComponent(kept[0].key)}`, undefined, {})).status, 401);
+assert.equal((await call("DELETE", `/duplicates/keep-both?key=${encodeURIComponent(kept[0].key)}`)).status, 200);
+assert.deepEqual((await flagged()).sort(), ["Alpha House", "Beta Care"]);
+assert.deepEqual((await call("GET", "/duplicates")).data.kept, []);
 
 console.log("change-request thread tests passed");

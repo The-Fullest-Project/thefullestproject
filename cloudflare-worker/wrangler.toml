@@ -1,5 +1,7 @@
 name = "gig-publisher"
 main = "worker.js"
+# The Fullest Project's own Cloudflare account (info@thefullestproject.org), since November 2026.
+account_id = "5e7a6fe8095e27a82ccac06681573b49"
 compatibility_date = "2024-01-01"
 
 # Set these in the Cloudflare dashboard under Workers > Settings > Variables
@@ -7,3 +9,9 @@ compatibility_date = "2024-01-01"
 # GITHUB_REPO    = "The-Fullest-Project/thefullestproject"
 # FORMSPREE_ID   = "xojkvvlo"
 # ALLOWED_ORIGIN = "https://thefullestproject.org"
+
+# Plain settings (not secret). Secrets: GITHUB_TOKEN, ADMIN_KEY.
+[vars]
+ALLOWED_ORIGIN = "https://thefullestproject.org"
+FORMSPREE_ID = "xojkvvlo"
+GITHUB_REPO = "The-Fullest-Project/thefullestproject"

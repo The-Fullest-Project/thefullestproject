@@ -2,7 +2,7 @@ backend:
   name: github
   repo: The-Fullest-Project/thefullestproject
   branch: main
-  base_url: https://decap-oauth.patrick-m-berrigan.workers.dev
+  base_url: https://decap-oauth.thefullestproject.workers.dev
   auth_endpoint: auth
 
 # Decap only honours this when the CMS is served from localhost, so production
@@ -166,6 +166,19 @@ block_types: &block_types
         field: { label: "Paragraph", name: "paragraph", widget: "text" }
         hint: "Add as many paragraphs as you need. Drag to reorder them."
       - { label: "Bold closing line", name: "emphasis", widget: "string", required: false, hint: "Appears in bold at the end of the last paragraph." }
+      - { label: "Photo", name: "image", widget: "image", required: false, hint: "Optional. A landscape photo works best." }
+      - { label: "Photo description", name: "imageAlt", widget: "string", required: false, hint: "Describe the photo for people using screen readers, e.g. 'A mother reading with her son, who uses a wheelchair'." }
+      - label: "Photo position"
+        name: "imagePosition"
+        widget: "select"
+        default: "right"
+        required: false
+        options:
+          - { label: "Beside the text, on the right", value: "right" }
+          - { label: "Beside the text, on the left", value: "left" }
+          - { label: "Above the text", value: "above" }
+          - { label: "Text wraps around it, photo on the right", value: "wrap-right" }
+          - { label: "Text wraps around it, photo on the left", value: "wrap-left" }
       - label: "Text alignment"
         name: "align"
         widget: "select"
@@ -326,6 +339,16 @@ block_types: &block_types
         collapsed: true
         summary: "{{fields.name}}"
         fields:
+          - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Shown as a circle at the top of the card. A square photo with the face in the middle works best." }
+          - { label: "Photo description", name: "photoAlt", widget: "string", required: false, hint: "Read aloud to people using screen readers. Leave blank to use 'Photo of' and the name." }
+          - label: "Photo layout"
+            name: "photoLayout"
+            widget: "select"
+            default: "above"
+            required: false
+            options:
+              - { label: "Above the name", value: "above" }
+              - { label: "On the left, with the text wrapping around it", value: "wrap" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
@@ -366,7 +389,7 @@ block_types: &block_types
 
 collections:
   - name: "blog"
-    label: "Articles"
+    label: "Stories & News Articles"
     folder: "src/blog"
     create: true
     slug: "{{slug}}"
@@ -392,21 +415,38 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "podcast"
-    label: "Podcast Episodes"
-    folder: "src/podcast"
+  # The Blog (/our-blog/): TFP's own writing and guest posts. Separate from
+  # "Articles" above, which feed the curated Stories & News page at /blog/.
+  - name: "ourBlog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    description: "Posts for the Blog page: your own writing and guest posts. Publishing puts the post live within a couple of minutes."
+    folder: "src/posts"
     create: true
     slug: "{{slug}}"
     extension: "md"
+    sortable_fields: ["date", "title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/episode.njk" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Episode Number", name: "episode", widget: "number" }
-      - { label: "Duration", name: "duration", widget: "string", required: false }
-      - { label: "Audio URL", name: "audioUrl", widget: "string", required: false }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Show Notes", name: "body", widget: "markdown" }
+      - { label: "Date", name: "date", widget: "datetime", hint: "Posts are listed newest first." }
+      - { label: "Author", name: "author", widget: "string", default: "The Fullest Project" }
+      - { label: "Author's role", name: "authorRole", widget: "string", required: false, hint: "Shown after the name, e.g. 'Pediatric Physical Therapist' or 'Co-founder'." }
+      - { label: "About the author", name: "authorBio", widget: "text", required: false, hint: "Optional short bio shown at the end of the post. Useful for guest writers." }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        default: "Caregiver Life"
+        options:
+          - "Caregiver Life"
+          - "Guest Expert"
+          - "Awareness"
+          - "How-To & Resources"
+          - "Family Stories"
+          - "News from TFP"
+      - { label: "Short summary", name: "excerpt", widget: "text", hint: "One or two sentences shown on the Blog page." }
+      - { label: "Featured photo", name: "image", widget: "image", required: false, hint: "Shown at the top of the post and on the Blog page. Landscape works best." }
+      - { label: "Photo description", name: "imageAlt", widget: "string", required: false, hint: "Describe the photo for people using screen readers." }
+      - { label: "Post", name: "body", widget: "markdown" }
 
   - name: "siteContent"
     label: "Site Pages"
@@ -457,8 +497,14 @@ collections:
         name: "pageHeaders"
         file: "src/_data/pages.json"
         fields:
-          - label: "Blog Listing"
+          - label: "Stories & News page"
             name: "blog"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Blog page"
+            name: "ourBlog"
             widget: "object"
             fields:
               - { label: "Heading", name: "heading", widget: "string" }

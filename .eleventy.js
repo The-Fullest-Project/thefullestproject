@@ -63,8 +63,10 @@ module.exports = function(eleventyConfig) {
     }));
   });
 
-  eleventyConfig.addCollection("podcastEpisodes", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/podcast/*.md").sort((a, b) => {
+  // The Blog: TFP's own writing and guest posts, kept apart from the curated
+  // news in src/blog so the two never mix on either page.
+  eleventyConfig.addCollection("ourBlogPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
       return b.date - a.date;
     });
   });

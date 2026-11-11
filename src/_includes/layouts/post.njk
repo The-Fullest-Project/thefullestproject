@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
+{%- set isOurBlog = page.url.startsWith('/our-blog/') -%}
 
 <article class="max-w-3xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
   <header class="mb-8">
@@ -8,23 +9,36 @@ layout: layouts/base.njk
       {{ category }}
     </p>
     <h1 class="text-4xl font-bold mb-4" style="color: var(--color-primary);">{{ title }}</h1>
-    <div class="flex items-center gap-4 text-sm" style="color: var(--color-text-light);">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm" style="color: var(--color-text-light);">
       <time datetime="{{ date | dateFormat }}">{{ date | dateFormat }}</time>
       {% if author %}
-      <span>by {{ author }}</span>
+      <span>by {{ author }}{% if authorRole %}, {{ authorRole }}{% endif %}</span>
       {% endif %}
     </div>
   </header>
+
+  {% if image %}
+  <img src="{{ image }}" alt="{{ imageAlt or '' }}" class="w-full rounded-xl object-cover mb-8" style="aspect-ratio: 16 / 9;">
+  {% endif %}
 
   <div class="prose prose-lg max-w-none">
     {{ content | safe }}
   </div>
 
+  {% if isOurBlog and authorBio %}
+  <aside class="mt-10 p-6 rounded-xl" style="background-color: var(--color-warm-light);">
+    <p class="text-sm font-semibold mb-1" style="color: var(--color-primary);">About {{ author }}</p>
+    <p class="text-sm" style="color: var(--color-text-light);">{{ authorBio }}</p>
+  </aside>
+  {% endif %}
+
   <footer class="mt-12 pt-8 border-t">
     {% if category == "Spotlight" %}
     <a href="/spotlights/" class="btn-primary">Back to Spotlights</a>
+    {% elif isOurBlog %}
+    <a href="/our-blog/" class="btn-primary">Back to the Blog</a>
     {% else %}
-    <a href="/blog/" class="btn-primary">Back to Blog</a>
+    <a href="/blog/" class="btn-primary">Back to Stories &amp; News</a>
     {% endif %}
   </footer>
 </article>

@@ -6,119 +6,110 @@
       "visible": true,
       "padding": "normal",
       "heading": "Living Life to the Fullest",
-      "subheading": "Your connection hub for disability resources, programs, education, and community."
+      "subheading": "We believe every individual with a disability deserves the opportunity to live life to the fullest, and every caregiver deserves the support to make that possible. "
     },
     {
-      "type": "cardGrid",
-      "id": "features",
-      "visible": true,
-      "background": "cool",
-      "padding": "normal",
-      "columns": "3",
       "heading": "How We Can Help",
       "cards": [
         {
-          "icon": "\ud83d\udccd",
+          "icon": "📍",
           "title": "Resource Directory",
-          "description": "Find local and national programs, foundations, services, and support organizations \u2014 all in one place.",
+          "description": "Find local and national programs, foundations, services, and support organizations — all in one place.",
           "url": "/resources/"
         },
         {
-          "icon": "\ud83e\udde0",
+          "icon": "🧠",
           "title": "Therapy Guide",
           "description": "Learn about different therapy types, when each is most beneficial, and how to find the right provider.",
           "url": "/therapy-guide/"
         },
         {
-          "icon": "\u267f",
+          "icon": "♿",
           "title": "Adaptive Equipment",
           "description": "Explore adaptive equipment options, curated product lists, and equipment loaner programs.",
           "url": "/adaptive-equipment/"
         },
         {
-          "icon": "\ud83c\udf93",
+          "icon": "🎓",
           "title": "School & IEP Navigation",
           "description": "Understand IEPs, 504 plans, your rights, and how to effectively advocate for your child's education.",
           "url": "/school-iep/"
         },
         {
-          "icon": "\ud83d\udcdd",
+          "icon": "📝",
           "title": "Blog",
-          "description": "Stories, insights, and practical advice from experts and caregivers in the disability community.",
-          "url": "/blog/"
+          "description": "Stories, practical guides and advice from our team and guest experts.",
+          "url": "/our-blog/"
         },
         {
-          "icon": "\ud83c\udfa7",
-          "title": "Podcast",
-          "description": "Listen to conversations with families, professionals, and advocates making a difference.",
-          "url": "/podcast/"
+          "icon": "🎧",
+          "title": "Podcasts",
+          "description": "More than 60 podcasts for caregivers and families, sorted by topic.",
+          "url": "/resources/podcasts/"
         }
       ],
-      "intro": "One place for the programs, services and organizations that support individuals with disabilities and their caregivers \u2014 searchable by category, state and city, and reviewed by a real person before anything goes live."
+      "intro": "The Fullest Project is your connection hub for disability resources, programs, education, and community.  It is a centralized place for caregivers of individuals with disabilities to go to find programs, services, and organizations that can fill needs, close gaps, and provide information -all with the goal of helping each disabled person live life to their fullest. ",
+      "background": "cool",
+      "padding": "normal",
+      "visible": true,
+      "type": "cardGrid",
+      "id": "features",
+      "columns": "3"
     },
     {
-      "type": "contribute",
-      "id": "contribute",
-      "visible": true,
-      "background": "cream",
-      "padding": "small",
-      "heading": "Help build the directory",
-      "intro": "There are hundreds of programs and communities built to support the disability community, but no central place to find them \u2014 so finding the right one still depends on who you know. We're changing that, and every family knows resources others are still searching for. Share what you know; we review each one before it goes live.",
       "primary": {
         "heading": "Know a resource we're missing?",
         "body": "Add a program, service, or organization that supports individuals with disabilities and their caregivers. It takes about a minute.",
         "ctaLabel": "Add a Resource",
         "ctaUrl": "/submit-resource/"
       },
+      "heading": "Help build the directory",
+      "intro": "There are hundreds of programs and communities built to support the disability community, but no central place to find them — so finding the right one still depends on who you know. We're changing that, and every family knows resources others are still searching for. Share what you know; we review each one before it goes live.",
+      "background": "cream",
+      "padding": "small",
+      "visible": true,
       "secondary": {
-        "icon": "\ud83d\udccc",
+        "icon": "📌",
         "heading": "Add resources as you browse",
-        "body": "Get our one-click browser button. Come across a great resource anywhere on the web? Click it to send it to us \u2014 no copying, no pasting.",
+        "body": "Get our one-click browser button. Come across a great resource anywhere on the web? Click it to send it to us — no copying, no pasting.",
         "ctaLabel": "Get the Browser Button",
         "ctaUrl": "/quick-submit/"
-      }
+      },
+      "type": "contribute",
+      "id": "contribute"
     },
     {
-      "type": "storyFeed",
-      "id": "stories",
-      "visible": true,
+      "heading": "Stories & News",
+      "subheading": "Positive stories from families and the disability community — updated weekly",
       "background": "warm",
       "padding": "normal",
-      "heading": "Stories & News",
-      "subheading": "Positive stories from families and the disability community \u2014 updated weekly",
-      "emptyMessage": "Stories coming soon! We're collecting inspiring stories from families in the disability community.",
       "emptyCtaLabel": "Share Your Story",
+      "visible": true,
+      "emptyMessage": "Stories coming soon! We're collecting inspiring stories from families in the disability community.",
+      "type": "storyFeed",
+      "id": "stories",
       "browseAllLabel": "Browse All Stories & News"
     },
     {
-      "type": "spotlight",
-      "id": "spotlight",
-      "visible": true,
-      "background": "white",
-      "padding": "normal",
-      "heading": "Organization Spotlight",
-      "subheading": "Highlighting organizations providing accessible services and adventures",
-      "viewAllLabel": "View All Spotlights"
-    },
-    {
-      "type": "newsletter",
-      "id": "newsletter",
-      "visible": true,
+      "body": "Get updates on new resources, highlighted programs or organizations, and community news delivered to your inbox.",
+      "heading": "Stay Connected",
+      "buttonLabel": "Subscribe",
       "background": "primary",
       "padding": "normal",
-      "heading": "Stay Connected",
-      "body": "Get updates on new resources, blog posts, podcast episodes, and community news delivered to your inbox.",
+      "visible": true,
       "placeholder": "Enter your email",
-      "buttonLabel": "Subscribe"
+      "type": "newsletter",
+      "id": "newsletter"
     },
     {
-      "type": "stats",
-      "id": "coverage",
-      "visible": true,
+      "body": "Disability resources for every state, plus national organizations that serve the entire country.",
+      "heading": "Serving All 50 States",
+      "ctaLabel": "Browse Resources by State",
       "background": "white",
       "padding": "normal",
-      "heading": "Serving All 50 States",
-      "body": "Disability resources for every state, plus national organizations that serve the entire country.",
+      "visible": true,
+      "type": "stats",
+      "id": "coverage",
       "stats": [
         {
           "auto": true,
@@ -136,7 +127,6 @@
           "label": "Resource Categories"
         }
       ],
-      "ctaLabel": "Browse Resources by State",
       "ctaUrl": "/resources/"
     }
   ]

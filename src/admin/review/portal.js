@@ -10,9 +10,9 @@
   'use strict';
 
   // ── Config ────────────────────────────────────────────────────────────────
-  var ADMIN_API = 'https://tfp-admin-api.patrick-m-berrigan.workers.dev';
-  var OAUTH_URL = 'https://decap-oauth.patrick-m-berrigan.workers.dev/auth?provider=github&scope=repo';
-  var OAUTH_ORIGIN = 'https://decap-oauth.patrick-m-berrigan.workers.dev';
+  var ADMIN_API = 'https://tfp-admin-api.thefullestproject.workers.dev';
+  var OAUTH_URL = 'https://decap-oauth.thefullestproject.workers.dev/auth?provider=github&scope=repo';
+  var OAUTH_ORIGIN = 'https://decap-oauth.thefullestproject.workers.dev';
   var TOKEN_KEY = 'tfpAdminToken';
   var MOCK = new URLSearchParams(location.search).get('mock') === '1';
   var APPROVE_CHUNK = 10; // items per /approve call during approve-all
@@ -111,7 +111,12 @@
       detail: 'Can you put together a suggested list of awareness months?', page: '',
       note: 'Planned. You will get a month-by-month list.', noteBy: 'Patrick', noteAt: '2026-10-15T20:00:00Z',
       createdAt: '2026-10-14T20:00:00Z',
-      replies: [{ id: 'reply-demo-1', requestId: 'cr-2026-10-14-demo0001', by: 'Nicole', text: 'Could it start with November?', at: '2026-10-16T14:00:00Z' }] }
+      replies: [{ id: 'reply-demo-1', requestId: 'cr-2026-10-14-demo0001', by: 'Nicole', text: 'Could it start with November?', at: '2026-10-16T14:00:00Z' }] },
+    { id: 'cr-2026-10-16-demo0002', title: 'Clearer heading on the Respite page', askedBy: 'Erin', status: 'question',
+      detail: '', page: '/resources/respite/', note: 'Which wording would you like?', noteBy: 'Patrick',
+      noteAt: '2026-10-17T10:00:00Z', createdAt: '2026-10-16T09:00:00Z', replies: [] },
+    { id: 'cr-2026-10-12-demo0003', title: 'Add Shelley to the team page', askedBy: 'Nicole', status: 'filed',
+      detail: '', page: '', note: '', createdAt: '2026-10-12T09:00:00Z', replies: [] }
   ];
 
   function mockFetch(path, opts) {
@@ -128,10 +133,17 @@
         category: ['respite'], location: 'Virginia', description: 'Weekend respite care.', website: 'https://example.org' } });
     }
     var fixtures = {
-      '/duplicates': { pairCount: 1, clusterCount: 0, clusters: [], pairs: [{ signals: ['Same website'],
+      '/duplicates/keep-both': { ok: true, key: 'dupkept-mock' },
+      '/duplicates': { pairCount: 2, clusterCount: 0, clusters: [],
+        kept: [{ key: 'dupkept-demo', nameA: 'Example Camp North', nameB: 'Example Camp South' }],
+        pairs: [{ signals: ['identical name', 'same web page'], confidence: 'likely',
         file: 'src/_data/resources/states/VA.json',
         a: { name: 'Example Respite House', location: 'Virginia', website: 'https://example.org' },
-        b: { name: 'Example Respite House Inc', location: 'Virginia', website: 'https://example.org' } }] },
+        b: { name: 'Example Respite House Inc', location: 'Virginia', website: 'https://example.org' } },
+        { signals: ['near-identical name', 'same web page'], confidence: 'possible',
+        file: 'src/_data/resources/national.json',
+        a: { name: 'The Arc', location: 'National', website: 'https://thearc.org' },
+        b: { name: 'The Arc of the United States', location: 'National', website: 'https://thearc.org/' } }] },
       '/change-requests': { requests: mockRequests, people: ['Nicole', 'Erin', 'Shelley', 'Patrick'] },
       '/pending': { items: [
         { id: 'sub-20260612-aaaa1111', type: 'submission', status: 'pending', file: 'pending/submissions.json',
@@ -1546,12 +1558,22 @@
         ' website' + (data.clusterCount === 1 ? '' : 's') + ' shared by three or more listings.';
       panel.appendChild(head);
 
-      if (data.pairs.length) {
-        panel.appendChild(el('h2', 'text-lg font-bold mb-2', 'Likely the same organization twice'));
+      [
+        ['likely', 'Likely the same organization twice',
+          'Similar names plus the same web page, phone or address.'],
+        ['possible', 'Possibly the same - worth a quick look',
+          'A one-word name such as "The Arc" also matches that organization\'s own programs, or the names match but nothing else does.']
+      ].forEach(function (tier) {
+        var tierPairs = data.pairs.filter(function (p) { return (p.confidence || 'likely') === tier[0]; });
+        if (!tierPairs.length) return;
+        panel.appendChild(el('h2', 'text-lg font-bold mb-1', tier[1] + ' (' + tierPairs.length + ')'));
+        var why = el('p', 'text-sm mb-3', tier[2]);
+        why.style.color = 'var(--color-text-light)';
+        panel.appendChild(why);
         var list = el('div', 'flex flex-col gap-2 mb-8');
-        data.pairs.forEach(function (pair) { list.appendChild(duplicatePairCard(pair)); });
+        tierPairs.forEach(function (pair) { list.appendChild(duplicatePairCard(pair)); });
         panel.appendChild(list);
-      }
+      });
 
       if (data.clusters.length) {
         panel.appendChild(el('h2', 'text-lg font-bold mb-1', 'Websites shared by several listings'));
@@ -1566,6 +1588,17 @@
 
       if (!data.pairs.length && !data.clusters.length) {
         panel.appendChild(el('p', 'text-sm', 'No duplicates found.'));
+      }
+
+      if (data.kept && data.kept.length) {
+        panel.appendChild(el('h2', 'text-lg font-bold mt-8 mb-1', 'Kept as separate listings'));
+        var keptNote = el('p', 'text-sm mb-3');
+        keptNote.style.color = 'var(--color-text-light)';
+        keptNote.textContent = 'These pairs are no longer flagged. Undo one to send it back to the list above.';
+        panel.appendChild(keptNote);
+        var keptList = el('div', 'flex flex-col gap-2');
+        data.kept.forEach(function (k) { keptList.appendChild(keptPairRow(k)); });
+        panel.appendChild(keptList);
       }
     }).catch(function (err) {
       clear(panel);
@@ -1602,6 +1635,29 @@
     var editBoth = el('button', 'btn-secondary text-xs mt-3', 'Edit both side by side');
     editBoth.addEventListener('click', function () { toggleEditBoth(pair, file, editArea, editBoth); });
     card.appendChild(editBoth);
+
+    var keepBoth = el('button', 'btn-secondary text-xs mt-3 ml-2', 'Keep both, not duplicates');
+    keepBoth.addEventListener('click', function () {
+      if (!window.confirm('Keep both listings as they are and stop flagging this pair?')) return;
+      keepBoth.disabled = true;
+      apiFetch('/duplicates/keep-both', {
+        method: 'POST',
+        body: JSON.stringify({ file: file, nameA: pair.a.name, nameB: pair.b.name })
+      }).then(function (data) {
+        toast('Both kept');
+        clear(card);
+        var done = el('p', 'text-sm', 'Kept both listings. This pair will not be flagged again unless one is renamed.');
+        done.style.color = 'var(--color-accent)';
+        card.appendChild(done);
+        var undo = undoKeepBothButton(data.key);
+        undo.classList.add('mt-2');
+        card.appendChild(undo);
+      }).catch(function (err) {
+        keepBoth.disabled = false;
+        toast(err.message || 'Could not save that', true);
+      });
+    });
+    card.appendChild(keepBoth);
     card.appendChild(editArea);
 
     var hint = el('p', 'text-xs mt-3');
@@ -1610,6 +1666,31 @@
     card.appendChild(hint);
 
     return card;
+  }
+
+  function undoKeepBothButton(key) {
+    var undo = el('button', 'btn-secondary text-xs', 'Undo');
+    undo.addEventListener('click', function () {
+      undo.disabled = true;
+      apiFetch('/duplicates/keep-both?key=' + encodeURIComponent(key), { method: 'DELETE' }).then(function () {
+        toast('Undone - the pair returns to this list within a minute');
+        loadDuplicates();
+      }).catch(function (err) {
+        undo.disabled = false;
+        toast(err.message || 'Could not undo that', true);
+      });
+    });
+    return undo;
+  }
+
+  function keptPairRow(kept) {
+    var row = el('div', 'card p-4 flex flex-wrap items-center justify-between gap-2');
+    var names = el('p', 'text-sm');
+    names.style.minWidth = '0';
+    names.textContent = kept.nameA + ' / ' + kept.nameB;
+    row.appendChild(names);
+    row.appendChild(undoKeepBothButton(kept.key));
+    return row;
   }
 
   /** Opens both listings' full edit forms in two columns, each saved on its own. */
@@ -1851,6 +1932,9 @@
   // Responses saved this session. KV listings can lag a new key by up to a
   // minute, so a refresh must not make a just-sent response seem to vanish.
   var crSentReplies = [];
+  // Which request threads are open, by request id. Threads start collapsed and
+  // keep their state across the re-render that follows every save.
+  var crExpanded = {};
 
   // Everyone signs in through the shared GitHub account, so "who" is picked
   // in the form. Remember the last pick per device so it is one choice, once.
@@ -1989,8 +2073,26 @@
       listWrap.appendChild(empty);
       return;
     }
-    var list = el('div', 'flex flex-col gap-2');
-    shown.forEach(function (r) { list.appendChild(requestCard(r)); });
+    var withReplies = shown.filter(function (r) { return (r.replies || []).length; });
+    if (withReplies.length) {
+      var anyOpen = withReplies.some(function (r) { return crExpanded[r.id]; });
+      var all = el('button', 'btn-secondary text-xs mb-3', anyOpen ? 'Collapse all responses' : 'Expand all responses');
+      all.addEventListener('click', function () {
+        withReplies.forEach(function (r) { crExpanded[r.id] = !anyOpen; });
+        renderRequestList();
+      });
+      listWrap.appendChild(all);
+    }
+
+    // Numbers follow filing order across every request, so a request keeps
+    // its number whatever the filters show.
+    var numbers = {};
+    crRequests.slice()
+      .sort(function (a, b) { return String(a.createdAt).localeCompare(String(b.createdAt)); })
+      .forEach(function (r, i) { numbers[r.id] = i + 1; });
+
+    var list = el('div', 'flex flex-col gap-4');
+    shown.forEach(function (r, i) { list.appendChild(requestCard(r, numbers[r.id], i)); });
     listWrap.appendChild(list);
   }
 
@@ -2075,12 +2177,21 @@
     });
   }
 
-  function requestCard(r) {
+  function requestCard(r, number, index) {
     var card = el('div', 'card p-4');
+    // A coloured stripe that alternates from card to card, so it is clear where
+    // one request ends and the next begins. A tint would vanish against the
+    // page's own cream background.
+    card.style.borderLeft = '6px solid ' + (index % 2 === 1 ? 'var(--color-secondary)' : 'var(--color-primary)');
 
     var head = el('div', 'flex flex-wrap items-start justify-between gap-2');
     var left = el('div');
-    left.appendChild(el('p', 'font-semibold text-sm', r.title));
+    var title = el('p', 'font-semibold text-sm');
+    var num = el('span', 'font-bold text-base mr-2', '#' + number);
+    num.style.color = 'var(--color-primary)';
+    title.appendChild(num);
+    title.appendChild(document.createTextNode(r.title));
+    left.appendChild(title);
     var asker = crAskedBy(r);
     var meta = el('p', 'text-xs mt-1',
       (asker ? 'Asked by ' + asker : 'Asker not recorded') + ' on ' + fmtDate(r.createdAt));
@@ -2218,12 +2329,12 @@
   }
 
   function attachmentButton(attachment) {
-    var btn = el('button', 'btn-secondary text-xs mt-2', 'Download PDF: ' + attachment.name);
+    var btn = el('button', 'btn-secondary text-xs mt-2', 'Download file: ' + attachment.name);
     btn.addEventListener('click', function () {
       btn.disabled = true;
       apiFetch('/change-requests/file?key=' + encodeURIComponent(attachment.key)).then(function (file) {
         var bytes = Uint8Array.from(atob(file.data), function (c) { return c.charCodeAt(0); });
-        var url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
+        var url = URL.createObjectURL(new Blob([bytes]));
         var link = document.createElement('a');
         link.href = url;
         link.download = file.name;
@@ -2242,7 +2353,31 @@
   // the Next Steps box above is a separate record.
   function requestThread(r) {
     var thread = el('div', 'mt-3');
-    (r.replies || []).forEach(function (x, i) {
+    var replies = r.replies || [];
+    var items = el('div');
+    items.id = 'cr-thread-' + r.id;
+
+    if (replies.length) {
+      var last = replies[replies.length - 1];
+      var count = replies.length + ' response' + (replies.length === 1 ? '' : 's');
+      var toggle = el('button', 'text-xs font-semibold');
+      toggle.style.color = 'var(--color-primary)';
+      toggle.setAttribute('aria-controls', items.id);
+      var setOpen = function (open) {
+        crExpanded[r.id] = open;
+        items.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = open
+          ? '▾ Hide ' + count
+          : '▸ Show ' + count + ' · latest from ' + last.by + ', ' + fmtDate(last.at);
+      };
+      toggle.addEventListener('click', function () { setOpen(items.hidden); });
+      thread.appendChild(toggle);
+      setOpen(!!crExpanded[r.id]);
+    }
+    thread.appendChild(items);
+
+    replies.forEach(function (x, i) {
       var item = el('div', 'mt-2');
       item.style.padding = '8px 10px';
       item.style.borderLeft = '3px solid var(--color-secondary)';
@@ -2255,7 +2390,7 @@
       text.style.whiteSpace = 'pre-wrap';
       item.appendChild(text);
       if (x.attachment) item.appendChild(attachmentButton(x.attachment));
-      thread.appendChild(item);
+      items.appendChild(item);
     });
 
     var addBtn = el('button', 'text-xs font-semibold underline mt-2', 'Add a response');
@@ -2274,10 +2409,10 @@
       form.appendChild(label);
       form.appendChild(input);
 
-      var fileLabel = el('label', 'block text-xs font-semibold mt-2 mb-1', 'Attach a PDF (optional, up to 5 MB)');
+      var fileLabel = el('label', 'block text-xs font-semibold mt-2 mb-1', 'Attach a PDF or Word file (optional, up to 5 MB)');
       var fileInput = el('input', 'text-xs');
       fileInput.type = 'file';
-      fileInput.accept = 'application/pdf,.pdf';
+      fileInput.accept = '.pdf,.docx';
       fileInput.id = 'cr-reply-file-' + r.id;
       fileLabel.htmlFor = fileInput.id;
       form.appendChild(fileLabel);
@@ -2303,7 +2438,7 @@
         if (!text) { toast('Write a response first', true); return; }
         if (!bySelect.value) { toast('Choose who is responding', true); return; }
         var file = fileInput.files[0];
-        if (file && file.size > CR_FILE_MAX_BYTES) { toast('That PDF is over the 5 MB limit', true); return; }
+        if (file && file.size > CR_FILE_MAX_BYTES) { toast('That file is over the 5 MB limit', true); return; }
         crSetMe(bySelect.value);
         send.disabled = true;
         readPdf(file).then(function (attachment) {
@@ -2312,6 +2447,7 @@
           return apiFetch('/change-requests/reply', { method: 'POST', body: JSON.stringify(payload) });
         }).then(function (data) {
           crSentReplies.push(data.reply);
+          crExpanded[r.id] = true;
           toast('Response added');
           refreshRequests();
         }).catch(function (err) {
