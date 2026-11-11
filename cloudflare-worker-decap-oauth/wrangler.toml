@@ -1,5 +1,7 @@
 name = "decap-oauth"
 main = "worker.js"
+# The Fullest Project's own Cloudflare account (info@thefullestproject.org), since November 2026.
+account_id = "5e7a6fe8095e27a82ccac06681573b49"
 compatibility_date = "2024-10-01"
 
 # Set these via the Cloudflare dashboard or `wrangler secret put`:
