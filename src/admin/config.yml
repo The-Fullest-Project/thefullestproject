@@ -2,7 +2,7 @@ backend:
   name: github
   repo: The-Fullest-Project/thefullestproject
   branch: main
-  base_url: https://decap-oauth.patrick-m-berrigan.workers.dev
+  base_url: https://decap-oauth.thefullestproject.workers.dev
   auth_endpoint: auth
 
 # Decap only honours this when the CMS is served from localhost, so production

@@ -16,9 +16,9 @@
 import { findElement, locateValue, applyPreview } from "./bind.js";
 import {
   getSession, getActor, signOut, exchange, existingGithubToken, signInWithPopup,
-} from "./auth.js";
+} from "./auth.js?v=20261110a";
 
-const ADMIN_API = "https://tfp-admin-api.patrick-m-berrigan.workers.dev";
+const ADMIN_API = "https://tfp-admin-api.thefullestproject.workers.dev";
 
 const PAGE_KEYS = { "/": "homepage", "/about/": "about", "/get-involved/": "getInvolved" };
 const PAGE_LABELS = { homepage: "Homepage", about: "About Page", getInvolved: "Get Involved" };

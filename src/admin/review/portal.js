@@ -10,9 +10,9 @@
   'use strict';
 
   // ── Config ────────────────────────────────────────────────────────────────
-  var ADMIN_API = 'https://tfp-admin-api.patrick-m-berrigan.workers.dev';
-  var OAUTH_URL = 'https://decap-oauth.patrick-m-berrigan.workers.dev/auth?provider=github&scope=repo';
-  var OAUTH_ORIGIN = 'https://decap-oauth.patrick-m-berrigan.workers.dev';
+  var ADMIN_API = 'https://tfp-admin-api.thefullestproject.workers.dev';
+  var OAUTH_URL = 'https://decap-oauth.thefullestproject.workers.dev/auth?provider=github&scope=repo';
+  var OAUTH_ORIGIN = 'https://decap-oauth.thefullestproject.workers.dev';
   var TOKEN_KEY = 'tfpAdminToken';
   var MOCK = new URLSearchParams(location.search).get('mock') === '1';
   var APPROVE_CHUNK = 10; // items per /approve call during approve-all

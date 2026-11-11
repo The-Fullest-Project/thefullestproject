@@ -14,8 +14,8 @@
  * ever changes, change it in BOTH places.
  */
 
-const OAUTH_URL = "https://decap-oauth.patrick-m-berrigan.workers.dev/auth?provider=github&scope=repo";
-const OAUTH_ORIGIN = "https://decap-oauth.patrick-m-berrigan.workers.dev";
+const OAUTH_URL = "https://decap-oauth.thefullestproject.workers.dev/auth?provider=github&scope=repo";
+const OAUTH_ORIGIN = "https://decap-oauth.thefullestproject.workers.dev";
 const GH_TOKEN_KEY = "tfpAdminToken";   // shared with the review portal
 const SESSION_KEY = "tfpEditSession";
 const ACTOR_KEY = "tfpEditActor";
