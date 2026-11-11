@@ -1146,5 +1146,35 @@
       "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
       "lastScraped": "2026-11-10"
     }
+  },
+  {
+    "id": "sub-20261111-3e0efa77",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-11T12:35:31.184Z"
+    },
+    "targetFile": "src/_data/resources/states/FL.json",
+    "payload": {
+      "name": "Wonderland PPEC, LLC",
+      "category": [
+        "medical"
+      ],
+      "location": "Florida",
+      "area": "Tamarac, Broward County",
+      "description": "Wonderland provides medical daycare for infants and children with complex medical needs in Tamarac, serving Broward County families. Services include pediatric nursing care, therapies, educational support, meals, and transportation to and from the center and medical appointments. Children return home after the day. Services are available at no cost to children enrolled through Medicaid or its managed care plans, subject to eligibility, physician orders and required authorizations. Families can call to review eligibility or arrange a tour.",
+      "phone": "954-590-0097",
+      "email": "info@wonderlandppec.com",
+      "website": "https://www.wonderlandppec.com/",
+      "address": "6463 W Commercial Blvd, Tamarac, FL 33319",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.wonderlandppec.com/",
+      "lastScraped": "2026-11-11"
+    }
   }
 ]
