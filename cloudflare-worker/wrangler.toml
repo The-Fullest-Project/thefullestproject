@@ -9,3 +9,9 @@ compatibility_date = "2024-01-01"
 # GITHUB_REPO    = "The-Fullest-Project/thefullestproject"
 # FORMSPREE_ID   = "xojkvvlo"
 # ALLOWED_ORIGIN = "https://thefullestproject.org"
+
+# Plain settings (not secret). Secrets: GITHUB_TOKEN, ADMIN_KEY.
+[vars]
+ALLOWED_ORIGIN = "https://thefullestproject.org"
+FORMSPREE_ID = "xojkvvlo"
+GITHUB_REPO = "The-Fullest-Project/thefullestproject"
