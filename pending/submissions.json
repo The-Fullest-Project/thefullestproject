@@ -1146,35 +1146,5 @@
       "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
       "lastScraped": "2026-11-10"
     }
-  },
-  {
-    "id": "sub-20261111-6d042d67",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-11-11T02:40:08.302Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "ZZ Switch-over test (delete me)",
-      "category": [
-        "other"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "Test submission from the Cloudflare account move on 10 November 2026. Safe to delete.",
-      "phone": "",
-      "email": "",
-      "website": "",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [],
-      "source": "website-submission",
-      "lastScraped": "2026-11-11"
-    }
   }
 ]
