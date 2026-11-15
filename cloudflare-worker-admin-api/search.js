@@ -226,9 +226,10 @@ export function buildSchema(categories) {
   return {
     type: "object",
     additionalProperties: false,
-    required: ["categories", "state", "place", "crisis", "offTopic"],
+    required: ["categories", "keywords", "state", "place", "crisis", "offTopic"],
     properties: {
       categories: { type: "array", items: { type: "string", enum: categories.map(c => c.value) } },
+      keywords: { type: "array", items: { type: "string" } },
       state: { anyOf: [{ type: "string", enum: STATE_NAMES }, { type: "null" }] },
       place: { type: "string" },
       crisis: { type: "boolean" },
@@ -246,6 +247,7 @@ ${list}
 
 Fill in the filters:
 - categories: the one to three categories that best match what the person needs, most relevant first. Fewer is better; choose more than one only when the need clearly spans them. Use an empty list if nothing fits.
+- keywords: one to five short words or phrases that would appear in the name, description or tags of a listing that meets the need, including common alternatives. For example "safety beds" gives ["safety bed", "enclosed bed", "sleep"], and "g-tube friendly clothes" gives ["g-tube", "feeding tube", "adaptive clothing"]. Use the specific thing they need, not their child's age or diagnosis unless that is what the listing would be about. Use an empty list if the request is only general.
 - state: the US state they are in, if they say or clearly imply one. Work out the state from a city or county they name (for example Fairfax means Virginia). If a place name is ambiguous and nothing else settles it, use null. Use null if they don't mention a place.
 - place: the city, county or region they name, written as they wrote it, or an empty string.
 - crisis: true if anything suggests someone may be in danger right now: thoughts of suicide or self-harm, a medical emergency, abuse or neglect, or being unsafe at home. The website then shows 911 and 988 prominently. When unsure, choose true.
@@ -264,8 +266,15 @@ export function cleanResult(raw, categories) {
   const state = raw && typeof raw.state === "string" && STATE_NAMES.includes(raw.state) ? raw.state : null;
   const place = raw && typeof raw.place === "string" ? raw.place.replace(/[<>]/g, "").trim().slice(0, 60) : "";
   const offTopic = Boolean(raw && raw.offTopic);
+  const keywords = [];
+  (Array.isArray(raw && raw.keywords) ? raw.keywords : []).forEach(k => {
+    if (typeof k !== "string") return;
+    const clean = k.toLowerCase().replace(/[^a-z0-9 '\-]/g, " ").replace(/\s+/g, " ").trim().slice(0, 30);
+    if (clean.length >= 2 && !keywords.includes(clean) && keywords.length < 5) keywords.push(clean);
+  });
   return {
     categories: offTopic ? [] : picked,
+    keywords: offTopic ? [] : keywords,
     state,
     place,
     crisis: Boolean(raw && raw.crisis),

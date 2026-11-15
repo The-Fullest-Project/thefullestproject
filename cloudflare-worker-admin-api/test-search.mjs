@@ -80,6 +80,10 @@ async function call(e, body, origin, ip) {
   assert.equal(r.place, "bFairfax/b", "angle brackets stripped from place");
   assert.equal(r.crisis, true);
   assert.deepEqual(cleanResult({ categories: ["camps"], offTopic: true }, CATS).categories, [], "off-topic clears categories");
+  assert.deepEqual(
+    cleanResult({ categories: [], keywords: ["Safety Bed", "safety bed", "<b>g-tube</b>", "x", 7, "a", "b2", "c3", "d4", "e5"] }, CATS).keywords,
+    ["safety bed", "b g-tube b", "b2", "c3", "d4"],
+    "keywords lower-cased, de-duplicated, cleaned, capped at five");
 
   const schema = buildSchema(CATS.filter(c => c.value !== "other"));
   assert.deepEqual(schema.properties.categories.items.enum, ["respite", "camps"]);
