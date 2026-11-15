@@ -72,6 +72,10 @@
     "label": "Housing"
   },
   {
+    "value": "influencers",
+    "label": "Influencers"
+  },
+  {
     "value": "insurance",
     "label": "Insurance & Appeals"
   },

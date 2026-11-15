@@ -34,7 +34,7 @@
   },
   {
     "name": "Family Support & Community Life",
-    "blurb": "Respite, childcare, sibling support, faith communities and groups near you.",
+    "blurb": "Respite, childcare, sibling support, faith communities, groups near you and creators to follow.",
     "slugs": [
       "respite",
       "childcare",
@@ -42,7 +42,8 @@
       "sibling-support",
       "faith",
       "nonprofit",
-      "housing"
+      "housing",
+      "influencers"
     ]
   },
   {

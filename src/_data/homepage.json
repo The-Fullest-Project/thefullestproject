@@ -46,6 +46,18 @@
           "title": "Podcasts",
           "description": "More than 60 podcasts for caregivers and families, sorted by topic.",
           "url": "/resources/podcasts/"
+        },
+        {
+          "icon": "📰",
+          "title": "Stories & News",
+          "description": "Real stories, news and practical guides from across the disability community.",
+          "url": "/blog/"
+        },
+        {
+          "icon": "📱",
+          "title": "Influencers",
+          "description": "Disabled creators and caregiving families on Instagram and beyond who share real life, tips and advocacy.",
+          "url": "/resources/influencers/"
         }
       ],
       "intro": "The Fullest Project is your connection hub for disability resources, programs, education, and community.  It is a centralized place for caregivers of individuals with disabilities to go to find programs, services, and organizations that can fill needs, close gaps, and provide information -all with the goal of helping each disabled person live life to their fullest. ",
@@ -54,7 +66,7 @@
       "visible": true,
       "type": "cardGrid",
       "id": "features",
-      "columns": "3"
+      "columns": "4"
     },
     {
       "type": "custom",
@@ -92,7 +104,7 @@
       "background": "warm",
       "padding": "normal",
       "emptyCtaLabel": "Share Your Story",
-      "visible": true,
+      "visible": false,
       "emptyMessage": "Stories coming soon! We're collecting inspiring stories from families in the disability community.",
       "type": "storyFeed",
       "id": "stories",

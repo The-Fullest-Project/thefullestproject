@@ -285,6 +285,8 @@ The audit (June 2026) found the legacy "scrapers" were ~97% hand-curated seed li
 }
 ```
 
+**Optional influencer field.** Entries in the `influencers` category (`/resources/influencers/`, rendered by `category.njk` with `isInfluencers`) may carry `socials`, an object of full public profile URLs keyed by platform (`instagram`, `tiktok`, `youtube`, `facebook`, `x`, `threads`, `pinterest`). The card links each one and drops the generic website link. Descriptions are written by TFP; never copy or hotlink creators' photos or posts (copyright, and Instagram image URLs expire). Hand-curated like apps.
+
 `format: "app"` drives the **App** badge that appears wherever the entry is rendered, including cross-listed topical category pages. `pricing` is the normalized filter key; the free-form `cost` string stays alongside it for human detail ("$14.99 one-time purchase"). Nothing in the scraper or worker pipeline produces these — they are hand-curated or added by an admin after approval.
 
 ### Caregiver Apps (`/resources/apps/`)

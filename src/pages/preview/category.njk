@@ -7,12 +7,22 @@ pagination:
 permalink: "/resources/{{ cat.value }}/"
 eleventyComputed:
   title: "{{ cat.label }} — Disability Resources"
-  description: "{% if cat.value == 'podcasts' %}Podcasts for caregivers and families of people with disabilities, sorted by topic.{% else %}Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse resources and filter by state or city.{% endif %}"
+  description: "{% if cat.value == 'podcasts' %}Podcasts for caregivers and families of people with disabilities, sorted by topic.{% elif cat.value == 'influencers' %}Disabled creators and caregiving families worth following on Instagram, TikTok and YouTube.{% else %}Find {{ cat.label | lower }} for individuals with disabilities and their caregivers. Browse resources and filter by state or city.{% endif %}"
 ---
 
 {% set catResources = directory | filterByTopCategory(cat.value) | sort(attribute='name') %}
-{# Podcasts are listened to anywhere, so state and city mean nothing there. #}
+{# Podcasts and influencers are online, so state and city mean nothing there. #}
 {% set isPodcasts = cat.value == 'podcasts' %}
+{% set isInfluencers = cat.value == 'influencers' %}
+{% set isOnline = isPodcasts or isInfluencers %}
+{#
+  Influencer entries carry an optional `socials` object of full profile URLs,
+  e.g. { "instagram": "https://www.instagram.com/handle/", "tiktok": "...",
+  "youtube": "...", "facebook": "..." }. We link to their public accounts and
+  write the description ourselves; their photos and posts stay on their own
+  pages (copyright, and Instagram image links expire).
+#}
+{% set SOCIAL_LABELS = { instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube", facebook: "Facebook", x: "X", threads: "Threads", pinterest: "Pinterest" } %}
 
 <section class="py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,6 +35,8 @@ eleventyComputed:
     <p class="mb-8 max-w-3xl" style="color: var(--color-text-light);">
       {% if isPodcasts %}
       {{ catResources.length }} podcasts made for caregivers and families of people with disabilities, all free to listen to. Use Type to find a topic.
+      {% elif isInfluencers %}
+      Disabled creators, self-advocates and caregiving families worth following: real life, practical tips and advocacy. Each one links to their own public accounts.
       {% else %}
       {{ catResources.length }} {{ cat.label | lower }} resource{{ 's' if catResources.length != 1 }} for individuals with disabilities and their caregivers — national organizations plus local programs. Use the filters to narrow by state or city.
       {% endif %}
@@ -37,7 +49,7 @@ eleventyComputed:
           <label for="category-search" class="block text-sm font-semibold mb-2">Search</label>
           <input type="text" id="category-search" placeholder="Search these resources..." class="form-input">
         </div>
-        {% if not isPodcasts %}
+        {% if not isOnline %}
         <div>
           <label for="state-filter" class="block text-sm font-semibold mb-2">State</label>
           <select id="state-filter" class="filter-select">
@@ -89,12 +101,21 @@ eleventyComputed:
         {% if resource.phone %}
         <p class="text-xs mb-1"><a href="tel:{{ resource.phone }}" style="color: var(--color-accent);">{{ resource.phone }}</a></p>
         {% endif %}
-        {% if resource.website %}
+        {% if resource.socials %}
+        <ul class="list-none p-0 m-0 flex flex-wrap gap-x-4 gap-y-1 mt-2">
+          {% for platform, url in resource.socials %}
+          {% if url %}
+          <li><a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline" style="color: var(--color-secondary);">{{ SOCIAL_LABELS[platform] or platform }} &rarr;</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if resource.website and not (isInfluencers and resource.socials) %}
         <a href="{{ resource.website }}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold no-underline inline-block mt-2" style="color: var(--color-secondary);">
           {{ 'Listen' if isPodcasts else 'Visit Website' }} &rarr;
         </a>
         {% endif %}
-        {% if not isPodcasts %}
+        {% if not isOnline %}
         <p class="text-xs mt-3 opacity-70" style="color: var(--color-text-light);">
           {{ resource.location }}{% if resource.area %} &middot; {{ resource.area }}{% endif %}
         </p>
@@ -105,13 +126,17 @@ eleventyComputed:
 
     {% if catResources.length == 0 %}
     <div class="card p-8 text-center">
+      {% if isInfluencers %}
+      <p style="color: var(--color-text-light);">We're putting together a list of creators to follow. Know someone whose account helps families like yours? Tell us below.</p>
+      {% else %}
       <p style="color: var(--color-text-light);">We don't have any {{ cat.label | lower }} resources yet — know one we should add?</p>
+      {% endif %}
     </div>
     {% endif %}
 
     <!-- Submit CTA -->
     <div class="mt-12 text-center card p-8">
-      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Know a {{ cat.label | lower }} resource we're missing?</h2>
+      <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">{% if isInfluencers %}Know a creator we should feature?{% else %}Know a {{ cat.label | lower }} resource we're missing?{% endif %}</h2>
       <p class="mb-6" style="color: var(--color-text-light);">Help us grow our directory by submitting resources you know about.</p>
       <a href="/submit-resource/" class="btn-primary no-underline">Submit a Resource</a>
     </div>
