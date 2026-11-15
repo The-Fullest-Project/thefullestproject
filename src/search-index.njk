@@ -14,11 +14,16 @@ eleventyExcludeFromCollections: true
   g group heading · u category page url · w website
   t every top-level category, only when there is more than one (AI search
     matches on it, so a cross-listed resource shows under each of its pages)
+  k tags, space-separated · d first 160 characters of the description
+    (AI search ranks listings by its search words against n, k and d:
+    "safety beds" finds listings tagged safety-bed)
 #}
 {%- set rows = [] -%}
 {%- for r in directory -%}
   {%- set top = (r.topCategories | first) or "other" -%}
   {%- set meta = categoryLookup[top] -%}
+  {%- set tagText = (r.tags or []) | join(" ") -%}
+  {%- set descText = (r.description or "") | truncate(160, true, "") -%}
   {%- if r.topCategories and r.topCategories.length > 1 -%}
   {%- set rows = (rows.push({
         n: r.name,
@@ -29,6 +34,8 @@ eleventyExcludeFromCollections: true
         g: (meta.group if meta else "Other"),
         u: "/resources/" + top + "/",
         w: r.website or "",
+        k: tagText,
+        d: descText,
         t: r.topCategories
       }), rows) -%}
   {%- else -%}
@@ -40,7 +47,9 @@ eleventyExcludeFromCollections: true
         cl: (meta.label if meta else top),
         g: (meta.group if meta else "Other"),
         u: "/resources/" + top + "/",
-        w: r.website or ""
+        w: r.website or "",
+        k: tagText,
+        d: descText
       }), rows) -%}
   {%- endif -%}
 {%- endfor -%}

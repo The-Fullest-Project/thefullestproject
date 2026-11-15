@@ -17,12 +17,16 @@ const FAKE_TURNSTILE = `
   window.tfpTurnstileReady && window.tfpTurnstileReady();
 `;
 
-async function fakeServices(page, reply) {
+// A bot check that fails in the browser the way a wrong hostname does.
+const FAILING_TURNSTILE = FAKE_TURNSTILE.replace(
+  'window.__ts.callback("fake-token")', 'window.__ts["error-callback"]("110200")');
+
+async function fakeServices(page, reply, turnstile = FAKE_TURNSTILE) {
   const calls = [];
   // URL predicates, not globs: the Turnstile script URL carries a query string
   // that a glob pattern lets slip through to the real Cloudflare script.
   await page.route(url => url.hostname === "challenges.cloudflare.com", route =>
-    route.fulfill({ contentType: "application/javascript", body: FAKE_TURNSTILE }));
+    route.fulfill({ contentType: "application/javascript", body: turnstile }));
   const worker = path => url => url.hostname === "tfp-admin-api.thefullestproject.workers.dev" && url.pathname === path;
   await page.route(worker("/search"), async route => {
     calls.push(JSON.parse(route.request().postData() || "{}"));
@@ -114,4 +118,48 @@ test("the homepage box hands its text to the Resources page without putting it i
   expect(calls[0].q).toBe("respite care for my teenage son in Portland");
   expect(page.url()).not.toContain("Portland");
   expect(page.url()).not.toContain("#ask");
+});
+
+// ── Nicole's three searches from 15 November ─────────────────────────────────
+
+test("AI search words surface tagged listings: safety beds", async ({ page }) => {
+  await fakeServices(page, {
+    mode: "ai", categories: ["equipment"], keywords: ["safety bed", "enclosed bed"],
+    state: null, place: "", crisis: false, offTopic: false
+  });
+  await page.goto("/resources/");
+  await page.fill("#ai-search-input", "give me a list of safety beds");
+  await page.click("#ai-search-btn");
+  const best = page.locator("#ai-search-best");
+  await expect(best).toContainText("SleepSafe Beds");
+  await expect(best).toContainText("Safe Place Bedding");
+  await expect(best).toContainText("Beds by George");
+});
+
+test("keyword fallback still finds safety beds, g-tube clothes and Portland respite", async ({ page }) => {
+  await fakeServices(page, { mode: "fallback", reason: "botcheck" });
+  await page.goto("/resources/");
+
+  await page.fill("#ai-search-input", "give me a list of safety beds");
+  await page.click("#ai-search-btn");
+  await expect(page.locator("#ai-search-best")).toContainText("SleepSafe Beds");
+
+  await page.fill("#ai-search-input", "g-tube friendly clothes");
+  await page.click("#ai-search-btn");
+  await expect(page.locator("#ai-search-best")).toContainText("CCMOO Clothing");
+
+  await page.fill("#ai-search-input", "respite care for my teenage son in Portland");
+  await page.click("#ai-search-btn");
+  await expect(page.locator("#ai-search-summary")).toContainText("Respite Care in Oregon, near Portland");
+  await expect(page.locator("#ai-search-results")).toContainText("Oregon Respite Program");
+});
+
+test("a bot check that fails in the browser is reported to the worker with its code", async ({ page }) => {
+  const calls = await fakeServices(page, { mode: "fallback", reason: "botcheck" }, FAILING_TURNSTILE);
+  await page.goto("/resources/");
+  await page.fill("#ai-search-input", "respite care in Virginia");
+  await page.click("#ai-search-btn");
+  await expect(page.locator("#ai-search-results")).toContainText("simple keyword search");
+  expect(calls).toHaveLength(1);
+  expect(calls[0]).toMatchObject({ token: "", botError: "110200" });
 });

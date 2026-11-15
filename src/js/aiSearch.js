@@ -4,17 +4,21 @@
  * 1. The visitor describes their situation.
  * 2. A Cloudflare Turnstile bot check runs (invisible unless it needs a click).
  * 3. The tfp-admin-api worker turns the text into filters: up to three real
- *    category slugs, a state, and a city or county. The AI writes nothing the
- *    visitor reads.
- * 4. This script shows matching listings from /search-index.json, in-state
- *    first, then national, with a link to each full category page.
+ *    category slugs, a few search words, a state, and a city or county. The
+ *    AI writes nothing the visitor reads.
+ * 4. This script shows listings from /search-index.json:
+ *      "Best matches" — listings whose name, tags or description contain the
+ *        search words, from any category ("safety beds" finds the six
+ *        listings tagged safety-bed);
+ *      then one card per category, best matches first, in-state before
+ *        national, with a link to the full category page.
  *
- * If the worker says AI isn't available (daily limit, budget, bot check,
- * error), a simple keyword search runs instead: category names and state
- * names found in the text, or failing that, listing names.
+ * If AI isn't available (daily limit, budget, bot check, error), the same
+ * matching runs on the visitor's own words instead, with category names,
+ * state names and a few well-known places picked out of the text.
  *
  * Crisis wording shows 911 and 988 whatever the AI says: the worker's flag and
- * a local word list both trigger it, so it works even when AI is off.
+ * a local phrase list both trigger it, so it works even when AI is off.
  *
  * Nothing typed is stored or put in the address bar. The homepage box hands
  * its text over in sessionStorage ("tfp-ai-search") and links to #ask.
@@ -34,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var WORKER = form.getAttribute('data-worker');
   var SITEKEY = form.getAttribute('data-sitekey');
   var PER_CATEGORY = 6;
+  var BEST_MATCHES = 8;
 
   var CATEGORIES = [];
   try { CATEGORIES = JSON.parse(document.getElementById('ai-search-categories').textContent); } catch (e) {}
@@ -48,11 +53,31 @@ document.addEventListener('DOMContentLoaded', function () {
     'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas',
     'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
 
-  // Checked locally as well as by the AI, so the numbers show even when AI is off.
+  // Places in the two pilot areas, for the keyword fallback (the AI works
+  // these out itself). A state named in the text wins over these.
+  var PLACES = {
+    'portland': 'Oregon', 'beaverton': 'Oregon', 'hillsboro': 'Oregon', 'gresham': 'Oregon',
+    'multnomah': 'Oregon', 'eugene': 'Oregon', 'salem': 'Oregon', 'lake oswego': 'Oregon',
+    'fairfax': 'Virginia', 'arlington': 'Virginia', 'alexandria': 'Virginia', 'loudoun': 'Virginia',
+    'prince william': 'Virginia', 'northern virginia': 'Virginia', 'nova': 'Virginia',
+    'reston': 'Virginia', 'herndon': 'Virginia', 'leesburg': 'Virginia', 'manassas': 'Virginia',
+    'falls church': 'Virginia', 'vienna': 'Virginia', 'mclean': 'Virginia', 'richmond': 'Virginia'
+  };
+
   // Only unmistakable phrases here: words like "emergency" or "abuse" also
   // appear in ordinary searches ("emergency respite", "substance abuse
   // program"), and the AI judges those in context.
   var CRISIS = /\b(suicid\w*|kill(ing)? (my|him|her|them)sel\w*|end (my|his|her|their) (own )?life|self[- ]?harm\w*|hurt(ing)? (my|him|her|them)sel\w*|overdos\w*|want(s)? to die|not safe at home|in danger|being (abused|hurt)|can'?t breathe)\b/i;
+
+  // Everyday words that would match half the directory, so the keyword
+  // fallback never searches on them.
+  var STOP = ['give', 'list', 'need', 'needs', 'help', 'helps', 'looking', 'find', 'want', 'please',
+    'some', 'with', 'that', 'this', 'have', 'from', 'what', 'where', 'about', 'there', 'their',
+    'they', 'them', 'your', 'year', 'years', 'old', 'son', 'daughter', 'child', 'children', 'kid',
+    'kids', 'baby', 'toddler', 'teen', 'teenage', 'teenager', 'adult', 'family', 'families',
+    'friendly', 'special', 'near', 'around', 'area', 'local', 'resources', 'resource', 'services',
+    'service', 'support', 'program', 'programs', 'options', 'good', 'best', 'free', 'cheap',
+    'disability', 'disabilities', 'disabled', 'autism', 'autistic', 'care', 'know', 'does', 'anyone'];
 
   // ── Search index ──────────────────────────────────────────────────────────
   var indexPromise = null;
@@ -61,6 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
       indexPromise = fetch('/search-index.json').then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
+      }).then(function (rows) {
+        rows.forEach(function (r) {
+          r._name = (r.n || '').toLowerCase();
+          r._tags = (r.k || '').toLowerCase().replace(/-/g, ' ');
+          r._desc = (r.d || '').toLowerCase();
+        });
+        return rows;
       });
       indexPromise.catch(function () { indexPromise = null; });
     }
@@ -72,6 +104,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var widgetId = null;
   var waiting = null;
 
+  function botError(code) {
+    var err = new Error('Bot check: ' + code);
+    err.botCode = String(code);
+    return err;
+  }
+
   function loadTurnstile() {
     if (!turnstileLoad) {
       turnstileLoad = new Promise(function (resolve, reject) {
@@ -79,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var s = document.createElement('script');
         s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=tfpTurnstileReady';
         s.async = true;
-        s.onerror = function () { turnstileLoad = null; reject(new Error('Bot check did not load')); };
+        s.onerror = function () { turnstileLoad = null; reject(botError('script-load')); };
         document.head.appendChild(s);
       });
     }
@@ -87,40 +125,48 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function getToken() {
-    if (!SITEKEY) return Promise.reject(new Error('No site key'));
+    if (!SITEKEY) return Promise.reject(botError('no-sitekey'));
     return loadTurnstile().then(function () {
       return new Promise(function (resolve, reject) {
         waiting = { resolve: resolve, reject: reject };
         var timer = setTimeout(function () {
-          if (waiting) { waiting.reject(new Error('Bot check timed out')); waiting = null; }
+          if (waiting) { waiting.reject(botError('timeout')); waiting = null; }
         }, 30000);
         function settle(fn, value) {
           clearTimeout(timer);
           if (waiting) { waiting[fn](value); waiting = null; }
         }
-        if (widgetId === null) {
-          widgetId = window.turnstile.render(turnstileBox, {
-            sitekey: SITEKEY,
-            execution: 'execute',
-            appearance: 'interaction-only',
-            callback: function (token) { settle('resolve', token); },
-            'error-callback': function () { settle('reject', new Error('Bot check failed')); },
-            'expired-callback': function () { window.turnstile.reset(widgetId); }
-          });
-        } else {
-          window.turnstile.reset(widgetId);
+        try {
+          if (widgetId === null) {
+            widgetId = window.turnstile.render(turnstileBox, {
+              sitekey: SITEKEY,
+              execution: 'execute',
+              appearance: 'interaction-only',
+              callback: function (token) { settle('resolve', token); },
+              // Cloudflare passes an error code, e.g. 110200 = this site's
+              // address isn't on the widget's list of hostnames.
+              'error-callback': function (code) { settle('reject', botError(code || 'error')); return true; },
+              'expired-callback': function () { window.turnstile.reset(widgetId); }
+            });
+          } else {
+            window.turnstile.reset(widgetId);
+          }
+          window.turnstile.execute(widgetId);
+        } catch (e) {
+          settle('reject', botError('render'));
         }
-        window.turnstile.execute(widgetId);
       });
     });
   }
 
   // ── Worker ────────────────────────────────────────────────────────────────
-  function askWorker(q, token) {
+  function askWorker(q, token, botCode) {
+    var body = { q: q, token: token || '' };
+    if (botCode) body.botError = botCode;
     return fetch(WORKER + '/search', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ q: q, token: token })
+      body: JSON.stringify(body)
     }).then(function (res) {
       if (res.status === 400) {
         return res.json().then(function (d) { return { mode: 'invalid', message: d.error }; });
@@ -141,33 +187,58 @@ document.addEventListener('DOMContentLoaded', function () {
     } catch (e) {}
   }
 
-  // ── Keyword fallback ──────────────────────────────────────────────────────
+  // ── Matching ──────────────────────────────────────────────────────────────
   function stem(word) { return word.toLowerCase().replace(/(ies|es|s)$/, ''); }
 
-  var FALLBACK_STOP = ['care', 'service', 'servic', 'support', 'resource', 'resourc', 'adaptive', 'adaptiv',
-    'need', 'special', 'planning', 'after', 'school', 'general', 'other', 'group', 'provider',
-    'communitie', 'community', 'foundation', 'non', 'profit', 'activitie', 'venue', 'friendly'];
+  /** How well a listing matches the search words: name 3, tags 2, description 1 per word. */
+  function score(row, terms) {
+    var total = 0;
+    terms.forEach(function (t) {
+      if (row._name.indexOf(t) !== -1) total += 3;
+      else if (row._tags.indexOf(t) !== -1) total += 2;
+      else if (row._desc.indexOf(t) !== -1) total += 1;
+    });
+    return total;
+  }
 
-  function keywordFilters(q) {
-    var text = ' ' + q.toLowerCase() + ' ';
+  /** Search words for the keyword fallback, from the visitor's own text. */
+  function fallbackTerms(q) {
+    return q.toLowerCase().split(/[^a-z0-9]+/)
+      .filter(function (w) { return w.length >= 4 && STOP.indexOf(w) === -1; })
+      .map(stem)
+      .filter(function (w, i, all) { return w.length >= 3 && all.indexOf(w) === i; });
+  }
+
+  function findPlace(q) {
+    var text = ' ' + q.toLowerCase().replace(/[^a-z ]+/g, ' ') + ' ';
     var state = null;
     STATES.forEach(function (s) {
-      if (!state && text.indexOf(' ' + s.toLowerCase()) !== -1) state = s;
+      if (!state && text.indexOf(' ' + s.toLowerCase() + ' ') !== -1) state = s;
     });
-    var words = q.toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length >= 4; }).map(stem);
+    var place = '';
+    Object.keys(PLACES).forEach(function (p) {
+      if (!place && text.indexOf(' ' + p + ' ') !== -1) {
+        place = p.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+        if (!state) state = PLACES[p];
+      }
+    });
+    return { state: state, place: place };
+  }
+
+  function keywordFilters(q) {
+    var where = findPlace(q);
+    var terms = fallbackTerms(q);
     var cats = [];
     CATEGORIES.forEach(function (c) {
-      // Words in category names that people also use in ordinary sentences
-      // ("we NEED help", "my SPECIAL needs son", "after SCHOOL") would pick the
-      // wrong category, so they never count as a match on their own.
       var labelWords = (c.label + ' ' + c.value).toLowerCase().split(/[^a-z0-9]+/)
-        .filter(function (w) { return w.length >= 4; })
-        .map(stem)
-        .filter(function (w) { return FALLBACK_STOP.indexOf(w) === -1; });
-      var hit = labelWords.some(function (w) { return words.indexOf(w) !== -1; });
+        .filter(function (w) { return w.length >= 4 && STOP.indexOf(w) === -1; })
+        .map(stem);
+      var hit = labelWords.some(function (w) {
+        return terms.some(function (t) { return t.indexOf(w) === 0 || w.indexOf(t) === 0; });
+      });
       if (hit && cats.length < 3) cats.push(c.value);
     });
-    return { categories: cats, state: state, place: '' };
+    return { categories: cats, keywords: terms, state: where.state, place: where.place };
   }
 
   // ── Rendering ─────────────────────────────────────────────────────────────
@@ -213,24 +284,27 @@ document.addEventListener('DOMContentLoaded', function () {
     return row.a || row.l || '';
   }
 
-  function rowsFor(index, slug, state, place) {
-    var inCat = index.filter(function (r) { return (r.t || [r.c]).indexOf(slug) !== -1; });
-    var local = state ? inCat.filter(function (r) { return r.l === state; }) : [];
-    var national = inCat.filter(function (r) { return r.l === 'National'; });
+  /** In the visitor's state first, then national, then (with no state given) everywhere else. */
+  function locationRank(row, state) {
+    if (state && row.l === state) return 0;
+    if (row.l === 'National') return 1;
+    return 2;
+  }
+
+  function sortRows(rows, state, place) {
     var placeLower = (place || '').toLowerCase();
-    if (placeLower) {
-      local.sort(function (a, b) {
-        var am = (a.a || '').toLowerCase().indexOf(placeLower) !== -1 ? 0 : 1;
-        var bm = (b.a || '').toLowerCase().indexOf(placeLower) !== -1 ? 0 : 1;
-        return am - bm || a.n.localeCompare(b.n);
-      });
-    } else {
-      local.sort(function (a, b) { return a.n.localeCompare(b.n); });
-    }
-    national.sort(function (a, b) { return a.n.localeCompare(b.n); });
-    // Without a state, show national listings only: a list of other states'
-    // providers isn't useful to someone who hasn't said where they are.
-    return { local: local, national: national, all: inCat.length };
+    return rows.sort(function (a, b) {
+      return (b._score - a._score) ||
+        (locationRank(a, state) - locationRank(b, state)) ||
+        ((placeLower && (a.a || '').toLowerCase().indexOf(placeLower) !== -1 ? 0 : 1) -
+         (placeLower && (b.a || '').toLowerCase().indexOf(placeLower) !== -1 ? 0 : 1)) ||
+        a.n.localeCompare(b.n);
+    });
+  }
+
+  /** Rows the visitor can use: their state and national, or everything when no state is known. */
+  function inReach(row, state) {
+    return !state || row.l === state || row.l === 'National';
   }
 
   function listingRow(row) {
@@ -240,63 +314,80 @@ document.addEventListener('DOMContentLoaded', function () {
     var name = el('p', 'font-semibold text-sm', row.n);
     name.style.color = 'var(--color-text)';
     left.appendChild(name);
-    var where = placeLabel(row);
-    if (where) {
-      var sub = el('p', 'text-xs', where);
+    var bits = [placeLabel(row), row.cl].filter(Boolean).join(' · ');
+    if (bits) {
+      var sub = el('p', 'text-xs', bits);
       sub.style.color = 'var(--color-text-light)';
       left.appendChild(sub);
     }
     li.appendChild(left);
+    var actions = el('div', 'flex items-center gap-3 shrink-0');
     if (row.w) {
-      var site = el('a', 'text-xs font-semibold no-underline shrink-0', 'Website');
+      var site = el('a', 'text-xs font-semibold no-underline', 'Website');
       site.href = row.w;
       site.target = '_blank';
       site.rel = 'noopener noreferrer';
       site.style.color = 'var(--color-secondary)';
-      li.appendChild(site);
+      actions.appendChild(site);
     }
+    var browse = el('a', 'text-xs font-semibold no-underline', 'Browse');
+    browse.href = row.u;
+    browse.style.color = 'var(--color-primary)';
+    actions.appendChild(browse);
+    li.appendChild(actions);
     return li;
+  }
+
+  function card(title, countText, rows, footerLink) {
+    var c = el('li', 'card p-4');
+    var head = el('h2', 'text-base font-bold mb-1', title);
+    head.style.color = 'var(--color-primary)';
+    c.appendChild(head);
+    if (countText) {
+      var count = el('p', 'text-xs mb-2', countText);
+      count.style.color = 'var(--color-text-light)';
+      c.appendChild(count);
+    }
+    if (rows.length) {
+      var ul = el('ul', 'list-none p-0 m-0 flex flex-col');
+      rows.forEach(function (row) { ul.appendChild(listingRow(row)); });
+      c.appendChild(ul);
+    }
+    if (footerLink) c.appendChild(footerLink);
+    return c;
   }
 
   function categoryCard(index, slug, state, place) {
     var label = LABELS[slug] || slug;
-    var r = rowsFor(index, slug, state, place);
-    var shown = r.local.concat(r.national).slice(0, PER_CATEGORY);
-
-    var card = el('li', 'card p-4');
-    var head = el('h2', 'text-base font-bold mb-1', label);
-    head.style.color = 'var(--color-primary)';
-    card.appendChild(head);
+    var inCat = index.filter(function (r) { return (r.t || [r.c]).indexOf(slug) !== -1; });
+    var local = state ? inCat.filter(function (r) { return r.l === state; }) : [];
+    var national = inCat.filter(function (r) { return r.l === 'National'; });
+    var usable = sortRows(inCat.filter(function (r) { return inReach(r, state); }), state, place);
+    var shown = usable.slice(0, PER_CATEGORY);
 
     var countBits = [];
-    if (state) countBits.push(r.local.length + ' in ' + state);
-    countBits.push(r.national.length + ' national');
-    var count = el('p', 'text-xs mb-2', countBits.join(' · '));
-    count.style.color = 'var(--color-text-light)';
-    card.appendChild(count);
-
-    if (shown.length) {
-      var ul = el('ul', 'list-none p-0 m-0 flex flex-col');
-      shown.forEach(function (row) { ul.appendChild(listingRow(row)); });
-      card.appendChild(ul);
-    } else {
-      card.appendChild(note(state
-        ? 'No ' + label.toLowerCase() + ' listings in ' + state + ' yet.'
-        : 'No national listings in this category yet.'));
-    }
+    if (state) countBits.push(local.length + ' in ' + state);
+    countBits.push(national.length + ' national');
+    if (!state && inCat.length > national.length) countBits.push((inCat.length - national.length) + ' in states');
 
     var more = el('a', 'inline-block text-sm font-semibold no-underline mt-3',
       'See all ' + label + (state ? ' in ' + state : '') + ' →');
     more.href = '/resources/' + slug + '/' + (state ? '?state=' + encodeURIComponent(state) : '');
     more.style.color = 'var(--color-primary)';
-    card.appendChild(more);
 
-    return { node: card, found: shown.length };
+    var node = card(label, countBits.join(' · '), shown, more);
+    if (!shown.length) {
+      node.insertBefore(note(state
+        ? 'No ' + label.toLowerCase() + ' listings in ' + state + ' or nationally yet.'
+        : 'No listings in this category yet.'), more);
+    }
+    return { node: node, found: shown.length };
   }
 
-  function summaryText(f) {
+  function summaryText(f, bestCount) {
     var labels = f.categories.map(function (c) { return LABELS[c] || c; });
-    var text = labels.length ? 'Showing ' + labels.join(', ') : 'Showing results';
+    var text = labels.length ? 'Showing ' + labels.join(', ')
+      : (bestCount ? 'Showing the best matches' : 'Showing results');
     if (f.state) text += ' in ' + f.state;
     if (f.place && (!f.state || f.place.toLowerCase() !== f.state.toLowerCase())) text += ', near ' + f.place;
     return text + '.';
@@ -325,33 +416,47 @@ document.addEventListener('DOMContentLoaded', function () {
       return 0;
     }
 
-    if (!filters.categories.length) {
-      if (opts.mode === 'ai') {
-        results.appendChild(note('We couldn\'t match that to a directory category. Try saying a little more about what you need, or browse the categories below.'));
-        addClear();
-        if (categoriesGrid) categoriesGrid.hidden = false;
-        return 0;
-      }
-      // Keyword fallback found no category words: try listing names instead.
-      if (showNameSearch(q)) {
-        results.appendChild(note('Showing listings whose names match your words.'));
-        addClear();
-        return 1;
-      }
-    }
-
     return loadIndex().then(function (index) {
-      var summary = el('p', 'text-sm font-semibold mb-3', summaryText(filters));
+      var terms = (filters.keywords || []).filter(Boolean);
+      index.forEach(function (r) { r._score = terms.length ? score(r, terms) : 0; });
+
+      // A strong match is a name or tag hit, or several description hits.
+      var best = sortRows(index.filter(function (r) {
+        return r._score >= 2 && inReach(r, filters.state);
+      }), filters.state, filters.place).slice(0, BEST_MATCHES);
+
+      if (!best.length && !filters.categories.length) {
+        if (opts.mode === 'ai') {
+          results.appendChild(note('We couldn\'t match that to the directory. Try saying a little more about what you need, or browse the categories below.'));
+          addClear();
+          if (categoriesGrid) categoriesGrid.hidden = false;
+          return 0;
+        }
+        if (showNameSearch(q)) {
+          results.appendChild(note('Showing listings whose names match your words.'));
+          addClear();
+          return 1;
+        }
+      }
+
+      var summary = el('p', 'text-sm font-semibold mb-3', summaryText(filters, best.length));
       summary.style.color = 'var(--color-text)';
       summary.tabIndex = -1;
       summary.id = 'ai-search-summary';
       results.appendChild(summary);
       if (!filters.state) {
-        results.appendChild(note('Tell us your state or city to see local listings as well as national ones.'));
+        results.appendChild(note('Tell us your state or city to see what\'s near you first.'));
       }
 
       var list = el('ul', 'grid grid-cols-1 md:grid-cols-2 gap-3 list-none p-0 m-0');
       var found = 0;
+      if (best.length) {
+        var bestCard = card('Best matches', 'Listings that mention what you asked about', best);
+        bestCard.classList.add('md:col-span-2');
+        bestCard.id = 'ai-search-best';
+        list.appendChild(bestCard);
+        found += best.length;
+      }
       filters.categories.forEach(function (slug) {
         var c = categoryCard(index, slug, filters.state, filters.place);
         found += c.found;
@@ -404,8 +509,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function runFallback(q, reason, crisis) {
     var notice = FALLBACK_NOTICES[reason] || 'AI search isn\'t available right now, so this is a simple keyword search.';
-    var f = keywordFilters(q);
-    return Promise.resolve(render(q, f, { mode: 'fallback', notice: notice, crisis: crisis }));
+    return Promise.resolve(render(q, keywordFilters(q), { mode: 'fallback', notice: notice, crisis: crisis }));
   }
 
   function search(q) {
@@ -424,7 +528,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     getToken()
       .then(function (token) { return askWorker(q, token); })
-      .catch(function () { return { mode: 'fallback', reason: 'botcheck' }; })
+      .catch(function (err) {
+        // Tell the worker why the bot check failed, so it shows in the counts.
+        var code = (err && err.botCode) || 'unknown';
+        return askWorker(q, '', code).catch(function () { return { mode: 'fallback', reason: 'botcheck' }; });
+      })
       .then(function (data) {
         if (data.mode === 'invalid') {
           clearResults();
@@ -435,7 +543,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (data.mode !== 'ai') {
           return runFallback(q, data.reason, localCrisis || Boolean(data.crisis)).then(function () { return null; });
         }
-        var filters = { categories: data.categories || [], state: data.state || null, place: data.place || '' };
+        var filters = {
+          categories: data.categories || [],
+          keywords: data.keywords || [],
+          state: data.state || null,
+          place: data.place || ''
+        };
         return Promise.resolve(render(q, filters, {
           mode: 'ai',
           crisis: localCrisis || Boolean(data.crisis),
