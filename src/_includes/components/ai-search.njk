@@ -1,0 +1,35 @@
+{#
+  AI-assisted resource search (DECISIONS.md, 9 November 2026).
+
+  The visitor describes their situation; /js/aiSearch.js asks the tfp-admin-api
+  worker to turn it into directory filters (categories only from the real
+  list, a state, a city or county) and shows real listings from
+  /search-index.json. When AI isn't available — the visitor's daily limit, the
+  day's budget, the bot check, an error — the same box runs a simple keyword
+  search instead, so it never just stops working.
+
+  What people type is never stored and never put in the page address (which
+  analytics would record). The homepage box hands its text over through
+  sessionStorage instead (components/custom/ai-search-home.njk).
+#}
+{%- set aiCategories = [] -%}
+{%- for c in categories -%}
+  {%- if c.value != "other" -%}{%- set aiCategories = (aiCategories.push({ value: c.value, label: c.label }), aiCategories) -%}{%- endif -%}
+{%- endfor -%}
+<form id="ai-search" class="max-w-xl mx-auto text-left" novalidate
+      data-worker="{{ site.adminWorkerUrl }}" data-sitekey="{{ site.turnstile.siteKey }}">
+  <label for="ai-search-input" class="block text-sm font-semibold mb-1" style="color: var(--color-primary);">
+    Describe what you're looking for
+  </label>
+  <div class="flex flex-col sm:flex-row gap-2">
+    <textarea id="ai-search-input" class="form-input flex-1" rows="2" maxlength="300"
+              placeholder="For example: summer camp for my 8-year-old with autism near Fairfax"
+              aria-describedby="ai-search-note"></textarea>
+    <button type="submit" id="ai-search-btn" class="btn-primary shrink-0 self-stretch sm:self-auto">Find resources</button>
+  </div>
+  <p id="ai-search-note" class="text-xs mt-2" style="color: var(--color-text-light);">
+    This helps you find resources. It isn't medical advice. In an emergency, call 911.
+  </p>
+  <div id="ai-search-turnstile" class="mt-2"></div>
+  <script type="application/json" id="ai-search-categories">{{ aiCategories | dump | safe }}</script>
+</form>

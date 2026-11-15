@@ -10,7 +10,7 @@
   into an include path, so a typo renders nothing instead of breaking the build.
   Add new partials here and to the "Which section" options in src/admin/config.yml.
 #}
-{% set CUSTOM_INCLUDES = ["get-involved-newsletter", "get-involved-share"] %}
+{% set CUSTOM_INCLUDES = ["get-involved-newsletter", "get-involved-share", "ai-search-home"] %}
 {%- if block.include in CUSTOM_INCLUDES -%}
 {% include "components/custom/" ~ block.include ~ ".njk" %}
 {%- endif -%}

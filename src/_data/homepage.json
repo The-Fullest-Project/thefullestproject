@@ -57,6 +57,14 @@
       "columns": "3"
     },
     {
+      "type": "custom",
+      "include": "ai-search-home",
+      "visible": true,
+      "background": "cool",
+      "padding": "small",
+      "id": "ai-search"
+    },
+    {
       "primary": {
         "heading": "Know a resource we're missing?",
         "body": "Add a program, service, or organization that supports individuals with disabilities and their caregivers. It takes about a minute.",

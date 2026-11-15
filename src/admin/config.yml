@@ -139,6 +139,7 @@ block_types: &block_types
         options:
           - { label: "Newsletter signup card", value: "get-involved-newsletter" }
           - { label: "Share-the-word card", value: "get-involved-share" }
+          - { label: "AI resource search box (homepage)", value: "ai-search-home" }
       - { label: "Background", name: "background", widget: "select", default: "white", options: *background_options }
       - { label: "Section height", name: "padding", widget: "select", default: "normal", options: *padding_options }
       - { label: "Section ID (advanced)", name: "id", widget: "string", required: false }

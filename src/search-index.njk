@@ -12,11 +12,26 @@ eleventyExcludeFromCollections: true
 
   n name · a area · l location · c category slug · cl category label
   g group heading · u category page url · w website
+  t every top-level category, only when there is more than one (AI search
+    matches on it, so a cross-listed resource shows under each of its pages)
 #}
 {%- set rows = [] -%}
 {%- for r in directory -%}
   {%- set top = (r.topCategories | first) or "other" -%}
   {%- set meta = categoryLookup[top] -%}
+  {%- if r.topCategories and r.topCategories.length > 1 -%}
+  {%- set rows = (rows.push({
+        n: r.name,
+        a: r.area or "",
+        l: r.location or "",
+        c: top,
+        cl: (meta.label if meta else top),
+        g: (meta.group if meta else "Other"),
+        u: "/resources/" + top + "/",
+        w: r.website or "",
+        t: r.topCategories
+      }), rows) -%}
+  {%- else -%}
   {%- set rows = (rows.push({
         n: r.name,
         a: r.area or "",
@@ -27,5 +42,6 @@ eleventyExcludeFromCollections: true
         u: "/resources/" + top + "/",
         w: r.website or ""
       }), rows) -%}
+  {%- endif -%}
 {%- endfor -%}
 {{ rows | dump | safe }}

@@ -16,10 +16,12 @@ permalink: /resources/
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-2xl sm:text-3xl font-bold mb-1" style="color: var(--color-primary);">Find Resources</h1>
     <p class="text-sm mb-3" style="color: var(--color-text-light);">
-      Search by name, city or state — or pick a category below.
+      Describe what you need, search by name, or pick a category below.
     </p>
 
-    <label for="directory-search" class="sr-only">Search every resource</label>
+    {% include "components/ai-search.njk" %}
+
+    <label for="directory-search" class="block text-sm font-semibold mt-4 mb-1" style="color: var(--color-primary);">Or search by name, city or state</label>
     <input type="search" id="directory-search" class="form-input max-w-xl mx-auto"
            placeholder="Try an organization name, or a city or county…"
            autocomplete="off" aria-describedby="directory-search-help"
@@ -36,6 +38,8 @@ permalink: /resources/
 
 <section class="py-4">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="ai-search-results" class="mb-4" role="region" aria-live="polite" aria-label="Search results" hidden></div>
+
     <div id="directory-search-results" role="region" aria-live="polite" hidden>
       <p id="directory-search-count" class="text-sm mb-3" style="color: var(--color-text-light);"></p>
       <ul id="directory-search-list" class="flex flex-col gap-3 list-none p-0 m-0"></ul>
@@ -80,3 +84,4 @@ permalink: /resources/
 </section>
 
 <script src="/js/directorySearch.js" defer></script>
+<script src="/js/aiSearch.js" defer></script>

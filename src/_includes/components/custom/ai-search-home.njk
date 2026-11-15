@@ -1,0 +1,41 @@
+{#
+  Homepage entry to AI search, placed under "How We Can Help" (DECISIONS.md,
+  9 November 2026). It runs nothing itself: it hands the text to the Resources
+  page through sessionStorage — never the page address, which analytics would
+  record — and the search runs there, with its bot check and results.
+#}
+<section class="{{ [padClass, bgClass] | join(' ') | trim }}" data-block-id="{{ blockId }}" data-block-type="custom" data-block-index="{{ blockIndex }}">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="card p-6">
+      <h2 class="text-xl font-bold mb-1" style="color: var(--color-primary);">Not sure where to start?</h2>
+      <p class="text-sm mb-4" style="color: var(--color-text-light);">
+        Describe your situation in your own words and we'll show matching resources from the directory.
+      </p>
+      <form id="ai-search-home" novalidate>
+        <label for="ai-search-home-input" class="sr-only">Describe what you're looking for</label>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <textarea id="ai-search-home-input" class="form-input flex-1" rows="2" maxlength="300"
+                    placeholder="For example: respite care for my teenage son in Portland"
+                    aria-describedby="ai-search-home-note"></textarea>
+          <button type="submit" class="btn-primary shrink-0 self-stretch sm:self-auto">Find resources</button>
+        </div>
+        <p id="ai-search-home-note" class="text-xs mt-2" style="color: var(--color-text-light);">
+          This helps you find resources. It isn't medical advice. In an emergency, call 911.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+<script>
+(function () {
+  var form = document.getElementById('ai-search-home');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var q = document.getElementById('ai-search-home-input').value.trim();
+    if (q.length < 3) { document.getElementById('ai-search-home-input').focus(); return; }
+    try { sessionStorage.setItem('tfp-ai-search', q); } catch (err) { /* private mode: the page just opens */ }
+    window.location.href = '/resources/#ask';
+  });
+})();
+</script>
