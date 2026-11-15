@@ -23,5 +23,8 @@
   },
   "inlineEditor": {
     "enabled": true
+  },
+  "turnstile": {
+    "siteKey": "0x4AAAAAAGBdAx-E_QYRYU8Y"
   }
 }
