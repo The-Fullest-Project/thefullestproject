@@ -6,7 +6,11 @@
  * 3. The tfp-admin-api worker turns the text into filters: up to three real
  *    category slugs, a few search words, a state, and a city or county. The
  *    AI writes nothing the visitor reads.
- * 4. This script shows listings from /search-index.json:
+ * 4. The worker also sends the listings it found and, unless it's a crisis or
+ *    off-topic, two or three sentences of "Suggested starting points" written
+ *    from those listings only. When nothing matched, it records an anonymous
+ *    description of the need (never the words typed) for the team's gap list.
+ * 5. This script shows the listings:
  *      "Best matches" — listings whose name, tags or description contain the
  *        search words, from any category ("safety beds" finds the six
  *        listings tagged safety-bed);
@@ -188,22 +192,92 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ── Matching ──────────────────────────────────────────────────────────────
+  // MIRRORS cloudflare-worker-admin-api/matching.js. In AI mode the worker
+  // sends the listings (so the summary and the page always agree); this copy
+  // runs only for the keyword fallback. Change both together.
+  var GENERIC_TERMS = ['free', 'low cost', 'no cost', 'cheap', 'affordable', 'support', 'help', 'services', 'service',
+    'care', 'resources', 'resource', 'programs', 'program', 'options', 'mobility', 'disability',
+    'disabilities', 'disabled', 'special needs', 'kids', 'children', 'child', 'family', 'families',
+    'parent', 'parents', 'local', 'near me'];
+
   function stem(word) { return word.toLowerCase().replace(/(ies|es|s)$/, ''); }
 
-  /** How well a listing matches the search words: name 3, tags 2, description 1 per word. */
-  function score(row, terms) {
-    var total = 0;
-    terms.forEach(function (t) {
-      if (row._name.indexOf(t) !== -1) total += 3;
-      else if (row._tags.indexOf(t) !== -1) total += 2;
-      else if (row._desc.indexOf(t) !== -1) total += 1;
+  function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  function cleanTerms(keywords) {
+    var seen = [];
+    (keywords || []).forEach(function (k) {
+      var t = String(k || '').toLowerCase().replace(/\s+/g, ' ').trim();
+      if (t.length >= 2 && GENERIC_TERMS.indexOf(t) === -1 && seen.indexOf(t) === -1) seen.push(t);
     });
-    return total;
+    return seen.map(function (t) {
+      return {
+        text: t,
+        re: t.replace(/[^a-z0-9]/g, '').length <= 4
+          ? new RegExp('(^|[^a-z0-9])' + escapeRe(t) + '(e?s)?($|[^a-z0-9])')
+          : new RegExp('(^|[^a-z0-9])' + escapeRe(t))
+      };
+    });
+  }
+
+  function scoreRow(row, terms) {
+    var score = 0, hits = 0;
+    terms.forEach(function (t) {
+      if (t.re.test(row._name)) { score += 3; hits++; }
+      else if (t.re.test(row._tags)) { score += 2; hits++; }
+      else if (t.re.test(row._desc)) { score += 1; hits++; }
+    });
+    return { score: score, hits: hits };
+  }
+
+  function placeTier(row, state) {
+    if (state && row.l === state) return 0;
+    if (row.l === 'National') return 1;
+    return 2;
+  }
+
+  function rank(rows, state, place) {
+    var p = (place || '').toLowerCase();
+    function near(r) { return p && String(r.a || '').toLowerCase().indexOf(p) !== -1 ? 0 : 1; }
+    return rows.sort(function (a, b) {
+      return (b._hits - a._hits) || (b._score - a._score) ||
+        (placeTier(a, state) - placeTier(b, state)) || (near(a) - near(b)) ||
+        String(a.n).localeCompare(String(b.n));
+    });
+  }
+
+  function inReach(rows, state) {
+    if (state) return rows.filter(function (r) { return r.l === state || r.l === 'National'; });
+    var national = rows.filter(function (r) { return r.l === 'National'; });
+    return national.length >= 3 ? national : rows;
+  }
+
+  function matchListings(rows, filters) {
+    var state = filters.state || null;
+    var terms = cleanTerms(filters.keywords);
+    rows.forEach(function (r) {
+      var s = terms.length ? scoreRow(r, terms) : { score: 0, hits: 0 };
+      r._score = s.score;
+      r._hits = s.hits;
+    });
+    var strong = rows.filter(function (r) { return r._score >= 2; });
+    var best = rank(inReach(strong, state), state, filters.place).slice(0, BEST_MATCHES);
+    var categories = {};
+    (filters.categories || []).forEach(function (slug) {
+      var inCat = rows.filter(function (r) { return (r.t || [r.c]).indexOf(slug) !== -1; });
+      categories[slug] = {
+        rows: rank(inReach(inCat, state), state, filters.place).slice(0, PER_CATEGORY),
+        local: state ? inCat.filter(function (r) { return r.l === state; }).length : 0,
+        national: inCat.filter(function (r) { return r.l === 'National'; }).length,
+        total: inCat.length
+      };
+    });
+    return { best: best, categories: categories };
   }
 
   /** Search words for the keyword fallback, from the visitor's own text. */
   function fallbackTerms(q) {
-    return q.toLowerCase().split(/[^a-z0-9]+/)
+    return q.toLowerCase().split(/[^a-z0-9+]+/)
       .filter(function (w) { return w.length >= 4 && STOP.indexOf(w) === -1; })
       .map(stem)
       .filter(function (w, i, all) { return w.length >= 3 && all.indexOf(w) === i; });
@@ -279,32 +353,38 @@ document.addEventListener('DOMContentLoaded', function () {
     return p;
   }
 
+  /** "Suggested starting points": written by the AI from the listings shown, as plain text. */
+  function startingPoints(text, guides) {
+    var box = el('div', 'card p-4 mb-4');
+    box.id = 'ai-search-start';
+    box.style.borderLeft = '6px solid var(--color-primary)';
+    var h = el('h2', 'text-base font-bold mb-1', 'Suggested starting points');
+    h.style.color = 'var(--color-primary)';
+    box.appendChild(h);
+    var p = el('p', 'text-sm', text);
+    p.style.color = 'var(--color-text)';
+    box.appendChild(p);
+    if (guides && guides.length) {
+      var links = el('p', 'text-sm mt-2');
+      guides.forEach(function (g, i) {
+        if (!/^\/[a-z0-9\-\/]*$/.test(g.url || '')) return; // only our own pages
+        var a = el('a', 'font-semibold no-underline', 'Read our ' + g.label + ' →');
+        a.href = g.url;
+        a.style.color = 'var(--color-secondary)';
+        if (i) links.appendChild(document.createTextNode('  ·  '));
+        links.appendChild(a);
+      });
+      box.appendChild(links);
+    }
+    var small = el('p', 'text-xs mt-2', 'Written automatically from the listings below. It isn\'t medical advice.');
+    small.style.color = 'var(--color-text-light)';
+    box.appendChild(small);
+    return box;
+  }
+
   function placeLabel(row) {
     if (row.a && row.l) return row.a + ', ' + row.l;
     return row.a || row.l || '';
-  }
-
-  /** In the visitor's state first, then national, then (with no state given) everywhere else. */
-  function locationRank(row, state) {
-    if (state && row.l === state) return 0;
-    if (row.l === 'National') return 1;
-    return 2;
-  }
-
-  function sortRows(rows, state, place) {
-    var placeLower = (place || '').toLowerCase();
-    return rows.sort(function (a, b) {
-      return (b._score - a._score) ||
-        (locationRank(a, state) - locationRank(b, state)) ||
-        ((placeLower && (a.a || '').toLowerCase().indexOf(placeLower) !== -1 ? 0 : 1) -
-         (placeLower && (b.a || '').toLowerCase().indexOf(placeLower) !== -1 ? 0 : 1)) ||
-        a.n.localeCompare(b.n);
-    });
-  }
-
-  /** Rows the visitor can use: their state and national, or everything when no state is known. */
-  function inReach(row, state) {
-    return !state || row.l === state || row.l === 'National';
   }
 
   function listingRow(row) {
@@ -322,7 +402,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     li.appendChild(left);
     var actions = el('div', 'flex items-center gap-3 shrink-0');
-    if (row.w) {
+    if (row.w && /^https?:\/\//i.test(row.w)) {
       var site = el('a', 'text-xs font-semibold no-underline', 'Website');
       site.href = row.w;
       site.target = '_blank';
@@ -330,10 +410,12 @@ document.addEventListener('DOMContentLoaded', function () {
       site.style.color = 'var(--color-secondary)';
       actions.appendChild(site);
     }
-    var browse = el('a', 'text-xs font-semibold no-underline', 'Browse');
-    browse.href = row.u;
-    browse.style.color = 'var(--color-primary)';
-    actions.appendChild(browse);
+    if (row.u && /^\/[a-z0-9\-\/]*$/.test(row.u)) {
+      var browse = el('a', 'text-xs font-semibold no-underline', 'Browse');
+      browse.href = row.u;
+      browse.style.color = 'var(--color-primary)';
+      actions.appendChild(browse);
+    }
     li.appendChild(actions);
     return li;
   }
@@ -357,31 +439,25 @@ document.addEventListener('DOMContentLoaded', function () {
     return c;
   }
 
-  function categoryCard(index, slug, state, place) {
+  function categoryCard(slug, data, state) {
     var label = LABELS[slug] || slug;
-    var inCat = index.filter(function (r) { return (r.t || [r.c]).indexOf(slug) !== -1; });
-    var local = state ? inCat.filter(function (r) { return r.l === state; }) : [];
-    var national = inCat.filter(function (r) { return r.l === 'National'; });
-    var usable = sortRows(inCat.filter(function (r) { return inReach(r, state); }), state, place);
-    var shown = usable.slice(0, PER_CATEGORY);
-
     var countBits = [];
-    if (state) countBits.push(local.length + ' in ' + state);
-    countBits.push(national.length + ' national');
-    if (!state && inCat.length > national.length) countBits.push((inCat.length - national.length) + ' in states');
+    if (state) countBits.push(data.local + ' in ' + state);
+    countBits.push(data.national + ' national');
+    if (!state && data.total > data.national) countBits.push((data.total - data.national) + ' in states');
 
     var more = el('a', 'inline-block text-sm font-semibold no-underline mt-3',
       'See all ' + label + (state ? ' in ' + state : '') + ' →');
     more.href = '/resources/' + slug + '/' + (state ? '?state=' + encodeURIComponent(state) : '');
     more.style.color = 'var(--color-primary)';
 
-    var node = card(label, countBits.join(' · '), shown, more);
-    if (!shown.length) {
+    var node = card(label, countBits.join(' · '), data.rows, more);
+    if (!data.rows.length) {
       node.insertBefore(note(state
         ? 'No ' + label.toLowerCase() + ' listings in ' + state + ' or nationally yet.'
         : 'No listings in this category yet.'), more);
     }
-    return { node: node, found: shown.length };
+    return { node: node, found: data.rows.length };
   }
 
   function summaryText(f, bestCount) {
@@ -416,18 +492,21 @@ document.addEventListener('DOMContentLoaded', function () {
       return 0;
     }
 
-    return loadIndex().then(function (index) {
-      var terms = (filters.keywords || []).filter(Boolean);
-      index.forEach(function (r) { r._score = terms.length ? score(r, terms) : 0; });
+    // AI mode: the worker's listings. Fallback: match here.
+    var source = opts.listings
+      ? Promise.resolve(opts.listings)
+      : loadIndex().then(function (index) { return matchListings(index, filters); });
 
-      // A strong match is a name or tag hit, or several description hits.
-      var best = sortRows(index.filter(function (r) {
-        return r._score >= 2 && inReach(r, filters.state);
-      }), filters.state, filters.place).slice(0, BEST_MATCHES);
+    return source.then(function (found) {
+      var best = found.best || [];
+      var cats = found.categories || {};
 
       if (!best.length && !filters.categories.length) {
         if (opts.mode === 'ai') {
-          results.appendChild(note('We couldn\'t match that to the directory. Try saying a little more about what you need, or browse the categories below.'));
+          if (opts.summary) results.appendChild(startingPoints(opts.summary, opts.guides));
+          results.appendChild(note(opts.gap
+            ? 'We don\'t have a good match for this yet. We\'ve noted what you were looking for (not your words) so we can find resources to add. Meanwhile, try saying a little more, or browse the categories below.'
+            : 'We couldn\'t match that to the directory. Try saying a little more about what you need, or browse the categories below.'));
           addClear();
           if (categoriesGrid) categoriesGrid.hidden = false;
           return 0;
@@ -439,34 +518,41 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
 
+      if (opts.summary) results.appendChild(startingPoints(opts.summary, opts.guides));
+
       var summary = el('p', 'text-sm font-semibold mb-3', summaryText(filters, best.length));
       summary.style.color = 'var(--color-text)';
       summary.tabIndex = -1;
       summary.id = 'ai-search-summary';
       results.appendChild(summary);
+      if (opts.gap) {
+        results.appendChild(note('Nothing in the directory matches this exactly yet. We\'ve noted what you were looking for (not your words) so we can find resources to add.'));
+      }
       if (!filters.state) {
         results.appendChild(note('Tell us your state or city to see what\'s near you first.'));
       }
 
       var list = el('ul', 'grid grid-cols-1 md:grid-cols-2 gap-3 list-none p-0 m-0');
-      var found = 0;
+      var count = 0;
       if (best.length) {
         var bestCard = card('Best matches', 'Listings that mention what you asked about', best);
         bestCard.classList.add('md:col-span-2');
         bestCard.id = 'ai-search-best';
         list.appendChild(bestCard);
-        found += best.length;
+        count += best.length;
       }
       filters.categories.forEach(function (slug) {
-        var c = categoryCard(index, slug, filters.state, filters.place);
-        found += c.found;
+        if (!cats[slug]) return;
+        var c = categoryCard(slug, cats[slug], filters.state);
+        count += c.found;
         list.appendChild(c.node);
       });
       results.appendChild(list);
       addClear();
       if (categoriesGrid) categoriesGrid.hidden = true;
-      summary.focus({ preventScroll: true });
-      return found;
+      (document.getElementById('ai-search-start') || summary).setAttribute('tabindex', '-1');
+      (document.getElementById('ai-search-start') || summary).focus({ preventScroll: true });
+      return count;
     }).catch(function () {
       results.appendChild(note('Search is unavailable right now. Browse by category below.'));
       if (categoriesGrid) categoriesGrid.hidden = false;
@@ -552,7 +638,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return Promise.resolve(render(q, filters, {
           mode: 'ai',
           crisis: localCrisis || Boolean(data.crisis),
-          offTopic: Boolean(data.offTopic)
+          offTopic: Boolean(data.offTopic),
+          listings: data.listings || null,
+          summary: typeof data.summary === 'string' ? data.summary : '',
+          guides: Array.isArray(data.guides) ? data.guides : [],
+          gap: Boolean(data.gap)
         })).then(function (found) { reportOutcome(found > 0); });
       })
       .catch(function () { return runFallback(q, 'error', localCrisis); })

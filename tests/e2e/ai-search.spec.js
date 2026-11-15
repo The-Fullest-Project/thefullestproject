@@ -163,3 +163,52 @@ test("a bot check that fails in the browser is reported to the worker with its c
   expect(calls).toHaveLength(1);
   expect(calls[0]).toMatchObject({ token: "", botError: "110200" });
 });
+
+// ── 15 November: starting points and gaps ────────────────────────────────────
+
+test("the summary and the worker's listings show together, with guide links", async ({ page }) => {
+  await fakeServices(page, {
+    mode: "ai", categories: ["respite"], keywords: ["respite"], state: "Virginia", place: "", crisis: false, offTopic: false,
+    summary: "Start with A Mother's Rest, which offers respite weekends in Virginia.",
+    guides: [{ label: "Therapy Guide", url: "/therapy-guide/" }, { label: "Evil", url: "https://evil.example/" }],
+    gap: false,
+    listings: {
+      best: [{ n: "A Mother's Rest", a: "", l: "Virginia", cl: "Respite Care", u: "/resources/respite/", w: "https://amothersrest.org" }],
+      categories: { respite: { rows: [{ n: "Only From The Worker", a: "Fairfax", l: "Virginia", cl: "Respite Care", u: "/resources/respite/", w: "" }], local: 6, national: 0, total: 17 } }
+    }
+  });
+  await page.goto("/resources/");
+  await page.fill("#ai-search-input", "I am spent and overwhelmed. What respite is there in Virginia?");
+  await page.click("#ai-search-btn");
+  const start = page.locator("#ai-search-start");
+  await expect(start).toContainText("Suggested starting points");
+  await expect(start).toContainText("Start with A Mother's Rest");
+  await expect(start.getByRole("link", { name: "Read our Therapy Guide →" })).toHaveAttribute("href", "/therapy-guide/");
+  await expect(start.getByRole("link", { name: /Evil/ })).toHaveCount(0);
+  await expect(page.locator("#ai-search-best")).toContainText("A Mother's Rest");
+  await expect(page.locator("#ai-search-results")).toContainText("Only From The Worker");
+  await expect(page.locator("#ai-search-results")).toContainText("6 in Virginia");
+});
+
+test("a gap tells the visitor we've noted it, without their words", async ({ page }) => {
+  await fakeServices(page, {
+    mode: "ai", categories: [], keywords: ["young adult novel"], state: null, place: "", crisis: false, offTopic: false,
+    summary: "The directory doesn't have book lists yet.", guides: [], gap: true,
+    listings: { best: [], categories: {} }
+  });
+  await page.goto("/resources/");
+  await page.fill("#ai-search-input", "young adult books with a disabled main character");
+  await page.click("#ai-search-btn");
+  await expect(page.locator("#ai-search-results")).toContainText("We've noted what you were looking for (not your words)");
+  await expect(page.locator("#ai-search-start")).toContainText("doesn't have book lists yet");
+});
+
+test("no summary box in a crisis", async ({ page }) => {
+  await fakeServices(page, { mode: "ai", categories: ["medical"], keywords: ["seizure"], state: null, place: "", crisis: true, offTopic: false,
+    summary: "", guides: [], gap: false, listings: { best: [], categories: { medical: { rows: [], local: 0, national: 28, total: 60 } } } });
+  await page.goto("/resources/");
+  await page.fill("#ai-search-input", "my son is having a seizure right now");
+  await page.click("#ai-search-btn");
+  await expect(page.getByRole("alert")).toContainText("911");
+  await expect(page.locator("#ai-search-start")).toHaveCount(0);
+});

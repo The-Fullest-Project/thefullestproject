@@ -23,6 +23,15 @@ permalink: /privacy/
     <li><strong>Data processing:</strong> Gig submissions are processed by a Cloudflare Worker that stores gig data in our site's source repository. Gig data is retained until the gig expires or is closed by the poster.</li>
   </ul>
 
+  <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">Resource Search</h2>
+  <p class="mb-4">When you describe what you're looking for in the resource search:</p>
+  <ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>What happens to your words:</strong> Your text is sent to Anthropic's Claude AI, which turns it into directory filters and writes the short "Suggested starting points" note. We don't store your words, and they never appear in the page address.</li>
+    <li><strong>When nothing matches:</strong> The AI writes a short, general description of what you were looking for, such as "adaptive strollers for older children (Virginia)", with no names, ages or other details about you. We keep a count of these for about 13 months so we can find resources to add. We never keep this for searches about an emergency or a crisis.</li>
+    <li><strong>Counts and limits:</strong> We keep daily totals (how many searches, which categories). To apply the daily limit on AI searches, we keep a scrambled code made from your internet address for two days; it can't be turned back into the address.</li>
+    <li><strong>Bot check:</strong> Cloudflare Turnstile checks that a search comes from a person before the AI runs.</li>
+  </ul>
+
   <h2 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">How We Use Your Information</h2>
   <ul class="list-disc pl-6 mb-6 space-y-2">
     <li>To respond to your inquiries and messages</li>
