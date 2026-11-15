@@ -206,3 +206,29 @@ async function call(e, body, origin, ip) {
 }
 
 console.log("search tests passed");
+
+// ── test questions from the review portal ────────────────────────────────────
+{
+  const { handleSearchTest } = await import("./search.js");
+  aiReply = { categories: ["respite"], keywords: ["respite"], state: "Virginia", place: "", crisis: false, offTopic: false };
+  const e = env();
+  aiCalls = 0;
+  const res = await handleSearchTest({ questions: ["respite in Virginia", "  ", "camp in Fairfax", "no"] }, e, null, deps, { actor: "The-Fullest-Project" });
+  const run = await res.json();
+  assert.equal(run.results.length, 2, "blank and too-short lines are skipped");
+  assert.equal(aiCalls, 2);
+  assert.equal(run.results[0].ok, true);
+  assert.deepEqual(run.results[0].categories, ["respite"]);
+  assert.equal(run.by, "The-Fullest-Project");
+  const d = JSON.parse(e.SEARCH_STATS.m.get("day-" + utcDay()));
+  assert.equal(d.testSearches, 2);
+  assert.equal(d.searches, 0, "test runs don't count as visitor searches");
+  assert.ok(JSON.parse(e.SEARCH_STATS.m.get("testrun-latest")).results.length === 2, "latest run kept");
+
+  const tooMany = await handleSearchTest({ questions: Array(41).fill("respite care") }, env(), null, deps, {});
+  assert.equal(tooMany.status, 400);
+  const broke = env();
+  broke.SEARCH_STATS.m.set("day-" + utcDay(), JSON.stringify({ spendUSD: 5 }));
+  assert.equal((await handleSearchTest({ questions: ["respite care"] }, broke, null, deps, {})).status, 429, "budget still applies");
+  console.log("search-test tests passed");
+}

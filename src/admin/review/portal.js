@@ -175,6 +175,11 @@
             fallbacks: {}, categories: { respite: 4, financial: 3 } },
           { day: '2026-11-30', searches: 0, found: 0, notFound: 0, crisis: 0, offTopic: 0, spendUSD: 0, fallbacks: {}, categories: {} }
         ] },
+      '/search-test': { at: '2026-11-15T12:00:00Z', by: 'mock-admin', model: 'claude-opus-5-5', costUSD: 0.03, results: [
+        { q: 'give me a list of safety beds', ok: true, categories: ['equipment'], keywords: ['safety bed', 'enclosed bed'], state: null, place: '', crisis: false, offTopic: false },
+        { q: 'My son is having seizures right now - what should I do?', ok: true, categories: ['medical'], keywords: ['seizure'], state: null, place: '', crisis: true, offTopic: false },
+        { q: 'best pizza near me', ok: true, categories: [], keywords: [], state: null, place: '', crisis: false, offTopic: true }
+      ] },
       '/draft-description': {
         description: 'A pediatric therapy clinic offering physical and occupational therapy for children with developmental and neurological conditions.',
         grounded: true
@@ -1324,6 +1329,144 @@
     });
   }
 
+  // ── AI search: test questions ─────────────────────────────────────────────
+  // Runs the team's own test questions through the real AI (POST /search-test,
+  // admin sign-in) and shows what a visitor would see, using the same matching
+  // as the Resources page (src/js/aiSearch.js): best matches by name 3 /
+  // tags 2 / description 1, then each category, in-state before national.
+  function searchTestCard() {
+    var cardEl = el('div', 'card p-4 mb-4');
+    cardEl.appendChild(el('h2', 'text-lg font-bold mb-1', 'Try test questions'));
+    cardEl.appendChild(el('p', 'text-sm mb-2',
+      'Paste one question per line (numbers at the start are fine) and click Run. Each one goes through the real AI ' +
+      '(about 1 to 2 cents each, from the same daily budget). You see what a visitor would see. Up to 40 at a time; ' +
+      'these runs are counted apart from real searches.'));
+    var box = el('textarea', 'form-input w-full text-sm');
+    box.rows = 8;
+    box.placeholder = '1. My daughter was just diagnosed with a rare genetic disorder, where do I go from here?\n2. I am spent and overwhelmed. What kind of respite options are available in Virginia?';
+    box.setAttribute('aria-label', 'Test questions, one per line');
+    cardEl.appendChild(box);
+    var row = el('div', 'flex items-center gap-3 mt-2');
+    var btn = el('button', 'btn-primary', 'Run test questions');
+    btn.type = 'button';
+    var status = el('span', 'text-sm');
+    row.appendChild(btn);
+    row.appendChild(status);
+    cardEl.appendChild(row);
+    var out = el('div', 'mt-4');
+    cardEl.appendChild(out);
+
+    btn.addEventListener('click', function() {
+      var questions = box.value.split(/\r?\n/).map(function(line) {
+        return line.replace(/^\s*\d+\s*[.)]\s*/, '').trim();
+      }).filter(function(line) { return line.length >= 3; });
+      if (!questions.length) { status.textContent = 'Paste at least one question.'; return; }
+      if (questions.length > 40) { status.textContent = 'Please run at most 40 at a time.'; return; }
+      btn.disabled = true;
+      status.textContent = 'Running ' + questions.length + ' question' + (questions.length === 1 ? '' : 's') +
+        '… this takes about ' + Math.max(10, Math.round(questions.length * 1.5)) + ' seconds.';
+      clear(out);
+      Promise.all([
+        apiFetch('/search-test', { method: 'POST', body: JSON.stringify({ questions: questions }) }),
+        fetch('/search-index.json').then(function(r) { return r.json(); })
+      ]).then(function(both) {
+        var run = both[0];
+        var index = prepIndex(both[1]);
+        status.textContent = 'Done: ' + run.results.length + ' questions, about $' + Number(run.costUSD || 0).toFixed(2) + '.';
+        run.results.forEach(function(r, i) { out.appendChild(testResult(r, i + 1, index)); });
+      }).catch(function(err) {
+        if (err.message === 'Signed out') return;
+        status.textContent = 'Could not run the questions: ' + err.message;
+      }).then(function() { btn.disabled = false; });
+    });
+    return cardEl;
+  }
+
+  function prepIndex(rows) {
+    var labels = {};
+    rows.forEach(function(r) {
+      r._name = (r.n || '').toLowerCase();
+      r._tags = (r.k || '').toLowerCase().replace(/-/g, ' ');
+      r._desc = (r.d || '').toLowerCase();
+      if (r.c && r.cl) labels[r.c] = r.cl;
+    });
+    return { rows: rows, labels: labels };
+  }
+
+  function testScore(row, terms) {
+    var total = 0;
+    terms.forEach(function(t) {
+      if (row._name.indexOf(t) !== -1) total += 3;
+      else if (row._tags.indexOf(t) !== -1) total += 2;
+      else if (row._desc.indexOf(t) !== -1) total += 1;
+    });
+    return total;
+  }
+
+  function testSort(rows, st) {
+    function where(r) { return st && r.l === st ? 0 : (r.l === 'National' ? 1 : 2); }
+    return rows.sort(function(a, b) {
+      return (b._score - a._score) || (where(a) - where(b)) || a.n.localeCompare(b.n);
+    });
+  }
+
+  function testNames(rows) {
+    var ul = el('ul', 'list-disc pl-5 text-sm');
+    rows.forEach(function(r) {
+      var bits = [r.a && r.l ? r.a + ', ' + r.l : (r.a || r.l)].filter(Boolean).join('');
+      ul.appendChild(el('li', '', r.n + (bits ? ' (' + bits + ')' : '')));
+    });
+    return ul;
+  }
+
+  function testResult(r, n, index) {
+    var box = el('div', 'border-t py-3');
+    box.appendChild(el('p', 'font-semibold', n + '. ' + r.q));
+    if (!r.ok) {
+      box.appendChild(el('p', 'text-sm', r.error || 'No answer.'));
+      return box;
+    }
+    var flags = [];
+    if (r.crisis) flags.push('Shows the 911 / 988 box');
+    if (r.offTopic) flags.push('Treated as off-topic (no listings, a gentle nudge instead)');
+    if (flags.length) {
+      var f = el('p', 'text-sm font-semibold', flags.join(' · '));
+      f.style.color = 'var(--color-secondary)';
+      box.appendChild(f);
+    }
+    var picked = [];
+    picked.push('Categories: ' + (r.categories.length ? r.categories.map(function(c) { return index.labels[c] || c; }).join(', ') : 'none'));
+    picked.push('Search words: ' + (r.keywords && r.keywords.length ? r.keywords.join(', ') : 'none'));
+    picked.push('Place: ' + ([r.place, r.state].filter(Boolean).join(', ') || 'none given'));
+    box.appendChild(el('p', 'text-xs mb-1', picked.join(' · ')));
+    if (r.offTopic) return box;
+
+    var st = r.state;
+    var terms = r.keywords || [];
+    index.rows.forEach(function(row) { row._score = terms.length ? testScore(row, terms) : 0; });
+    function reach(row) { return !st || row.l === st || row.l === 'National'; }
+
+    var best = testSort(index.rows.filter(function(row) { return row._score >= 2 && reach(row); }), st).slice(0, 8);
+    if (best.length) {
+      box.appendChild(el('p', 'text-sm font-semibold mt-1', 'Best matches:'));
+      box.appendChild(testNames(best));
+    }
+    r.categories.forEach(function(slug) {
+      var inCat = index.rows.filter(function(row) { return (row.t || [row.c]).indexOf(slug) !== -1; });
+      var local = st ? inCat.filter(function(row) { return row.l === st; }).length : 0;
+      var national = inCat.filter(function(row) { return row.l === 'National'; }).length;
+      var shown = testSort(inCat.filter(reach), st).slice(0, 3);
+      var head = (index.labels[slug] || slug) + ': ' + (st ? local + ' in ' + st + ', ' : '') + national + ' national';
+      box.appendChild(el('p', 'text-sm font-semibold mt-1', head));
+      if (shown.length) box.appendChild(testNames(shown));
+      else box.appendChild(el('p', 'text-sm', 'Nothing to show here yet.'));
+    });
+    if (!best.length && !r.categories.length) {
+      box.appendChild(el('p', 'text-sm', 'A visitor would see: "We couldn\'t match that to the directory."'));
+    }
+    return box;
+  }
+
   // ── AI search counts ──────────────────────────────────────────────────────
   // Daily counts only: the worker never stores what people type.
   var FALLBACK_LABELS = {
@@ -1351,6 +1494,7 @@
           [!data.keys.search && 'ANTHROPIC_SEARCH_API_KEY', !data.keys.turnstile && 'TURNSTILE_SECRET_KEY'].filter(Boolean).join(', ')));
       }
       panel.appendChild(intro);
+      panel.appendChild(searchTestCard());
 
       var total = { searches: 0, found: 0, spend: 0 };
       days.forEach(function(d) {
