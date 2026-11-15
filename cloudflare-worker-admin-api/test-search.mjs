@@ -4,7 +4,7 @@
 import assert from "node:assert/strict";
 import {
   handleSearch, handleSearchOutcome, handleSearchStats,
-  cleanResult, buildSchema, costUSD, settings, utcDay
+  cleanResult, buildSchema, costUSD, settings, utcDay, errorCode
 } from "./search.js";
 
 const CATS = [
@@ -80,6 +80,10 @@ async function call(e, body, origin, ip) {
   assert.equal(r.place, "bFairfax/b", "angle brackets stripped from place");
   assert.equal(r.crisis, true);
   assert.deepEqual(cleanResult({ categories: ["camps"], offTopic: true }, CATS).categories, [], "off-topic clears categories");
+  assert.deepEqual(
+    cleanResult({ categories: [], keywords: ["Safety Bed", "safety bed", "<b>g-tube</b>", "x", 7, "a", "b2", "c3", "d4", "e5"] }, CATS).keywords,
+    ["safety bed", "b g-tube b", "b2", "c3", "d4"],
+    "keywords lower-cased, de-duplicated, cleaned, capped at five");
 
   const schema = buildSchema(CATS.filter(c => c.value !== "other"));
   assert.deepEqual(schema.properties.categories.items.enum, ["respite", "camps"]);
@@ -153,6 +157,14 @@ async function call(e, body, origin, ip) {
   assert.equal((await call(e, { q: "respite care please", token: "t" })).data.reason, "botcheck");
   assert.equal(aiCalls, 0);
   turnstileOk = true;
+
+  // a bot check that failed in the browser is counted with its error code
+  const eb = env();
+  assert.equal((await call(eb, { q: "respite care please", token: "", botError: "110200" })).data.reason, "botcheck");
+  assert.equal(aiCalls, 0);
+  const fb = JSON.parse(eb.SEARCH_STATS.m.get("day-" + utcDay())).fallbacks;
+  assert.equal(fb["botcheck-browser-110200"], 1);
+  assert.equal(errorCode("<script>"), "script");
 
   const e2 = env();
   e2.SEARCH_STATS.m.set("day-" + utcDay(), JSON.stringify({ spendUSD: 1.61 }));
