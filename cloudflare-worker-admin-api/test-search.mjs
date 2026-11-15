@@ -44,23 +44,40 @@ function req(body, origin = "https://preview.thefullestproject.org", ip = "1.2.3
   });
 }
 
+// aiCalls counts step-1 (filter) calls; summaryCalls counts step-2 calls.
 let aiCalls = 0;
+let summaryCalls = 0;
 let lastAiBody = null;
+let lastSummaryBody = null;
 let turnstileOk = true;
 let aiReply = { categories: ["camps", "nonsense"], state: "Virginia", place: "Fairfax", crisis: false, offTopic: false };
+let summaryReply = {
+  summary: "Start with Fairfax Day Camp below. Call 703-555-1234 or see https://example.com for more.",
+  guides: ["therapy-guide", "made-up-guide"]
+};
+
+const INDEX = [
+  { n: "Fairfax Day Camp", a: "Fairfax", l: "Virginia", c: "camps", k: "summer-camp", d: "Summer day camp." },
+  { n: "Camp Anywhere", a: "", l: "National", c: "camps", k: "", d: "A national camp finder." },
+  { n: "Oregon Respite Program", a: "Statewide", l: "Oregon", c: "respite", k: "respite", d: "Lifespan respite." }
+];
 
 globalThis.fetch = async (url, init) => {
   if (String(url).includes("turnstile")) {
     return new Response(JSON.stringify({ success: turnstileOk }));
   }
+  if (String(url).endsWith("/search-index.json")) {
+    return new Response(JSON.stringify(INDEX.map(r => ({ ...r }))));
+  }
   if (String(url).includes("api.anthropic.com")) {
-    aiCalls++;
-    lastAiBody = JSON.parse(init.body);
+    const body = JSON.parse(init.body);
+    const isSummary = body.system.includes("Suggested starting points");
+    if (isSummary) { summaryCalls++; lastSummaryBody = body; } else { aiCalls++; lastAiBody = body; }
     return new Response(JSON.stringify({
       model: "claude-opus-5-5",
       stop_reason: "end_turn",
       usage: { input_tokens: 1000, output_tokens: 200 },
-      content: [{ type: "thinking", thinking: "" }, { type: "text", text: JSON.stringify(aiReply) }]
+      content: [{ type: "thinking", thinking: "" }, { type: "text", text: JSON.stringify(isSummary ? summaryReply : aiReply) }]
     }));
   }
   throw new Error("unexpected fetch " + url);
@@ -122,6 +139,15 @@ async function call(e, body, origin, ip) {
   assert.ok(!("temperature" in lastAiBody), "no sampling params on 2026-10-21");
   assert.ok(!lastAiBody.system.includes("autistic"), "query is not in the system prompt");
   assert.ok(lastAiBody.system.includes("respite: Respite Care") && !lastAiBody.system.includes("other: Other"), "category list excludes 'other'");
+
+  // step 2: the summary sees the real listings, and comes back cleaned
+  assert.equal(summaryCalls, 1);
+  assert.ok(lastSummaryBody.messages[0].content.includes("Fairfax Day Camp"), "summary step is given the listings found");
+  assert.equal(data.summary, "Start with Fairfax Day Camp below. Call or see for more.", "phone numbers and links stripped");
+  assert.deepEqual(data.guides, [{ label: "Therapy Guide", url: "/therapy-guide/" }], "only real guides");
+  assert.ok(!("need" in data), "the need label is never sent to the page");
+  assert.equal(data.listings.categories.camps.rows[0].n, "Fairfax Day Camp", "the page gets the listings the summary saw, in-state first");
+  assert.ok(!("_score" in data.listings.categories.camps.rows[0]), "listings are slimmed");
 
   const stored = [...e.SEARCH_STATS.m.values()].join("\n");
   assert.ok(!stored.includes("autistic") && !stored.includes("Fairfax"), "search text is never stored");
@@ -231,4 +257,79 @@ console.log("search tests passed");
   broke.SEARCH_STATS.m.set("day-" + utcDay(), JSON.stringify({ spendUSD: 5 }));
   assert.equal((await handleSearchTest({ questions: ["respite care"] }, broke, null, deps, {})).status, 429, "budget still applies");
   console.log("search-test tests passed");
+}
+
+// ── matching rules from the 15 November test run ─────────────────────────────
+{
+  const { matchListings, cleanTerms } = await import("./matching.js");
+  const rows = [
+    { n: "Kohl's Adaptive Clothing", l: "National", c: "clothing", k: "", d: "Adaptive clothes." },
+    { n: "PT Plus Physical Therapy", l: "Virginia", c: "therapy", k: "", d: "Physical therapy." },
+    { n: "Wheatland Farm - Hippotherapy", l: "Virginia", c: "therapy", k: "", d: "Therapeutic riding." },
+    { n: "Virginia Medicaid (DMAS)", l: "Virginia", c: "government", k: "hipp medicaid", d: "Runs HIPP." },
+    { n: "ClearCaptions - Free Captioned Phone", l: "National", c: "assistive-tech", k: "", d: "Free phone." },
+    { n: "Frog Mobility", l: "National", c: "equipment", k: "mobility", d: "Mobility aids." },
+    { n: "Special Tomato Stroller", l: "National", c: "equipment", k: "adaptive-stroller", d: "Adaptive stroller seating." },
+    { n: "NJ Parent Center", l: "New Jersey", c: "education", k: "iep", d: "IEP help." },
+    { n: "Parent Center Hub", l: "National", c: "education", k: "iep", d: "IEP help." },
+    { n: "Understood", l: "National", c: "education", k: "iep", d: "IEP guides." },
+    { n: "Wrightslaw", l: "National", c: "education", k: "iep", d: "IEP law." }
+  ];
+  const names = f => matchListings(rows.map(r => ({ ...r })), f).best.map(r => r.n);
+
+  assert.ok(!names({ keywords: ["ot"] }).includes("Kohl's Adaptive Clothing"), "short words match whole words only");
+  assert.deepEqual(names({ keywords: ["pt"] }), ["PT Plus Physical Therapy"]);
+  const hipp = names({ keywords: ["hipp"], state: "Virginia" });
+  assert.ok(hipp.includes("Virginia Medicaid (DMAS)") && !hipp.includes("Wheatland Farm - Hippotherapy"), "HIPP isn't hippotherapy");
+  assert.deepEqual(names({ keywords: ["free", "low cost"] }), [], "generic words never match");
+  assert.deepEqual(cleanTerms(["Mobility", "adaptive stroller"]).map(t => t.text), ["adaptive stroller"], "mobility is generic");
+  assert.equal(names({ keywords: ["adaptive stroller", "stroller", "mobility"] })[0], "Special Tomato Stroller", "more words matched ranks first");
+  assert.ok(!names({ keywords: ["iep"] }).includes("NJ Parent Center"), "no state: national first, other states only to make up three");
+  assert.ok(names({ keywords: ["ccc+"] }).length === 0);
+}
+
+// ── summary skipped for crisis and off-topic; gaps recorded only on no match ──
+{
+  aiReply = { categories: [], keywords: [], state: null, place: "", crisis: true, offTopic: false, need: "seizure first aid" };
+  summaryCalls = 0;
+  const crisis = await call(env(), { q: "my son is having a seizure right now", token: "t" });
+  assert.equal(crisis.data.crisis, true);
+  assert.equal(summaryCalls, 0, "no summary in a crisis");
+  assert.equal(crisis.data.gap, false, "crisis searches are never recorded as gaps");
+
+  aiReply = { categories: [], keywords: [], state: null, place: "", crisis: false, offTopic: true, need: "pizza" };
+  summaryCalls = 0;
+  await call(env(), { q: "best pizza near me", token: "t" });
+  assert.equal(summaryCalls, 0, "no summary when off-topic");
+
+  const e = env();
+  aiReply = { categories: ["respite"], keywords: ["young adult novel"], state: "Oregon", place: "", crisis: false, offTopic: false,
+              need: "Young adult books with disabled main characters" };
+  const gap = await call(e, { q: "my daughter Emma wants a YA book with a disabled heroine", token: "t" });
+  assert.equal(gap.data.gap, true);
+  const month = JSON.parse(e.SEARCH_STATS.m.get("gaps-" + new Date().toISOString().slice(0, 7)));
+  const item = Object.values(month.items)[0];
+  assert.equal(item.label, "Young adult books with disabled main characters (Oregon)");
+  assert.equal(item.count, 1);
+  const stored = [...e.SEARCH_STATS.m.values()].join("\n");
+  assert.ok(!stored.includes("Emma") && !stored.includes("heroine"), "only the anonymous need is kept, never the words typed");
+  await call(e, { q: "any YA novels with a disabled lead", token: "t" }, undefined, "8.8.8.8");
+  assert.equal(Object.values(JSON.parse(e.SEARCH_STATS.m.get("gaps-" + new Date().toISOString().slice(0, 7))).items)[0].count, 2, "repeat needs add up");
+
+  const stats = await (await handleSearchStats(new URL("https://w.example/search-stats"), e)).json();
+  assert.equal(stats.gaps[0].count, 2, "gaps show in the portal stats");
+
+  // a match means no gap
+  aiReply = { categories: ["respite"], keywords: ["respite"], state: "Oregon", place: "", crisis: false, offTopic: false, need: "respite care" };
+  const found = await call(env(), { q: "respite care in Portland", token: "t" });
+  assert.equal(found.data.gap, false);
+
+  // test questions show the gap but never record it
+  const { handleSearchTest } = await import("./search.js");
+  const et = env();
+  aiReply = { categories: [], keywords: ["young adult novel"], state: null, place: "", crisis: false, offTopic: false, need: "YA books" };
+  const run = await (await handleSearchTest({ questions: ["YA books with disabled characters"] }, et, null, deps, {})).json();
+  assert.equal(run.results[0].gap, "YA books (anywhere)");
+  assert.ok(![...et.SEARCH_STATS.m.keys()].some(k => k.startsWith("gaps-")), "test runs don't record gaps");
+  console.log("summary and gap tests passed");
 }

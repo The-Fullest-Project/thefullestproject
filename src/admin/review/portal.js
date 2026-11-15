@@ -168,6 +168,8 @@
       ] },
       '/search-stats': { settings: { limit: 15, budgetUSD: 1.6, model: 'claude-opus-5-5', enabled: true, signedInOnly: false },
         keys: { search: true, turnstile: true },
+        gaps: [{ label: 'adaptive strollers for older children (Virginia)', count: 4, last: '2026-12-02' },
+               { label: 'medical trauma counselling (Virginia)', count: 2, last: '2026-12-01' }],
         days: [
           { day: '2026-12-02', searches: 23, found: 20, notFound: 3, crisis: 1, offTopic: 2, spendUSD: 0.27,
             fallbacks: { limit: 1, botcheck: 2 }, categories: { respite: 6, camps: 5, therapy: 4, 'iep-advocacy': 3 } },
@@ -176,8 +178,17 @@
           { day: '2026-11-30', searches: 0, found: 0, notFound: 0, crisis: 0, offTopic: 0, spendUSD: 0, fallbacks: {}, categories: {} }
         ] },
       '/search-test': { at: '2026-11-15T12:00:00Z', by: 'mock-admin', model: 'claude-opus-5-5', costUSD: 0.03, results: [
-        { q: 'give me a list of safety beds', ok: true, categories: ['equipment'], keywords: ['safety bed', 'enclosed bed'], state: null, place: '', crisis: false, offTopic: false },
-        { q: 'My son is having seizures right now - what should I do?', ok: true, categories: ['medical'], keywords: ['seizure'], state: null, place: '', crisis: true, offTopic: false },
+        { q: 'give me a list of safety beds', ok: true, categories: ['equipment'], keywords: ['safety bed', 'enclosed bed'], state: null, place: '', crisis: false, offTopic: false,
+          summary: 'Start with SleepSafe Beds and Safe Place Bedding, which both make enclosed safety beds. Ask your child’s therapist which style suits them.',
+          guides: [{ label: 'Adaptive Equipment Guide', url: '/adaptive-equipment/' }], gap: '',
+          listings: { best: [{ n: 'SleepSafe Beds', a: '', l: 'National', cl: 'Equipment & Adaptive Gear', u: '/resources/equipment/', w: '' },
+                             { n: 'Safe Place Bedding', a: '', l: 'National', cl: 'Equipment & Adaptive Gear', u: '/resources/equipment/', w: '' }],
+            categories: { equipment: { rows: [{ n: 'Beds by George', a: '', l: 'National', cl: 'Equipment & Adaptive Gear', u: '/resources/equipment/', w: '' }], local: 0, national: 68, total: 120 } } } },
+        { q: 'My son is having seizures right now - what should I do?', ok: true, categories: ['medical'], keywords: ['seizure'], state: null, place: '', crisis: true, offTopic: false,
+          summary: '', guides: [], gap: '', listings: { best: [], categories: { medical: { rows: [], local: 0, national: 28, total: 60 } } } },
+        { q: 'young adult books with a disabled main character', ok: true, categories: ['education'], keywords: ['young adult novel'], state: null, place: '', crisis: false, offTopic: false,
+          summary: 'The directory doesn’t have book lists yet.', guides: [], gap: 'young adult books with disabled main characters (anywhere)',
+          listings: { best: [], categories: { education: { rows: [], local: 0, national: 62, total: 90 } } } },
         { q: 'best pizza near me', ok: true, categories: [], keywords: [], state: null, place: '', crisis: false, offTopic: true }
       ] },
       '/draft-description': {
@@ -1339,7 +1350,7 @@
     cardEl.appendChild(el('h2', 'text-lg font-bold mb-1', 'Try test questions'));
     cardEl.appendChild(el('p', 'text-sm mb-2',
       'Paste one question per line (numbers at the start are fine) and click Run. Each one goes through the real AI ' +
-      '(about 1 to 2 cents each, from the same daily budget). You see what a visitor would see. Up to 40 at a time; ' +
+      '(about 2 to 3 cents each, from the same daily budget). You see what a visitor would see. Up to 40 at a time; ' +
       'these runs are counted apart from real searches.'));
     var box = el('textarea', 'form-input w-full text-sm');
     box.rows = 8;
@@ -1366,14 +1377,10 @@
       status.textContent = 'Running ' + questions.length + ' question' + (questions.length === 1 ? '' : 's') +
         '… this takes about ' + Math.max(10, Math.round(questions.length * 1.5)) + ' seconds.';
       clear(out);
-      Promise.all([
-        apiFetch('/search-test', { method: 'POST', body: JSON.stringify({ questions: questions }) }),
-        fetch('/search-index.json').then(function(r) { return r.json(); })
-      ]).then(function(both) {
-        var run = both[0];
-        var index = prepIndex(both[1]);
+      apiFetch('/search-test', { method: 'POST', body: JSON.stringify({ questions: questions }) }).then(function(run) {
+        if (run.error) { status.textContent = run.error; return; }
         status.textContent = 'Done: ' + run.results.length + ' questions, about $' + Number(run.costUSD || 0).toFixed(2) + '.';
-        run.results.forEach(function(r, i) { out.appendChild(testResult(r, i + 1, index)); });
+        run.results.forEach(function(r, i) { out.appendChild(testResult(r, i + 1)); });
       }).catch(function(err) {
         if (err.message === 'Signed out') return;
         status.textContent = 'Could not run the questions: ' + err.message;
@@ -1382,44 +1389,18 @@
     return cardEl;
   }
 
-  function prepIndex(rows) {
-    var labels = {};
-    rows.forEach(function(r) {
-      r._name = (r.n || '').toLowerCase();
-      r._tags = (r.k || '').toLowerCase().replace(/-/g, ' ');
-      r._desc = (r.d || '').toLowerCase();
-      if (r.c && r.cl) labels[r.c] = r.cl;
-    });
-    return { rows: rows, labels: labels };
-  }
-
-  function testScore(row, terms) {
-    var total = 0;
-    terms.forEach(function(t) {
-      if (row._name.indexOf(t) !== -1) total += 3;
-      else if (row._tags.indexOf(t) !== -1) total += 2;
-      else if (row._desc.indexOf(t) !== -1) total += 1;
-    });
-    return total;
-  }
-
-  function testSort(rows, st) {
-    function where(r) { return st && r.l === st ? 0 : (r.l === 'National' ? 1 : 2); }
-    return rows.sort(function(a, b) {
-      return (b._score - a._score) || (where(a) - where(b)) || a.n.localeCompare(b.n);
-    });
-  }
-
   function testNames(rows) {
     var ul = el('ul', 'list-disc pl-5 text-sm');
     rows.forEach(function(r) {
-      var bits = [r.a && r.l ? r.a + ', ' + r.l : (r.a || r.l)].filter(Boolean).join('');
-      ul.appendChild(el('li', '', r.n + (bits ? ' (' + bits + ')' : '')));
+      var where = r.a && r.l ? r.a + ', ' + r.l : (r.a || r.l);
+      ul.appendChild(el('li', '', r.n + (where ? ' (' + where + ')' : '')));
     });
     return ul;
   }
 
-  function testResult(r, n, index) {
+  // Shows one test question exactly as the worker answered it: the same
+  // summary and listings a visitor would get.
+  function testResult(r, n) {
     var box = el('div', 'border-t py-3');
     box.appendChild(el('p', 'font-semibold', n + '. ' + r.q));
     if (!r.ok) {
@@ -1429,42 +1410,78 @@
     var flags = [];
     if (r.crisis) flags.push('Shows the 911 / 988 box');
     if (r.offTopic) flags.push('Treated as off-topic (no listings, a gentle nudge instead)');
+    if (r.gap) flags.push('Nothing matched: would be added to Gaps as "' + r.gap + '"');
     if (flags.length) {
       var f = el('p', 'text-sm font-semibold', flags.join(' · '));
       f.style.color = 'var(--color-secondary)';
       box.appendChild(f);
     }
+    var listings = r.listings || { best: [], categories: {} };
+    var labels = {};
+    (listings.best || []).concat.apply([], Object.keys(listings.categories || {}).map(function(k) { return listings.categories[k].rows; }))
+      .forEach(function(row) { if (row.u) labels[row.u.split('/')[2]] = row.cl; });
     var picked = [];
-    picked.push('Categories: ' + (r.categories.length ? r.categories.map(function(c) { return index.labels[c] || c; }).join(', ') : 'none'));
+    picked.push('Categories: ' + (r.categories.length ? r.categories.map(function(c) { return labels[c] || c; }).join(', ') : 'none'));
     picked.push('Search words: ' + (r.keywords && r.keywords.length ? r.keywords.join(', ') : 'none'));
     picked.push('Place: ' + ([r.place, r.state].filter(Boolean).join(', ') || 'none given'));
     box.appendChild(el('p', 'text-xs mb-1', picked.join(' · ')));
     if (r.offTopic) return box;
 
-    var st = r.state;
-    var terms = r.keywords || [];
-    index.rows.forEach(function(row) { row._score = terms.length ? testScore(row, terms) : 0; });
-    function reach(row) { return !st || row.l === st || row.l === 'National'; }
-
-    var best = testSort(index.rows.filter(function(row) { return row._score >= 2 && reach(row); }), st).slice(0, 8);
-    if (best.length) {
-      box.appendChild(el('p', 'text-sm font-semibold mt-1', 'Best matches:'));
-      box.appendChild(testNames(best));
+    if (r.summary) {
+      var sum = el('div', 'text-sm p-3 my-2 rounded');
+      sum.style.background = 'var(--color-warm)';
+      sum.appendChild(el('p', 'font-semibold mb-1', 'Suggested starting points'));
+      sum.appendChild(el('p', '', r.summary));
+      if (r.guides && r.guides.length) {
+        sum.appendChild(el('p', 'text-xs mt-1', 'Guide links: ' + r.guides.map(function(g) { return g.label; }).join(', ')));
+      }
+      box.appendChild(sum);
     }
-    r.categories.forEach(function(slug) {
-      var inCat = index.rows.filter(function(row) { return (row.t || [row.c]).indexOf(slug) !== -1; });
-      var local = st ? inCat.filter(function(row) { return row.l === st; }).length : 0;
-      var national = inCat.filter(function(row) { return row.l === 'National'; }).length;
-      var shown = testSort(inCat.filter(reach), st).slice(0, 3);
-      var head = (index.labels[slug] || slug) + ': ' + (st ? local + ' in ' + st + ', ' : '') + national + ' national';
+    if (listings.best && listings.best.length) {
+      box.appendChild(el('p', 'text-sm font-semibold mt-1', 'Best matches:'));
+      box.appendChild(testNames(listings.best));
+    }
+    Object.keys(listings.categories || {}).forEach(function(slug) {
+      var c = listings.categories[slug];
+      var head = (labels[slug] || slug) + ': ' + (r.state ? c.local + ' in ' + r.state + ', ' : '') + c.national + ' national';
       box.appendChild(el('p', 'text-sm font-semibold mt-1', head));
-      if (shown.length) box.appendChild(testNames(shown));
+      if (c.rows.length) box.appendChild(testNames(c.rows.slice(0, 3)));
       else box.appendChild(el('p', 'text-sm', 'Nothing to show here yet.'));
     });
-    if (!best.length && !r.categories.length) {
-      box.appendChild(el('p', 'text-sm', 'A visitor would see: "We couldn\'t match that to the directory."'));
-    }
     return box;
+  }
+
+  // Needs that searches couldn't match, written by the AI with nothing that
+  // identifies anyone (never the words people typed), this month and last.
+  function gapsCard(gaps) {
+    var c = el('div', 'card p-4 mb-4');
+    c.appendChild(el('h2', 'text-lg font-bold mb-1', 'Gaps: what people looked for and didn\'t find'));
+    c.appendChild(el('p', 'text-sm mb-2',
+      'When an AI search finds nothing that matches, the AI writes a short, anonymous description of the need and it is counted here. ' +
+      'Never the words people typed, and never crisis or off-topic searches. This month and last month.'));
+    if (!gaps || !gaps.length) {
+      c.appendChild(el('p', 'text-sm', 'No gaps recorded yet.'));
+      return c;
+    }
+    var table = el('table', 'w-full text-sm');
+    var head = el('tr');
+    ['Times', 'What they were looking for', 'Last seen'].forEach(function(h) {
+      head.appendChild(el('th', 'text-left p-2 font-semibold border-b', h));
+    });
+    var thead = el('thead');
+    thead.appendChild(head);
+    table.appendChild(thead);
+    var tbody = el('tbody');
+    gaps.slice(0, 50).forEach(function(g) {
+      var tr = el('tr');
+      tr.appendChild(el('td', 'p-2 border-b tabular-nums', String(g.count)));
+      tr.appendChild(el('td', 'p-2 border-b', g.label));
+      tr.appendChild(el('td', 'p-2 border-b whitespace-nowrap', fmtDate(g.last)));
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    c.appendChild(table);
+    return c;
   }
 
   // ── AI search counts ──────────────────────────────────────────────────────
@@ -1494,6 +1511,7 @@
           [!data.keys.search && 'ANTHROPIC_SEARCH_API_KEY', !data.keys.turnstile && 'TURNSTILE_SECRET_KEY'].filter(Boolean).join(', ')));
       }
       panel.appendChild(intro);
+      panel.appendChild(gapsCard(data.gaps));
       panel.appendChild(searchTestCard());
 
       var total = { searches: 0, found: 0, spend: 0 };
