@@ -3,6 +3,24 @@
 Standing product decisions, with the reasoning. Newest first. If a decision
 here conflicts with something in the code, the code is wrong.
 
+## 15 November 2026 — AI search: starting-point summaries and a gap list
+
+Nicole, after trying the search on preview and running 26 test questions.
+These change two of the 9 November answers below.
+
+| Question | Decided |
+|---|---|
+| Should the AI write anything visitors read? | **Yes: a short "Suggested starting points" note** (two or three sentences) above the results, saying where to start and why. Written by a second AI step that sees only the listings actually found and TFP's own guide pages, and may name only those. No medical, legal or financial advice; no links or phone numbers (stripped in code as well). Not shown for crisis or off-topic searches, where the 911/988 box or the off-topic note speaks instead. |
+| What is stored when a search finds nothing? | **An anonymous description of the need, written by the AI**, e.g. "adaptive strollers for older children (Virginia)": under ten words, region at most state level, no names, ages, dates or family details. Never the words the visitor typed, and never for crisis or off-topic searches. Counted by month in the review portal's Search tab ("Gaps") so the team can look for resources to fill them. Kept about 13 months. |
+| Per-visitor limit | **15 AI searches a day** (set 14 November; the proposal was 10). |
+
+How it was built, so the reasoning survives: the worker now returns the listings
+themselves, so the summary and the page can never disagree about what was found.
+Listing matching (`cloudflare-worker-admin-api/matching.js`) uses whole words for
+short terms ("OT" no longer matches "Kohl's", "HIPP" no longer matches
+"hippotherapy") and ignores general words like "free" and "mobility", after the
+15 November test run showed both problems.
+
 ## 9 November 2026 — AI-assisted resource search
 
 A visitor describes their situation in their own words; one AI call turns it
