@@ -286,6 +286,7 @@ console.log("search tests passed");
   assert.equal(names({ keywords: ["adaptive stroller", "stroller", "mobility"] })[0], "Special Tomato Stroller", "more words matched ranks first");
   assert.ok(!names({ keywords: ["iep"] }).includes("NJ Parent Center"), "no state: national first, other states only to make up three");
   assert.ok(names({ keywords: ["ccc+"] }).length === 0);
+  assert.ok(matchListings([{ n: "Beds by George", l: "National", c: "equipment", k: "", d: "" }], { keywords: ["bed"] }).best.length === 1, "short words still match plurals");
 }
 
 // ── summary skipped for crisis and off-topic; gaps recorded only on no match ──
