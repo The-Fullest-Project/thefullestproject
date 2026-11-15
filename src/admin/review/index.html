@@ -64,6 +64,8 @@
             class="px-4 py-2 rounded-t-lg text-sm font-semibold whitespace-nowrap text-white/80 hover:text-white">Duplicates</button>
           <button role="tab" id="tab-emails" aria-controls="panel-emails" aria-selected="false"
             class="px-4 py-2 rounded-t-lg text-sm font-semibold whitespace-nowrap text-white/80 hover:text-white">Emails</button>
+          <button role="tab" id="tab-search" aria-controls="panel-search" aria-selected="false"
+            class="px-4 py-2 rounded-t-lg text-sm font-semibold whitespace-nowrap text-white/80 hover:text-white">Search</button>
         </div>
       </nav>
     </header>
@@ -77,12 +79,13 @@
       <section role="tabpanel" id="panel-live" aria-labelledby="tab-live" hidden></section>
       <section role="tabpanel" id="panel-duplicates" aria-labelledby="tab-duplicates" hidden></section>
       <section role="tabpanel" id="panel-emails" aria-labelledby="tab-emails" hidden></section>
+      <section role="tabpanel" id="panel-search" aria-labelledby="tab-search" hidden></section>
     </main>
   </div>
 
   <div id="toast-region" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex flex-col gap-2 items-center" aria-live="polite"></div>
 
   <script src="/admin/review/papaparse.min.js"></script>
-  <script src="/admin/review/portal.js?v=20261110a"></script>
+  <script src="/admin/review/portal.js?v=20261114a"></script>
 </body>
 </html>

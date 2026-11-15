@@ -1,40 +1,5 @@
 [
   {
-    "id": "sub-20261001-6a459e9b",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-01T14:54:55.437Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "CareClinic Health Tracker",
-      "category": [
-        "apps"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "CareClinic is a free personal health journal for recording symptoms, medications, mood, sleep, routines, and appointments in one place. It helps people and caregivers keep an organized record over time and prepare shareable summaries for conversations with clinicians. It is a self-management and organization tool and does not diagnose conditions or replace professional care.",
-      "phone": "",
-      "email": "",
-      "website": "https://careclinic.io/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "health-tracking",
-        "medication-tracking",
-        "symptom-tracking",
-        "caregiver-app"
-      ],
-      "source": "https://careclinic.io/",
-      "lastScraped": "2026-10-01"
-    }
-  },
-  {
     "id": "sub-20261006-ed4259e9",
     "type": "submission",
     "status": "pending",
@@ -222,176 +187,6 @@
       ],
       "source": "https://specialneedsusa.com/",
       "lastScraped": "2026-10-15"
-    }
-  },
-  {
-    "id": "sub-20261015-ed4259e9",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-15T17:29:34.431Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Special Needs Jobs",
-      "category": [
-        "employment"
-      ],
-      "location": "National",
-      "area": "Nationwide (U.S.)",
-      "description": "Special Needs Jobs is a free U.S. job board for ABA therapy careers, listing current openings for BCBAs, RBTs, BCaBAs and behavior technicians from ABA providers. Jobs can be filtered by credential, employer, location, work arrangement, employment type and disclosed pay, and candidates apply directly on the employer site. It also publishes career resources such as an ABA salary guide and a job offer checklist. Not affiliated with the BACB.",
-      "phone": "",
-      "email": "kylestar@mail.grokbot.com",
-      "website": "https://specialneedsjobs.org/",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "ABA jobs",
-        "BCBA",
-        "RBT",
-        "careers"
-      ],
-      "source": "https://specialneedsjobs.org/",
-      "lastScraped": "2026-10-15"
-    }
-  },
-  {
-    "id": "sub-20261016-d79ab4aa",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-16T21:33:07.316Z"
-    },
-    "targetFile": "src/_data/resources/states/UT.json",
-    "payload": {
-      "name": "Local Senior Advisor",
-      "category": [
-        "housing"
-      ],
-      "location": "Utah",
-      "area": "Murray, UT",
-      "description": "Local Senior Advisor is a better way to find assisted living, memory care, and independent living. The online directory lists every community with the most current, accurate information. It also pairs you with a local senior advisor who has personally visited each community and can answer your questions about its services, costs, and availability. Local Senior Advisor is a free service to families.",
-      "phone": "(385) 200-2175",
-      "email": "info@localsenioradvisor.com",
-      "website": "https://localsenioradvisor.com/",
-      "address": "491 W 5300 S, Suite 113, Murray, UT 84123",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "senior living",
-        "assisted living",
-        "memory care",
-        "caregivers"
-      ],
-      "source": "https://localsenioradvisor.com/",
-      "lastScraped": "2026-10-16"
-    }
-  },
-  {
-    "id": "sub-20261023-709ca7a9",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-23T16:15:10.328Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Autism Dating",
-      "category": [
-        "community"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "Autism Dating helps adults on the autism spectrum meet people who value clear talk and kind company, for companionship or something serious. ADHD and AuDHD members are welcome.",
-      "phone": "",
-      "email": "",
-      "website": "https://datingautism.com",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [],
-      "source": "https://datingautism.com",
-      "lastScraped": "2026-10-23"
-    }
-  },
-  {
-    "id": "sub-20261023-b3a86b61",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-23T16:15:11.507Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "Disabled Contacts",
-      "category": [
-        "community"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "Disabled Contacts is a UK dating site for disabled singles and the people who want to meet them, across England, Scotland, Wales and Northern Ireland. Members share what they choose about their disability, when they choose.",
-      "phone": "",
-      "email": "",
-      "website": "https://disabledcontacts.co.uk",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [],
-      "source": "https://disabledcontacts.co.uk",
-      "lastScraped": "2026-10-23"
-    }
-  },
-  {
-    "id": "sub-20261027-bed6b3b8",
-    "type": "submission",
-    "status": "pending",
-    "origin": {
-      "type": "submission",
-      "detail": "submit-resource-form",
-      "submittedAt": "2026-10-27T17:51:59.637Z"
-    },
-    "targetFile": "src/_data/resources/national.json",
-    "payload": {
-      "name": "AccessAble: free compression sock printable and Easier Mornings email",
-      "category": [
-        "clothing"
-      ],
-      "location": "National",
-      "area": "",
-      "description": "Free one-page printable, \"Putting compression socks on,\" with plain steps for one working hand or a helping hand: set up, position the foot section, make each pull smaller, smooth and check, plus a short box for caregivers. Also a free email, Easier Mornings, with one practical dressing and compression sock idea every other Tuesday. Free to print, share and read. No purchase needed. Printable (PDF): https://accessablecompression.com/resources/compression-socks/compression-socks.pdf",
-      "phone": "",
-      "email": "support@accessablecompression.com",
-      "website": "https://accessablecompression.com/newsletter",
-      "address": "",
-      "ageRange": "",
-      "disabilityTypes": [],
-      "cost": "",
-      "tags": [
-        "caregiver-assisted-dressing",
-        "easy-dressing",
-        "daily-living",
-        "free",
-        "newsletter",
-        "caregiver-resource",
-        "stroke",
-        "spinal-cord",
-        "compression-socks"
-      ],
-      "source": "https://accessablecompression.com/newsletter",
-      "lastScraped": "2026-10-27"
     }
   },
   {
@@ -1145,6 +940,36 @@
       ],
       "source": "https://www.ucdenver.edu/center-for-innovative-design-and-engineering/CIDE-about-us/cide-communicator-enewsletter/past-articles/cide-news/introducing-adapt-to-impact",
       "lastScraped": "2026-11-10"
+    }
+  },
+  {
+    "id": "sub-20261111-3e0efa77",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-11T12:35:31.184Z"
+    },
+    "targetFile": "src/_data/resources/states/FL.json",
+    "payload": {
+      "name": "Wonderland PPEC, LLC",
+      "category": [
+        "medical"
+      ],
+      "location": "Florida",
+      "area": "Tamarac, Broward County",
+      "description": "Wonderland provides medical daycare for infants and children with complex medical needs in Tamarac, serving Broward County families. Services include pediatric nursing care, therapies, educational support, meals, and transportation to and from the center and medical appointments. Children return home after the day. Services are available at no cost to children enrolled through Medicaid or its managed care plans, subject to eligibility, physician orders and required authorizations. Families can call to review eligibility or arrange a tour.",
+      "phone": "954-590-0097",
+      "email": "info@wonderlandppec.com",
+      "website": "https://www.wonderlandppec.com/",
+      "address": "6463 W Commercial Blvd, Tamarac, FL 33319",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://www.wonderlandppec.com/",
+      "lastScraped": "2026-11-11"
     }
   }
 ]

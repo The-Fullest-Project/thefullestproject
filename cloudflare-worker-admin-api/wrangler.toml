@@ -19,6 +19,23 @@ compatibility_date = "2026-06-01"
 # binding = "SUBMITTER_EMAILS"
 # id = "<paste-namespace-id-here>"
 
+# AI-assisted resource search (search.js). Plain settings live here, not in the
+# dashboard, so a redeploy can't wipe them. Secrets it needs (dashboard):
+#   ANTHROPIC_SEARCH_API_KEY  — the search-only key in the TFP Anthropic Console
+#   TURNSTILE_SECRET_KEY      — the Turnstile widget's secret
+[vars]
+SEARCH_ENABLED = "1"            # "0" turns AI off; the box falls back to keyword search
+SEARCH_DAILY_LIMIT = "15"       # AI searches per visitor per day (Nicole, 14 Nov 2026)
+SEARCH_DAILY_BUDGET_USD = "1.60" # ≈ $50 a month; keyword search takes over when spent
+SEARCH_MODEL = "claude-opus-5-5"
+SEARCH_SIGNED_IN_ONLY = "0"     # "1" once accounts launch, if search moves to signed-in visitors
+
+# Daily search counts and the per-visitor counter (never what people type).
+# Created with: npx wrangler kv namespace create SEARCH_STATS
+# [[kv_namespaces]]
+# binding = "SEARCH_STATS"
+# id = "<filled in at first deploy>"
+
 # Change-request log (C5). Private on purpose: the repo is public on GitHub and
 # Nicole asked for this list to stay inside the review portal.
 [[kv_namespaces]]
