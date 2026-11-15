@@ -166,6 +166,15 @@
         { email: 'demo2@example.com', dateAdded: '2026-06-08', source: 'resource-submission', optIn: 'transactional_only' },
         { email: 'demo3@example.com', dateAdded: '2026-06-10', source: 'newsletter-form', optIn: 'pending_doi' }
       ] },
+      '/search-stats': { settings: { limit: 15, budgetUSD: 1.6, model: 'claude-opus-5-5', enabled: true, signedInOnly: false },
+        keys: { search: true, turnstile: true },
+        days: [
+          { day: '2026-12-02', searches: 23, found: 20, notFound: 3, crisis: 1, offTopic: 2, spendUSD: 0.27,
+            fallbacks: { limit: 1, botcheck: 2 }, categories: { respite: 6, camps: 5, therapy: 4, 'iep-advocacy': 3 } },
+          { day: '2026-12-01', searches: 11, found: 10, notFound: 1, crisis: 0, offTopic: 0, spendUSD: 0.13,
+            fallbacks: {}, categories: { respite: 4, financial: 3 } },
+          { day: '2026-11-30', searches: 0, found: 0, notFound: 0, crisis: 0, offTopic: 0, spendUSD: 0, fallbacks: {}, categories: {} }
+        ] },
       '/draft-description': {
         description: 'A pediatric therapy clinic offering physical and occupational therapy for children with developmental and neurological conditions.',
         grounded: true
@@ -269,7 +278,7 @@
   }
 
   // ── Tabs ──────────────────────────────────────────────────────────────────
-  var TABS = ['queue', 'requests', 'newsletter', 'history', 'bulk', 'live', 'duplicates', 'emails'];
+  var TABS = ['queue', 'requests', 'newsletter', 'history', 'bulk', 'live', 'duplicates', 'emails', 'search'];
   function activateTab(name) {
     TABS.forEach(function(t) {
       var tab = byId('tab-' + t);
@@ -286,7 +295,7 @@
       state.loadedTabs[name] = true;
       ({ queue: loadQueue, requests: loadRequests, newsletter: loadNewsletter,
          history: loadHistory, bulk: renderBulk, live: renderLiveEditor,
-         duplicates: loadDuplicates, emails: loadEmails })[name]();
+         duplicates: loadDuplicates, emails: loadEmails, search: loadSearchStats })[name]();
     }
   }
 
@@ -1312,6 +1321,85 @@
       if (err.message === 'Signed out') return;
       clear(panel);
       panel.appendChild(el('p', 'card p-6', 'Could not load contacts: ' + err.message));
+    });
+  }
+
+  // ── AI search counts ──────────────────────────────────────────────────────
+  // Daily counts only: the worker never stores what people type.
+  var FALLBACK_LABELS = {
+    limit: 'Reached their daily limit', budget: 'Daily budget used up', botcheck: 'Failed the bot check',
+    error: 'AI error', unavailable: 'Not set up', off: 'Switched off', signin: 'Needs sign-in'
+  };
+
+  function loadSearchStats() {
+    var panel = byId('panel-search');
+    clear(panel);
+    panel.appendChild(el('p', 'text-sm', 'Loading…'));
+
+    apiFetch('/search-stats?days=14').then(function(data) {
+      clear(panel);
+      var s = data.settings || {};
+      var days = data.days || [];
+
+      var intro = el('div', 'card p-4 mb-4 text-sm');
+      intro.appendChild(el('p', 'mb-1', 'AI search counts for the last 14 days. Days run midnight to midnight UTC (7pm to 7pm Eastern). What people type is never stored.'));
+      intro.appendChild(el('p', '', 'Limit: ' + s.limit + ' AI searches per visitor per day · Daily budget: $' +
+        Number(s.budgetUSD || 0).toFixed(2) + ' · Model: ' + (s.model || '?') + ' · ' + (s.enabled ? 'Switched on' : 'Switched off')));
+      if (data.note) intro.appendChild(el('p', 'mt-2 font-semibold', data.note));
+      if (data.keys && (!data.keys.search || !data.keys.turnstile)) {
+        intro.appendChild(el('p', 'mt-2 font-semibold', 'Missing on the worker: ' +
+          [!data.keys.search && 'ANTHROPIC_SEARCH_API_KEY', !data.keys.turnstile && 'TURNSTILE_SECRET_KEY'].filter(Boolean).join(', ')));
+      }
+      panel.appendChild(intro);
+
+      var total = { searches: 0, found: 0, spend: 0 };
+      days.forEach(function(d) {
+        total.searches += d.searches || 0;
+        total.found += d.found || 0;
+        total.spend += d.spendUSD || 0;
+      });
+      var chips = el('div', 'flex gap-2 flex-wrap mb-4');
+      [['AI searches, 14 days', total.searches], ['Showed results', total.found],
+       ['Estimated spend, 14 days', '$' + total.spend.toFixed(2)]].forEach(function(stat) {
+        var chip = el('span', 'tag', stat[0] + ': ' + stat[1]);
+        chip.style.backgroundColor = 'var(--color-warm)';
+        chip.style.color = 'var(--color-primary)';
+        chips.appendChild(chip);
+      });
+      panel.appendChild(chips);
+
+      var card = el('div', 'card p-4 overflow-x-auto');
+      var table = el('table', 'w-full text-sm tabular-nums');
+      var headRow = el('tr');
+      ['Day', 'AI searches', 'Showed results', 'No results', 'Crisis wording', 'Off-topic',
+       'Estimated spend', 'Fell back to keyword search', 'Top categories'].forEach(function(h) {
+        headRow.appendChild(el('th', 'text-left p-2 font-semibold border-b', h));
+      });
+      var thead = el('thead');
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+      var tbody = el('tbody');
+      days.forEach(function(d) {
+        var tr = el('tr');
+        var fb = Object.keys(d.fallbacks || {}).map(function(k) {
+          return (FALLBACK_LABELS[k] || k) + ': ' + d.fallbacks[k];
+        }).join(', ');
+        var cats = Object.keys(d.categories || {}).sort(function(a, b) {
+          return d.categories[b] - d.categories[a];
+        }).slice(0, 4).map(function(k) { return k + ' (' + d.categories[k] + ')'; }).join(', ');
+        [fmtDate(d.day), d.searches || 0, d.found || 0, d.notFound || 0, d.crisis || 0, d.offTopic || 0,
+         '$' + Number(d.spendUSD || 0).toFixed(2), fb || '—', cats || '—'].forEach(function(v, i) {
+          tr.appendChild(el('td', 'p-2 border-b' + (i === 0 ? ' whitespace-nowrap' : ''), String(v)));
+        });
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+      card.appendChild(table);
+      panel.appendChild(card);
+    }).catch(function(err) {
+      if (err.message === 'Signed out') return;
+      clear(panel);
+      panel.appendChild(el('p', 'card p-6', 'Could not load search counts: ' + err.message));
     });
   }
 

@@ -4,6 +4,10 @@ import {
   EDITABLE_PAGES, CMS_ENTRY, REASON_TEXT,
   resolveLeaf, cleanValue, enumerateFields, blockLabel
 } from "./editable-fields.js";
+// AI-assisted resource search (public /search, admin /search-stats).
+import {
+  handleSearch, handleSearchOutcome, handleSearchStats, searchCors
+} from "./search.js";
 
 /**
  * Cloudflare Worker: tfp-admin-api
@@ -15,6 +19,7 @@ import {
  *   POST /submit      — resource form intake → pending/submissions.json
  *                       (+ Formspree notification forward + Brevo thank-you)
  *   POST /newsletter  — newsletter signup → Brevo double-opt-in
+ *   POST /search, POST /search/outcome — AI-assisted resource search (search.js)
  *
  * Admin routes (GitHub OAuth token with push permission, or X-Admin-Key):
  *   GET  /pending     — every pending envelope across the store
@@ -75,11 +80,27 @@ const STATE_CODES = {
 
 export default {
   async fetch(request, env, ctx) {
+    const path = new URL(request.url).pathname.replace(/\/+$/, "") || "/";
+
+    // AI search is called from the live site, the preview site and localhost,
+    // so it answers CORS for its own origin list rather than ALLOWED_ORIGIN.
+    if (path === "/search" || path === "/search/outcome") {
+      if (request.method === "OPTIONS") {
+        return searchCors(env, request, new Response(null, { status: 204 }));
+      }
+      try {
+        const res = path === "/search"
+          ? await handleSearch(request, env, ctx, { loadCategories: loadSearchCategories })
+          : await handleSearchOutcome(request, env, ctx);
+        return searchCors(env, request, res);
+      } catch (err) {
+        return searchCors(env, request, json({ mode: "fallback", reason: "error" }));
+      }
+    }
+
     if (request.method === "OPTIONS") {
       return cors(env, new Response(null, { status: 204 }));
     }
-
-    const path = new URL(request.url).pathname.replace(/\/+$/, "") || "/";
 
     try {
       if (request.method === "POST" && path === "/submit") {
@@ -197,6 +218,9 @@ export default {
       }
       if (request.method === "DELETE" && path === "/change-requests") {
         return cors(env, await handleChangeRequestDelete(new URL(request.url), env));
+      }
+      if (request.method === "GET" && path === "/search-stats") {
+        return cors(env, await handleSearchStats(new URL(request.url), env));
       }
 
       return cors(env, json({ error: "Not found" }, 404));
@@ -1408,6 +1432,12 @@ async function readRepoFile(env, path, ref) {
   const data = await res.json();
   const text = b64decode(data.content);
   return { json: JSON.parse(text), sha: data.sha, text };
+}
+
+/** The category list AI search may choose from, read from main. */
+async function loadSearchCategories(env) {
+  const file = await readRepoFile(env, "src/_data/categories.json");
+  return file ? file.json : [];
 }
 
 async function listRepoDir(env, path) {
