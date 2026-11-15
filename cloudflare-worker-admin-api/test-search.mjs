@@ -4,7 +4,7 @@
 import assert from "node:assert/strict";
 import {
   handleSearch, handleSearchOutcome, handleSearchStats,
-  cleanResult, buildSchema, costUSD, settings, utcDay
+  cleanResult, buildSchema, costUSD, settings, utcDay, errorCode
 } from "./search.js";
 
 const CATS = [
@@ -153,6 +153,14 @@ async function call(e, body, origin, ip) {
   assert.equal((await call(e, { q: "respite care please", token: "t" })).data.reason, "botcheck");
   assert.equal(aiCalls, 0);
   turnstileOk = true;
+
+  // a bot check that failed in the browser is counted with its error code
+  const eb = env();
+  assert.equal((await call(eb, { q: "respite care please", token: "", botError: "110200" })).data.reason, "botcheck");
+  assert.equal(aiCalls, 0);
+  const fb = JSON.parse(eb.SEARCH_STATS.m.get("day-" + utcDay())).fallbacks;
+  assert.equal(fb["botcheck-browser-110200"], 1);
+  assert.equal(errorCode("<script>"), "script");
 
   const e2 = env();
   e2.SEARCH_STATS.m.set("day-" + utcDay(), JSON.stringify({ spendUSD: 1.61 }));

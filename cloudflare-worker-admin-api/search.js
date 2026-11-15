@@ -178,8 +178,15 @@ async function visitorKey(env, request, day) {
 
 // ─── Bot check ───────────────────────────────────────────────────────────────
 
+/** Short, safe label for a Turnstile error code, recorded with the counts. */
+export function errorCode(code) {
+  const c = String(code == null ? "" : code).toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 24);
+  return c || "unknown";
+}
+
+/** {ok, code}: code is Cloudflare's first error code when the check fails. */
 async function verifyTurnstile(env, token, request) {
-  if (!token || typeof token !== "string" || token.length > 4096) return false;
+  if (!token || typeof token !== "string" || token.length > 4096) return { ok: false, code: "no-token" };
   const form = new FormData();
   form.append("secret", env.TURNSTILE_SECRET_KEY);
   form.append("response", token);
@@ -190,9 +197,10 @@ async function verifyTurnstile(env, token, request) {
       method: "POST", body: form
     });
     const data = await res.json();
-    return data.success === true;
+    if (data.success === true) return { ok: true };
+    return { ok: false, code: errorCode((data["error-codes"] || [])[0]) };
   } catch (_) {
-    return false;
+    return { ok: false, code: "siteverify-unreachable" };
   }
 }
 
@@ -333,8 +341,15 @@ export async function handleSearch(request, env, ctx, deps) {
     return fallback("unavailable");
   }
 
-  if (!(await verifyTurnstile(env, body.token, request))) {
-    countFallback(env, ctx, day, "botcheck");
+  // The page reports when the bot check failed in the browser (it never got a
+  // token), so the cause shows up in the portal's counts.
+  if (body.botError) {
+    countFallback(env, ctx, day, "botcheck-browser-" + errorCode(body.botError));
+    return fallback("botcheck");
+  }
+  const check = await verifyTurnstile(env, body.token, request);
+  if (!check.ok) {
+    countFallback(env, ctx, day, "botcheck-" + check.code);
     return fallback("botcheck");
   }
 
