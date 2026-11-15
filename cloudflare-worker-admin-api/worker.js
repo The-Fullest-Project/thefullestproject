@@ -6,7 +6,7 @@ import {
 } from "./editable-fields.js";
 // AI-assisted resource search (public /search, admin /search-stats).
 import {
-  handleSearch, handleSearchOutcome, handleSearchStats, searchCors
+  handleSearch, handleSearchOutcome, handleSearchStats, handleSearchTest, searchCors
 } from "./search.js";
 
 /**
@@ -221,6 +221,10 @@ export default {
       }
       if (request.method === "GET" && path === "/search-stats") {
         return cors(env, await handleSearchStats(new URL(request.url), env));
+      }
+      if (request.method === "POST" && path === "/search-test") {
+        return cors(env, await handleSearchTest(await request.json(), env, ctx,
+          { loadCategories: loadSearchCategories }, auth));
       }
 
       return cors(env, json({ error: "Not found" }, 404));

@@ -449,3 +449,88 @@ export async function handleSearchStats(url, env) {
     }
   });
 }
+
+// ─── Test questions (review portal, admin sign-in) ──────────────────────────
+
+const MAX_TEST_QUESTIONS = 40;
+const TEST_CONCURRENCY = 4;
+const TEST_RUN_TTL = 30 * 24 * 60 * 60;
+
+/**
+ * POST /search-test {questions: string[]} — wired in worker.js behind
+ * requireAdmin, so only someone signed in to the review portal can run it.
+ *
+ * Runs each question through the same AI call visitors get and returns the
+ * filters, so the team can check what a visitor would see. No bot check or
+ * per-visitor limit (it's behind the admin sign-in); the daily budget still
+ * applies. Runs are counted as testSearches, apart from real searches, and the
+ * latest run is kept for 30 days as KV "testrun-latest" so it can be written
+ * up. These are the team's own test questions, not visitors' searches.
+ */
+export async function handleSearchTest(body, env, ctx, deps, auth) {
+  const s = settings(env);
+  if (!env.SEARCH_STATS || !env.ANTHROPIC_SEARCH_API_KEY) {
+    return json({ error: "AI search isn't set up on the worker yet." }, 503);
+  }
+  const questions = (Array.isArray(body && body.questions) ? body.questions : [])
+    .map(q => (typeof q === "string" ? q.replace(/\s+/g, " ").trim() : ""))
+    .filter(q => q.length >= 3)
+    .map(q => q.slice(0, MAX_QUERY));
+  if (!questions.length) return json({ error: "Paste at least one question." }, 400);
+  if (questions.length > MAX_TEST_QUESTIONS) {
+    return json({ error: `Please run at most ${MAX_TEST_QUESTIONS} questions at a time.` }, 400);
+  }
+
+  const day = utcDay();
+  const today = await readDay(env, day);
+  let spent = today.spendUSD;
+  if (spent >= s.budget) {
+    return json({ error: "Today's AI budget is used up. Try again tomorrow (after 7pm Eastern)." }, 429);
+  }
+
+  let categories;
+  try { categories = await loadCategories(env, deps); }
+  catch (_) { return json({ error: "Couldn't load the category list." }, 502); }
+
+  const results = new Array(questions.length);
+  let runCost = 0;
+  let next = 0;
+  async function worker() {
+    while (next < questions.length) {
+      const i = next++;
+      const q = questions[i];
+      if (spent + runCost >= s.budget) {
+        results[i] = { q, ok: false, error: "Skipped: today's AI budget ran out." };
+        continue;
+      }
+      try {
+        const answer = await askClaude(env, s.model, categories, q);
+        runCost += answer.cost;
+        results[i] = answer.result
+          ? { q, ok: true, ...cleanResult(answer.result, categories), costUSD: answer.cost }
+          : { q, ok: false, error: answer.refused ? "The AI declined this one." : "No answer.", costUSD: answer.cost };
+      } catch (err) {
+        results[i] = { q, ok: false, error: "AI request failed." };
+      }
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(TEST_CONCURRENCY, questions.length) }, worker));
+
+  const run = {
+    at: new Date().toISOString(),
+    by: (auth && auth.actor) || "admin",
+    model: s.model,
+    costUSD: Math.round(runCost * 1e4) / 1e4,
+    results
+  };
+  const writes = Promise.all([
+    bumpDay(env, day, d => {
+      d.spendUSD += runCost;
+      d.testSearches = (d.testSearches || 0) + results.filter(r => r.ok).length;
+    }),
+    env.SEARCH_STATS.put("testrun-latest", JSON.stringify(run), { expirationTtl: TEST_RUN_TTL }).catch(() => {})
+  ]);
+  if (ctx && ctx.waitUntil) ctx.waitUntil(writes); else await writes;
+
+  return json(run);
+}
