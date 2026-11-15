@@ -144,6 +144,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // ── Keyword fallback ──────────────────────────────────────────────────────
   function stem(word) { return word.toLowerCase().replace(/(ies|es|s)$/, ''); }
 
+  var FALLBACK_STOP = ['care', 'service', 'servic', 'support', 'resource', 'resourc', 'adaptive', 'adaptiv',
+    'need', 'special', 'planning', 'after', 'school', 'general', 'other', 'group', 'provider',
+    'communitie', 'community', 'foundation', 'non', 'profit', 'activitie', 'venue', 'friendly'];
+
   function keywordFilters(q) {
     var text = ' ' + q.toLowerCase() + ' ';
     var state = null;
@@ -153,9 +157,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var words = q.toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length >= 4; }).map(stem);
     var cats = [];
     CATEGORIES.forEach(function (c) {
+      // Words in category names that people also use in ordinary sentences
+      // ("we NEED help", "my SPECIAL needs son", "after SCHOOL") would pick the
+      // wrong category, so they never count as a match on their own.
       var labelWords = (c.label + ' ' + c.value).toLowerCase().split(/[^a-z0-9]+/)
-        .filter(function (w) { return w.length >= 4 && ['care', 'services', 'support', 'resources', 'adaptive'].indexOf(w) === -1; })
-        .map(stem);
+        .filter(function (w) { return w.length >= 4; })
+        .map(stem)
+        .filter(function (w) { return FALLBACK_STOP.indexOf(w) === -1; });
       var hit = labelWords.some(function (w) { return words.indexOf(w) !== -1; });
       if (hit && cats.length < 3) cats.push(c.value);
     });
