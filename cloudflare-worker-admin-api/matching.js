@@ -11,8 +11,9 @@
  *
  * Rules (from the 15 November test run):
  *  - Words match at the start of a word ("seizure" finds "seizures"), and
- *    words of four letters or fewer match whole words only, so "OT" doesn't
- *    match "Kohl's" and "HIPP" doesn't match "hippotherapy".
+ *    words of four letters or fewer match whole words (plus a plural "s"), so
+ *    "OT" doesn't match "Kohl's", "HIPP" doesn't match "hippotherapy", and
+ *    "bed" still finds "beds".
  *  - Generic words ("free", "support", "mobility"...) never count: they
  *    matched captioned phones for "free programs" and van dealers for
  *    "adaptive strollers".
@@ -44,7 +45,7 @@ export function cleanTerms(keywords) {
   return seen.map(t => ({
     text: t,
     re: t.replace(/[^a-z0-9]/g, "").length <= 4
-      ? new RegExp("(^|[^a-z0-9])" + escapeRe(t) + "($|[^a-z0-9])")
+      ? new RegExp("(^|[^a-z0-9])" + escapeRe(t) + "(e?s)?($|[^a-z0-9])")
       : new RegExp("(^|[^a-z0-9])" + escapeRe(t))
   }));
 }

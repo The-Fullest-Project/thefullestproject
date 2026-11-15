@@ -205,6 +205,73 @@
     }
   },
   {
+    "name": "Advocacy Abby (Instagram)",
+    "category": [
+      "influencers",
+      "community"
+    ],
+    "location": "National",
+    "area": "",
+    "phone": "",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "source": "",
+    "lastScraped": "",
+    "dateAdded": "2026-11-15",
+    "origin": {
+      "type": "curated",
+      "detail": "influencers list from Nicole, 15 Nov 2026"
+    },
+    "description": "Helping families through big life moments: disability, diagnosis and more. A grant and fundraising expert.",
+    "website": "https://www.instagram.com/advocacy.abby/",
+    "tags": [
+      "instagram",
+      "diagnosis",
+      "grants",
+      "fundraising",
+      "advocacy",
+      "parent-support"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/advocacy.abby/"
+    }
+  },
+  {
+    "name": "Play Spark (Instagram)",
+    "category": [
+      "influencers",
+      "clothing"
+    ],
+    "location": "National",
+    "area": "",
+    "phone": "",
+    "address": "",
+    "ageRange": "",
+    "disabilityTypes": [],
+    "cost": "",
+    "source": "",
+    "lastScraped": "",
+    "dateAdded": "2026-11-15",
+    "origin": {
+      "type": "curated",
+      "detail": "influencers list from Nicole, 15 Nov 2026"
+    },
+    "description": "Apparel, resources and education. Clothing inspired by acceptance and inclusion for all.",
+    "website": "https://www.instagram.com/play_spark/",
+    "tags": [
+      "instagram",
+      "clothing",
+      "inclusion",
+      "acceptance",
+      "education"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/play_spark/"
+    }
+  },
+  {
     "name": "Accessible Adventures (Instagram)",
     "category": [
       "influencers",
@@ -212,7 +279,7 @@
     ],
     "location": "National",
     "area": "",
-    "description": "Instagram account documenting accessible travel, outdoor adventures, and recreation for people with disabilities. Reviews destinations and shares tips for accessible travel planning.",
+    "description": "Shares resources, adaptive gear and practical guidance for getting out and about with a disability.",
     "phone": "",
     "website": "https://www.instagram.com/accessible.adventures/",
     "instagram": "https://www.instagram.com/accessible.adventures/",
@@ -234,6 +301,9 @@
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/accessible.adventures/"
     }
   },
   {
@@ -443,7 +513,7 @@
     ],
     "location": "National",
     "area": "",
-    "description": "Author of 'How You Can Handle More Than You Can Handle' and caregiver advocate. Shares disability parenting experiences, practical advice, and inspiration on Instagram.",
+    "description": "Therapist, mom and Chicagoan exploring the hard parts of parenting a disabled child. Author of How to Handle More Than You Can Handle.",
     "phone": "",
     "website": "https://www.instagram.com/amanda.griffith.atkins/",
     "instagram": "https://www.instagram.com/amanda.griffith.atkins/",
@@ -464,6 +534,9 @@
     "origin": {
       "type": "scraper",
       "detail": "legacy-backfill"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/amanda.griffith.atkins/"
     }
   },
   {
