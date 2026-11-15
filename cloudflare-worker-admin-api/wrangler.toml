@@ -31,10 +31,10 @@ SEARCH_MODEL = "claude-opus-5-5"
 SEARCH_SIGNED_IN_ONLY = "0"     # "1" once accounts launch, if search moves to signed-in visitors
 
 # Daily search counts and the per-visitor counter (never what people type).
-# Created with: npx wrangler kv namespace create SEARCH_STATS
-# [[kv_namespaces]]
-# binding = "SEARCH_STATS"
-# id = "<filled in at first deploy>"
+# Created 14 Nov 2026 with: npx wrangler kv namespace create SEARCH_STATS
+[[kv_namespaces]]
+binding = "SEARCH_STATS"
+id = "6e5b4310d5fa4e8b9273cfe374d0792c"
 
 # Change-request log (C5). Private on purpose: the repo is public on GitHub and
 # Nicole asked for this list to stay inside the review portal.
