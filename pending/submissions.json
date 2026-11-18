@@ -971,5 +971,37 @@
       "source": "https://www.wonderlandppec.com/",
       "lastScraped": "2026-11-11"
     }
+  },
+  {
+    "id": "sub-20261118-46818ebd",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "quick-submit",
+      "detail": "bookmarklet",
+      "submittedAt": "2026-11-18T01:54:16.367Z"
+    },
+    "targetFile": "src/_data/resources/national.json",
+    "payload": {
+      "name": "WolfPups on Wheels - Grant NonProfit",
+      "category": [
+        "financial"
+      ],
+      "location": "National",
+      "area": "",
+      "description": "WolfPups on Wheels was born from our lived experience and from Bo’s big heart and even bigger imagination. He wanted to make sure every kid felt included, no matter their ability. What began as a personal mission quickly grew into something more: a way to help other families access the life-changing tools that make mobility, communication, and independence possible. We focus on creating lasting change by empowering individuals and families with the resources and therapies they need, fostering confidence, growth, and connection in the communities we serve.",
+      "phone": "",
+      "email": "",
+      "website": "https://www.wolfpupsonwheels.org/about-us",
+      "address": "",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [
+        "grants"
+      ],
+      "source": "https://www.wolfpupsonwheels.org/about-us",
+      "lastScraped": "2026-11-18"
+    }
   }
 ]
