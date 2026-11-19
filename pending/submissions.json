@@ -1003,5 +1003,35 @@
       "source": "https://www.wolfpupsonwheels.org/about-us",
       "lastScraped": "2026-11-18"
     }
+  },
+  {
+    "id": "sub-20261119-d60a6034",
+    "type": "submission",
+    "status": "pending",
+    "origin": {
+      "type": "submission",
+      "detail": "submit-resource-form",
+      "submittedAt": "2026-11-19T00:06:36.964Z"
+    },
+    "targetFile": "src/_data/resources/states/FL.json",
+    "payload": {
+      "name": "Helping Hands PPEC, Inc.",
+      "category": [
+        "medical"
+      ],
+      "location": "Florida",
+      "area": "Hialeah / Miami-Dade County",
+      "description": "Helping Hands PPEC, Inc. is a licensed Prescribed Pediatric Extended Care center in Hialeah serving eligible children with complex medical needs in Miami-Dade. The center provides daytime skilled pediatric nursing and therapies. Families and healthcare providers can contact the center to ask about referrals, eligibility and enrollment.",
+      "phone": "305-960-7543",
+      "email": "",
+      "website": "https://helpinghandsppec.com/",
+      "address": "7100 W 20th Ave, Suite G126, Hialeah, FL 33016",
+      "ageRange": "",
+      "disabilityTypes": [],
+      "cost": "",
+      "tags": [],
+      "source": "https://helpinghandsppec.com/",
+      "lastScraped": "2026-11-19"
+    }
   }
 ]
